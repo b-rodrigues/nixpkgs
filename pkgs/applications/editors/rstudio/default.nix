@@ -39,17 +39,17 @@
 
 let
   pname = "RStudio";
-  version = "2022.07.1+554";
-  RSTUDIO_VERSION_MAJOR  = "2022";
-  RSTUDIO_VERSION_MINOR  = "07";
+  version = "2023.06.1+524";
+  RSTUDIO_VERSION_MAJOR  = "2023";
+  RSTUDIO_VERSION_MINOR  = "06";
   RSTUDIO_VERSION_PATCH  = "1";
-  RSTUDIO_VERSION_SUFFIX = "+554";
+  RSTUDIO_VERSION_SUFFIX = "+524";
 
   src = fetchFromGitHub {
     owner = "rstudio";
     repo = "rstudio";
     rev = "v${version}";
-    sha256 = "0rmdqxizxqg2vgr3lv066cjmlpjrxjlgi0m97wbh6iyhkfm2rrj1";
+    sha256 = "8d3c4b75fe94bcf10e5f577bd8ac0f3fc5615fd852f8c31c4393f6b91e661aa6";
   };
 
   mathJaxSrc = fetchurl {
@@ -60,8 +60,8 @@ let
   rsconnectSrc = fetchFromGitHub {
     owner = "rstudio";
     repo = "rsconnect";
-    rev = "e287b586e7da03105de3faa8774c63f08984eb3c";
-    sha256 = "sha256-ULyWdSgGPSAwMt0t4QPuzeUE6Bo6IJh+5BMgW1bFN+Y=";
+    rev = "9ce427edf03b6d243a4074264dbc950242b0a295";
+    sha256 = "7dac1f1a95ba84f6ed07eccd8c7d912edd4099d8676cefdb7cc95ce4a7b46862";
   };
 
   panmirrorModules = mkYarnModules {

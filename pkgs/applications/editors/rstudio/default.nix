@@ -49,7 +49,7 @@ let
     owner = "rstudio";
     repo = "rstudio";
     rev = "v${version}";
-    sha256 = "1edde5dce566bb1794c2bbb4b8b4d003000232df83f6e24b2b92b975222be2cc";
+    sha256 = "";
   };
 
   mathJaxSrc = fetchurl {
@@ -60,8 +60,8 @@ let
   rsconnectSrc = fetchFromGitHub {
     owner = "rstudio";
     repo = "rsconnect";
-    rev = "9ce427edf03b6d243a4074264dbc950242b0a295";
-    sha256 = "7dac1f1a95ba84f6ed07eccd8c7d912edd4099d8676cefdb7cc95ce4a7b46862";
+    rev = "1dc159ae02792dcc63c00a4b2669d2e156020bbc";
+    sha256 = "";
   };
 
   panmirrorModules = mkYarnModules {

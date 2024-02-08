@@ -306,6 +306,7 @@ let
   packagesWithRDepends = {
     FactoMineR = [ self.car ];
     pander = [ self.codetools ];
+    AnthropMMD = [ self.cluster self.covr self.knitr self.rmarkdown self.testthat ];
   };
 
   packagesWithNativeBuildInputs = {

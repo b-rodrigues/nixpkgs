@@ -357,6 +357,7 @@ let
     jpeg = [ pkgs.libjpeg.dev ];
     jqr = [ pkgs.jq.dev ];
     KFKSDS = [ pkgs.gsl ];
+    KSgeneral = [ pkgs.fftw.dev pkgs.pkg-config ];
     kza = [ pkgs.fftw.dev ];
     lpsymphony = with pkgs; [ pkg-config gfortran gettext ];
     lwgeom = with pkgs; [ proj geos gdal ];

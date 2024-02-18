@@ -350,6 +350,7 @@ let
     haven = with pkgs; [ zlib.dev ];
     h5vc = [ pkgs.zlib.dev ];
     HiCseg = [ pkgs.gsl ];
+    Rhisat2 = [ pkgs.which ];
     imager = [ pkgs.xorg.libX11.dev ];
     iBMQ = [ pkgs.gsl ];
     igraph = with pkgs; [ gmp libxml2.dev ];

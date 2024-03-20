@@ -48,17 +48,17 @@ jobs:
 
       - name: Update R packages
         run: |
-          nix-shell r-daily.nix --run "Rscript -e pkgs/development/r-modules/generate-r-packages.R cran > pkgs/development/r-modules/cran-packages.nix.new"
-          mv cran-packages.nix.new cran-packages.nix
+          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R cran > cran-packages.nix.new"
+          cd pkgs/development/r-modules/ && mv cran-packages.nix.new cran-packages.nix
 
-          nix-shell r-daily.nix --run "Rscript -e pkgs/development/r-modules/generate-r-packages.R bioc > pkgs/development/r-modules/bioc-packages.nix.new"
-          mv bioc-packages.nix.new bioc-packages.nix
+          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R bioc > bioc-packages.nix.new"
+          cd pkgs/development/r-modules/ && mv bioc-packages.nix.new bioc-packages.nix
 
-          nix-shell r-daily.nix --run "Rscript -e pkgs/development/r-modules/generate-r-packages.R bioc-annotation > pkgs/development/r-modules/bioc-annotation-packages.nix.new"
-          mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
+          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
+          cd pkgs/development/r-modules/ && mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
 
-          nix-shell r-daily.nix --run "Rscript -e pkgs/development/r-modules/generate-r-packages.R bioc-experiment > pkgs/development/r-modules/bioc-experiment-packages.nix.new"
-          mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
+          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
+          cd pkgs/development/r-modules/ && mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
 
       - name: Pushing updates
         run: |

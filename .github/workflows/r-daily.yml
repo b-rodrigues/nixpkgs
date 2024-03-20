@@ -51,16 +51,16 @@ jobs:
 
       - name: Update R packages
         run: |
-          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R cran > cran-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R cran > cran-packages.nix.new"
           cd pkgs/development/r-modules/ && mv cran-packages.nix.new cran-packages.nix
 
-          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R bioc > bioc-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
           cd pkgs/development/r-modules/ && mv bioc-packages.nix.new bioc-packages.nix
 
-          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
           cd pkgs/development/r-modules/ && mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
 
-          cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
           cd pkgs/development/r-modules/ && mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
 
       - name: Pushing updates

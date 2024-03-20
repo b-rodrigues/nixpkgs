@@ -19,10 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # Fine-grained PAT with contents:write and workflows:write
-          # scopes
-          token: ${{ secrets.WORKFLOW_TOKEN }}
-
+ 
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
         with:

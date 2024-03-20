@@ -46,6 +46,9 @@ jobs:
           git fetch upstream
           git merge upstream/master
 
+      - name: list files
+        run: ls -la
+
       - name: Update R packages
         run: |
           cd pkgs/development/r-modules/ && nix-shell r-daily.nix --run "Rscript -e generate-r-packages.R cran > cran-packages.nix.new"

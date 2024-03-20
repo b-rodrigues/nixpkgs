@@ -3,9 +3,6 @@ name: r-daily
 on:
   schedule:
      - cron: 0 0 * * *
-  push:
-    branches:
-      - r-daily
 
 jobs:
   r-daily-update:
@@ -49,18 +46,17 @@ jobs:
 
       - name: Update R packages
         run: |
-          #nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R cran > cran-packages.nix.new"
-          #nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
-          #nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
-          #nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R cran > cran-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
+          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
 
       - name: Rename files
         run: |
           cd pkgs/development/r-modules/
-          #mv cran-packages.nix.new cran-packages.nix
-          #mv bioc-packages.nix.new bioc-packages.nix
-          #mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
-          touch bioc-experiment-packages.nix.new
+          mv cran-packages.nix.new cran-packages.nix
+          mv bioc-packages.nix.new bioc-packages.nix
+          mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
           mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
 
       - name: Pushing updates

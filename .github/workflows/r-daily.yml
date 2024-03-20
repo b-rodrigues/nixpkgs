@@ -8,7 +8,7 @@ on:
       - r-daily
 
 jobs:
-  targets:
+  r-daily-update:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -32,7 +32,14 @@ jobs:
           nix-build r-daily.nix
 
       - name: Synching fork
-        run: git remote add upstream https://github.com/nixos/nixpkgs && git fetch upstream && git checkout r-daily && git reset --hard upstream/master
+        run: |
+          git remote add upstream https://github.com/nixos/nixpkgs
+          git checkout r-daily
+          git fetch upstream
+          git reset --hard upstream/master
 
       - name: Pushing updates
-        run: git add . && git commit -m "daily update" && git push origin r-daily
+        run: |
+          git add .
+          git commit -m "daily update"
+          git push --force origin r-daily

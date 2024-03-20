@@ -32,4 +32,7 @@ jobs:
           nix-build r-daily.nix
 
       - name: Synching fork
-        run: gh repo sync b-rodrigues/nixpkgs --branch r-daily --force --source NixOS/nixpkgs
+        run: git remote add upstream https://github.com/nixos/nixpkgs && git fetch upstream && git checkout r-daily && git reset --hard upstream/master
+
+      - name: Pushing updates
+        run: git add . && git commit -m "daily update" && git push origin r-daily

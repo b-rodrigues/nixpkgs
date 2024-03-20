@@ -1,0 +1,35 @@
+name: r-daily
+
+on:
+  schedule:
+     - cron: 0 0 * * *
+  push:
+    branches:
+      - r-daily
+
+jobs:
+  targets:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+        with:
+          logger: pretty
+          log-directives: nix_installer=trace
+          backtrace: full
+
+      - name: Nix cache
+        uses: DeterminateSystems/magic-nix-cache-action@main
+
+      - name: Build development environment
+        run: |
+          nix-build r-daily.nix
+
+      - name: Synching fork
+        run: gh repo sync b-rodrigues/nixpkgs --branch r-daily --force --source NixOS/nixpkgs

@@ -84,6 +84,7 @@
 let
   python3Packages = python310Packages;
   python3 = python3Packages.python;
+  pyPkgsOpenusd = python3Packages.openusd.override { withOsl = false; };
 
   libdecor' = libdecor.overrideAttrs (old: {
     # Blender uses private APIs, need to patch to expose them
@@ -111,6 +112,11 @@ stdenv.mkDerivation (finalAttrs: {
     (fetchpatch {
       url = "https://projects.blender.org/blender/blender/commit/cf4365e555a759d5b3225bce77858374cb07faad.diff";
       hash = "sha256-Nypd04yFSHYa7RBa8kNmoApqJrU4qpaOle3tkj44d4g=";
+    })
+    (fetchpatch {
+      # https://projects.blender.org/blender/blender/issues/117145
+      url = "https://projects.blender.org/blender/blender/commit/eb99895c972b6c713294f68a34798aa51d36034a.patch";
+      hash = "sha256-95nG5mW408lhKJ2BppgaUwBMMeXeGyBqho6mCfB53GI=";
     })
   ] ++ lib.optional stdenv.isDarwin ./darwin.patch;
 
@@ -166,6 +172,7 @@ stdenv.mkDerivation (finalAttrs: {
       "-DWITH_PYTHON_INSTALL_REQUESTS=OFF"
       "-DWITH_SDL=OFF"
       "-DWITH_TBB=ON"
+      "-DWITH_USD=ON"
 
       # Blender supplies its own FindAlembic.cmake (incompatible with the Alembic-supplied config file)
       "-DALEMBIC_INCLUDE_DIR=${lib.getDev alembic}/include"
@@ -232,6 +239,7 @@ stdenv.mkDerivation (finalAttrs: {
       (opensubdiv.override { inherit cudaSupport; })
       potrace
       pugixml
+      pyPkgsOpenusd
       python3
       tbb
       zlib
@@ -287,6 +295,7 @@ stdenv.mkDerivation (finalAttrs: {
       ps.numpy
       ps.requests
       ps.zstandard
+      pyPkgsOpenusd
     ];
 
   blenderExecutable =

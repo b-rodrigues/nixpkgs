@@ -187,6 +187,14 @@ in stdenv.mkDerivation rec {
     substituteInPlace \
       src/runtime/src/native/libs/CMakeLists.txt \
       --replace-fail 'add_compile_options(-Weverything)' 'add_compile_options(-Wall)'
+
+    # strip native symbols in runtime
+    # see: https://github.com/dotnet/source-build/issues/2543
+    xmlstarlet ed \
+      --inplace \
+      -s //Project -t elem -n PropertyGroup \
+      -s \$prev -t elem -n KeepNativeSymbols -v false \
+      src/runtime/Directory.Build.props
   ''
   + lib.optionalString isLinux ''
     substituteInPlace \
@@ -310,6 +318,13 @@ in stdenv.mkDerivation rec {
 
     runHook postInstall
   '';
+
+  # dotnet cli is in the root, so we need to strip from there
+  # TODO: should we install in $out/share/dotnet?
+  stripDebugList = [ "." ];
+  # stripping dlls results in:
+  # Failed to load System.Private.CoreLib.dll (error code 0x8007000B)
+  stripExclude = [ "*.dll" ];
 
   passthru = {
     inherit releaseManifest buildRid targetRid;

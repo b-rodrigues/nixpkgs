@@ -1,11 +1,9 @@
 name: r-daily
 
 on:
-  schedule:
-     - cron: 0 0 * * *
   push:
     branches:
-      - r-daily
+      - r-daily-source
 
 jobs:
   r-daily-update:
@@ -64,6 +62,7 @@ jobs:
 
       - name: Pushing updates
         run: |
+          git checkout -b r-daily
           git add .
           git commit -m "daily update"
           git push --force origin r-daily

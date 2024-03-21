@@ -1,5 +1,5 @@
 let
- pkgs = import (fetchTarball "https://github.com/b-rodrigues/nixpkgs/archive/06b93631a20bc9c1e73d7b5c706af12ee01922aa.tar.gz") {};
+ pkgs = import (fetchTarball "https://github.com/b-rodrigues/nixpkgs/archive/2b54166ceca950629dba9bd0be09f93bc3ec6b4a.tar.gz") {};
  system_packages = builtins.attrValues {
   inherit (pkgs) git wget cacert glibcLocalesUtf8 nix R;
 };

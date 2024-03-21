@@ -3,6 +3,9 @@ name: r-daily
 on:
   schedule:
      - cron: 0 0 * * *
+  push:
+    branches:
+      - r-daily
 
 jobs:
   r-daily-update:

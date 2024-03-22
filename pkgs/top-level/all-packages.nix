@@ -4927,8 +4927,6 @@ with pkgs;
 
   csvs-to-sqlite = callPackage ../tools/misc/csvs-to-sqlite { };
 
-  cucumber = callPackage ../development/tools/cucumber { };
-
   cutemarked-ng = libsForQt5.callPackage ../applications/office/cutemarked-ng { };
 
   dab_lib = callPackage ../development/libraries/dab_lib { };
@@ -7275,11 +7273,9 @@ with pkgs;
 
   curlWithGnuTls = curl.override { gnutlsSupport = true; opensslSupport = false; };
 
-  curl-impersonate =
-    builtins.mapAttrs (_: pin-to-gcc12-if-gcc13)
-      (darwin.apple_sdk_11_0.callPackage ../tools/networking/curl-impersonate { });
-  curl-impersonate-ff = pin-to-gcc12-if-gcc13 curl-impersonate.curl-impersonate-ff;
-  curl-impersonate-chrome = pin-to-gcc12-if-gcc13 curl-impersonate.curl-impersonate-chrome;
+  curl-impersonate = darwin.apple_sdk_11_0.callPackage ../tools/networking/curl-impersonate { };
+  curl-impersonate-ff = curl-impersonate.curl-impersonate-ff;
+  curl-impersonate-chrome = curl-impersonate.curl-impersonate-chrome;
 
   curlie = callPackage ../tools/networking/curlie { };
 
@@ -10600,7 +10596,9 @@ with pkgs;
   lxcfs = callPackage ../os-specific/linux/lxcfs { };
 
   lxd = callPackage ../tools/admin/lxd/wrapper.nix { };
-  lxd-unwrapped = callPackage ../tools/admin/lxd { };
+  lxd-unwrapped = callPackage ../tools/admin/lxd {
+    buildGoModule = buildGo122Module;
+  };
 
   lxd-image-server = callPackage ../tools/virtualization/lxd-image-server { };
 
@@ -10894,7 +10892,7 @@ with pkgs;
   metasploit = callPackage ../tools/security/metasploit { };
 
   mhost = callPackage ../applications/networking/mhost {
-    inherit (darwin.apple_sdk.frameworks) Security;
+    inherit (darwin.apple_sdk.frameworks) Security SystemConfiguration;
   };
 
   ms-sys = callPackage ../tools/misc/ms-sys { };
@@ -11160,7 +11158,12 @@ with pkgs;
 
   numberstation = callPackage ../applications/misc/numberstation { };
 
-  nvchecker = with python3Packages; toPythonApplication nvchecker;
+  nvchecker = with python3Packages; toPythonApplication (
+    nvchecker.overridePythonAttrs (oldAttrs: {
+      propagatedBuildInputs = oldAttrs.propagatedBuildInputs
+        ++ lib.flatten (builtins.attrValues oldAttrs.optional-dependencies);
+    })
+  );
 
   nvfetcher = haskell.lib.compose.justStaticExecutables haskellPackages.nvfetcher;
 
@@ -14106,8 +14109,6 @@ with pkgs;
   typesense = callPackage ../servers/search/typesense { };
 
   typos = callPackage ../development/tools/typos { };
-
-  typstfmt = callPackage ../tools/typesetting/typstfmt { };
 
   typst-live = callPackage ../tools/typesetting/typst-live { };
 
@@ -17087,10 +17088,6 @@ with pkgs;
   };
 
   stalin = callPackage ../development/compilers/stalin { };
-
-  stanc = callPackage ../development/compilers/stanc {
-    ocamlPackages = ocaml-ng.ocamlPackages_4_14_janeStreet_0_15;
-  };
 
   metaBuildEnv = callPackage ../development/compilers/meta-environment/meta-build-env { };
 
@@ -20185,8 +20182,6 @@ with pkgs;
   ztags = callPackage ../development/tools/misc/ztags { };
 
   ### DEVELOPMENT / LIBRARIES
-
-  a52dec = callPackage ../development/libraries/a52dec { };
 
   aalib = callPackage ../development/libraries/aalib { };
 
@@ -27160,6 +27155,7 @@ with pkgs;
     armTrustedFirmwareQemu
     armTrustedFirmwareRK3328
     armTrustedFirmwareRK3399
+    armTrustedFirmwareRK3588
     armTrustedFirmwareS905
     ;
 
@@ -27687,9 +27683,7 @@ with pkgs;
 
   cryptodev = linuxPackages.cryptodev;
 
-  dpdk = callPackage ../os-specific/linux/dpdk {
-    kernel = null; # dpdk modules are in linuxPackages.dpdk.kmod
-  };
+  dpdk = callPackage ../os-specific/linux/dpdk { };
 
   keyutils = callPackage ../os-specific/linux/keyutils { };
 
@@ -28365,6 +28359,7 @@ with pkgs;
     ubootOlimexA64Olinuxino
     ubootOlimexA64Teres1
     ubootOrangePi3
+    ubootOrangePi5
     ubootOrangePiPc
     ubootOrangePiZeroPlus2H5
     ubootOrangePiZero
@@ -28385,6 +28380,7 @@ with pkgs;
     ubootRaspberryPi4_32bit
     ubootRaspberryPi4_64bit
     ubootRaspberryPiZero
+    ubootRock5ModelB
     ubootRock64
     ubootRock64v2
     ubootRockPi4
@@ -33983,9 +33979,9 @@ with pkgs;
 
   paprefs = callPackage ../applications/audio/paprefs { };
 
-  pantalaimon = python3Packages.callPackage ../applications/networking/instant-messengers/pantalaimon { };
+  pantalaimon = callPackage ../applications/networking/instant-messengers/pantalaimon { };
 
-  pantalaimon-headless = python3Packages.callPackage ../applications/networking/instant-messengers/pantalaimon {
+  pantalaimon-headless = callPackage ../applications/networking/instant-messengers/pantalaimon {
     enableDbusUi = false;
   };
 

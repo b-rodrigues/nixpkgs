@@ -42,7 +42,7 @@ jobs:
         run: |
           git remote add upstream https://github.com/nixos/nixpkgs
           git checkout r-daily-source
-          git pull origin r-daily
+          git pull --ff-only origin r-daily
           git fetch upstream
           git merge upstream/master
 

@@ -66,5 +66,5 @@ jobs:
         run: |
           git checkout -b r-daily
           git add .
-          git commit -m "daily update"
+          git commit -m "daily update" || echo "no updated R packages in this period"
           git push --force origin r-daily

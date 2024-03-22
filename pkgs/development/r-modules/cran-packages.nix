@@ -1406,7 +1406,7 @@ in with self; {
   DySS = derive2 { name="DySS"; version="1.0"; sha256="1aa67m224bhzzg089rhxwqgbmwwq5py8ikix8khwraz5cnjz2f83"; depends=[ggplot2 gridExtra Rcpp RcppArmadillo]; };
   Dykstra = derive2 { name="Dykstra"; version="1.0-0"; sha256="1rc1409ky0ysqr3ccq28yhbs94m6d0z2dfa66k4c7irxjvbagwz6"; depends=[]; };
   DynClust = derive2 { name="DynClust"; version="3.24"; sha256="0nbbzx0ixblpcbjxx0gp7082nz6nh5vc2l5nzdfq1mqzlq9jy2xn"; depends=[]; };
-  DynForest = derive2 { name="DynForest"; version="1.1.2"; sha256="1im9sb74swna27vazk366i4a61db7b0agaw499j9nh1a4pf4nsjl"; depends=[cmprsk DescTools doParallel doRNG foreach ggplot2 lcmm pbapply pec prodlim stringr survival zoo]; };
+  DynForest = derive2 { name="DynForest"; version="1.1.3"; sha256="0x78gbgzl4dad5g6w27cdfpngsykanv3lz3xffpqndd971wkzhiy"; depends=[cmprsk DescTools doParallel doRNG foreach ggplot2 lcmm pbapply pec prodlim stringr survival zoo]; };
   DynNom = derive2 { name="DynNom"; version="5.0.2"; sha256="1zs8chdw83qjsi5k1m9cvk48swqz3gadycmhk4prxmjzwcl5z4i1"; depends=[BBmisc compare dplyr ggplot2 magrittr plotly prediction rms shiny stargazer survival]; };
   DynTxRegime = derive2 { name="DynTxRegime"; version="4.15"; sha256="18hk5bc6bsdjdl4736sdk896zblyc8l3ipjii4x2jksngcjvszbb"; depends=[dfoptim kernlab modelObj rgenoud]; };
   DynaRankR = derive2 { name="DynaRankR"; version="1.1.0"; sha256="1fzicainh1dm016cglm2x6j1i2g5r71vgrj0dnsflbxc5v426sqm"; depends=[dplyr rlang]; };
@@ -2912,7 +2912,7 @@ in with self; {
   MBSGS = derive2 { name="MBSGS"; version="1.1.0"; sha256="1h5vhmpgrqza12j7ivhwgd5wyb7kkb8mjbxl5w756vyid8g03flz"; depends=[MASS MCMCpack mgcv mnormt truncnorm]; };
   MBSP = derive2 { name="MBSP"; version="4.0"; sha256="1rfjykm2363m67ycm9vsxnddcsmlqxg5gx8sfg9ma8alwnh0s3fb"; depends=[GIGrvg MCMCpack mvtnorm]; };
   MBmca = derive2 { name="MBmca"; version="1.0.1-3"; sha256="08ls1rc440jjmbwm6nx09xyr8nb8q6wwid0dyvb97fv4l85qwn19"; depends=[chipPCR robustbase]; };
-  MCARtest = derive2 { name="MCARtest"; version="1.2"; sha256="1q3242vdy91f623vnkw2pk7kalaadbxl06p0hyai2zq63vmxr93y"; depends=[copula Epi gtools highs lpSolve MASS Matrix missMethods misty norm pracma rcdd Rcpp Rcsdp Rdpack]; };
+  MCARtest = derive2 { name="MCARtest"; version="1.2.1"; sha256="0vcw8ysxkv2ajiv44cf6pf8dgn6bmjzs01fsdijs29ky9467alw5"; depends=[copula Epi gtools highs lpSolve MASS Matrix missMethods misty norm pracma rcdd Rcpp Rcsdp Rdpack]; };
   MCAvariants = derive2 { name="MCAvariants"; version="2.6.1"; sha256="0hsm60z1xkjda74f1ab3m5d2l9rv5r88ms7fi0bndrys6dd9fzgl"; depends=[ggplot2 ggrepel gridExtra plotly]; };
   MCBackscattering = derive2 { name="MCBackscattering"; version="0.1.1"; sha256="0vvcqjrh8psl480s4q2830rzm2bwy9mmvk9kipp72lzln51qnha6"; depends=[]; };
   MCDA = derive2 { name="MCDA"; version="0.1.0"; sha256="060mqk1cyxh2v68dr8533zr4k3wkz2f4k22400xgj40rwgj9a355"; depends=[combinat ggplot2 glpkAPI plyr RColorBrewer Rglpk triangle]; };
@@ -9551,7 +9551,7 @@ in with self; {
   ems = derive2 { name="ems"; version="1.3.11"; sha256="0xg4c6yhrnq5pfz94i1ys1bdqfz12h0wcs86fz4nm4pqfdbh41cc"; depends=[boot rms survival]; };
   emstreeR = derive2 { name="emstreeR"; version="3.1.2"; sha256="1l85pn8y463fn09cpm737kzal6k3ydiri38s90bhfw3i1gvzqggf"; depends=[ggplot2 mlpack scatterplot3d sf]; };
   emuR = derive2 { name="emuR"; version="2.5.0"; sha256="0mlcqi9lwqrjilc2nynrl7aqkbqixbdcwzw3rn7mgc8m7cb7s8pq"; depends=[base64enc cli DBI dplyr httpuv httr jsonlite mime purrr readr rlang RSQLite rstudioapi shiny stringr tibble tidyr uuid V8 wrassp]; };
-  emulator = derive2 { name="emulator"; version="1.2-21"; sha256="0iikf6yinkqcgdnxx6v5kzfllhq3ppl75ym48vlcbnvkwv0v4l4v"; depends=[mvtnorm]; };
+  emulator = derive2 { name="emulator"; version="1.2-24"; sha256="0sd45wjdb00iyj8n16kqxypisam7ibwvpcaxsi1z56yzlzp93p4i"; depends=[mvtnorm]; };
   encode = derive2 { name="encode"; version="0.3.6"; sha256="04zwclmqasbx54m77wqfr9jg4axhkkqnykaxv3if8lnr46fl3zyc"; depends=[]; };
   encryptedRmd = derive2 { name="encryptedRmd"; version="0.2.1"; sha256="0agd5lqrmdi50r9fl25njwsvg91nqsvj4h6c639vfhxx7p9y9nfk"; depends=[readr rmarkdown sodium]; };
   encryptr = derive2 { name="encryptr"; version="0.1.3"; sha256="01gsimhrb9c7k5d9h5dbvm4h9i7fc9vzi8wgqb5f191ki27fsw9w"; depends=[dplyr knitr openssl purrr readr rlang]; };

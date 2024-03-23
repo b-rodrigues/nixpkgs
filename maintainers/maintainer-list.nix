@@ -6227,6 +6227,12 @@
     githubId = 303897;
     name = "Fabián Heredia Montiel";
   };
+  fabianrig = {
+    email = "fabianrig@posteo.de";
+    github = "fabianrig";
+    githubId = 88741530;
+    name = "Fabian Rigoll";
+  };
   fadenb = {
     email = "tristan.helmich+nixos@gmail.com";
     github = "fadenb";
@@ -13723,6 +13729,12 @@
     githubId = 77314501;
     name = "Maurice Zhou";
   };
+  nealfennimore = {
+    email = "hi@neal.codes";
+    github = "nealfennimore";
+    githubId = 5731551;
+    name = "Neal Fennimore";
+  };
   Nebucatnetzer = {
     email = "andreas+nixpkgs@zweili.ch";
     github = "Nebucatnetzer";
@@ -16623,6 +16635,12 @@
     githubId = 641278;
     name = "Robert T. McGibbon";
   };
+  rmgpinto = {
+    email = "hessian_loom_0u@icloud.com";
+    github = "rmgpinto";
+    githubId = 24584;
+    name = "Ricardo Gândara Pinto";
+  };
   rnhmjoj = {
     email = "rnhmjoj@inventati.org";
     matrix = "@rnhmjoj:maxwell.ydns.eu";
@@ -19344,6 +19362,13 @@
     githubId = 42933;
     name = "Andrew Childs";
   };
+  thefossguy = {
+    name = "Pratham Patel";
+    email = "prathampatel@thefossguy.com";
+    matrix = "@thefossguy:matrix.org";
+    github = "thefossguy";
+    githubId = 44400303;
+  };
   thehedgeh0g = {
     name = "The Hedgehog";
     email = "hedgehog@mrhedgehog.xyz";
@@ -21331,6 +21356,12 @@
     email = "yanganto@gmail.com";
     github = "yanganto";
     githubId = 10803111;
+  };
+  yannickulrich = {
+    email = "yannick.ulrich@proton.me";
+    github = "yannickulrich";
+    githubId = 749922;
+    name = "Yannick Ulrich";
   };
   yannip = {
     email = "yPapandreou7@gmail.com";

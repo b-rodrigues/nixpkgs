@@ -1245,7 +1245,7 @@ in with self; {
   clst = derive2 { name="clst"; version="1.50.0"; sha256="0lbjjkcsrz6h2akr1022v0mv1ryywba57hg84yzdzmv389r0jj42"; depends=[lattice ROC]; };
   clstutils = derive2 { name="clstutils"; version="1.50.0"; sha256="0wl1s23hmj7v3247lry9kp124kajn69b0dm3qm9fr7imlyadn666"; depends=[ape clst lattice rjson RSQLite]; };
   clustComp = derive2 { name="clustComp"; version="1.30.0"; sha256="1jwx8k18qgyyadda89crc66b9sjq7yr2f0ym9p5s5cpc48dlyg55"; depends=[sm]; };
-  clusterExperiment = derive2 { name="clusterExperiment"; version="2.22.0"; sha256="1qnxrdpp75m342q4chwaig413l52giz1h7nd4p9y4b472dqx9hh4"; depends=[ape BiocGenerics BiocSingular cluster DelayedArray edgeR HDF5Array howmany kernlab limma locfdr Matrix matrixStats mbkmeans NMF phylobase pracma RColorBrewer Rcpp S4Vectors scales SingleCellExperiment stringr SummarizedExperiment zinbwave]; };
+  clusterExperiment = derive2 { name="clusterExperiment"; version="2.22.0"; sha256="1qnxrdpp75m342q4chwaig413l52giz1h7nd4p9y4b472dqx9hh4"; depends=[ape BiocGenerics BiocSingular cluster DelayedArray edgeR HDF5Array kernlab limma locfdr Matrix matrixStats mbkmeans NMF phylobase pracma RColorBrewer Rcpp S4Vectors scales SingleCellExperiment stringr SummarizedExperiment zinbwave]; };
   clusterProfiler = derive2 { name="clusterProfiler"; version="4.10.1"; sha256="1jwi9029dy7ga4hv75grib7wdaghslwh4qk5awhgw3192a0qcixf"; depends=[AnnotationDbi DOSE downloader dplyr enrichplot GO_db GOSemSim gson httr igraph magrittr plyr qvalue rlang tidyr yulab_utils]; };
   clusterSeq = derive2 { name="clusterSeq"; version="1.26.0"; sha256="0fl9ycd10rbghgxq7gnfwy9i3vcxndx8grhpvk46zlxb2spa5lvf"; depends=[baySeq BiocGenerics BiocParallel]; };
   clusterStab = derive2 { name="clusterStab"; version="1.74.0"; sha256="10xk9654zhan2ssbj5r147z4ic2jl29h5jnhc711w4fg8xrrgpa8"; depends=[Biobase]; };
@@ -1741,7 +1741,7 @@ in with self; {
   myvariant = derive2 { name="myvariant"; version="1.32.0"; sha256="0az7a7hg4xk0lrvnq3zk5zwyf8zdyby19xzwy73zzgqiaha0b245"; depends=[GenomeInfoDb Hmisc httr jsonlite magrittr plyr S4Vectors VariantAnnotation]; };
   mzID = derive2 { name="mzID"; version="1.40.0"; sha256="1rgkd9iv0lxj1zxh96sifwa312ivw5kl5jw82ma4fmapr4iqhzsh"; depends=[doParallel foreach iterators plyr ProtGenerics XML]; };
   mzR = derive2 { name="mzR"; version="2.36.0"; sha256="0z6ckp69syrdzhp6n4n399k2lar3w4n2d1ji2f90951c4ds6hkh8"; depends=[Biobase BiocGenerics ncdf4 ProtGenerics Rcpp Rhdf5lib]; };
-  nanotatoR = derive2 { name="nanotatoR"; version="1.18.0"; sha256="1nnh4g4b7k6mp922pr52sxlrh6wvfyx7jhckmwrd12l1yjq010pb"; depends=[AnnotationDbi curl dplyr GenomicRanges hash httr knitr openxlsx org_Hs_eg_db rentrez rlang stringr testthat tidyverse VarfromPDB XML XML2R]; };
+  nanotatoR = derive2 { name="nanotatoR"; version="1.18.0"; sha256="1nnh4g4b7k6mp922pr52sxlrh6wvfyx7jhckmwrd12l1yjq010pb"; depends=[AnnotationDbi curl dplyr GenomicRanges hash httr knitr openxlsx org_Hs_eg_db rentrez rlang stringr testthat tidyverse XML]; };
   ncGTW = derive2 { name="ncGTW"; version="1.16.0"; sha256="1dlfdzxkjy9yihd3acpr4ynj1s4387xihscx5qz0r463fcz6kr1y"; depends=[BiocParallel Rcpp xcms]; };
   ncRNAtools = derive2 { name="ncRNAtools"; version="1.12.0"; sha256="13skjmd3v0ysc4hj3lr3f3i07dy6gqswr44mh0289cs0x65s1xis"; depends=[GenomicRanges ggplot2 httr IRanges S4Vectors xml2]; };
   ncdfFlow = derive2 { name="ncdfFlow"; version="2.48.0"; sha256="0z9vgd8v69iq8gv23iiaxrk77j2aq8y2n5k8x9jmxphbm0cm19a0"; depends=[BH Biobase BiocGenerics cpp11 flowCore Rhdf5lib zlibbioc]; };
@@ -1914,7 +1914,7 @@ in with self; {
   rawrr = derive2 { name="rawrr"; version="1.10.2"; sha256="1wygx3qpsl518wgjhcp69r5bkcg7k30jafl9zzbd6m972mbc6pqh"; depends=[]; };
   rbsurv = derive2 { name="rbsurv"; version="2.60.0"; sha256="01ksmdhzj8ra2is2j9np1l4b96kxyrmbvnfzmmvc43n7fvbv9ach"; depends=[Biobase survival]; };
   rcellminer = derive2 { name="rcellminer"; version="2.24.0"; sha256="1h2x16b8ad27mmdhx8ary5l2wsgarfldi93ib3iv0iaj7ip2nvjw"; depends=[Biobase ggplot2 gplots rcellminerData shiny stringr]; };
-  rebook = derive2 { name="rebook"; version="1.12.0"; sha256="0ybd6klki4drb0kq45sf36vz2811cr9qmizi9vjf2j6ab7x3m0b4"; depends=[BiocStyle CodeDepends dir_expiry filelock knitr rmarkdown]; };
+  rebook = derive2 { name="rebook"; version="1.12.0"; sha256="0ybd6klki4drb0kq45sf36vz2811cr9qmizi9vjf2j6ab7x3m0b4"; depends=[BiocStyle dir_expiry filelock knitr rmarkdown]; };
   receptLoss = derive2 { name="receptLoss"; version="1.14.0"; sha256="0rdapj58cfxl7jv5bk4jradx6rzq7g3r3vv7p0zwvl0b16ixgcjc"; depends=[dplyr ggplot2 magrittr SummarizedExperiment tidyr]; };
   reconsi = derive2 { name="reconsi"; version="1.14.0"; sha256="1siwbbrlbqid8vwf0a4rx9y0h1w21lh4y51jm83dfspnhh2dvya9"; depends=[ggplot2 ks Matrix matrixStats phyloseq reshape2]; };
   recount = derive2 { name="recount"; version="1.28.0"; sha256="1nn2fr4ycr7ki9kf00g4lhz1g46lnd9jf813x2ss7ryfzkrkfq7g"; depends=[BiocParallel derfinder downloader GenomeInfoDb GenomicRanges GEOquery IRanges RCurl rentrez rtracklayer S4Vectors SummarizedExperiment]; };

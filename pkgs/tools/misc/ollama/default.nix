@@ -51,6 +51,11 @@ let
   rocmPath = buildEnv {
     name = "rocm-path";
     paths = [
+      rocmPackages.clr
+      rocmPackages.hipblas
+      rocmPackages.rocblas
+      rocmPackages.rocsolver
+      rocmPackages.rocsparse
       rocmPackages.rocm-device-libs
       rocmClang
     ];
@@ -160,7 +165,8 @@ goBuild ((lib.optionalAttrs enableRocm {
     # expose runtime libraries necessary to use the gpu
     mv "$out/bin/ollama" "$out/bin/.ollama-unwrapped"
     makeWrapper "$out/bin/.ollama-unwrapped" "$out/bin/ollama" \
-      --suffix LD_LIBRARY_PATH : '/run/opengl-driver/lib:${lib.makeLibraryPath runtimeLibs}'
+      --suffix LD_LIBRARY_PATH : '/run/opengl-driver/lib:${lib.makeLibraryPath runtimeLibs}' '' + lib.optionalString enableRocm ''\
+      --set-default HIP_PATH ${pkgs.rocmPackages.meta.rocm-hip-libraries}
   '';
 
   ldflags = [

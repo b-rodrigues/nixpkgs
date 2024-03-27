@@ -23,7 +23,7 @@ in with self; {
   BeadSorted_Saliva_EPIC = derive2 { name="BeadSorted.Saliva.EPIC"; version="1.10.0"; sha256="088c6ikr7cslpx8yx89d3y00zigy6c21qa1m3dlrynghh7z8xi8w"; depends=[ExperimentHub minfi]; };
   BioImageDbs = derive2 { name="BioImageDbs"; version="1.10.0"; sha256="1xgm9n01if7rb6lsgj4cg5dbjl8kq6zvkj4324vrwj1c1mdaa9nv"; depends=[animation AnnotationHub EBImage einsum ExperimentHub filesstrings magick magrittr markdown rmarkdown]; };
   BioPlex = derive2 { name="BioPlex"; version="1.8.0"; sha256="0wwsbv4kyi67favswb5jrcgjv6a02s8gvwc23918y0rlcmkx07m7"; depends=[BiocFileCache GenomeInfoDb GenomicRanges GEOquery graph SummarizedExperiment]; };
-  BloodCancerMultiOmics2017 = derive2 { name="BloodCancerMultiOmics2017"; version="1.22.0"; sha256="1ya62fx76ifnbdbws51nw544n12sk4a35qichfc54v0ffbz0n38c"; depends=[beeswarm Biobase DESeq2 devtools dplyr ggdendro ggplot2 glmnet gtable ipflasso RColorBrewer reshape2 scales SummarizedExperiment survival tibble]; };
+  BloodCancerMultiOmics2017 = derive2 { name="BloodCancerMultiOmics2017"; version="1.22.1"; sha256="1qnya2wivrhgxmcyvgklbrxj45303byvbqkbqz58my25a1rjmk89"; depends=[beeswarm Biobase DESeq2 devtools dplyr ggdendro ggplot2 glmnet gtable ipflasso RColorBrewer reshape2 scales SummarizedExperiment survival tibble]; };
   CCl4 = derive2 { name="CCl4"; version="1.40.0"; sha256="02fw0c7yy6vch31a726fpn163mi5zj13jvrpczqqshb2wz2qs58c"; depends=[Biobase limma]; };
   CLL = derive2 { name="CLL"; version="1.42.0"; sha256="10l2a562l6hx32sxmvy8z59shq87v770rrh2fhddnj06dpx6n6cf"; depends=[affy Biobase]; };
   CLLmethylation = derive2 { name="CLLmethylation"; version="1.22.0"; sha256="16k05g98j2zs8n827kvgishzcj0zcx12cwzvgznzjrwp56dl72xs"; depends=[ExperimentHub SummarizedExperiment]; };

@@ -1802,7 +1802,7 @@ in with self; {
   Fgmutils = derive2 { name="Fgmutils"; version="0.9.5"; sha256="05n8lvx3cs1ckliaj7ni2rbfcrdl7d0pzf9bkwlyd1779h684cxz"; depends=[data_table devEMF ggplot2 gridExtra plyr png sqldf stringr]; };
   FiRE = derive2 { name="FiRE"; version="1.0.1"; sha256="08xs4w7d3w4zrymq0sjpz34hmsd4lsd5989r660qdpg3ybpqx8lj"; depends=[BH Rcpp]; };
   FiSh = derive2 { name="FiSh"; version="1.1"; sha256="1fcs2y3diszypv7sr4vl75wizcxv0na0pqflmlrizs2w7kyw51p6"; depends=[fda_usc KernSmooth]; };
-  FielDHub = derive2 { name="FielDHub"; version="1.3.4"; sha256="08s9snwcvnhrhcqm4csl2pnsp3vxa5vmckmkjhhs4ima51d13f0y"; depends=[blocksdesign config desplot dplyr DT ggplot2 golem htmltools magrittr numbers plotly shiny shinyalert shinycssloaders shinyjqui shinyjs shinythemes turner viridis]; };
+  FielDHub = derive2 { name="FielDHub"; version="1.3.7"; sha256="1w0hwqah5h41423sc6ggcwcsxczwy0bs7mc2zy98g1fhsnk3ipfj"; depends=[blocksdesign config desplot dplyr DT ggplot2 golem htmltools numbers plotly shiny shinyalert shinycssloaders shinyjs shinythemes viridis]; };
   FieldSimR = derive2 { name="FieldSimR"; version="1.2.0"; sha256="1nqdbm93cicvfr757bg5r226swbsy6abg52z7n3jysrkqlicf278"; depends=[ggplot2 interp lattice matrixcalc mbend]; };
   FinAna = derive2 { name="FinAna"; version="0.1.2"; sha256="09svg5z52vv90ih85awgh6ns3pqi789qjm2wi1gb9hbg9v5g7pdv"; depends=[]; };
   FinCal = derive2 { name="FinCal"; version="0.6.3"; sha256="1clvnvhpf2krrf8flhmdxmys6ym3xw3v4v07kk1if4xb0dfk9wgy"; depends=[ggplot2 RCurl reshape2]; };
@@ -2056,7 +2056,7 @@ in with self; {
   GSM = derive2 { name="GSM"; version="1.3.2"; sha256="04xjs9w4gaszwzxmsr7657ry2ywa9pvpwpczpvinxi8vpj347jbb"; depends=[gtools]; };
   GSMX = derive2 { name="GSMX"; version="1.3"; sha256="1n1d7rixj14ari46snsmi48qfmy00ihmzvayk3hkrp2d2d0xi2gh"; depends=[MASS]; };
   GSNA = derive2 { name="GSNA"; version="0.1.4.2"; sha256="0id71ik7s1hl57nzy3qzrdszvy3a83gf3gx8xwdswy53r6yiijf2"; depends=[circlize dendextend dplyr DT ggplot2 igraph Matrix psych raster Rcpp stringi stringr tibble tidyr tmod withr]; };
-  GSODR = derive2 { name="GSODR"; version="3.1.10"; sha256="1fb9m9j0x4bv3pcnmndy25lliwagivw88nsm7j49rv3sbyhr439v"; depends=[countrycode curl data_table R_utils]; };
+  GSODR = derive2 { name="GSODR"; version="4.0.0"; sha256="1c8hsan8jsqz303pwd8bm4xy98qwfdj1nf96dybq0c6yg101fhvf"; depends=[countrycode curl data_table R_utils]; };
   GSSE = derive2 { name="GSSE"; version="0.1"; sha256="034mmxa6kjq5kgikhb5q75viagz5ck9irrjbxm26zq9099qxm13b"; depends=[Iso zoo]; };
   GSSTDA = derive2 { name="GSSTDA"; version="0.1.3"; sha256="17mrdp5gy21mzb1k9czzzpn7ybymwn0m8c2srwv7d124mp8i3qpz"; depends=[circlize cluster ComplexHeatmap devtools survival visNetwork]; };
   GSelection = derive2 { name="GSelection"; version="0.1.0"; sha256="052vh1haxlzbh3c5i24nrwphapik1y8ribmh6q4axd447ggc0ff9"; depends=[gdata penalized SAM]; };

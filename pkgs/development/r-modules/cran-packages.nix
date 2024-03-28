@@ -2273,6 +2273,7 @@ in with self; {
   HTRX = derive2 { name="HTRX"; version="1.2.4"; sha256="1ggmqz3a0r5cilpynjmr52hjk88vq83wk1akcg6hkn3bzrwgcgmd"; depends=[caret fastglm glmnet recipes tune]; };
   HTSCluster = derive2 { name="HTSCluster"; version="2.0.11"; sha256="0x9shhyla9bldkkh367gfdmf0k72l1ppixb8gzsa6nf8jx8qdpbp"; depends=[capushe edgeR plotrix]; };
   HTSSIP = derive2 { name="HTSSIP"; version="1.4.1"; sha256="1j2f6f3i4di4bvsk44gxz0narg45ld2rahfn23wpgni5bszy0vb3"; depends=[ape coenocliner DESeq2 dplyr ggplot2 igraph lazyeval magrittr phyloseq plyr stringr tidyr vegan]; };
+  HTSeed = derive2 { name="HTSeed"; version="0.1.0"; sha256="01h9lm2ljp67qfcl7vlh804r7q15arqx103jb9pvk2wx1c27qy3x"; depends=[dplyr]; };
   HTT = derive2 { name="HTT"; version="0.1.2"; sha256="0345ydb3rjdkj4zm6xr5y4kf6plvxfgbpwkjs81pls99mr208qwz"; depends=[ggplot2 ggraph igraph Rcpp]; };
   HUM = derive2 { name="HUM"; version="2.0"; sha256="06jx3f2zb52gjp05bq3zmgjkyiaa2j9v0biq23gg88gplpign6jw"; depends=[gtools Rcpp rgl]; };
   HVT = derive2 { name="HVT"; version="23.11.1"; sha256="0d7zffvphjb0x1756y8806r268zbmvqhm0f9ig3fmz28nj5bn7km"; depends=[cluster conf_design data_table deldir dplyr ggplot2 Hmisc magrittr MASS plyr polyclip purrr reshape2 scales sp splancs tidyr]; };
@@ -16373,6 +16374,7 @@ in with self; {
   randnet = derive2 { name="randnet"; version="0.7"; sha256="1zb2arx63avjlqjpbf37cvix080khkihh6bb0g1h2alv4lbaaaak"; depends=[AUC data_table entropy irlba Matrix mgcv nnls poweRlaw pracma RSpectra sparseFLMM]; };
   rando = derive2 { name="rando"; version="0.2.0"; sha256="085g48yzwapxxfmm5bvkz0v7pmjwmakb7nl128550ppgc16wxkgb"; depends=[dplyr glue rlang tibble]; };
   random = derive2 { name="random"; version="0.2.6"; sha256="0sdhagwjlhldb8hn6h4nd1sflzhwkapzybdlb8hzisy3w2ygjn9b"; depends=[curl]; };
+  random_cdisc_data = derive2 { name="random.cdisc.data"; version="0.3.15"; sha256="05hq7hvypc4nm72f879pjyf2iyvj9hgrr1gwjyvwj8by7pkyyw2y"; depends=[checkmate dplyr lifecycle lubridate magrittr rlang stringr tibble tidyr yaml]; };
   random_polychor_pa = derive2 { name="random.polychor.pa"; version="1.1.4-5"; sha256="1a8mnggdmyklxzqid81a88sx6v5jvhfnx5khvy21idsd8pp7pav2"; depends=[boot MASS mvtnorm nFactors psych sfsmisc]; };
   randomForest = derive2 { name="randomForest"; version="4.7-1.1"; sha256="1micz9794j7xmj755ln2692rzip8azndflxgdg6xn3j86issi7pm"; depends=[]; };
   randomForestExplainer = derive2 { name="randomForestExplainer"; version="0.10.1"; sha256="1ny8c3vn2zvdx12avwvlm4lp648jigkrkcvnhf5qmj8rh0w069v0"; depends=[data_table dplyr DT GGally ggplot2 ggrepel randomForest ranger reshape2 rmarkdown]; };

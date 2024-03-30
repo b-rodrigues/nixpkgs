@@ -16773,7 +16773,7 @@ in with self; {
   represtools = derive2 { name="represtools"; version="0.1.3"; sha256="00hnvzkkcl9d3k115i5l9gs0wah5d11amn7q62m1j158lkqlcfza"; depends=[whisker]; };
   reprex = derive2 { name="reprex"; version="2.1.0"; sha256="0ld90pkw2r7z115xdnyqk4p39vnxrc8jnn57sl4bkpg5frczw38a"; depends=[callr cli clipr fs glue knitr lifecycle rlang rmarkdown rstudioapi withr]; };
   reproducer = derive2 { name="reproducer"; version="0.5.3"; sha256="0nm8x1bwigbvkz7bbr313fmxb9ypk6dw2yl9g1cppdws2c6rq1mr"; depends=[dplyr GetoptLong ggplot2 gridExtra httr jsonlite lme4 MASS metafor nortest openxlsx readr reshape stringr tibble tidyr xtable]; };
-  reproducible = derive2 { name="reproducible"; version="2.0.10"; sha256="0q0wgbyr2gqjrxb1jwb6ysyqbgpsc0nq6501smqgrmhxfavb0m1d"; depends=[data_table digest filelock fpCompare fs lobstr]; };
+  reproducible = derive2 { name="reproducible"; version="2.0.11"; sha256="039xg7fra4h1kizjbnq05ym8zhcg3wswwfn4asa8f62s7nh0g72q"; depends=[data_table digest filelock fpCompare fs lobstr]; };
   reproj = derive2 { name="reproj"; version="0.4.3"; sha256="0bcg5bz2sl4d31iwr55nwr85p1jna9fpbcli26lf04dwznwmx0rl"; depends=[crsmeta PROJ proj4]; };
   repsd = derive2 { name="repsd"; version="1.0.1"; sha256="102rnc2g31aijhwsmad86k2wjcvbvzi51c2rp0wk711riq5v7cm1"; depends=[progress]; };
   repurrrsive = derive2 { name="repurrrsive"; version="1.1.0"; sha256="123hf7qhhs4jyjbmw4246zmhyngjq7r9ihgg3nxg594kja40khd9"; depends=[tibble]; };

@@ -13367,7 +13367,7 @@ in with self; {
   measurements = derive2 { name="measurements"; version="1.5.1"; sha256="061xjwsacsk8vblva4s09xdrvd7kfgxydnpgr7imigyny01c5bh9"; depends=[]; };
   measures = derive2 { name="measures"; version="0.3"; sha256="0325hhncg9fhq28cfl1hk6rhcmzzcngsmnkmbn9ri3b4hwqlafal"; depends=[]; };
   meboot = derive2 { name="meboot"; version="1.4-9.4"; sha256="0akap3dl6nsfvh2f6d96ij6dvbblyrdnbqqh23ay8ah0r51zx9fs"; depends=[dynlm hdrcde nlme tdigest]; };
-  meconetcomp = derive2 { name="meconetcomp"; version="0.4.1"; sha256="1nq65cb8hzm0wvlp2sm3xbl2s79n7l6fklww20xzyyx0z5z7f1j6"; depends=[dplyr ggplot2 ggpubr igraph magrittr microeco R6 reshape2]; };
+  meconetcomp = derive2 { name="meconetcomp"; version="0.5.0"; sha256="0fxgm8bhjs1vn1l0vb7jx7gvg3w4k0bwng66sfp87l5b0z2j082q"; depends=[dplyr ggplot2 ggpubr igraph magrittr microeco R6 reshape2]; };
   mecor = derive2 { name="mecor"; version="1.0.0"; sha256="0jcqf6d7x16hs0mrnkawlkl9idd2g5zb6l6mqdavkdx43fhk38j4"; depends=[lme4 lmerTest numDeriv]; };
   mecoturn = derive2 { name="mecoturn"; version="0.3.0"; sha256="1qr7p50wplg3nwvaz595nxfrf5b1dc8l4y13jx65r8kvksqrl07g"; depends=[betareg ggplot2 ggpubr glmmTMB GUniFrac lmerTest magrittr microeco R6]; };
   medExtractR = derive2 { name="medExtractR"; version="0.4.1"; sha256="0dn85yj61mz62bdxxvaxads6j9qf209sypmdvb9jx83c2sc7f4g6"; depends=[stringi stringr]; };
@@ -16482,7 +16482,7 @@ in with self; {
   rbibutils = derive2 { name="rbibutils"; version="2.2.16"; sha256="1brab8vzzf44d9rpp9k3r2ajvrs09cbwf4ak014iffzn8yx0yz4w"; depends=[]; };
   rbin = derive2 { name="rbin"; version="0.2.0"; sha256="18g6s4m0yc1bzrymk8km553kcwi4vj16b6mxw2lmv48z7243iq87"; depends=[data_table ggplot2]; };
   rbioacc = derive2 { name="rbioacc"; version="1.2.1"; sha256="0yz3mlkz6869rlg56m49bl5bq16gnmr69lznlvcsz7vmwli2ic4x"; depends=[BH GGally ggmcmc ggplot2 loo Rcpp RcppEigen RcppParallel rstan rstantools StanHeaders stringr zoo]; };
-  rbioapi = derive2 { name="rbioapi"; version="0.8.0"; sha256="0dxd58y0a5pd5zw3agd405xb6325z629n7lg9ps7hqc66jy59pba"; depends=[httr jsonlite]; };
+  rbioapi = derive2 { name="rbioapi"; version="0.8.1"; sha256="1ijmdqmmshqb3f6gv8rp6liz31cj00nmady28jdxadpxpp1bp34k"; depends=[httr jsonlite]; };
   rbiom = derive2 { name="rbiom"; version="1.0.3"; sha256="13nma1s3p4bzh8mvikrnmkqyyrx9axvxavq6fyk2w0j804w1qzcg"; depends=[magrittr openxlsx plyr R_utils Rcpp RcppParallel rjson rlang slam]; };
   rbiouml = derive2 { name="rbiouml"; version="1.11"; sha256="1g1q6xc8x8y71ji75c5fl35sxxss964xmhcqlriybb5zc38m1dh0"; depends=[RCurl RJSONIO]; };
   rbit = derive2 { name="rbit"; version="1.0.0"; sha256="09ywr711gv0vgfims2vfcxk3rnd0iadzlksil0q9159yarapfc59"; depends=[R6]; };
@@ -16561,7 +16561,7 @@ in with self; {
   rdpower = derive2 { name="rdpower"; version="2.2"; sha256="0v598jqka5skffbzb4knfmm5hfbg6gmwjgbclv774wrxxn62sj4z"; depends=[rdrobust]; };
   rdrobust = derive2 { name="rdrobust"; version="2.2"; sha256="1p9k8gd39090r5ml1sk30k3hvfns2v6laysbaswsn9i2ka70zj42"; depends=[ggplot2 MASS]; };
   rdryad = derive2 { name="rdryad"; version="1.0.0"; sha256="00f1qwsbwg5jggm5b83nhk1lxyw272rv2kg77bcwqvlf3074c3mz"; depends=[crul curl hoardr jsonlite mime tibble zip]; };
-  rdss = derive2 { name="rdss"; version="1.0.8"; sha256="0wzmiq53x5mid2lqvqgjgp8m7kz2wzlwkki1q561qmqbkkgk4ma8"; depends=[broom dataverse dplyr estimatr generics ggplot2 prediction purrr randomizr readr rlang tibble tidyr]; };
+  rdss = derive2 { name="rdss"; version="1.0.10"; sha256="16n6yp3srgdzb946rg6c6f8bwlf4153p2rw9abwmjb27iq4im0x2"; depends=[broom dataverse dplyr estimatr generics ggplot2 marginaleffects purrr randomizr readr rlang tibble tidyr]; };
   rdtLite = derive2 { name="rdtLite"; version="1.4"; sha256="0m2fxwz0h4rriw62g2hp20iw6ddbq5l8n80z9xgxk49n6pfm1ywj"; depends=[curl digest gtools jsonlite knitr provViz rlang rmarkdown sessioninfo stringi XML]; };
   rdwd = derive2 { name="rdwd"; version="1.8.0"; sha256="0lb9r2wcdyix3im460wvv2q7yni3yixl7z8py4nbzp7ah0dc7g1z"; depends=[berryFunctions pbapply]; };
   rdwplus = derive2 { name="rdwplus"; version="1.0.0"; sha256="0bcdpza4rbvfzn69zws5s2l32rs7m39a5h3zxyz4gszff3yn37fx"; depends=[rgrass sf stars stringr]; };

@@ -2290,7 +2290,7 @@ in with self; {
   Haplin = derive2 { name="Haplin"; version="7.3.1"; sha256="0vyykbq2f5w4h7nai8w8krpax8q6v2hx76rr6xqy938rza5rfm79"; depends=[ff MASS mgcv rlang]; };
   HaploCatcher = derive2 { name="HaploCatcher"; version="1.0.4"; sha256="182ihr45s2g452h054c6m8lgvj629spq1rd9vglzyy8ymg0l6w4j"; depends=[caret doParallel foreach ggplot2 knitr lattice patchwork randomForest]; };
   HaploSim = derive2 { name="HaploSim"; version="1.8.4.2"; sha256="15jawq5bxy2kjvl7bxqjr6p02ivhfrdzjmvjy1vp45jnaz6052v2"; depends=[]; };
-  HardyWeinberg = derive2 { name="HardyWeinberg"; version="1.7.5"; sha256="0b3szw090dsc3bkas2kvx787ww2i6zzg2qmdyivmqc8amx5arn6g"; depends=[mice nnet Rcpp Rsolnp]; };
+  HardyWeinberg = derive2 { name="HardyWeinberg"; version="1.7.7"; sha256="058bfb43i2vjrc2iy3q3izlijw2hh61rl47c9gcf327xlp9x6wnh"; depends=[mice nnet Rcpp Rsolnp shape]; };
   Harvest_Tree = derive2 { name="Harvest.Tree"; version="1.1"; sha256="021zmppy7p2iakaxirfjdb5jzakg1ijma9d25ly2ni0nx0p1mh6z"; depends=[rpart]; };
   Hassani_SACF = derive2 { name="Hassani.SACF"; version="2.0"; sha256="16sk1vn47gd5qaq31p8hnqa5p29nd230v4vbg2lsn2bhy9m32km3"; depends=[]; };
   Hassani_Silva = derive2 { name="Hassani.Silva"; version="1.0"; sha256="0rhi3mrlyxksgd34xxha73m0x6aqdf2xk8bshdnmm463rkzyy31l"; depends=[]; };
@@ -8399,7 +8399,7 @@ in with self; {
   cropgrowdays = derive2 { name="cropgrowdays"; version="0.2.1"; sha256="08k525882lm1x2igz1pk8g3kjiikcw68yqpic240l3lzq0x2wi3y"; depends=[dplyr httr lubridate purrr purrrlyr tibble]; };
   crops = derive2 { name="crops"; version="1.0.3"; sha256="0c1xvfnr4dh720x0i3f6nvmzgv8zbs7cvp8vfa341yb92pz4d6s0"; depends=[cowplot ggplot2 magrittr memoise Rdpack reshape sets tibble tidyverse]; };
   crossdes = derive2 { name="crossdes"; version="1.1-2"; sha256="0nc9jd83mm03qpd3r3hfmrf615yvvmib9kk9dh1hgz12pxhffray"; depends=[AlgDesign gtools]; };
-  crosshap = derive2 { name="crosshap"; version="1.2.2"; sha256="18r4m5fplpiabgwir78qfacj0781ykqxbyfkf5zxnzs7yr0d1gl2"; depends=[cli clustree data_table dbscan dplyr ggdist ggplot2 ggpp gridExtra gtable magrittr patchwork rlang scales tibble tidyr]; };
+  crosshap = derive2 { name="crosshap"; version="1.4.0"; sha256="1pr9kjad54427y8wljaghqbgin353llyfdwq278c8agqdzziwia0"; depends=[cli clustree data_table dbscan dplyr ggdist ggplot2 ggpp gridExtra gtable magrittr patchwork rlang scales tibble tidyr]; };
   crossmap = derive2 { name="crossmap"; version="0.4.0"; sha256="079ibxhm6877nfdqf88fhg9fjdn3vbs44jprrbhxmmbbd30nma4v"; depends=[backports cli dplyr generics lifecycle purrr rlang vctrs]; };
   crossnma = derive2 { name="crossnma"; version="1.2.0"; sha256="0ma07lvf56z1ya587lb4zv8rbhzi8crnsgvh3xsz80livx9cdvp5"; depends=[coda dplyr ggplot2 magrittr meta netmeta plyr rjags rlang tidyr]; };
   crossrun = derive2 { name="crossrun"; version="0.1.1"; sha256="1v2khjb77g63ls6s15z9hy81z4hyf89g58jxjl94jrkznq1c4fa4"; depends=[Rmpfr]; };
@@ -15370,7 +15370,7 @@ in with self; {
   phonenumber = derive2 { name="phonenumber"; version="0.2.3"; sha256="1gwh7cg1zyy197sj16wcxqyz2rx5z83cd4rwmf22ycpgvz2dwzw9"; depends=[]; };
   phonics = derive2 { name="phonics"; version="1.3.10"; sha256="1g4gmfz190xaj800gawl79fzhmgimssa31kqzw8a70scp5psz3fw"; depends=[BH data_table Rcpp]; };
   phosphoricons = derive2 { name="phosphoricons"; version="0.2.0"; sha256="0g9qqgxnzi773mjrrzvlykmvqb7dpi2gxc999arbxkdnbp1lv463"; depends=[htmltools]; };
-  photobiology = derive2 { name="photobiology"; version="0.11.1"; sha256="014192fikcb9q0bb0d8q7qxrw47kziwhfp2fbskh6n0npi2djvay"; depends=[dplyr lubridate plyr polynom rlang splus2R stringr tibble tidyr zoo]; };
+  photobiology = derive2 { name="photobiology"; version="0.11.2"; sha256="1vsxkcjng0cdjzg76k944cm01jfmq52vqqwvblsq6hr8klbcvp8k"; depends=[dplyr lubridate plyr polynom rlang splus2R stringr tibble tidyr zoo]; };
   photobiologyFilters = derive2 { name="photobiologyFilters"; version="0.6.0"; sha256="03shhykqwmmcpkzpy42kb3rn5n5kwahhjmbmspqnli5vfdvq4gim"; depends=[photobiology]; };
   photobiologyInOut = derive2 { name="photobiologyInOut"; version="0.4.27"; sha256="1z5vyh44mp4nfp3b2piv6fs8b6k963yw0zb2dgiz8qfgzsyfhnzr"; depends=[anytime colorSpec dplyr lubridate photobiology readr readxl stringr tibble tidyr tidyselect]; };
   photobiologyLEDs = derive2 { name="photobiologyLEDs"; version="0.5.2"; sha256="0868ja97wy0cj3nia31xp646yni0q56na87rz63pb33spkw36r6p"; depends=[photobiology]; };

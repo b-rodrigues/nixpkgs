@@ -72,7 +72,7 @@ let
     export XDG_DATA_DIRS=@out@/share:$XDG_DATA_DIRS
 
     # Start pantheon session. Keep in sync with upstream
-    exec ${gnome-session}/bin/gnome-session --builtin --session=pantheon "$@"
+    exec ${gnome-session}/bin/gnome-session --session=pantheon "$@"
   '';
 
   # Absolute path patched version of the upstream xsession
@@ -96,6 +96,9 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "elementary";
     repo = "session-settings";
+    # For systemd managed gnome-session support.
+    # https://github.com/NixOS/nixpkgs/issues/228946
+    # nixpkgs-update: no auto update
     rev = "3476c89bbb66564a72c6495ac0c61f8f9ed7a3ec";
     sha256 = "sha256-Z1qW6m0XDkB92ZZVKx98JOMXiBDbGpQ0cAXgWdqK27c=";
   };

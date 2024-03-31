@@ -1022,6 +1022,10 @@ let
       preConfigure = "patchShebangs configure";
     });
 
+    infercnv = old.infercnv.overrideAttrs (attrs: {
+       propagatedBuildInputs = attrs.propagatedBuildInputs ++ [ pkgs.python3 ];
+    });
+
     clustermq = old.clustermq.overrideAttrs (attrs: {
       preConfigure = "patchShebangs configure";
     });

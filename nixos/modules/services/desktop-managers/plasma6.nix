@@ -170,6 +170,7 @@ in {
         breeze.qt5
         plasma-integration.qt5
         pkgs.plasma5Packages.kwayland-integration
+        pkgs.plasma5Packages.kio
         kio-extras-kf5
       ]
       # Optional hardware support features
@@ -285,6 +286,7 @@ in {
     };
 
     programs.kdeconnect.package = kdePackages.kdeconnect-kde;
+    programs.partition-manager.package = kdePackages.partitionmanager;
 
     # FIXME: ugly hack. See #292632 for details.
     system.userActivationScripts.rebuildSycoca = activationScript;

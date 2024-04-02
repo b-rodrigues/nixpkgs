@@ -122,6 +122,7 @@
   - any:
     - changed-files:
       - any-glob-to-any-file:
+        - pkgs/development/tools/misc/luarocks/*
         - pkgs/development/interpreters/lua-5/**/*
         - pkgs/development/interpreters/luajit/**/*
         - pkgs/development/lua-modules/**/*
@@ -294,6 +295,21 @@
         - doc/languages-frameworks/texlive.section.md
         - pkgs/test/texlive/**
         - pkgs/tools/typesetting/tex/**/*
+
+"6.topic: testing":
+  - any:
+    - changed-files:
+      - any-glob-to-any-file:
+        # NOTE: Let's keep the scope limited to test frameworks that are
+        #       *developed in this repo*;
+        #       - not individual tests
+        #       - not packages for test frameworks
+        - nixos/lib/testing/**
+        - nixos/lib/test-driver/**
+        - nixos/tests/nixos-test-driver/**
+        - nixos/lib/testing-python.nix      # legacy
+        - nixos/tests/make-test-python.nix  # legacy
+        # lib/debug.nix has a test framework (runTests) but it's not the main focus
 
 "6.topic: vim":
   - any:

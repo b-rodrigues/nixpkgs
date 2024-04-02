@@ -23,7 +23,7 @@ let
 
 
   # configuration items have to be part of a subattrs
-  flattenKConf =  nested: mapAttrs (_: head) (zipAttrs (attrValues nested));
+  flattenKConf = nested: mapAttrs (name: values: if length values == 1 then head values else throw "duplicate kernel configuration option: ${name}") (zipAttrs (attrValues nested));
 
   whenPlatformHasEBPFJit =
     mkIf (stdenv.hostPlatform.isAarch32 ||
@@ -55,7 +55,7 @@ let
       DYNAMIC_DEBUG             = yes;
       DEBUG_STACK_USAGE         = no;
       RCU_TORTURE_TEST          = no;
-      SCHEDSTATS                = no;
+      SCHEDSTATS                = yes;
       DETECT_HUNG_TASK          = yes;
       CRASH_DUMP                = option no;
       # Easier debugging of NFS issues.
@@ -111,9 +111,6 @@ let
       # Enable CPU energy model for scheduling
       ENERGY_MODEL                     = whenAtLeast "5.0" yes;
 
-      # Enable scheduling stats collection
-      SCHEDSTATS                       = yes;
-
       # Enable thermal interface netlink API
       THERMAL_NETLINK                  = whenAtLeast "5.9" yes;
 
@@ -125,6 +122,10 @@ let
       # Default SATA link power management to "medium with device initiated PM"
       # for some extra power savings.
       SATA_MOBILE_LPM_POLICY           = whenAtLeast "5.18" (freeform "3");
+
+      # GPIO power management
+      POWER_RESET_GPIO                 = option yes;
+      POWER_RESET_GPIO_RESTART         = option yes;
     } // optionalAttrs (stdenv.hostPlatform.isx86) {
       INTEL_IDLE                       = yes;
       INTEL_RAPL                       = whenAtLeast "5.3" module;
@@ -176,7 +177,7 @@ let
       DAMON_VADDR = whenAtLeast "5.15" yes;
       DAMON_PADDR = whenAtLeast "5.16" yes;
       DAMON_SYSFS = whenAtLeast "5.18" yes;
-      DAMON_DBGFS = whenAtLeast "5.15" yes;
+      DAMON_DBGFS = whenBetween "5.15" "6.9" yes;
       DAMON_RECLAIM = whenAtLeast "5.16" yes;
       DAMON_LRU_SORT = whenAtLeast "6.0" yes;
       # Support recovering from memory failures on systems with ECC and MCA recovery.
@@ -395,8 +396,8 @@ let
       FRAMEBUFFER_CONSOLE_ROTATION = yes;
       FRAMEBUFFER_CONSOLE_DETECT_PRIMARY = yes;
       FB_GEODE            = mkIf (stdenv.hostPlatform.system == "i686-linux") yes;
-      # On 5.14 this conflicts with FB_SIMPLE.
-      DRM_SIMPLEDRM = whenAtLeast "5.14" no;
+      # Use simplefb on older kernels where we don't have simpledrm (enabled below)
+      FB_SIMPLE           = whenOlder "5.15" yes;
       DRM_FBDEV_EMULATION = yes;
     };
 
@@ -412,10 +413,18 @@ let
     video = let
       whenHasDevicePrivate = mkIf (!stdenv.isx86_32 && versionAtLeast version "5.1");
     in {
+      # compile in DRM so simpledrm can load before initrd if necessary
+      AGP = yes;
+      DRM = yes;
+
       DRM_LEGACY = whenOlder "6.8" no;
-      DRM_SIMPLEDRM = yes;
 
       NOUVEAU_LEGACY_CTX_SUPPORT = whenBetween "5.2" "6.3" no;
+
+      # Enable simpledrm and use it for generic framebuffer
+      # Technically added in 5.14, but adding more complex configuration is not worth it
+      DRM_SIMPLEDRM = whenAtLeast "5.15" yes;
+      SYSFB_SIMPLEFB = whenAtLeast "5.15" yes;
 
       # Allow specifying custom EDID on the kernel command line
       DRM_LOAD_EDID_FIRMWARE = yes;
@@ -454,6 +463,7 @@ let
       DRM_NOUVEAU_SVM = whenHasDevicePrivate yes;
 
       # Enable HDMI-CEC receiver support
+      RC_CORE = yes;
       MEDIA_CEC_RC = whenAtLeast "5.10" yes;
 
       # Enable CEC over DisplayPort
@@ -571,7 +581,7 @@ let
       EXT4_FS_SECURITY  = yes;
       EXT4_ENCRYPTION   = whenOlder "5.1" yes;
 
-      NTFS_FS            = whenAtLeast "5.15" no;
+      NTFS_FS            = whenBetween "5.15" "6.9" no;
       NTFS3_LZX_XPRESS   = whenAtLeast "5.15" yes;
       NTFS3_FS_POSIX_ACL = whenAtLeast "5.15" yes;
 
@@ -722,7 +732,8 @@ let
       X86_USER_SHADOW_STACK = whenAtLeast "6.6" yes;
 
       # Mitigate straight line speculation at the cost of some file size
-      SLS = whenAtLeast "5.17" yes;
+      SLS = whenBetween "5.17" "6.9" yes;
+      MITIGATION_SLS = whenAtLeast "6.9" yes;
     };
 
     microcode = {
@@ -890,7 +901,6 @@ let
       NOTIFIER_ERROR_INJECTION = option no;
       RCU_PERF_TEST            = whenOlder "5.9" no;
       RCU_SCALE_TEST           = whenAtLeast "5.10" no;
-      RCU_TORTURE_TEST         = option no;
       TEST_ASYNC_DRIVER_PROBE  = option no;
       WW_MUTEX_SELFTEST        = option no;
       XZ_DEC_TEST              = option no;
@@ -999,7 +1009,6 @@ let
       # Removed on 5.17 as it was unused
       # upstream: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=0a4ee518185e902758191d968600399f3bc2be31
       CLEANCACHE = whenOlder "5.17" (option yes);
-      CRASH_DUMP = option no;
 
       FSCACHE_STATS = yes;
 
@@ -1182,11 +1191,6 @@ let
       # Add debug interfaces for CMA
       CMA_DEBUGFS = yes;
       CMA_SYSFS = yes;
-
-      # Many ARM SBCs hand off a pre-configured framebuffer.
-      # This always can can be replaced by the actual native driver.
-      # Keeping it a built-in ensures it will be used if possible.
-      FB_SIMPLE = yes;
 
       # https://docs.kernel.org/arch/arm/mem_alignment.html
       # tldr:

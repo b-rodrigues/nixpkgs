@@ -98,6 +98,7 @@
   ./hardware/tuxedo-keyboard.nix
   ./hardware/ubertooth.nix
   ./hardware/uinput.nix
+  ./hardware/uni-sync.nix
   ./hardware/usb-modeswitch.nix
   ./hardware/usb-storage.nix
   ./hardware/video/amdgpu-pro.nix
@@ -193,6 +194,7 @@
   ./programs/gnome-disks.nix
   ./programs/gnome-terminal.nix
   ./programs/gnupg.nix
+  ./programs/goldwarden.nix
   ./programs/gpaste.nix
   ./programs/gphoto2.nix
   ./programs/haguichi.nix
@@ -203,6 +205,7 @@
   ./programs/i3lock.nix
   ./programs/iotop.nix
   ./programs/java.nix
+  ./programs/joycond-cemuhook.nix
   ./programs/k3b.nix
   ./programs/k40-whisperer.nix
   ./programs/kbdlight.nix
@@ -329,6 +332,7 @@
   ./security/systemd-confinement.nix
   ./security/tpm2.nix
   ./security/wrappers/default.nix
+  ./services/admin/docuum.nix
   ./services/admin/meshcentral.nix
   ./services/admin/oxidized.nix
   ./services/admin/pgadmin.nix
@@ -360,9 +364,6 @@
   ./services/audio/spotifyd.nix
   ./services/audio/squeezelite.nix
   ./services/audio/tts.nix
-  ./services/audio/wyoming/faster-whisper.nix
-  ./services/audio/wyoming/openwakeword.nix
-  ./services/audio/wyoming/piper.nix
   ./services/audio/ympd.nix
   ./services/backup/automysqlbackup.nix
   ./services/backup/bacula.nix
@@ -585,8 +586,11 @@
   ./services/home-automation/evcc.nix
   ./services/home-automation/govee2mqtt.nix
   ./services/home-automation/home-assistant.nix
-  ./services/home-automation/homeassistant-satellite.nix
   ./services/home-automation/matter-server.nix
+  ./services/home-automation/wyoming/faster-whisper.nix
+  ./services/home-automation/wyoming/openwakeword.nix
+  ./services/home-automation/wyoming/piper.nix
+  ./services/home-automation/wyoming/satellite.nix
   ./services/home-automation/zigbee2mqtt.nix
   ./services/home-automation/zwave-js.nix
   ./services/logging/SystemdJournal2Gelf.nix
@@ -710,6 +714,7 @@
   ./services/misc/homepage-dashboard.nix
   ./services/misc/ihaskell.nix
   ./services/misc/input-remapper.nix
+  ./services/misc/invidious-router.nix
   ./services/misc/irkerd.nix
   ./services/misc/jackett.nix
   ./services/misc/jellyfin.nix
@@ -726,6 +731,7 @@
   ./services/misc/mbpfan.nix
   ./services/misc/mediatomb.nix
   ./services/misc/metabase.nix
+  ./services/misc/mollysocket.nix
   ./services/misc/moonraker.nix
   ./services/misc/mqtt2influxdb.nix
   ./services/misc/n8n.nix
@@ -793,7 +799,9 @@
   ./services/misc/transfer-sh.nix
   ./services/misc/tzupdate.nix
   ./services/misc/uhub.nix
+  ./services/misc/wastebin.nix
   ./services/misc/weechat.nix
+  ./services/misc/workout-tracker.nix
   ./services/misc/xmr-stak.nix
   ./services/misc/xmrig.nix
   ./services/misc/zoneminder.nix
@@ -943,6 +951,7 @@
   ./services/networking/dnscrypt-wrapper.nix
   ./services/networking/dnsdist.nix
   ./services/networking/dnsmasq.nix
+  ./services/networking/dnsproxy.nix
   ./services/networking/doh-proxy-rust.nix
   ./services/networking/ejabberd.nix
   ./services/networking/envoy.nix
@@ -1018,6 +1027,8 @@
   ./services/networking/lxd-image-server.nix
   ./services/networking/magic-wormhole-mailbox-server.nix
   ./services/networking/matterbridge.nix
+  ./services/networking/microsocks.nix
+  ./services/networking/mihomo.nix
   ./services/networking/minidlna.nix
   ./services/networking/miniupnpd.nix
   ./services/networking/miredo.nix
@@ -1103,6 +1114,11 @@
   ./services/networking/rpcbind.nix
   ./services/networking/rxe.nix
   ./services/networking/sabnzbd.nix
+  ./services/networking/scion/scion.nix
+  ./services/networking/scion/scion-control.nix
+  ./services/networking/scion/scion-daemon.nix
+  ./services/networking/scion/scion-dispatcher.nix
+  ./services/networking/scion/scion-router.nix
   ./services/networking/seafile.nix
   ./services/networking/searx.nix
   ./services/networking/shadowsocks.nix
@@ -1271,6 +1287,7 @@
   ./services/video/go2rtc/default.nix
   ./services/video/frigate.nix
   ./services/video/mirakurun.nix
+  ./services/video/photonvision.nix
   ./services/video/replay-sorcery.nix
   ./services/video/mediamtx.nix
   ./services/video/unifi-video.nix
@@ -1292,6 +1309,7 @@
   ./services/web-apps/cloudlog.nix
   ./services/web-apps/code-server.nix
   ./services/web-apps/convos.nix
+  ./services/web-apps/davis.nix
   ./services/web-apps/dex.nix
   ./services/web-apps/discourse.nix
   ./services/web-apps/documize.nix

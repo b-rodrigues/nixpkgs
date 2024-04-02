@@ -324,7 +324,7 @@ in with self; {
   BGFD = derive2 { name="BGFD"; version="0.1"; sha256="0983v66bjp9v3jp7zbjyffda1gaf20nakqr94c32lvh9wmk0y1s9"; depends=[AdequacyModel]; };
   BGGE = derive2 { name="BGGE"; version="0.6.5"; sha256="1h76c40y45xhf2vp9g0q5j9lfwh16q9axbk5c9aqn4md008xr1j2"; depends=[]; };
   BGGM = derive2 { name="BGGM"; version="2.1.1"; sha256="1k83x9x48vls5ahvl4fm3salss4vf27z23iiylkj7fcrf4br6q27"; depends=[BFpack GGally ggplot2 ggridges MASS mvnfast network Rcpp RcppArmadillo RcppDist RcppProgress Rdpack reshape sna]; };
-  BGLR = derive2 { name="BGLR"; version="1.1.1"; sha256="1wv29crcq1iqrvak749vq08fjfr2ys82fkni07ipwl99hknsz5sr"; depends=[MASS truncnorm]; };
+  BGLR = derive2 { name="BGLR"; version="1.1.2"; sha256="0942navssynfjl6ka7ii1khv1y7idvl5sbcy6xd911mx74vnyirr"; depends=[MASS truncnorm]; };
   BGPhazard = derive2 { name="BGPhazard"; version="2.1.1"; sha256="0i2fsvb9pvvhl4xpp87cacg9934hsi060c6d1z3j5hylwyq2k5h9"; depends=[Brobdingnag dplyr ggplot2 ggthemes gridExtra magrittr progress purrr readr rlang stringr survival tibble tidyr]; };
   BGVAR = derive2 { name="BGVAR"; version="2.5.5"; sha256="10cj8lx63jdzmvw674zj4vawvf3mwvyjxjpqicy9ajm6r6gbccj8"; depends=[abind bayesm coda GIGrvg knitr MASS Matrix Rcpp RcppArmadillo RcppParallel RcppProgress readxl stochvol xts zoo]; };
   BGmisc = derive2 { name="BGmisc"; version="1.2.0"; sha256="1s3y76wbwln18xdn3fcb9kj8pa038c47ghvryvcxim93f0m339fh"; depends=[igraph kinship2 Matrix]; };
@@ -3729,7 +3729,7 @@ in with self; {
   PDQutils = derive2 { name="PDQutils"; version="0.1.6"; sha256="0mmfi0ifwbkjm0274sddpwkj27cvdkwngnka8vdmfm4b2nn7vgsp"; depends=[moments orthopolynom]; };
   PDSCE = derive2 { name="PDSCE"; version="1.2.1"; sha256="1amy4rnvlcfvpma8pqd6wli1j0pjjk49i1qywa43lzgdwgd5dl9v"; depends=[]; };
   PDShiny = derive2 { name="PDShiny"; version="0.1.0"; sha256="0s09sywvy83dj06rkxzyi06wfymwnfpgf3lpgjbb8ps8q3byd4vs"; depends=[shiny]; };
-  PDXpower = derive2 { name="PDXpower"; version="1.0.0"; sha256="144phmshjmm891f8sd8aagm7ql6hwb1i24mbpcfgak61q7anw2xy"; depends=[frailtypack ggplot2 ggpubr nlme survival]; };
+  PDXpower = derive2 { name="PDXpower"; version="1.0.1"; sha256="131r0g6a48239k9iqgmpfr6kghy31i0kix4w6ihxk5v61g9rw9d9"; depends=[frailtypack ggplot2 ggpubr nlme survival]; };
   PDtoolkit = derive2 { name="PDtoolkit"; version="1.2.0"; sha256="0g4s5fw0m128kq9dhaa4j76b2islhbbj9a6dqbmcmvlqla0bqm3k"; depends=[dplyr monobin rpart]; };
   PEACH = derive2 { name="PEACH"; version="0.1.1"; sha256="0ciq2cci35rv39pgpp7i30jxlmr85726kh07ww22ryq3bm04ylg8"; depends=[MASS metap mnormt]; };
   PEGroupTesting = derive2 { name="PEGroupTesting"; version="1.0"; sha256="1z863ard0cc2g8ibxnmxhiqhvs53r6b8gpnavnfchm9432ifcbwi"; depends=[]; };
@@ -12580,7 +12580,7 @@ in with self; {
   labeling = derive2 { name="labeling"; version="0.4.3"; sha256="1wk4wa1s8f17b5lf8vs5hxsmyadp2ccmyg4hamq7sdvlrk14yby6"; depends=[]; };
   labelled = derive2 { name="labelled"; version="2.12.0"; sha256="1f6jh1mrbwb3v1kc49pb65sf5ffqs0h9vizpig4r5rhhv4n3q17y"; depends=[dplyr haven lifecycle rlang stringr tidyr vctrs]; };
   labelmachine = derive2 { name="labelmachine"; version="1.0.0"; sha256="18l7argmf7d60cv34w7acjg4bk08nhi2cc5p61sx2zmq28v8nndr"; depends=[yaml]; };
-  labelr = derive2 { name="labelr"; version="0.1.3"; sha256="0naalvy2bzi0hqnzr1aqm3r4dkkz293n7f9djvy9i4y0qv5gl9pj"; depends=[]; };
+  labelr = derive2 { name="labelr"; version="0.1.4"; sha256="1qqxspn82xf9c7xgz1mr8g5fv2qan8n4s7bscvpfp0v2zxik35d1"; depends=[]; };
   lablaster = derive2 { name="lablaster"; version="1.0.1"; sha256="082gyfqaakl08d016p7sk1qapdkpry82sbxcsj46z50ls7sza3ab"; depends=[ggplot2 magrittr rlang scales smooth]; };
   labourR = derive2 { name="labourR"; version="1.0.0"; sha256="0skr8qr1m849l3gpcsn5bjxyjczlzzmsm2j6xcmxv33lf95qg6gi"; depends=[cld2 data_table magrittr stopwords stringdist]; };
   labsimplex = derive2 { name="labsimplex"; version="0.1.2"; sha256="07is5vi1y7qw9fjhhjf65z6fm77v26qgy908zhhp2581qqyn0b5s"; depends=[ggplot2 scatterplot3d]; };

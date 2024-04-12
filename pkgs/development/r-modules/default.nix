@@ -406,6 +406,7 @@ let
     RcppZiggurat = [ pkgs.gsl ];
     reprex = [ pkgs.which ];
     rgdal = with pkgs; [ proj.dev gdal ];
+    Rhisat2 = [ pkgs.which pkgs.hostname ];
     gdalcubes = [ pkgs.pkg-config ];
     rgeos = [ pkgs.geos ];
     Rglpk = [ pkgs.glpk ];
@@ -1156,6 +1157,18 @@ let
           --replace "path_env <- Sys.getenv(\"QUARTO_PATH\", unset = NA)" "path_env <- Sys.getenv(\"QUARTO_PATH\", unset = '${lib.getBin pkgs.quarto}/bin/quarto')"
       '';
     });
+
+    Rhisat2 = old.Rhisat2.overrideAttrs (attrs: {
+      postPatch = ''
+        substituteInPlace "src/Makefile" \
+          --replace-fail "BITS_FLAG = -m64" "BITS_FLAG =" \
+          --replace-fail "SSE_FLAG=-msse2" "SSE_FLAG="
+      '';
+      env = (attrs.env or { }) // {
+        NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -w";
+      };
+    });
+
 
     s2 = old.s2.overrideAttrs (attrs: {
       PKGCONFIG_CFLAGS = "-I${pkgs.openssl.dev}/include";

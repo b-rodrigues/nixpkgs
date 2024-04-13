@@ -1158,17 +1158,13 @@ let
       '';
     });
 
-    Rhisat2 = old.Rhisat2.overrideAttrs (attrs: {
-      postPatch = ''
-        substituteInPlace "src/Makefile" \
-          --replace-fail "BITS_FLAG = -m64" "BITS_FLAG =" \
-          --replace-fail "SSE_FLAG=-msse2" "SSE_FLAG="
-      '';
+    # backported patch from 1.9
+    Rhisat2= old.Rhisat2.overrideAttrs (attrs: {
+      patches = [ ./patches/Rhisat2.patch ];
       env = (attrs.env or { }) // {
         NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -w";
       };
     });
-
 
     s2 = old.s2.overrideAttrs (attrs: {
       PKGCONFIG_CFLAGS = "-I${pkgs.openssl.dev}/include";

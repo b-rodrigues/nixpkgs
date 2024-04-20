@@ -315,6 +315,7 @@ let
     adbcpostgresql = [ pkgs.postgresql ];
     adimpro = [ pkgs.imagemagick ];
     animation = [ pkgs.which ];
+    Apollonius = [ pkgs.pkg-config ];
     arrow = with pkgs; [ pkg-config cmake ] ++ lib.optionals stdenv.isDarwin [ intltool ];
     audio = [ pkgs.portaudio ];
     BayesSAE = [ pkgs.gsl ];
@@ -537,6 +538,7 @@ let
   packagesWithBuildInputs = {
     # sort -t '=' -k 2
     asciicast = with pkgs; [ xz.dev bzip2.dev zlib.dev icu.dev ];
+    Apollonius = with pkgs; [ mpfr gmp ];
     island = [ pkgs.gsl.dev ];
     svKomodo = [ pkgs.which ];
     ulid = [ pkgs.zlib.dev ];

@@ -973,6 +973,7 @@ let
     "data_table" # fails to rename shared library before check
     "coMethDMR" # tries to connect to ExperimentHub
     "multiMiR" # tries to connect to DB
+    "packagefinder"
     "snapcount" # tries to connect to snaptron.cs.jhu.edu
   ];
 

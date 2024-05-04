@@ -15,13 +15,13 @@ assert (!blas.isILP64) && (!lapack.isILP64);
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "R";
-  version = "4.3.3";
+  version = "4.4.0";
 
   src = let
     inherit (finalAttrs) pname version;
   in fetchurl {
     url = "https://cran.r-project.org/src/base/R-${lib.versions.major version}/${pname}-${version}.tar.gz";
-    sha256 = "sha256-gIUSMTk7hb84d+6eObKC51Dthkxexgy9aObhOfBSAzA=";
+    sha256 = "sha256-rOQSX5uXbSxTvMX8owx14w1O3EAVhIWcutsIDnK18DA=";
   };
 
   outputs = [ "out" "tex" ];
@@ -37,12 +37,6 @@ stdenv.mkDerivation (finalAttrs: {
 
   patches = [
     ./no-usr-local-search-paths.patch
-    (fetchpatch {
-      # https://hiddenlayer.com/research/r-bitrary-code-execution/
-      name = "CVE-2024-27322.patch";
-      url = "https://github.com/r-devel/r-svn/commit/f7c46500f455eb4edfc3656c3fa20af61b16abb7.patch";
-      hash = "sha256-CH2mMmie9E96JeGSC7UGm7/roUNhK5xv6HO53N2ixEI=";
-    })
   ];
 
   # Test of the examples for package 'tcltk' fails in Darwin sandbox. See:

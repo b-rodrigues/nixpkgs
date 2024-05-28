@@ -1169,6 +1169,14 @@ let
       patchPhase = "patchShebangs configure";
     });
 
+   prqlr = old.prqlr.overrideAttrs (attrs: {
+      preConfigure = ''
+        export CARGO_BUILD_TARGET="foo"
+      '';
+      nativeBuildInputs = [ pkgs.cargo ] ++ attrs.nativeBuildInputs;
+      postPatch = "patchShebangs configure";
+    });
+
     luajr = old.luajr.overrideAttrs (attrs: {
       hardeningDisable = [ "format" ];
       postPatch = "patchShebangs configure";

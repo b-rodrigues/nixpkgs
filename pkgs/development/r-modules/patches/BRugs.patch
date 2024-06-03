@@ -1,0 +1,15 @@
+diff --git a/src/Makevars.in b/src/Makevars.in
+index f0da007..dc6acc0 100644
+--- a/src/Makevars.in
++++ b/src/Makevars.in
+@@ -1,6 +1,6 @@
+-BUGS_LIBS = @OPENBUGS@/libOpenBUGS.@DYNLIBEXT@
+-BUGS_LDFLAGS = -m32 -Wl,-rpath=@OPENBUGS@ 
++BUGS_LIBS = ${lib.getLib pkgs.openbugs}/lib
++BUGS_LDFLAGS = -m32 -Wl,-rpath=@OPENBUGS@
+ 
+ BugsHelper:
+-	mkdir -p ../exec
++	mkdir -p {$out}/exec
+-	$(CC) $(CFLAGS) $(LDFLAGS) $(BUGS_LDFLAGS) BugsHelper.c $(BUGS_LIBS) -o ../exec/BugsHelper 
++	$(CC) $(CFLAGS) $(LDFLAGS) $(BUGS_LDFLAGS) BugsHelper.c $(BUGS_LIBS) -o {$out}/exec/BugsHelper

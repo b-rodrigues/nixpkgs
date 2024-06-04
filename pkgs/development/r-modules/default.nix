@@ -1585,6 +1585,62 @@ let
       buildInputs = [ cacert ] ++ attrs.buildInputs;
     });
 
+    covidsymptom = let
+      national_estimates = fetchurl {
+        url = "https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv";
+        hash = "sha256-oYe+oKvZXsSAU2YlrRHu/tyu2xehqcYplPPqP3PlJ+k=";
+      };
+
+      county_estimates = fetchurl {
+        url = "https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv";
+        hash = "sha256-qwBG89mA310JnEhmHOdSC3FA/Jnb7xzdo+np8x+DxN4=";
+      };
+
+      postcode_estimates = fetchurl {
+        url = "https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv";
+        hash = "sha256-M2+Q0QGimqJcbEOL/fHpZmcKhZPDIUG5oNrCw3c9L1w=";
+      };
+
+      csss_tests = fetchurl {
+        url = "https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/csss_tester.csv";
+        hash = "sha256-4yJsHS4sxwU8Lj9mSLkC+UFyKxvE7U3X0moeMaV138w=";
+      };
+
+      symptoms = fetchurl {
+        url = "https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/csss_symptom.csv";
+        hash = "sha256-s1fCALdApfP0XOOK5Rx3Qn9lXnFPVYfHaGSQ+YY9rQQ=";
+      };
+
+    in old.covidsymptom.overrideAttrs (attrs: {
+      patches = [ ./patches/covidsymptom.patch ];
+      postPatch = ''
+        substituteInPlace "R/covidsymptomdata.R" --replace-fail \
+          "nix-national_estimates" ${national_estimates}
+
+        substituteInPlace "R/covidsymptomdata.R" --replace-fail \
+          "nix-county_estimates" ${county_estimates}
+
+        substituteInPlace "R/covidsymptomdata.R" --replace-fail \
+          "nix-postcode_estimates" ${postcode_estimates}
+
+        substituteInPlace "R/covidsymptomdata.R" --replace-fail \
+          "nix-csss_tests" ${csss_tests}
+
+        substituteInPlace "R/covidsymptomdata.R" --replace-fail \
+          "nix-symptoms" ${symptoms}
+
+        substituteInPlace "R/get_latest_data.R" --replace-fail \
+          "nix-national_estimates" ${national_estimates}
+
+        substituteInPlace "R/get_latest_data.R" --replace-fail \
+          "nix-county_estimates" ${county_estimates}
+
+        substituteInPlace "R/get_latest_data.R" --replace-fail \
+          "nix-postcode_estimates" ${postcode_estimates}
+
+      '';
+    });
+
 
     immunotation = let
       MHC41alleleList = fetchurl {

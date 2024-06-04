@@ -1,0 +1,52 @@
+diff --git a/R/covidsymptomdata.R b/R/covidsymptomdata.R
+index e36569c..6f7196b 100644
+--- a/R/covidsymptomdata.R
++++ b/R/covidsymptomdata.R
+@@ -1,11 +1,11 @@
+ # data-raw/mydataset.R
+ # Data import and processing pipeline
+ 
+-national_estimates <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
+-county_estimates <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
+-postcode_estimates <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
+-csss_tests <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/csss_tester.csv")
+-symptoms <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/csss_symptom.csv")
++national_estimates <- utils::read.csv("nix-national_estimates")
++county_estimates <- utils::read.csv("nix-county_estimates")
++postcode_estimates <- utils::read.csv("nix-postcode_estimates")
++csss_tests <- utils::read.csv("nix-csss_tests")
++symptoms <- utils::read.csv("nix-symptoms")
+ 
+ # Data cleaning
+ national_estimates$Datum <- as.Date(national_estimates$Datum, format = "%Y-%m-%d")
+diff --git a/R/get_latest_data.R b/R/get_latest_data.R
+index 3a36e8e..9b25546 100644
+--- a/R/get_latest_data.R
++++ b/R/get_latest_data.R
+@@ -20,7 +20,7 @@ get_latest_data <- function(data_level = c("national", "county", "postcode")) {
+   data_level  <- match.arg(data_level)
+ 
+   if (data_level == "national") {
+-    level_national <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
++    level_national <- utils::read.csv("nix-national_estimates")
+     level_national$Datum <- as.Date(level_national$Datum, format = "%Y-%m-%d")
+ 
+     if (max(level_national$Datum) == max(covidsymptom::national_estimates$Datum)) {
+@@ -30,7 +30,7 @@ get_latest_data <- function(data_level = c("national", "county", "postcode")) {
+     }
+ 
+   } else if (data_level == "county") {
+-    level_county <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
++    level_county <- utils::read.csv("nix-county_estimates")
+     level_county$Datum <- as.Date(level_county$Datum, format = "%Y-%m-%d")
+     level_county$Lan <- stringi::stri_trans_general(str = level_county$Lan, id = "Latin-ASCII")
+ 
+@@ -41,7 +41,7 @@ get_latest_data <- function(data_level = c("national", "county", "postcode")) {
+     }
+ 
+   } else if (data_level == "postcode") {
+-    level_postcode <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
++    level_postcode <- utils::read.csv("nix-postcode_estimates")
+     level_postcode$Datum <- as.Date(level_postcode$Datum, format = "%Y-%m-%d")
+     level_postcode$Ort <- stringi::stri_trans_general(str = level_postcode$Ort, id = "Latin-ASCII")
+ 

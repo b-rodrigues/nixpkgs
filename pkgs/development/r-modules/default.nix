@@ -1803,10 +1803,13 @@ let
       '';
     });
 
+
     torch = old.torch.overrideAttrs (attrs: {
-      preConfigure = ''
-        patchShebangs configure
-      '';
+      src = pkgs.fetchzip {
+       url = "https://torch-cdn.mlverse.org/packages/cpu/0.13.0/src/contrib/torch_0.13.0_R_x86_64-pc-linux-gnu.tar.gz";
+       sha256 = "sha256-qUn8Rot6ME7iTvtNd52iw3ebqMnpLz7kwl/9GoPHD+I=";
+      };
+      name = "r-torch-cpu";
     });
 
     pak = old.pak.overrideAttrs (attrs: {

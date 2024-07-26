@@ -1806,10 +1806,10 @@ let
 
     torch = old.torch.overrideAttrs (attrs: {
       src = pkgs.fetchzip {
-       url = "https://torch-cdn.mlverse.org/packages/cpu/0.13.0/src/contrib/torch_0.13.0_R_x86_64-pc-linux-gnu.tar.gz";
-       sha256 = "sha256-qUn8Rot6ME7iTvtNd52iw3ebqMnpLz7kwl/9GoPHD+I=";
+       url = "https://torch-cdn.mlverse.org/packages/cu118/0.13.0/src/contrib/torch_0.13.0_R_x86_64-pc-linux-gnu.tar.gz";
+       sha256 = "sha256-a80sG89C0svZzkjNRpY0rTR2P1JdvKAbWDGIIghsv2Y=";
       };
-      name = "r-torch-cpu";
+      name = "r-torch-gpu";
     });
 
     pak = old.pak.overrideAttrs (attrs: {

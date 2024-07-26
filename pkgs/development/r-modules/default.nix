@@ -1803,7 +1803,6 @@ let
       '';
     });
 
-
     torch = old.torch.overrideAttrs (attrs: {
       src = pkgs.fetchzip {
        url = "https://torch-cdn.mlverse.org/packages/cu118/0.13.0/src/contrib/torch_0.13.0_R_x86_64-pc-linux-gnu.tar.gz";

@@ -1813,13 +1813,32 @@ let
     # The `accel` variable is set at the top of
     # this file
     torch = let
-       binary_sha = if pkgs.config.cudaSupport then
-         "sha256-a80sG89C0svZzkjNRpY0rTR2P1JdvKAbWDGIIghsv2Y=" else
-         "sha256-qUn8Rot6ME7iTvtNd52iw3ebqMnpLz7kwl/9GoPHD+I=";
-      in
+
+       binary_sha =
+         if pkgs.config.cudaSupport then
+          # Linux with CUDA
+          "sha256-a80sG89C0svZzkjNRpY0rTR2P1JdvKAbWDGIIghsv2Y=" else
+          # Linux CPU
+          "sha256-qUn8Rot6ME7iTvtNd52iw3ebqMnpLz7kwl/9GoPHD+I=" else
+         if builtins.currentSystem == "aarch64-darwin" then
+          # Darwin ARM
+          "" else
+          # Darwin Intel
+         if builtins.currentSystem == "x86_64-darwin" then
+          "";
+
+       binary_url =
+         if builtins.currentSystem == "x86_64-linux" then
+         # the `accel` variable is defined at the top of this file
+          "https://torch-cdn.mlverse.org/packages/${accel}/0.13.0/src/contrib/torch_0.13.0_R_x86_64-pc-linux-gnu.tar.gz" else
+         if builtins.currentSystem == "aarch64-darwin" then
+          "" else
+         if builtins.currentSystem == "x86_64-darwin" then
+          "";
+     in
      old.torch.overrideAttrs (attrs: {
       src = pkgs.fetchzip {
-       url = "https://torch-cdn.mlverse.org/packages/${accel}/0.13.0/src/contrib/torch_0.13.0_R_x86_64-pc-linux-gnu.tar.gz";
+       url = binary_url;
        sha256 = binary_sha;
       };
     });

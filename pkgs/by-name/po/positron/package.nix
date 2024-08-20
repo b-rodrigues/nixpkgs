@@ -1,70 +1,37 @@
 {
   stdenv,
+  cmake,
   lib,
-  autoPatchelfHook,
-  dpkg,
-  pkgs,
-  fetchurl
+  fetchFromGitHub,
+  quarto
 }:
 
-stdenv.mkDerivation rec {
-
+let
   pname = "positron";
-  version = "2024.08.0-31";
+  version = "2024.08.0-48";
   POSITRON_VERSION_MAJOR = lib.versions.major version;
   POSITRON_VERSION_MINOR = lib.versions.minor version;
   POSITRON_VERSION_PATCH = lib.versions.patch version;
-  POSITRON_VERSION_SUFFIX = "+" + toString (lib.tail (lib.splitString "+" version));
+  POSITRON_VERSION_SUFFIX = "-" + toString (lib.tail (lib.splitString "-" version));
 
-  outputs = [ "out" ];
-
-  src = fetchurl {
-    url = "https://github.com/posit-dev/positron/releases/download/${version}/Positron-${version}.deb";
-    hash = "sha256-8LckYQ++uv8fOHOBLaPAJfcJM0/Fc6YMKhAsXHFI/nY=";
+  src = fetchFromGitHub {
+    owner = "posit-dev";
+    repo = "positron";
+    rev = version;
+    hash = "sha256-nDbS14F1x/f+jxkQ+bKB2qQi/JXks6gK9zj7Coxchq0=";
   };
+in
+stdenv.mkDerivation {
 
-  buildInputs = with pkgs; [
-    stdenv.cc.cc
-    libkrb5 xorg.libX11
-    xorg.libxkbfile
-    xorg.libXcomposite
-    xorg.libXdamage
-    libxkbcommon
-    libdrm
-    gtk3
-    nss
-    mesa
-    alsa-lib
-    musl
-    expat
-    pango
-    cairo
-    openssl
-    xorg.libXfixes
-    xorg.libXrandr
+    inherit pname version src POSITRON_VERSION_MAJOR POSITRON_VERSION_MINOR POSITRON_VERSION_PATCH POSITRON_VERSION_SUFFIX;
+
+    nativeBuildInputs = [
+      cmake
+    ];
+
+  buildInputs = [
+   quarto
   ];
-
-  nativeBuildInputs = [ dpkg autoPatchelfHook ];
-
-  unpackPhase = "
-    runHook preUnpack
-
-    # The deb file contains a setuid binary, so 'dpkg -x' doesn't work here
-    dpkg-deb --fsys-tarfile $src | tar -x --no-same-permissions --no-same-owner
-    runHook postUnpack
-    ";
-
-  installPhase = "
-    runHook preInstall
-
-    mkdir -p $out $out/bin $out/share
-
-    mv usr/share/* $out/share/
-
-    ln -s $out/share/positron/bin/positron $out/bin/positron
-
-    runHook postInstall
-    ";
 
   meta = {
     description = "Positron, a next-generation data science IDE";

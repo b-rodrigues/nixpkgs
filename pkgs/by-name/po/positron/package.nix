@@ -1,5 +1,15 @@
 {
   stdenv,
+  yarn,
+  nodejs,
+  jq,
+  git,
+  gcc,
+  pkg-config,
+  libX11,
+  libxkbfile,
+  libsecret,
+  libkrb5,
   cmake,
   lib,
   fetchFromGitHub,
@@ -26,7 +36,17 @@ stdenv.mkDerivation {
     inherit pname version src POSITRON_VERSION_MAJOR POSITRON_VERSION_MINOR POSITRON_VERSION_PATCH POSITRON_VERSION_SUFFIX;
 
     nativeBuildInputs = [
+      yarn
+      nodejs
+      jq
+      git
+      gcc
       cmake
+      pkg-config
+      libX11
+      libxkbfile
+      libsecret
+      libkrb5
     ];
 
   buildInputs = [

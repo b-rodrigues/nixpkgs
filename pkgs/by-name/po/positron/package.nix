@@ -20,10 +20,10 @@
 
 let
   pname = "positron";
-  version = "2024.08.0-31";
+  version = "2024.08.0-83";
   src = fetchurl {
     url = "https://github.com/posit-dev/positron/releases/download/${version}/Positron-${version}.deb";
-    hash = "sha256-8LckYQ++uv8fOHOBLaPAJfcJM0/Fc6YMKhAsXHFI/nY=";
+    hash = "sha256-DJInbEzjNT1e6gPAmXAlQnMJAKUFC7eptcctR4XsgIg=";
   };
 
   positronBase = stdenv.mkDerivation {

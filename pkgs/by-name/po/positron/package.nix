@@ -117,19 +117,19 @@ let
   extensionsGitOfflineCache = fetchYarnDeps {
     name = "git";
     yarnLock = "${src}/extensions/git/yarn.lock";
-    hash = "";
+    hash = "sha256-EQ7DNfCOO+pEavfRMsrwO/UNHRUe6PWBV8qXrRhteLY=";
   };
 
   extensionsGithub-AuthenticationOfflineCache = fetchYarnDeps {
     name = "github-authentication";
     yarnLock = "${src}/extensions/github-authentication/yarn.lock";
-    hash = "";
+    hash = "sha256-PSG2gWPavZNzcGH1lwn1NLRRMqdjYi+c9NJYRfpmED8=";
   };
 
   extensionsGithubOfflineCache = fetchYarnDeps {
     name = "github";
     yarnLock = "${src}/extensions/github/yarn.lock";
-    hash = "";
+    hash = "sha256-cr6gx50Jo1khqamOooJ1ebjbYmMwtiiGFAwZQslKEUo=";
   };
 
   extensionsGruntOfflineCache = fetchYarnDeps {
@@ -147,7 +147,7 @@ let
   extensionsHtml-Language-FeaturesOfflineCache = fetchYarnDeps {
     name = "html-language-features";
     yarnLock = "${src}/extensions/html-language-features/yarn.lock";
-    hash = "";
+    hash = "sha256-gpxj3TRTA+WY4f3KZI3bTTiaNVPDZmVWyUurCfcykJU=";
   };
 
   extensionsIpynbOfflineCache = fetchYarnDeps {
@@ -165,19 +165,19 @@ let
   extensionsJson-Language-FeaturesOfflineCache = fetchYarnDeps {
     name = "json-language-features";
     yarnLock = "${src}/extensions/json-language-features/yarn.lock";
-    hash = "";
+    hash = "sha256-qFG0oDJ2yVLFKhoTj32ShZTOe4Vy2eVzMALPUqtzCoI=";
   };
 
   extensionsJupyter-AdapterOfflineCache = fetchYarnDeps {
     name = "jupyter-adapter";
     yarnLock = "${src}/extensions/jupyter-adapter/yarn.lock";
-    hash = "";
+    hash = "sha256-GxAwLHvCgygRLd/imc/1RXmUhenU+dKacDx7i+nzGE4=";
   };
 
   extensionsMarkdown-Language-FeaturesOfflineCache = fetchYarnDeps {
     name = "markdown-language-features";
     yarnLock = "${src}/extensions/markdown-language-features/yarn.lock";
-    hash = "";
+    hash = "sha256-+T/5ZHvAj5El79yYB6ZV5FgU4pt+pdhBojBMuC3dAAM=";
   };
 
   extensionsMarkdown-MathOfflineCache = fetchYarnDeps {
@@ -189,25 +189,25 @@ let
   extensionsMedia-PreviewOfflineCache = fetchYarnDeps {
     name = "media-preview";
     yarnLock = "${src}/extensions/media-preview/yarn.lock";
-    hash = "";
+    hash = "sha256-veltEtQhxmlkSjdAOq3hpDW5fyOX4fr2f6cuhJ57Be8=";
   };
 
   extensionsMerge-ConflictOfflineCache = fetchYarnDeps {
     name = "merge-conflict";
     yarnLock = "${src}/extensions/merge-conflict/yarn.lock";
-    hash = "";
+    hash = "sha256-trvbycZSceX2Xgk/Job5QRrY3bRf91Ridl/LbTitVfE=";
   };
 
   extensionsMicrosoft-AuthenticationOfflineCache = fetchYarnDeps {
     name = "microsoft-authentication";
     yarnLock = "${src}/extensions/microsoft-authentication/yarn.lock";
-    hash = "";
+    hash = "sha256-n1hva/HPnP3zRe6nlru8L8QiskzB+TQRfSkD4DQi7Wc=";
   };
 
   extensionsNotebook-RenderersOfflineCache = fetchYarnDeps {
     name = "notebook-renderers";
     yarnLock = "${src}/extensions/notebook-renderers/yarn.lock";
-    hash = "";
+    hash = "sha256-8v9Y0FKo0CQniL5jfrGf2rCXzH7XiJD+jxsnikODcdY=";
   };
 
   extensionsNPMOfflineCache = fetchYarnDeps {
@@ -219,95 +219,103 @@ let
   extensionsOpen-Remote-SSHOfflineCache = fetchYarnDeps {
     name = "open-remote-ssh";
     yarnLock = "${src}/extensions/open-remote-ssh/yarn.lock";
-    hash = "";
+    hash = "sha256-HtwqrPT0I4bdhTZVl9H3XKXEA7Vg42j3XjAnViU9ozI=";
   };
 
   extensionsPHP-Language-FeaturesOfflineCache = fetchYarnDeps {
     name = "php-language-features";
     yarnLock = "${src}/extensions/php-language-features/yarn.lock";
-    hash = "";
+    hash = "sha256-3of1BLvYkJ07wzDyxeLsC2E2I4PjWLjas/fvUQ0Yg+Q=";
   };
 
   extensionsPositron-Code-CellsOfflineCache = fetchYarnDeps {
     name = "positron-code-cells";
     yarnLock = "${src}/extensions/positron-code-cells/yarn.lock";
-    hash = "";
+    hash = "sha256-rJxShwASsFYO/Frcakm2YW/q6BYlCahPokQGCU2z6sc=";
   };
 
   extensionsPositron-ConnectionsOfflineCache = fetchYarnDeps {
     name = "positron-connections";
     yarnLock = "${src}/extensions/positron-connections/yarn.lock";
-    hash = "";
+    hash = "sha256-jE7VdlIlaSGr+bCmVRsJBuHPJOP9MwO27vD+8TS0ptI=";
   };
 
   extensionsPositron-JavascriptOfflineCache = fetchYarnDeps {
     name = "positron-javascript";
     yarnLock = "${src}/extensions/positron-javascript/yarn.lock";
-    hash = "";
+    hash = "sha256-5TCaesVBYfPfFq/FauTlhC+VlHFajV82QA1EgyWFKnQ=";
   };
 
   extensionsPositron-NotebooksOfflineCache = fetchYarnDeps {
     name = "positron-notebooks";
     yarnLock = "${src}/extensions/positron-notebooks/yarn.lock";
-    hash = "";
+    hash = "sha256-cpmHSJHwt6cD9wtXIm9g/ElgbwRx1Cd9fW1gfsG3FSk=";
   };
 
   extensionsPositron-ProxyOfflineCache = fetchYarnDeps {
     name = "positron-proxy";
     yarnLock = "${src}/extensions/positron-proxy/yarn.lock";
-    hash = "";
+    hash = "sha256-IB/xJjawCRMv+ORuaR65C3cXvhVRC1mylK4r7iIAgVI=";
   };
 
   extensionsPositron-PythonOfflineCache = fetchYarnDeps {
     name = "positron-python";
     yarnLock = "${src}/extensions/positron-python/yarn.lock";
-    hash = "";
+    hash = "sha256-pULU/yBQYjg3k8iPi5518yZATHtSkAK0ReRWlwsmDAE=";
   };
 
   extensionsPositron-ROfflineCache = fetchYarnDeps {
     name = "positron-r";
     yarnLock = "${src}/extensions/positron-r/yarn.lock";
-    hash = "";
+    hash = "sha256-FTfB0WagcI4S9q8imyKxTzgmlMs7mAXTiIdUA0bn3yk=";
   };
 
   extensionsPositron-ZedOfflineCache = fetchYarnDeps {
+    name = "positron-zed";
     yarnLock = "${src}/extensions/positron-zed/yarn.lock";
-    hash = "";
+    hash = "sha256-cpmHSJHwt6cD9wtXIm9g/ElgbwRx1Cd9fW1gfsG3FSk=";
   };
 
   extensionsReferences-ViewOfflineCache = fetchYarnDeps {
+    name = "references-view";
     yarnLock = "${src}/extensions/references-view/yarn.lock";
     hash = "sha256-be/kKump7AGDesUlY6Sk5XY2eDF2vK1bfe0IpFDzBx8=";
   };
 
   extensionsSimple-BrowserOfflineCache = fetchYarnDeps {
+    name = "simple-browser";
     yarnLock = "${src}/extensions/simple-browser/yarn.lock";
-    hash = "";
+    hash = "sha256-zVUsF+nT4Q34fQ7sRRemAkxnTtd0h9nnZOmtDrm5MTY=";
   };
 
   extensionsTunnel-ForwardingOfflineCache = fetchYarnDeps {
+    name = "tunnel-forwarding";
     yarnLock = "${src}/extensions/tunnel-forwarding/yarn.lock";
-    hash = "";
+    hash = "sha256-be/kKump7AGDesUlY6Sk5XY2eDF2vK1bfe0IpFDzBx8=";
   };
 
   extensionsTypescript-Language-FeaturesOfflineCache = fetchYarnDeps {
+    name = "typescript-language-features";
     yarnLock = "${src}/extensions/typescript-language-features/yarn.lock";
-    hash = "";
+    hash = "sha256-tQqgIuksK57T48BBGo0zRZzAFOuUppnXefvV5AAAoPQ=";
   };
 
   extensionsVscode-Api-TestsOfflineCache = fetchYarnDeps {
+    name = "Vscode-Api-Tests";
     yarnLock = "${src}/extensions/vscode-api-tests/yarn.lock";
-    hash = "";
+    hash = "sha256-txQn1EisU2ta3bMVkpbqB5eqW7DYYp9r/FqfLvstVWc=";
   };
 
   extensionsVscode-Colorize-TestsOfflineCache = fetchYarnDeps {
+    name = "Vscode-Colorize-Tests";
     yarnLock = "${src}/extensions/vscode-colorize-tests/yarn.lock";
-    hash = "";
+    hash = "sha256-2a0rQfIV815m6wYTXFBfcQPy3cGBL7MLqhbw3Phr0iw=";
   };
 
   extensionsVscode-Test-ResolverOfflineCache = fetchYarnDeps {
+    name = "Vscode-Test-Resolver";
     yarnLock = "${src}/extensions/vscode-test-resolver/yarn.lock";
-    hash = "";
+    hash = "sha256-be/kKump7AGDesUlY6Sk5XY2eDF2vK1bfe0IpFDzBx8=";
   };
 in
 stdenv.mkDerivation {
@@ -348,7 +356,9 @@ stdenv.mkDerivation {
 
     configureDependencies () {
       yarn config --offline set yarn-offline-mirror $1
+      echo "!!!!!!!!!!!!!!!!!!!!"
       echo "doing $2"
+      echo "!!!!!!!!!!!!!!!!!!!!"
       fixup-yarn-lock "$2/yarn.lock"
       yarn install --offline --cwd "$2" --frozen-lockfile --ignore-platform --ignore-scripts --no-progress --non-interactive
 

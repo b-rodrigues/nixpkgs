@@ -49,6 +49,12 @@ stdenv.mkDerivation (finalAttrs: {
     "-include cstdint"
   ];
 
+  postPatch = ''
+    # These should be proper Requires, using the header needs their headers
+    substituteInPlace proj.pc.in \
+      --replace 'Requires.private' 'Requires'
+  '';
+
   preCheck =
     let
       libPathEnvVar = if stdenv.isDarwin then "DYLD_LIBRARY_PATH" else "LD_LIBRARY_PATH";

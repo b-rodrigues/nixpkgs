@@ -47,6 +47,10 @@ stdenv.mkDerivation (finalAttrs: {
 
   postPatch = ''
     mv VERSION VERSION.txt
+
+    # These should be proper Requires, using the header needs their headers
+    substituteInPlace libtiff-4.pc.in \
+      --replace-fail 'Requires.private' 'Requires'
   '';
 
   outputs = [ "bin" "dev" "dev_private" "out" "man" "doc" ];

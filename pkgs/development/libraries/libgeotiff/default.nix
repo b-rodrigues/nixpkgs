@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
 
   postPatch = ''
     # These should be proper Requires, using the header needs their headers
-    substituteInPlace libgeotiff/libgeotiff.pc.in \
+    substituteInPlace libgeotiff.pc.in \
       --replace 'Requires.private' 'Requires'
   '';
 

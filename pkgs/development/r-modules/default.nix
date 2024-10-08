@@ -1137,6 +1137,10 @@ let
       preConfigure = "patchShebangs configure";
     });
 
+    sf = old.sf.overrideAttrs (attrs: {
+      preConfigure = "patchShebangs configure";
+    });
+
     clustermq = old.clustermq.overrideAttrs (attrs: {
       preConfigure = "patchShebangs configure";
     });

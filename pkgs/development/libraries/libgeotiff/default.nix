@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
   postPatch = ''
     # These should be proper Requires, using the header needs their headers
     substituteInPlace libgeotiff.pc.in \
-      --replace 'Requires.private' 'Requires'
+      --replace-fail 'Requires.private' 'Requires'
   '';
 
   #hardeningDisable = [ "format" ];

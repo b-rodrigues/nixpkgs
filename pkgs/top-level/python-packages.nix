@@ -9222,6 +9222,8 @@ self: super: with self; {
 
   ocifs = callPackage ../development/python-modules/ocifs { };
 
+  octopize_avatar = callPackage ../development/python-modules/octopize_avatar { };
+
   ocrmypdf = callPackage ../development/python-modules/ocrmypdf {
     tesseract = pkgs.tesseract5;
   };

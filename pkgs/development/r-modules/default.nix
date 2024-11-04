@@ -1106,6 +1106,12 @@ let
       preConfigure = "patchShebangs configure";
     });
 
+    rlibkriging = old.rlibkriging.overrideAttrs (attrs: {
+      preConfigure = "patchShebangs configure";
+      nativeBuildInputs = with pkgs; [ cmake hdf5.dev which ] ++ attrs.nativeBuildInputs;
+      patches = [ ./patches/rlibkriging.patch ];
+    });
+
     clustermq = old.clustermq.overrideAttrs (attrs: {
       preConfigure = "patchShebangs configure";
     });

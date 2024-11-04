@@ -360,6 +360,7 @@ let
     chebpol = [ pkgs.fftw.dev ];
     ChemmineOB = [ pkgs.pkg-config ];
     interpolation = [ pkgs.pkg-config ];
+    vol2bird = [ pkgs.pkg-config ];
     clarabel = [ pkgs.cargo ];
     curl = [ pkgs.curl.dev ];
     CytoML = [ pkgs.libxml2.dev ];
@@ -744,6 +745,7 @@ let
     RoBSA = [ pkgs.jags ];
     pexm = [ pkgs.jags ];
     rGEDI = with pkgs; [ libgeotiff.dev libaec zlib.dev hdf5.dev ];
+    vol2bird = with pkgs; [ proj.dev gsl.dev hdf5 ];
     rawrr = [ pkgs.mono ];
     HDF5Array = [ pkgs.zlib.dev ];
     FLAMES = with pkgs; [ zlib.dev bzip2.dev xz.dev ];
@@ -1104,6 +1106,13 @@ let
 
     rzmq = old.rzmq.overrideAttrs (attrs: {
       preConfigure = "patchShebangs configure";
+    });
+
+    vol2birdR = old.vol2birdR.overrideAttrs (attrs: {
+      preConfigure = "patchShebangs configure";
+      configureFlags = [
+        "--with-hdf5=${pkgs.hdf5.dev}"
+      ];
     });
 
     clustermq = old.clustermq.overrideAttrs (attrs: {

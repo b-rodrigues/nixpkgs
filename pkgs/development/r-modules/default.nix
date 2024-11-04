@@ -1048,6 +1048,22 @@ let
       ];
     });
 
+    netboost =  let
+      mcupgma = stdenv.mkDerivation {
+        name = "mcupgma";
+        src = pkgs.fetchgit {
+          url = "https://git.bioconductor.org/packages/netboost";
+          rev = "2cb56d4a7ef8b420fe7aa39ada372d2887c54a02";
+          sha256 = "sha256-1gVeEIKVnBDvBbz87SRWyY/UkV1Zf/z4iy3ECKI9/9Q=";
+          };
+        sourceRoot = "${src}/src/mcupgma";
+        nativeBuildInputs = [ pkgs.perl ];
+      };
+      in
+      old.netboost.overrideAttrs (attrs: {
+        propagatedBuildInputs = [ mcupgma ];
+    });
+
     timeless = old.timeless.overrideAttrs (attrs: {
       cargoDeps = pkgs.rustPlatform.fetchCargoTarball {
         src = attrs.src;

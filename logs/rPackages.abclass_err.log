@@ -1,0 +1,131 @@
+these 2 derivations will be built:
+  /nix/store/qll82632kly747yp2y2fi9yjiw63i1cj-r-RcppArmadillo-14.0.0-1.drv
+  /nix/store/zniqn54am8j3a421xsdyyaf7gd505sq9-r-abclass-0.4.0.drv
+building '/nix/store/qll82632kly747yp2y2fi9yjiw63i1cj-r-RcppArmadillo-14.0.0-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/afg1j1w5vakd7h9wdmiyygdwhkbyys3b-RcppArmadillo_14.0.0-1.tar.gz
+source root is RcppArmadillo
+setting SOURCE_DATE_EPOCH to timestamp 1720417219 of file RcppArmadillo/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#! /bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RcppArmadillo’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -E
+checking whether the compiler supports GNU C++... (cached) yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... (cached) yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 option to enable C++11 features... (cached) none needed
+checking whether we have a suitable tempdir... /private/tmp/nix-build-r-RcppArmadillo-14.0.0-1.drv-0
+checking whether R CMD SHLIB can already compile programs using OpenMP... no
+checking whether g++ version is sufficient... almost
+configure: WARNING: Compiler self-identifies as being compliant with GNUC extensions but is not g++.
+checking for macOS... found
+checking for macOS Apple compiler... not found
+checking for clang compiler... found
+checking for OpenMP compatible version of clang... not found
+configure: WARNING: OpenMP unavailable and turned off.
+checking LAPACK_LIBS... system LAPACK found
+configure: creating ./config.status
+config.status: creating inst/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h
+config.status: creating src/Makevars
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppArmadillo.cpp -o RcppArmadillo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c fastLm.cpp -o fastLm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppArmadillo.so RcppArmadillo.o RcppExports.o fastLm.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/00LOCK-RcppArmadillo/00new/RcppArmadillo/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppArmadillo)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppArmadillo-14.0.0-1.drv-0/ in /nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1...
+patching script interpreter paths in /nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1
+rewriting symlink /nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/nix-support/propagated-user-env-packages to be relative to /nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1
+building '/nix/store/zniqn54am8j3a421xsdyyaf7gd505sq9-r-abclass-0.4.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4iiinmfsd4g22j7aiwgm9gw0im4bzvwl-abclass_0.4.0.tar.gz
+source root is abclass
+setting SOURCE_DATE_EPOCH to timestamp 1663475764 of file abclass/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘abclass’ ...
+** package ‘abclass’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c boost_group_lasso.cpp -o boost_group_lasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c boost_group_mcp.cpp -o boost_group_mcp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c boost_group_scad.cpp -o boost_group_scad.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c boost_net.cpp -o boost_net.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cross_validation.cpp -o cross_validation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hinge_boost_group_lasso.cpp -o hinge_boost_group_lasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hinge_boost_group_mcp.cpp -o hinge_boost_group_mcp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hinge_boost_group_scad.cpp -o hinge_boost_group_scad.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hinge_boost_net.cpp -o hinge_boost_net.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c logistic_group_lasso.cpp -o logistic_group_lasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c logistic_group_mcp.cpp -o logistic_group_mcp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c logistic_group_scad.cpp -o logistic_group_scad.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c logistic_net.cpp -o logistic_net.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lum_group_lasso.cpp -o lum_group_lasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lum_group_mcp.cpp -o lum_group_mcp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lum_group_scad.cpp -o lum_group_scad.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lum_net.cpp -o lum_net.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s3kl0p4255af9fr4gql8sljvcd97zpvq-r-Rcpp-1.0.13/library/Rcpp/include' -I'/nix/store/c14kpc1rfp7gkyfs32ib64p9cgrk7326-r-RcppArmadillo-14.0.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c predict.cpp -o predict.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o abclass.so RcppExports.o boost_group_lasso.o boost_group_mcp.o boost_group_scad.o boost_net.o cross_validation.o hinge_boost_group_lasso.o hinge_boost_group_mcp.o hinge_boost_group_scad.o hinge_boost_net.o logistic_group_lasso.o logistic_group_mcp.o logistic_group_scad.o logistic_net.o lum_group_lasso.o lum_group_mcp.o lum_group_scad.o lum_net.o predict.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/drqhaaf8iyn980qswg127n0ix07bhl61-R-4.4.1/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/ih6g8s25lg33fx896rqdm5ha6gz4z3z5-r-abclass-0.4.0/library/00LOCK-abclass/00new/abclass/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (abclass)
+installPhase completed in 30 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-abclass-0.4.0.drv-0/ in /nix/store/ih6g8s25lg33fx896rqdm5ha6gz4z3z5-r-abclass-0.4.0...
+patching script interpreter paths in /nix/store/ih6g8s25lg33fx896rqdm5ha6gz4z3z5-r-abclass-0.4.0
+rewriting symlink /nix/store/ih6g8s25lg33fx896rqdm5ha6gz4z3z5-r-abclass-0.4.0/nix-support/propagated-user-env-packages to be relative to /nix/store/ih6g8s25lg33fx896rqdm5ha6gz4z3z5-r-abclass-0.4.0

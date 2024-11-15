@@ -442,7 +442,7 @@ let
     pbdPROF = [ pkgs.mpi ];
     pbdZMQ = [ pkgs.pkg-config ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ pkgs.which ];
     pcaL1 = [ pkgs.pkg-config pkgs.clp ];
-    pdftools = [ pkgs.poppler.dev ];
+    pdftools = [ pkgs.poppler.dev ] ++ lib.optionals stdenv.hostPlatform.isDarwin [ pkgs.poppler_data ];
     PEPBVS = [ pkgs.gsl ];
     phytools = [ pkgs.which ];
     PKI = [ pkgs.openssl.dev ];

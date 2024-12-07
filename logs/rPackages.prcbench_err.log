@@ -1,0 +1,88 @@
+these 2 derivations will be built:
+  /nix/store/v7wmj71qylzgz80in7wi3fmd7v7gfz4r-r-precrec-0.14.4.drv
+  /nix/store/3md55nbdn1ilsxi14hyqcndwanbq9ypq-r-prcbench-1.1.8.drv
+this path will be fetched (0.35 MiB download, 0.35 MiB unpacked):
+  /nix/store/mx6hrg8rnxrs06hvdajckzqn45c84i77-prcbench_1.1.8.tar.gz
+copying path '/nix/store/mx6hrg8rnxrs06hvdajckzqn45c84i77-prcbench_1.1.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/v7wmj71qylzgz80in7wi3fmd7v7gfz4r-r-precrec-0.14.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q2cgxwr05a42h0f5vdz843yzzx4mhdk7-precrec_0.14.4.tar.gz
+source root is precrec
+setting SOURCE_DATE_EPOCH to timestamp 1697062202 of file precrec/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘precrec’ ...
+** package ‘precrec’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c precrec_misc.cpp -o precrec_misc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c precrec_mmx.cpp -o precrec_mmx.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c precrec_plx.cpp -o precrec_plx.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o precrec.so RcppExports.o precrec_misc.o precrec_mmx.o precrec_plx.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4981z9dh9fml20zvinj9mp4h7vk5by2i-r-precrec-0.14.4/library/00LOCK-precrec/00new/precrec/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (precrec)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-precrec-0.14.4.drv-0/ in /nix/store/4981z9dh9fml20zvinj9mp4h7vk5by2i-r-precrec-0.14.4...
+patching script interpreter paths in /nix/store/4981z9dh9fml20zvinj9mp4h7vk5by2i-r-precrec-0.14.4
+rewriting symlink /nix/store/4981z9dh9fml20zvinj9mp4h7vk5by2i-r-precrec-0.14.4/nix-support/propagated-user-env-packages to be relative to /nix/store/4981z9dh9fml20zvinj9mp4h7vk5by2i-r-precrec-0.14.4
+building '/nix/store/3md55nbdn1ilsxi14hyqcndwanbq9ypq-r-prcbench-1.1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mx6hrg8rnxrs06hvdajckzqn45c84i77-prcbench_1.1.8.tar.gz
+source root is prcbench
+setting SOURCE_DATE_EPOCH to timestamp 1678637409 of file prcbench/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘prcbench’ ...
+** package ‘prcbench’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c perfmeas.cpp -o perfmeas.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o prcbench.so RcppExports.o perfmeas.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/d24flqlh6s85gdl212rnl2ks2sizbs27-r-prcbench-1.1.8/library/00LOCK-prcbench/00new/prcbench/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (prcbench)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-prcbench-1.1.8.drv-0/ in /nix/store/d24flqlh6s85gdl212rnl2ks2sizbs27-r-prcbench-1.1.8...
+patching script interpreter paths in /nix/store/d24flqlh6s85gdl212rnl2ks2sizbs27-r-prcbench-1.1.8
+rewriting symlink /nix/store/d24flqlh6s85gdl212rnl2ks2sizbs27-r-prcbench-1.1.8/nix-support/propagated-user-env-packages to be relative to /nix/store/d24flqlh6s85gdl212rnl2ks2sizbs27-r-prcbench-1.1.8

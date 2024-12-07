@@ -1,0 +1,64 @@
+this derivation will be built:
+  /nix/store/0n0wdb6b5cxap7b252gkihvwgiy1nysx-r-recometrics-0.1.6-3.drv
+this path will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/hy3ibixmdx09akh11069kbf0k5lacz57-recometrics_0.1.6-3.tar.gz
+copying path '/nix/store/hy3ibixmdx09akh11069kbf0k5lacz57-recometrics_0.1.6-3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0n0wdb6b5cxap7b252gkihvwgiy1nysx-r-recometrics-0.1.6-3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hy3ibixmdx09akh11069kbf0k5lacz57-recometrics_0.1.6-3.tar.gz
+source root is recometrics
+setting SOURCE_DATE_EPOCH to timestamp 1676847602 of file recometrics/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘recometrics’ ...
+** package ‘recometrics’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether clang++ accepts -g... yes
+checking for clang++ option to enable C++11 features... none needed
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -DSUPPORTS_RESTRICT=1 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/dv65vshslqp2zi1smjph31gd2mxp83bz-r-float-0.3-2/library/float/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fno-math-errno -fno-trapping-math  -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -D_FOR_R -DSUPPORTS_RESTRICT=1 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/dv65vshslqp2zi1smjph31gd2mxp83bz-r-float-0.3-2/library/float/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fno-math-errno -fno-trapping-math  -fPIC  -g -O2   -c Rwrapper.cpp -o Rwrapper.o
+In file included from Rwrapper.cpp:28:
+./recometrics.hpp:360:3: warning: unknown attribute 'optimize' ignored [-Wunknown-attributes]
+[[gnu::optimize("no-math-errno"), gnu::optimize("no-trapping-math")]]
+  ^~~~~~~~~~~~~
+./recometrics.hpp:360:35: warning: unknown attribute 'optimize' ignored [-Wunknown-attributes]
+[[gnu::optimize("no-math-errno"), gnu::optimize("no-trapping-math")]]
+                                  ^~~~~~~~~~~~~
+2 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o recometrics.so RcppExports.o Rwrapper.o -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/9d3hlbq17jd9lp2pzyxk1mchhmki1kl3-r-recometrics-0.1.6-3/library/00LOCK-recometrics/00new/recometrics/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (recometrics)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-recometrics-0.1.6-3.drv-0/ in /nix/store/9d3hlbq17jd9lp2pzyxk1mchhmki1kl3-r-recometrics-0.1.6-3...
+patching script interpreter paths in /nix/store/9d3hlbq17jd9lp2pzyxk1mchhmki1kl3-r-recometrics-0.1.6-3
+rewriting symlink /nix/store/9d3hlbq17jd9lp2pzyxk1mchhmki1kl3-r-recometrics-0.1.6-3/nix-support/propagated-user-env-packages to be relative to /nix/store/9d3hlbq17jd9lp2pzyxk1mchhmki1kl3-r-recometrics-0.1.6-3

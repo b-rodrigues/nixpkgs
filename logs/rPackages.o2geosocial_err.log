@@ -1,0 +1,93 @@
+these 2 derivations will be built:
+  /nix/store/b73cirip5v6hv477l8rhrx0035zip8nx-r-outbreaker2-1.1.3.drv
+  /nix/store/hwf38wz229h26ag8vr40m9ss8mjbiw21-r-o2geosocial-1.1.3.drv
+these 2 paths will be fetched (1.75 MiB download, 1.75 MiB unpacked):
+  /nix/store/zgllz7fkhw7ylp70bcjf6mwzhnjv6cgv-o2geosocial_1.1.3.tar.gz
+  /nix/store/2hydjvs2419fs9vvz50qjn9n2jl6akff-outbreaker2_1.1.3.tar.gz
+copying path '/nix/store/zgllz7fkhw7ylp70bcjf6mwzhnjv6cgv-o2geosocial_1.1.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/2hydjvs2419fs9vvz50qjn9n2jl6akff-outbreaker2_1.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/b73cirip5v6hv477l8rhrx0035zip8nx-r-outbreaker2-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2hydjvs2419fs9vvz50qjn9n2jl6akff-outbreaker2_1.1.3.tar.gz
+source root is outbreaker2
+setting SOURCE_DATE_EPOCH to timestamp 1653308402 of file outbreaker2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘outbreaker2’ ...
+** package ‘outbreaker2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c internals.cpp -o internals.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c likelihoods.cpp -o likelihoods.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c moves.cpp -o moves.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c priors.cpp -o priors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o outbreaker2.so RcppExports.o internals.o likelihoods.o moves.o priors.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/q4z591kss5lb0p9q522bfp36fkpa5rn3-r-outbreaker2-1.1.3/library/00LOCK-outbreaker2/00new/outbreaker2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (outbreaker2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-outbreaker2-1.1.3.drv-0/ in /nix/store/q4z591kss5lb0p9q522bfp36fkpa5rn3-r-outbreaker2-1.1.3...
+patching script interpreter paths in /nix/store/q4z591kss5lb0p9q522bfp36fkpa5rn3-r-outbreaker2-1.1.3
+rewriting symlink /nix/store/q4z591kss5lb0p9q522bfp36fkpa5rn3-r-outbreaker2-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/q4z591kss5lb0p9q522bfp36fkpa5rn3-r-outbreaker2-1.1.3
+building '/nix/store/hwf38wz229h26ag8vr40m9ss8mjbiw21-r-o2geosocial-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zgllz7fkhw7ylp70bcjf6mwzhnjv6cgv-o2geosocial_1.1.3.tar.gz
+source root is o2geosocial
+setting SOURCE_DATE_EPOCH to timestamp 1719003602 of file o2geosocial/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘o2geosocial’ ...
+** package ‘o2geosocial’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c internals.cpp -o internals.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c likelihoods.cpp -o likelihoods.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c moves.cpp -o moves.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c priors.cpp -o priors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o o2geosocial.so RcppExports.o internals.o likelihoods.o moves.o priors.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/wrviglmm4b9dc5abd86p9h60jip0drax-r-o2geosocial-1.1.3/library/00LOCK-o2geosocial/00new/o2geosocial/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (o2geosocial)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-o2geosocial-1.1.3.drv-0/ in /nix/store/wrviglmm4b9dc5abd86p9h60jip0drax-r-o2geosocial-1.1.3...
+patching script interpreter paths in /nix/store/wrviglmm4b9dc5abd86p9h60jip0drax-r-o2geosocial-1.1.3
+rewriting symlink /nix/store/wrviglmm4b9dc5abd86p9h60jip0drax-r-o2geosocial-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/wrviglmm4b9dc5abd86p9h60jip0drax-r-o2geosocial-1.1.3

@@ -1,0 +1,48 @@
+this derivation will be built:
+  /nix/store/0glw2qfj9fy5b4fkirqw4fn5j21093g5-r-motmot-2.1.3.drv
+this path will be fetched (2.17 MiB download, 2.17 MiB unpacked):
+  /nix/store/9c0xsjar8i39vpwmwp5vl4fm0msk3mdc-motmot_2.1.3.tar.gz
+copying path '/nix/store/9c0xsjar8i39vpwmwp5vl4fm0msk3mdc-motmot_2.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0glw2qfj9fy5b4fkirqw4fn5j21093g5-r-motmot-2.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9c0xsjar8i39vpwmwp5vl4fm0msk3mdc-motmot_2.1.3.tar.gz
+source root is motmot
+setting SOURCE_DATE_EPOCH to timestamp 1574701807 of file motmot/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘motmot’ ...
+** package ‘motmot’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Rfunc.cpp -o Rfunc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c packagename_init.c -o packagename_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sim.cpp -o sim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tree.cpp -o tree.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o motmot.so Rfunc.o packagename_init.o sim.o tree.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yhybg7g359c3zfhgnyc2fyiy32kv12va-r-motmot-2.1.3/library/00LOCK-motmot/00new/motmot/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (motmot)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-motmot-2.1.3.drv-0/ in /nix/store/yhybg7g359c3zfhgnyc2fyiy32kv12va-r-motmot-2.1.3...
+patching script interpreter paths in /nix/store/yhybg7g359c3zfhgnyc2fyiy32kv12va-r-motmot-2.1.3
+rewriting symlink /nix/store/yhybg7g359c3zfhgnyc2fyiy32kv12va-r-motmot-2.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/yhybg7g359c3zfhgnyc2fyiy32kv12va-r-motmot-2.1.3

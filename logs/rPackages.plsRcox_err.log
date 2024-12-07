@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv
+building '/nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8y774wr4d9j2ix5ra6vjbb70cis8xbb5-plsRcox_1.7.7.tar.gz
+source root is plsRcox
+setting SOURCE_DATE_EPOCH to timestamp 1669734603 of file plsRcox/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘mixOmics’ is not available for package ‘plsRcox’
+* removing ‘/nix/store/whk0lrd4jyma6xiyd95r1hz7k95j4rfx-r-plsRcox-1.7.7/library/plsRcox’
+error: builder for '/nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/8y774wr4d9j2ix5ra6vjbb70cis8xbb5-plsRcox_1.7.7.tar.gz
+       > source root is plsRcox
+       > setting SOURCE_DATE_EPOCH to timestamp 1669734603 of file plsRcox/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘mixOmics’ is not available for package ‘plsRcox’
+       > * removing ‘/nix/store/whk0lrd4jyma6xiyd95r1hz7k95j4rfx-r-plsRcox-1.7.7/library/plsRcox’
+       For full logs, run 'nix log /nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv'.

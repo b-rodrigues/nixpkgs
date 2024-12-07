@@ -1,0 +1,72 @@
+these 2 derivations will be built:
+  /nix/store/28p5ja4d6vvj60vmqnmi704i4sb5k3ld-r-spikeslab-1.1.6.drv
+  /nix/store/ayphazg9y2bkni4sghb5dj65rf8yg224-r-SentimentAnalysis-1.3-5.drv
+building '/nix/store/28p5ja4d6vvj60vmqnmi704i4sb5k3ld-r-spikeslab-1.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5m32dl5mpfzridm3008ga6dpa8zqxkkc-spikeslab_1.1.6.tar.gz
+source root is spikeslab
+setting SOURCE_DATE_EPOCH to timestamp 1651006203 of file spikeslab/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spikeslab’ ...
+** package ‘spikeslab’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_init_spikeslab.c -o R_init_spikeslab.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bayesian.c -o bayesian.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spikeslab.so R_init_spikeslab.o bayesian.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/948l94m4992sm8in02cyg83967favq7d-r-spikeslab-1.1.6/library/00LOCK-spikeslab/00new/spikeslab/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spikeslab)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spikeslab-1.1.6.drv-0/ in /nix/store/948l94m4992sm8in02cyg83967favq7d-r-spikeslab-1.1.6...
+patching script interpreter paths in /nix/store/948l94m4992sm8in02cyg83967favq7d-r-spikeslab-1.1.6
+rewriting symlink /nix/store/948l94m4992sm8in02cyg83967favq7d-r-spikeslab-1.1.6/nix-support/propagated-user-env-packages to be relative to /nix/store/948l94m4992sm8in02cyg83967favq7d-r-spikeslab-1.1.6
+building '/nix/store/ayphazg9y2bkni4sghb5dj65rf8yg224-r-SentimentAnalysis-1.3-5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lz7z4l5fxxnf46j8vc6yhk4w0g0fgd5y-SentimentAnalysis_1.3-5.tar.gz
+source root is SentimentAnalysis
+setting SOURCE_DATE_EPOCH to timestamp 1692821403 of file SentimentAnalysis/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SentimentAnalysis’ ...
+** package ‘SentimentAnalysis’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SentimentAnalysis)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SentimentAnalysis-1.3-5.drv-0/ in /nix/store/r5as3isr4hcc7yx3bmzbnwl9y6s6vkxb-r-SentimentAnalysis-1.3-5...
+patching script interpreter paths in /nix/store/r5as3isr4hcc7yx3bmzbnwl9y6s6vkxb-r-SentimentAnalysis-1.3-5
+rewriting symlink /nix/store/r5as3isr4hcc7yx3bmzbnwl9y6s6vkxb-r-SentimentAnalysis-1.3-5/nix-support/propagated-user-env-packages to be relative to /nix/store/r5as3isr4hcc7yx3bmzbnwl9y6s6vkxb-r-SentimentAnalysis-1.3-5

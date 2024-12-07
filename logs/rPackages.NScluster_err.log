@@ -1,0 +1,89 @@
+this derivation will be built:
+  /nix/store/n6azfdcv5di2dmg21ya61l2mifn845a8-r-NScluster-1.3.6-1.drv
+this path will be fetched (0.22 MiB download, 0.22 MiB unpacked):
+  /nix/store/sjxwq3vvibchxchmssbfh93ngiizyz2f-NScluster_1.3.6-1.tar.gz
+copying path '/nix/store/sjxwq3vvibchxchmssbfh93ngiizyz2f-NScluster_1.3.6-1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/n6azfdcv5di2dmg21ya61l2mifn845a8-r-NScluster-1.3.6-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sjxwq3vvibchxchmssbfh93ngiizyz2f-NScluster_1.3.6-1.tar.gz
+source root is NScluster
+setting SOURCE_DATE_EPOCH to timestamp 1679742602 of file NScluster/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘NScluster’ ...
+** package ‘NScluster’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Palm-IPf.f -o Palm-IPf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Palm-Thomasf.f -o Palm-Thomasf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Palm-TypeAf.f -o Palm-TypeAf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Palm-TypeBf.f -o Palm-TypeBf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Palm-TypeCf.f -o Palm-TypeCf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simplex-IPf.f -o Simplex-IPf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simplex-Thomasf.f -o Simplex-Thomasf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simplex-TypeAf.f -o Simplex-TypeAf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simplex-TypeBf.f -o Simplex-TypeBf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simplex-TypeCf.f -o Simplex-TypeCf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simulate-IPf.f -o Simulate-IPf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simulate-Thomasf.f -o Simulate-Thomasf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simulate-TypeAf.f -o Simulate-TypeAf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simulate-TypeBf.f -o Simulate-TypeBf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Simulate-TypeCf.f -o Simulate-TypeCf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c comsub.f -o comsub.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c comsubOMP.f -o comsubOMP.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mt19937-64.c -o mt19937-64.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o NScluster.so Palm-IPf.o Palm-Thomasf.o Palm-TypeAf.o Palm-TypeBf.o Palm-TypeCf.o Simplex-IPf.o Simplex-Thomasf.o Simplex-TypeAf.o Simplex-TypeBf.o Simplex-TypeCf.o Simulate-IPf.o Simulate-Thomasf.o Simulate-TypeAf.o Simulate-TypeBf.o Simulate-TypeCf.o comsub.o comsubOMP.o init.o mt19937-64.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _ipfuncmp_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _palmc_: does not use standard frame
+could not create compact unwind for _palmt_: does not use standard frame
+ld: warning: could not create compact unwind for _afunctmp_: does not use standard frame
+ld: warning: could not create compact unwind for _smplxa_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _palmb_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _ippowermp_: does not use standard frame
+could not create compact unwind for _cfunctmp_: does not use standard frameld: warning: ld: warning: could not create compact unwind for _bfunctmp_: does not use standard frame
+ld: warning: could not create compact unwind for _smplxb_: does not use standard frame
+could not create compact unwind for _xqgausip_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _functmp_: does not use standard frame
+ld: warning: 
+could not create compact unwind for _xqgausa_: does not use standard frame
+could not create compact unwind for _ipfunctmp_: does not use standard frameld: warning: could not create compact unwind for _simb_: does not use standard frame
+could not create compact unwind for _smplxthom_: does not use standard frame
+ld: warning: 
+ld: warning: could not create compact unwind for _smplxip_: does not use standard frame
+could not create compact unwind for _simc_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _smplxc_: does not use standard frame
+could not create compact unwind for _qgausx_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _newsim_: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for _pois_: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _init_: does not use standard frame
+ld: warning: could not create compact unwind for _simplx_: does not use standard frame
+ld: warning: could not create compact unwind for _h_: does not use standard frame
+ld: warning: could not create compact unwind for _quad2d_: does not use standard frame
+installing to /nix/store/0rzl398h3p8c4mg0k6l6dkrrqcrnzr3b-r-NScluster-1.3.6-1/library/00LOCK-NScluster/00new/NScluster/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (NScluster)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-NScluster-1.3.6-1.drv-0/ in /nix/store/0rzl398h3p8c4mg0k6l6dkrrqcrnzr3b-r-NScluster-1.3.6-1...
+patching script interpreter paths in /nix/store/0rzl398h3p8c4mg0k6l6dkrrqcrnzr3b-r-NScluster-1.3.6-1

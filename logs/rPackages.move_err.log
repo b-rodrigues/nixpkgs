@@ -1,0 +1,176 @@
+these 2 derivations will be built:
+  /nix/store/0rh9y3zni68c8rxgapivrhga3014czz4-move_4.2.6.tar.gz.drv
+  /nix/store/ckhmr6a02q7x58wms12xjgj0qkpdq6dw-r-move-4.2.6.drv
+building '/nix/store/0rh9y3zni68c8rxgapivrhga3014czz4-move_4.2.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/move_4.2.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2062k  100 2062k    0     0  4465k      0 --:--:-- --:--:-- --:--:-- 4464k
+building '/nix/store/ckhmr6a02q7x58wms12xjgj0qkpdq6dw-r-move-4.2.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ydgcq4l1gbxsz4rlm7nw92w3qqkwkjcq-move_4.2.6.tar.gz
+source root is move
+setting SOURCE_DATE_EPOCH to timestamp 1732120802 of file move/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘move’ ...
+** package ‘move’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bgbVar.c -o bgbVar.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c bgbVarRcpp.cpp -o bgbVarRcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bgb_bbmm.c -o bgb_bbmm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c emd.cpp -o emd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o move.so bgbVar.o bgbVarRcpp.o bgb_bbmm.o emd.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/r3p1zzggf9fz4i896li7v9fy68a5q9qs-r-move-4.2.6/library/00LOCK-move/00new/move/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPoly” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPoly” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolyPart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolyPart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolygons” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolygons” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+dans la méthode pour ‘move’ avec la signature ‘x="telemetry",y="missing",time="missing",data="missing",proj="missing"’ : aucune définition de la classe “telemetry” n'est trouvée
+dans la méthode pour ‘move’ avec la signature ‘x="track_xyt",y="missing",time="missing",data="missing",proj="missing"’ : aucune définition de la classe “track_xyt” n'est trouvée
+dans la méthode pour ‘move’ avec la signature ‘x="track",y="missing",time="missing",data="missing",proj="missing"’ : aucune définition de la classe “track” n'est trouvée
+dans la méthode pour ‘move’ avec la signature ‘x="binClstPath",y="missing",time="missing",data="missing",proj="missing"’ : aucune définition de la classe “binClstPath” n'est trouvée
+dans la méthode pour ‘move’ avec la signature ‘x="binClstStck",y="missing",time="missing",data="missing",proj="missing"’ : aucune définition de la classe “binClstStck” n'est trouvée
+dans la méthode pour ‘coerce’ avec la signature ‘"telemetry","Move"’ : aucune définition de la classe “telemetry” n'est trouvée
+dans la méthode pour ‘coerce’ avec la signature ‘"track_xyt","Move"’ : aucune définition de la classe “track_xyt” n'est trouvée
+dans la méthode pour ‘coerce’ avec la signature ‘"track","Move"’ : aucune définition de la classe “track” n'est trouvée
+dans la méthode pour ‘coerce’ avec la signature ‘"binClstPath","Move"’ : aucune définition de la classe “binClstPath” n'est trouvée
+dans la méthode pour ‘coerce’ avec la signature ‘"binClstStck","MoveStack"’ : aucune définition de la classe “binClstStck” n'est trouvée
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPoly” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPoly” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolyPart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolyPart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolygons” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolygons” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPoly” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPoly” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolyPart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolyPart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolygons” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpPolygons” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (move)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-move-4.2.6.drv-0/ in /nix/store/r3p1zzggf9fz4i896li7v9fy68a5q9qs-r-move-4.2.6...
+patching script interpreter paths in /nix/store/r3p1zzggf9fz4i896li7v9fy68a5q9qs-r-move-4.2.6
+rewriting symlink /nix/store/r3p1zzggf9fz4i896li7v9fy68a5q9qs-r-move-4.2.6/nix-support/propagated-user-env-packages to be relative to /nix/store/r3p1zzggf9fz4i896li7v9fy68a5q9qs-r-move-4.2.6

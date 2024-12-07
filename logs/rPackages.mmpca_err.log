@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/fp1cn93fip612yxbpv5phmjk9sgw6f79-r-mmpca-2.0.3.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/74sjiv28qyfw9q0wrzm934g83wgk9px3-mmpca_2.0.3.tar.gz
+copying path '/nix/store/74sjiv28qyfw9q0wrzm934g83wgk9px3-mmpca_2.0.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fp1cn93fip612yxbpv5phmjk9sgw6f79-r-mmpca-2.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/74sjiv28qyfw9q0wrzm934g83wgk9px3-mmpca_2.0.3.tar.gz
+source root is mmpca
+setting SOURCE_DATE_EPOCH to timestamp 1668502202 of file mmpca/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mmpca’ ...
+** package ‘mmpca’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++14
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++14 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/ls773ncbbsj5n6mpy8hdajj3zqnsqps9-gsl-2.8-dev/include -I.  -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++14 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/ls773ncbbsj5n6mpy8hdajj3zqnsqps9-gsl-2.8-dev/include -I.  -fPIC  -g -O2   -c fdf.cpp -o fdf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++14 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/ls773ncbbsj5n6mpy8hdajj3zqnsqps9-gsl-2.8-dev/include -I.  -fPIC  -g -O2   -c optim.cpp -o optim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++14 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mmpca.so RcppExports.o fdf.o optim.o -L/nix/store/601xz3wng6ghsjbm9fl8pkncya7pp03h-gsl-2.8/lib -lgsl -lgslcblas -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/nbcic820xd44nbs97gssxzh0hjfildx3-r-mmpca-2.0.3/library/00LOCK-mmpca/00new/mmpca/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mmpca)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mmpca-2.0.3.drv-0/ in /nix/store/nbcic820xd44nbs97gssxzh0hjfildx3-r-mmpca-2.0.3...
+patching script interpreter paths in /nix/store/nbcic820xd44nbs97gssxzh0hjfildx3-r-mmpca-2.0.3
+rewriting symlink /nix/store/nbcic820xd44nbs97gssxzh0hjfildx3-r-mmpca-2.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/nbcic820xd44nbs97gssxzh0hjfildx3-r-mmpca-2.0.3

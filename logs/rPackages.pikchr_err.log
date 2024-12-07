@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/p7a4cp6kdvxpmhfa0shhk1cyf6p0zgrs-pikchr_0.97.tar.gz.drv
+  /nix/store/7j8vs0jd71msm0kr3api2jyn4kqqb8q2-r-pikchr-0.97.drv
+building '/nix/store/p7a4cp6kdvxpmhfa0shhk1cyf6p0zgrs-pikchr_0.97.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/pikchr_0.97.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  117k  100  117k    0     0   736k      0 --:--:-- --:--:-- --:--:--  737k
+building '/nix/store/7j8vs0jd71msm0kr3api2jyn4kqqb8q2-r-pikchr-0.97.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rl5kmynrya6jsf2y6rgjhg3al0zncd7m-pikchr_0.97.tar.gz
+source root is pikchr
+setting SOURCE_DATE_EPOCH to timestamp 1727714402 of file pikchr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pikchr’ ...
+** package ‘pikchr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pikchr.c -o pikchr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pikchr.so init.o pikchr.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/v0ddh1s18mx7xmlgg6iph1s2y7v81ya1-r-pikchr-0.97/library/00LOCK-pikchr/00new/pikchr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pikchr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pikchr-0.97.drv-0/ in /nix/store/v0ddh1s18mx7xmlgg6iph1s2y7v81ya1-r-pikchr-0.97...
+patching script interpreter paths in /nix/store/v0ddh1s18mx7xmlgg6iph1s2y7v81ya1-r-pikchr-0.97
+rewriting symlink /nix/store/v0ddh1s18mx7xmlgg6iph1s2y7v81ya1-r-pikchr-0.97/nix-support/propagated-user-env-packages to be relative to /nix/store/v0ddh1s18mx7xmlgg6iph1s2y7v81ya1-r-pikchr-0.97

@@ -1,0 +1,112 @@
+these 2 derivations will be built:
+  /nix/store/6sga7v0xrmlz5par575bs22m6dyqfy19-r-rmatio-0.19.0.drv
+  /nix/store/2xzimpd9ym5q1h3c4gs7a456kz9kj17z-r-NormalityAssessment-0.1.0.drv
+these 2 paths will be fetched (0.86 MiB download, 0.87 MiB unpacked):
+  /nix/store/l1wbcg9hsrw03ymmf5l3ifk99xz3qmyl-NormalityAssessment_0.1.0.tar.gz
+  /nix/store/2m964y58dfr9khx9q0656lbqsms2rwjs-rmatio_0.19.0.tar.gz
+copying path '/nix/store/l1wbcg9hsrw03ymmf5l3ifk99xz3qmyl-NormalityAssessment_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/2m964y58dfr9khx9q0656lbqsms2rwjs-rmatio_0.19.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6sga7v0xrmlz5par575bs22m6dyqfy19-r-rmatio-0.19.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2m964y58dfr9khx9q0656lbqsms2rwjs-rmatio_0.19.0.tar.gz
+source root is rmatio
+setting SOURCE_DATE_EPOCH to timestamp 1702497602 of file rmatio/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Updating Autotools / GNU config script to a newer upstream version: ./tools/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./tools/config.guess
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rmatio’ ...
+files ‘tools/config.guess’, ‘tools/config.sub’ have the wrong MD5 checksums
+** using staged installation
+checking pkg-config is at least version 0.9.0... yes
+checking inttypes.h... yes
+checking stdlib.h... yes
+checking stdint.h... yes
+checking strings.h... yes
+checking string.h... yes
+checking sys/stat.h... yes
+checking sys/types.h... yes
+checking unistd.h... 
+checking for zlib... yes
+checking size of char... 1
+checking size of short... 2
+checking size of double... 8
+checking size of float... 4
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of size_t... 8
+checking size of void *... 8
+checking for mat_int8_t... int8_t
+checking for mat_int16_t... int16_t
+checking for mat_int32_t... int32_t
+checking for mat_int64_t... int64_t
+checking for mat_uint8_t... uint8_t
+checking for mat_uint16_t... uint16_t
+checking for mat_uint32_t... uint32_t
+checking for mat_uint64_t... uint64_t
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/matio/config.h
+config.status: src/matio/config.h is unchanged
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/endian.c -o matio/endian.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/inflate.c -o matio/inflate.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/mat4.c -o matio/mat4.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/mat5.c -o matio/mat5.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/mat.c -o matio/mat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/matvar_cell.c -o matio/matvar_cell.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/matvar_struct.c -o matio/matvar_struct.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matio/read_data.c -o matio/read_data.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS -I/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/include -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rmatio.c -o rmatio.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rmatio.so matio/endian.o matio/inflate.o matio/mat4.o matio/mat5.o matio/mat.o matio/matvar_cell.o matio/matvar_struct.o matio/read_data.o rmatio.o -L/nix/store/iy73mkdcq2k949jai8m8bm850dq0ghrk-zlib-1.3.1/lib -lz -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yjhsqj5s4bpkwhh8pz4mxl6s3a43nm6p-r-rmatio-0.19.0/library/00LOCK-rmatio/00new/rmatio/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rmatio)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rmatio-0.19.0.drv-0/ in /nix/store/yjhsqj5s4bpkwhh8pz4mxl6s3a43nm6p-r-rmatio-0.19.0...
+patching script interpreter paths in /nix/store/yjhsqj5s4bpkwhh8pz4mxl6s3a43nm6p-r-rmatio-0.19.0
+rewriting symlink /nix/store/yjhsqj5s4bpkwhh8pz4mxl6s3a43nm6p-r-rmatio-0.19.0/nix-support/propagated-user-env-packages to be relative to /nix/store/yjhsqj5s4bpkwhh8pz4mxl6s3a43nm6p-r-rmatio-0.19.0
+building '/nix/store/2xzimpd9ym5q1h3c4gs7a456kz9kj17z-r-NormalityAssessment-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/l1wbcg9hsrw03ymmf5l3ifk99xz3qmyl-NormalityAssessment_0.1.0.tar.gz
+source root is NormalityAssessment
+setting SOURCE_DATE_EPOCH to timestamp 1668020402 of file NormalityAssessment/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘NormalityAssessment’ ...
+** package ‘NormalityAssessment’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (NormalityAssessment)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-NormalityAssessment-0.1.0.drv-0/ in /nix/store/qd9nrm1na8cy38swqgqxlcw0jlqc7sdy-r-NormalityAssessment-0.1.0...
+patching script interpreter paths in /nix/store/qd9nrm1na8cy38swqgqxlcw0jlqc7sdy-r-NormalityAssessment-0.1.0
+rewriting symlink /nix/store/qd9nrm1na8cy38swqgqxlcw0jlqc7sdy-r-NormalityAssessment-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/qd9nrm1na8cy38swqgqxlcw0jlqc7sdy-r-NormalityAssessment-0.1.0

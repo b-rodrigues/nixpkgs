@@ -1,0 +1,129 @@
+these 4 derivations will be built:
+  /nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv
+  /nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv
+  /nix/store/w63nsr7b2vi3xdg1x7wkz1j6pn3lhhhi-r-sva-3.18.0.drv
+  /nix/store/3wh9dj0k96pcqzryazka6zawxw5zpyhd-r-scITD-1.0.4.drv
+this path will be fetched (0.59 MiB download, 0.59 MiB unpacked):
+  /nix/store/2grvyrs1c398yqam3gn8pglabj44d5h2-scITD_1.0.4.tar.gz
+copying path '/nix/store/2grvyrs1c398yqam3gn8pglabj44d5h2-scITD_1.0.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv'...
+building '/nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/y5z7r0ff78f66gnmnkiyr9l7171wj8sw-edgeR_3.12.1.tar.gz
+source root is edgeR
+setting SOURCE_DATE_EPOCH to timestamp 1460076787 of file edgeR/src/utils.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/nasj7wpna8py8ck226zkspmk2br6niha-genefilter_1.52.1.tar.gz
+source root is genefilter
+* installing *source* package ‘edgeR’ ...
+** using staged installation
+** libs
+setting SOURCE_DATE_EPOCH to timestamp 1453944267 of file genefilter/src/ttest.f
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+using C compiler: ‘clang version 16.0.6’
+Running phase: buildPhase
+Running phase: checkPhase
+using C++ compiler: ‘clang version 16.0.6’
+Running phase: installPhase
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_compute_nbdev.cpp -o R_compute_nbdev.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_cr_adjust.cpp -o R_cr_adjust.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_exact_test_by_deviance.cpp -o R_exact_test_by_deviance.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_levenberg.cpp -o R_levenberg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_loess_by_col.cpp -o R_loess_by_col.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_maximize_interpolant.cpp -o R_maximize_interpolant.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_one_group.cpp -o R_one_group.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_process_hairpin_reads.c -o R_process_hairpin_reads.o
+R_process_hairpin_reads.c:464:52: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+      Rprintf(" -- Processing %d million reads\n", (num_read_thisfile / BLOCKSIZE + 1) * 10);
+                              ~~                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              %ld
+* installing *source* package ‘genefilter’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c half_range_mode.cpp -o half_range_mode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c nd.c -o nd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pAUC.c -o pAUC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowPAUCs.c -o rowPAUCs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowttests.c -o rowttests.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c ttest.f -o ttest.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_simple_good_turing.cpp -o R_simple_good_turing.o
+nd.c:24:10: fatal error: 'S.h' file not found
+#include "S.h"
+         ^~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: nd.o] Error 1
+make: *** Attente des tâches non terminées....
+rowttests.c:172:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:172:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+rowttests.c:181:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:181:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+2 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: rowttests.o] Error 1
+half_range_mode.cpp:100:88: warning: format specifies type 'int' but the argument has type 'size_type' (aka 'unsigned long') [-Wformat]
+    if (diag) Rprintf( "N = %i, N'' = %i, w = %.4f, |J| = %i\n", N, N_double_prime, w, J.size() );
+                                                          ~~                           ^~~~~~~~
+                                                          %zu
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c adj_coxreid.cpp -o adj_coxreid.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fmm_spline.c -o fmm_spline.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c glm_levenberg.cpp -o glm_levenberg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c glm_one_group.cpp -o glm_one_group.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c init.cpp -o init.o
+1 warning generated.
+ERROR: compilation failed for package ‘genefilter’
+* removing ‘/nix/store/qc1lzp0nljd6v9zjg6qmw8qll2c0v2s2-r-genefilter-1.52.1/library/genefilter’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c interpolator.cpp -o interpolator.o
+error: builder for '/nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv' failed with exit code 1;
+       last 25 log lines:
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: nd.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > rowttests.c:172:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+       >               error(errmsg);
+       >                     ^~~~~~
+       > rowttests.c:172:14: note: treat the string as an argument to avoid this
+       >               error(errmsg);
+       >                     ^
+       >                     "%s",
+       > rowttests.c:181:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+       >               error(errmsg);
+       >                     ^~~~~~
+       > rowttests.c:181:14: note: treat the string as an argument to avoid this
+       >               error(errmsg);
+       >                     ^
+       >                     "%s",
+       > 2 errors generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: rowttests.o] Error 1
+       > half_range_mode.cpp:100:88: warning: format specifies type 'int' but the argument has type 'size_type' (aka 'unsigned long') [-Wformat]
+       >     if (diag) Rprintf( "N = %i, N'' = %i, w = %.4f, |J| = %i\n", N, N_double_prime, w, J.size() );
+       >                                                           ~~                           ^~~~~~~~
+       >                                                           %zu
+       > 1 warning generated.
+       > ERROR: compilation failed for package ‘genefilter’
+       > * removing ‘/nix/store/qc1lzp0nljd6v9zjg6qmw8qll2c0v2s2-r-genefilter-1.52.1/library/genefilter’
+       For full logs, run 'nix log /nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv'.
+error: 1 dependencies of derivation '/nix/store/w63nsr7b2vi3xdg1x7wkz1j6pn3lhhhi-r-sva-3.18.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/3wh9dj0k96pcqzryazka6zawxw5zpyhd-r-scITD-1.0.4.drv' failed to build

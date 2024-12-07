@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/mxlm8gr233a4vzfyrb34fid0bqpvicsq-r-Factoshiny-2.6.drv
+building '/nix/store/mxlm8gr233a4vzfyrb34fid0bqpvicsq-r-Factoshiny-2.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/da8fkcj5na34i62558qrb37j2hk1qdpx-Factoshiny_2.6.tar.gz
+source root is Factoshiny
+setting SOURCE_DATE_EPOCH to timestamp 1713600759 of file Factoshiny/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Factoshiny’ ...
+** package ‘Factoshiny’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 81391 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-Factoshiny-2.6.drv-0/RtmpDPMY9T/file13dea2508b0f'
+ERROR: lazy loading failed for package ‘Factoshiny’
+* removing ‘/nix/store/xafbzxkf8mp6r7mrx8hdfh88nhgjgp9f-r-Factoshiny-2.6/library/Factoshiny’
+error: builder for '/nix/store/mxlm8gr233a4vzfyrb34fid0bqpvicsq-r-Factoshiny-2.6.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/da8fkcj5na34i62558qrb37j2hk1qdpx-Factoshiny_2.6.tar.gz
+       > source root is Factoshiny
+       > setting SOURCE_DATE_EPOCH to timestamp 1713600759 of file Factoshiny/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘Factoshiny’ ...
+       > ** package ‘Factoshiny’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 81391 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-Factoshiny-2.6.drv-0/RtmpDPMY9T/file13dea2508b0f'
+       > ERROR: lazy loading failed for package ‘Factoshiny’
+       > * removing ‘/nix/store/xafbzxkf8mp6r7mrx8hdfh88nhgjgp9f-r-Factoshiny-2.6/library/Factoshiny’
+       For full logs, run 'nix log /nix/store/mxlm8gr233a4vzfyrb34fid0bqpvicsq-r-Factoshiny-2.6.drv'.

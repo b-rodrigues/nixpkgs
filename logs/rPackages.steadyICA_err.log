@@ -1,0 +1,44 @@
+these 2 derivations will be built:
+  /nix/store/a36azvi1g4f43njivg3h2w5dr4r14rpw-steadyICA_1.0.1.tar.gz.drv
+  /nix/store/cbbr7b4gcdb71y4cd85lii8rg2555blk-r-steadyICA-1.0.1.drv
+building '/nix/store/a36azvi1g4f43njivg3h2w5dr4r14rpw-steadyICA_1.0.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/steadyICA_1.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 25839  100 25839    0     0   226k      0 --:--:-- --:--:-- --:--:--  225k
+building '/nix/store/cbbr7b4gcdb71y4cd85lii8rg2555blk-r-steadyICA-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qy53ii2b8kjihwxz6xjczyxzq250kd8s-steadyICA_1.0.1.tar.gz
+source root is steadyICA
+setting SOURCE_DATE_EPOCH to timestamp 1731346545 of file steadyICA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘steadyICA’ ...
+** package ‘steadyICA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c BinDistC.cpp -o BinDistC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c multidcov.cpp -o multidcov.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o steadyICA.so BinDistC.o multidcov.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4jcixzz67s2i7wp0vds6gw3y8dbjlgb0-r-steadyICA-1.0.1/library/00LOCK-steadyICA/00new/steadyICA/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (steadyICA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-steadyICA-1.0.1.drv-0/ in /nix/store/4jcixzz67s2i7wp0vds6gw3y8dbjlgb0-r-steadyICA-1.0.1...
+patching script interpreter paths in /nix/store/4jcixzz67s2i7wp0vds6gw3y8dbjlgb0-r-steadyICA-1.0.1
+rewriting symlink /nix/store/4jcixzz67s2i7wp0vds6gw3y8dbjlgb0-r-steadyICA-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/4jcixzz67s2i7wp0vds6gw3y8dbjlgb0-r-steadyICA-1.0.1

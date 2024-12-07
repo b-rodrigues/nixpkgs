@@ -1,0 +1,47 @@
+these 3 derivations will be built:
+  /nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv
+  /nix/store/cfk042vl2jrjvd4izbnirx7lkgw85l7i-literanger_0.1.1.tar.gz.drv
+  /nix/store/1d951vy5phim1mrkji5dzrg4h0pw5c5b-r-literanger-0.1.1.drv
+building '/nix/store/cfk042vl2jrjvd4izbnirx7lkgw85l7i-literanger_0.1.1.tar.gz.drv'...
+building '/nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv'...
+
+trying https://cran.r-project.org/src/contrib/literanger_0.1.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/av9scqd700zh7nvbf0h014nbk8zkmz2c-Rcereal_1.3.2.tar.gz
+source root is Rcereal
+setting SOURCE_DATE_EPOCH to timestamp 1726840216 of file Rcereal/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+100  107k  100  107k    0     0   704k      0 --:--:-- --:--:-- --:--:--  706k
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rcereal’ ...
+** package ‘Rcereal’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+sed: can't read : No such file or directory
+ERROR: configuration failed for package ‘Rcereal’
+* removing ‘/nix/store/iciws3y1i4bhvjip71bm6qn147n57iy0-r-Rcereal-1.3.2/library/Rcereal’
+error: builder for '/nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv' failed with exit code 1;
+       last 16 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/av9scqd700zh7nvbf0h014nbk8zkmz2c-Rcereal_1.3.2.tar.gz
+       > source root is Rcereal
+       > setting SOURCE_DATE_EPOCH to timestamp 1726840216 of file Rcereal/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘Rcereal’ ...
+       > ** package ‘Rcereal’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > sed: can't read : No such file or directory
+       > ERROR: configuration failed for package ‘Rcereal’
+       > * removing ‘/nix/store/iciws3y1i4bhvjip71bm6qn147n57iy0-r-Rcereal-1.3.2/library/Rcereal’
+       For full logs, run 'nix log /nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv'.
+error: 1 dependencies of derivation '/nix/store/1d951vy5phim1mrkji5dzrg4h0pw5c5b-r-literanger-0.1.1.drv' failed to build

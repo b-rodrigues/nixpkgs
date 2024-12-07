@@ -1,0 +1,64 @@
+this derivation will be built:
+  /nix/store/fyymmc6b2cgixffvkfbj76w47xyaq9vy-r-QTLRel-1.14.drv
+this path will be fetched (0.55 MiB download, 0.55 MiB unpacked):
+  /nix/store/260935f2hxf6gxr8swb3sl6a66phmwd3-QTLRel_1.14.tar.gz
+copying path '/nix/store/260935f2hxf6gxr8swb3sl6a66phmwd3-QTLRel_1.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fyymmc6b2cgixffvkfbj76w47xyaq9vy-r-QTLRel-1.14.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/260935f2hxf6gxr8swb3sl6a66phmwd3-QTLRel_1.14.tar.gz
+source root is QTLRel
+setting SOURCE_DATE_EPOCH to timestamp 1691524203 of file QTLRel/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘QTLRel’ ...
+** package ‘QTLRel’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c QTLRelR.c -o QTLRelR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c distn.c -o distn.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c dqrls.f -o dqrls.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ibsFn.c -o ibsFn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c idcoef.c -o idcoef.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c imFn.c -o imFn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ks.c -o ks.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c qqplot.c -o qqplot.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rgdat.c -o rgdat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c sc10.f -o sc10.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c sc11.f -o sc11.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c sc20.f -o sc20.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c sc21.f -o sc21.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o QTLRel.so QTLRelR.o distn.o dqrls.o ibsFn.o idcoef.o imFn.o init.o ks.o qqplot.o rgdat.o sc10.o sc11.o sc20.o sc21.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _sc10_: does not use standard frame
+ld: warning: could not create compact unwind for _sc20_: does not use standard frame
+ld: warning: could not create compact unwind for _mydqrls_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _sc21_: does not use standard frame
+could not create compact unwind for _sc11_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/ksgpqnb3z19pzsgx59rzkphyvxn2caa5-r-QTLRel-1.14/library/00LOCK-QTLRel/00new/QTLRel/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (QTLRel)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-QTLRel-1.14.drv-0/ in /nix/store/ksgpqnb3z19pzsgx59rzkphyvxn2caa5-r-QTLRel-1.14...
+patching script interpreter paths in /nix/store/ksgpqnb3z19pzsgx59rzkphyvxn2caa5-r-QTLRel-1.14
+rewriting symlink /nix/store/ksgpqnb3z19pzsgx59rzkphyvxn2caa5-r-QTLRel-1.14/nix-support/propagated-user-env-packages to be relative to /nix/store/ksgpqnb3z19pzsgx59rzkphyvxn2caa5-r-QTLRel-1.14

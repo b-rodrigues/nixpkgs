@@ -1,0 +1,64 @@
+this derivation will be built:
+  /nix/store/kfwmfhwk93qvsmnr3bcypmgp95aj50lq-r-TreeSearch-1.5.1.drv
+this path will be fetched (2.53 MiB download, 2.53 MiB unpacked):
+  /nix/store/whz196rx3ykw0lkahjmk65w5jgmcr1hj-TreeSearch_1.5.1.tar.gz
+copying path '/nix/store/whz196rx3ykw0lkahjmk65w5jgmcr1hj-TreeSearch_1.5.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kfwmfhwk93qvsmnr3bcypmgp95aj50lq-r-TreeSearch-1.5.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/whz196rx3ykw0lkahjmk65w5jgmcr1hj-TreeSearch_1.5.1.tar.gz
+source root is TreeSearch
+setting SOURCE_DATE_EPOCH to timestamp 1716471603 of file TreeSearch/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TreeSearch’ ...
+** package ‘TreeSearch’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RMorphy.c -o RMorphy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RMorphyUtils.c -o RMorphyUtils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c TreeSearch-init.c -o TreeSearch-init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fitch.c -o fitch.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c morphy.c -o morphy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c morphy_score.cpp -o morphy_score.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mpl.c -o mpl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rearrange.cpp -o rearrange.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c statedata.c -o statedata.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c wagner.c -o wagner.o
+In file included from rearrange.cpp:3:
+/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/renumber_tree.h:422:58: warning: implicit conversion from 'long' to 'long double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+    if (long(6 * node_limit * sizeof(int32)) > 0.9999L * INTPTR_MAX) {
+                                                       ~ ^~~~~~~~~~
+/nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdint.h:147:27: note: expanded from macro 'INTPTR_MAX'
+#define INTPTR_MAX        9223372036854775807L
+                          ^~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TreeSearch.so RMorphy.o RMorphyUtils.o RcppExports.o TreeSearch-init.o fitch.o morphy.o morphy_score.o mpl.o rearrange.o statedata.o wagner.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/badddq4z7cj5wdhmf7k385nf3rqqgldx-r-TreeSearch-1.5.1/library/00LOCK-TreeSearch/00new/TreeSearch/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TreeSearch)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TreeSearch-1.5.1.drv-0/ in /nix/store/badddq4z7cj5wdhmf7k385nf3rqqgldx-r-TreeSearch-1.5.1...
+patching script interpreter paths in /nix/store/badddq4z7cj5wdhmf7k385nf3rqqgldx-r-TreeSearch-1.5.1
+rewriting symlink /nix/store/badddq4z7cj5wdhmf7k385nf3rqqgldx-r-TreeSearch-1.5.1/nix-support/propagated-user-env-packages to be relative to /nix/store/badddq4z7cj5wdhmf7k385nf3rqqgldx-r-TreeSearch-1.5.1

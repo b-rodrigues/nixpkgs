@@ -1,0 +1,136 @@
+these 3 derivations will be built:
+  /nix/store/sl3lypkh7bd1lazxp28j2fj9g588idci-r-PKI-0.1-14.drv
+  /nix/store/nap9a5isymcbmp0pncvwdac5bdajsmc1-r-rsconnect-1.3.3.drv
+  /nix/store/21k2gfs5sa6qgjkwa0ig3ma0jcmpr26b-r-LightLogR-0.3.8.drv
+this path will be fetched (3.38 MiB download, 3.39 MiB unpacked):
+  /nix/store/fj540p7sxf6l9plq3ij5pnz9liqkrklz-LightLogR_0.3.8.tar.gz
+copying path '/nix/store/fj540p7sxf6l9plq3ij5pnz9liqkrklz-LightLogR_0.3.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sl3lypkh7bd1lazxp28j2fj9g588idci-r-PKI-0.1-14.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7j7x84gk54zcqfi0kv2260vk7r1s8nik-PKI_0.1-14.tar.gz
+source root is PKI
+setting SOURCE_DATE_EPOCH to timestamp 1718480402 of file PKI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PKI’ ...
+** package ‘PKI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for pkg-config... no
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether clang accepts -g... yes
+checking for clang option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for openssl/ssl.h... yes
+checking for openssl/rsa.h... yes
+checking for library containing RSA_generate_key_ex... -lcrypto
+checking for openssl/ssl.h... (cached) yes
+checking for library containing SSL_CTX_load_verify_locations... -lssl
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/config.h
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c asn1.c -o asn1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pem.c -o pem.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pgp.c -o pgp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pki-x509.c -o pki-x509.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c register.c -o register.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tools.c -o tools.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PKI.so asn1.o init.o pem.o pgp.o pki-x509.o register.o tools.o -lssl -lcrypto -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/djk2m0xbi8jyscfhaymbxc17lb4x5wam-r-PKI-0.1-14/library/00LOCK-PKI/00new/PKI/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PKI)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PKI-0.1-14.drv-0/ in /nix/store/djk2m0xbi8jyscfhaymbxc17lb4x5wam-r-PKI-0.1-14...
+patching script interpreter paths in /nix/store/djk2m0xbi8jyscfhaymbxc17lb4x5wam-r-PKI-0.1-14
+rewriting symlink /nix/store/djk2m0xbi8jyscfhaymbxc17lb4x5wam-r-PKI-0.1-14/nix-support/propagated-user-env-packages to be relative to /nix/store/djk2m0xbi8jyscfhaymbxc17lb4x5wam-r-PKI-0.1-14
+building '/nix/store/nap9a5isymcbmp0pncvwdac5bdajsmc1-r-rsconnect-1.3.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hlc0h7p2lni04dzhq3rksdnzjcy473rq-rsconnect_1.3.3.tar.gz
+source root is rsconnect
+setting SOURCE_DATE_EPOCH to timestamp 1731999002 of file rsconnect/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rsconnect’ ...
+** package ‘rsconnect’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rsconnect)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rsconnect-1.3.3.drv-0/ in /nix/store/527jhpi7nhxhpsazm946r7hwzs4csajx-r-rsconnect-1.3.3...
+patching script interpreter paths in /nix/store/527jhpi7nhxhpsazm946r7hwzs4csajx-r-rsconnect-1.3.3
+rewriting symlink /nix/store/527jhpi7nhxhpsazm946r7hwzs4csajx-r-rsconnect-1.3.3/nix-support/propagated-user-env-packages to be relative to /nix/store/527jhpi7nhxhpsazm946r7hwzs4csajx-r-rsconnect-1.3.3
+building '/nix/store/21k2gfs5sa6qgjkwa0ig3ma0jcmpr26b-r-LightLogR-0.3.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fj540p7sxf6l9plq3ij5pnz9liqkrklz-LightLogR_0.3.8.tar.gz
+source root is LightLogR
+setting SOURCE_DATE_EPOCH to timestamp 1720112402 of file LightLogR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LightLogR’ ...
+** package ‘LightLogR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LightLogR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LightLogR-0.3.8.drv-0/ in /nix/store/jdqplwj0cdlsdaw5g8kjb8r8446lsbxd-r-LightLogR-0.3.8...
+patching script interpreter paths in /nix/store/jdqplwj0cdlsdaw5g8kjb8r8446lsbxd-r-LightLogR-0.3.8
+rewriting symlink /nix/store/jdqplwj0cdlsdaw5g8kjb8r8446lsbxd-r-LightLogR-0.3.8/nix-support/propagated-user-env-packages to be relative to /nix/store/jdqplwj0cdlsdaw5g8kjb8r8446lsbxd-r-LightLogR-0.3.8

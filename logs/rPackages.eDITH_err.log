@@ -1,0 +1,266 @@
+these 5 derivations will be built:
+  /nix/store/3z86cq73jx6irn9f7d0vcbq61afcq2i5-r-traudem-1.0.3.drv
+  /nix/store/61qi14c1jn3gyyn99fsqsgf9hjga6mh1-rivnet_0.5.0.tar.gz.drv
+  /nix/store/qq8fl8f0ack2qw1x53vphc0qx30pkh1j-r-OCNet-1.2.2.drv
+  /nix/store/4xi3ilsw0ind5km0j3wzylc0rch3lvjw-r-rivnet-0.5.0.drv
+  /nix/store/p2r1w03dlkvb5m32wpnd3d0mm9rf0pc6-r-eDITH-1.0.0.drv
+building '/nix/store/qq8fl8f0ack2qw1x53vphc0qx30pkh1j-r-OCNet-1.2.2.drv'...
+building '/nix/store/3z86cq73jx6irn9f7d0vcbq61afcq2i5-r-traudem-1.0.3.drv'...
+building '/nix/store/61qi14c1jn3gyyn99fsqsgf9hjga6mh1-rivnet_0.5.0.tar.gz.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hxkq23hlkfb061h0byfnpl1jhfxrivm7-traudem_1.0.3.tar.gz
+source root is traudem
+setting SOURCE_DATE_EPOCH to timestamp 1713975602 of file traudem/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/2iapyps0pqhgw3zkrs896qhqnc69i2ma-OCNet_1.2.2.tar.gz
+source root is OCNet
+setting SOURCE_DATE_EPOCH to timestamp 1713267602 of file OCNet/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+
+trying https://cran.r-project.org/src/contrib/rivnet_0.5.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: configurePhase
+Running phase: buildPhase
+* installing *source* package ‘traudem’ ...
+** package ‘traudem’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+Running phase: checkPhase
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: installPhase
+100 1211k  100 1211k    0     0  2411k      0 --:--:-- --:--:-- --:--:-- 2413k
+* installing *source* package ‘OCNet’ ...
+** package ‘OCNet’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+** installing vignettes
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c NeighbouringNodes.cpp -o NeighbouringNodes.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c WSC.cpp -o WSC.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c diagandstuff.f -o diagandstuff.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c exchange.f -o exchange.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c invperm.c -o invperm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c paths.cpp -o paths.o
+** testing if installed package can be loaded from temporary location
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c permutation.f -o permutation.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c solves.f -o solves.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c spam.f -o spam.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c update.f -o update.o
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (traudem)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-traudem-1.0.3.drv-0/ in /nix/store/mracldq4cggx4qs1xb9bx019w80ad2pi-r-traudem-1.0.3...
+patching script interpreter paths in /nix/store/mracldq4cggx4qs1xb9bx019w80ad2pi-r-traudem-1.0.3
+rewriting symlink /nix/store/mracldq4cggx4qs1xb9bx019w80ad2pi-r-traudem-1.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/mracldq4cggx4qs1xb9bx019w80ad2pi-r-traudem-1.0.3
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o OCNet.so NeighbouringNodes.o RcppExports.o WSC.o diagandstuff.o exchange.o init.o invperm.o paths.o permutation.o solves.o spam.o update.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allinone_: does not use standard frame
+ld: warning: could not create compact unwind for _idsuba_: does not use standard frame
+ld: warning: could not create compact unwind for _updateperm_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/4si265ak9wj4wzn5vh45i2kkk4m29q4g-r-OCNet-1.2.2/library/00LOCK-OCNet/00new/OCNet/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatCategories” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatDataFrame” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatExtent” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatFactor” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatGraph” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatMessages” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatOptions” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRaster” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatRasterStack” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatSRS” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatTime_v” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVector” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorCollection” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SpatVectorProxy” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (OCNet)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-OCNet-1.2.2.drv-0/ in /nix/store/4si265ak9wj4wzn5vh45i2kkk4m29q4g-r-OCNet-1.2.2...
+patching script interpreter paths in /nix/store/4si265ak9wj4wzn5vh45i2kkk4m29q4g-r-OCNet-1.2.2
+rewriting symlink /nix/store/4si265ak9wj4wzn5vh45i2kkk4m29q4g-r-OCNet-1.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/4si265ak9wj4wzn5vh45i2kkk4m29q4g-r-OCNet-1.2.2
+building '/nix/store/4xi3ilsw0ind5km0j3wzylc0rch3lvjw-r-rivnet-0.5.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2dl3dds9cn91apllf5v00c7bp4d7s6jv-rivnet_0.5.0.tar.gz
+source root is rivnet
+setting SOURCE_DATE_EPOCH to timestamp 1727083202 of file rivnet/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rivnet’ ...
+** package ‘rivnet’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c init_perm_rev.cpp -o init_perm_rev.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c path_vel.cpp -o path_vel.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rivnet.so RcppExports.o init_perm_rev.o path_vel.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8ak2266b7qwp54vd7f7wmlrk8fip4lsk-r-rivnet-0.5.0/library/00LOCK-rivnet/00new/rivnet/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rivnet)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rivnet-0.5.0.drv-0/ in /nix/store/8ak2266b7qwp54vd7f7wmlrk8fip4lsk-r-rivnet-0.5.0...
+patching script interpreter paths in /nix/store/8ak2266b7qwp54vd7f7wmlrk8fip4lsk-r-rivnet-0.5.0
+rewriting symlink /nix/store/8ak2266b7qwp54vd7f7wmlrk8fip4lsk-r-rivnet-0.5.0/nix-support/propagated-user-env-packages to be relative to /nix/store/8ak2266b7qwp54vd7f7wmlrk8fip4lsk-r-rivnet-0.5.0
+building '/nix/store/p2r1w03dlkvb5m32wpnd3d0mm9rf0pc6-r-eDITH-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/cwp60c35ih0zpg5agxp3c2ajb39z59pw-eDITH_1.0.0.tar.gz
+source root is eDITH
+setting SOURCE_DATE_EPOCH to timestamp 1716543008 of file eDITH/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘eDITH’ ...
+** package ‘eDITH’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c evalConc2.cpp -o evalConc2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o eDITH.so RcppExports.o evalConc2.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/sn3v8k6r24nkdan3m2c85lasyirarxm6-r-eDITH-1.0.0/library/00LOCK-eDITH/00new/eDITH/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (eDITH)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-eDITH-1.0.0.drv-0/ in /nix/store/sn3v8k6r24nkdan3m2c85lasyirarxm6-r-eDITH-1.0.0...
+patching script interpreter paths in /nix/store/sn3v8k6r24nkdan3m2c85lasyirarxm6-r-eDITH-1.0.0
+rewriting symlink /nix/store/sn3v8k6r24nkdan3m2c85lasyirarxm6-r-eDITH-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/sn3v8k6r24nkdan3m2c85lasyirarxm6-r-eDITH-1.0.0

@@ -1,0 +1,116 @@
+these 3 derivations will be built:
+  /nix/store/dl3lg49gmfx3gy3zhjakww7cmcv170lv-r-sparsesvd-0.2-2.drv
+  /nix/store/4k71izp508dgw85522ycwklg5wrmzclx-r-wordspace-0.2-8.drv
+  /nix/store/nf6gc9mrp8agwasymrffnhm1ircgljdh-r-less-0.1.0.drv
+these 3 paths will be fetched (1.87 MiB download, 1.87 MiB unpacked):
+  /nix/store/ixd6c8xdzp6spglsggwpr4bqbrr93bcx-less_0.1.0.tar.gz
+  /nix/store/3dkby08ifhqay8gsxc5xlph1q668qblm-sparsesvd_0.2-2.tar.gz
+  /nix/store/phmra5rk005b3qz2r1qv8vsc2xcc6977-wordspace_0.2-8.tar.gz
+copying path '/nix/store/ixd6c8xdzp6spglsggwpr4bqbrr93bcx-less_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/phmra5rk005b3qz2r1qv8vsc2xcc6977-wordspace_0.2-8.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3dkby08ifhqay8gsxc5xlph1q668qblm-sparsesvd_0.2-2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dl3lg49gmfx3gy3zhjakww7cmcv170lv-r-sparsesvd-0.2-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3dkby08ifhqay8gsxc5xlph1q668qblm-sparsesvd_0.2-2.tar.gz
+source root is sparsesvd
+setting SOURCE_DATE_EPOCH to timestamp 1673725202 of file sparsesvd/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sparsesvd’ ...
+** package ‘sparsesvd’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c las2.c -o las2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c main.c -o main.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c svdlib.c -o svdlib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c svdutil.c -o svdutil.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o sparsesvd.so las2.o main.o svdlib.o svdutil.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/7rppk8pkcdgi2h0rfz3z0zkmhsbz4pdk-r-sparsesvd-0.2-2/library/00LOCK-sparsesvd/00new/sparsesvd/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sparsesvd)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sparsesvd-0.2-2.drv-0/ in /nix/store/7rppk8pkcdgi2h0rfz3z0zkmhsbz4pdk-r-sparsesvd-0.2-2...
+patching script interpreter paths in /nix/store/7rppk8pkcdgi2h0rfz3z0zkmhsbz4pdk-r-sparsesvd-0.2-2
+rewriting symlink /nix/store/7rppk8pkcdgi2h0rfz3z0zkmhsbz4pdk-r-sparsesvd-0.2-2/nix-support/propagated-user-env-packages to be relative to /nix/store/7rppk8pkcdgi2h0rfz3z0zkmhsbz4pdk-r-sparsesvd-0.2-2
+building '/nix/store/4k71izp508dgw85522ycwklg5wrmzclx-r-wordspace-0.2-8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/phmra5rk005b3qz2r1qv8vsc2xcc6977-wordspace_0.2-8.tar.gz
+source root is wordspace
+setting SOURCE_DATE_EPOCH to timestamp 1661203802 of file wordspace/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘wordspace’ ...
+** package ‘wordspace’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c wordspace.cpp -o wordspace.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o wordspace.so RcppExports.o wordspace.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yk9alkhl9yvshmk1pcmqa6360zi6617m-r-wordspace-0.2-8/library/00LOCK-wordspace/00new/wordspace/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (wordspace)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-wordspace-0.2-8.drv-0/ in /nix/store/yk9alkhl9yvshmk1pcmqa6360zi6617m-r-wordspace-0.2-8...
+patching script interpreter paths in /nix/store/yk9alkhl9yvshmk1pcmqa6360zi6617m-r-wordspace-0.2-8
+rewriting symlink /nix/store/yk9alkhl9yvshmk1pcmqa6360zi6617m-r-wordspace-0.2-8/nix-support/propagated-user-env-packages to be relative to /nix/store/yk9alkhl9yvshmk1pcmqa6360zi6617m-r-wordspace-0.2-8
+building '/nix/store/nf6gc9mrp8agwasymrffnhm1ircgljdh-r-less-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ixd6c8xdzp6spglsggwpr4bqbrr93bcx-less_0.1.0.tar.gz
+source root is less
+setting SOURCE_DATE_EPOCH to timestamp 1664276402 of file less/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘less’ ...
+** package ‘less’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (less)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-less-0.1.0.drv-0/ in /nix/store/d0drxid2ydvs30c13yjw9ssy208366ik-r-less-0.1.0...
+patching script interpreter paths in /nix/store/d0drxid2ydvs30c13yjw9ssy208366ik-r-less-0.1.0
+rewriting symlink /nix/store/d0drxid2ydvs30c13yjw9ssy208366ik-r-less-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/d0drxid2ydvs30c13yjw9ssy208366ik-r-less-0.1.0

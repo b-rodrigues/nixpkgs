@@ -1,0 +1,75 @@
+these 2 derivations will be built:
+  /nix/store/pg7972sbsiwr5yxx8zrf4ickrl7zaamb-r-TIMP-1.13.6.drv
+  /nix/store/8ng8q78595hp59fp4q15d64mki30947x-r-paramGUI-2.2.0.drv
+these 2 paths will be fetched (1.17 MiB download, 1.17 MiB unpacked):
+  /nix/store/faz3q93gric0jcrz1si53wc7mjg9lh0q-TIMP_1.13.6.tar.gz
+  /nix/store/f8c6syzma1vza59jn34yyy4bii17c5sv-paramGUI_2.2.0.tar.gz
+copying path '/nix/store/f8c6syzma1vza59jn34yyy4bii17c5sv-paramGUI_2.2.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/faz3q93gric0jcrz1si53wc7mjg9lh0q-TIMP_1.13.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pg7972sbsiwr5yxx8zrf4ickrl7zaamb-r-TIMP-1.13.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/faz3q93gric0jcrz1si53wc7mjg9lh0q-TIMP_1.13.6.tar.gz
+source root is TIMP
+setting SOURCE_DATE_EPOCH to timestamp 1670850602 of file TIMP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TIMP’ ...
+** package ‘TIMP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c TIMP_init.c -o TIMP_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ntr.c -o ntr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TIMP.so TIMP_init.o ntr.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/k6hnpwv4b9a21shkh3672drh5gg2hgxs-r-TIMP-1.13.6/library/00LOCK-TIMP/00new/TIMP/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TIMP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TIMP-1.13.6.drv-0/ in /nix/store/k6hnpwv4b9a21shkh3672drh5gg2hgxs-r-TIMP-1.13.6...
+patching script interpreter paths in /nix/store/k6hnpwv4b9a21shkh3672drh5gg2hgxs-r-TIMP-1.13.6
+rewriting symlink /nix/store/k6hnpwv4b9a21shkh3672drh5gg2hgxs-r-TIMP-1.13.6/nix-support/propagated-user-env-packages to be relative to /nix/store/k6hnpwv4b9a21shkh3672drh5gg2hgxs-r-TIMP-1.13.6
+building '/nix/store/8ng8q78595hp59fp4q15d64mki30947x-r-paramGUI-2.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/f8c6syzma1vza59jn34yyy4bii17c5sv-paramGUI_2.2.0.tar.gz
+source root is paramGUI
+setting SOURCE_DATE_EPOCH to timestamp 1673190007 of file paramGUI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘paramGUI’ ...
+** package ‘paramGUI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (paramGUI)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-paramGUI-2.2.0.drv-0/ in /nix/store/fnfvb84c2ip2l6m7fsas5vs6w17ij93y-r-paramGUI-2.2.0...
+patching script interpreter paths in /nix/store/fnfvb84c2ip2l6m7fsas5vs6w17ij93y-r-paramGUI-2.2.0
+rewriting symlink /nix/store/fnfvb84c2ip2l6m7fsas5vs6w17ij93y-r-paramGUI-2.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/fnfvb84c2ip2l6m7fsas5vs6w17ij93y-r-paramGUI-2.2.0

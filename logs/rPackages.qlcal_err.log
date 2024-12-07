@@ -1,0 +1,871 @@
+these 2 derivations will be built:
+  /nix/store/j4b7vwi4h8mnzbs48sad5yq4wqx3kc87-qlcal_0.0.13.tar.gz.drv
+  /nix/store/2ciyy5zylngmf93l4wjyghf6ag3fjcd8-r-qlcal-0.0.13.drv
+building '/nix/store/j4b7vwi4h8mnzbs48sad5yq4wqx3kc87-qlcal_0.0.13.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/qlcal_0.0.13.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  121k  100  121k    0     0   768k      0 --:--:-- --:--:-- --:--:--  773k
+building '/nix/store/2ciyy5zylngmf93l4wjyghf6ag3fjcd8-r-qlcal-0.0.13.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9mvs7ybpxcn1ql8kgbcf4gg1iv9vjdqy-qlcal_0.0.13.tar.gz
+source root is qlcal
+setting SOURCE_DATE_EPOCH to timestamp 1729022402 of file qlcal/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘qlcal’ ...
+** package ‘qlcal’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+[1] ‘4.4.2’
+[1] "src/Makevars.in"
+[1] "src/Makevars"
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/patterns/observable.cpp -o ql/patterns/observable.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/argentina.cpp -o ql/time/calendars/argentina.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/australia.cpp -o ql/time/calendars/australia.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/austria.cpp -o ql/time/calendars/austria.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/bespokecalendar.cpp -o ql/time/calendars/bespokecalendar.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/botswana.cpp -o ql/time/calendars/botswana.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/brazil.cpp -o ql/time/calendars/brazil.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/canada.cpp -o ql/time/calendars/canada.o
+In file included from ql/time/calendars/austria.cpp:20:
+In file included from ./ql/time/calendars/austria.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/argentina.cpp:20:
+In file included from ./ql/time/calendars/argentina.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/patterns/observable.cpp:22:
+In file included from ./ql/patterns/observable.hpp:32:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/canada.cpp:21:
+In file included from ./ql/time/calendars/canada.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/australia.cpp:20:
+In file included from ./ql/time/calendars/australia.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/bespokecalendar.cpp:20:
+In file included from ./ql/time/calendars/bespokecalendar.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/botswana.cpp:21:
+In file included from ./ql/time/calendars/botswana.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/brazil.cpp:21:
+In file included from ./ql/time/calendars/brazil.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/chile.cpp -o ql/time/calendars/chile.o
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/china.cpp -o ql/time/calendars/china.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/czechrepublic.cpp -o ql/time/calendars/czechrepublic.o
+In file included from ql/time/calendars/chile.cpp:20:
+In file included from ./ql/time/calendars/chile.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/denmark.cpp -o ql/time/calendars/denmark.o
+In file included from ql/time/calendars/czechrepublic.cpp:20:
+In file included from ./ql/time/calendars/czechrepublic.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/china.cpp:21:
+In file included from ./ql/time/calendars/china.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/finland.cpp -o ql/time/calendars/finland.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/france.cpp -o ql/time/calendars/france.o
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/germany.cpp -o ql/time/calendars/germany.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/hongkong.cpp -o ql/time/calendars/hongkong.o
+In file included from ql/time/calendars/denmark.cpp:21:
+In file included from ./ql/time/calendars/denmark.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/finland.cpp:20:
+In file included from ./ql/time/calendars/finland.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/france.cpp:20:
+In file included from ./ql/time/calendars/france.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/hongkong.cpp:21:
+In file included from ./ql/time/calendars/hongkong.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/germany.cpp:20:
+In file included from ./ql/time/calendars/germany.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/hungary.cpp -o ql/time/calendars/hungary.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/iceland.cpp -o ql/time/calendars/iceland.o
+In file included from ql/time/calendars/hungary.cpp:20:
+In file included from ./ql/time/calendars/hungary.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/iceland.cpp:20:
+In file included from ./ql/time/calendars/iceland.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/india.cpp -o ql/time/calendars/india.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/indonesia.cpp -o ql/time/calendars/indonesia.o
+In file included from ql/time/calendars/india.cpp:21:
+In file included from ./ql/time/calendars/india.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/indonesia.cpp:20:
+In file included from ./ql/time/calendars/indonesia.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/israel.cpp -o ql/time/calendars/israel.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/italy.cpp -o ql/time/calendars/italy.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/japan.cpp -o ql/time/calendars/japan.o
+In file included from ql/time/calendars/israel.cpp:21:
+In file included from ./ql/time/calendars/israel.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/italy.cpp:20:
+In file included from ./ql/time/calendars/italy.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/jointcalendar.cpp -o ql/time/calendars/jointcalendar.o
+In file included from ql/time/calendars/japan.cpp:22:
+In file included from ./ql/time/calendars/japan.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/jointcalendar.cpp:22:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/mexico.cpp -o ql/time/calendars/mexico.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/newzealand.cpp -o ql/time/calendars/newzealand.o
+In file included from ql/time/calendars/mexico.cpp:21:
+In file included from ./ql/time/calendars/mexico.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/newzealand.cpp:20:
+In file included from ./ql/time/calendars/newzealand.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/norway.cpp -o ql/time/calendars/norway.o
+In file included from ql/time/calendars/norway.cpp:20:
+In file included from ./ql/time/calendars/norway.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/poland.cpp -o ql/time/calendars/poland.o
+In file included from ql/time/calendars/poland.cpp:20:
+In file included from ./ql/time/calendars/poland.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/romania.cpp -o ql/time/calendars/romania.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/russia.cpp -o ql/time/calendars/russia.o
+In file included from ql/time/calendars/romania.cpp:22:
+In file included from ./ql/time/calendars/romania.hpp:29:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/russia.cpp:21:
+In file included from ./ql/time/calendars/russia.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/saudiarabia.cpp -o ql/time/calendars/saudiarabia.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/singapore.cpp -o ql/time/calendars/singapore.o
+In file included from ql/time/calendars/saudiarabia.cpp:21:
+In file included from ./ql/time/calendars/saudiarabia.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/singapore.cpp:22:
+In file included from ./ql/time/calendars/singapore.hpp:29:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/slovakia.cpp -o ql/time/calendars/slovakia.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/southafrica.cpp -o ql/time/calendars/southafrica.o
+In file included from ql/time/calendars/slovakia.cpp:20:
+In file included from ./ql/time/calendars/slovakia.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/southafrica.cpp:21:
+In file included from ./ql/time/calendars/southafrica.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/southkorea.cpp -o ql/time/calendars/southkorea.o
+In file included from ql/time/calendars/southkorea.cpp:26:
+In file included from ./ql/time/calendars/southkorea.hpp:30:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/sweden.cpp -o ql/time/calendars/sweden.o
+In file included from ql/time/calendars/sweden.cpp:20:
+In file included from ./ql/time/calendars/sweden.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/switzerland.cpp -o ql/time/calendars/switzerland.o
+1In file included from  warningql/time/calendars/switzerland.cpp generated:20:
+In file included from ./ql/time/calendars/switzerland.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/taiwan.cpp -o ql/time/calendars/taiwan.o
+In file included from ql/time/calendars/taiwan.cpp:22:
+In file included from ./ql/time/calendars/taiwan.hpp:29:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/target.cpp -o ql/time/calendars/target.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/thailand.cpp -o ql/time/calendars/thailand.o
+In file included from ql/time/calendars/target.cpp:20:
+In file included from ./ql/time/calendars/target.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/thailand.cpp:21:
+In file included from ./ql/time/calendars/thailand.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/turkey.cpp -o ql/time/calendars/turkey.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/ukraine.cpp -o ql/time/calendars/ukraine.o
+In file included from ql/time/calendars/turkey.cpp:23:
+In file included from ./ql/time/calendars/turkey.hpp:29:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/ukraine.cpp:20:
+In file included from ./ql/time/calendars/ukraine.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/unitedkingdom.cpp -o ql/time/calendars/unitedkingdom.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/unitedstates.cpp -o ql/time/calendars/unitedstates.o
+In file included from ql/time/calendars/unitedkingdom.cpp:21:
+In file included from ./ql/time/calendars/unitedkingdom.hpp:28:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendars/weekendsonly.cpp -o ql/time/calendars/weekendsonly.o
+In file included from ql/time/calendars/unitedstates.cpp:25:
+In file included from ./ql/time/calendars/unitedstates.hpp:32:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendars/weekendsonly.cpp:20:
+In file included from ./ql/time/calendars/weekendsonly.hpp:27:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/businessdayconvention.cpp -o ql/time/businessdayconvention.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/calendar.cpp -o ql/time/calendar.o
+In file included from ql/time/businessdayconvention.cpp:23:
+In file included from ./ql/time/businessdayconvention.hpp:30:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/calendar.cpp:25:
+In file included from ./ql/time/calendar.hpp:31:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/date.cpp -o ql/time/date.o
+In file included from ql/time/date.cpp:27:
+In file included from ./ql/time/date.hpp:34:
+In file included from ./ql/time/period.hpp:30:
+In file included from ./ql/time/frequency.hpp:30:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/frequency.cpp -o ql/time/frequency.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/period.cpp -o ql/time/period.o
+In file included from ql/time/period.cpp:24:
+In file included from ./ql/time/period.hpp:30:
+In file included from ./ql/time/frequency.hpp:30:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/frequency.cpp:23:
+In file included from ./ql/time/frequency.hpp:30:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/timeunit.cpp -o ql/time/timeunit.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/time/weekday.cpp -o ql/time/weekday.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/utilities/dataformatters.cpp -o ql/utilities/dataformatters.o
+In file included from ql/time/timeunit.cpp:20:
+In file included from ./ql/time/timeunit.hpp:30:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/time/weekday.cpp:24:
+In file included from ./ql/time/weekday.hpp:31:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/utilities/dataformatters.cpp:20:
+In file included from ./ql/utilities/dataformatters.hpp:27:
+In file included from ./ql/utilities/null.hpp:29:
+In file included from ./ql/types.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/utilities/dataparsers.cpp -o ql/utilities/dataparsers.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/errors.cpp -o ql/errors.o
+In file included from ql/utilities/dataparsers.cpp:23:
+In file included from ./ql/utilities/dataparsers.hpp:30:
+In file included from ./ql/time/date.hpp:34:
+In file included from ./ql/time/period.hpp:30:
+In file included from ./ql/time/frequency.hpp:30:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from ql/errors.cpp:20:
+In file included from ./ql/errors.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ql/settings.cpp -o ql/settings.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c calendars.cpp -o calendars.o
+In file included from ql/settings.cpp:22:
+In file included from ./ql/settings.hpp:29:
+In file included from ./ql/patterns/singleton.hpp:27:
+In file included from ./ql/types.hpp:28:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from calendars.cpp:21:
+In file included from ../inst/include/qlcal_types.h:8:
+In file included from ./ql/quantlib.hpp:1:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dates.cpp -o dates.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c utils.cpp -o utils.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include/ -DBOOST_NO_AUTO_PTR -DQL_USE_STD_SHARED_PTR -DQL_HIGH_RESOLUTION_DATE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+In file included from dates.cpp:26:
+In file included from ../inst/include/qlcal_types.h:8:
+In file included from ./ql/quantlib.hpp:1:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from utils.cpp:25:
+In file included from ../inst/include/qlcal_types.h:8:
+In file included from ./ql/quantlib.hpp:1:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from RcppExports.cpp:4:
+In file included from ./../inst/include/qlcal.h:7:
+In file included from ../inst/include/qlcal_RcppExports.h:7:
+In file included from ../inst/include/qlcal_types.h:8:
+In file included from ./ql/quantlib.hpp:1:
+In file included from ./ql/qldefines.hpp:38:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o qlcal.so ql/patterns/observable.o ql/time/calendars/argentina.o ql/time/calendars/australia.o ql/time/calendars/austria.o ql/time/calendars/bespokecalendar.o ql/time/calendars/botswana.o ql/time/calendars/brazil.o ql/time/calendars/canada.o ql/time/calendars/chile.o ql/time/calendars/china.o ql/time/calendars/czechrepublic.o ql/time/calendars/denmark.o ql/time/calendars/finland.o ql/time/calendars/france.o ql/time/calendars/germany.o ql/time/calendars/hongkong.o ql/time/calendars/hungary.o ql/time/calendars/iceland.o ql/time/calendars/india.o ql/time/calendars/indonesia.o ql/time/calendars/israel.o ql/time/calendars/italy.o ql/time/calendars/japan.o ql/time/calendars/jointcalendar.o ql/time/calendars/mexico.o ql/time/calendars/newzealand.o ql/time/calendars/norway.o ql/time/calendars/poland.o ql/time/calendars/romania.o ql/time/calendars/russia.o ql/time/calendars/saudiarabia.o ql/time/calendars/singapore.o ql/time/calendars/slovakia.o ql/time/calendars/southafrica.o ql/time/calendars/southkorea.o ql/time/calendars/sweden.o ql/time/calendars/switzerland.o ql/time/calendars/taiwan.o ql/time/calendars/target.o ql/time/calendars/thailand.o ql/time/calendars/turkey.o ql/time/calendars/ukraine.o ql/time/calendars/unitedkingdom.o ql/time/calendars/unitedstates.o ql/time/calendars/weekendsonly.o ql/time/businessdayconvention.o ql/time/calendar.o ql/time/date.o ql/time/frequency.o ql/time/period.o ql/time/timeunit.o ql/time/weekday.o ql/utilities/dataformatters.o ql/utilities/dataparsers.o ql/errors.o ql/settings.o calendars.o dates.o utils.o RcppExports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zsmdl1nix9hfjsb3gif7wyyahi1xg105-r-qlcal-0.0.13/library/00LOCK-qlcal/00new/qlcal/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (qlcal)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-qlcal-0.0.13.drv-0/ in /nix/store/zsmdl1nix9hfjsb3gif7wyyahi1xg105-r-qlcal-0.0.13...
+patching script interpreter paths in /nix/store/zsmdl1nix9hfjsb3gif7wyyahi1xg105-r-qlcal-0.0.13
+rewriting symlink /nix/store/zsmdl1nix9hfjsb3gif7wyyahi1xg105-r-qlcal-0.0.13/nix-support/propagated-user-env-packages to be relative to /nix/store/zsmdl1nix9hfjsb3gif7wyyahi1xg105-r-qlcal-0.0.13

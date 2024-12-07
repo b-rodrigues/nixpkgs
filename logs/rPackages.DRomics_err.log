@@ -1,0 +1,123 @@
+these 5 derivations will be built:
+  /nix/store/0jiwxc1d7wpp2gr80s0m2hbmprdds8p9-r-geneplotter-1.48.0.drv
+  /nix/store/k4rc1fh6nahypv5hadc4z5s42zayi3i8-r-SummarizedExperiment-1.0.2.drv
+  /nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv
+  /nix/store/r8jrhgx178rd925csbrhwb98psw9zvq6-r-DESeq2-1.10.1.drv
+  /nix/store/gzph1gqjlk6gb9884k1ny8v8qd3ln0hk-r-DRomics-2.6-2.drv
+building '/nix/store/k4rc1fh6nahypv5hadc4z5s42zayi3i8-r-SummarizedExperiment-1.0.2.drv'...
+building '/nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv'...
+building '/nix/store/0jiwxc1d7wpp2gr80s0m2hbmprdds8p9-r-geneplotter-1.48.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6c03p87qpf66zpw676xxyngd78w8qjlr-SummarizedExperiment_1.0.2.tar.gz
+source root is SummarizedExperiment
+setting SOURCE_DATE_EPOCH to timestamp 1451624571 of file SummarizedExperiment/inst/doc/SummarizedExperiment.html
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/nasj7wpna8py8ck226zkspmk2br6niha-genefilter_1.52.1.tar.gz
+source root is genefilter
+setting SOURCE_DATE_EPOCH to timestamp 1453944267 of file genefilter/src/ttest.f
+Running phase: patchPhase
+* installing *source* package ‘SummarizedExperiment’ ...
+** using staged installation
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/dcrhap7kqkri2fkf5sp6n1g41brc7a1z-geneplotter_1.48.0.tar.gz
+source root is geneplotter
+setting SOURCE_DATE_EPOCH to timestamp 1444782746 of file geneplotter/inst/doc/visualize.pdf
+Running phase: patchPhase
+* installing *source* package ‘genefilter’ ...
+** using staged installation
+** libs
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+using C compiler: ‘clang version 16.0.6’
+Running phase: installPhase
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c half_range_mode.cpp -o half_range_mode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c nd.c -o nd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pAUC.c -o pAUC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowPAUCs.c -o rowPAUCs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowttests.c -o rowttests.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c ttest.f -o ttest.o
+nd.c:24:10: fatal error: 'S.h' file not found
+#include "S.h"
+         ^~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: nd.o] Error 1
+make: *** Attente des tâches non terminées....
+rowttests.c:172:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:172:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+rowttests.c:181:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:181:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+2 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: rowttests.o] Error 1
+* installing *source* package ‘geneplotter’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+half_range_mode.cpp:100:88: warning: format specifies type 'int' but the argument has type 'size_type' (aka 'unsigned long') [-Wformat]
+    if (diag) Rprintf( "N = %i, N'' = %i, w = %.4f, |J| = %i\n", N, N_double_prime, w, J.size() );
+                                                          ~~                           ^~~~~~~~
+                                                          %zu
+1 warning generated.
+ERROR: compilation failed for package ‘genefilter’
+* removing ‘/nix/store/qc1lzp0nljd6v9zjg6qmw8qll2c0v2s2-r-genefilter-1.52.1/library/genefilter’
+error: builder for '/nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv' failed with exit code 1;
+       last 25 log lines:
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: nd.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > rowttests.c:172:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+       >               error(errmsg);
+       >                     ^~~~~~
+       > rowttests.c:172:14: note: treat the string as an argument to avoid this
+       >               error(errmsg);
+       >                     ^
+       >                     "%s",
+       > rowttests.c:181:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+       >               error(errmsg);
+       >                     ^~~~~~
+       > rowttests.c:181:14: note: treat the string as an argument to avoid this
+       >               error(errmsg);
+       >                     ^
+       >                     "%s",
+       > 2 errors generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: rowttests.o] Error 1
+       > half_range_mode.cpp:100:88: warning: format specifies type 'int' but the argument has type 'size_type' (aka 'unsigned long') [-Wformat]
+       >     if (diag) Rprintf( "N = %i, N'' = %i, w = %.4f, |J| = %i\n", N, N_double_prime, w, J.size() );
+       >                                                           ~~                           ^~~~~~~~
+       >                                                           %zu
+       > 1 warning generated.
+       > ERROR: compilation failed for package ‘genefilter’
+       > * removing ‘/nix/store/qc1lzp0nljd6v9zjg6qmw8qll2c0v2s2-r-genefilter-1.52.1/library/genefilter’
+       For full logs, run 'nix log /nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv'.
+error: 1 dependencies of derivation '/nix/store/r8jrhgx178rd925csbrhwb98psw9zvq6-r-DESeq2-1.10.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/gzph1gqjlk6gb9884k1ny8v8qd3ln0hk-r-DRomics-2.6-2.drv' failed to build

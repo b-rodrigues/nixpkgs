@@ -1,0 +1,58 @@
+these 2 derivations will be built:
+  /nix/store/gi7p7vabmj0kazqfdlc2kvpp76vqd5c3-spatialwarnings_3.1.0.tar.gz.drv
+  /nix/store/71xb9sg0kpv5jwmqkivhxsxxilhrcm5j-r-spatialwarnings-3.1.0.drv
+building '/nix/store/gi7p7vabmj0kazqfdlc2kvpp76vqd5c3-spatialwarnings_3.1.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/spatialwarnings_3.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1607k  100 1607k    0     0  5102k      0 --:--:-- --:--:-- --:--:-- 5104k
+building '/nix/store/71xb9sg0kpv5jwmqkivhxsxxilhrcm5j-r-spatialwarnings-3.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fxsvqjfrj3sdcfycdx948bwqx9xwb50d-spatialwarnings_3.1.0.tar.gz
+source root is spatialwarnings
+setting SOURCE_DATE_EPOCH to timestamp 1725634202 of file spatialwarnings/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spatialwarnings’ ...
+** package ‘spatialwarnings’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c clustering.cpp -o clustering.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c coarse_graining.cpp -o coarse_graining.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c discpowerexp.cpp -o discpowerexp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c flowlength_internal.cpp -o flowlength_internal.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c label.cpp -o label.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c moran_correlation.cpp -o moran_correlation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c norm_constants.cpp -o norm_constants.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c null_computation.cpp -o null_computation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rspectrum.cpp -o rspectrum.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c skewness.cpp -o skewness.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c variogram.cpp -o variogram.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c zeta.cpp -o zeta.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spatialwarnings.so RcppExports.o clustering.o coarse_graining.o discpowerexp.o flowlength_internal.o label.o moran_correlation.o norm_constants.o null_computation.o rspectrum.o skewness.o variogram.o zeta.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/lykl0f69ksamii0m4prd6z1lq5kw5pmq-r-spatialwarnings-3.1.0/library/00LOCK-spatialwarnings/00new/spatialwarnings/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spatialwarnings)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spatialwarnings-3.1.0.drv-0/ in /nix/store/lykl0f69ksamii0m4prd6z1lq5kw5pmq-r-spatialwarnings-3.1.0...
+patching script interpreter paths in /nix/store/lykl0f69ksamii0m4prd6z1lq5kw5pmq-r-spatialwarnings-3.1.0
+rewriting symlink /nix/store/lykl0f69ksamii0m4prd6z1lq5kw5pmq-r-spatialwarnings-3.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/lykl0f69ksamii0m4prd6z1lq5kw5pmq-r-spatialwarnings-3.1.0

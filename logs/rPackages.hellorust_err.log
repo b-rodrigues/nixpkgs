@@ -1,0 +1,57 @@
+these 2 derivations will be built:
+  /nix/store/n3z0zljarmd45apgri0ly5b77yp5wwm6-hellorust_1.2.2.tar.gz.drv
+  /nix/store/yinhszgalh918mvg9gmfkb0ym35qppnn-r-hellorust-1.2.2.drv
+building '/nix/store/n3z0zljarmd45apgri0ly5b77yp5wwm6-hellorust_1.2.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/hellorust_1.2.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4491k  100 4491k    0     0  5700k      0 --:--:-- --:--:-- --:--:-- 5707k
+building '/nix/store/yinhszgalh918mvg9gmfkb0ym35qppnn-r-hellorust-1.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xf9h1pzaxr16c0wrwz41rw2jjkzsclay-hellorust_1.2.2.tar.gz
+source root is hellorust
+setting SOURCE_DATE_EPOCH to timestamp 1727016606 of file hellorust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hellorust’ ...
+** package ‘hellorust’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+cargo 1.82.0 (8f40fc59f 2024-08-21)
+./configure: line 5: rustc: command not found
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSTRICT_R_HEADERS -DR_NO_REMAP  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -pthread -fPIC  -g -O2  -c wrapper.c -o wrapper.o
+if [ -f myrustlib/vendor.tar.xz ]; then tar xf myrustlib/vendor.tar.xz && mkdir -p /private/tmp/nix-build-r-hellorust-1.2.2.drv-0/hellorust/src/.cargo && cp myrustlib/vendor-config.toml /private/tmp/nix-build-r-hellorust-1.2.2.drv-0/hellorust/src/.cargo/config.toml; fi
+PATH="/nix/store/arsxsvbjmappgjrxviayspqnjm1nhrma-cargo-1.82.0/bin:/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin:/nix/store/44hqr4414m3jldixkm4cq47q5pnpy83d-clang-16.0.6/bin:/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin:/nix/store/jqy6x4li0s729q6q97qmzrqwjfi567bv-cctools-binutils-darwin-wrapper-1010.6/bin:/nix/store/c02f0lj5xqjaw1c6hg9a9sv1b024mi8q-cctools-binutils-darwin-1010.6/bin:/nix/store/3a99nvsn1jh7h3vklnd8py5jplls9q41-xcbuild-0.1.1-unstable-2019-11-20-xcrun/bin:/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin:/nix/store/dr75b3kr4mdgqw0wwllp0nc04wqrg1w5-gettext-0.21.1/bin:/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin:/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin:/nix/store/iwbpxcjz1s816d80sqg0mxg5p8m0dqak-libiconv-107/bin:/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin:/nix/store/zxz2b4dlg9zz8dcrwa2my1bpyxpfcchj-findutils-4.10.0/bin:/nix/store/xnm74pr7sl0jvn2q8fcr4jy3vrdgyqrn-diffutils-3.10/bin:/nix/store/9m372k9wy0f9aj54zhvsr65w2p9ndwnj-gnused-4.9/bin:/nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin:/nix/store/5q48fvg6grf5zsk106cm0k0hbfc1dfp2-gawk-5.3.1/bin:/nix/store/41dh2jr0d4ixcbjvkw72hqvrj0kv3mfh-gnutar-1.35/bin:/nix/store/jnnmwj5nsh4y8avg72q23nshq5z74pck-gzip-1.13/bin:/nix/store/5vs5hn675fwynba3didxxyvk8v0ji2bl-bzip2-1.0.8-bin/bin:/nix/store/0gqbh56qwj0cxmvl7dajic9mkbc26ilc-gnumake-4.4.1/bin:/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin:/nix/store/i8yd551zdvdx0gg9mxg5ky6znqaflnkd-patch-2.7.6/bin:/nix/store/kv4wl884saw5jjch5kg4zvcrpff6dlh9-xz-5.6.3-bin/bin:/nix/store/92imkakl854dfvqjl1z8jmsxjrg1mh6f-file-5.45/bin:/homeless-shelter/.cargo/bin" cargo build -j 2 --release --manifest-path=myrustlib/Cargo.toml
+warning: a `-j` argument was passed to Cargo but Cargo is also configured with an external jobserver in its environment, ignoring the `-j` parameter
+warning: no edition set: defaulting to the 2015 edition while the latest is 2021
+     Locking 10 packages to latest compatible versions
+      Adding rand_core v0.3.1 (latest: v0.4.2)
+   Compiling libc v0.2.158
+   Compiling rand v0.4.6
+   Compiling myrustlib v0.1.0 (/private/tmp/nix-build-r-hellorust-1.2.2.drv-0/hellorust/src/myrustlib)
+    Finished `release` profile [optimized] target(s) in 2.05s
+rm -Rf /private/tmp/nix-build-r-hellorust-1.2.2.drv-0/hellorust/src/.cargo vendor || true # CRAN wants us to remove "detritus"
+rm -Rf myrustlib/target/release/build || true
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o hellorust.so wrapper.o -Lmyrustlib/target/release -lmyrustlib -lresolv -pthread -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/vg33xhyw7smn3sc5c8a5svkxx1cx5pq2-r-hellorust-1.2.2/library/00LOCK-hellorust/00new/hellorust/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hellorust)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hellorust-1.2.2.drv-0/ in /nix/store/vg33xhyw7smn3sc5c8a5svkxx1cx5pq2-r-hellorust-1.2.2...
+patching script interpreter paths in /nix/store/vg33xhyw7smn3sc5c8a5svkxx1cx5pq2-r-hellorust-1.2.2

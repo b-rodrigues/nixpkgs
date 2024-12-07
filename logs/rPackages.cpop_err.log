@@ -1,0 +1,70 @@
+these 2 derivations will be built:
+  /nix/store/3b1l95a8allbi13r8f76jc6661gxihgr-r-crops-1.0.3.drv
+  /nix/store/6arwwz3v2268qclhr9zlm2ny6kgrnwvq-r-cpop-1.0.7.drv
+building '/nix/store/3b1l95a8allbi13r8f76jc6661gxihgr-r-crops-1.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lyzza9qnk8iaznnl4xy7sszhasfczzpi-crops_1.0.3.tar.gz
+source root is crops
+setting SOURCE_DATE_EPOCH to timestamp 1659719401 of file crops/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘crops’ ...
+** package ‘crops’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (crops)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-crops-1.0.3.drv-0/ in /nix/store/drjasgw3ly2wll97v5xy2cln0wiln2qy-r-crops-1.0.3...
+patching script interpreter paths in /nix/store/drjasgw3ly2wll97v5xy2cln0wiln2qy-r-crops-1.0.3
+rewriting symlink /nix/store/drjasgw3ly2wll97v5xy2cln0wiln2qy-r-crops-1.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/drjasgw3ly2wll97v5xy2cln0wiln2qy-r-crops-1.0.3
+building '/nix/store/6arwwz3v2268qclhr9zlm2ny6kgrnwvq-r-cpop-1.0.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kzhwr7slw3g7i3hqi6bgb394682wk868-cpop_1.0.7.tar.gz
+source root is cpop
+setting SOURCE_DATE_EPOCH to timestamp 1716935407 of file cpop/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘cpop’ ...
+** package ‘cpop’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c coeffs.update.cpp -o coeffs.update.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpop.cpp -o cpop.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c prune.impl.cpp -o prune.impl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o cpop.so RcppExports.o coeffs.update.o cpop.o prune.impl.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/42zkgp08gz9smxrns18mjknj5ly5pbya-r-cpop-1.0.7/library/00LOCK-cpop/00new/cpop/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (cpop)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-cpop-1.0.7.drv-0/ in /nix/store/42zkgp08gz9smxrns18mjknj5ly5pbya-r-cpop-1.0.7...
+patching script interpreter paths in /nix/store/42zkgp08gz9smxrns18mjknj5ly5pbya-r-cpop-1.0.7
+rewriting symlink /nix/store/42zkgp08gz9smxrns18mjknj5ly5pbya-r-cpop-1.0.7/nix-support/propagated-user-env-packages to be relative to /nix/store/42zkgp08gz9smxrns18mjknj5ly5pbya-r-cpop-1.0.7

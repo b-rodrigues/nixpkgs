@@ -1,0 +1,94 @@
+these 3 derivations will be built:
+  /nix/store/la74y80j6p3mfkmq5qcsvrvh6mg5h56y-r-morphemepiece.data-1.2.0.drv
+  /nix/store/zl1jd91mwnd9fwjvbkcdnsfl49s9cl1m-r-piecemaker-1.0.2.drv
+  /nix/store/v69rklz223vbh4cbm2zs5dfy7yd06xbd-r-morphemepiece-1.2.3.drv
+these 3 paths will be fetched (3.48 MiB download, 3.48 MiB unpacked):
+  /nix/store/zppnz8413yk6js0cignrk4w0sb90dp96-morphemepiece.data_1.2.0.tar.gz
+  /nix/store/xalk2dxyhqlwpf3gl49yyln5w3sl1szf-morphemepiece_1.2.3.tar.gz
+  /nix/store/qjxkfx4nqirk83dsky19x1vy7iw9nklp-piecemaker_1.0.2.tar.gz
+copying path '/nix/store/xalk2dxyhqlwpf3gl49yyln5w3sl1szf-morphemepiece_1.2.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/zppnz8413yk6js0cignrk4w0sb90dp96-morphemepiece.data_1.2.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qjxkfx4nqirk83dsky19x1vy7iw9nklp-piecemaker_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/zl1jd91mwnd9fwjvbkcdnsfl49s9cl1m-r-piecemaker-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qjxkfx4nqirk83dsky19x1vy7iw9nklp-piecemaker_1.0.2.tar.gz
+source root is piecemaker
+setting SOURCE_DATE_EPOCH to timestamp 1685735403 of file piecemaker/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+building '/nix/store/la74y80j6p3mfkmq5qcsvrvh6mg5h56y-r-morphemepiece.data-1.2.0.drv'...
+* installing *source* package ‘piecemaker’ ...
+** package ‘piecemaker’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Running phase: unpackPhase
+unpacking source archive /nix/store/zppnz8413yk6js0cignrk4w0sb90dp96-morphemepiece.data_1.2.0.tar.gz
+source root is morphemepiece.data
+setting SOURCE_DATE_EPOCH to timestamp 1650303748 of file morphemepiece.data/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+** testing if installed package can be loaded from final location
+* installing *source* package ‘morphemepiece.data’ ...
+** package ‘morphemepiece.data’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package keeps a record of temporary installation path
+* DONE (piecemaker)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-piecemaker-1.0.2.drv-0/ in /nix/store/5hk83r47sxrzi1xs5dhfqyqn1j7danbr-r-piecemaker-1.0.2...
+patching script interpreter paths in /nix/store/5hk83r47sxrzi1xs5dhfqyqn1j7danbr-r-piecemaker-1.0.2
+rewriting symlink /nix/store/5hk83r47sxrzi1xs5dhfqyqn1j7danbr-r-piecemaker-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/5hk83r47sxrzi1xs5dhfqyqn1j7danbr-r-piecemaker-1.0.2
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (morphemepiece.data)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-morphemepiece.data-1.2.0.drv-0/ in /nix/store/3s0rnjq0qhqx0jq0pxl03fwh7qdwcwza-r-morphemepiece.data-1.2.0...
+patching script interpreter paths in /nix/store/3s0rnjq0qhqx0jq0pxl03fwh7qdwcwza-r-morphemepiece.data-1.2.0
+building '/nix/store/v69rklz223vbh4cbm2zs5dfy7yd06xbd-r-morphemepiece-1.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xalk2dxyhqlwpf3gl49yyln5w3sl1szf-morphemepiece_1.2.3.tar.gz
+source root is morphemepiece
+setting SOURCE_DATE_EPOCH to timestamp 1650118349 of file morphemepiece/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘morphemepiece’ ...
+** package ‘morphemepiece’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (morphemepiece)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-morphemepiece-1.2.3.drv-0/ in /nix/store/zkzc7gqx57mwpwfps89xhbh84jqvknjq-r-morphemepiece-1.2.3...
+patching script interpreter paths in /nix/store/zkzc7gqx57mwpwfps89xhbh84jqvknjq-r-morphemepiece-1.2.3
+rewriting symlink /nix/store/zkzc7gqx57mwpwfps89xhbh84jqvknjq-r-morphemepiece-1.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/zkzc7gqx57mwpwfps89xhbh84jqvknjq-r-morphemepiece-1.2.3

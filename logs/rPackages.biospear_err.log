@@ -1,0 +1,61 @@
+these 3 derivations will be built:
+  /nix/store/4q8cyx9xxf0b339gzznzxjhg3g8bcfzq-r-risksetROC-1.0.4.1.drv
+  /nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv
+  /nix/store/rc2mzjaijp0lrz7gzjfdjrbbbq0a6cfj-r-biospear-1.0.2.drv
+building '/nix/store/4q8cyx9xxf0b339gzznzxjhg3g8bcfzq-r-risksetROC-1.0.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zv4a85hv8iv4hlbalyppc1a178z1pv79-risksetROC_1.0.4.1.tar.gz
+source root is risksetROC
+setting SOURCE_DATE_EPOCH to timestamp 1655108096 of file risksetROC/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘risksetROC’ ...
+** package ‘risksetROC’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (risksetROC)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-risksetROC-1.0.4.1.drv-0/ in /nix/store/bxrnhl328hcj74x3jddim7x61qn9nh1n-r-risksetROC-1.0.4.1...
+patching script interpreter paths in /nix/store/bxrnhl328hcj74x3jddim7x61qn9nh1n-r-risksetROC-1.0.4.1
+rewriting symlink /nix/store/bxrnhl328hcj74x3jddim7x61qn9nh1n-r-risksetROC-1.0.4.1/nix-support/propagated-user-env-packages to be relative to /nix/store/bxrnhl328hcj74x3jddim7x61qn9nh1n-r-risksetROC-1.0.4.1
+building '/nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8y774wr4d9j2ix5ra6vjbb70cis8xbb5-plsRcox_1.7.7.tar.gz
+source root is plsRcox
+setting SOURCE_DATE_EPOCH to timestamp 1669734603 of file plsRcox/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘mixOmics’ is not available for package ‘plsRcox’
+* removing ‘/nix/store/whk0lrd4jyma6xiyd95r1hz7k95j4rfx-r-plsRcox-1.7.7/library/plsRcox’
+error: builder for '/nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/8y774wr4d9j2ix5ra6vjbb70cis8xbb5-plsRcox_1.7.7.tar.gz
+       > source root is plsRcox
+       > setting SOURCE_DATE_EPOCH to timestamp 1669734603 of file plsRcox/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘mixOmics’ is not available for package ‘plsRcox’
+       > * removing ‘/nix/store/whk0lrd4jyma6xiyd95r1hz7k95j4rfx-r-plsRcox-1.7.7/library/plsRcox’
+       For full logs, run 'nix log /nix/store/6n5fp5niwxr917jc193j8l7r52ldynln-r-plsRcox-1.7.7.drv'.
+error: 1 dependencies of derivation '/nix/store/rc2mzjaijp0lrz7gzjfdjrbbbq0a6cfj-r-biospear-1.0.2.drv' failed to build

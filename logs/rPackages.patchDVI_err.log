@@ -1,0 +1,78 @@
+these 3 derivations will be built:
+  /nix/store/mzwa4na46rjzal8gq5szjps245wv24cg-patchDVI_1.11.3.tar.gz.drv
+  /nix/store/ww6nmdvm81cnaj81yhwnii150k4gc118-r-RmdConcord-0.3.drv
+  /nix/store/wp3z61bnyf2sacy367jd9d7hkj2k3713-r-patchDVI-1.11.3.drv
+this path will be fetched (0.22 MiB download, 0.22 MiB unpacked):
+  /nix/store/sgi90gpmc733hh3f1h1lcpfxg7dn6569-RmdConcord_0.3.tar.gz
+copying path '/nix/store/sgi90gpmc733hh3f1h1lcpfxg7dn6569-RmdConcord_0.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mzwa4na46rjzal8gq5szjps245wv24cg-patchDVI_1.11.3.tar.gz.drv'...
+building '/nix/store/ww6nmdvm81cnaj81yhwnii150k4gc118-r-RmdConcord-0.3.drv'...
+
+trying https://cran.r-project.org/src/contrib/patchDVI_1.11.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  405k  100  405k    0     0  2002k      0 --:--:-- --:--:-- --:--:-- 2008k
+Running phase: unpackPhase
+unpacking source archive /nix/store/sgi90gpmc733hh3f1h1lcpfxg7dn6569-RmdConcord_0.3.tar.gz
+source root is RmdConcord
+setting SOURCE_DATE_EPOCH to timestamp 1702228806 of file RmdConcord/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RmdConcord’ ...
+** package ‘RmdConcord’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RmdConcord)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RmdConcord-0.3.drv-0/ in /nix/store/r7krh2q3f66lmz88jarxhy9vgsqbzkk9-r-RmdConcord-0.3...
+patching script interpreter paths in /nix/store/r7krh2q3f66lmz88jarxhy9vgsqbzkk9-r-RmdConcord-0.3
+rewriting symlink /nix/store/r7krh2q3f66lmz88jarxhy9vgsqbzkk9-r-RmdConcord-0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/r7krh2q3f66lmz88jarxhy9vgsqbzkk9-r-RmdConcord-0.3
+building '/nix/store/wp3z61bnyf2sacy367jd9d7hkj2k3713-r-patchDVI-1.11.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fydn2aag8sl5r8fcx11v01y1mmxyw26n-patchDVI_1.11.3.tar.gz
+source root is patchDVI
+setting SOURCE_DATE_EPOCH to timestamp 1729526403 of file patchDVI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘patchDVI’ ...
+** package ‘patchDVI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c patchDVI.c -o patchDVI.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o patchDVI.so patchDVI.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/i6i9n8l80l79iqdiqnxd8yqfgn8k0v7i-r-patchDVI-1.11.3/library/00LOCK-patchDVI/00new/patchDVI/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (patchDVI)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-patchDVI-1.11.3.drv-0/ in /nix/store/i6i9n8l80l79iqdiqnxd8yqfgn8k0v7i-r-patchDVI-1.11.3...
+patching script interpreter paths in /nix/store/i6i9n8l80l79iqdiqnxd8yqfgn8k0v7i-r-patchDVI-1.11.3
+rewriting symlink /nix/store/i6i9n8l80l79iqdiqnxd8yqfgn8k0v7i-r-patchDVI-1.11.3/nix-support/propagated-user-env-packages to be relative to /nix/store/i6i9n8l80l79iqdiqnxd8yqfgn8k0v7i-r-patchDVI-1.11.3

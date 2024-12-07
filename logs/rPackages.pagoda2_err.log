@@ -1,0 +1,131 @@
+these 2 derivations will be built:
+  /nix/store/ig5zlsbgbg6bpvvyrsh14x4hk1lksg4k-r-Rook-1.2.drv
+  /nix/store/sm919m4iaaiyhf1x7pwivqzwgi7xfakx-r-pagoda2-1.0.12.drv
+these 2 paths will be fetched (0.58 MiB download, 0.58 MiB unpacked):
+  /nix/store/wygba84nmjwqgdmp03xnwjj37f6gjyh7-Rook_1.2.tar.gz
+  /nix/store/rqca3b2g9ijxnsw8gzim8k1p6xg2nwg1-pagoda2_1.0.12.tar.gz
+copying path '/nix/store/rqca3b2g9ijxnsw8gzim8k1p6xg2nwg1-pagoda2_1.0.12.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/wygba84nmjwqgdmp03xnwjj37f6gjyh7-Rook_1.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ig5zlsbgbg6bpvvyrsh14x4hk1lksg4k-r-Rook-1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/wygba84nmjwqgdmp03xnwjj37f6gjyh7-Rook_1.2.tar.gz
+source root is Rook
+setting SOURCE_DATE_EPOCH to timestamp 1667811019 of file Rook/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rook’ ...
+** package ‘Rook’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rook.c -o rook.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rook.so rook.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/7khqsz4ngxrr7415fd2jbgxnbp9c85km-r-Rook-1.2/library/00LOCK-Rook/00new/Rook/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “App” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Middleware” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Brewery” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Builder” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “File” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Redirect” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Request” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Response” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RhttpdApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RhttpdInputStream” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RhttpdErrorStream” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rhttpd” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RookeryApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rookery” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Static” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “URLMap” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Utils” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Utils” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Multipart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Multipart” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Mime” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Mime” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rook)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rook-1.2.drv-0/ in /nix/store/7khqsz4ngxrr7415fd2jbgxnbp9c85km-r-Rook-1.2...
+patching script interpreter paths in /nix/store/7khqsz4ngxrr7415fd2jbgxnbp9c85km-r-Rook-1.2
+rewriting symlink /nix/store/7khqsz4ngxrr7415fd2jbgxnbp9c85km-r-Rook-1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/7khqsz4ngxrr7415fd2jbgxnbp9c85km-r-Rook-1.2
+building '/nix/store/sm919m4iaaiyhf1x7pwivqzwgi7xfakx-r-pagoda2-1.0.12.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rqca3b2g9ijxnsw8gzim8k1p6xg2nwg1-pagoda2_1.0.12.tar.gz
+source root is pagoda2
+setting SOURCE_DATE_EPOCH to timestamp 1708995002 of file pagoda2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pagoda2’ ...
+** package ‘pagoda2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c binaryExport.cpp -o binaryExport.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c checkfunctions.cpp -o checkfunctions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c edgeweights.cpp -o edgeweights.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c gradients.cpp -o gradients.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c largeVis.cpp -o largeVis.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c misc2.cpp -o misc2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c pagoda1_liftover.cpp -o pagoda1_liftover.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"./include"   -fPIC  -g -O2   -c rank.cpp -o rank.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pagoda2.so RcppExports.o binaryExport.o checkfunctions.o edgeweights.o gradients.o largeVis.o misc2.o pagoda1_liftover.o rank.o -L. -lpthread -lm -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/3fxy2q2589vb0kdjbz9ilhwacx247fxy-r-pagoda2-1.0.12/library/00LOCK-pagoda2/00new/pagoda2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “pagoda2WebApp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pagoda2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pagoda2-1.0.12.drv-0/ in /nix/store/3fxy2q2589vb0kdjbz9ilhwacx247fxy-r-pagoda2-1.0.12...
+patching script interpreter paths in /nix/store/3fxy2q2589vb0kdjbz9ilhwacx247fxy-r-pagoda2-1.0.12
+/nix/store/3fxy2q2589vb0kdjbz9ilhwacx247fxy-r-pagoda2-1.0.12/library/pagoda2/rookServerDocs/makeJSdoc.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+rewriting symlink /nix/store/3fxy2q2589vb0kdjbz9ilhwacx247fxy-r-pagoda2-1.0.12/nix-support/propagated-user-env-packages to be relative to /nix/store/3fxy2q2589vb0kdjbz9ilhwacx247fxy-r-pagoda2-1.0.12

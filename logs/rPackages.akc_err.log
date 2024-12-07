@@ -1,0 +1,106 @@
+these 3 derivations will be built:
+  /nix/store/hkn9fz0w3j127py9qnzvikp95rk2by7d-r-tidyfst-1.8.1.drv
+  /nix/store/sz6sfmka702l2ns9znfcl3j57wl0mzwy-r-ggwordcloud-0.6.2.drv
+  /nix/store/warxxf8nb8zmcflc5bwnyc0vcghldahm-r-akc-0.9.9.drv
+building '/nix/store/sz6sfmka702l2ns9znfcl3j57wl0mzwy-r-ggwordcloud-0.6.2.drv'...
+building '/nix/store/hkn9fz0w3j127py9qnzvikp95rk2by7d-r-tidyfst-1.8.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nwcvzmjx53xy6f9pafzzp1p32jdfh101-ggwordcloud_0.6.2.tar.gz
+source root is ggwordcloud
+setting SOURCE_DATE_EPOCH to timestamp 1717083005 of file ggwordcloud/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: unpackPhase
+Running phase: configurePhase
+unpacking source archive /nix/store/bjx20yvqdjkxcmablh37vlx7bbg9mk8b-tidyfst_1.8.1.tar.gz
+Running phase: buildPhase
+Running phase: checkPhase
+source root is tidyfst
+Running phase: installPhase
+setting SOURCE_DATE_EPOCH to timestamp 1726459802 of file tidyfst/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ggwordcloud’ ...
+** package ‘ggwordcloud’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c wordcloud_boxes.cpp -o wordcloud_boxes.o
+* installing *source* package ‘tidyfst’ ...
+** package ‘tidyfst’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tidyfst)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tidyfst-1.8.1.drv-0/ in /nix/store/s1wfqqg5278v8zng33likbplwfcyc3qr-r-tidyfst-1.8.1...
+patching script interpreter paths in /nix/store/s1wfqqg5278v8zng33likbplwfcyc3qr-r-tidyfst-1.8.1
+rewriting symlink /nix/store/s1wfqqg5278v8zng33likbplwfcyc3qr-r-tidyfst-1.8.1/nix-support/propagated-user-env-packages to be relative to /nix/store/s1wfqqg5278v8zng33likbplwfcyc3qr-r-tidyfst-1.8.1
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ggwordcloud.so RcppExports.o wordcloud_boxes.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/3lq1bg1k2izjk482b1msi1k7qmgih91i-r-ggwordcloud-0.6.2/library/00LOCK-ggwordcloud/00new/ggwordcloud/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggwordcloud)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ggwordcloud-0.6.2.drv-0/ in /nix/store/3lq1bg1k2izjk482b1msi1k7qmgih91i-r-ggwordcloud-0.6.2...
+patching script interpreter paths in /nix/store/3lq1bg1k2izjk482b1msi1k7qmgih91i-r-ggwordcloud-0.6.2
+rewriting symlink /nix/store/3lq1bg1k2izjk482b1msi1k7qmgih91i-r-ggwordcloud-0.6.2/nix-support/propagated-user-env-packages to be relative to /nix/store/3lq1bg1k2izjk482b1msi1k7qmgih91i-r-ggwordcloud-0.6.2
+building '/nix/store/warxxf8nb8zmcflc5bwnyc0vcghldahm-r-akc-0.9.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4syqg6d1wi3fxn3wcygwpn72vs29rj2x-akc_0.9.9.tar.gz
+source root is akc
+setting SOURCE_DATE_EPOCH to timestamp 1672992002 of file akc/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘akc’ ...
+** package ‘akc’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (akc)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-akc-0.9.9.drv-0/ in /nix/store/cv7lmf8m39xq95d124jzj9k4d6wwz8vb-r-akc-0.9.9...
+patching script interpreter paths in /nix/store/cv7lmf8m39xq95d124jzj9k4d6wwz8vb-r-akc-0.9.9
+rewriting symlink /nix/store/cv7lmf8m39xq95d124jzj9k4d6wwz8vb-r-akc-0.9.9/nix-support/propagated-user-env-packages to be relative to /nix/store/cv7lmf8m39xq95d124jzj9k4d6wwz8vb-r-akc-0.9.9

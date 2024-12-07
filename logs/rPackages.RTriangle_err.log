@@ -1,0 +1,52 @@
+these 2 derivations will be built:
+  /nix/store/03x0km77yx7x9kx9426ipx7aavqqdcfq-RTriangle_1.6-0.14.tar.gz.drv
+  /nix/store/k4c9cch2bg5j3lhn47y64x6i5rgvxxjj-r-RTriangle-1.6-0.14.drv
+building '/nix/store/03x0km77yx7x9kx9426ipx7aavqqdcfq-RTriangle_1.6-0.14.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/RTriangle_1.6-0.14.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  164k  100  164k    0     0   977k      0 --:--:-- --:--:-- --:--:--  982k
+building '/nix/store/k4c9cch2bg5j3lhn47y64x6i5rgvxxjj-r-RTriangle-1.6-0.14.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ib5b8bvf0l4zjsjq0lyxfrqy1bs03x6g-RTriangle_1.6-0.14.tar.gz
+source root is RTriangle
+setting SOURCE_DATE_EPOCH to timestamp 1725502205 of file RTriangle/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RTriangle’ ...
+** package ‘RTriangle’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -include RTriangle.h -DANSI_DECLARATORS -DVOID=void -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RTriangle_init.c -o RTriangle_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -include RTriangle.h -DANSI_DECLARATORS -DVOID=void -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c interface.c -o interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -include RTriangle.h -DANSI_DECLARATORS -DVOID=void -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c triangle.c -o triangle.o
+triangle.c:315:9: warning: 'VOID' macro redefined [-Wmacro-redefined]
+#define VOID int
+        ^
+<command line>:4:9: note: previous definition is here
+#define VOID void
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RTriangle.so RTriangle_init.o interface.o triangle.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/s8kxzqhbj71cx59gd5831618m75l9xbb-r-RTriangle-1.6-0.14/library/00LOCK-RTriangle/00new/RTriangle/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RTriangle)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RTriangle-1.6-0.14.drv-0/ in /nix/store/s8kxzqhbj71cx59gd5831618m75l9xbb-r-RTriangle-1.6-0.14...
+patching script interpreter paths in /nix/store/s8kxzqhbj71cx59gd5831618m75l9xbb-r-RTriangle-1.6-0.14

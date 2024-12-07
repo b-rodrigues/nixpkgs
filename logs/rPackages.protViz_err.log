@@ -1,0 +1,63 @@
+this derivation will be built:
+  /nix/store/z6llzvkbhlddxs0dwmsiicpggf15d60p-r-protViz-0.7.9.drv
+this path will be fetched (2.54 MiB download, 2.54 MiB unpacked):
+  /nix/store/91bhlf827qf82ls5rks1drj581a381r3-protViz_0.7.9.tar.gz
+copying path '/nix/store/91bhlf827qf82ls5rks1drj581a381r3-protViz_0.7.9.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/z6llzvkbhlddxs0dwmsiicpggf15d60p-r-protViz-0.7.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/91bhlf827qf82ls5rks1drj581a381r3-protViz_0.7.9.tar.gz
+source root is protViz
+setting SOURCE_DATE_EPOCH to timestamp 1702404006 of file protViz/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘protViz’ ...
+** package ‘protViz’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c protViz_init.c -o protViz_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c deisotoper.cpp -o deisotoper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c aa2mass.cpp -o aa2mass.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c findNN_.cpp -o findNN_.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c computeFragmentIons.c -o computeFragmentIons.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c computeParentIonMass.c -o computeParentIonMass.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c findNN.c -o findNN.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c fasta.cpp -o fasta.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o protViz.so protViz_init.o deisotoper.o aa2mass.o findNN_.o computeFragmentIons.o computeParentIonMass.o findNN.o RcppExports.o fasta.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9/library/00LOCK-protViz/00new/protViz/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** exec
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_Fasta” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Fasta” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_Fasta” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Fasta” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (protViz)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-protViz-0.7.9.drv-0/ in /nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9...
+patching script interpreter paths in /nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9
+/nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9/library/protViz/exec/protViz_extractPressureProfiles.bash: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9/library/protViz/exec/protViz_annotateSpecLib_with_protID_split.bash: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9/library/protViz/exec/protViz_dat2R.bash: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9/library/protViz/exec/protViz_mascot2XML.bash: interpreter directive changed from "#!/bin/bash -v" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -v"
+/nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9/library/protViz/exec/protViz_fun.bash: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+rewriting symlink /nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9/nix-support/propagated-user-env-packages to be relative to /nix/store/6bm7szw81zdj3ncz47fjlkwj732b71gn-r-protViz-0.7.9

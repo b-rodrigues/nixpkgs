@@ -1,0 +1,147 @@
+these 3 derivations will be built:
+  /nix/store/bwr8znk42l9w8icqkzlimvf5m4siy2wz-TreeDist_2.9.1.tar.gz.drv
+  /nix/store/xynczvh3w5mllnbbynglh08phfx1psjh-r-TreeDist-2.9.1.drv
+  /nix/store/bcnf9bbw854zfbzyy4p0kls7iln7qnl1-r-Rogue-2.1.6.drv
+this path will be fetched (0.48 MiB download, 0.48 MiB unpacked):
+  /nix/store/726hp1cckq0pl986qzzrywf6r6a1c7vl-Rogue_2.1.6.tar.gz
+copying path '/nix/store/726hp1cckq0pl986qzzrywf6r6a1c7vl-Rogue_2.1.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bwr8znk42l9w8icqkzlimvf5m4siy2wz-TreeDist_2.9.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/TreeDist_2.9.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1230k  100 1230k    0     0  4250k      0 --:--:-- --:--:-- --:--:-- 4242k
+building '/nix/store/xynczvh3w5mllnbbynglh08phfx1psjh-r-TreeDist-2.9.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7qc3b0xlrhizi60q0v5cwmfcy84jszkl-TreeDist_2.9.1.tar.gz
+source root is TreeDist
+setting SOURCE_DATE_EPOCH to timestamp 1725700802 of file TreeDist/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TreeDist’ ...
+** package ‘TreeDist’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c day_1985.cpp -o day_1985.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lap.cpp -o lap.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mast.cpp -o mast.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c nni_distance.cpp -o nni_distance.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c path_vector.cpp -o path_vector.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c reduce_tree.cpp -o reduce_tree.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c spr.cpp -o spr.o
+In file included from path_vector.cpp:2:
+/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/renumber_tree.h:422:58: warning: implicit conversion from 'long' to 'long double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+    if (long(6 * node_limit * sizeof(int32)) > 0.9999L * INTPTR_MAX) {
+                                                       ~ ^~~~~~~~~~
+/nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdint.h:147:27: note: expanded from macro 'INTPTR_MAX'
+#define INTPTR_MAX        9223372036854775807L
+                          ^~~~~~~~~~~~~~~~~~~~
+In file included from reduce_tree.cpp:1:
+In file included from ./reduce_tree.h:8:
+/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/renumber_tree.h:422:58: warning: implicit conversion from 'long' to 'long double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+    if (long(6 * node_limit * sizeof(int32)) > 0.9999L * INTPTR_MAX) {
+                                                       ~ ^~~~~~~~~~
+/nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdint.h:147:27: note: expanded from macro 'INTPTR_MAX'
+#define INTPTR_MAX        9223372036854775807L
+                          ^~~~~~~~~~~~~~~~~~~~
+In file included from spr.cpp:5:
+In file included from /nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/root_tree.h:8:
+/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/renumber_tree.h:422:58: warning: implicit conversion from 'long' to 'long double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+    if (long(6 * node_limit * sizeof(int32)) > 0.9999L * INTPTR_MAX) {
+                                                       ~ ^~~~~~~~~~
+/nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdint.h:147:27: note: expanded from macro 'INTPTR_MAX'
+#define INTPTR_MAX        9223372036854775807L
+                          ^~~~~~~~~~~~~~~~~~~~
+In file included from day_1985.cpp:5:
+In file included from ./information.h:5:
+In file included from /nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/ClusterTable.h:9:
+In file included from /nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/root_tree.h:8:
+/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include/TreeTools/renumber_tree.h:422:58: warning: implicit conversion from 'long' to 'long double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+    if (long(6 * node_limit * sizeof(int32)) > 0.9999L * INTPTR_MAX) {
+                                                       ~ ^~~~~~~~~~
+/nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdint.h:147:27: note: expanded from macro 'INTPTR_MAX'
+#define INTPTR_MAX        9223372036854775807L
+                          ^~~~~~~~~~~~~~~~~~~~
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tree_distance_functions.cpp -o tree_distance_functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/g30l3nfbn64nsqkqv62v3vaxv5fchnjl-r-TreeTools-1.12.0/library/TreeTools/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tree_distances.cpp -o tree_distances.o
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TreeDist.so RcppExports.o day_1985.o lap.o mast.o nni_distance.o path_vector.o reduce_tree.o spr.o tree_distance_functions.o tree_distances.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/wfmf1c5s9ijkv42y4dqgla2prcz5xa3z-r-TreeDist-2.9.1/library/00LOCK-TreeDist/00new/TreeDist/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TreeDist)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TreeDist-2.9.1.drv-0/ in /nix/store/wfmf1c5s9ijkv42y4dqgla2prcz5xa3z-r-TreeDist-2.9.1...
+patching script interpreter paths in /nix/store/wfmf1c5s9ijkv42y4dqgla2prcz5xa3z-r-TreeDist-2.9.1
+rewriting symlink /nix/store/wfmf1c5s9ijkv42y4dqgla2prcz5xa3z-r-TreeDist-2.9.1/nix-support/propagated-user-env-packages to be relative to /nix/store/wfmf1c5s9ijkv42y4dqgla2prcz5xa3z-r-TreeDist-2.9.1
+building '/nix/store/bcnf9bbw854zfbzyy4p0kls7iln7qnl1-r-Rogue-2.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/726hp1cckq0pl986qzzrywf6r6a1c7vl-Rogue_2.1.6.tar.gz
+source root is Rogue
+setting SOURCE_DATE_EPOCH to timestamp 1701256202 of file Rogue/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rogue’ ...
+** package ‘Rogue’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph_geodesic.c -o graph_geodesic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/Array.c -o rnr/Array.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/BitVector.c -o rnr/BitVector.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/Dropset.c -o rnr/Dropset.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/HashTable.c -o rnr/HashTable.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/List.c -o rnr/List.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/Node.c -o rnr/Node.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/ProfileElem.c -o rnr/ProfileElem.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/RogueNaRok.c -o rnr/RogueNaRok.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/Tree.c -o rnr/Tree.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/common.c -o rnr/common.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/legacy.c -o rnr/legacy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rnr/newFunctions.c -o rnr/newFunctions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rogue_init.c -o Rogue_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rogue.so graph_geodesic.o rnr/Array.o rnr/BitVector.o rnr/Dropset.o rnr/HashTable.o rnr/List.o rnr/Node.o rnr/ProfileElem.o rnr/RogueNaRok.o rnr/Tree.o rnr/common.o rnr/legacy.o rnr/newFunctions.o Rogue_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/whzz5j0j43sqbszgvxbnrzbxf9nbh7ya-r-Rogue-2.1.6/library/00LOCK-Rogue/00new/Rogue/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rogue)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rogue-2.1.6.drv-0/ in /nix/store/whzz5j0j43sqbszgvxbnrzbxf9nbh7ya-r-Rogue-2.1.6...
+patching script interpreter paths in /nix/store/whzz5j0j43sqbszgvxbnrzbxf9nbh7ya-r-Rogue-2.1.6
+rewriting symlink /nix/store/whzz5j0j43sqbszgvxbnrzbxf9nbh7ya-r-Rogue-2.1.6/nix-support/propagated-user-env-packages to be relative to /nix/store/whzz5j0j43sqbszgvxbnrzbxf9nbh7ya-r-Rogue-2.1.6

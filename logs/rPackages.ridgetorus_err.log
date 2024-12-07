@@ -1,0 +1,153 @@
+these 3 derivations will be built:
+  /nix/store/ddvv1glhariqgl2lckpnh3y38jnyyffg-r-sdetorus-0.1.10.drv
+  /nix/store/n5qrlzfxplfa7d9rlgan3vi8xb6z9imd-r-sphunif-1.4.0.drv
+  /nix/store/scvzi9mgrvykli56ksv30fa5zc5fk4nr-r-ridgetorus-1.0.2.drv
+these 3 paths will be fetched (1.90 MiB download, 1.89 MiB unpacked):
+  /nix/store/lrsqhk1ddnlq1g136chz2ngrdh3r1sqa-ridgetorus_1.0.2.tar.gz
+  /nix/store/zsblj6y6g81wr8bvqxhy3i51vsyq7n44-sdetorus_0.1.10.tar.gz
+  /nix/store/r12rga8clsa4w7aapvmy490223a9vg1z-sphunif_1.4.0.tar.gz
+copying path '/nix/store/lrsqhk1ddnlq1g136chz2ngrdh3r1sqa-ridgetorus_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/zsblj6y6g81wr8bvqxhy3i51vsyq7n44-sdetorus_0.1.10.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/r12rga8clsa4w7aapvmy490223a9vg1z-sphunif_1.4.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/n5qrlzfxplfa7d9rlgan3vi8xb6z9imd-r-sphunif-1.4.0.drv'...
+building '/nix/store/ddvv1glhariqgl2lckpnh3y38jnyyffg-r-sdetorus-0.1.10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/r12rga8clsa4w7aapvmy490223a9vg1z-sphunif_1.4.0.tar.gz
+source root is sphunif
+setting SOURCE_DATE_EPOCH to timestamp 1716587401 of file sphunif/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: unpackPhase
+Running phase: installPhase
+unpacking source archive /nix/store/zsblj6y6g81wr8bvqxhy3i51vsyq7n44-sdetorus_0.1.10.tar.gz
+source root is sdetorus
+setting SOURCE_DATE_EPOCH to timestamp 1709295602 of file sdetorus/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+* installing *source* package ‘sphunif’ ...
+** package ‘sphunif’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c A_theta_x.cpp -o A_theta_x.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Psi.cpp -o Psi.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c auxiliary.cpp -o auxiliary.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cir_distr.cpp -o cir_distr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cir_stat.cpp -o cir_stat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distr.cpp -o distr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c quad.cpp -o quad.o
+* installing *source* package ‘sdetorus’ ...
+** package ‘sdetorus’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c WN-1D.cpp -o WN-1D.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c WN-2D.cpp -o WN-2D.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c auxiliary.cpp -o auxiliary.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c crankNicolson.cpp -o crankNicolson.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c drifts.cpp -o drifts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c euler.cpp -o euler.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c logLikWouPairs.cpp -o logLikWouPairs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sph_distr.cpp -o sph_distr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tvm.cpp -o tvm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sph_stat.cpp -o sph_stat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o sdetorus.so RcppExports.o WN-1D.o WN-2D.o auxiliary.o crankNicolson.o drifts.o euler.o logLikWouPairs.o tvm.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/9gl4hzadbp66vas26byrpqv12p2xr8nb-r-sdetorus-0.1.10/library/00LOCK-sdetorus/00new/sdetorus/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o sphunif.so A_theta_x.o Psi.o RcppExports.o auxiliary.o cir_distr.o cir_stat.o distr.o quad.o sph_distr.o sph_stat.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/ip1ra35zcmwi7c97vjkdpwn0b15zzqpn-r-sphunif-1.4.0/library/00LOCK-sphunif/00new/sphunif/libs
+** R
+** testing if installed package keeps a record of temporary installation path
+* DONE (sdetorus)
+** data
+*** moving datasets to lazyload DB
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sdetorus-0.1.10.drv-0/ in /nix/store/9gl4hzadbp66vas26byrpqv12p2xr8nb-r-sdetorus-0.1.10...
+patching script interpreter paths in /nix/store/9gl4hzadbp66vas26byrpqv12p2xr8nb-r-sdetorus-0.1.10
+rewriting symlink /nix/store/9gl4hzadbp66vas26byrpqv12p2xr8nb-r-sdetorus-0.1.10/nix-support/propagated-user-env-packages to be relative to /nix/store/9gl4hzadbp66vas26byrpqv12p2xr8nb-r-sdetorus-0.1.10
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sphunif)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sphunif-1.4.0.drv-0/ in /nix/store/ip1ra35zcmwi7c97vjkdpwn0b15zzqpn-r-sphunif-1.4.0...
+patching script interpreter paths in /nix/store/ip1ra35zcmwi7c97vjkdpwn0b15zzqpn-r-sphunif-1.4.0
+rewriting symlink /nix/store/ip1ra35zcmwi7c97vjkdpwn0b15zzqpn-r-sphunif-1.4.0/nix-support/propagated-user-env-packages to be relative to /nix/store/ip1ra35zcmwi7c97vjkdpwn0b15zzqpn-r-sphunif-1.4.0
+building '/nix/store/scvzi9mgrvykli56ksv30fa5zc5fk4nr-r-ridgetorus-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lrsqhk1ddnlq1g136chz2ngrdh3r1sqa-ridgetorus_1.0.2.tar.gz
+source root is ridgetorus
+setting SOURCE_DATE_EPOCH to timestamp 1693176002 of file ridgetorus/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ridgetorus’ ...
+** package ‘ridgetorus’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c grad-hess.cpp -o grad-hess.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c implicit-eq.cpp -o implicit-eq.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ridgetorus.so RcppExports.o grad-hess.o implicit-eq.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/11l8b562gcr528qcx06wva56aw2408dg-r-ridgetorus-1.0.2/library/00LOCK-ridgetorus/00new/ridgetorus/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ridgetorus)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ridgetorus-1.0.2.drv-0/ in /nix/store/11l8b562gcr528qcx06wva56aw2408dg-r-ridgetorus-1.0.2...
+patching script interpreter paths in /nix/store/11l8b562gcr528qcx06wva56aw2408dg-r-ridgetorus-1.0.2
+rewriting symlink /nix/store/11l8b562gcr528qcx06wva56aw2408dg-r-ridgetorus-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/11l8b562gcr528qcx06wva56aw2408dg-r-ridgetorus-1.0.2

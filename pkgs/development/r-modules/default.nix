@@ -1136,7 +1136,6 @@ let
 
     curl = old.curl.overrideAttrs (attrs: {
       preConfigure = "patchShebangs configure";
-      patches = [ ./patches/curl-darwin.patch ];
     });
 
     Cyclops = old.Cyclops.overrideAttrs (attrs: {

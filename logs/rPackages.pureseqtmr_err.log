@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/cbsyjw6h3i3s495frndjpr8c6k1l2kf9-r-pureseqtmr-1.4.drv
+this path will be fetched (0.25 MiB download, 0.25 MiB unpacked):
+  /nix/store/g89zzs2mvwdkbkkhrvsj380x2kn0m9sz-pureseqtmr_1.4.tar.gz
+copying path '/nix/store/g89zzs2mvwdkbkkhrvsj380x2kn0m9sz-pureseqtmr_1.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cbsyjw6h3i3s495frndjpr8c6k1l2kf9-r-pureseqtmr-1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g89zzs2mvwdkbkkhrvsj380x2kn0m9sz-pureseqtmr_1.4.tar.gz
+source root is pureseqtmr
+setting SOURCE_DATE_EPOCH to timestamp 1680788402 of file pureseqtmr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pureseqtmr’ ...
+** package ‘pureseqtmr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c calc_distance_to_tmh_center_from_topology_str_cpp_stl.cpp -o calc_distance_to_tmh_center_from_topology_str_cpp_stl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c load_fasta_file_as_tibble_cpp_raw.cpp -o load_fasta_file_as_tibble_cpp_raw.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c load_fasta_file_as_tibble_cpp_stl.cpp -o load_fasta_file_as_tibble_cpp_stl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pureseqtmr.so RcppExports.o calc_distance_to_tmh_center_from_topology_str_cpp_stl.o load_fasta_file_as_tibble_cpp_raw.o load_fasta_file_as_tibble_cpp_stl.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/i2rwysg5pb2x30nd5ywd7zxh0xyirzs4-r-pureseqtmr-1.4/library/00LOCK-pureseqtmr/00new/pureseqtmr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pureseqtmr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pureseqtmr-1.4.drv-0/ in /nix/store/i2rwysg5pb2x30nd5ywd7zxh0xyirzs4-r-pureseqtmr-1.4...
+patching script interpreter paths in /nix/store/i2rwysg5pb2x30nd5ywd7zxh0xyirzs4-r-pureseqtmr-1.4
+rewriting symlink /nix/store/i2rwysg5pb2x30nd5ywd7zxh0xyirzs4-r-pureseqtmr-1.4/nix-support/propagated-user-env-packages to be relative to /nix/store/i2rwysg5pb2x30nd5ywd7zxh0xyirzs4-r-pureseqtmr-1.4

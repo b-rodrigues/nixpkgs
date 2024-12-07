@@ -1,0 +1,64 @@
+these 4 derivations will be built:
+  /nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv
+  /nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv
+  /nix/store/pv9mh23a8fralbn8z16a5b1baswjj73i-r-xRing-0.1.1.drv
+  /nix/store/l6zyqyyyrcmpyw34bc6p63dkn3w1n3l7-r-CTRing-0.1.0.drv
+building '/nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv'...
+building '/nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/18w0m6b7b8crk7kxilkj8dxixq6y4fdy-tcltk2_1.2-11.tar.gz
+source root is tcltk2
+setting SOURCE_DATE_EPOCH to timestamp 1419068106 of file tcltk2/MD5
+Running phase: unpackPhase
+Running phase: patchPhase
+unpacking source archive /nix/store/hq28qzidcz7grr40n9p8rmkmyfzra71v-tkRplotR_0.1.7.tar.gz
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+source root is tkRplotR
+setting SOURCE_DATE_EPOCH to timestamp 1624786802 of file tkRplotR/MD5
+Running phase: configurePhase
+Running phase: patchPhase
+Running phase: buildPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: checkPhase
+Running phase: configurePhase
+Running phase: installPhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tcltk2’ ...
+** package ‘tcltk2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+* installing *source* package ‘tkRplotR’ ...
+** package ‘tkRplotR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** byte-compile and prepare package for lazy loading
+sh: line 1: 33470 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tkRplotR-0.1.7.drv-0/RtmpGD0dWb/file82b6675fd688'
+ERROR: lazy loading failed for package ‘tkRplotR’
+* removing ‘/nix/store/cs56qm3l88jbgmiya35vgaiir6rj1md5-r-tkRplotR-0.1.7/library/tkRplotR’
+error: builder for '/nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv' failed with exit code 1;
+       last 18 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/hq28qzidcz7grr40n9p8rmkmyfzra71v-tkRplotR_0.1.7.tar.gz
+       > source root is tkRplotR
+       > setting SOURCE_DATE_EPOCH to timestamp 1624786802 of file tkRplotR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘tkRplotR’ ...
+       > ** package ‘tkRplotR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 33470 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tkRplotR-0.1.7.drv-0/RtmpGD0dWb/file82b6675fd688'
+       > ERROR: lazy loading failed for package ‘tkRplotR’
+       > * removing ‘/nix/store/cs56qm3l88jbgmiya35vgaiir6rj1md5-r-tkRplotR-0.1.7/library/tkRplotR’
+       For full logs, run 'nix log /nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv'.
+error: 1 dependencies of derivation '/nix/store/pv9mh23a8fralbn8z16a5b1baswjj73i-r-xRing-0.1.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/l6zyqyyyrcmpyw34bc6p63dkn3w1n3l7-r-CTRing-0.1.0.drv' failed to build

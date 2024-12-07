@@ -1,0 +1,56 @@
+this derivation will be built:
+  /nix/store/1895rdxmrk2i1cgbspmm89zg0q5qapsx-r-spbal-1.0.0.drv
+this path will be fetched (0.51 MiB download, 0.51 MiB unpacked):
+  /nix/store/y8makdmjb8xhyw7xm0da0rvx8m6nqy6q-spbal_1.0.0.tar.gz
+copying path '/nix/store/y8makdmjb8xhyw7xm0da0rvx8m6nqy6q-spbal_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/1895rdxmrk2i1cgbspmm89zg0q5qapsx-r-spbal-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/y8makdmjb8xhyw7xm0da0rvx8m6nqy6q-spbal_1.0.0.tar.gz
+source root is spbal
+setting SOURCE_DATE_EPOCH to timestamp 1715961602 of file spbal/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spbal’ ...
+** package ‘spbal’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c spbal.cpp -o spbal.o
+spbal.cpp:16:9: warning: 'RCPPTHREAD_OVERRIDE_COUT' macro redefined [-Wmacro-redefined]
+#define RCPPTHREAD_OVERRIDE_COUT 1   // std::cout override
+        ^
+/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include/RcppThread/Rcout.hpp:58:13: note: previous definition is here
+    #define RCPPTHREAD_OVERRIDE_COUT 0
+            ^
+spbal.cpp:17:9: warning: 'RCPPTHREAD_OVERRIDE_THREAD' macro redefined [-Wmacro-redefined]
+#define RCPPTHREAD_OVERRIDE_THREAD 1 // std::thread override
+        ^
+/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include/RcppThread/Thread.hpp:126:13: note: previous definition is here
+    #define RCPPTHREAD_OVERRIDE_THREAD 0
+            ^
+2 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spbal.so RcppExports.o spbal.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zm72bh0spmqsr1wh6a6ss3kmhm15cwxp-r-spbal-1.0.0/library/00LOCK-spbal/00new/spbal/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spbal)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spbal-1.0.0.drv-0/ in /nix/store/zm72bh0spmqsr1wh6a6ss3kmhm15cwxp-r-spbal-1.0.0...
+patching script interpreter paths in /nix/store/zm72bh0spmqsr1wh6a6ss3kmhm15cwxp-r-spbal-1.0.0
+rewriting symlink /nix/store/zm72bh0spmqsr1wh6a6ss3kmhm15cwxp-r-spbal-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/zm72bh0spmqsr1wh6a6ss3kmhm15cwxp-r-spbal-1.0.0

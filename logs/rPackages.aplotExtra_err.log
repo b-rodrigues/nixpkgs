@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/x7qiw1n30255ydq0giaj0zqdaz2qy7yx-r-aplotExtra-0.0.2.drv
+building '/nix/store/x7qiw1n30255ydq0giaj0zqdaz2qy7yx-r-aplotExtra-0.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z4j0dblbq5sclhzc6q32qgfpccrqdw4d-aplotExtra_0.0.2.tar.gz
+source root is aplotExtra
+setting SOURCE_DATE_EPOCH to timestamp 1692984002 of file aplotExtra/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘maftools’ is not available for package ‘aplotExtra’
+* removing ‘/nix/store/5dzp24xgl5zzh4a33gqaxz6spazk5xbn-r-aplotExtra-0.0.2/library/aplotExtra’
+error: builder for '/nix/store/x7qiw1n30255ydq0giaj0zqdaz2qy7yx-r-aplotExtra-0.0.2.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/z4j0dblbq5sclhzc6q32qgfpccrqdw4d-aplotExtra_0.0.2.tar.gz
+       > source root is aplotExtra
+       > setting SOURCE_DATE_EPOCH to timestamp 1692984002 of file aplotExtra/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘maftools’ is not available for package ‘aplotExtra’
+       > * removing ‘/nix/store/5dzp24xgl5zzh4a33gqaxz6spazk5xbn-r-aplotExtra-0.0.2/library/aplotExtra’
+       For full logs, run 'nix log /nix/store/x7qiw1n30255ydq0giaj0zqdaz2qy7yx-r-aplotExtra-0.0.2.drv'.

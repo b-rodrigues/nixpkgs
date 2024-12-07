@@ -1,0 +1,123 @@
+these 4 derivations will be built:
+  /nix/store/bc1wg5dhzkxhx4z8mp4myg1x3rjl0d7i-r-TSA-1.3.1.drv
+  /nix/store/f13a8vdg9qyx34hvd62d6vgdbwkxmdwm-r-mvLSW-1.2.5.drv
+  /nix/store/fyi1bzawydgr7wp7psj12ar1khdj11fb-r-marima-2.2.drv
+  /nix/store/iav216kzl1j60p5rbsy5yjyqxv7kg8fs-r-AnomalyScore-0.1.drv
+building '/nix/store/bc1wg5dhzkxhx4z8mp4myg1x3rjl0d7i-r-TSA-1.3.1.drv'...
+building '/nix/store/fyi1bzawydgr7wp7psj12ar1khdj11fb-r-marima-2.2.drv'...
+building '/nix/store/f13a8vdg9qyx34hvd62d6vgdbwkxmdwm-r-mvLSW-1.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sh7mvlr22msxb16k9q7waap5bz6zfhj8-TSA_1.3.1.tar.gz
+source root is TSA
+setting SOURCE_DATE_EPOCH to timestamp 1657020982 of file TSA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/ds3fcl0v2rqjmqfg9l0aw430h9lh2yz8-marima_2.2.tar.gz
+source root is marima
+setting SOURCE_DATE_EPOCH to timestamp 1484351960 of file marima/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+* installing *source* package ‘TSA’ ...
+** package ‘TSA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: checkPhase
+** R
+Running phase: installPhase
+** data
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/hnhnzzx0ixx0g8gzdk1vqmh1kq4gr8kg-mvLSW_1.2.5.tar.gz
+source root is mvLSW
+setting SOURCE_DATE_EPOCH to timestamp 1655221202 of file mvLSW/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+* installing *source* package ‘marima’ ...
+** package ‘marima’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+Running phase: configurePhase
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mvLSW’ ...
+** package ‘mvLSW’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mvLSW_Cfunctions.c -o mvLSW_Cfunctions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mvLSW.so mvLSW_Cfunctions.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+** help
+*** installing help indices
+** building package indices
+installing to /nix/store/2xdmk72cyvvg7nd2g1vf4wxdapfnpvi7-r-mvLSW-1.2.5/library/00LOCK-mvLSW/00new/mvLSW/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (marima)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-marima-2.2.drv-0/ in /nix/store/1qif67xanfy342q9ka013sflbwbndy6x-r-marima-2.2...
+patching script interpreter paths in /nix/store/1qif67xanfy342q9ka013sflbwbndy6x-r-marima-2.2
+** help
+*** installing help indices
+** help
+*** installing help indices
+** building package indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mvLSW)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mvLSW-1.2.5.drv-0/ in /nix/store/2xdmk72cyvvg7nd2g1vf4wxdapfnpvi7-r-mvLSW-1.2.5...
+patching script interpreter paths in /nix/store/2xdmk72cyvvg7nd2g1vf4wxdapfnpvi7-r-mvLSW-1.2.5
+** testing if installed package keeps a record of temporary installation path
+* DONE (TSA)
+Running phase: fixupPhase
+rewriting symlink /nix/store/2xdmk72cyvvg7nd2g1vf4wxdapfnpvi7-r-mvLSW-1.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/2xdmk72cyvvg7nd2g1vf4wxdapfnpvi7-r-mvLSW-1.2.5
+checking for references to /private/tmp/nix-build-r-TSA-1.3.1.drv-0/ in /nix/store/6ll7rb6mb45v6pdxdazmq4n5w6y5bydk-r-TSA-1.3.1...
+patching script interpreter paths in /nix/store/6ll7rb6mb45v6pdxdazmq4n5w6y5bydk-r-TSA-1.3.1
+rewriting symlink /nix/store/6ll7rb6mb45v6pdxdazmq4n5w6y5bydk-r-TSA-1.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/6ll7rb6mb45v6pdxdazmq4n5w6y5bydk-r-TSA-1.3.1
+building '/nix/store/iav216kzl1j60p5rbsy5yjyqxv7kg8fs-r-AnomalyScore-0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nyq91q6c5l22qqv80dipx8glr7h2qxj0-AnomalyScore_0.1.tar.gz
+source root is AnomalyScore
+setting SOURCE_DATE_EPOCH to timestamp 1732176013 of file AnomalyScore/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘AnomalyScore’ ...
+** package ‘AnomalyScore’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (AnomalyScore)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-AnomalyScore-0.1.drv-0/ in /nix/store/cgy2gvzacrw964q50vrmsnkikn408mmc-r-AnomalyScore-0.1...
+patching script interpreter paths in /nix/store/cgy2gvzacrw964q50vrmsnkikn408mmc-r-AnomalyScore-0.1
+rewriting symlink /nix/store/cgy2gvzacrw964q50vrmsnkikn408mmc-r-AnomalyScore-0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/cgy2gvzacrw964q50vrmsnkikn408mmc-r-AnomalyScore-0.1

@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/34dg5v8j1pq2fxpiv0yshqd63lklwvfq-r-Rnmr1D-1.3.2.drv
+this path will be fetched (1.71 MiB download, 1.71 MiB unpacked):
+  /nix/store/0jrnqfqp5ddzxf4w6w5y19w2bglzkxxq-Rnmr1D_1.3.2.tar.gz
+copying path '/nix/store/0jrnqfqp5ddzxf4w6w5y19w2bglzkxxq-Rnmr1D_1.3.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/34dg5v8j1pq2fxpiv0yshqd63lklwvfq-r-Rnmr1D-1.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/0jrnqfqp5ddzxf4w6w5y19w2bglzkxxq-Rnmr1D_1.3.2.tar.gz
+source root is Rnmr1D
+setting SOURCE_DATE_EPOCH to timestamp 1681369802 of file Rnmr1D/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rnmr1D’ ...
+** package ‘Rnmr1D’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c libCspec.cpp -o libCspec.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rnmr1D.so RcppExports.o libCspec.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/y6byjzsnl5l1qkb3p61wld6f1jjhhjd2-r-Rnmr1D-1.3.2/library/00LOCK-Rnmr1D/00new/Rnmr1D/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rnmr1D)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rnmr1D-1.3.2.drv-0/ in /nix/store/y6byjzsnl5l1qkb3p61wld6f1jjhhjd2-r-Rnmr1D-1.3.2...
+patching script interpreter paths in /nix/store/y6byjzsnl5l1qkb3p61wld6f1jjhhjd2-r-Rnmr1D-1.3.2
+rewriting symlink /nix/store/y6byjzsnl5l1qkb3p61wld6f1jjhhjd2-r-Rnmr1D-1.3.2/nix-support/propagated-user-env-packages to be relative to /nix/store/y6byjzsnl5l1qkb3p61wld6f1jjhhjd2-r-Rnmr1D-1.3.2

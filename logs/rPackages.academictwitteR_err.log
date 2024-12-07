@@ -1,0 +1,215 @@
+these 6 derivations will be built:
+  /nix/store/1cd09yv30hj2yjw973lavgvi0a7hpr77-r-credentials-2.0.2.drv
+  /nix/store/madix0p2hpq5phw6rk8pq267mxlla58d-r-httr2-1.0.6.drv
+  /nix/store/8wzyvs8xf6gzgynlvwb4q28zild7xb32-r-gh-1.4.1.drv
+  /nix/store/lpv8f3839lxxkc3r816a57r7wcxyrs7h-r-gert-2.1.4.drv
+  /nix/store/6r51fkry7i49wgrmh34dihbx5m4zqazw-r-usethis-3.0.0.drv
+  /nix/store/pk9z40lirs3mvl1qfk3v0swsr9hrzdfp-r-academictwitteR-0.3.1.drv
+building '/nix/store/1cd09yv30hj2yjw973lavgvi0a7hpr77-r-credentials-2.0.2.drv'...
+building '/nix/store/madix0p2hpq5phw6rk8pq267mxlla58d-r-httr2-1.0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/51kxbvyahdmkal7snpqp4nh2c2w9hlmj-credentials_2.0.2.tar.gz
+source root is credentials
+setting SOURCE_DATE_EPOCH to timestamp 1728045603 of file credentials/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/6fs18a399f5cphg69k5ikvzb9828m07h-httr2_1.0.6.tar.gz
+source root is httr2
+* installing *source* package ‘credentials’ ...
+** package ‘credentials’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+setting SOURCE_DATE_EPOCH to timestamp 1730737802 of file httr2/MD5
+** byte-compile and prepare package for lazy loading
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#! /usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘httr2’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (credentials)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-credentials-2.0.2.drv-0/ in /nix/store/nr7rndj204m3b050dbz84jsbh6a47lrk-r-credentials-2.0.2...
+patching script interpreter paths in /nix/store/nr7rndj204m3b050dbz84jsbh6a47lrk-r-credentials-2.0.2
+/nix/store/nr7rndj204m3b050dbz84jsbh6a47lrk-r-credentials-2.0.2/library/credentials/ask_token.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+rewriting symlink /nix/store/nr7rndj204m3b050dbz84jsbh6a47lrk-r-credentials-2.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/nr7rndj204m3b050dbz84jsbh6a47lrk-r-credentials-2.0.2
+building '/nix/store/lpv8f3839lxxkc3r816a57r7wcxyrs7h-r-gert-2.1.4.drv'...
+Running phase: unpackPhase
+** R
+unpacking source archive /nix/store/hscp6qii6v8drs5psdkhvy6swsbdwfsn-gert_2.1.4.tar.gz
+** inst
+** byte-compile and prepare package for lazy loading
+source root is gert
+setting SOURCE_DATE_EPOCH to timestamp 1728907859 of file gert/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gert’ ...
+** package ‘gert’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+./configure: line 61: curl: command not found
+** help
+Using PKG_CFLAGS=
+Using PKG_LIBS=-lgit2
+*** installing help indices
+Configuration OK!
+*** copying figures
+** building package indices
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+rm -f gert.so branch.o clone.o commit.o config.o conflicts.o files.o ignore.o init.o merge.o rebase.o stash.o submodules.o tag.o utils.o version.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c branch.c -o branch.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c clone.c -o clone.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c commit.c -o commit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c config.c -o config.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c conflicts.c -o conflicts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c files.c -o files.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ignore.c -o ignore.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c merge.c -o merge.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rebase.c -o rebase.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c stash.c -o stash.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c submodules.c -o submodules.o
+** installing vignettes
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tag.c -o tag.o
+** testing if installed package can be loaded from temporary location
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c utils.c -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DR_NO_REMAP -DSTRICT_R_HEADERS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c version.c -o version.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o gert.so branch.o clone.o commit.o config.o conflicts.o files.o ignore.o init.o merge.o rebase.o stash.o submodules.o tag.o utils.o version.o -lgit2 -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9ax04lsjlv79n0kd408n6nnpyh23g72y-r-gert-2.1.4/library/00LOCK-gert/00new/gert/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (httr2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-httr2-1.0.6.drv-0/ in /nix/store/aphkh44f32dbnd732qdmy04v65x3hcdj-r-httr2-1.0.6...
+patching script interpreter paths in /nix/store/aphkh44f32dbnd732qdmy04v65x3hcdj-r-httr2-1.0.6
+rewriting symlink /nix/store/aphkh44f32dbnd732qdmy04v65x3hcdj-r-httr2-1.0.6/nix-support/propagated-user-env-packages to be relative to /nix/store/aphkh44f32dbnd732qdmy04v65x3hcdj-r-httr2-1.0.6
+building '/nix/store/8wzyvs8xf6gzgynlvwb4q28zild7xb32-r-gh-1.4.1.drv'...
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Running phase: unpackPhase
+unpacking source archive /nix/store/6rfz67x830d6xx6g85ha1m3ak5l1bb3m-gh_1.4.1.tar.gz
+source root is gh
+setting SOURCE_DATE_EPOCH to timestamp 1711644007 of file gh/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** checking absolute paths in shared objects and dynamic libraries
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gh’ ...
+** package ‘gh’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** testing if installed package can be loaded from final location
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package keeps a record of temporary installation path
+* DONE (gert)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gert-2.1.4.drv-0/ in /nix/store/9ax04lsjlv79n0kd408n6nnpyh23g72y-r-gert-2.1.4...
+patching script interpreter paths in /nix/store/9ax04lsjlv79n0kd408n6nnpyh23g72y-r-gert-2.1.4
+rewriting symlink /nix/store/9ax04lsjlv79n0kd408n6nnpyh23g72y-r-gert-2.1.4/nix-support/propagated-user-env-packages to be relative to /nix/store/9ax04lsjlv79n0kd408n6nnpyh23g72y-r-gert-2.1.4
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gh)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gh-1.4.1.drv-0/ in /nix/store/idlr9qvkqysnsynansy1hda1pm9z92pw-r-gh-1.4.1...
+patching script interpreter paths in /nix/store/idlr9qvkqysnsynansy1hda1pm9z92pw-r-gh-1.4.1
+rewriting symlink /nix/store/idlr9qvkqysnsynansy1hda1pm9z92pw-r-gh-1.4.1/nix-support/propagated-user-env-packages to be relative to /nix/store/idlr9qvkqysnsynansy1hda1pm9z92pw-r-gh-1.4.1
+building '/nix/store/6r51fkry7i49wgrmh34dihbx5m4zqazw-r-usethis-3.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qndnn0af3gw4sfaj12hpaamwg56iz6nm-usethis_3.0.0.tar.gz
+source root is usethis
+setting SOURCE_DATE_EPOCH to timestamp 1722237602 of file usethis/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘usethis’ ...
+** package ‘usethis’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (usethis)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-usethis-3.0.0.drv-0/ in /nix/store/766rm79v0zw7yyg5vjk4rs6ng78ankm7-r-usethis-3.0.0...
+patching script interpreter paths in /nix/store/766rm79v0zw7yyg5vjk4rs6ng78ankm7-r-usethis-3.0.0
+rewriting symlink /nix/store/766rm79v0zw7yyg5vjk4rs6ng78ankm7-r-usethis-3.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/766rm79v0zw7yyg5vjk4rs6ng78ankm7-r-usethis-3.0.0
+building '/nix/store/pk9z40lirs3mvl1qfk3v0swsr9hrzdfp-r-academictwitteR-0.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/yzb7ah51s4qcnjjwv7nphc56i7kxjs1n-academictwitteR_0.3.1.tar.gz
+source root is academictwitteR
+setting SOURCE_DATE_EPOCH to timestamp 1645024809 of file academictwitteR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘academictwitteR’ ...
+** package ‘academictwitteR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (academictwitteR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-academictwitteR-0.3.1.drv-0/ in /nix/store/yfdsk1rf86wp2528ydablsgxbbn9206h-r-academictwitteR-0.3.1...
+patching script interpreter paths in /nix/store/yfdsk1rf86wp2528ydablsgxbbn9206h-r-academictwitteR-0.3.1
+rewriting symlink /nix/store/yfdsk1rf86wp2528ydablsgxbbn9206h-r-academictwitteR-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/yfdsk1rf86wp2528ydablsgxbbn9206h-r-academictwitteR-0.3.1

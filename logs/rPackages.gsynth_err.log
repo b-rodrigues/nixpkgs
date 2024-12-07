@@ -1,0 +1,129 @@
+these 3 derivations will be built:
+  /nix/store/w1c5081xx0myva6xs6rg3w1xw12zngm4-lfe_3.1.0.tar.gz.drv
+  /nix/store/d70lfa14852kgpv9a3r5h0gvys3kdplx-r-lfe-3.1.0.drv
+  /nix/store/ix21npvkv2vzv6w226qgx66z4r65jr14-r-gsynth-1.2.1.drv
+this path will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/7668mmj631dsmg3c99194jgc5j9g6b52-gsynth_1.2.1.tar.gz
+copying path '/nix/store/7668mmj631dsmg3c99194jgc5j9g6b52-gsynth_1.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/w1c5081xx0myva6xs6rg3w1xw12zngm4-lfe_3.1.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/lfe_3.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1100k  100 1100k    0     0  3229k      0 --:--:-- --:--:-- --:--:-- 3235k
+building '/nix/store/d70lfa14852kgpv9a3r5h0gvys3kdplx-r-lfe-3.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ycci9gl2kln09j141yn6ff70jqfafvbf-lfe_3.1.0.tar.gz
+source root is lfe
+setting SOURCE_DATE_EPOCH to timestamp 1730910007 of file lfe/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Updating Autotools / GNU config script to a newer upstream version: ./build/autoconf/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./build/autoconf/config.guess
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lfe’ ...
+files ‘build/autoconf/config.guess’, ‘build/autoconf/config.sub’ have the wrong MD5 checksums
+** using staged installation
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to enable C11 features... none needed
+checking build system type... aarch64-apple-darwin24.1.0
+checking host system type... aarch64-apple-darwin24.1.0
+checking for a sed that does not truncate output... /nix/store/9m372k9wy0f9aj54zhvsr65w2p9ndwnj-gnused-4.9/bin/sed
+checking how to run the C preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -E
+checking for grep that handles long lines and -e... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep
+checking for egrep... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep -E
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc is Clang... yes
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking whether Clang needs flag to prevent "argument unused" warning when linking with -pthread... no
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for timed semaphore wait... no
+checking for library containing pthread_setname_np... none required
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/config.h
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -pthread  -fPIC  -g -O2  -c crowsum.c -o crowsum.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -pthread  -fPIC  -g -O2  -c demean.c -o demean.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -pthread  -fPIC  -g -O2  -c factor.c -o factor.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -pthread  -fPIC  -g -O2  -c kaczmarz.c -o kaczmarz.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -pthread  -fPIC  -g -O2  -c lfe.c -o lfe.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -pthread  -fPIC  -g -O2  -c utils.c -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o lfe.so crowsum.o demean.o factor.o kaczmarz.o lfe.o utils.o -lpthread -pthread -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/4jzj78psq4p95dl2mp630jxlcmavznsq-r-lfe-3.1.0/library/00LOCK-lfe/00new/lfe/libs
+** R
+** exec
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (lfe)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lfe-3.1.0.drv-0/ in /nix/store/4jzj78psq4p95dl2mp630jxlcmavznsq-r-lfe-3.1.0...
+patching script interpreter paths in /nix/store/4jzj78psq4p95dl2mp630jxlcmavznsq-r-lfe-3.1.0
+rewriting symlink /nix/store/4jzj78psq4p95dl2mp630jxlcmavznsq-r-lfe-3.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/4jzj78psq4p95dl2mp630jxlcmavznsq-r-lfe-3.1.0
+building '/nix/store/ix21npvkv2vzv6w226qgx66z4r65jr14-r-gsynth-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7668mmj631dsmg3c99194jgc5j9g6b52-gsynth_1.2.1.tar.gz
+source root is gsynth
+setting SOURCE_DATE_EPOCH to timestamp 1628236205 of file gsynth/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gsynth’ ...
+** package ‘gsynth’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c interFE.cpp -o interFE.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o gsynth.so RcppExports.o interFE.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/sp8rf7xs0cciymqykkz3w6vc1rwvcsca-r-gsynth-1.2.1/library/00LOCK-gsynth/00new/gsynth/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gsynth)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gsynth-1.2.1.drv-0/ in /nix/store/sp8rf7xs0cciymqykkz3w6vc1rwvcsca-r-gsynth-1.2.1...
+patching script interpreter paths in /nix/store/sp8rf7xs0cciymqykkz3w6vc1rwvcsca-r-gsynth-1.2.1
+rewriting symlink /nix/store/sp8rf7xs0cciymqykkz3w6vc1rwvcsca-r-gsynth-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/sp8rf7xs0cciymqykkz3w6vc1rwvcsca-r-gsynth-1.2.1

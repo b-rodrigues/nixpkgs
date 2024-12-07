@@ -1,0 +1,217 @@
+this derivation will be built:
+  /nix/store/6d8720ikqf1dwq7dqc6ij8vfsf7akrxa-r-sequoia-2.11.2.drv
+this path will be fetched (2.77 MiB download, 2.77 MiB unpacked):
+  /nix/store/n6zapxz73lr0lzv895qldkhfxrs9wfqq-sequoia_2.11.2.tar.gz
+copying path '/nix/store/n6zapxz73lr0lzv895qldkhfxrs9wfqq-sequoia_2.11.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6d8720ikqf1dwq7dqc6ij8vfsf7akrxa-r-sequoia-2.11.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/n6zapxz73lr0lzv895qldkhfxrs9wfqq-sequoia_2.11.2.tar.gz
+source root is sequoia
+setting SOURCE_DATE_EPOCH to timestamp 1716892803 of file sequoia/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sequoia’ ...
+** package ‘sequoia’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  MkRelA.f90 -o MkRelA.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  Sequoia.f90 -o Sequoia.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  SimGenoErrors.f90 -o SimGenoErrors.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ester.f90 -o ester.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pretty_R_print.c -o pretty_R_print.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o sequoia.so MkRelA.o Sequoia.o SimGenoErrors.o ester.o init.o pretty_R_print.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _getrel_: does not use standard frame
+ld: warning: could not create compact unwind for _ester_calcll_: does not use standard frame
+ld: warning: could not create compact unwind for _ester_parprob_: does not use standard frame
+ld: warning: could not create compact unwind for _ester_getoff_: does not use standard frame
+ld: warning: could not create compact unwind for _estg_: does not use standard frame
+ld: warning: could not create compact unwind for _ester_getgenerations_: does not use standard frame
+ld: warning: could not create compact unwind for _estallg_: does not use standard frame
+ld: warning: could not create compact unwind for _ester_calcprobs_: does not use standard frame
+ld: warning: could not create compact unwind for _ester_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for ___global_MOD_mk_seq: does not use standard frame
+could not create compact unwind for _mkerrors_: does not use standard frame
+ld: warning: could not create compact unwind for ___qsort_c_module_MOD_qsortc: does not use standard frame
+ld: warning: could not create compact unwind for _erstop_: does not use standard frame
+ld: warning: could not create compact unwind for ___global_MOD_rprint: does not use standard frame
+ld: warning: could not create compact unwind for ___global_MOD_getap: does not use standard frame
+ld: warning: could not create compact unwind for _mtovd_: does not use standard frame
+ld: warning: could not create compact unwind for _prepagedata_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocarrays_: does not use standard frame
+could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for _estbyrange_: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for _mtovi_: does not use standard frameld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+
+ld: warning: could not create compact unwind for _pairqhs_: does not use standard frame
+ld: warning: could not create compact unwind for _pairqfs_: does not use standard frame
+ld: warning: could not create compact unwind for _getancest_: does not use standard frame
+ld: warning: could not create compact unwind for _chkancest_: does not use standard frame
+ld: warning: could not create compact unwind for _pairself_: does not use standard frame
+ld: warning: could not create compact unwind for _pairqpo_: does not use standard frame
+ld: warning: could not create compact unwind for _calcopphomall_: does not use standard frame
+ld: warning: could not create compact unwind for _calcopphom_: does not use standard frame
+ld: warning: could not create compact unwind for _aatovd_: does not use standard frame
+ld: warning: could not create compact unwind for _isselfed_: does not use standard frame
+ld: warning: could not create compact unwind for _rprint_tbl_update_a_: does not use standard frame
+ld: warning: could not create compact unwind for _rprint_tbl_update_b_: does not use standard frame
+ld: warning: could not create compact unwind for _checkselfed_: does not use standard frame
+ld: warning: could not create compact unwind for _calcagelr_: does not use standard frame
+ld: warning: could not create compact unwind for _qadd_: does not use standard frame
+ld: warning: could not create compact unwind for _parprob_: does not use standard frame
+ld: warning: could not create compact unwind for _calcp2_: does not use standard frame
+ld: warning: could not create compact unwind for _qfs_: does not use standard frame
+ld: warning: could not create compact unwind for _calclind_: does not use standard frame
+ld: warning: could not create compact unwind for _qfsgp_: does not use standard frame
+ld: warning: could not create compact unwind for _lrgg_: does not use standard frame
+ld: warning: could not create compact unwind for _getbyrank_c_: does not use standard frame
+ld: warning: could not create compact unwind for _qgp_: does not use standard frame
+ld: warning: could not create compact unwind for _getfocal_: does not use standard frame
+ld: warning: could not create compact unwind for _oppmerge_: does not use standard frame
+ld: warning: could not create compact unwind for _lla2llr_: does not use standard frame
+ld: warning: could not create compact unwind for _triohsgp_: does not use standard frame
+ld: warning: could not create compact unwind for _trioha_: does not use standard frame
+ld: warning: could not create compact unwind for _trioggp_: does not use standard frame
+ld: warning: could not create compact unwind for _triofa_: does not use standard frame
+ld: warning: could not create compact unwind for _triohs_: does not use standard frame
+ld: warning: could not create compact unwind for _triofs_: does not use standard frame
+ld: warning: could not create compact unwind for _clusthsha_: does not use standard frame
+ld: warning: could not create compact unwind for _fshc_: does not use standard frame
+ld: warning: could not create compact unwind for _mergesibs_: does not use standard frame
+ld: warning: could not create compact unwind for _fsmerge_: does not use standard frame
+ld: warning: could not create compact unwind for _addhaselfed_: does not use standard frame
+ld: warning: could not create compact unwind for _calcalrmerge_: does not use standard frame
+ld: warning: could not create compact unwind for _qmerge_: does not use standard frame
+ld: warning: could not create compact unwind for _pairhscc_: does not use standard frame
+ld: warning: could not create compact unwind for _pairhsha_: does not use standard frame
+ld: warning: could not create compact unwind for _pairdhc_: does not use standard frame
+ld: warning: could not create compact unwind for _calcalr_addsib_: does not use standard frame
+ld: warning: could not create compact unwind for _pairhsgp_: does not use standard frame
+ld: warning: could not create compact unwind for _pairhspo_: does not use standard frame
+ld: warning: could not create compact unwind for _pairfsselfed_: does not use standard frame
+ld: warning: could not create compact unwind for _pairfsha_: does not use standard frame
+ld: warning: could not create compact unwind for _pairpoha_: does not use standard frame
+ld: warning: could not create compact unwind for _getpoconfigs_: does not use standard frame
+ld: warning: could not create compact unwind for _fax_: does not use standard frame
+ld: warning: could not create compact unwind for _pairga_: does not use standard frame
+ld: warning: could not create compact unwind for _findee_: does not use standard frame
+ld: warning: could not create compact unwind for _chkdoquick_: does not use standard frame
+ld: warning: could not create compact unwind for _addggp_: does not use standard frame
+ld: warning: could not create compact unwind for _addparent_: does not use standard frame
+ld: warning: could not create compact unwind for _dummyhfa_: does not use standard frame
+ld: warning: could not create compact unwind for _parenthfs_: does not use standard frame
+ld: warning: could not create compact unwind for _addgau_: does not use standard frame
+ld: warning: could not create compact unwind for _pairua_: does not use standard frame
+ld: warning: could not create compact unwind for _connected_: does not use standard frame
+ld: warning: could not create compact unwind for _chktoomanysibs_: does not use standard frame
+ld: warning: could not create compact unwind for _calccll_: does not use standard frame
+ld: warning: could not create compact unwind for _chkvalidpar_: does not use standard frame
+ld: warning: could not create compact unwind for _pairpox_: does not use standard frame
+ld: warning: could not create compact unwind for _updatell_: does not use standard frame
+ld: warning: could not create compact unwind for _uclust_: does not use standard frame
+ld: warning: could not create compact unwind for _estagedif_: does not use standard frame
+ld: warning: could not create compact unwind for _upair_: does not use standard frame
+ld: warning: could not create compact unwind for _calcu_: does not use standard frame
+ld: warning: could not create compact unwind for _addfa_: does not use standard frame
+ld: warning: could not create compact unwind for _triogp_: does not use standard frame
+ld: warning: could not create compact unwind for _pairhshai_: does not use standard frame
+ld: warning: could not create compact unwind for _pairfaha_: does not use standard frame
+ld: warning: could not create compact unwind for _hsmating_: does not use standard frame
+ld: warning: could not create compact unwind for _addsibinbr_: does not use standard frame
+ld: warning: could not create compact unwind for _makefs_: register 20 saved somewhere other than in frame
+ld: warning: could not create compact unwind for _readinputped_: does not use standard frame
+ld: warning: could not create compact unwind for _doadd_: does not use standard frame
+ld: warning: could not create compact unwind for _removefs_: does not use standard frame
+ld: warning: could not create compact unwind for _removesib_: does not use standard frame
+ld: warning: could not create compact unwind for _setpartmp_: does not use standard frame
+ld: warning: could not create compact unwind for _pairpo_: does not use standard frame
+ld: warning: could not create compact unwind for _qpo_: does not use standard frame
+ld: warning: could not create compact unwind for _addgp_: does not use standard frame
+ld: warning: could not create compact unwind for _pairgp_: does not use standard frame
+ld: warning: could not create compact unwind for _pairggp_: does not use standard frame
+ld: warning: could not create compact unwind for _addfs_: does not use standard frame
+ld: warning: could not create compact unwind for _addsib_: does not use standard frame
+ld: warning: could not create compact unwind for _sibchk_: does not use standard frame
+ld: warning: could not create compact unwind for _dummygp_: does not use standard frame
+ld: warning: could not create compact unwind for _checkmerge_: does not use standard frame
+ld: warning: could not create compact unwind for _gpfilter_: does not use standard frame
+ld: warning: could not create compact unwind for _calc4u_: does not use standard frame
+ld: warning: could not create compact unwind for _calcpx2_: does not use standard frame
+ld: warning: could not create compact unwind for _pairhalfsib_: does not use standard frame
+ld: warning: could not create compact unwind for _pairfullsib_: does not use standard frame
+ld: warning: could not create compact unwind for _paircc_: does not use standard frame
+ld: warning: could not create compact unwind for _checkadd_: does not use standard frame
+ld: warning: could not create compact unwind for _checkpair_: does not use standard frame
+ld: warning: could not create compact unwind for _findpairs_: does not use standard frame
+ld: warning: could not create compact unwind for _checkrel_: does not use standard frame
+ld: warning: could not create compact unwind for _checkmayberev_: does not use standard frame
+ld: warning: could not create compact unwind for _calccandparll_: does not use standard frame
+ld: warning: could not create compact unwind for _calcpogpz_: does not use standard frame
+ld: warning: could not create compact unwind for _checkparentpair_: does not use standard frame
+ld: warning: could not create compact unwind for _triads_: does not use standard frame
+ld: warning: could not create compact unwind for _calcbysibs_: does not use standard frame
+ld: warning: could not create compact unwind for _calcbydown_: does not use standard frame
+ld: warning: could not create compact unwind for _calcbyup_: does not use standard frame
+ld: warning: could not create compact unwind for _setestby_: does not use standard frame
+ld: warning: could not create compact unwind for _setpar_: does not use standard frame
+ld: warning: could not create compact unwind for _chkgps_: does not use standard frame
+ld: warning: could not create compact unwind for _domerge_: does not use standard frame
+ld: warning: could not create compact unwind for _checkdropsibship_: does not use standard frame
+ld: warning: could not create compact unwind for _sibparent_: does not use standard frame
+ld: warning: could not create compact unwind for _newsibship_: does not use standard frame
+ld: warning: could not create compact unwind for _updatemate_: does not use standard frame
+ld: warning: could not create compact unwind for _dofsmerge_: does not use standard frame
+ld: warning: could not create compact unwind for _merging_: does not use standard frame
+ld: warning: could not create compact unwind for _clustering_: does not use standard frame
+ld: warning: could not create compact unwind for _checkmono_: does not use standard frame
+ld: warning: could not create compact unwind for _selectparent_: does not use standard frame
+ld: warning: could not create compact unwind for _parentage_: does not use standard frame
+ld: warning: could not create compact unwind for _fsibsgps_: does not use standard frame
+ld: warning: could not create compact unwind for _sibgrandparents_: does not use standard frame
+ld: warning: could not create compact unwind for _getgenerations_: does not use standard frame
+ld: warning: could not create compact unwind for _getrank_i_: does not use standard frame
+ld: warning: could not create compact unwind for _updateallprobs_: does not use standard frame
+ld: warning: could not create compact unwind for _calcparentllr_: does not use standard frame
+ld: warning: could not create compact unwind for _moreparent_: does not use standard frame
+ld: warning: could not create compact unwind for _ggpairs_: does not use standard frame
+ld: warning: could not create compact unwind for _checkpedigree_: does not use standard frame
+ld: warning: could not create compact unwind for _sibships_: does not use standard frame
+ld: warning: could not create compact unwind for _parents_: does not use standard frame
+ld: warning: could not create compact unwind for _precalcprobs_: does not use standard frame
+ld: warning: could not create compact unwind for _initiate_: does not use standard frame
+ld: warning: could not create compact unwind for _makeped_: does not use standard frame
+ld: warning: could not create compact unwind for _duplicates_: does not use standard frame
+ld: warning: could not create compact unwind for _findambig_: does not use standard frame
+ld: warning: could not create compact unwind for _getpedllr_: does not use standard frame
+ld: warning: could not create compact unwind for _getpairll_: does not use standard frame
+ld: warning: could not create compact unwind for _getbyprobs_: does not use standard frame
+ld: warning: could not create compact unwind for _calcpo2_: does not use standard frame
+ld: warning: could not create compact unwind for _qfsmerge_: does not use standard frame
+installing to /nix/store/5bwa9nscz9r9pl7m97wjqfz59z8k54zv-r-sequoia-2.11.2/library/00LOCK-sequoia/00new/sequoia/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sequoia)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sequoia-2.11.2.drv-0/ in /nix/store/5bwa9nscz9r9pl7m97wjqfz59z8k54zv-r-sequoia-2.11.2...
+patching script interpreter paths in /nix/store/5bwa9nscz9r9pl7m97wjqfz59z8k54zv-r-sequoia-2.11.2
+rewriting symlink /nix/store/5bwa9nscz9r9pl7m97wjqfz59z8k54zv-r-sequoia-2.11.2/nix-support/propagated-user-env-packages to be relative to /nix/store/5bwa9nscz9r9pl7m97wjqfz59z8k54zv-r-sequoia-2.11.2

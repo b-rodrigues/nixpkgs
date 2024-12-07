@@ -1,0 +1,135 @@
+these 3 derivations will be built:
+  /nix/store/92r12ysfv9pngy4mihkx9388zgikl5zh-r-netrankr-1.2.3.drv
+  /nix/store/kypwxl7g054axrkrd7p7px5mvmbasx6s-r-parsec-1.2.7.drv
+  /nix/store/icb4z03gfw1r7gkk4mvyvacjjxdxcb49-r-MARMoT-0.0.4.drv
+these 3 paths will be fetched (2.21 MiB download, 2.21 MiB unpacked):
+  /nix/store/pz443glc99xckzr5m1hm3yvw8zq267h3-MARMoT_0.0.4.tar.gz
+  /nix/store/dlkgvz08yssznmm1hyvb3kynz2m9hmw1-netrankr_1.2.3.tar.gz
+  /nix/store/ikj8nmvbfhkjx1xxjhb0v9k3a1i1q8kp-parsec_1.2.7.tar.gz
+copying path '/nix/store/pz443glc99xckzr5m1hm3yvw8zq267h3-MARMoT_0.0.4.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ikj8nmvbfhkjx1xxjhb0v9k3a1i1q8kp-parsec_1.2.7.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/dlkgvz08yssznmm1hyvb3kynz2m9hmw1-netrankr_1.2.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/92r12ysfv9pngy4mihkx9388zgikl5zh-r-netrankr-1.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dlkgvz08yssznmm1hyvb3kynz2m9hmw1-netrankr_1.2.3.tar.gz
+source root is netrankr
+setting SOURCE_DATE_EPOCH to timestamp 1702991402 of file netrankr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘netrankr’ ...
+** package ‘netrankr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c approx_expected.cpp -o approx_expected.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c approxrelative.cpp -o approxrelative.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c checkPairs.cpp -o checkPairs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dependCurFlow.cpp -o dependCurFlow.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dependRspn.cpp -o dependRspn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dependency.cpp -o dependency.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c latticeOfIdeals.cpp -o latticeOfIdeals.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c listingIdeals.cpp -o listingIdeals.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mcmc_rank.cpp -o mcmc_rank.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c nialgo.cpp -o nialgo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pdalgo.cpp -o pdalgo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c preserve.cpp -o preserve.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rankProbs.cpp -o rankProbs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rankings.cpp -o rankings.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c resistanceDistance.cpp -o resistanceDistance.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c transreduct.cpp -o transreduct.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c treeOfIdeals.cpp -o treeOfIdeals.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o netrankr.so RcppExports.o approx_expected.o approxrelative.o checkPairs.o dependCurFlow.o dependRspn.o dependency.o latticeOfIdeals.o listingIdeals.o mcmc_rank.o nialgo.o pdalgo.o preserve.o rankProbs.o rankings.o resistanceDistance.o transreduct.o treeOfIdeals.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/xvsaqypddv79k0a9kcjd3m6zw354b2r7-r-netrankr-1.2.3/library/00LOCK-netrankr/00new/netrankr/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (netrankr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-netrankr-1.2.3.drv-0/ in /nix/store/xvsaqypddv79k0a9kcjd3m6zw354b2r7-r-netrankr-1.2.3...
+patching script interpreter paths in /nix/store/xvsaqypddv79k0a9kcjd3m6zw354b2r7-r-netrankr-1.2.3
+rewriting symlink /nix/store/xvsaqypddv79k0a9kcjd3m6zw354b2r7-r-netrankr-1.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/xvsaqypddv79k0a9kcjd3m6zw354b2r7-r-netrankr-1.2.3
+building '/nix/store/kypwxl7g054axrkrd7p7px5mvmbasx6s-r-parsec-1.2.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ikj8nmvbfhkjx1xxjhb0v9k3a1i1q8kp-parsec_1.2.7.tar.gz
+source root is parsec
+setting SOURCE_DATE_EPOCH to timestamp 1692452402 of file parsec/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘parsec’ ...
+** package ‘parsec’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c parsec.c -o parsec.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c parsec_init.c -o parsec_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o parsec.so parsec.o parsec_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4nyyl22r87ngzl00ha71qhx0ypny5b5f-r-parsec-1.2.7/library/00LOCK-parsec/00new/parsec/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (parsec)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-parsec-1.2.7.drv-0/ in /nix/store/4nyyl22r87ngzl00ha71qhx0ypny5b5f-r-parsec-1.2.7...
+patching script interpreter paths in /nix/store/4nyyl22r87ngzl00ha71qhx0ypny5b5f-r-parsec-1.2.7
+rewriting symlink /nix/store/4nyyl22r87ngzl00ha71qhx0ypny5b5f-r-parsec-1.2.7/nix-support/propagated-user-env-packages to be relative to /nix/store/4nyyl22r87ngzl00ha71qhx0ypny5b5f-r-parsec-1.2.7
+building '/nix/store/icb4z03gfw1r7gkk4mvyvacjjxdxcb49-r-MARMoT-0.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pz443glc99xckzr5m1hm3yvw8zq267h3-MARMoT_0.0.4.tar.gz
+source root is MARMoT
+setting SOURCE_DATE_EPOCH to timestamp 1707238808 of file MARMoT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MARMoT’ ...
+** package ‘MARMoT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MARMoT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MARMoT-0.0.4.drv-0/ in /nix/store/q96kc8qhyfyzkm314d5994y76bjr0k51-r-MARMoT-0.0.4...
+patching script interpreter paths in /nix/store/q96kc8qhyfyzkm314d5994y76bjr0k51-r-MARMoT-0.0.4
+rewriting symlink /nix/store/q96kc8qhyfyzkm314d5994y76bjr0k51-r-MARMoT-0.0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/q96kc8qhyfyzkm314d5994y76bjr0k51-r-MARMoT-0.0.4

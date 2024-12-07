@@ -1,0 +1,51 @@
+this derivation will be built:
+  /nix/store/ll6sw6g0f3m7sj5yhfzc5zqci97bazv9-r-PUlasso-3.2.5.drv
+this path will be fetched (0.30 MiB download, 0.30 MiB unpacked):
+  /nix/store/shg92pprsnicknzq8bf2qj1vya6nccj8-PUlasso_3.2.5.tar.gz
+copying path '/nix/store/shg92pprsnicknzq8bf2qj1vya6nccj8-PUlasso_3.2.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ll6sw6g0f3m7sj5yhfzc5zqci97bazv9-r-PUlasso-3.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/shg92pprsnicknzq8bf2qj1vya6nccj8-PUlasso_3.2.5.tar.gz
+source root is PUlasso
+setting SOURCE_DATE_EPOCH to timestamp 1702910406 of file PUlasso/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PUlasso’ ...
+** package ‘PUlasso’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c LUfit.cpp -o LUfit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cppWrappers.cpp -o cppWrappers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gd.cpp -o gd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c groupLasso.cpp -o groupLasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pgGroupLasso.cpp -o pgGroupLasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pgLUfit.cpp -o pgLUfit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sag.cpp -o sag.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sgd.cpp -o sgd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c svrg.cpp -o svrg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PUlasso.so LUfit.o RcppExports.o cppWrappers.o gd.o groupLasso.o pgGroupLasso.o pgLUfit.o sag.o sgd.o svrg.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/is3xjsy1y8wjfilrcnm951vgnxcyziqh-r-PUlasso-3.2.5/library/00LOCK-PUlasso/00new/PUlasso/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PUlasso)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PUlasso-3.2.5.drv-0/ in /nix/store/is3xjsy1y8wjfilrcnm951vgnxcyziqh-r-PUlasso-3.2.5...
+patching script interpreter paths in /nix/store/is3xjsy1y8wjfilrcnm951vgnxcyziqh-r-PUlasso-3.2.5
+rewriting symlink /nix/store/is3xjsy1y8wjfilrcnm951vgnxcyziqh-r-PUlasso-3.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/is3xjsy1y8wjfilrcnm951vgnxcyziqh-r-PUlasso-3.2.5

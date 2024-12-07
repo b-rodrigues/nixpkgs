@@ -1,0 +1,67 @@
+these 2 derivations will be built:
+  /nix/store/bmwdx9rrm0jdgqalcl1986z78v7gnddd-r-pals-1.9.drv
+  /nix/store/ibcliicrjyvcarr2jf9mwyp14h19y20q-r-mineSweepR-0.1.1.drv
+these 2 paths will be fetched (2.37 MiB download, 2.37 MiB unpacked):
+  /nix/store/bjs5d5xc9dnd415kia79yxqhiq5zg6dj-mineSweepR_0.1.1.tar.gz
+  /nix/store/lfk8xksv8ri9m3m7ylbp7c42z2ym31fa-pals_1.9.tar.gz
+copying path '/nix/store/bjs5d5xc9dnd415kia79yxqhiq5zg6dj-mineSweepR_0.1.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/lfk8xksv8ri9m3m7ylbp7c42z2ym31fa-pals_1.9.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bmwdx9rrm0jdgqalcl1986z78v7gnddd-r-pals-1.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lfk8xksv8ri9m3m7ylbp7c42z2ym31fa-pals_1.9.tar.gz
+source root is pals
+setting SOURCE_DATE_EPOCH to timestamp 1721167802 of file pals/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pals’ ...
+** package ‘pals’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pals)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pals-1.9.drv-0/ in /nix/store/r5i5jk776pnjdn4babnn5i9wpx9a1syb-r-pals-1.9...
+patching script interpreter paths in /nix/store/r5i5jk776pnjdn4babnn5i9wpx9a1syb-r-pals-1.9
+rewriting symlink /nix/store/r5i5jk776pnjdn4babnn5i9wpx9a1syb-r-pals-1.9/nix-support/propagated-user-env-packages to be relative to /nix/store/r5i5jk776pnjdn4babnn5i9wpx9a1syb-r-pals-1.9
+building '/nix/store/ibcliicrjyvcarr2jf9mwyp14h19y20q-r-mineSweepR-0.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bjs5d5xc9dnd415kia79yxqhiq5zg6dj-mineSweepR_0.1.1.tar.gz
+source root is mineSweepR
+setting SOURCE_DATE_EPOCH to timestamp 1701517810 of file mineSweepR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘InteractiveComplexHeatmap’ is not available for package ‘mineSweepR’
+* removing ‘/nix/store/paai0gfbn4nqlvzdl517b7ij0d5s5j8x-r-mineSweepR-0.1.1/library/mineSweepR’
+error: builder for '/nix/store/ibcliicrjyvcarr2jf9mwyp14h19y20q-r-mineSweepR-0.1.1.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/bjs5d5xc9dnd415kia79yxqhiq5zg6dj-mineSweepR_0.1.1.tar.gz
+       > source root is mineSweepR
+       > setting SOURCE_DATE_EPOCH to timestamp 1701517810 of file mineSweepR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘InteractiveComplexHeatmap’ is not available for package ‘mineSweepR’
+       > * removing ‘/nix/store/paai0gfbn4nqlvzdl517b7ij0d5s5j8x-r-mineSweepR-0.1.1/library/mineSweepR’
+       For full logs, run 'nix log /nix/store/ibcliicrjyvcarr2jf9mwyp14h19y20q-r-mineSweepR-0.1.1.drv'.

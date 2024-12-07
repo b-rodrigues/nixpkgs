@@ -1,0 +1,48 @@
+this derivation will be built:
+  /nix/store/hx20gyym9dqgx11hi1pvc0f713dh4rqs-r-multimark-2.1.6.drv
+this path will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/x4wpib55j05wvgc3id2kjram5vqp5jni-multimark_2.1.6.tar.gz
+copying path '/nix/store/x4wpib55j05wvgc3id2kjram5vqp5jni-multimark_2.1.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hx20gyym9dqgx11hi1pvc0f713dh4rqs-r-multimark-2.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/x4wpib55j05wvgc3id2kjram5vqp5jni-multimark_2.1.6.tar.gz
+source root is multimark
+setting SOURCE_DATE_EPOCH to timestamp 1678447206 of file multimark/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘multimark’ ...
+** package ‘multimark’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Closed.c -o Closed.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ClosedSCR.c -o ClosedSCR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ProbitCJS.c -o ProbitCJS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c func.c -o func.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matrix.c -o matrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c multimark_init.c -o multimark_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ranlib.c -o ranlib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o multimark.so Closed.o ClosedSCR.o ProbitCJS.o func.o matrix.o multimark_init.o ranlib.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/b4pwyhyj4nlddxcizialk67fwr5sw6jb-r-multimark-2.1.6/library/00LOCK-multimark/00new/multimark/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (multimark)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-multimark-2.1.6.drv-0/ in /nix/store/b4pwyhyj4nlddxcizialk67fwr5sw6jb-r-multimark-2.1.6...
+patching script interpreter paths in /nix/store/b4pwyhyj4nlddxcizialk67fwr5sw6jb-r-multimark-2.1.6
+rewriting symlink /nix/store/b4pwyhyj4nlddxcizialk67fwr5sw6jb-r-multimark-2.1.6/nix-support/propagated-user-env-packages to be relative to /nix/store/b4pwyhyj4nlddxcizialk67fwr5sw6jb-r-multimark-2.1.6

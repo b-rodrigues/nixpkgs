@@ -1,0 +1,167 @@
+these 4 derivations will be built:
+  /nix/store/62ll5yndnp6dp5y3b3yjarpim94qqqy9-r-TTR-0.24.4.drv
+  /nix/store/rlg0agj2a8y1lmw3y2sddajrwnwmrfk6-r-quantmod-0.4.26.drv
+  /nix/store/rr1qm47s0npv0h0cpkymqcgc24p2adcl-r-tseries-0.10-58.drv
+  /nix/store/29hgpnydpzrqkpxrqkm01jl35jz89jdk-r-Achilles-1.7.2.drv
+building '/nix/store/62ll5yndnp6dp5y3b3yjarpim94qqqy9-r-TTR-0.24.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d93yy9av1mqwkzivkgmmcmjbqzz2xif3-TTR_0.24.4.tar.gz
+source root is TTR
+setting SOURCE_DATE_EPOCH to timestamp 1701148821 of file TTR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TTR’ ...
+** package ‘TTR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c adjRatios.c -o adjRatios.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c aroon.c -o aroon.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c moving_averages.c -o moving_averages.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c percent_rank.c -o percent_rank.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c runfun.c -o runfun.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sar.c -o sar.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c wilderSum.c -o wilderSum.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/9ikd9cscapjz2111yvm4y7mn5rxz79q8-r-xts-0.14.1/library/xts/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c zigzag.c -o zigzag.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TTR.so adjRatios.o aroon.o init.o moving_averages.o percent_rank.o runfun.o sar.o wilderSum.o zigzag.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pxvp5zl6m3qwnmfqf72773vvikv7afds-r-TTR-0.24.4/library/00LOCK-TTR/00new/TTR/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TTR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TTR-0.24.4.drv-0/ in /nix/store/pxvp5zl6m3qwnmfqf72773vvikv7afds-r-TTR-0.24.4...
+patching script interpreter paths in /nix/store/pxvp5zl6m3qwnmfqf72773vvikv7afds-r-TTR-0.24.4
+rewriting symlink /nix/store/pxvp5zl6m3qwnmfqf72773vvikv7afds-r-TTR-0.24.4/nix-support/propagated-user-env-packages to be relative to /nix/store/pxvp5zl6m3qwnmfqf72773vvikv7afds-r-TTR-0.24.4
+building '/nix/store/rlg0agj2a8y1lmw3y2sddajrwnwmrfk6-r-quantmod-0.4.26.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2n4mchpw4y0wlmmszddb02x9zw8y6k47-quantmod_0.4.26.tar.gz
+source root is quantmod
+setting SOURCE_DATE_EPOCH to timestamp 1707898802 of file quantmod/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘quantmod’ ...
+** package ‘quantmod’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (quantmod)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-quantmod-0.4.26.drv-0/ in /nix/store/yqk5y9cwjza0lri2frw43zf17a48v4m0-r-quantmod-0.4.26...
+patching script interpreter paths in /nix/store/yqk5y9cwjza0lri2frw43zf17a48v4m0-r-quantmod-0.4.26
+rewriting symlink /nix/store/yqk5y9cwjza0lri2frw43zf17a48v4m0-r-quantmod-0.4.26/nix-support/propagated-user-env-packages to be relative to /nix/store/yqk5y9cwjza0lri2frw43zf17a48v4m0-r-quantmod-0.4.26
+building '/nix/store/rr1qm47s0npv0h0cpkymqcgc24p2adcl-r-tseries-0.10-58.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/p1jc65d33901f5rk48xyw3r2qrk3njm7-tseries_0.10-58.tar.gz
+source root is tseries
+setting SOURCE_DATE_EPOCH to timestamp 1727085616 of file tseries/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tseries’ ...
+** package ‘tseries’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c arma.c -o arma.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bdstest.c -o bdstest.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c boot.c -o boot.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  cfuncs.f90 -o cfuncs.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c dsumsl.f -o dsumsl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c formats.c -o formats.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c garch.c -o garch.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ppsum.c -o ppsum.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tsutils.c -o tsutils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tseries.so arma.o bdstest.o boot.o cfuncs.o dsumsl.o formats.o garch.o init.o ppsum.o tsutils.o -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _ditsum_.part.0: does not use standard frame
+ld: warning: could not create compact unwind for _dsgrd2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlivmu_: does not use standard frame
+ld: warning: could not create compact unwind for _dwzbfg_: does not use standard frame
+ld: warning: could not create compact unwind for _dassst_: does not use standard frame
+ld: warning: could not create compact unwind for _ddbdog_: does not use standard frame
+ld: warning: could not create compact unwind for _ddeflt_: does not use standard frame
+ld: warning: could not create compact unwind for _dparck_.part.0: does not use standard frame
+ld: warning: could not create compact unwind for _dsumit_: does not use standard frame
+ld: warning: could not create compact unwind for _dsnoit_: does not use standard frame
+ld: warning: could not create compact unwind for _dsumsl_: does not use standard frame
+ld: warning: could not create compact unwind for _dsmsno_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/0m1cljgaa9sc57az32waz0f1fdipn85r-r-tseries-0.10-58/library/00LOCK-tseries/00new/tseries/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tseries)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tseries-0.10-58.drv-0/ in /nix/store/0m1cljgaa9sc57az32waz0f1fdipn85r-r-tseries-0.10-58...
+patching script interpreter paths in /nix/store/0m1cljgaa9sc57az32waz0f1fdipn85r-r-tseries-0.10-58
+rewriting symlink /nix/store/0m1cljgaa9sc57az32waz0f1fdipn85r-r-tseries-0.10-58/nix-support/propagated-user-env-packages to be relative to /nix/store/0m1cljgaa9sc57az32waz0f1fdipn85r-r-tseries-0.10-58
+building '/nix/store/29hgpnydpzrqkpxrqkm01jl35jz89jdk-r-Achilles-1.7.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/my8w56dvb7i8inkkndwi5pjdpmzkgfl8-Achilles_1.7.2.tar.gz
+source root is Achilles
+setting SOURCE_DATE_EPOCH to timestamp 1683823802 of file Achilles/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Achilles’ ...
+** package ‘Achilles’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Achilles)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Achilles-1.7.2.drv-0/ in /nix/store/pylfykmq9h2i8asv34gr47fr724aaihh-r-Achilles-1.7.2...
+patching script interpreter paths in /nix/store/pylfykmq9h2i8asv34gr47fr724aaihh-r-Achilles-1.7.2
+rewriting symlink /nix/store/pylfykmq9h2i8asv34gr47fr724aaihh-r-Achilles-1.7.2/nix-support/propagated-user-env-packages to be relative to /nix/store/pylfykmq9h2i8asv34gr47fr724aaihh-r-Achilles-1.7.2

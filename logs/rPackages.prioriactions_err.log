@@ -1,0 +1,258 @@
+this derivation will be built:
+  /nix/store/pxmb1f33yckj7inwbl9l9y36fc26ssri-r-prioriactions-0.5.0.drv
+this path will be fetched (4.55 MiB download, 4.58 MiB unpacked):
+  /nix/store/yh7i82y9nyb47vbaw9vbv6avhh9q65a5-prioriactions_0.5.0.tar.gz
+copying path '/nix/store/yh7i82y9nyb47vbaw9vbv6avhh9q65a5-prioriactions_0.5.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pxmb1f33yckj7inwbl9l9y36fc26ssri-r-prioriactions-0.5.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/yh7i82y9nyb47vbaw9vbv6avhh9q65a5-prioriactions_0.5.0.tar.gz
+source root is prioriactions
+setting SOURCE_DATE_EPOCH to timestamp 1691930403 of file prioriactions/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘prioriactions’ ...
+** package ‘prioriactions’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c OptimizationProblem.cpp -o OptimizationProblem.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions.cpp -o functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_constraint_activation.cpp -o rcpp_constraint_activation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_constraint_benefit.cpp -o rcpp_constraint_benefit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_constraint_budget.cpp -o rcpp_constraint_budget.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_constraint_lock.cpp -o rcpp_constraint_lock.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_constraint_target.cpp -o rcpp_constraint_target.o
+In file included from functions.cpp:1:
+In file included from ./functions.h:5:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_constraint_benefit.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_constraint_lock.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_constraint_budget.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from OptimizationProblem.cpp:1:
+In file included from ./OptimizationProblem.h:5:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_constraint_activation.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_constraint_target.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_objective_max_coverage.cpp -o rcpp_objective_max_coverage.o
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_objective_min_set.cpp -o rcpp_objective_min_set.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_stats_benefit.cpp -o rcpp_stats_benefit.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_stats_connectivity_actions.cpp -o rcpp_stats_connectivity_actions.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_stats_connectivity_units.cpp -o rcpp_stats_connectivity_units.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_stats_costs_actions.cpp -o rcpp_stats_costs_actions.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_stats_costs_units.cpp -o rcpp_stats_costs_units.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -DARMA_NO_DEBUG=1 -DBOOST_NO_AUTO_PTR -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_stats_recovery.cpp -o rcpp_stats_recovery.o
+In file included from rcpp_objective_max_coverage.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_objective_min_set.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_stats_benefit.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_stats_connectivity_actions.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_stats_connectivity_units.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_stats_costs_actions.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_stats_costs_units.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from rcpp_stats_recovery.cpp:1:
+In file included from ./Package.h:29:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/functional/hash.hpp:6:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/hash.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/container_hash/is_contiguous_range.hpp:9:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:5:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o prioriactions.so OptimizationProblem.o RcppExports.o functions.o init.o rcpp_constraint_activation.o rcpp_constraint_benefit.o rcpp_constraint_budget.o rcpp_constraint_lock.o rcpp_constraint_target.o rcpp_objective_max_coverage.o rcpp_objective_min_set.o rcpp_stats_benefit.o rcpp_stats_connectivity_actions.o rcpp_stats_connectivity_units.o rcpp_stats_costs_actions.o rcpp_stats_costs_units.o rcpp_stats_recovery.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/lnqmg8jlsz5psc0a7d55z3ya32avkmvf-r-prioriactions-0.5.0/library/00LOCK-prioriactions/00new/prioriactions/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (prioriactions)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-prioriactions-0.5.0.drv-0/ in /nix/store/lnqmg8jlsz5psc0a7d55z3ya32avkmvf-r-prioriactions-0.5.0...
+patching script interpreter paths in /nix/store/lnqmg8jlsz5psc0a7d55z3ya32avkmvf-r-prioriactions-0.5.0
+rewriting symlink /nix/store/lnqmg8jlsz5psc0a7d55z3ya32avkmvf-r-prioriactions-0.5.0/nix-support/propagated-user-env-packages to be relative to /nix/store/lnqmg8jlsz5psc0a7d55z3ya32avkmvf-r-prioriactions-0.5.0

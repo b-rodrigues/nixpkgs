@@ -1,0 +1,70 @@
+these 3 derivations will be built:
+  /nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv
+  /nix/store/qz39n4xyvm27f550mh74gsyh5305wi3z-rDataPipeline_0.60.0.tar.gz.drv
+  /nix/store/spkfpww0p2zrk6nmqkqkyirahln1nf5h-r-rDataPipeline-0.60.0.drv
+building '/nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv'...
+building '/nix/store/qz39n4xyvm27f550mh74gsyh5305wi3z-rDataPipeline_0.60.0.tar.gz.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zhpl373812hlf104rz84nxy6bkvjs7qj-rhdf5_2.14.0.tar.gz
+source root is rhdf5
+setting SOURCE_DATE_EPOCH to timestamp 1444789283 of file rhdf5/src/wrap.c
+Running phase: patchPhase
+applying patch /nix/store/mcjq45n91sgxw8asl2lvdjfmf4lrc5ff-rhdf5.patch
+patching file src/Makevars
+Hunk #1 FAILED at 1.
+1 out of 1 hunk FAILED -- saving rejects to file src/Makevars.rej
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/src/h5testLock.c b/src/h5testLock.c
+|index b326444..5d58b4a 100644
+|--- a/src/h5testLock.c
+|+++ b/src/h5testLock.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 41
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/src/h5testLock.h b/src/h5testLock.h
+|index 2c1c5e4..25914ff 100644
+|--- a/src/h5testLock.h
+|+++ b/src/h5testLock.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+error: builder for '/nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > Perhaps you used the wrong -p or --strip option?
+       > The text leading up to this was:
+       > --------------------------
+       > |diff --git a/src/h5testLock.c b/src/h5testLock.c
+       > |index b326444..5d58b4a 100644
+       > |--- a/src/h5testLock.c
+       > |+++ b/src/h5testLock.c
+       > --------------------------
+       > File to patch:
+       > Skip this patch? [y]
+       > Skipping patch.
+       > 1 out of 1 hunk ignored
+       > can't find file to patch at input line 41
+       > Perhaps you used the wrong -p or --strip option?
+       > The text leading up to this was:
+       > --------------------------
+       > |diff --git a/src/h5testLock.h b/src/h5testLock.h
+       > |index 2c1c5e4..25914ff 100644
+       > |--- a/src/h5testLock.h
+       > |+++ b/src/h5testLock.h
+       > --------------------------
+       > File to patch:
+       > Skip this patch? [y]
+       > Skipping patch.
+       > 1 out of 1 hunk ignored
+       For full logs, run 'nix log /nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv'.
+error: 1 dependencies of derivation '/nix/store/spkfpww0p2zrk6nmqkqkyirahln1nf5h-r-rDataPipeline-0.60.0.drv' failed to build

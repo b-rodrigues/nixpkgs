@@ -1,0 +1,717 @@
+this derivation will be built:
+  /nix/store/a1pdlkrv0zj658x0c1vxw1qq2mdm5680-r-gifski-1.32.0-1.drv
+building '/nix/store/a1pdlkrv0zj658x0c1vxw1qq2mdm5680-r-gifski-1.32.0-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2f4g32b1cm6ywlm3gnzb2z5j31gr3sny-gifski_1.32.0-1.tar.gz
+source root is gifski
+Executing cargoSetupPostUnpackHook
+unpacking source archive /nix/store/436r933a2qj2y3wpalzxfb0rn83axfq8-cargo-deps-vendor.tar.gz
+Finished cargoSetupPostUnpackHook
+setting SOURCE_DATE_EPOCH to timestamp 1728849002 of file gifski/MD5
+Running phase: patchPhase
+Executing cargoSetupPostPatchHook
+Validating consistency between /private/tmp/nix-build-r-gifski-1.32.0-1.drv-0/gifski/src/myrustlib/Cargo.lock and /private/tmp/nix-build-r-gifski-1.32.0-1.drv-0/cargo-deps-vendor.tar.gz/Cargo.lock
+6,7c6,7
+< name = "adler2"
+< version = "2.0.0"
+---
+> name = "adler"
+> version = "1.0.2"
+9c9,20
+< checksum = "512761e0bb2578dd7380c6baaa0f4ce03e84f95e960231d1dec8bf4d7d6e2627"
+---
+> checksum = "f26201604c87b1e01bd3d98f8d5d9a8fcbb815e8cedb41ffccbeb4bf593a35fe"
+> 
+> [[package]]
+> name = "ahash"
+> version = "0.8.3"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "2c99f64d1e06488f620f932677e24bc6e2897582980441ae90a671415bd7ec2f"
+> dependencies = [
+>  "cfg-if",
+>  "once_cell",
+>  "version_check",
+> ]
+13c24
+< version = "0.6.15"
+---
+> version = "0.3.2"
+15c26
+< checksum = "64e15c1ab1f89faffbf04a634d5e1962e9074f2741eef6d97f3c4e322426d526"
+---
+> checksum = "0ca84f3628370c59db74ee214b3263d58f9aadd9b4fe7e711fd87dc452b7f163"
+22c33
+<  "is_terminal_polyfill",
+---
+>  "is-terminal",
+28c39
+< version = "1.0.8"
+---
+> version = "1.0.0"
+30c41
+< checksum = "1bec1de6f59aedf83baf9ff929c98f2ad654b97c9510f4e70cf6f661d49fd5b1"
+---
+> checksum = "41ed9a86bf92ae6580e0a31281f65a1b1d867c0cc68d5346e2ae128dddfa6a7d"
+34c45
+< version = "0.2.5"
+---
+> version = "0.2.0"
+36c47
+< checksum = "eb47de1e80c2b463c735db5b217a0ddc39d612e7ac9e2e96a5aed1f57616c1cb"
+---
+> checksum = "e765fd216e48e067936442276d1d57399e37bce53c264d6fefbe298080cb57ee"
+43c54
+< version = "1.1.1"
+---
+> version = "1.0.0"
+45c56
+< checksum = "6d36fc52c7f6c869915e99412912f22093507da8d9e942ceaf66fe4b7c14422a"
+---
+> checksum = "5ca11d4be1bab0c8bc8734a9aa7bf4ee8316d462a08c6ac5052f888fef5b494b"
+52c63
+< version = "3.0.4"
+---
+> version = "1.0.1"
+54c65
+< checksum = "5bf74e1b6e971609db8ca7a9ce79fd5768ab6ae46441c572e46cf596f59e57f8"
+---
+> checksum = "180abfa45703aebe0093f79badacc01b8fd4ea2e35118747e5811127f926e188"
+62c73
+< version = "0.7.6"
+---
+> version = "0.7.2"
+64c75
+< checksum = "7c02d123df017efcdfbd739ef81735b36c5ba83ec3c59c80a9d7ecc718f92e50"
+---
+> checksum = "8da52d66c7071e2e3fa2a1e5c6d088fec47b593032b254f5e980de8ea54454d6"
+68c79
+< version = "1.4.0"
+---
+> version = "1.1.0"
+70c81,87
+< checksum = "ace50bade8e6234aa140d9a2f552bbee1db4d353f69b8217bc503490fc1a9f26"
+---
+> checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
+> 
+> [[package]]
+> name = "bitflags"
+> version = "1.3.2"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
+74c91,97
+< version = "1.18.0"
+---
+> version = "1.13.1"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "17febce684fd15d89027105661fec94afb475cb995fbc59d2865198446ba2eea"
+> 
+> [[package]]
+> name = "cc"
+> version = "1.0.79"
+76c99
+< checksum = "94bbb0ad554ad961ddc5da507a12a29b14e4ae5bda06b19f575a3e6079d2e2ae"
+---
+> checksum = "50d30906286121d95be3d479533b458f87493b30a4b5f79a607db8f5d11aa91f"
+86c109
+< version = "4.5.19"
+---
+> version = "4.2.7"
+88c111
+< checksum = "7be5744db7978a28d9df86a214130d106a89ce49644cbc4e3f0c22c3fba30615"
+---
+> checksum = "34d21f9bf1b425d2968943631ec91202fe5e837264063503708b83013f8fc938"
+95c118
+< version = "4.5.19"
+---
+> version = "4.2.7"
+97c120
+< checksum = "a5fbc17d3ef8278f55b282b2a2e75ae6f6c7d4bb70ed3d0382375104bfafdb4b"
+---
+> checksum = "914c8c79fb560f238ef6429439a30023c862f7a28e688c58f7203f12b29970bd"
+100a124
+>  "bitflags",
+101a126
+>  "once_cell",
+107c132
+< version = "0.7.2"
+---
+> version = "0.4.1"
+109c134,140
+< checksum = "1462739cb27611015575c0c11df5df7601141071f07518d56fcc1be504cbec97"
+---
+> checksum = "8a2dd5a6fe8c6e3502f568a6353e5273bbb15193ad9a89e457b9970798efbea1"
+> 
+> [[package]]
+> name = "color_quant"
+> version = "1.1.0"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b"
+113c144
+< version = "1.0.2"
+---
+> version = "1.0.0"
+115c146
+< checksum = "d3fd119d74b830634cea2a0f58bbd0d54540518a14397557951e79340abc28c0"
+---
+> checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
+119c150
+< version = "1.4.2"
+---
+> version = "1.3.2"
+121c152
+< checksum = "a97769d94ddab943e4510d138150169a2758b5ef3eb191a9ee688de3e23ef7b3"
+---
+> checksum = "b540bd8bc810d3885c6ea91e2018302f68baba2129ab3e88f32389ee9370880d"
+128c159
+< version = "0.5.13"
+---
+> version = "0.5.8"
+130c161
+< checksum = "33480d6946193aa8033910124896ca395333cae7e2d1113d1fef6c3272217df2"
+---
+> checksum = "a33c2bf77f2df06183c3aa30d1e96c0695a313d4f9c453cc3762a6db39f99200"
+131a163
+>  "cfg-if",
+137c169
+< version = "0.8.5"
+---
+> version = "0.8.3"
+139c171
+< checksum = "613f8cc01fe9cf1a3eb3d7f488fd2fa8388403e97039e2f73692932e291a770d"
+---
+> checksum = "ce6fd6f855243022dcecf8702fef0c297d4338e226845fe067f6341ad9fa0cef"
+140a173
+>  "cfg-if",
+147c180
+< version = "0.9.18"
+---
+> version = "0.9.14"
+149c182
+< checksum = "5b82ac4a3c2ca9c3460964f020e1402edd5753411d7737aa39c3714ad1b5420e"
+---
+> checksum = "46bd5f3f85273295a9d14aedfb86f6aadbff6d8f5295c4a9edb08e819dcf5695"
+150a184,185
+>  "autocfg",
+>  "cfg-if",
+151a187,188
+>  "memoffset",
+>  "scopeguard",
+156c193
+< version = "0.8.20"
+---
+> version = "0.8.15"
+158c195,198
+< checksum = "22ec99545bb0ed0ea7bb9b8e1e9122ea386ff8a48c0922e43f36d45ab09e0e80"
+---
+> checksum = "3c063cd8cc95f5c377ed0d4b49a4b21f632396ff690e8470c29b3359b346984b"
+> dependencies = [
+>  "cfg-if",
+> ]
+162c202
+< version = "1.0.5"
+---
+> version = "1.0.4"
+164c204
+< checksum = "92773504d58c093f6de2459af4af33faa518c13451eb8f2b5698ed3d36e7c813"
+---
+> checksum = "56ce8c6da7551ec6c462cbaf3bfbc75131ebbfa1c944aeaa9dab51ca1c5f0c3b"
+168c208
+< version = "1.13.0"
+---
+> version = "1.8.1"
+170c210,240
+< checksum = "60b1af1c220855b6ceac025d3f6ecdd2b7c4894bfe9cd9bda4fbb4bc7c0d4cf0"
+---
+> checksum = "7fcaabb2fef8c910e7f4c7ce9f67a1283a1715879a7c230ca9d6d1ae31f16d91"
+> 
+> [[package]]
+> name = "errno"
+> version = "0.3.1"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "4bcfec3a70f97c962c307b2d2c56e358cf1d00b558d74262b5f929ee8cc7e73a"
+> dependencies = [
+>  "errno-dragonfly",
+>  "libc",
+>  "windows-sys",
+> ]
+> 
+> [[package]]
+> name = "errno-dragonfly"
+> version = "0.1.2"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "aa68f1b12764fab894d2755d2518754e71b4fd80ecfb822714a1206c2aab39bf"
+> dependencies = [
+>  "cc",
+>  "libc",
+> ]
+> 
+> [[package]]
+> name = "fallible_collections"
+> version = "0.4.7"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "9acf77205554f3cfeca94a4b910e159ad9824e8c2d164de02b3f12495cc1074d"
+> dependencies = [
+>  "hashbrown",
+> ]
+174c244
+< version = "1.0.34"
+---
+> version = "1.0.26"
+176c246
+< checksum = "a1b589b4dc103969ad3cf85c950899926ec64300a1a46d76c03a6072957036f0"
+---
+> checksum = "3b9429470923de8e8cbd4d2dc513535400b4b3fef0319fb5c4e1f520a7bef743"
+184c254
+< version = "0.13.1"
+---
+> version = "0.12.0"
+186c256
+< checksum = "3fb2d69b19215e18bb912fa30f7ce15846e301408695e44e0ef719f1da9e19f2"
+---
+> checksum = "80792593675e051cf94a4b111980da2ba60d4a83e43e0048c5693baab3977045"
+187a258
+>  "color_quant",
+193c264
+< version = "5.0.1"
+---
+> version = "4.0.0"
+195c266
+< checksum = "5e1aa07391f3d9c279f388cea6faf291555dd891df59bed01d4378583df946ac"
+---
+> checksum = "a40dfdf5be59e0cbbf77cb7c6a91a18ee6d398b70fc54ad900e2bcba1860cb50"
+202a274,283
+> name = "gifsicle"
+> version = "1.93.0"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "0d2c35b9670c2a3313343ce54d00669ca18a8236fe727f52e0cf8c5a77acac07"
+> dependencies = [
+>  "cc",
+>  "libc",
+> ]
+> 
+> [[package]]
+204c285
+< version = "1.32.0"
+---
+> version = "1.12.0"
+206c287
+< checksum = "fa3aeeed337aa658d1c2d90cb21b6db6172d1b8a84dfb462ade81f48eb0fd5eb"
+---
+> checksum = "903e8a6a6be72cb61a5ef07015bc5e4048264d22597969bdf883410fce75c427"
+213a295
+>  "gifsicle",
+220d301
+<  "ordered-channel",
+224a306
+>  "scopeguard",
+226,227d307
+<  "y4m",
+<  "yuv",
+236a317,340
+> name = "hashbrown"
+> version = "0.13.2"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "43a3c133739dddd0d2990f9a4bdf8eb4b21ef50e4851ca85ab661199821d510e"
+> dependencies = [
+>  "ahash",
+> ]
+> 
+> [[package]]
+> name = "hermit-abi"
+> version = "0.2.6"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "ee512640fe35acbfb4bb779db6f0d80704c2cacfa2e39b601ef3e3f47d1ae4c7"
+> dependencies = [
+>  "libc",
+> ]
+> 
+> [[package]]
+> name = "hermit-abi"
+> version = "0.3.1"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "fed44880c466736ef9a5c5b5facefb5ed0785676d0c02d612db14e54f0d84286"
+> 
+> [[package]]
+238c342
+< version = "4.3.3"
+---
+> version = "4.2.0"
+240c344
+< checksum = "5fecc99538c9061ee4d88476f6cd704c9f06575a34f0083affdaa1337a331aa7"
+---
+> checksum = "fc3c62f251799ae51bbd7a94fc00a83fcb796d8dd14876280e3063e8341138dc"
+242a347
+>  "num_cpus",
+251c356
+< version = "1.10.1"
+---
+> version = "1.9.4"
+253c358
+< checksum = "44feda355f4159a7c757171a77de25daf6411e217b4cabd03bd6650690468126"
+---
+> checksum = "b2cf49df1085dcfb171460e4592597b84abe50d900fb83efb6e41b20fefd6c2c"
+256,257c361,362
+< name = "is_terminal_polyfill"
+< version = "1.70.1"
+---
+> name = "io-lifetimes"
+> version = "1.0.10"
+259c364,381
+< checksum = "7943c866cc5cd64cbc25b2e01621d07fa8eb2a1a23160ee81ce38704e97b8ecf"
+---
+> checksum = "9c66c74d2ae7e79a5a8f7ac924adbe38ee42a859c6539ad869eb51f0b52dc220"
+> dependencies = [
+>  "hermit-abi 0.3.1",
+>  "libc",
+>  "windows-sys",
+> ]
+> 
+> [[package]]
+> name = "is-terminal"
+> version = "0.4.7"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "adcf93614601c8129ddf72e2d5633df827ba6551541c6d8c59520a371475be1f"
+> dependencies = [
+>  "hermit-abi 0.3.1",
+>  "io-lifetimes",
+>  "rustix",
+>  "windows-sys",
+> ]
+263c385,391
+< version = "0.2.159"
+---
+> version = "0.2.144"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "2b00cc1c228a6782d0f076e7b232802e0c5689d41bb5df366f2a6b6621cfdfe1"
+> 
+> [[package]]
+> name = "linux-raw-sys"
+> version = "0.3.7"
+265c393
+< checksum = "561d97a539a36e26a9a5fad1ea11a3039a67714694aaa379433e580854bc3dc5"
+---
+> checksum = "ece97ea872ece730aed82664c424eb4c8291e1ff2480247ccf7409044bc6479f"
+269c397
+< version = "3.10.7"
+---
+> version = "3.7.2"
+271c399
+< checksum = "7b2dea7cda68e381418c985fd8f32a9c279a21ae8c715f2376adb20c27a0fad3"
+---
+> checksum = "f0ad39f75bbaa4b10bb6f2316543632a8046a5bcf9c785488d79720b21f044f8"
+273a402
+>  "fallible_collections",
+281c410
+< version = "0.1.5"
+---
+> version = "0.1.3"
+283c412
+< checksum = "0fae87c125b03c1d2c0150c90365d7d6bcc53fb73a9acaef207d2d065860f062"
+---
+> checksum = "a703804431e5927454bcaf2b2a162595e95db931130c2728c18d050090f69940"
+289c418
+< name = "miniz_oxide"
+---
+> name = "memoffset"
+292c421
+< checksum = "e2d80299ef12ff69b16a84bb182e3b9df68b5a91574d3d4fa6e41b65deec4df1"
+---
+> checksum = "d61c719bcfbcf5d62b3a09efa6088de8c54bc0bfcd3ea7ae39fcc186108b8de1"
+294c423,432
+<  "adler2",
+---
+>  "autocfg",
+> ]
+> 
+> [[package]]
+> name = "miniz_oxide"
+> version = "0.7.1"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "e7810e0be55b428ada41041c41f32c9f1a42817901b4ccf45fa3d4b6561e74c7"
+> dependencies = [
+>  "adler",
+312c450
+< version = "0.2.19"
+---
+> version = "0.2.15"
+314c452
+< checksum = "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
+---
+> checksum = "578ede34cf02f8924ab9447f50c28075b4d3e5b269972345e7e0372b38c6cdcd"
+320,321c458,459
+< name = "once_cell"
+< version = "1.20.1"
+---
+> name = "num_cpus"
+> version = "1.15.0"
+323c461
+< checksum = "82881c4be219ab5faaf2ad5e5e5ecdff8c66bd7402ca3160975c93b24961afd1"
+---
+> checksum = "0fac9e2da13b5eb447a6ce3d392f23a29d8694bff781bf03a16cd9ac8697593b"
+325c463,464
+<  "portable-atomic",
+---
+>  "hermit-abi 0.2.6",
+>  "libc",
+329,330c468,469
+< name = "ordered-channel"
+< version = "1.1.0"
+---
+> name = "once_cell"
+> version = "1.17.1"
+332,335c471
+< checksum = "4f0bc569ca0974cb90125f52cf76f7b6ad3a072301beba78eb0aa4174c4964ed"
+< dependencies = [
+<  "crossbeam-channel",
+< ]
+---
+> checksum = "b7e5500299e16ebb147ae15a00a942af264cf3688f47923b8fc2cd5858f23ad3"
+349,354d484
+< name = "portable-atomic"
+< version = "1.9.0"
+< source = "registry+https://github.com/rust-lang/crates.io-index"
+< checksum = "cc9c68a3f6da06753e9335d63e27f6b9754dd1920d941135b7ea8224f141adb2"
+< 
+< [[package]]
+362c492
+< version = "1.10.0"
+---
+> version = "1.7.0"
+364c494
+< checksum = "b418a60154510ca1a002a752ca9714984e21e4241e804d32555251faf8b78ffa"
+---
+> checksum = "1d2df5196e37bcc87abebc0053e20787d73847bb33134a69841207dd0a47f03b"
+372c502
+< version = "1.12.1"
+---
+> version = "1.11.0"
+374c504
+< checksum = "1465873a3dfdaa8ae7cb14b4383657caab0b3e8a0aa9ae8e04b044854c8dfce2"
+---
+> checksum = "4b8f95bd6966f5c87776639160a66bd8ab9895d9d4ab01ddba9fc60661aebe8d"
+375a506
+>  "crossbeam-channel",
+377a509
+>  "num_cpus",
+382c514
+< version = "0.8.7"
+---
+> version = "0.7.4"
+384c516
+< checksum = "6eec4ee5277bcbebeac5c955c3b49811f2c033520692359f5438f8bc4113574d"
+---
+> checksum = "87e7bdfff05e26408cf8f82fe896ce3d7624f0c0b06c84b2f1009c50452ead41"
+386c518
+<  "rayon",
+---
+>  "fallible_collections",
+392c524
+< version = "0.8.50"
+---
+> version = "0.8.36"
+394c526
+< checksum = "57397d16646700483b67d2dd6511d79318f9d057fdbd21a4066aeac8b41d310a"
+---
+> checksum = "20ec2d3e3fc7a92ced357df9cebd5a10b6fb2aa1ee797bf7e9ce2f17dffc8f59"
+399a532,551
+> name = "rustix"
+> version = "0.37.19"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "acf8729d8542766f1b2cf77eb034d52f40d375bb8b615d0b147089946e16613d"
+> dependencies = [
+>  "bitflags",
+>  "errno",
+>  "io-lifetimes",
+>  "libc",
+>  "linux-raw-sys",
+>  "windows-sys",
+> ]
+> 
+> [[package]]
+> name = "scopeguard"
+> version = "1.1.0"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd"
+> 
+> [[package]]
+401c553
+< version = "0.11.1"
+---
+> version = "0.10.0"
+403c555
+< checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
+---
+> checksum = "73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623"
+407c559
+< version = "1.1.8"
+---
+> version = "1.1.7"
+409c561
+< checksum = "8b9ef9bad013ada3808854ceac7b46812a6465ba368859a37e2100283d2d719c"
+---
+> checksum = "3fdd6f064ccff2d6567adcb3873ca630700f00b5ad3f060c25b5dcfd9a4ce152"
+417c569
+< version = "0.2.2"
+---
+> version = "0.2.1"
+419c571,577
+< checksum = "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821"
+---
+> checksum = "711b9620af191e0cdc7468a8d14e709c3dcdb115b36f838e601583af800a370a"
+> 
+> [[package]]
+> name = "version_check"
+> version = "0.9.4"
+> source = "registry+https://github.com/rust-lang/crates.io-index"
+> checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
+423c581
+< version = "0.1.8"
+---
+> version = "0.1.7"
+425c583
+< checksum = "53a85b86a771b1c87058196170769dd264f66c0782acf1ae6cc51bfd64b39082"
+---
+> checksum = "9193164d4de03a926d909d3bc7c30543cecb35400c02114792c2cae20d5e2dbb"
+429c587
+< version = "2.2.1"
+---
+> version = "2.1.0"
+431c589
+< checksum = "a3131afc8c575281e1e80f36ed6a092aa502c08b18ed7524e86fbbb12bb410e1"
+---
+> checksum = "05b116685a6be0c52f5a103334cbff26db643826c7b3735fc0a3ba9871310a74"
+460c618
+< version = "0.52.0"
+---
+> version = "0.48.0"
+462c620
+< checksum = "282be5f36a8ce781fad8c8ae18fa3f9beff57ec1b52cb3de0789201425d9a33d"
+---
+> checksum = "677d2418bec65e3338edb076e806bc1ec15693c5d0104683f2efe857f61056a9"
+469c627
+< version = "0.52.6"
+---
+> version = "0.48.0"
+471c629
+< checksum = "9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973"
+---
+> checksum = "7b1eb6f0cd7c80c79759c929114ef071b87354ce476d9d94271031c0497adfd5"
+476d633
+<  "windows_i686_gnullvm",
+485c642
+< version = "0.52.6"
+---
+> version = "0.48.0"
+487c644
+< checksum = "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3"
+---
+> checksum = "91ae572e1b79dba883e0d315474df7305d12f569b400fcf90581b06062f7e1bc"
+491c648
+< version = "0.52.6"
+---
+> version = "0.48.0"
+493c650
+< checksum = "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469"
+---
+> checksum = "b2ef27e0d7bdfcfc7b868b317c1d32c641a6fe4629c171b8928c7b08d98d7cf3"
+497,503c654
+< version = "0.52.6"
+< source = "registry+https://github.com/rust-lang/crates.io-index"
+< checksum = "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b"
+< 
+< [[package]]
+< name = "windows_i686_gnullvm"
+< version = "0.52.6"
+---
+> version = "0.48.0"
+505c656
+< checksum = "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66"
+---
+> checksum = "622a1962a7db830d6fd0a69683c80a18fda201879f0f447f065a3b7467daa241"
+509c660
+< version = "0.52.6"
+---
+> version = "0.48.0"
+511c662
+< checksum = "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66"
+---
+> checksum = "4542c6e364ce21bf45d69fdd2a8e455fa38d316158cfd43b3ac1c5b1b19f8e00"
+515c666
+< version = "0.52.6"
+---
+> version = "0.48.0"
+517c668
+< checksum = "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78"
+---
+> checksum = "ca2b8a661f7628cbd23440e50b05d705db3686f894fc9580820623656af974b1"
+521c672
+< version = "0.52.6"
+---
+> version = "0.48.0"
+523c674
+< checksum = "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d"
+---
+> checksum = "7896dbc1f41e08872e9d5e8f8baa8fdd2677f29468c4e156210174edc7f7b953"
+527,539c678
+< version = "0.52.6"
+< source = "registry+https://github.com/rust-lang/crates.io-index"
+< checksum = "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec"
+< 
+< [[package]]
+< name = "y4m"
+< version = "0.8.0"
+< source = "registry+https://github.com/rust-lang/crates.io-index"
+< checksum = "7a5a4b21e1a62b67a2970e6831bc091d7b87e119e7f9791aef9702e3bef04448"
+< 
+< [[package]]
+< name = "yuv"
+< version = "0.1.8"
+---
+> version = "0.48.0"
+541,545c680
+< checksum = "c028614bf7ce7a9cb9b07ea3b0f4705c303e27afc5b5fd2948766a5bd2cc66b0"
+< dependencies = [
+<  "num-traits",
+<  "rgb",
+< ]
+---
+> checksum = "1a515f5799fe4961cb532f983ce2b23082366b898e52ffbce459c86f67c8378a"
+
+ERROR: cargoHash or cargoSha256 is out of date
+
+Cargo.lock is not the same in /private/tmp/nix-build-r-gifski-1.32.0-1.drv-0/cargo-deps-vendor.tar.gz
+
+To fix the issue:
+1. Set cargoHash/cargoSha256 to an empty string: `cargoHash = "";`
+2. Build the derivation and wait for it to fail with a hash mismatch
+3. Copy the "got: sha256-..." value back into the cargoHash field
+   You should have: cargoHash = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=";
+
+error: builder for '/nix/store/a1pdlkrv0zj658x0c1vxw1qq2mdm5680-r-gifski-1.32.0-1.drv' failed with exit code 1;
+       last 25 log lines:
+       > <
+       > < [[package]]
+       > < name = "yuv"
+       > < version = "0.1.8"
+       > ---
+       > > version = "0.48.0"
+       > 541,545c680
+       > < checksum = "c028614bf7ce7a9cb9b07ea3b0f4705c303e27afc5b5fd2948766a5bd2cc66b0"
+       > < dependencies = [
+       > <  "num-traits",
+       > <  "rgb",
+       > < ]
+       > ---
+       > > checksum = "1a515f5799fe4961cb532f983ce2b23082366b898e52ffbce459c86f67c8378a"
+       >
+       > ERROR: cargoHash or cargoSha256 is out of date
+       >
+       > Cargo.lock is not the same in /private/tmp/nix-build-r-gifski-1.32.0-1.drv-0/cargo-deps-vendor.tar.gz
+       >
+       > To fix the issue:
+       > 1. Set cargoHash/cargoSha256 to an empty string: `cargoHash = "";`
+       > 2. Build the derivation and wait for it to fail with a hash mismatch
+       > 3. Copy the "got: sha256-..." value back into the cargoHash field
+       >    You should have: cargoHash = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=";
+       >
+       For full logs, run 'nix log /nix/store/a1pdlkrv0zj658x0c1vxw1qq2mdm5680-r-gifski-1.32.0-1.drv'.

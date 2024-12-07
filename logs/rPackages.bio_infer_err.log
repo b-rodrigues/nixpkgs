@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/zg9pzy09r50i8wj65jnymsr7qsq81a04-r-bio.infer-1.3-6.drv
+building '/nix/store/zg9pzy09r50i8wj65jnymsr7qsq81a04-r-bio.infer-1.3-6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ni21pi3sagc31arbij5bdy8ygxl2c601-bio.infer_1.3-6.tar.gz
+source root is bio.infer
+setting SOURCE_DATE_EPOCH to timestamp 1599052807 of file bio.infer/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘bio.infer’ ...
+** package ‘bio.infer’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+sh: line 1: 24553 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-bio.infer-1.3-6.drv-0/Rtmpz3Td2z/file5fe475451181'
+ERROR: lazy loading failed for package ‘bio.infer’
+* removing ‘/nix/store/bh7ssg9wgplgrrhmmm1vp7b297fkgn4d-r-bio.infer-1.3-6/library/bio.infer’
+error: builder for '/nix/store/zg9pzy09r50i8wj65jnymsr7qsq81a04-r-bio.infer-1.3-6.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/ni21pi3sagc31arbij5bdy8ygxl2c601-bio.infer_1.3-6.tar.gz
+       > source root is bio.infer
+       > setting SOURCE_DATE_EPOCH to timestamp 1599052807 of file bio.infer/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘bio.infer’ ...
+       > ** package ‘bio.infer’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 24553 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-bio.infer-1.3-6.drv-0/Rtmpz3Td2z/file5fe475451181'
+       > ERROR: lazy loading failed for package ‘bio.infer’
+       > * removing ‘/nix/store/bh7ssg9wgplgrrhmmm1vp7b297fkgn4d-r-bio.infer-1.3-6/library/bio.infer’
+       For full logs, run 'nix log /nix/store/zg9pzy09r50i8wj65jnymsr7qsq81a04-r-bio.infer-1.3-6.drv'.

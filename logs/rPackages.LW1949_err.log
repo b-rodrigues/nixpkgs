@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/abv4nppixkd2zhjpgd0g88mpdmdfbgay-r-LW1949-1.1.0.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/acr5jkq0s56iynp1jpn3yp16z1ar2qfk-LW1949_1.1.0.tar.gz
+copying path '/nix/store/acr5jkq0s56iynp1jpn3yp16z1ar2qfk-LW1949_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/abv4nppixkd2zhjpgd0g88mpdmdfbgay-r-LW1949-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/acr5jkq0s56iynp1jpn3yp16z1ar2qfk-LW1949_1.1.0.tar.gz
+source root is LW1949
+setting SOURCE_DATE_EPOCH to timestamp 1490031256 of file LW1949/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LW1949’ ...
+** package ‘LW1949’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 79297 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-LW1949-1.1.0.drv-0/Rtmp0PhC5o/file135bc49afbb82'
+ERROR: lazy loading failed for package ‘LW1949’
+* removing ‘/nix/store/hmp0wz33sg1hqfhzqi7g98v6ddd257jr-r-LW1949-1.1.0/library/LW1949’
+error: builder for '/nix/store/abv4nppixkd2zhjpgd0g88mpdmdfbgay-r-LW1949-1.1.0.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/acr5jkq0s56iynp1jpn3yp16z1ar2qfk-LW1949_1.1.0.tar.gz
+       > source root is LW1949
+       > setting SOURCE_DATE_EPOCH to timestamp 1490031256 of file LW1949/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘LW1949’ ...
+       > ** package ‘LW1949’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 79297 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-LW1949-1.1.0.drv-0/Rtmp0PhC5o/file135bc49afbb82'
+       > ERROR: lazy loading failed for package ‘LW1949’
+       > * removing ‘/nix/store/hmp0wz33sg1hqfhzqi7g98v6ddd257jr-r-LW1949-1.1.0/library/LW1949’
+       For full logs, run 'nix log /nix/store/abv4nppixkd2zhjpgd0g88mpdmdfbgay-r-LW1949-1.1.0.drv'.

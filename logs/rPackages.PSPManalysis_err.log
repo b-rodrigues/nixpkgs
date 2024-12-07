@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/cmasigw1pn8slv5x6hgsmj5qr9wbdzyb-r-PSPManalysis-0.3.9.drv
+this path will be fetched (3.17 MiB download, 3.23 MiB unpacked):
+  /nix/store/mismgbz318xsqqibfv7wlx2rafbh4axj-PSPManalysis_0.3.9.tar.gz
+copying path '/nix/store/mismgbz318xsqqibfv7wlx2rafbh4axj-PSPManalysis_0.3.9.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cmasigw1pn8slv5x6hgsmj5qr9wbdzyb-r-PSPManalysis-0.3.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mismgbz318xsqqibfv7wlx2rafbh4axj-PSPManalysis_0.3.9.tar.gz
+source root is PSPManalysis
+setting SOURCE_DATE_EPOCH to timestamp 1674143406 of file PSPManalysis/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PSPManalysis’ ...
+** package ‘PSPManalysis’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PSPManalysis_init.c -o PSPManalysis_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c csb2rlist.c -o csb2rlist.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PSPManalysis.so PSPManalysis_init.o csb2rlist.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/id0q3hahfy8jcb7zxlmq66pacx4xk7dc-r-PSPManalysis-0.3.9/library/00LOCK-PSPManalysis/00new/PSPManalysis/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PSPManalysis)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PSPManalysis-0.3.9.drv-0/ in /nix/store/id0q3hahfy8jcb7zxlmq66pacx4xk7dc-r-PSPManalysis-0.3.9...
+patching script interpreter paths in /nix/store/id0q3hahfy8jcb7zxlmq66pacx4xk7dc-r-PSPManalysis-0.3.9
+rewriting symlink /nix/store/id0q3hahfy8jcb7zxlmq66pacx4xk7dc-r-PSPManalysis-0.3.9/nix-support/propagated-user-env-packages to be relative to /nix/store/id0q3hahfy8jcb7zxlmq66pacx4xk7dc-r-PSPManalysis-0.3.9

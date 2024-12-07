@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/br5nfr3asb7n1mh0fqgd94s044rnyf9x-r-Canek-0.2.5.drv
+building '/nix/store/br5nfr3asb7n1mh0fqgd94s044rnyf9x-r-Canek-0.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z4r9rhk3fbiqckwnannp6wnb2188hgi1-Canek_0.2.5.tar.gz
+source root is Canek
+setting SOURCE_DATE_EPOCH to timestamp 1702013402 of file Canek/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘bluster’ is not available for package ‘Canek’
+* removing ‘/nix/store/03qnwafz2lc6rgmkvbd6axfwsw7fqhdn-r-Canek-0.2.5/library/Canek’
+error: builder for '/nix/store/br5nfr3asb7n1mh0fqgd94s044rnyf9x-r-Canek-0.2.5.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/z4r9rhk3fbiqckwnannp6wnb2188hgi1-Canek_0.2.5.tar.gz
+       > source root is Canek
+       > setting SOURCE_DATE_EPOCH to timestamp 1702013402 of file Canek/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘bluster’ is not available for package ‘Canek’
+       > * removing ‘/nix/store/03qnwafz2lc6rgmkvbd6axfwsw7fqhdn-r-Canek-0.2.5/library/Canek’
+       For full logs, run 'nix log /nix/store/br5nfr3asb7n1mh0fqgd94s044rnyf9x-r-Canek-0.2.5.drv'.

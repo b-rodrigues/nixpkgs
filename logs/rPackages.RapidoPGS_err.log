@@ -1,0 +1,57 @@
+this derivation will be built:
+  /nix/store/f49ahvclslq7ksi0smvcx3kkc2l0sdbl-r-RapidoPGS-2.3.0.drv
+this path will be fetched (3.58 MiB download, 3.58 MiB unpacked):
+  /nix/store/4sgn2g3l03cjr4palj4xdk38c73r9cy1-RapidoPGS_2.3.0.tar.gz
+copying path '/nix/store/4sgn2g3l03cjr4palj4xdk38c73r9cy1-RapidoPGS_2.3.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f49ahvclslq7ksi0smvcx3kkc2l0sdbl-r-RapidoPGS-2.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4sgn2g3l03cjr4palj4xdk38c73r9cy1-RapidoPGS_2.3.0.tar.gz
+source root is RapidoPGS
+setting SOURCE_DATE_EPOCH to timestamp 1697200202 of file RapidoPGS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RapidoPGS’ ...
+** package ‘RapidoPGS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur dans loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  l'espace de noms ‘GenomicRanges’ 1.22.4 est en train de charger, mais >= 1.52.0 est requis
+Appels : <Anonymous> ... namespaceImportFrom -> asNamespace -> loadNamespace
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘RapidoPGS’
+* removing ‘/nix/store/kwmaycdh71wfy3hb2w7sn4gwax7jzg02-r-RapidoPGS-2.3.0/library/RapidoPGS’
+error: builder for '/nix/store/f49ahvclslq7ksi0smvcx3kkc2l0sdbl-r-RapidoPGS-2.3.0.drv' failed with exit code 1;
+       last 24 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/4sgn2g3l03cjr4palj4xdk38c73r9cy1-RapidoPGS_2.3.0.tar.gz
+       > source root is RapidoPGS
+       > setting SOURCE_DATE_EPOCH to timestamp 1697200202 of file RapidoPGS/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘RapidoPGS’ ...
+       > ** package ‘RapidoPGS’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur dans loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) :
+       >   l'espace de noms ‘GenomicRanges’ 1.22.4 est en train de charger, mais >= 1.52.0 est requis
+       > Appels : <Anonymous> ... namespaceImportFrom -> asNamespace -> loadNamespace
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘RapidoPGS’
+       > * removing ‘/nix/store/kwmaycdh71wfy3hb2w7sn4gwax7jzg02-r-RapidoPGS-2.3.0/library/RapidoPGS’
+       For full logs, run 'nix log /nix/store/f49ahvclslq7ksi0smvcx3kkc2l0sdbl-r-RapidoPGS-2.3.0.drv'.

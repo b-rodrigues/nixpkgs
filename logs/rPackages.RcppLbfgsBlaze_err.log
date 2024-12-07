@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/6wzrhkh3gyls7ks67mklilgv1rlzg09i-r-RcppLbfgsBlaze-0.1.0.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/1rsn58b9hgwvxaaf15hiwlrr0v3y2hqw-RcppLbfgsBlaze_0.1.0.tar.gz
+copying path '/nix/store/1rsn58b9hgwvxaaf15hiwlrr0v3y2hqw-RcppLbfgsBlaze_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6wzrhkh3gyls7ks67mklilgv1rlzg09i-r-RcppLbfgsBlaze-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1rsn58b9hgwvxaaf15hiwlrr0v3y2hqw-RcppLbfgsBlaze_0.1.0.tar.gz
+source root is RcppLbfgsBlaze
+setting SOURCE_DATE_EPOCH to timestamp 1715672600 of file RcppLbfgsBlaze/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RcppLbfgsBlaze’ ...
+** package ‘RcppLbfgsBlaze’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/n0nm6v99gzjawg305y8wsciql0wrryfd-r-RcppBlaze-1.0.1/library/RcppBlaze/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include  -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/n0nm6v99gzjawg305y8wsciql0wrryfd-r-RcppBlaze-1.0.1/library/RcppBlaze/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include  -fPIC  -g -O2   -c fastLogisticModel.cpp -o fastLogisticModel.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/n0nm6v99gzjawg305y8wsciql0wrryfd-r-RcppBlaze-1.0.1/library/RcppBlaze/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbols.c -o registerDynamicSymbols.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppLbfgsBlaze.so RcppExports.o fastLogisticModel.o registerDynamicSymbols.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/0wpcm5mmpkdjjyzzpwidcbk6nigxc95h-r-RcppLbfgsBlaze-0.1.0/library/00LOCK-RcppLbfgsBlaze/00new/RcppLbfgsBlaze/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppLbfgsBlaze)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppLbfgsBlaze-0.1.0.drv-0/ in /nix/store/0wpcm5mmpkdjjyzzpwidcbk6nigxc95h-r-RcppLbfgsBlaze-0.1.0...
+patching script interpreter paths in /nix/store/0wpcm5mmpkdjjyzzpwidcbk6nigxc95h-r-RcppLbfgsBlaze-0.1.0
+rewriting symlink /nix/store/0wpcm5mmpkdjjyzzpwidcbk6nigxc95h-r-RcppLbfgsBlaze-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/0wpcm5mmpkdjjyzzpwidcbk6nigxc95h-r-RcppLbfgsBlaze-0.1.0

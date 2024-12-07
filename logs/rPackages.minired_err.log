@@ -1,0 +1,114 @@
+these 2 derivations will be built:
+  /nix/store/kvqmd12ch0a990rsnkhwrzx19lw52ig5-minired_1.0.1.tar.gz.drv
+  /nix/store/xfh4pas25z7a19ly6nidfjhxr62y04wv-r-minired-1.0.1.drv
+building '/nix/store/kvqmd12ch0a990rsnkhwrzx19lw52ig5-minired_1.0.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/minired_1.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 17416  100 17416    0     0   157k      0 --:--:-- --:--:-- --:--:--  157k
+building '/nix/store/xfh4pas25z7a19ly6nidfjhxr62y04wv-r-minired-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6gpdysjm2g6bdg1gxxbq150zzi9rfdsz-minired_1.0.1.tar.gz
+source root is minired
+setting SOURCE_DATE_EPOCH to timestamp 1730883002 of file minired/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘minired’ ...
+** package ‘minired’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+  checking runtime
+  found: 'darwin24.1.0'
+   arch: 'aarch64'
+  using download from 'https://redatam-core.s3.us-west-2.amazonaws.com/core-dev/macos-arm64/redatamx-core-macos-arm64-20241010.zip'
+  checking REDATAM libraries
+  cannot find current redatam runtime files
+  attempting to download them
+essai de l'URL 'https://redatam-core.s3.us-west-2.amazonaws.com/core-dev/macos-arm64/redatamx-core-macos-arm64-20241010.zip'
+Erreur dans download.file("https://redatam-core.s3.us-west-2.amazonaws.com/core-dev/macos-arm64/redatamx-core-macos-arm64-20241010.zip",  : 
+  impossible d'ouvrir l'URL 'https://redatam-core.s3.us-west-2.amazonaws.com/core-dev/macos-arm64/redatamx-core-macos-arm64-20241010.zip'
+De plus : Message d'avis :
+Dans download.file("https://redatam-core.s3.us-west-2.amazonaws.com/core-dev/macos-arm64/redatamx-core-macos-arm64-20241010.zip",  :
+  URL 'https://redatam-core.s3.us-west-2.amazonaws.com/core-dev/macos-arm64/redatamx-core-macos-arm64-20241010.zip': statut 'SSL connect error'
+Exécution arrêtée
+  unpacking current redatam runtime
+./configure: line 44: unzip: command not found
+cp: cannot stat 'tmpredatam/lib/libredengine-1.0.0-rc2.*': No such file or directory
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpp11.cpp -o cpp11.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c red_dictionary.cpp -o red_dictionary.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c red_execute.cpp -o red_execute.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c red_initialize.cpp -o red_initialize.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o minired.so cpp11.o red_dictionary.o red_execute.o red_initialize.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/w6yxm6cwp2ijkxqavrfllqy1c6v8nvnm-r-minired-1.0.1/library/00LOCK-minired/00new/minired/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+sh: line 1: 85700 Segmentation fault: 11  R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-minired-1.0.1.drv-0/RtmpkCTATv/file14d713feefbea'
+
+ *** caught segfault ***
+address 0x0, cause 'invalid permissions'
+
+Traceback:
+ 1: fun(libname, pkgname)
+ 2: doTryCatch(return(expr), name, parentenv, handler)
+ 3: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 4: tryCatchList(expr, classes, parentenv, handlers)
+ 5: tryCatch(fun(libname, pkgname), error = identity)
+ 6: runHook(".onLoad", env, package.lib, package)
+ 7: loadNamespace(package, lib.loc)
+ 8: doTryCatch(return(expr), name, parentenv, handler)
+ 9: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+10: tryCatchList(expr, classes, parentenv, handlers)
+11: tryCatch({    attr(package, "LibPath") <- which.lib.loc    ns <- loadNamespace(package, lib.loc)    env <- attachNamespace(ns, pos = pos, deps, exclude, include.only)}, error = function(e) {    P <- if (!is.null(cc <- conditionCall(e)))         paste(" in", deparse(cc)[1L])    else ""    msg <- gettextf("package or namespace load failed for %s%s:\n %s",         sQuote(package), P, conditionMessage(e))    if (logical.return && !quietly)         message(paste("Error:", msg), domain = NA)    else stop(msg, call. = FALSE, domain = NA)})
+12: library(pkg_name, lib.loc = lib, character.only = TRUE, logical.return = TRUE)
+13: withCallingHandlers(expr, packageStartupMessage = function(c) tryInvokeRestart("muffleMessage"))
+14: suppressPackageStartupMessages(library(pkg_name, lib.loc = lib,     character.only = TRUE, logical.return = TRUE))
+15: doTryCatch(return(expr), name, parentenv, handler)
+16: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+17: tryCatchList(expr, classes, parentenv, handlers)
+18: tryCatch(expr, error = function(e) {    call <- conditionCall(e)    if (!is.null(call)) {        if (identical(call[[1L]], quote(doTryCatch)))             call <- sys.call(-4L)        dcall <- deparse(call, nlines = 1L)        prefix <- paste("Error in", dcall, ": ")        LONG <- 75L        sm <- strsplit(conditionMessage(e), "\n")[[1L]]        w <- 14L + nchar(dcall, type = "w") + nchar(sm[1L], type = "w")        if (is.na(w))             w <- 14L + nchar(dcall, type = "b") + nchar(sm[1L],                 type = "b")        if (w > LONG)             prefix <- paste0(prefix, "\n  ")    }    else prefix <- "Error : "    msg <- paste0(prefix, conditionMessage(e), "\n")    .Internal(seterrmessage(msg[1L]))    if (!silent && isTRUE(getOption("show.error.messages"))) {        cat(msg, file = outFile)        .Internal(printDeferredWarnings())    }    invisible(structure(msg, class = "try-error", condition = e))})
+19: try(suppressPackageStartupMessages(library(pkg_name, lib.loc = lib,     character.only = TRUE, logical.return = TRUE)))
+20: tools:::.test_load_package("minired", "/nix/store/w6yxm6cwp2ijkxqavrfllqy1c6v8nvnm-r-minired-1.0.1/library/00LOCK-minired/00new")
+An irrecoverable exception occurred. R is aborting now ...
+ERROR: loading failed
+* removing ‘/nix/store/w6yxm6cwp2ijkxqavrfllqy1c6v8nvnm-r-minired-1.0.1/library/minired’
+error: builder for '/nix/store/xfh4pas25z7a19ly6nidfjhxr62y04wv-r-minired-1.0.1.drv' failed with exit code 1;
+       last 25 log lines:
+       >
+       > Traceback:
+       >  1: fun(libname, pkgname)
+       >  2: doTryCatch(return(expr), name, parentenv, handler)
+       >  3: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+       >  4: tryCatchList(expr, classes, parentenv, handlers)
+       >  5: tryCatch(fun(libname, pkgname), error = identity)
+       >  6: runHook(".onLoad", env, package.lib, package)
+       >  7: loadNamespace(package, lib.loc)
+       >  8: doTryCatch(return(expr), name, parentenv, handler)
+       >  9: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+       > 10: tryCatchList(expr, classes, parentenv, handlers)
+       > 11: tryCatch({    attr(package, "LibPath") <- which.lib.loc    ns <- loadNamespace(package, lib.loc)    env <- attachNamespace(ns, pos = pos, deps, exclude, include.only)}, error = function(e) {    P <- if (!is.null(cc <- conditionCall(e)))         paste(" in", deparse(cc)[1L])    else ""    msg <- gettextf("package or namespace load failed for %s%s:\n %s",         sQuote(package), P, conditionMessage(e))    if (logical.return && !quietly)         message(paste("Error:", msg), domain = NA)    else stop(msg, call. = FALSE, domain = NA)})
+       > 12: library(pkg_name, lib.loc = lib, character.only = TRUE, logical.return = TRUE)
+       > 13: withCallingHandlers(expr, packageStartupMessage = function(c) tryInvokeRestart("muffleMessage"))
+       > 14: suppressPackageStartupMessages(library(pkg_name, lib.loc = lib,     character.only = TRUE, logical.return = TRUE))
+       > 15: doTryCatch(return(expr), name, parentenv, handler)
+       > 16: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+       > 17: tryCatchList(expr, classes, parentenv, handlers)
+       > 18: tryCatch(expr, error = function(e) {    call <- conditionCall(e)    if (!is.null(call)) {        if (identical(call[[1L]], quote(doTryCatch)))             call <- sys.call(-4L)        dcall <- deparse(call, nlines = 1L)        prefix <- paste("Error in", dcall, ": ")        LONG <- 75L        sm <- strsplit(conditionMessage(e), "\n")[[1L]]        w <- 14L + nchar(dcall, type = "w") + nchar(sm[1L], type = "w")        if (is.na(w))             w <- 14L + nchar(dcall, type = "b") + nchar(sm[1L],                 type = "b")        if (w > LONG)             prefix <- paste0(prefix, "\n  ")    }    else prefix <- "Error : "    msg <- paste0(prefix, conditionMessage(e), "\n")    .Internal(seterrmessage(msg[1L]))    if (!silent && isTRUE(getOption("show.error.messages"))) {        cat(msg, file = outFile)        .Internal(printDeferredWarnings())    }    invisible(structure(msg, class = "try-error", condition = e))})
+       > 19: try(suppressPackageStartupMessages(library(pkg_name, lib.loc = lib,     character.only = TRUE, logical.return = TRUE)))
+       > 20: tools:::.test_load_package("minired", "/nix/store/w6yxm6cwp2ijkxqavrfllqy1c6v8nvnm-r-minired-1.0.1/library/00LOCK-minired/00new")
+       > An irrecoverable exception occurred. R is aborting now ...
+       > ERROR: loading failed
+       > * removing ‘/nix/store/w6yxm6cwp2ijkxqavrfllqy1c6v8nvnm-r-minired-1.0.1/library/minired’
+       For full logs, run 'nix log /nix/store/xfh4pas25z7a19ly6nidfjhxr62y04wv-r-minired-1.0.1.drv'.

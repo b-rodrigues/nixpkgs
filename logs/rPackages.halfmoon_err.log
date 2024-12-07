@@ -1,0 +1,101 @@
+these 3 derivations will be built:
+  /nix/store/sjlbl4iy348sv7zf95vmb3ivz92hp93x-r-smd-0.7.0.drv
+  /nix/store/5gish8amb68385xpvwwldsr9m872kpy0-r-tidysmd-0.2.0.drv
+  /nix/store/gf0f721mkm64idwhs8hh3hxqvlr8b65x-r-halfmoon-0.1.0.drv
+these 3 paths will be fetched (1.25 MiB download, 1.25 MiB unpacked):
+  /nix/store/kqf1kvz30iv8p5qj6h96vzdnw7k7s5yd-halfmoon_0.1.0.tar.gz
+  /nix/store/mcaa1bwlqzc9zz5yva35l8bs0jrmv6pk-smd_0.7.0.tar.gz
+  /nix/store/bggfi2nays0y5v5yfg6082jqzxzly4g3-tidysmd_0.2.0.tar.gz
+copying path '/nix/store/kqf1kvz30iv8p5qj6h96vzdnw7k7s5yd-halfmoon_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/bggfi2nays0y5v5yfg6082jqzxzly4g3-tidysmd_0.2.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/mcaa1bwlqzc9zz5yva35l8bs0jrmv6pk-smd_0.7.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sjlbl4iy348sv7zf95vmb3ivz92hp93x-r-smd-0.7.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mcaa1bwlqzc9zz5yva35l8bs0jrmv6pk-smd_0.7.0.tar.gz
+source root is smd
+setting SOURCE_DATE_EPOCH to timestamp 1715023802 of file smd/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘smd’ ...
+** package ‘smd’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (smd)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-smd-0.7.0.drv-0/ in /nix/store/7j05fcw85agrpn92yrcvcg362i7l2daj-r-smd-0.7.0...
+patching script interpreter paths in /nix/store/7j05fcw85agrpn92yrcvcg362i7l2daj-r-smd-0.7.0
+rewriting symlink /nix/store/7j05fcw85agrpn92yrcvcg362i7l2daj-r-smd-0.7.0/nix-support/propagated-user-env-packages to be relative to /nix/store/7j05fcw85agrpn92yrcvcg362i7l2daj-r-smd-0.7.0
+building '/nix/store/5gish8amb68385xpvwwldsr9m872kpy0-r-tidysmd-0.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bggfi2nays0y5v5yfg6082jqzxzly4g3-tidysmd_0.2.0.tar.gz
+source root is tidysmd
+setting SOURCE_DATE_EPOCH to timestamp 1685122202 of file tidysmd/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tidysmd’ ...
+** package ‘tidysmd’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tidysmd)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tidysmd-0.2.0.drv-0/ in /nix/store/xf79nb5drcrg292i07027mm7lg33fg0j-r-tidysmd-0.2.0...
+patching script interpreter paths in /nix/store/xf79nb5drcrg292i07027mm7lg33fg0j-r-tidysmd-0.2.0
+rewriting symlink /nix/store/xf79nb5drcrg292i07027mm7lg33fg0j-r-tidysmd-0.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/xf79nb5drcrg292i07027mm7lg33fg0j-r-tidysmd-0.2.0
+building '/nix/store/gf0f721mkm64idwhs8hh3hxqvlr8b65x-r-halfmoon-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kqf1kvz30iv8p5qj6h96vzdnw7k7s5yd-halfmoon_0.1.0.tar.gz
+source root is halfmoon
+setting SOURCE_DATE_EPOCH to timestamp 1685470802 of file halfmoon/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘halfmoon’ ...
+** package ‘halfmoon’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (halfmoon)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-halfmoon-0.1.0.drv-0/ in /nix/store/cl059wbz58ch9jx0pi4bgwq68m1j8lx6-r-halfmoon-0.1.0...
+patching script interpreter paths in /nix/store/cl059wbz58ch9jx0pi4bgwq68m1j8lx6-r-halfmoon-0.1.0
+rewriting symlink /nix/store/cl059wbz58ch9jx0pi4bgwq68m1j8lx6-r-halfmoon-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/cl059wbz58ch9jx0pi4bgwq68m1j8lx6-r-halfmoon-0.1.0

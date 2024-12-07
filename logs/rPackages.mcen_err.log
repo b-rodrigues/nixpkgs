@@ -1,0 +1,41 @@
+this derivation will be built:
+  /nix/store/dcdki8k2cgsd9pp87swlccbxibh2ddl2-r-mcen-1.2.1.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/s7j25azzgr2g5sjbf7ip3pf7r0nk874k-mcen_1.2.1.tar.gz
+copying path '/nix/store/s7j25azzgr2g5sjbf7ip3pf7r0nk874k-mcen_1.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dcdki8k2cgsd9pp87swlccbxibh2ddl2-r-mcen-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/s7j25azzgr2g5sjbf7ip3pf7r0nk874k-mcen_1.2.1.tar.gz
+source root is mcen
+setting SOURCE_DATE_EPOCH to timestamp 1679523008 of file mcen/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mcen’ ...
+** package ‘mcen’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BinUpdate.c -o BinUpdate.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c CDU.c -o CDU.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mcen_init.c -o mcen_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mcen.so BinUpdate.o CDU.o mcen_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/6nvpanj6lnpmmzpvk1nw2rxcdla45v2b-r-mcen-1.2.1/library/00LOCK-mcen/00new/mcen/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mcen)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mcen-1.2.1.drv-0/ in /nix/store/6nvpanj6lnpmmzpvk1nw2rxcdla45v2b-r-mcen-1.2.1...
+patching script interpreter paths in /nix/store/6nvpanj6lnpmmzpvk1nw2rxcdla45v2b-r-mcen-1.2.1
+rewriting symlink /nix/store/6nvpanj6lnpmmzpvk1nw2rxcdla45v2b-r-mcen-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/6nvpanj6lnpmmzpvk1nw2rxcdla45v2b-r-mcen-1.2.1

@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/srcxn657a1y0h7iy1hldl4fa50nw3i3k-r-ggaligner-0.1.drv
+building '/nix/store/srcxn657a1y0h7iy1hldl4fa50nw3i3k-r-ggaligner-0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g1paz6vzfld5gr6dnr4zci914b7nd2sd-ggaligner_0.1.tar.gz
+source root is ggaligner
+setting SOURCE_DATE_EPOCH to timestamp 1686759725 of file ggaligner/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘ggmsa’ is not available for package ‘ggaligner’
+* removing ‘/nix/store/8wdpjhcb6rl04aa8sy7jz1s008s9msd9-r-ggaligner-0.1/library/ggaligner’
+error: builder for '/nix/store/srcxn657a1y0h7iy1hldl4fa50nw3i3k-r-ggaligner-0.1.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/g1paz6vzfld5gr6dnr4zci914b7nd2sd-ggaligner_0.1.tar.gz
+       > source root is ggaligner
+       > setting SOURCE_DATE_EPOCH to timestamp 1686759725 of file ggaligner/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘ggmsa’ is not available for package ‘ggaligner’
+       > * removing ‘/nix/store/8wdpjhcb6rl04aa8sy7jz1s008s9msd9-r-ggaligner-0.1/library/ggaligner’
+       For full logs, run 'nix log /nix/store/srcxn657a1y0h7iy1hldl4fa50nw3i3k-r-ggaligner-0.1.drv'.

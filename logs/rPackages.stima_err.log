@@ -1,0 +1,66 @@
+this derivation will be built:
+  /nix/store/0j0kl9333ilxmhvq898q29glmzndf4zj-r-stima-1.2.4.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/vk2nyflnv2npkw91irxil0baijpzkbji-stima_1.2.4.tar.gz
+copying path '/nix/store/vk2nyflnv2npkw91irxil0baijpzkbji-stima_1.2.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0j0kl9333ilxmhvq898q29glmzndf4zj-r-stima-1.2.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vk2nyflnv2npkw91irxil0baijpzkbji-stima_1.2.4.tar.gz
+source root is stima
+setting SOURCE_DATE_EPOCH to timestamp 1702633802 of file stima/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘stima’ ...
+** package ‘stima’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_bos.f90 -o rs_bos.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_boscat.f90 -o rs_boscat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_boscats.f90 -o rs_boscats.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_cor.f90 -o rs_cor.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_cov.f90 -o rs_cov.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c rs_invers.f -o rs_invers.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_mean.f90 -o rs_mean.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c rs_mtxmul.f -o rs_mtxmul.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c rs_mtxmult.f -o rs_mtxmult.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_resid.f90 -o rs_resid.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_rsq.f90 -o rs_rsq.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_sort.f90 -o rs_sort.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_splitc.f90 -o rs_splitc.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rs_stdev.f90 -o rs_stdev.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o stima.so init.o rs_bos.o rs_boscat.o rs_boscats.o rs_cor.o rs_cov.o rs_invers.o rs_mean.o rs_mtxmul.o rs_mtxmult.o rs_resid.o rs_rsq.o rs_sort.o rs_splitc.o rs_stdev.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _rs_boscats_: does not use standard frame
+ld: warning: could not create compact unwind for _rs_bos_: does not use standard frame
+ld: warning: could not create compact unwind for _rs_resid_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _rs_rsq_: does not use standard frame
+could not create compact unwind for _rs_invers_: does not use standard frameld: warning: could not create compact unwind for _rs_cor_: does not use standard frame
+
+ld: warning: could not create compact unwind for _rs_splitc_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/pk2sq1ppxhjlzqslp9zycy6pvfx3k882-r-stima-1.2.4/library/00LOCK-stima/00new/stima/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (stima)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-stima-1.2.4.drv-0/ in /nix/store/pk2sq1ppxhjlzqslp9zycy6pvfx3k882-r-stima-1.2.4...
+patching script interpreter paths in /nix/store/pk2sq1ppxhjlzqslp9zycy6pvfx3k882-r-stima-1.2.4
+rewriting symlink /nix/store/pk2sq1ppxhjlzqslp9zycy6pvfx3k882-r-stima-1.2.4/nix-support/propagated-user-env-packages to be relative to /nix/store/pk2sq1ppxhjlzqslp9zycy6pvfx3k882-r-stima-1.2.4

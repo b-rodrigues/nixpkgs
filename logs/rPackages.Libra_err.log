@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/0bdcj90y5x1z3hc2jmdpy14iww85bnlm-r-Libra-1.7.drv
+this path will be fetched (0.29 MiB download, 0.29 MiB unpacked):
+  /nix/store/lb9v31c5rg9a0qf8md1gb7i777x2fsqk-Libra_1.7.tar.gz
+copying path '/nix/store/lb9v31c5rg9a0qf8md1gb7i777x2fsqk-Libra_1.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0bdcj90y5x1z3hc2jmdpy14iww85bnlm-r-Libra-1.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lb9v31c5rg9a0qf8md1gb7i777x2fsqk-Libra_1.7.tar.gz
+source root is Libra
+setting SOURCE_DATE_EPOCH to timestamp 1649668950 of file Libra/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Libra’ ...
+** package ‘Libra’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c LBLasso.c -o LBLasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c LBheader.c -o LBheader.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c LBlogistic.c -o LBlogistic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c LBmultilogistic.c -o LBmultilogistic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Libra_init.c -o Libra_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ggm_C.c -o ggm_C.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ising_C.c -o ising_C.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c potts_C.c -o potts_C.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Libra.so LBLasso.o LBheader.o LBlogistic.o LBmultilogistic.o Libra_init.o ggm_C.o ising_C.o potts_C.o -L/usr/local/lib -lgsl -lgslcblas -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/mm9421krp92ja3v0wpdgb56l08r3a3m1-r-Libra-1.7/library/00LOCK-Libra/00new/Libra/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Libra)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Libra-1.7.drv-0/ in /nix/store/mm9421krp92ja3v0wpdgb56l08r3a3m1-r-Libra-1.7...
+patching script interpreter paths in /nix/store/mm9421krp92ja3v0wpdgb56l08r3a3m1-r-Libra-1.7
+rewriting symlink /nix/store/mm9421krp92ja3v0wpdgb56l08r3a3m1-r-Libra-1.7/nix-support/propagated-user-env-packages to be relative to /nix/store/mm9421krp92ja3v0wpdgb56l08r3a3m1-r-Libra-1.7

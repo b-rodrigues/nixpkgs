@@ -1,0 +1,170 @@
+these 4 derivations will be built:
+  /nix/store/3p6rx31z9jkm3c69jd50lszl36c3rjg8-idiolect_1.0.1.tar.gz.drv
+  /nix/store/dn3r6r9i0xa022hqfrgm2h65r5crpa3a-kgrams_0.2.1.tar.gz.drv
+  /nix/store/f2fgp08nwav9h0adbbqq1jpf0h5w6w2d-r-kgrams-0.2.1.drv
+  /nix/store/g3npp3kfb4kzv11vpry5p4mbm40l80rs-r-idiolect-1.0.1.drv
+building '/nix/store/3p6rx31z9jkm3c69jd50lszl36c3rjg8-idiolect_1.0.1.tar.gz.drv'...
+building '/nix/store/dn3r6r9i0xa022hqfrgm2h65r5crpa3a-kgrams_0.2.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/idiolect_1.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/kgrams_0.2.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  873k  100  873k    0     0  3024k      0 --:--:-- --:--:-- --:--:-- 3022k
+100  176k  100  176k    0     0   774k      0 --:--:-- --:--:-- --:--:--  776k
+building '/nix/store/f2fgp08nwav9h0adbbqq1jpf0h5w6w2d-r-kgrams-0.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/v2c1y0nyv86j3iiz1h736ihblzfd7b7r-kgrams_0.2.1.tar.gz
+source root is kgrams
+setting SOURCE_DATE_EPOCH to timestamp 1731489002 of file kgrams/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘kgrams’ ...
+** package ‘kgrams’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c DictionaryR.cpp -o DictionaryR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Smoothing.cpp -o Smoothing.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c SmoothingR.cpp -o SmoothingR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c UtilitiesR.cpp -o UtilitiesR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c kgramFreqs.cpp -o kgramFreqs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c kgramFreqsR.cpp -o kgramFreqsR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c special_tokensR.cpp -o special_tokensR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o kgrams.so DictionaryR.o RcppExports.o Smoothing.o SmoothingR.o UtilitiesR.o kgramFreqs.o kgramFreqsR.o special_tokensR.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/2hvl8xk018r7lxfzl3ljggplhr9rgcck-r-kgrams-0.2.1/library/00LOCK-kgrams/00new/kgrams/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp____kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Smoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Smoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp____kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_kgramFreqs” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Dictionary” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AbsSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____AddkSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____KNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____MLSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____SBOSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Smoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____Smoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____WBSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp____mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mKNSmoother” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (kgrams)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-kgrams-0.2.1.drv-0/ in /nix/store/2hvl8xk018r7lxfzl3ljggplhr9rgcck-r-kgrams-0.2.1...
+patching script interpreter paths in /nix/store/2hvl8xk018r7lxfzl3ljggplhr9rgcck-r-kgrams-0.2.1
+rewriting symlink /nix/store/2hvl8xk018r7lxfzl3ljggplhr9rgcck-r-kgrams-0.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/2hvl8xk018r7lxfzl3ljggplhr9rgcck-r-kgrams-0.2.1
+building '/nix/store/g3npp3kfb4kzv11vpry5p4mbm40l80rs-r-idiolect-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/iyxws24l8d35ykzfh2ffriczzskd562a-idiolect_1.0.1.tar.gz
+source root is idiolect
+setting SOURCE_DATE_EPOCH to timestamp 1724835602 of file idiolect/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘idiolect’ ...
+** package ‘idiolect’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (idiolect)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-idiolect-1.0.1.drv-0/ in /nix/store/fbw7g8mq3pm8qp0qrj6jfqr8jpqxcdrm-r-idiolect-1.0.1...
+patching script interpreter paths in /nix/store/fbw7g8mq3pm8qp0qrj6jfqr8jpqxcdrm-r-idiolect-1.0.1
+rewriting symlink /nix/store/fbw7g8mq3pm8qp0qrj6jfqr8jpqxcdrm-r-idiolect-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/fbw7g8mq3pm8qp0qrj6jfqr8jpqxcdrm-r-idiolect-1.0.1

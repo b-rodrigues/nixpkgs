@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/ks15x91pl5ry4rp31yldj2nikdjmx6jg-r-PAsso-0.1.10.drv
+this path will be fetched (1.16 MiB download, 1.16 MiB unpacked):
+  /nix/store/qrzbcc9y6i480ws5x1d4d18d454agjc4-PAsso_0.1.10.tar.gz
+copying path '/nix/store/qrzbcc9y6i480ws5x1d4d18d454agjc4-PAsso_0.1.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ks15x91pl5ry4rp31yldj2nikdjmx6jg-r-PAsso-0.1.10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qrzbcc9y6i480ws5x1d4d18d454agjc4-PAsso_0.1.10.tar.gz
+source root is PAsso
+setting SOURCE_DATE_EPOCH to timestamp 1624008008 of file PAsso/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PAsso’ ...
+** package ‘PAsso’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_hello_world.cpp -o rcpp_hello_world.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PAsso.so RcppExports.o rcpp_hello_world.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ajf4pzf3snc4l39iymv5b6aq7axfdwc9-r-PAsso-0.1.10/library/00LOCK-PAsso/00new/PAsso/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PAsso)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PAsso-0.1.10.drv-0/ in /nix/store/ajf4pzf3snc4l39iymv5b6aq7axfdwc9-r-PAsso-0.1.10...
+patching script interpreter paths in /nix/store/ajf4pzf3snc4l39iymv5b6aq7axfdwc9-r-PAsso-0.1.10
+rewriting symlink /nix/store/ajf4pzf3snc4l39iymv5b6aq7axfdwc9-r-PAsso-0.1.10/nix-support/propagated-user-env-packages to be relative to /nix/store/ajf4pzf3snc4l39iymv5b6aq7axfdwc9-r-PAsso-0.1.10

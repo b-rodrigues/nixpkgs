@@ -1,0 +1,102 @@
+these 3 derivations will be built:
+  /nix/store/sm0s25v47g32y2p5nmvbglqd1si8qsg3-treestats_1.70.5.tar.gz.drv
+  /nix/store/haqdsahyxanmqvbrrgdxzny3867jk1hf-r-treestats-1.70.5.drv
+  /nix/store/m0304z6py1aw2j9hv5fsy5h1qzwvqbsj-r-secsse-3.1.0.drv
+this path will be fetched (0.22 MiB download, 0.23 MiB unpacked):
+  /nix/store/s1pky125dd48c74jf3w8lwzh7f7pn8g1-secsse_3.1.0.tar.gz
+copying path '/nix/store/s1pky125dd48c74jf3w8lwzh7f7pn8g1-secsse_3.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sm0s25v47g32y2p5nmvbglqd1si8qsg3-treestats_1.70.5.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/treestats_1.70.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2325k  100 2325k    0     0  5755k      0 --:--:-- --:--:-- --:--:-- 5769k
+building '/nix/store/haqdsahyxanmqvbrrgdxzny3867jk1hf-r-treestats-1.70.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bxjqglk3ahb9fgp74g291j1jm814jxcx-treestats_1.70.5.tar.gz
+source root is treestats
+setting SOURCE_DATE_EPOCH to timestamp 1724653802 of file treestats/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘treestats’ ...
+** package ‘treestats’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c beta.cpp -o beta.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c brts.cpp -o brts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c centralities.cpp -o centralities.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c colless.cpp -o colless.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c depth.cpp -o depth.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c ladder.cpp -o ladder.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c laplacian.cpp -o laplacian.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c mpd.cpp -o mpd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c phylo.cpp -o phylo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/85w9c9vsarjaagrarqm8k31xcrgi8989-r-nloptr-2.1.1/library/nloptr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -I. -fPIC  -g -O2   -c sackin.cpp -o sackin.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o treestats.so RcppExports.o beta.o brts.o centralities.o colless.o depth.o ladder.o laplacian.o mpd.o phylo.o sackin.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/mg0xfy3xs5cln5d0na20ip7adv1wmxsd-r-treestats-1.70.5/library/00LOCK-treestats/00new/treestats/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (treestats)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-treestats-1.70.5.drv-0/ in /nix/store/mg0xfy3xs5cln5d0na20ip7adv1wmxsd-r-treestats-1.70.5...
+patching script interpreter paths in /nix/store/mg0xfy3xs5cln5d0na20ip7adv1wmxsd-r-treestats-1.70.5
+rewriting symlink /nix/store/mg0xfy3xs5cln5d0na20ip7adv1wmxsd-r-treestats-1.70.5/nix-support/propagated-user-env-packages to be relative to /nix/store/mg0xfy3xs5cln5d0na20ip7adv1wmxsd-r-treestats-1.70.5
+building '/nix/store/m0304z6py1aw2j9hv5fsy5h1qzwvqbsj-r-secsse-3.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/s1pky125dd48c74jf3w8lwzh7f7pn8g1-secsse_3.1.0.tar.gz
+source root is secsse
+setting SOURCE_DATE_EPOCH to timestamp 1714509002 of file secsse/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘secsse’ ...
+** package ‘secsse’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c secsse_eval.cpp -o secsse_eval.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c secsse_loglik.cpp -o secsse_loglik.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c secsse_sim.cpp -o secsse_sim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o secsse.so RcppExports.o secsse_eval.o secsse_loglik.o secsse_sim.o -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib -ltbb -ltbbmalloc -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yfc54w54dbdy10l45ls15g8q0wm1y47c-r-secsse-3.1.0/library/00LOCK-secsse/00new/secsse/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (secsse)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-secsse-3.1.0.drv-0/ in /nix/store/yfc54w54dbdy10l45ls15g8q0wm1y47c-r-secsse-3.1.0...
+patching script interpreter paths in /nix/store/yfc54w54dbdy10l45ls15g8q0wm1y47c-r-secsse-3.1.0
+rewriting symlink /nix/store/yfc54w54dbdy10l45ls15g8q0wm1y47c-r-secsse-3.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/yfc54w54dbdy10l45ls15g8q0wm1y47c-r-secsse-3.1.0

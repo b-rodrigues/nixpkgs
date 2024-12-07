@@ -1,0 +1,58 @@
+this derivation will be built:
+  /nix/store/cs6af040ckh0aas2qwz23x746vwch9zc-r-Nmix-2.0.5.drv
+this path will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/zzylzinx880za248ifcgh1ph3177iy4y-Nmix_2.0.5.tar.gz
+copying path '/nix/store/zzylzinx880za248ifcgh1ph3177iy4y-Nmix_2.0.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cs6af040ckh0aas2qwz23x746vwch9zc-r-Nmix-2.0.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zzylzinx880za248ifcgh1ph3177iy4y-Nmix_2.0.5.tar.gz
+source root is Nmix
+setting SOURCE_DATE_EPOCH to timestamp 1695157203 of file Nmix/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Nmix’ ...
+** package ‘Nmix’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Nmix-aux.f -o Nmix-aux.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -fpic -g -O2  -c f2cios.f90 -o f2cios.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Nmix_init.c -o Nmix_init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c RNGfns.f -o RNGfns.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c pnorm.f -o pnorm.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c rgamma2.f -o rgamma2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c wrapper.c -o wrapper.o
+Makevars:6: warning: pattern recipe did not update peer target 'f2cios.mod'.
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Nmix-sub3z.f -o Nmix-sub3z.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Nmix.so Nmix-aux.o Nmix-sub3z.o Nmix_init.o RNGfns.o f2cios.o pnorm.o rgamma2.o wrapper.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _stdalloc_: does not use standard frame
+ld: warning: could not create compact unwind for _rmu_: does not use standard frame
+ld: warning: could not create compact unwind for _rbeta2_: does not use standard frame
+ld: warning: could not create compact unwind for _rgamma2_: does not use standard frame
+ld: warning: could not create compact unwind for ___fef2cio_MOD_openabf2cio: does not use standard frame
+ld: warning: could not create compact unwind for _nmixsub_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/i4ka1pd2y2pj23fw17zhs1rnni3rcs9q-r-Nmix-2.0.5/library/00LOCK-Nmix/00new/Nmix/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Nmix)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Nmix-2.0.5.drv-0/ in /nix/store/i4ka1pd2y2pj23fw17zhs1rnni3rcs9q-r-Nmix-2.0.5...
+patching script interpreter paths in /nix/store/i4ka1pd2y2pj23fw17zhs1rnni3rcs9q-r-Nmix-2.0.5

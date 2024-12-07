@@ -1,0 +1,166 @@
+these 3 derivations will be built:
+  /nix/store/7zzj5srhi1m5b8a44iyajgwkz7wzxa6v-r-globaltest-5.24.0.drv
+  /nix/store/bxv9ic16dl6bzvl96q9d643lc3kqp72i-r-GlobalAncova-3.38.0.drv
+  /nix/store/9gx5ylp48r113nr33rymk8igcnp27k4w-r-miRtest-2.1.drv
+these 3 paths will be fetched (1.93 MiB download, 1.93 MiB unpacked):
+  /nix/store/x175yx5qa0nn9i5k3krmvahj60rj7k8k-GlobalAncova_3.38.0.tar.gz
+  /nix/store/gkcdn9fpxvx5lnyj8vfsn465yshjfqrj-globaltest_5.24.0.tar.gz
+  /nix/store/md3ahnx5j4axbw8ihfphc6nlvhf0bc1b-miRtest_2.1.tar.gz
+copying path '/nix/store/md3ahnx5j4axbw8ihfphc6nlvhf0bc1b-miRtest_2.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/x175yx5qa0nn9i5k3krmvahj60rj7k8k-GlobalAncova_3.38.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/gkcdn9fpxvx5lnyj8vfsn465yshjfqrj-globaltest_5.24.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7zzj5srhi1m5b8a44iyajgwkz7wzxa6v-r-globaltest-5.24.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gkcdn9fpxvx5lnyj8vfsn465yshjfqrj-globaltest_5.24.0.tar.gz
+source root is globaltest
+setting SOURCE_DATE_EPOCH to timestamp 1444783186 of file globaltest/inst/doc/GlobalTest.pdf
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘globaltest’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package can be loaded from final location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package keeps a record of temporary installation path
+* DONE (globaltest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-globaltest-5.24.0.drv-0/ in /nix/store/ph9d4pisxgqz0h9limydkljrmr96jvyi-r-globaltest-5.24.0...
+patching script interpreter paths in /nix/store/ph9d4pisxgqz0h9limydkljrmr96jvyi-r-globaltest-5.24.0
+rewriting symlink /nix/store/ph9d4pisxgqz0h9limydkljrmr96jvyi-r-globaltest-5.24.0/nix-support/propagated-user-env-packages to be relative to /nix/store/ph9d4pisxgqz0h9limydkljrmr96jvyi-r-globaltest-5.24.0
+building '/nix/store/bxv9ic16dl6bzvl96q9d643lc3kqp72i-r-GlobalAncova-3.38.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/x175yx5qa0nn9i5k3krmvahj60rj7k8k-GlobalAncova_3.38.0.tar.gz
+source root is GlobalAncova
+setting SOURCE_DATE_EPOCH to timestamp 1444783921 of file GlobalAncova/src/matrix.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘GlobalAncova’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c GlobalAncova.c -o GlobalAncova.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ludcmp.c -o ludcmp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c matrix.c -o matrix.o
+GlobalAncova.c:34:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+      (*sD)*(*sD)*sizeof(double));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:39:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+      (*sD)*(*sD)*sizeof(double) );
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:44:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+      (*zD)*(*sD)*sizeof(double)  );
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:49:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+      (*zD)*(*zD)*sizeof(double) );
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:89:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+      (*zxx)*(*zD_full) * sizeof(double) );
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:101:9: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+        (*zxx)*(*zD_red) * sizeof(double) );
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:149:6: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+     (*zrr) * sizeof(double) );
+     ^~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:154:5: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    (*zrr) * sizeof(double));
+    ^~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:159:5: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    (*n_test_genes) * sizeof(double));
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:164:5: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    (*sD_full)*(*sD_full) * sizeof(double));
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:171:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+      (*N_Subjects) * sizeof(int));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:251:6: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+     (*zrr) * sizeof(double) );
+     ^~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:256:5: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    (*zrr) * sizeof(double));
+    ^~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:261:5: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    (*n_test_genes) * sizeof(double));
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:266:5: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+    (*sD_full)*(*sD_full) * sizeof(double));
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GlobalAncova.c:273:7: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+      (*N_Subjects) * sizeof(int));
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+16 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o GlobalAncova.so GlobalAncova.o ludcmp.o matrix.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/775k31r5ad74v0v9q7192i00na49h6hk-r-GlobalAncova-3.38.0/library/00LOCK-GlobalAncova/00new/GlobalAncova/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Message d'avis :
+remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’ 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package keeps a record of temporary installation path
+* DONE (GlobalAncova)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-GlobalAncova-3.38.0.drv-0/ in /nix/store/775k31r5ad74v0v9q7192i00na49h6hk-r-GlobalAncova-3.38.0...
+patching script interpreter paths in /nix/store/775k31r5ad74v0v9q7192i00na49h6hk-r-GlobalAncova-3.38.0
+rewriting symlink /nix/store/775k31r5ad74v0v9q7192i00na49h6hk-r-GlobalAncova-3.38.0/nix-support/propagated-user-env-packages to be relative to /nix/store/775k31r5ad74v0v9q7192i00na49h6hk-r-GlobalAncova-3.38.0
+building '/nix/store/9gx5ylp48r113nr33rymk8igcnp27k4w-r-miRtest-2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/md3ahnx5j4axbw8ihfphc6nlvhf0bc1b-miRtest_2.1.tar.gz
+source root is miRtest
+setting SOURCE_DATE_EPOCH to timestamp 1707135003 of file miRtest/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘miRtest’ ...
+** package ‘miRtest’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package can be loaded from final location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package keeps a record of temporary installation path
+* DONE (miRtest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-miRtest-2.1.drv-0/ in /nix/store/15pj9nlyp8zni9082d9161wkld1lnsyw-r-miRtest-2.1...
+patching script interpreter paths in /nix/store/15pj9nlyp8zni9082d9161wkld1lnsyw-r-miRtest-2.1
+rewriting symlink /nix/store/15pj9nlyp8zni9082d9161wkld1lnsyw-r-miRtest-2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/15pj9nlyp8zni9082d9161wkld1lnsyw-r-miRtest-2.1

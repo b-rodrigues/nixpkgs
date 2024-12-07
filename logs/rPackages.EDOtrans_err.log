@@ -1,0 +1,108 @@
+these 3 derivations will be built:
+  /nix/store/95n70ajasbkin4vjz7nd1hmda613r0p0-r-multimode-1.5.drv
+  /nix/store/pcchxylrgawr65nfbgib8z3kyklxng6s-r-opGMMassessment-0.4.drv
+  /nix/store/8wsgd8d19qx7k38dspfnjxlam99hw2cp-r-EDOtrans-0.2.5.drv
+building '/nix/store/95n70ajasbkin4vjz7nd1hmda613r0p0-r-multimode-1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dhzgrdawj13w9kaayv4j77dxgv2fi6pa-multimode_1.5.tar.gz
+source root is multimode
+setting SOURCE_DATE_EPOCH to timestamp 1616282409 of file multimode/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘multimode’ ...
+** package ‘multimode’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BinDist2.c -o BinDist2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  excmasapp.f90 -o excmasapp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c multimode_init.c -o multimode_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o multimode.so BinDist2.o excmasapp.o multimode_init.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _calcdist_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/xm2nl16zhgnzh55m7mcbybpxcararb97-r-multimode-1.5/library/00LOCK-multimode/00new/multimode/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (multimode)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-multimode-1.5.drv-0/ in /nix/store/xm2nl16zhgnzh55m7mcbybpxcararb97-r-multimode-1.5...
+patching script interpreter paths in /nix/store/xm2nl16zhgnzh55m7mcbybpxcararb97-r-multimode-1.5
+rewriting symlink /nix/store/xm2nl16zhgnzh55m7mcbybpxcararb97-r-multimode-1.5/nix-support/propagated-user-env-packages to be relative to /nix/store/xm2nl16zhgnzh55m7mcbybpxcararb97-r-multimode-1.5
+building '/nix/store/pcchxylrgawr65nfbgib8z3kyklxng6s-r-opGMMassessment-0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/60fh6xgncncfwv53a1y5gy5w78mkvyyr-opGMMassessment_0.4.tar.gz
+source root is opGMMassessment
+setting SOURCE_DATE_EPOCH to timestamp 1713114602 of file opGMMassessment/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘opGMMassessment’ ...
+** package ‘opGMMassessment’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (opGMMassessment)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-opGMMassessment-0.4.drv-0/ in /nix/store/2cn3y6rsa1fvyarlvrzw91k8wx5r6vkg-r-opGMMassessment-0.4...
+patching script interpreter paths in /nix/store/2cn3y6rsa1fvyarlvrzw91k8wx5r6vkg-r-opGMMassessment-0.4
+rewriting symlink /nix/store/2cn3y6rsa1fvyarlvrzw91k8wx5r6vkg-r-opGMMassessment-0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/2cn3y6rsa1fvyarlvrzw91k8wx5r6vkg-r-opGMMassessment-0.4
+building '/nix/store/8wsgd8d19qx7k38dspfnjxlam99hw2cp-r-EDOtrans-0.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/chcrncbqrlw8dw1kwa7mq31hpra5aq45-EDOtrans_0.2.5.tar.gz
+source root is EDOtrans
+setting SOURCE_DATE_EPOCH to timestamp 1713116402 of file EDOtrans/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘EDOtrans’ ...
+** package ‘EDOtrans’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (EDOtrans)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-EDOtrans-0.2.5.drv-0/ in /nix/store/70mjzd7bxk9zh0bs4cawh23aazihagsa-r-EDOtrans-0.2.5...
+patching script interpreter paths in /nix/store/70mjzd7bxk9zh0bs4cawh23aazihagsa-r-EDOtrans-0.2.5
+rewriting symlink /nix/store/70mjzd7bxk9zh0bs4cawh23aazihagsa-r-EDOtrans-0.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/70mjzd7bxk9zh0bs4cawh23aazihagsa-r-EDOtrans-0.2.5

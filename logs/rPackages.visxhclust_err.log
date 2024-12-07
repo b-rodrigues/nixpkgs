@@ -1,0 +1,53 @@
+this derivation will be built:
+  /nix/store/6wmycg0p9c5mgzmz663daymx9bbv08r2-r-visxhclust-1.1.0.drv
+this path will be fetched (3.50 MiB download, 3.50 MiB unpacked):
+  /nix/store/3l5pa0mpm57dqsh7p3i1xv6aw9ylfsqb-visxhclust_1.1.0.tar.gz
+copying path '/nix/store/3l5pa0mpm57dqsh7p3i1xv6aw9ylfsqb-visxhclust_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6wmycg0p9c5mgzmz663daymx9bbv08r2-r-visxhclust-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3l5pa0mpm57dqsh7p3i1xv6aw9ylfsqb-visxhclust_1.1.0.tar.gz
+source root is visxhclust
+setting SOURCE_DATE_EPOCH to timestamp 1679055002 of file visxhclust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘visxhclust’ ...
+** package ‘visxhclust’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur : l'objet ‘%v%’ n'est pas exporté par 'namespace:ComplexHeatmap'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘visxhclust’
+* removing ‘/nix/store/b69h1zba1b2bczp97vi62mfqd6zs0nl0-r-visxhclust-1.1.0/library/visxhclust’
+error: builder for '/nix/store/6wmycg0p9c5mgzmz663daymx9bbv08r2-r-visxhclust-1.1.0.drv' failed with exit code 1;
+       last 22 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/3l5pa0mpm57dqsh7p3i1xv6aw9ylfsqb-visxhclust_1.1.0.tar.gz
+       > source root is visxhclust
+       > setting SOURCE_DATE_EPOCH to timestamp 1679055002 of file visxhclust/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘visxhclust’ ...
+       > ** package ‘visxhclust’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur : l'objet ‘%v%’ n'est pas exporté par 'namespace:ComplexHeatmap'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘visxhclust’
+       > * removing ‘/nix/store/b69h1zba1b2bczp97vi62mfqd6zs0nl0-r-visxhclust-1.1.0/library/visxhclust’
+       For full logs, run 'nix log /nix/store/6wmycg0p9c5mgzmz663daymx9bbv08r2-r-visxhclust-1.1.0.drv'.

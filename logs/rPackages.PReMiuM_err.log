@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/2q4f9ygksmkw6i26w48ghczif821fhh6-r-PReMiuM-3.2.13.drv
+this path will be fetched (0.15 MiB download, 0.15 MiB unpacked):
+  /nix/store/g8jic91ql82rzxddxq5x05iw4015hg7b-PReMiuM_3.2.13.tar.gz
+copying path '/nix/store/g8jic91ql82rzxddxq5x05iw4015hg7b-PReMiuM_3.2.13.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2q4f9ygksmkw6i26w48ghczif821fhh6-r-PReMiuM-3.2.13.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g8jic91ql82rzxddxq5x05iw4015hg7b-PReMiuM_3.2.13.tar.gz
+source root is PReMiuM
+setting SOURCE_DATE_EPOCH to timestamp 1704807009 of file PReMiuM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PReMiuM’ ...
+** package ‘PReMiuM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./include -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=false  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PReMiuM.cpp -o PReMiuM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./include -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=false  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c init.cpp -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./include -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=false  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c postProcess.cpp -o postProcess.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PReMiuM.so PReMiuM.o init.o postProcess.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/3pb0kazdrj484fslxri9pqwcwcf3ndy1-r-PReMiuM-3.2.13/library/00LOCK-PReMiuM/00new/PReMiuM/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PReMiuM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PReMiuM-3.2.13.drv-0/ in /nix/store/3pb0kazdrj484fslxri9pqwcwcf3ndy1-r-PReMiuM-3.2.13...
+patching script interpreter paths in /nix/store/3pb0kazdrj484fslxri9pqwcwcf3ndy1-r-PReMiuM-3.2.13
+rewriting symlink /nix/store/3pb0kazdrj484fslxri9pqwcwcf3ndy1-r-PReMiuM-3.2.13/nix-support/propagated-user-env-packages to be relative to /nix/store/3pb0kazdrj484fslxri9pqwcwcf3ndy1-r-PReMiuM-3.2.13

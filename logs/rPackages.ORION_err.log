@@ -1,0 +1,81 @@
+these 2 derivations will be built:
+  /nix/store/q7zrwzavacyk48sxficckzvk1a4f0asr-r-TunePareto-2.5.3.drv
+  /nix/store/1dri629v6021ln2x72p62147ivsbr623-r-ORION-1.0.3.drv
+these 2 paths will be fetched (0.34 MiB download, 0.34 MiB unpacked):
+  /nix/store/sk5qscbh0qqc3x8j88bkv7svwlz3hk4r-ORION_1.0.3.tar.gz
+  /nix/store/4v9fadmc4ywms7w85071yis3iwrzvxj9-TunePareto_2.5.3.tar.gz
+copying path '/nix/store/sk5qscbh0qqc3x8j88bkv7svwlz3hk4r-ORION_1.0.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/4v9fadmc4ywms7w85071yis3iwrzvxj9-TunePareto_2.5.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q7zrwzavacyk48sxficckzvk1a4f0asr-r-TunePareto-2.5.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4v9fadmc4ywms7w85071yis3iwrzvxj9-TunePareto_2.5.3.tar.gz
+source root is TunePareto
+setting SOURCE_DATE_EPOCH to timestamp 1696257605 of file TunePareto/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TunePareto’ ...
+** package ‘TunePareto’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c TunePareto.c -o TunePareto.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c TunePareto_init.c -o TunePareto_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TunePareto.so TunePareto.o TunePareto_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8dzb4yrv0q583yszhbn9rjh70m2xv9j4-r-TunePareto-2.5.3/library/00LOCK-TunePareto/00new/TunePareto/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TunePareto)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TunePareto-2.5.3.drv-0/ in /nix/store/8dzb4yrv0q583yszhbn9rjh70m2xv9j4-r-TunePareto-2.5.3...
+patching script interpreter paths in /nix/store/8dzb4yrv0q583yszhbn9rjh70m2xv9j4-r-TunePareto-2.5.3
+building '/nix/store/1dri629v6021ln2x72p62147ivsbr623-r-ORION-1.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sk5qscbh0qqc3x8j88bkv7svwlz3hk4r-ORION_1.0.3.tar.gz
+source root is ORION
+setting SOURCE_DATE_EPOCH to timestamp 1644229802 of file ORION/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ORION’ ...
+** package ‘ORION’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cascade.c -o cascade.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ORION.so cascade.o registerDynamicSymbol.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/vp5qb00vascgzhh8w842w0pf2qyqfsgv-r-ORION-1.0.3/library/00LOCK-ORION/00new/ORION/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ORION)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ORION-1.0.3.drv-0/ in /nix/store/vp5qb00vascgzhh8w842w0pf2qyqfsgv-r-ORION-1.0.3...
+patching script interpreter paths in /nix/store/vp5qb00vascgzhh8w842w0pf2qyqfsgv-r-ORION-1.0.3
+rewriting symlink /nix/store/vp5qb00vascgzhh8w842w0pf2qyqfsgv-r-ORION-1.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/vp5qb00vascgzhh8w842w0pf2qyqfsgv-r-ORION-1.0.3

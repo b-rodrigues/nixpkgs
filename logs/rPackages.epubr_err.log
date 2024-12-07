@@ -1,0 +1,62 @@
+these 2 derivations will be built:
+  /nix/store/256wvfs597nnhzzs6dhlmp05xa0mqaaz-r-xslt-1.4.6.drv
+  /nix/store/zpmrdahck1qkqbq1dpf7dywfrxzc3ra0-r-epubr-0.6.5.drv
+building '/nix/store/256wvfs597nnhzzs6dhlmp05xa0mqaaz-r-xslt-1.4.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ama2p6k5z244bzm2zxrj19rqrwsaymh6-xslt_1.4.6.tar.gz
+source root is xslt
+setting SOURCE_DATE_EPOCH to timestamp 1728047402 of file xslt/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘xslt’ ...
+** package ‘xslt’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2
+Using PKG_LIBS=-L/nix/store/aap91xmk2bbh0mq2yjgk8a5rjdzjjy6g-libxslt-1.1.42/lib -L/nix/store/ix6qxrr8ka5r8d42kp36rb55y2y6yjmy-libxml2-2.13.4/lib -lexslt -lxslt -lxml2 -llzma
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+rm -f RcppExports.o xslt.o xslt_init.o xslt.so
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -DSTRICT_R_HEADERS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/3483f722kw87v36kg59010cydaklisvb-r-xml2-1.3.6/library/xml2/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -DSTRICT_R_HEADERS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/3483f722kw87v36kg59010cydaklisvb-r-xml2-1.3.6/library/xml2/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xslt.cpp -o xslt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -DSTRICT_R_HEADERS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/3483f722kw87v36kg59010cydaklisvb-r-xml2-1.3.6/library/xml2/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xslt_init.cpp -o xslt_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o xslt.so RcppExports.o xslt.o xslt_init.o -L/nix/store/aap91xmk2bbh0mq2yjgk8a5rjdzjjy6g-libxslt-1.1.42/lib -L/nix/store/ix6qxrr8ka5r8d42kp36rb55y2y6yjmy-libxml2-2.13.4/lib -lexslt -lxslt -lxml2 -llzma -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: library not found for -llzma
+clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/share/make/shlib.mk:10: xslt.so] Error 1
+ERROR: compilation failed for package ‘xslt’
+* removing ‘/nix/store/xlsd4iazx42qfj0fafgwz7is433r8xdj-r-xslt-1.4.6/library/xslt’
+error: builder for '/nix/store/256wvfs597nnhzzs6dhlmp05xa0mqaaz-r-xslt-1.4.6.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘xslt’ ...
+       > ** package ‘xslt’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > Found pkg-config cflags and libs!
+       > Using PKG_CFLAGS=-I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2
+       > Using PKG_LIBS=-L/nix/store/aap91xmk2bbh0mq2yjgk8a5rjdzjjy6g-libxslt-1.1.42/lib -L/nix/store/ix6qxrr8ka5r8d42kp36rb55y2y6yjmy-libxml2-2.13.4/lib -lexslt -lxslt -lxml2 -llzma
+       > ** libs
+       > using C++ compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > rm -f RcppExports.o xslt.o xslt_init.o xslt.so
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -DSTRICT_R_HEADERS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/3483f722kw87v36kg59010cydaklisvb-r-xml2-1.3.6/library/xml2/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -DSTRICT_R_HEADERS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/3483f722kw87v36kg59010cydaklisvb-r-xml2-1.3.6/library/xml2/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xslt.cpp -o xslt.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/4z55z4kd0n1qp4vrqkkq4nflaw4wacz7-libxslt-1.1.42-dev/include -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -DSTRICT_R_HEADERS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/3483f722kw87v36kg59010cydaklisvb-r-xml2-1.3.6/library/xml2/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xslt_init.cpp -o xslt_init.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o xslt.so RcppExports.o xslt.o xslt_init.o -L/nix/store/aap91xmk2bbh0mq2yjgk8a5rjdzjjy6g-libxslt-1.1.42/lib -L/nix/store/ix6qxrr8ka5r8d42kp36rb55y2y6yjmy-libxml2-2.13.4/lib -lexslt -lxslt -lxml2 -llzma -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > ld: library not found for -llzma
+       > clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/share/make/shlib.mk:10: xslt.so] Error 1
+       > ERROR: compilation failed for package ‘xslt’
+       > * removing ‘/nix/store/xlsd4iazx42qfj0fafgwz7is433r8xdj-r-xslt-1.4.6/library/xslt’
+       For full logs, run 'nix log /nix/store/256wvfs597nnhzzs6dhlmp05xa0mqaaz-r-xslt-1.4.6.drv'.
+error: 1 dependencies of derivation '/nix/store/zpmrdahck1qkqbq1dpf7dywfrxzc3ra0-r-epubr-0.6.5.drv' failed to build

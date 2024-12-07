@@ -1,0 +1,59 @@
+these 2 derivations will be built:
+  /nix/store/6k03vqhwy1slv6kz5avi2fwgikg8x6yn-PKPDsim_1.4.0.tar.gz.drv
+  /nix/store/3y0gfhpafqlkr1j1z9k2ylbfdmcv93vn-r-PKPDsim-1.4.0.drv
+building '/nix/store/6k03vqhwy1slv6kz5avi2fwgikg8x6yn-PKPDsim_1.4.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/PKPDsim_1.4.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  244k  100  244k    0     0  1263k      0 --:--:-- --:--:-- --:--:-- 1264k
+building '/nix/store/3y0gfhpafqlkr1j1z9k2ylbfdmcv93vn-r-PKPDsim-1.4.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/m3jw0rra9w1lr95rjhgaib5pkcxqvq3s-PKPDsim_1.4.0.tar.gz
+source root is PKPDsim
+setting SOURCE_DATE_EPOCH to timestamp 1724109612 of file PKPDsim/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PKPDsim’ ...
+** package ‘PKPDsim’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_1cmt_iv_bolus.cpp -o pk_1cmt_iv_bolus.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_1cmt_iv_bolus_covariates.cpp -o pk_1cmt_iv_bolus_covariates.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_1cmt_iv_infusion.cpp -o pk_1cmt_iv_infusion.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_1cmt_oral.cpp -o pk_1cmt_oral.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_2cmt_iv_bolus.cpp -o pk_2cmt_iv_bolus.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_2cmt_iv_infusion.cpp -o pk_2cmt_iv_infusion.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_2cmt_oral.cpp -o pk_2cmt_oral.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_3cmt_iv_bolus.cpp -o pk_3cmt_iv_bolus.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_3cmt_iv_infusion.cpp -o pk_3cmt_iv_infusion.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pk_3cmt_oral.cpp -o pk_3cmt_oral.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PKPDsim.so RcppExports.o pk_1cmt_iv_bolus.o pk_1cmt_iv_bolus_covariates.o pk_1cmt_iv_infusion.o pk_1cmt_oral.o pk_2cmt_iv_bolus.o pk_2cmt_iv_infusion.o pk_2cmt_oral.o pk_3cmt_iv_bolus.o pk_3cmt_iv_infusion.o pk_3cmt_oral.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/jmladkck7p11r9ypj16zmv9ksyxgks93-r-PKPDsim-1.4.0/library/00LOCK-PKPDsim/00new/PKPDsim/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** exec
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PKPDsim)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PKPDsim-1.4.0.drv-0/ in /nix/store/jmladkck7p11r9ypj16zmv9ksyxgks93-r-PKPDsim-1.4.0...
+patching script interpreter paths in /nix/store/jmladkck7p11r9ypj16zmv9ksyxgks93-r-PKPDsim-1.4.0
+rewriting symlink /nix/store/jmladkck7p11r9ypj16zmv9ksyxgks93-r-PKPDsim-1.4.0/nix-support/propagated-user-env-packages to be relative to /nix/store/jmladkck7p11r9ypj16zmv9ksyxgks93-r-PKPDsim-1.4.0

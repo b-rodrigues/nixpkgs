@@ -1,0 +1,103 @@
+these 3 derivations will be built:
+  /nix/store/cmdc31g404h0g7ifnni7byvkxfcvyzaf-r-ecmwfr-2.0.2.drv
+  /nix/store/icx5nj20dkb6spq3sr25np21jmrm5zqz-r-RMAWGEN-1.3.7.drv
+  /nix/store/rjg28cb0f2nzxf41a7f2fdlilgcw22bp-r-chillR-0.76.drv
+building '/nix/store/icx5nj20dkb6spq3sr25np21jmrm5zqz-r-RMAWGEN-1.3.7.drv'...
+building '/nix/store/cmdc31g404h0g7ifnni7byvkxfcvyzaf-r-ecmwfr-2.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nzqpfzgwr3mhfx8nhncdlpsblgw5q4f0-RMAWGEN_1.3.7.tar.gz
+source root is RMAWGEN
+setting SOURCE_DATE_EPOCH to timestamp 1576134007 of file RMAWGEN/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/f7s47zsskffi1mwdxdcm33snq7vhbk5h-ecmwfr_2.0.2.tar.gz
+source root is ecmwfr
+setting SOURCE_DATE_EPOCH to timestamp 1727443802 of file ecmwfr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+* installing *source* package ‘RMAWGEN’ ...
+** package ‘RMAWGEN’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: configurePhase
+** R
+** data
+Running phase: buildPhase
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ecmwfr’ ...
+** package ‘ecmwfr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+*** installing help indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** building package indices
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from temporary location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ecmwfr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ecmwfr-2.0.2.drv-0/ in /nix/store/0d0aqi2c6l42cykkldsnddlypyxr5wzr-r-ecmwfr-2.0.2...
+** testing if installed package can be loaded from final location
+patching script interpreter paths in /nix/store/0d0aqi2c6l42cykkldsnddlypyxr5wzr-r-ecmwfr-2.0.2
+rewriting symlink /nix/store/0d0aqi2c6l42cykkldsnddlypyxr5wzr-r-ecmwfr-2.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/0d0aqi2c6l42cykkldsnddlypyxr5wzr-r-ecmwfr-2.0.2
+** testing if installed package keeps a record of temporary installation path
+* DONE (RMAWGEN)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RMAWGEN-1.3.7.drv-0/ in /nix/store/7b223w3asyibfcqgmmfn6mifbdak36xi-r-RMAWGEN-1.3.7...
+patching script interpreter paths in /nix/store/7b223w3asyibfcqgmmfn6mifbdak36xi-r-RMAWGEN-1.3.7
+rewriting symlink /nix/store/7b223w3asyibfcqgmmfn6mifbdak36xi-r-RMAWGEN-1.3.7/nix-support/propagated-user-env-packages to be relative to /nix/store/7b223w3asyibfcqgmmfn6mifbdak36xi-r-RMAWGEN-1.3.7
+building '/nix/store/rjg28cb0f2nzxf41a7f2fdlilgcw22bp-r-chillR-0.76.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/p3b707kkpw6s161flbmc3is9bgzkc3gj-chillR_0.76.tar.gz
+source root is chillR
+setting SOURCE_DATE_EPOCH to timestamp 1731577202 of file chillR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘chillR’ ...
+** package ‘chillR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PhenoFlex.cpp -o PhenoFlex.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o chillR.so PhenoFlex.o RcppExports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/z07z7d97issvgga1agy33wca9wwkf6xc-r-chillR-0.76/library/00LOCK-chillR/00new/chillR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (chillR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-chillR-0.76.drv-0/ in /nix/store/z07z7d97issvgga1agy33wca9wwkf6xc-r-chillR-0.76...
+patching script interpreter paths in /nix/store/z07z7d97issvgga1agy33wca9wwkf6xc-r-chillR-0.76
+rewriting symlink /nix/store/z07z7d97issvgga1agy33wca9wwkf6xc-r-chillR-0.76/nix-support/propagated-user-env-packages to be relative to /nix/store/z07z7d97issvgga1agy33wca9wwkf6xc-r-chillR-0.76

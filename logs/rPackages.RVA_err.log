@@ -1,0 +1,151 @@
+these 10 derivations will be built:
+  /nix/store/965ddb7nlk2vgpq8rlzc883pbg5mzj92-r-Biostrings-2.38.4.drv
+  /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv
+  /nix/store/s4207vqcgq48klbpwf3cbjh6m69k1hgq-r-topGO-2.22.0.drv
+  /nix/store/y67jd9rv3zc8n5xyajmvqsjmqxyir8b3-r-KEGGREST-1.10.1.drv
+  /nix/store/ip3ax2spvl30z85ly68wblb5lb630ph6-r-clusterProfiler-2.4.3.drv
+  /nix/store/jywlby4zg3b9b7wwbbqs3gi75bsvb497-r-GSEABase-1.32.0.drv
+  /nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv
+  /nix/store/yjwdn36axww4kz1793j80jv1j8vh3kp3-r-hgu95a.db-3.2.2.drv
+  /nix/store/vx4pj6pp6vs7hbc6asxwsvg8nk1fdzgd-r-GSVAdata-1.6.0.drv
+  /nix/store/lc80g5qi9vih8jh2sykz681bs21crrvw-r-RVA-0.0.5.drv
+these 3 paths will be fetched (16.62 MiB download, 16.63 MiB unpacked):
+  /nix/store/wjz671h5swhwbhgkdgi9q8f8nx72pd2s-GSVAdata_1.6.0.tar.gz
+  /nix/store/1716sxzvh7n2qkja3y8ab5i7n2p2jz26-RVA_0.0.5.tar.gz
+  /nix/store/41bwxiaxg47qqyn0v1y09g33j5saiy02-hgu95a.db_3.2.2.tar.gz
+copying path '/nix/store/1716sxzvh7n2qkja3y8ab5i7n2p2jz26-RVA_0.0.5.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/wjz671h5swhwbhgkdgi9q8f8nx72pd2s-GSVAdata_1.6.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv'...
+copying path '/nix/store/41bwxiaxg47qqyn0v1y09g33j5saiy02-hgu95a.db_3.2.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'...
+building '/nix/store/965ddb7nlk2vgpq8rlzc883pbg5mzj92-r-Biostrings-2.38.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/y5z7r0ff78f66gnmnkiyr9l7171wj8sw-edgeR_3.12.1.tar.gz
+source root is edgeR
+setting SOURCE_DATE_EPOCH to timestamp 1460076787 of file edgeR/src/utils.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/fac79mzcbdrkazwfsyzj2najqw8lik3r-graph_1.48.0.tar.gz
+source root is graph
+setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+Running phase: patchPhase
+building '/nix/store/yjwdn36axww4kz1793j80jv1j8vh3kp3-r-hgu95a.db-3.2.2.drv'...
+* installing *source* package ‘edgeR’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_compute_nbdev.cpp -o R_compute_nbdev.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_cr_adjust.cpp -o R_cr_adjust.o
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘graph’ ...
+** using staged installation
+Running phase: unpackPhase
+unpacking source archive /nix/store/krpgx3xhzwqc9a6k2aly5f59fd29zip8-Biostrings_2.38.4.tar.gz
+source root is Biostrings
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_exact_test_by_deviance.cpp -o R_exact_test_by_deviance.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_levenberg.cpp -o R_levenberg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_loess_by_col.cpp -o R_loess_by_col.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_maximize_interpolant.cpp -o R_maximize_interpolant.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_one_group.cpp -o R_one_group.o
+** libs
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_process_hairpin_reads.c -o R_process_hairpin_reads.o
+setting SOURCE_DATE_EPOCH to timestamp 1454981144 of file Biostrings/src/xscat.c
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+R_process_hairpin_reads.c:464:52: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+      Rprintf(" -- Processing %d million reads\n", (num_read_thisfile / BLOCKSIZE + 1) * 10);
+                              ~~                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              %ld
+Running phase: configurePhase
+using C compiler: ‘clang version 16.0.6’
+Running phase: buildPhase
+using SDK: ‘’
+Running phase: checkPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/41bwxiaxg47qqyn0v1y09g33j5saiy02-hgu95a.db_3.2.2.tar.gz
+source root is hgu95a.db
+setting SOURCE_DATE_EPOCH to timestamp 1444244933 of file hgu95a.db/DESCRIPTION
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Biostrings’ ...
+** using staged installation
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_simple_good_turing.cpp -o R_simple_good_turing.o
+** libs
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BAB_class.c -o BAB_class.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BitMatrix.c -o BitMatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c MIndex_class.c -o MIndex_class.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PreprocessedTB_class.c -o PreprocessedTB_class.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_init_Biostrings.c -o R_init_Biostrings.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RoSeqs_utils.c -o RoSeqs_utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+BitMatrix.c:9:10: fatal error: 'S.h' file not found
+#include <S.h> /* for Salloc() */
+         ^~~~~
+RoSeqs_utils.c:7:10: fatal error: 'S.h' file not found
+#include <S.h> /* for Salloc() */
+         ^~~~~
+1 error generated.
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: RoSeqs_utils.o] Error 1
+make: *** Attente des tâches non terminées....
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: BitMatrix.o] Error 1
+* installing *source* package ‘hgu95a.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: compilation failed for package ‘Biostrings’
+* removing ‘/nix/store/h0p4cz8i5amzr29bj7wrgzxlwhc8ls87-r-Biostrings-2.38.4/library/Biostrings’
+error: builder for '/nix/store/965ddb7nlk2vgpq8rlzc883pbg5mzj92-r-Biostrings-2.38.4.drv' failed with exit code 1;
+       last 25 log lines:
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BAB_class.c -o BAB_class.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BitMatrix.c -o BitMatrix.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c MIndex_class.c -o MIndex_class.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PreprocessedTB_class.c -o PreprocessedTB_class.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_init_Biostrings.c -o R_init_Biostrings.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RoSeqs_utils.c -o RoSeqs_utils.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/nrq5shdg28fsf6j8ldr4nndxn3cw1lgg-r-S4Vectors-0.8.11/library/S4Vectors/include' -I'/nix/store/rsqghp5h9lx1znw3g0rn3pvfghvhwl36-r-IRanges-2.4.8/library/IRanges/include' -I'/nix/store/rxwbv4h0bwcv98z21rnj2v2clgnbs11p-r-XVector-0.10.0/library/XVector/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+       > BitMatrix.c:9:10: fatal error: 'S.h' file not found
+       > #include <S.h> /* for Salloc() */
+       >          ^~~~~
+       > RoSeqs_utils.c:7:10: fatal error: 'S.h' file not found
+       > #include <S.h> /* for Salloc() */
+       >          ^~~~~
+       > 1 error generated.
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: RoSeqs_utils.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: BitMatrix.o] Error 1
+       > ERROR: compilation failed for package ‘Biostrings’
+       > * removing ‘/nix/store/h0p4cz8i5amzr29bj7wrgzxlwhc8ls87-r-Biostrings-2.38.4/library/Biostrings’
+       For full logs, run 'nix log /nix/store/965ddb7nlk2vgpq8rlzc883pbg5mzj92-r-Biostrings-2.38.4.drv'.
+error: 1 dependencies of derivation '/nix/store/y67jd9rv3zc8n5xyajmvqsjmqxyir8b3-r-KEGGREST-1.10.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/ip3ax2spvl30z85ly68wblb5lb630ph6-r-clusterProfiler-2.4.3.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/lc80g5qi9vih8jh2sykz681bs21crrvw-r-RVA-0.0.5.drv' failed to build

@@ -1,0 +1,84 @@
+these 3 derivations will be built:
+  /nix/store/27yw0ylpd4i9xs2kqpj0dlzv3jpa289p-r-reclin2-0.5.0.drv
+  /nix/store/xmqb4zzzkqw4ag9qlcqfgzirk3hn2h71-PriceIndices_0.2.2.tar.gz.drv
+  /nix/store/cfyaf2x732xw9x8w8vr8x7imqi000j20-r-PriceIndices-0.2.2.drv
+this path will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/wan8fy40vwfdzb28d058w493k6nkfgxw-reclin2_0.5.0.tar.gz
+copying path '/nix/store/wan8fy40vwfdzb28d058w493k6nkfgxw-reclin2_0.5.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xmqb4zzzkqw4ag9qlcqfgzirk3hn2h71-PriceIndices_0.2.2.tar.gz.drv'...
+building '/nix/store/27yw0ylpd4i9xs2kqpj0dlzv3jpa289p-r-reclin2-0.5.0.drv'...
+
+trying https://cran.r-project.org/src/contrib/PriceIndices_0.2.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+100  675k  100  675k    0     0  2881k      0 --:--:-- --:--:-- --:--:-- 2875k
+unpacking source archive /nix/store/wan8fy40vwfdzb28d058w493k6nkfgxw-reclin2_0.5.0.tar.gz
+source root is reclin2
+setting SOURCE_DATE_EPOCH to timestamp 1707467402 of file reclin2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘reclin2’ ...
+** package ‘reclin2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c equivalence.cpp -o equivalence.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c greedy.cpp -o greedy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o reclin2.so RcppExports.o equivalence.o greedy.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ah9nk3vhh7ks3s7xgz4zc3j4zy2pxx1b-r-reclin2-0.5.0/library/00LOCK-reclin2/00new/reclin2/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (reclin2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-reclin2-0.5.0.drv-0/ in /nix/store/ah9nk3vhh7ks3s7xgz4zc3j4zy2pxx1b-r-reclin2-0.5.0...
+patching script interpreter paths in /nix/store/ah9nk3vhh7ks3s7xgz4zc3j4zy2pxx1b-r-reclin2-0.5.0
+rewriting symlink /nix/store/ah9nk3vhh7ks3s7xgz4zc3j4zy2pxx1b-r-reclin2-0.5.0/nix-support/propagated-user-env-packages to be relative to /nix/store/ah9nk3vhh7ks3s7xgz4zc3j4zy2pxx1b-r-reclin2-0.5.0
+building '/nix/store/cfyaf2x732xw9x8w8vr8x7imqi000j20-r-PriceIndices-0.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/j2gsj4q6q0vn8cvq4q1p6hs31mqx294z-PriceIndices_0.2.2.tar.gz
+source root is PriceIndices
+setting SOURCE_DATE_EPOCH to timestamp 1728511802 of file PriceIndices/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PriceIndices’ ...
+** package ‘PriceIndices’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PriceIndices)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PriceIndices-0.2.2.drv-0/ in /nix/store/bd0ywfcwq8d4xq95ql8nkglh8vry3710-r-PriceIndices-0.2.2...
+patching script interpreter paths in /nix/store/bd0ywfcwq8d4xq95ql8nkglh8vry3710-r-PriceIndices-0.2.2
+rewriting symlink /nix/store/bd0ywfcwq8d4xq95ql8nkglh8vry3710-r-PriceIndices-0.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/bd0ywfcwq8d4xq95ql8nkglh8vry3710-r-PriceIndices-0.2.2

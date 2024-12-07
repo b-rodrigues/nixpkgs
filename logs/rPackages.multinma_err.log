@@ -1,0 +1,124 @@
+these 2 derivations will be built:
+  /nix/store/wka1swzh3qwddmmmr92f2183pxymy2c1-multinma_0.7.2.tar.gz.drv
+  /nix/store/ibm7ghsm8zsi2pnl7wrpxbgigaxwggpn-r-multinma-0.7.2.drv
+building '/nix/store/wka1swzh3qwddmmmr92f2183pxymy2c1-multinma_0.7.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/multinma_0.7.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3198k  100 3198k    0     0  6607k      0 --:--:-- --:--:-- --:--:-- 6621k
+building '/nix/store/ibm7ghsm8zsi2pnl7wrpxbgigaxwggpn-r-multinma-0.7.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jcga8cmvlbar2wji1ck66hvydz5v46p6-multinma_0.7.2.tar.gz
+source root is multinma
+setting SOURCE_DATE_EPOCH to timestamp 1726489202 of file multinma/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘multinma’ ...
+** package ‘multinma’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_binomial_1par.cc -o stanExports_binomial_1par.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_binomial_2par.cc -o stanExports_binomial_2par.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_normal.cc -o stanExports_normal.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_ordered_multinomial.cc -o stanExports_ordered_multinomial.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_poisson.cc -o stanExports_poisson.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_predict_delta_new.cc -o stanExports_predict_delta_new.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_survival_mspline.cc -o stanExports_survival_mspline.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_survival_param.cc -o stanExports_survival_param.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o multinma.so RcppExports.o stanExports_binomial_1par.o stanExports_binomial_2par.o stanExports_normal.o stanExports_ordered_multinomial.o stanExports_poisson.o stanExports_predict_delta_new.o stanExports_survival_mspline.o stanExports_survival_param.o -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib -ltbb -ltbbmalloc -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib/ -Wl,-rpath,/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib/ -ltbb -ltbbmalloc -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/2hfayj5xp7fgs5sdf0gqmgkvbq4084cx-r-multinma-0.7.2/library/00LOCK-multinma/00new/multinma/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_1par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_1par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_2par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_2par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_normal” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_normal” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_ordered_multinomial” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_ordered_multinomial” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_poisson” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_poisson” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_predict_delta_new” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_predict_delta_new” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_mspline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_mspline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_param” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_param” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_1par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_1par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_2par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_binomial_2par” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_normal” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_normal” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_ordered_multinomial” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_ordered_multinomial” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_poisson” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_poisson” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_predict_delta_new” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_predict_delta_new” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_mspline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_mspline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_param” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_survival_param” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (multinma)
+installPhase completed in 14 minutes 52 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-multinma-0.7.2.drv-0/ in /nix/store/2hfayj5xp7fgs5sdf0gqmgkvbq4084cx-r-multinma-0.7.2...
+patching script interpreter paths in /nix/store/2hfayj5xp7fgs5sdf0gqmgkvbq4084cx-r-multinma-0.7.2
+rewriting symlink /nix/store/2hfayj5xp7fgs5sdf0gqmgkvbq4084cx-r-multinma-0.7.2/nix-support/propagated-user-env-packages to be relative to /nix/store/2hfayj5xp7fgs5sdf0gqmgkvbq4084cx-r-multinma-0.7.2

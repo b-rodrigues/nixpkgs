@@ -1,0 +1,88 @@
+these 2 derivations will be built:
+  /nix/store/hnvj980crjyad2jcqpaz4xys8mxkvz48-IP_0.1.4.tar.gz.drv
+  /nix/store/0yd0xwlb9nay4iwiyi3rrdkdws2iv48l-r-IP-0.1.4.drv
+building '/nix/store/hnvj980crjyad2jcqpaz4xys8mxkvz48-IP_0.1.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/IP_0.1.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  156k  100  156k    0     0   831k      0 --:--:-- --:--:-- --:--:--  834k
+building '/nix/store/0yd0xwlb9nay4iwiyi3rrdkdws2iv48l-r-IP-0.1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/m9lrg4jfvnyc09lxvndnmr66ns29s79i-IP_0.1.4.tar.gz
+source root is IP
+setting SOURCE_DATE_EPOCH to timestamp 1729451402 of file IP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IP’ ...
+** package ‘IP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+configure: RIP_CFLAGS: 
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking for idna_to_ascii_8z in -lidn... no
+*** libidn not found.
+*** Consider installing, e.g., libidn*-dev (Debian, Ubuntu)or  libidn-devel-* (RedHat, Fedora)
+*** then re-install package IP to enable IDN support
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip-host-info.c -o Rip-host-info.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip-io-internal.c -o Rip-io-internal.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip-match.c -o Rip-match.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip-op-arith.c -o Rip-op-arith.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip-op-bool.c -o Rip-op-bool.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip-op-mask.c -o Rip-op-mask.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip-register.c -o Rip-register.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rip.c -o Rip.o
+In file included from Rip-match.c:475:
+./templates/Rip-bsearch-template.c:1150:9: warning: VISIT BODY [-W#pragma-messages]
+#pragma message("VISIT BODY")
+        ^
+In file included from Rip-match.c:563:
+./templates/Rip-bsearch-template.c:1150:9: warning: VISIT BODY [-W#pragma-messages]
+#pragma message("VISIT BODY")
+        ^
+In file included from Rip-match.c:730:
+./templates/Rip-bsearch-template.c:1150:9: warning: VISIT BODY [-W#pragma-messages]
+#pragma message("VISIT BODY")
+        ^
+In file included from Rip-match.c:808:
+./templates/Rip-bsearch-template.c:1150:9: warning: VISIT BODY [-W#pragma-messages]
+#pragma message("VISIT BODY")
+        ^
+4 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IP.so Rip-host-info.o Rip-io-internal.o Rip-match.o Rip-op-arith.o Rip-op-bool.o Rip-op-mask.o Rip-register.o Rip.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/z72yhz8f1fzlpqg006whr0d598d5lxxm-r-IP-0.1.4/library/00LOCK-IP/00new/IP/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘match’ du package ‘base’ dans package ‘IP’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis dans .Call("Rip_init") : converting NULL pointer to R NULL
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Avis dans .Call("Rip_init") : converting NULL pointer to R NULL
+** testing if installed package keeps a record of temporary installation path
+* DONE (IP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IP-0.1.4.drv-0/ in /nix/store/z72yhz8f1fzlpqg006whr0d598d5lxxm-r-IP-0.1.4...
+patching script interpreter paths in /nix/store/z72yhz8f1fzlpqg006whr0d598d5lxxm-r-IP-0.1.4
+rewriting symlink /nix/store/z72yhz8f1fzlpqg006whr0d598d5lxxm-r-IP-0.1.4/nix-support/propagated-user-env-packages to be relative to /nix/store/z72yhz8f1fzlpqg006whr0d598d5lxxm-r-IP-0.1.4

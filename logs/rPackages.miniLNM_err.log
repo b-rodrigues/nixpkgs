@@ -1,0 +1,75 @@
+these 2 derivations will be built:
+  /nix/store/8hmx1lq8j5mbm978zq8lwwkb0na6wjwr-miniLNM_0.1.0.tar.gz.drv
+  /nix/store/11carmnhx9xx6d41q9a7wsmjygjri0jp-r-miniLNM-0.1.0.drv
+building '/nix/store/8hmx1lq8j5mbm978zq8lwwkb0na6wjwr-miniLNM_0.1.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/miniLNM_0.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 60426  100 60426    0     0   460k      0 --:--:-- --:--:-- --:--:--  457k
+building '/nix/store/11carmnhx9xx6d41q9a7wsmjygjri0jp-r-miniLNM-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qmh26v855imyrzr8zmlnnp1zwaa55zwj-miniLNM_0.1.0.tar.gz
+source root is miniLNM
+setting SOURCE_DATE_EPOCH to timestamp 1726252202 of file miniLNM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘miniLNM’ ...
+** package ‘miniLNM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_lnm.cc -o stanExports_lnm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o miniLNM.so RcppExports.o stanExports_lnm.o -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib -ltbb -ltbbmalloc -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib/ -Wl,-rpath,/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib/ -ltbb -ltbbmalloc -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8r9ksxnllz081ay4l8y04dbs4b9sh2j2-r-miniLNM-0.1.0/library/00LOCK-miniLNM/00new/miniLNM/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+dans la méthode pour ‘predict’ avec la signature ‘"lnm"’ : aucune définition de la classe “lnm” n'est trouvée
+Une nouvelle fonction générique est créée pour ‘sample’ du package ‘base’ dans package ‘miniLNM’
+dans la méthode pour ‘sample’ avec la signature ‘"lnm"’ : aucune définition de la classe “lnm” n'est trouvée
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_lnm” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_lnm” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_lnm” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_rstantools_model_lnm” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (miniLNM)
+installPhase completed in 40 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-miniLNM-0.1.0.drv-0/ in /nix/store/8r9ksxnllz081ay4l8y04dbs4b9sh2j2-r-miniLNM-0.1.0...
+patching script interpreter paths in /nix/store/8r9ksxnllz081ay4l8y04dbs4b9sh2j2-r-miniLNM-0.1.0
+rewriting symlink /nix/store/8r9ksxnllz081ay4l8y04dbs4b9sh2j2-r-miniLNM-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/8r9ksxnllz081ay4l8y04dbs4b9sh2j2-r-miniLNM-0.1.0

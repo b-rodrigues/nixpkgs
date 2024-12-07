@@ -1,0 +1,239 @@
+these 2 derivations will be built:
+  /nix/store/maql777m8xxziq2ir85z1w72pyska2vn-r-Rserve-1.8-13.drv
+  /nix/store/ds3gb1fdsd8dzq8z59mj924xf5pcvlms-r-RestRserve-1.2.3.drv
+building '/nix/store/maql777m8xxziq2ir85z1w72pyska2vn-r-Rserve-1.8-13.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b8hiifc5p74rxchxj2sfkdj8qrsiqb23-Rserve_1.8-13.tar.gz
+source root is Rserve
+setting SOURCE_DATE_EPOCH to timestamp 1701161070 of file Rserve/MD5
+Running phase: patchPhase
+applying patch /nix/store/1rkb3ic4d2yxq2932x5n213bz2kr84p8-Rserve.patch
+patching file src/Makevars.in
+Hunk #1 succeeded at 14 with fuzz 1 (offset 2 lines).
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Updating Autotools / GNU config script to a newer upstream version: ./tools/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./tools/config.guess
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rserve’ ...
+files ‘src/Makevars.in’, ‘tools/config.guess’, ‘tools/config.sub’ have the wrong MD5 checksums
+** using staged installation
+checking whether to compile the server... yes
+checking whether to compile the client... yes
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to enable C11 features... none needed
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for vfork.h... no
+checking for limits.h... yes
+checking for string.h... (cached) yes
+checking for memory.h... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... yes
+checking for sys/un.h... yes
+checking for netinet/in.h... yes
+checking for netinet/tcp.h... yes
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... no
+checking size of size_t... 8
+checking for pid_t... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking return type of signal handlers... void
+checking for memset... yes
+checking for mkdir... yes
+checking for rmdir... yes
+checking for select... yes
+checking for socket... yes
+checking for srandomdev... yes
+checking for library containing crypt... none required
+checking for crypt.h... no
+checking for socklen_t... yes
+checking for connect... yes
+checking whether to enable IPv6... no
+checking for dlopen in -ldl... yes
+checking for openssl/rsa.h... yes
+checking for library containing RSA_generate_key... -lcrypto
+checking for openssl/ssl.h... yes
+checking for library containing SSL_CTX_load_verify_locations... -lssl
+checking whether threads are desired... yes
+checking build system type... aarch64-apple-darwin24.1.0
+checking host system type... aarch64-apple-darwin24.1.0
+checking if compiler needs -Werror to reject unknown flags... yes
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... -D_THREAD_SAFE
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for working threads support... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/client/cxx/Makefile
+config.status: creating src/config.h
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RSserver.c -o RSserver.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rserv.c -o Rserv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c base64.c -o base64.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c date.c -o date.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c http.c -o http.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ioc.c -o ioc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c md5.c -o md5.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c oc.c -o oc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c qap_decode.c -o qap_decode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c qap_encode.c -o qap_encode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c session.c -o session.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sha1.c -o sha1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c standalone.c -o standalone.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tls.c -o tls.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ulog.c -o ulog.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c utils.c -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c websockets.c -o websockets.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c winembed.c -o winembed.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DSTANDALONE_RSERVE -DDAEMON -I. -Iinclude -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2  -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include  -o Rserve standalone.c md5.c session.c qap_decode.c qap_encode.c sha1.c base64.c websockets.c RSserver.c tls.c http.c oc.c ulog.c ioc.c utils.c date.c -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -lssl -lcrypto -ldl     -L"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib" -lR -lintl -Wl,-framework -Wl,CoreFoundation -lssl -lcrypto -ldl  
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rserve.so RSserver.o Rserv.o base64.o date.o http.o ioc.o md5.o oc.o qap_decode.o qap_encode.o session.o sha1.o standalone.o tls.o ulog.o utils.o websockets.o winembed.o -lssl -lcrypto -ldl -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DSTANDALONE_RSERVE -DRSERV_DEBUG -DNODAEMON -I. -Iinclude -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include  -o Rserve.dbg standalone.c md5.c session.c qap_decode.c qap_encode.c sha1.c base64.c websockets.c RSserver.c tls.c http.c oc.c ulog.c ioc.c utils.c date.c -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -lssl -lcrypto -ldl     -L"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib" -lR -lintl -Wl,-framework -Wl,CoreFoundation -lssl -lcrypto -ldl  
+mkdir /nix/store/5f357x39l48kx2nfivb8iy05lzqg7fg5-r-Rserve-1.8-13/bin
+./mergefat Rserve "/nix/store/5f357x39l48kx2nfivb8iy05lzqg7fg5-r-Rserve-1.8-13/bin/Rserve"
+./mergefat Rserve.dbg "/nix/store/5f357x39l48kx2nfivb8iy05lzqg7fg5-r-Rserve-1.8-13/bin/Rserve.dbg"
+make client
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-Rserve-1.8-13.drv-1/Rserve/src »
+make[1]: Rien à faire pour « client ».
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-Rserve-1.8-13.drv-1/Rserve/src »
+make -C proxy 'CC=/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc' 'CPPFLAGS=-I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread' CFLAGS='-g -O2   -D_THREAD_SAFE -pthread' 'LDFLAGS=-L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib' 'LIBS=-lssl -lcrypto -ldl  ' && cp -p proxy/forward .
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-Rserve-1.8-13.drv-1/Rserve/src/proxy »
+ln -sfn ../ulog.h ulog.h
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o http.o http.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o http_tools.o http_tools.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o server.o server.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o tls.o tls.c
+ln -sfn ../md5.h md5.h
+ln -sfn ../sha1.h sha1.h
+ln -sfn ../base64.c base64.c
+ln -sfn ../md5.c md5.c
+ln -sfn ../sha1.c sha1.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o date.o date.c
+ln -sfn ../ulog.c ulog.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o chandler.o chandler.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o rscript.o rscript.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o forward.o forward.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o websockets.o websockets.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o md5.o md5.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o sha1.o sha1.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o base64.o base64.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -I.. -DFORKED -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -DRSERVE_PKG -I. -Iinclude -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -D_THREAD_SAFE -pthread  -c -o ulog.o ulog.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2   -D_THREAD_SAFE -pthread -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o forward forward.o http.o http_tools.o server.o tls.o websockets.o md5.o sha1.o base64.o date.o ulog.o chandler.o rscript.o -lssl -lcrypto -ldl  
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-Rserve-1.8-13.drv-1/Rserve/src/proxy »
+installing via 'install.libs.R' to /nix/store/5f357x39l48kx2nfivb8iy05lzqg7fg5-r-Rserve-1.8-13/library/00LOCK-Rserve/00new/Rserve
+generating debug symbols (dSYM)
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rserve)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rserve-1.8-13.drv-1/ in /nix/store/5f357x39l48kx2nfivb8iy05lzqg7fg5-r-Rserve-1.8-13...
+patching script interpreter paths in /nix/store/5f357x39l48kx2nfivb8iy05lzqg7fg5-r-Rserve-1.8-13
+stripping (with command strip and flags -S) in  /nix/store/5f357x39l48kx2nfivb8iy05lzqg7fg5-r-Rserve-1.8-13/bin
+building '/nix/store/ds3gb1fdsd8dzq8z59mj924xf5pcvlms-r-RestRserve-1.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2lj1sa1wml9i8pc8w1xb65fxkxlahn59-RestRserve_1.2.3.tar.gz
+source root is RestRserve
+setting SOURCE_DATE_EPOCH to timestamp 1716288602 of file RestRserve/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RestRserve’ ...
+** package ‘RestRserve’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c format_cookies.cpp -o format_cookies.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c format_headers.cpp -o format_headers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c parse_cookies.cpp -o parse_cookies.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c parse_headers.cpp -o parse_headers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c parse_multipart.cpp -o parse_multipart.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c url_decode.cpp -o url_decode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c url_encode.cpp -o url_encode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_NO_MODULES -fPIC  -g -O2   -c utils.cpp -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RestRserve.so RcppExports.o format_cookies.o format_headers.o parse_cookies.o parse_headers.o parse_multipart.o url_decode.o url_encode.o utils.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/00LOCK-RestRserve/00new/RestRserve/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RestRserve)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RestRserve-1.2.3.drv-0/ in /nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3...
+patching script interpreter paths in /nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/profile.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/bench.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/plot-magick/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/middleware/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/fibonacci-numbers/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/plot-echarts/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/ssl/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/ssl/get-ssl-cert.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/echo/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/predict-lm/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/html-form/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/plot-base/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/html-page/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/auth-bearer/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/content-handlers/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/rserve/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/auth-basic/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/openapi/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/plot-leaflet/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/multipart/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/static/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/compression/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/hello/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/plot-ggplot/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/xgboost-mushrooms/train.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/xgboost-mushrooms/start.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/etag/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/fibonacci-numbers-rcpp/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/library/RestRserve/examples/face-detection/app.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+rewriting symlink /nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/c6gf9dzj12rj1bkdm5ps7n5czsy45x9s-r-RestRserve-1.2.3

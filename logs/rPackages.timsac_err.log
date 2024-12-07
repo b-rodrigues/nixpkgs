@@ -1,0 +1,231 @@
+this derivation will be built:
+  /nix/store/v92j1sbab2lwfbnhn588scgmqyhbb56m-r-timsac-1.3.8-4.drv
+this path will be fetched (0.41 MiB download, 0.41 MiB unpacked):
+  /nix/store/sjvvpsmia8w938rcn63nfnn6rcl0gmh4-timsac_1.3.8-4.tar.gz
+copying path '/nix/store/sjvvpsmia8w938rcn63nfnn6rcl0gmh4-timsac_1.3.8-4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/v92j1sbab2lwfbnhn588scgmqyhbb56m-r-timsac-1.3.8-4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sjvvpsmia8w938rcn63nfnn6rcl0gmh4-timsac_1.3.8-4.tar.gz
+source root is timsac
+setting SOURCE_DATE_EPOCH to timestamp 1696066202 of file timsac/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘timsac’ ...
+** package ‘timsac’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c auspecf.f -o auspecf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c autarmf.f -o autarmf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c autcorf.f -o autcorf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c bayseaf.f -o bayseaf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c bispecf.f -o bispecf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c blocarf.f -o blocarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c blomarf.f -o blomarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c bsubstf.f -o bsubstf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c canarmf.f -o canarmf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c canocaf.f -o canocaf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c comsub.f -o comsub.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c covgenf.f -o covgenf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c decomp6f.f -o decomp6f.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c exsarf.f -o exsarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c fftcorf.f -o fftcorf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c fpeautf.f -o fpeautf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c fpecf.f -o fpecf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c markovf.f -o markovf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mlocarf.f -o mlocarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mlomarf.f -o mlomarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mulbarf.f -o mulbarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mulcorf.f -o mulcorf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mulfref.f -o mulfref.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mulmarf.f -o mulmarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mulnosf.f -o mulnosf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mulrspf.f -o mulrspf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mulspef.f -o mulspef.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c nonstf.f -o nonstf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c optdesf.f -o optdesf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c optsimf.f -o optsimf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c perarsf.f -o perarsf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c prdctrf.f -o prdctrf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c raspecf.f -o raspecf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c sglfref.f -o sglfref.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c simconf.f -o simconf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c spgrhf.f -o spgrhf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c thirmof.f -o thirmof.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c unibarf.f -o unibarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c unimarf.f -o unimarf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c wnoisef.f -o wnoisef.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c xsarmaf.f -o xsarmaf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o timsac.so auspecf.o autarmf.o autcorf.o bayseaf.o bispecf.o blocarf.o blomarf.o bsubstf.o canarmf.o canocaf.o comsub.o covgenf.o decomp6f.o exsarf.o fftcorf.o fpeautf.o fpecf.o init.o markovf.o mlocarf.o mlomarf.o mulbarf.o mulcorf.o mulfref.o mulmarf.o mulnosf.o mulrspf.o mulspef.o nonstf.o optdesf.o optsimf.o perarsf.o prdctrf.o raspecf.o sglfref.o simconf.o spgrhf.o thirmof.o unibarf.o unimarf.o wnoisef.o xsarmaf.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _auspecf_: does not use standard frame
+ld: warning: could not create compact unwind for _sc0grh_: does not use standard frame
+ld: warning: could not create compact unwind for _sausp1_: does not use standard frame
+ld: warning: could not create compact unwind for _bispecf_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _autcorf_: does not use standard frame
+ld: warning: could not create compact unwind for _nonstb_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _sbrugt_: does not use standard frameld: warning: could not create compact unwind for _mnonsb_: does not use standard frame
+ld: warning: could not create compact unwind for _modify_: does not use standard framecould not create compact unwind for _sc0gr1_: does not use standard frameld: warning: could not create compact unwind for _blomarf_: does not use standard frame
+
+
+ld: warning: ld: warning: could not create compact unwind for _prpost_: does not use standard framecould not create compact unwind for _nsicp_: does not use standard frame
+ld: warning: could not create compact unwind for _canarmf_: does not use standard frame
+ld: warning: could not create compact unwind for _prdct1_: register 22 saved somewhere other than in frame
+ld: warning: ld: warning: could not create compact unwind for _covgenf_: does not use standard framecould not create compact unwind for _prdct2_: does not use standard frame
+
+
+ld: warning: could not create compact unwind for _check_: does not use standard frame
+ld: warning: 
+ld: warning: ld: warning: could not create compact unwind for _saic_: does not use standard frame
+ld: warning: could not create compact unwind for _blocarf_: does not use standard frame
+ld: warning: could not create compact unwind for _nwfpec_: does not use standard frame
+ld: warning: could not create compact unwind for _canocaf_: does not use standard frame
+could not create compact unwind for _plotdd_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _fftcorf_: does not use standard framecould not create compact unwind for _lkout1_: does not use standard frame
+could not create compact unwind for _sdav1_: does not use standard frame
+ld: warning: could not create compact unwind for _outlir_: does not use standard frame
+ld: warning: could not create compact unwind for _funct_: does not use standard frameld: warning: 
+
+ld: warning: ld: warning: could not create compact unwind for _hushld_: does not use standard frameld: warning: could not create compact unwind for _sfpec_: does not use standard frame
+could not create compact unwind for _fpeautf_: does not use standard frame
+ld: warning: could not create compact unwind for _autarm_: does not use standard frame
+could not create compact unwind for _bicoef_: does not use standard frame
+
+ld: warning: could not create compact unwind for _msetx1_: register 20 saved somewhere other than in frame
+ld: warning: could not create compact unwind for _armaco_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _subspc_: does not use standard framecould not create compact unwind for _subcvv_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _sbcyv2_: does not use standard frame
+ld: warning: could not create compact unwind for _fpec7_: does not use standard frame
+ld: warning: could not create compact unwind for _msdcom_: does not use standard frameld: warning: could not create compact unwind for _hesian_: does not use standard frame
+ld: warning: could not create compact unwind for _trpar_: does not use standard frame
+could not create compact unwind for _sbbays_: does not use standard frameld: warning: could not create compact unwind for _state_: does not use standard frame
+ld: warning: 
+ld: warning: could not create compact unwind for _linear_: does not use standard frame
+could not create compact unwind for _smoth3_: does not use standard frame
+ld: warning: could not create compact unwind for _sbcyv1_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _hcxv2_: does not use standard frame
+
+ld: warning: could not create compact unwind for _subhes_: does not use standard frame
+could not create compact unwind for _davidn_: does not use standard frameld: warning: 
+ld: warning: ld: warning: could not create compact unwind for _nonsta_: does not use standard framecould not create compact unwind for _armle_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _exsarf_: does not use standard framecould not create compact unwind for _mnonst_: does not use standard frame
+ld: warning: could not create compact unwind for _funcsa_: does not use standard frame
+could not create compact unwind for _grad_: does not use standard frameld: warning: 
+ld: warning: ld: warning: could not create compact unwind for _mulbarf_: does not use standard frame
+could not create compact unwind for _mlomarf_: does not use standard frame
+ld: warning: could not create compact unwind for _bsubstf_: does not use standard frame
+could not create compact unwind for _prdct_: registers 19 and 20 not saved contiguously in frame
+ld: warning: ld: warning: could not create compact unwind for _decode_: does not use standard framecould not create compact unwind for _mulerr_: does not use standard frame
+ld: warning: ld: warning: ld: warning: could not create compact unwind for _nsubo_: does not use standard frame
+could not create compact unwind for _bsolve_: does not use standard framecould not create compact unwind for _mulmarf_: does not use standard frame
+
+ld: warning: could not create compact unwind for _funcnd_: does not use standard frame
+ld: warning: could not create compact unwind for _mulcorf_: does not use standard frameld: warning: 
+ld: warning: ld: warning: could not create compact unwind for _mulnosf_: does not use standard framecould not create compact unwind for _exhsld_: does not use standard frame
+
+could not create compact unwind for _marcof_: does not use standard frameld: warning: ld: warning: could not create compact unwind for _xyctrx_: does not use standard frame
+
+ld: warning: could not create compact unwind for _gcxv1_: does not use standard frame
+ld: warning: 
+ld: warning: could not create compact unwind for _mlocarf_: does not use standard frame
+could not create compact unwind for _mulrspf_: does not use standard frame
+
+ld: warning: could not create compact unwind for _bayswt_: does not use standard frame
+ld: warning: could not create compact unwind for _hushl1_: does not use standard frame
+ld: warning: could not create compact unwind for _mparco_: does not use standard frame
+ld: warning: could not create compact unwind for _triinv_: does not use standard frame
+could not create compact unwind for _mularc_: does not use standard frameld: warning: could not create compact unwind for _optdesf_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _mulfrff_: does not use standard frame
+ld: warning: could not create compact unwind for _crossp_: does not use standard frame
+ld: warning: could not create compact unwind for _optsimf_: does not use standard frame
+ld: warning: could not create compact unwind for _subcxx_: does not use standard frame
+ld: warning: could not create compact unwind for _mcoef_: does not use standard framecould not create compact unwind for _mulspef_: does not use standard frameld: warning: ld: warning: could not create compact unwind for _sicp_: does not use standard framecould not create compact unwind for _prdctrf_: does not use standard frame
+
+ld: warning: could not create compact unwind for _nonstf_: does not use standard frameld: warning: could not create compact unwind for _perarsf_: does not use standard frame
+
+
+ld: warning: could not create compact unwind for _aiccom_: does not use standard frame
+could not create compact unwind for _linea1_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _simconf_: does not use standard frame
+ld: warning: could not create compact unwind for _sglerr_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _sglarc_: does not use standard frame
+could not create compact unwind for _nsubx2_: does not use standard frame
+could not create compact unwind for _init_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _setd_: does not use standard frame
+ld: warning: could not create compact unwind for _raspecf_: does not use standard frame
+could not create compact unwind for _nsubx1_: does not use standard frame
+ld: warning: could not create compact unwind for _snrasp_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _sglfref_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _sicp2_: does not use standard frame
+ld: warning: could not create compact unwind for _delete_: does not use standard frame
+ld: warning: could not create compact unwind for _addvar_: does not use standard frame
+ld: warning: could not create compact unwind for _spgrh_: does not use standard frame
+could not create compact unwind for _thirmof_: does not use standard frame
+ld: warning: could not create compact unwind for _unimarf_: does not use standard frame
+could not create compact unwind for _bhushld_: does not use standard frameld: warning: 
+could not create compact unwind for _c0gr_: does not use standard frameld: warning: could not create compact unwind for _setx_: does not use standard frameld: warning: ld: warning: 
+ld: warning: could not create compact unwind for _subpm_: does not use standard frame
+could not create compact unwind for _sdcomp_: does not use standard frame
+ld: warning: could not create compact unwind for _funct2_: does not use standard frame
+ld: warning: could not create compact unwind for _optmiz_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _setfgh_: does not use standard frame
+ld: warning: could not create compact unwind for _eparam_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _wnoisef_: does not use standard frame
+ld: warning: could not create compact unwind for _subdav_: does not use standard frame
+
+could not create compact unwind for _unibarf_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _logtrf_: does not use standard frameld: warning: could not create compact unwind for _sgrad_: does not use standard frame
+ld: warning: could not create compact unwind for _msdav2_: does not use standard frameld: warning: could not create compact unwind for _markovf_: does not use standard framecould not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+
+ld: warning: could not create compact unwind for _sparam_: does not use standard frame
+ld: warning: could not create compact unwind for _decompff_: does not use standard frame
+ld: warning: 
+
+could not create compact unwind for _setdc_: does not use standard framecould not create compact unwind for _decompf_: does not use standard frame
+ld: warning: 
+ld: warning: could not create compact unwind for _subsea_: does not use standard frame
+ld: warning: could not create compact unwind for _bayseaf_: does not use standard frame
+could not create compact unwind for _sminop_: does not use standard frameld: warning: could not create compact unwind for _ausp_: does not use standard frame
+ld: warning: could not create compact unwind for _coefab_: does not use standard frame
+ld: warning: could not create compact unwind for _fger1_: does not use standard frame
+ld: warning: could not create compact unwind for _invdetc_: does not use standard frame
+ld: warning: could not create compact unwind for _mixrad_: does not use standard frame
+ld: warning: could not create compact unwind for _newse_: does not use standard frame
+ld: warning: could not create compact unwind for _msvd_: does not use standard frame
+ld: warning: could not create compact unwind for _armfit_: does not use standard frame
+ld: warning: could not create compact unwind for _marfit_: does not use standard frame
+ld: warning: could not create compact unwind for _mbysar_: does not use standard frame
+ld: warning: could not create compact unwind for _mredct_: does not use standard frame
+ld: warning: could not create compact unwind for _nraspe_: does not use standard frame
+
+ld: warning: could not create compact unwind for _parcor_: does not use standard frame
+ld: warning: could not create compact unwind for _reduct_: does not use standard frame
+installing to /nix/store/bwvsln94n4s757sg0sp1d4m83avqx85c-r-timsac-1.3.8-4/library/00LOCK-timsac/00new/timsac/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (timsac)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-timsac-1.3.8-4.drv-0/ in /nix/store/bwvsln94n4s757sg0sp1d4m83avqx85c-r-timsac-1.3.8-4...
+patching script interpreter paths in /nix/store/bwvsln94n4s757sg0sp1d4m83avqx85c-r-timsac-1.3.8-4

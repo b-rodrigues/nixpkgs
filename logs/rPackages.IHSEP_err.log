@@ -1,0 +1,77 @@
+these 2 derivations will be built:
+  /nix/store/v9zjnhvd1jyzhc3hbq09igrrhgfl8w5b-r-lpint-2.1.drv
+  /nix/store/7brkrpics4np23niznlisk61n479hfcn-r-IHSEP-0.3.1.drv
+these 2 paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/42nprx7pznj12f4ni1yfrmq9r2yx803h-IHSEP_0.3.1.tar.gz
+  /nix/store/jsm5ar7c9gnkvmlmnchz7g278n40x8fs-lpint_2.1.tar.gz
+copying path '/nix/store/42nprx7pznj12f4ni1yfrmq9r2yx803h-IHSEP_0.3.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/jsm5ar7c9gnkvmlmnchz7g278n40x8fs-lpint_2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/v9zjnhvd1jyzhc3hbq09igrrhgfl8w5b-r-lpint-2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jsm5ar7c9gnkvmlmnchz7g278n40x8fs-lpint_2.1.tar.gz
+source root is lpint
+setting SOURCE_DATE_EPOCH to timestamp 1649735547 of file lpint/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lpint’ ...
+** package ‘lpint’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (lpint)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lpint-2.1.drv-0/ in /nix/store/nnixxnd6h5pcf290k6jn5sxg9bhb1m9v-r-lpint-2.1...
+patching script interpreter paths in /nix/store/nnixxnd6h5pcf290k6jn5sxg9bhb1m9v-r-lpint-2.1
+building '/nix/store/7brkrpics4np23niznlisk61n479hfcn-r-IHSEP-0.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/42nprx7pznj12f4ni1yfrmq9r2yx803h-IHSEP_0.3.1.tar.gz
+source root is IHSEP
+setting SOURCE_DATE_EPOCH to timestamp 1663365365 of file IHSEP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IHSEP’ ...
+** package ‘IHSEP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mloglik.c -o mloglik.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mloglik1c.cpp -o mloglik1c.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mloglik1d.cpp -o mloglik1d.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mloglik1e.cpp -o mloglik1e.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IHSEP.so RcppExports.o init.o mloglik.o mloglik1c.o mloglik1d.o mloglik1e.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/akm9z9pcm3khand0w7byh84w2mvqm722-r-IHSEP-0.3.1/library/00LOCK-IHSEP/00new/IHSEP/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IHSEP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IHSEP-0.3.1.drv-0/ in /nix/store/akm9z9pcm3khand0w7byh84w2mvqm722-r-IHSEP-0.3.1...
+patching script interpreter paths in /nix/store/akm9z9pcm3khand0w7byh84w2mvqm722-r-IHSEP-0.3.1
+rewriting symlink /nix/store/akm9z9pcm3khand0w7byh84w2mvqm722-r-IHSEP-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/akm9z9pcm3khand0w7byh84w2mvqm722-r-IHSEP-0.3.1

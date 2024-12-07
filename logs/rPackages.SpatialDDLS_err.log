@@ -1,0 +1,37 @@
+these 2 derivations will be built:
+  /nix/store/ikfsy8yjhq9qz314b0dlrhnpwwlrm60c-SpatialDDLS_1.0.3.tar.gz.drv
+  /nix/store/lgsk3pa42srzd0bz0aacpgj376rggn93-r-SpatialDDLS-1.0.3.drv
+building '/nix/store/ikfsy8yjhq9qz314b0dlrhnpwwlrm60c-SpatialDDLS_1.0.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/SpatialDDLS_1.0.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4479k  100 4479k    0     0  3192k      0  0:00:01  0:00:01 --:--:-- 3195k
+building '/nix/store/lgsk3pa42srzd0bz0aacpgj376rggn93-r-SpatialDDLS-1.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/frmycxcchi43sf37llwrvr53d8sy7170-SpatialDDLS_1.0.3.tar.gz
+source root is SpatialDDLS
+setting SOURCE_DATE_EPOCH to timestamp 1730367606 of file SpatialDDLS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependencies ‘SpatialExperiment’, ‘SingleCellExperiment’, ‘zinbwave’, ‘scran’, ‘scuttle’ are not available for package ‘SpatialDDLS’
+* removing ‘/nix/store/r9ycxs3qbwlii799ibqh8cm0gp4bpfjc-r-SpatialDDLS-1.0.3/library/SpatialDDLS’
+error: builder for '/nix/store/lgsk3pa42srzd0bz0aacpgj376rggn93-r-SpatialDDLS-1.0.3.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/frmycxcchi43sf37llwrvr53d8sy7170-SpatialDDLS_1.0.3.tar.gz
+       > source root is SpatialDDLS
+       > setting SOURCE_DATE_EPOCH to timestamp 1730367606 of file SpatialDDLS/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependencies ‘SpatialExperiment’, ‘SingleCellExperiment’, ‘zinbwave’, ‘scran’, ‘scuttle’ are not available for package ‘SpatialDDLS’
+       > * removing ‘/nix/store/r9ycxs3qbwlii799ibqh8cm0gp4bpfjc-r-SpatialDDLS-1.0.3/library/SpatialDDLS’
+       For full logs, run 'nix log /nix/store/lgsk3pa42srzd0bz0aacpgj376rggn93-r-SpatialDDLS-1.0.3.drv'.

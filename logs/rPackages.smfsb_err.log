@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/lhchmwn6208slmrz7b5hmg1n4ns73fna-r-smfsb-1.5.drv
+this path will be fetched (0.18 MiB download, 0.18 MiB unpacked):
+  /nix/store/wbhqklpgdgk13bq3516z0n7i5hxr5y5k-smfsb_1.5.tar.gz
+copying path '/nix/store/wbhqklpgdgk13bq3516z0n7i5hxr5y5k-smfsb_1.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lhchmwn6208slmrz7b5hmg1n4ns73fna-r-smfsb-1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/wbhqklpgdgk13bq3516z0n7i5hxr5y5k-smfsb_1.5.tar.gz
+source root is smfsb
+setting SOURCE_DATE_EPOCH to timestamp 1705150804 of file smfsb/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘smfsb’ ...
+** package ‘smfsb’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c stepLVc.c -o stepLVc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o smfsb.so stepLVc.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/hn6rapp0g4jlkx9fs546cbc21gcncha6-r-smfsb-1.5/library/00LOCK-smfsb/00new/smfsb/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Avis dans library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  aucun package nommé ‘deSolve’ n'est trouvé
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (smfsb)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-smfsb-1.5.drv-0/ in /nix/store/hn6rapp0g4jlkx9fs546cbc21gcncha6-r-smfsb-1.5...
+patching script interpreter paths in /nix/store/hn6rapp0g4jlkx9fs546cbc21gcncha6-r-smfsb-1.5
+rewriting symlink /nix/store/hn6rapp0g4jlkx9fs546cbc21gcncha6-r-smfsb-1.5/nix-support/propagated-user-env-packages to be relative to /nix/store/hn6rapp0g4jlkx9fs546cbc21gcncha6-r-smfsb-1.5

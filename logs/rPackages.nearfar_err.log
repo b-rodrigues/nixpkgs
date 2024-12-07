@@ -1,0 +1,35 @@
+this derivation will be built:
+  /nix/store/8x3640gx0gf6sva4s1q783kcckpnj0ai-r-nearfar-1.3.drv
+these 2 paths will be fetched (0.02 MiB download, 0.04 MiB unpacked):
+  /nix/store/wmid2qchrsqsblxcyg64kbcvl3yzwv52-angrist.csv
+  /nix/store/dng06cjvn53yvj3pfv5cpz4pnfmzsjii-nearfar_1.3.tar.gz
+copying path '/nix/store/wmid2qchrsqsblxcyg64kbcvl3yzwv52-angrist.csv' from 'https://cache.nixos.org'...
+copying path '/nix/store/dng06cjvn53yvj3pfv5cpz4pnfmzsjii-nearfar_1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8x3640gx0gf6sva4s1q783kcckpnj0ai-r-nearfar-1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dng06cjvn53yvj3pfv5cpz4pnfmzsjii-nearfar_1.3.tar.gz
+source root is nearfar
+setting SOURCE_DATE_EPOCH to timestamp 1706014802 of file nearfar/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘nearfar’ ...
+file ‘R/nearfar.R’ has the wrong MD5 checksum
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (nearfar)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-nearfar-1.3.drv-0/ in /nix/store/5lb0grp4z9b69zj3b53h4471dwhqvri5-r-nearfar-1.3...
+patching script interpreter paths in /nix/store/5lb0grp4z9b69zj3b53h4471dwhqvri5-r-nearfar-1.3
+rewriting symlink /nix/store/5lb0grp4z9b69zj3b53h4471dwhqvri5-r-nearfar-1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/5lb0grp4z9b69zj3b53h4471dwhqvri5-r-nearfar-1.3

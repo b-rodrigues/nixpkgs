@@ -1,0 +1,136 @@
+these 4 derivations will be built:
+  /nix/store/40l59cdhy5d8dp9dmrxnga52k47rrfsj-r-tigris-2.1.drv
+  /nix/store/6zm8gk7m8jaydv6nvfxcgn1dwkqdwz3l-r-yyjsonr-0.1.20.drv
+  /nix/store/m7nf107anpyxv29a9ksxs32qmxzkw0k0-r-zctaCrosswalk-2.0.0.drv
+  /nix/store/7j78dif45dj46s2pqh32x9f8zax01l73-r-CDCPLACES-1.1.8.drv
+building '/nix/store/40l59cdhy5d8dp9dmrxnga52k47rrfsj-r-tigris-2.1.drv'...
+building '/nix/store/6zm8gk7m8jaydv6nvfxcgn1dwkqdwz3l-r-yyjsonr-0.1.20.drv'...
+building '/nix/store/m7nf107anpyxv29a9ksxs32qmxzkw0k0-r-zctaCrosswalk-2.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/frd9kaz310slzjsfqvg4qr0s813bk0kn-tigris_2.1.tar.gz
+source root is tigris
+setting SOURCE_DATE_EPOCH to timestamp 1706113802 of file tigris/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/hsv60qkbmrgdb5i1yp6r5ijjffbwfk62-yyjsonr_0.1.20.tar.gz
+source root is yyjsonr
+setting SOURCE_DATE_EPOCH to timestamp 1712753402 of file yyjsonr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tigris’ ...
+** package ‘tigris’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+* installing *source* package ‘yyjsonr’ ...
+unpacking source archive /nix/store/0hd8d4jbar394qnxxjkrysdpmwb7qmik-zctaCrosswalk_2.0.0.tar.gz
+** package ‘yyjsonr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+source root is zctaCrosswalk
+setting SOURCE_DATE_EPOCH to timestamp 1681912802 of file zctaCrosswalk/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+using C compiler: ‘clang version 16.0.6’
+Running phase: configurePhase
+Running phase: buildPhase
+using SDK: ‘’
+Running phase: checkPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R-yyjson-parse.c -o R-yyjson-parse.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R-yyjson-serialize.c -o R-yyjson-serialize.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c geojson-parse.c -o geojson-parse.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c geojson-serialize.c -o geojson-serialize.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ndjson-parse.c -o ndjson-parse.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ndjson-serialize.c -o ndjson-serialize.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c utils.c -o utils.o
+Running phase: installPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c yyjson.c -o yyjson.o
+* installing *source* package ‘zctaCrosswalk’ ...
+** package ‘zctaCrosswalk’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** help
+*** installing help indices
+** testing if installed package can be loaded from final location
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package keeps a record of temporary installation path
+* DONE (zctaCrosswalk)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-zctaCrosswalk-2.0.0.drv-0/ in /nix/store/wgqwjv36swl3vwxwh9hxw4lbsv1g4frl-r-zctaCrosswalk-2.0.0...
+patching script interpreter paths in /nix/store/wgqwjv36swl3vwxwh9hxw4lbsv1g4frl-r-zctaCrosswalk-2.0.0
+rewriting symlink /nix/store/wgqwjv36swl3vwxwh9hxw4lbsv1g4frl-r-zctaCrosswalk-2.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/wgqwjv36swl3vwxwh9hxw4lbsv1g4frl-r-zctaCrosswalk-2.0.0
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tigris)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tigris-2.1.drv-0/ in /nix/store/pwvziripv81xmi18zvijzjin0bq9bfzq-r-tigris-2.1...
+patching script interpreter paths in /nix/store/pwvziripv81xmi18zvijzjin0bq9bfzq-r-tigris-2.1
+rewriting symlink /nix/store/pwvziripv81xmi18zvijzjin0bq9bfzq-r-tigris-2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/pwvziripv81xmi18zvijzjin0bq9bfzq-r-tigris-2.1
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o yyjsonr.so R-yyjson-parse.o R-yyjson-serialize.o geojson-parse.o geojson-serialize.o init.o ndjson-parse.o ndjson-serialize.o utils.o yyjson.o -lz -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/vqjm5910lqn24d2v6ks8rf0ldg5ib5j6-r-yyjsonr-0.1.20/library/00LOCK-yyjsonr/00new/yyjsonr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (yyjsonr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-yyjsonr-0.1.20.drv-0/ in /nix/store/vqjm5910lqn24d2v6ks8rf0ldg5ib5j6-r-yyjsonr-0.1.20...
+patching script interpreter paths in /nix/store/vqjm5910lqn24d2v6ks8rf0ldg5ib5j6-r-yyjsonr-0.1.20
+building '/nix/store/7j78dif45dj46s2pqh32x9f8zax01l73-r-CDCPLACES-1.1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sxlr4khik8cgc0ixv68qrn7yd4yqy94a-CDCPLACES_1.1.8.tar.gz
+source root is CDCPLACES
+setting SOURCE_DATE_EPOCH to timestamp 1726670402 of file CDCPLACES/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘CDCPLACES’ ...
+** package ‘CDCPLACES’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (CDCPLACES)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-CDCPLACES-1.1.8.drv-0/ in /nix/store/7zkqq2dyknn20ipa6zjxbgwpl2sx359j-r-CDCPLACES-1.1.8...
+patching script interpreter paths in /nix/store/7zkqq2dyknn20ipa6zjxbgwpl2sx359j-r-CDCPLACES-1.1.8
+rewriting symlink /nix/store/7zkqq2dyknn20ipa6zjxbgwpl2sx359j-r-CDCPLACES-1.1.8/nix-support/propagated-user-env-packages to be relative to /nix/store/7zkqq2dyknn20ipa6zjxbgwpl2sx359j-r-CDCPLACES-1.1.8

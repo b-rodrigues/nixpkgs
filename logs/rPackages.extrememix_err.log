@@ -1,0 +1,126 @@
+these 4 derivations will be built:
+  /nix/store/v6jqwagcz8azj9jwvrm9f482kv1j272p-r-revdbayes-1.5.5.drv
+  /nix/store/hpbscgq9pd33shh2lf007i7fbypx7faw-r-threshr-1.0.6.drv
+  /nix/store/qkm4y908nj9l92vbyc5j56m5s7kirpa4-extrememix_0.0.1.tar.gz.drv
+  /nix/store/n3m3f21dzda790vd9d1s8kwwk3ivrdha-r-extrememix-0.0.1.drv
+building '/nix/store/qkm4y908nj9l92vbyc5j56m5s7kirpa4-extrememix_0.0.1.tar.gz.drv'...
+building '/nix/store/v6jqwagcz8azj9jwvrm9f482kv1j272p-r-revdbayes-1.5.5.drv'...
+
+trying https://cran.r-project.org/src/contrib/extrememix_0.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/plna82smb3g7fp9cbkk9miz39j1ajvwn-revdbayes_1.5.5.tar.gz
+source root is revdbayes
+setting SOURCE_DATE_EPOCH to timestamp 1723998002 of file revdbayes/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100 1258k  100 1258k    0     0  3130k      0 --:--:-- --:--:-- --:--:-- 3123k
+* installing *source* package ‘revdbayes’ ...
+** package ‘revdbayes’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c posteriors_and_priors.cpp -o posteriors_and_priors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c user_priors.cpp -o user_priors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o revdbayes.so RcppExports.o posteriors_and_priors.o user_priors.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/03w69yvcvxym3lazj4k093sqx3w2pflq-r-revdbayes-1.5.5/library/00LOCK-revdbayes/00new/revdbayes/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (revdbayes)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-revdbayes-1.5.5.drv-0/ in /nix/store/03w69yvcvxym3lazj4k093sqx3w2pflq-r-revdbayes-1.5.5...
+patching script interpreter paths in /nix/store/03w69yvcvxym3lazj4k093sqx3w2pflq-r-revdbayes-1.5.5
+rewriting symlink /nix/store/03w69yvcvxym3lazj4k093sqx3w2pflq-r-revdbayes-1.5.5/nix-support/propagated-user-env-packages to be relative to /nix/store/03w69yvcvxym3lazj4k093sqx3w2pflq-r-revdbayes-1.5.5
+building '/nix/store/hpbscgq9pd33shh2lf007i7fbypx7faw-r-threshr-1.0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jsbj1ymb9f8aw0fnfwx71y1mp30rz3c5-threshr_1.0.6.tar.gz
+source root is threshr
+setting SOURCE_DATE_EPOCH to timestamp 1721250602 of file threshr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘threshr’ ...
+** package ‘threshr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (threshr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-threshr-1.0.6.drv-0/ in /nix/store/pa9g6jm31hdncpz7zj9109ksr30m8hp4-r-threshr-1.0.6...
+patching script interpreter paths in /nix/store/pa9g6jm31hdncpz7zj9109ksr30m8hp4-r-threshr-1.0.6
+rewriting symlink /nix/store/pa9g6jm31hdncpz7zj9109ksr30m8hp4-r-threshr-1.0.6/nix-support/propagated-user-env-packages to be relative to /nix/store/pa9g6jm31hdncpz7zj9109ksr30m8hp4-r-threshr-1.0.6
+building '/nix/store/n3m3f21dzda790vd9d1s8kwwk3ivrdha-r-extrememix-0.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kadnkzg4fzz9d86733wcbsgb9l5agrim-extrememix_0.0.1.tar.gz
+source root is extrememix
+setting SOURCE_DATE_EPOCH to timestamp 1728036603 of file extrememix/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘extrememix’ ...
+** package ‘extrememix’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c c_code.cpp -o c_code.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o extrememix.so RcppExports.o c_code.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9ld9g6b0r4lnhkrm0sakgs2nncc5jrhg-r-extrememix-0.0.1/library/00LOCK-extrememix/00new/extrememix/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (extrememix)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-extrememix-0.0.1.drv-0/ in /nix/store/9ld9g6b0r4lnhkrm0sakgs2nncc5jrhg-r-extrememix-0.0.1...
+patching script interpreter paths in /nix/store/9ld9g6b0r4lnhkrm0sakgs2nncc5jrhg-r-extrememix-0.0.1
+rewriting symlink /nix/store/9ld9g6b0r4lnhkrm0sakgs2nncc5jrhg-r-extrememix-0.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/9ld9g6b0r4lnhkrm0sakgs2nncc5jrhg-r-extrememix-0.0.1

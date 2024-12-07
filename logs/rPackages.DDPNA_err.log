@@ -1,0 +1,70 @@
+these 2 derivations will be built:
+  /nix/store/m9kbnnn8kbgj6gwjlg4481zljq6314bw-r-MEGENA-1.3.7.drv
+  /nix/store/is6wr9icmcg3yq79376k3m54fxwhrpgg-r-DDPNA-0.3.3.drv
+building '/nix/store/m9kbnnn8kbgj6gwjlg4481zljq6314bw-r-MEGENA-1.3.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/m64ga63r4kkxpcgac5wzpx8f0d0pxgac-MEGENA_1.3.7.tar.gz
+source root is MEGENA
+setting SOURCE_DATE_EPOCH to timestamp 1536606003 of file MEGENA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MEGENA’ ...
+** package ‘MEGENA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c planaritytest.cpp -o planaritytest.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MEGENA.so RcppExports.o planaritytest.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8h8ybf2gfd8j7vfja6frv0flrzywzqgk-r-MEGENA-1.3.7/library/00LOCK-MEGENA/00new/MEGENA/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MEGENA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MEGENA-1.3.7.drv-0/ in /nix/store/8h8ybf2gfd8j7vfja6frv0flrzywzqgk-r-MEGENA-1.3.7...
+patching script interpreter paths in /nix/store/8h8ybf2gfd8j7vfja6frv0flrzywzqgk-r-MEGENA-1.3.7
+rewriting symlink /nix/store/8h8ybf2gfd8j7vfja6frv0flrzywzqgk-r-MEGENA-1.3.7/nix-support/propagated-user-env-packages to be relative to /nix/store/8h8ybf2gfd8j7vfja6frv0flrzywzqgk-r-MEGENA-1.3.7
+building '/nix/store/is6wr9icmcg3yq79376k3m54fxwhrpgg-r-DDPNA-0.3.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/y02i9jh0f7n911lk2kf66r25lq1jvdhb-DDPNA_0.3.3.tar.gz
+source root is DDPNA
+setting SOURCE_DATE_EPOCH to timestamp 1710386415 of file DDPNA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘DDPNA’ ...
+** package ‘DDPNA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (DDPNA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-DDPNA-0.3.3.drv-0/ in /nix/store/0dkphgskp2nbflq9nyngqlydiawdc7dh-r-DDPNA-0.3.3...
+patching script interpreter paths in /nix/store/0dkphgskp2nbflq9nyngqlydiawdc7dh-r-DDPNA-0.3.3
+rewriting symlink /nix/store/0dkphgskp2nbflq9nyngqlydiawdc7dh-r-DDPNA-0.3.3/nix-support/propagated-user-env-packages to be relative to /nix/store/0dkphgskp2nbflq9nyngqlydiawdc7dh-r-DDPNA-0.3.3

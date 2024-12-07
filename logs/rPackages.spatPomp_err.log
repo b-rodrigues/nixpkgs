@@ -1,0 +1,58 @@
+these 2 derivations will be built:
+  /nix/store/qnchwf7npp30v86h4dpwqpabr05sj1hq-spatPomp_1.0.0.tar.gz.drv
+  /nix/store/jxmvhhq64rqxn44bfvahc58jikggs70z-r-spatPomp-1.0.0.drv
+building '/nix/store/qnchwf7npp30v86h4dpwqpabr05sj1hq-spatPomp_1.0.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/spatPomp_1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2631k  100 2631k    0     0  5307k      0 --:--:-- --:--:-- --:--:-- 5315k
+building '/nix/store/jxmvhhq64rqxn44bfvahc58jikggs70z-r-spatPomp-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/brcqjyic1si3is94s0fsg4f412fxj21m-spatPomp_1.0.0.tar.gz
+source root is spatPomp
+setting SOURCE_DATE_EPOCH to timestamp 1731616802 of file spatPomp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spatPomp’ ...
+** package ‘spatPomp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c abf.c -o abf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c abfir.c -o abfir.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bpfilter.c -o bpfilter.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dunit_measure.c -o dunit_measure.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c eunit_measure.c -o eunit_measure.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fcstsampvar.c -o fcstsampvar.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c girf.c -o girf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c munit_measure.c -o munit_measure.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c resample.c -o resample.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c runit_measure.c -o runit_measure.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/drbjxrzl0l43ci4w7w29jh1krw4wx97w-r-pomp-5.11/library/pomp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c vunit_measure.c -o vunit_measure.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spatPomp.so abf.o abfir.o bpfilter.o dunit_measure.o eunit_measure.o fcstsampvar.o girf.o init.o munit_measure.o resample.o runit_measure.o vunit_measure.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/g8qx2r82dy8kwj3gagmnrbjjl20jk5x4-r-spatPomp-1.0.0/library/00LOCK-spatPomp/00new/spatPomp/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spatPomp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spatPomp-1.0.0.drv-0/ in /nix/store/g8qx2r82dy8kwj3gagmnrbjjl20jk5x4-r-spatPomp-1.0.0...
+patching script interpreter paths in /nix/store/g8qx2r82dy8kwj3gagmnrbjjl20jk5x4-r-spatPomp-1.0.0
+rewriting symlink /nix/store/g8qx2r82dy8kwj3gagmnrbjjl20jk5x4-r-spatPomp-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/g8qx2r82dy8kwj3gagmnrbjjl20jk5x4-r-spatPomp-1.0.0

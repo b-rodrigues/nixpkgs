@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/mkd5mnaklycsalxhrx25m2vsnhnv943b-MSinference_0.2.1.tar.gz.drv
+  /nix/store/8s3hkx5mahsqifl9a0qhnk99wi3gnjnw-r-MSinference-0.2.1.drv
+building '/nix/store/mkd5mnaklycsalxhrx25m2vsnhnv943b-MSinference_0.2.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/MSinference_0.2.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  390k  100  390k    0     0  2013k      0 --:--:-- --:--:-- --:--:-- 2024k
+building '/nix/store/8s3hkx5mahsqifl9a0qhnk99wi3gnjnw-r-MSinference-0.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7fpq99xji88szifqx50nk6xl59igs0f7-MSinference_0.2.1.tar.gz
+source root is MSinference
+setting SOURCE_DATE_EPOCH to timestamp 1724232605 of file MSinference/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MSinference’ ...
+** package ‘MSinference’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c multiscale_stats.cpp -o multiscale_stats.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MSinference.so RcppExports.o multiscale_stats.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/za0hffgh6d4qdd9a6lb95klxa663267f-r-MSinference-0.2.1/library/00LOCK-MSinference/00new/MSinference/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MSinference)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MSinference-0.2.1.drv-0/ in /nix/store/za0hffgh6d4qdd9a6lb95klxa663267f-r-MSinference-0.2.1...
+patching script interpreter paths in /nix/store/za0hffgh6d4qdd9a6lb95klxa663267f-r-MSinference-0.2.1
+rewriting symlink /nix/store/za0hffgh6d4qdd9a6lb95klxa663267f-r-MSinference-0.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/za0hffgh6d4qdd9a6lb95klxa663267f-r-MSinference-0.2.1

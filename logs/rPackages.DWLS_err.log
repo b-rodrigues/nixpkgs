@@ -1,0 +1,63 @@
+these 2 derivations will be built:
+  /nix/store/k4rc1fh6nahypv5hadc4z5s42zayi3i8-r-SummarizedExperiment-1.0.2.drv
+  /nix/store/7zwrk3845k862n8c5fxfbis5jl5k7z1g-r-DWLS-0.1.0.drv
+building '/nix/store/k4rc1fh6nahypv5hadc4z5s42zayi3i8-r-SummarizedExperiment-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6c03p87qpf66zpw676xxyngd78w8qjlr-SummarizedExperiment_1.0.2.tar.gz
+source root is SummarizedExperiment
+setting SOURCE_DATE_EPOCH to timestamp 1451624571 of file SummarizedExperiment/inst/doc/SummarizedExperiment.html
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SummarizedExperiment’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Message d'avis :
+remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘GenomicRanges’ 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘GenomicRanges’
+** testing if installed package can be loaded from final location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘GenomicRanges’
+** testing if installed package keeps a record of temporary installation path
+* DONE (SummarizedExperiment)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SummarizedExperiment-1.0.2.drv-0/ in /nix/store/r52gf7wf7lmwks0g464wrv7n2849cfdx-r-SummarizedExperiment-1.0.2...
+patching script interpreter paths in /nix/store/r52gf7wf7lmwks0g464wrv7n2849cfdx-r-SummarizedExperiment-1.0.2
+rewriting symlink /nix/store/r52gf7wf7lmwks0g464wrv7n2849cfdx-r-SummarizedExperiment-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/r52gf7wf7lmwks0g464wrv7n2849cfdx-r-SummarizedExperiment-1.0.2
+building '/nix/store/7zwrk3845k862n8c5fxfbis5jl5k7z1g-r-DWLS-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pwk985i83svlsjvjhmk5a04vkk8c4855-DWLS_0.1.0.tar.gz
+source root is DWLS
+setting SOURCE_DATE_EPOCH to timestamp 1653384002 of file DWLS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘MAST’ is not available for package ‘DWLS’
+* removing ‘/nix/store/l0ws5mp1ixnw3s8yy0cd320nif2gf55a-r-DWLS-0.1.0/library/DWLS’
+error: builder for '/nix/store/7zwrk3845k862n8c5fxfbis5jl5k7z1g-r-DWLS-0.1.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/pwk985i83svlsjvjhmk5a04vkk8c4855-DWLS_0.1.0.tar.gz
+       > source root is DWLS
+       > setting SOURCE_DATE_EPOCH to timestamp 1653384002 of file DWLS/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘MAST’ is not available for package ‘DWLS’
+       > * removing ‘/nix/store/l0ws5mp1ixnw3s8yy0cd320nif2gf55a-r-DWLS-0.1.0/library/DWLS’
+       For full logs, run 'nix log /nix/store/7zwrk3845k862n8c5fxfbis5jl5k7z1g-r-DWLS-0.1.0.drv'.

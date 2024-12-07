@@ -1,0 +1,246 @@
+these 8 derivations will be built:
+  /nix/store/0gphal5r0n1ijm2wyhvxv2y4fasnbr37-r-profvis-0.4.0.drv
+  /nix/store/34bw0qiwxh365w10cdvmbkzi6cphw4ia-r-urlchecker-1.0.1.drv
+  /nix/store/75n5dfhg77zhqig5wfsrv9ymibagxfmd-r-xopen-1.0.1.drv
+  /nix/store/d1zabx82i5mlsx82wninqjlzdj9csssv-r-pkgdown-2.1.1.drv
+  /nix/store/jxldy3i8gwn255jdlnhwi5dxjfcccj26-r-rversions-2.1.2.drv
+  /nix/store/w5sv1f4hz0195rvb5b0xi6z4vlsi3y3v-r-rcmdcheck-1.4.0.drv
+  /nix/store/s66ia7nxfq97prv7ic7ckg3dzix1ixv5-r-devtools-2.4.5.drv
+  /nix/store/l4pgdgwxfqcfjyi0j7bh7fcdxwhc54kb-r-activPAL-0.1.3.drv
+building '/nix/store/d1zabx82i5mlsx82wninqjlzdj9csssv-r-pkgdown-2.1.1.drv'...
+building '/nix/store/0gphal5r0n1ijm2wyhvxv2y4fasnbr37-r-profvis-0.4.0.drv'...
+building '/nix/store/jxldy3i8gwn255jdlnhwi5dxjfcccj26-r-rversions-2.1.2.drv'...
+building '/nix/store/34bw0qiwxh365w10cdvmbkzi6cphw4ia-r-urlchecker-1.0.1.drv'...
+building '/nix/store/75n5dfhg77zhqig5wfsrv9ymibagxfmd-r-xopen-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/296q13hsmv7abqzaag9dzg414sbc2rki-pkgdown_2.1.1.tar.gz
+source root is pkgdown
+setting SOURCE_DATE_EPOCH to timestamp 1726611002 of file pkgdown/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pkgdown’ ...
+** package ‘pkgdown’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/w8j3fzhn1wqyd8j9vr05768bsx02k2i4-profvis_0.4.0.tar.gz
+source root is profvis
+setting SOURCE_DATE_EPOCH to timestamp 1726833010 of file profvis/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘profvis’ ...
+** package ‘profvis’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+Running phase: unpackPhase
+unpacking source archive /nix/store/by60fix70gv0m2xmd8sz04g0gn50kbxb-rversions_2.1.2.tar.gz
+source root is rversions
+setting SOURCE_DATE_EPOCH to timestamp 1661941802 of file rversions/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rversions’ ...
+** package ‘rversions’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+Running phase: unpackPhase
+unpacking source archive /nix/store/9ya2dw4g3qgm26dijk9d2vwza9jcdvkx-urlchecker_1.0.1.tar.gz
+source root is urlchecker
+setting SOURCE_DATE_EPOCH to timestamp 1638279602 of file urlchecker/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+using SDK: ‘’
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pause.c -o pause.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c profvis-init.c -o profvis-init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o profvis.so pause.o profvis-init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+Running phase: unpackPhase
+unpacking source archive /nix/store/7ai4ff9jkb86f7vqsh0islsnh4iq58ya-xopen_1.0.1.tar.gz
+source root is xopen
+setting SOURCE_DATE_EPOCH to timestamp 1714036202 of file xopen/MD5
+* installing *source* package ‘urlchecker’ ...
+Running phase: patchPhase
+** package ‘urlchecker’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: configurePhase
+Running phase: buildPhase
+installing to /nix/store/93axnx66bnahagx1h50syarafdv05fvk-r-profvis-0.4.0/library/00LOCK-profvis/00new/profvis/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘xopen’ ...
+** package ‘xopen’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** help
+*** installing help indices
+** testing if installed package can be loaded from temporary location
+** building package indices
+** testing if installed package can be loaded from temporary location
+** help
+** testing if installed package can be loaded from final location
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (urlchecker)
+Running phase: fixupPhase
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+checking for references to /private/tmp/nix-build-r-urlchecker-1.0.1.drv-0/ in /nix/store/d56fq93kcqvqhy1hvcsfxsdrj7va7jbd-r-urlchecker-1.0.1...
+patching script interpreter paths in /nix/store/d56fq93kcqvqhy1hvcsfxsdrj7va7jbd-r-urlchecker-1.0.1
+rewriting symlink /nix/store/d56fq93kcqvqhy1hvcsfxsdrj7va7jbd-r-urlchecker-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/d56fq93kcqvqhy1hvcsfxsdrj7va7jbd-r-urlchecker-1.0.1
+** testing if installed package keeps a record of temporary installation path
+* DONE (xopen)
+Running phase: fixupPhase
+** testing if installed package keeps a record of temporary installation path
+* DONE (rversions)
+checking for references to /private/tmp/nix-build-r-xopen-1.0.1.drv-0/ in /nix/store/k9m17wryy58wayqn1g5gy1vvqq176vd6-r-xopen-1.0.1...
+Running phase: fixupPhase
+patching script interpreter paths in /nix/store/k9m17wryy58wayqn1g5gy1vvqq176vd6-r-xopen-1.0.1
+/nix/store/k9m17wryy58wayqn1g5gy1vvqq176vd6-r-xopen-1.0.1/library/xopen/xdg-open: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+checking for references to /private/tmp/nix-build-r-rversions-2.1.2.drv-0/ in /nix/store/mxzap3z1xbv3ab580mf83i1lypzj490h-r-rversions-2.1.2...
+patching script interpreter paths in /nix/store/mxzap3z1xbv3ab580mf83i1lypzj490h-r-rversions-2.1.2
+rewriting symlink /nix/store/k9m17wryy58wayqn1g5gy1vvqq176vd6-r-xopen-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/k9m17wryy58wayqn1g5gy1vvqq176vd6-r-xopen-1.0.1
+rewriting symlink /nix/store/mxzap3z1xbv3ab580mf83i1lypzj490h-r-rversions-2.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/mxzap3z1xbv3ab580mf83i1lypzj490h-r-rversions-2.1.2
+building '/nix/store/w5sv1f4hz0195rvb5b0xi6z4vlsi3y3v-r-rcmdcheck-1.4.0.drv'...
+** checking absolute paths in shared objects and dynamic libraries
+Running phase: unpackPhase
+unpacking source archive /nix/store/188r7m3qqcaygqjvbyinzlwzaiwqx2f2-rcmdcheck_1.4.0.tar.gz
+source root is rcmdcheck
+setting SOURCE_DATE_EPOCH to timestamp 1632755402 of file rcmdcheck/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+** testing if installed package can be loaded from final location
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rcmdcheck’ ...
+** package ‘rcmdcheck’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** testing if installed package keeps a record of temporary installation path
+* DONE (profvis)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-profvis-0.4.0.drv-9/ in /nix/store/93axnx66bnahagx1h50syarafdv05fvk-r-profvis-0.4.0...
+patching script interpreter paths in /nix/store/93axnx66bnahagx1h50syarafdv05fvk-r-profvis-0.4.0
+rewriting symlink /nix/store/93axnx66bnahagx1h50syarafdv05fvk-r-profvis-0.4.0/nix-support/propagated-user-env-packages to be relative to /nix/store/93axnx66bnahagx1h50syarafdv05fvk-r-profvis-0.4.0
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rcmdcheck)
+Running phase: fixupPhase
+** testing if installed package keeps a record of temporary installation path
+checking for references to /private/tmp/nix-build-r-rcmdcheck-1.4.0.drv-0/ in /nix/store/lfifj0nq953ifkgbxiyr3zinibz8hans-r-rcmdcheck-1.4.0...
+* DONE (pkgdown)
+patching script interpreter paths in /nix/store/lfifj0nq953ifkgbxiyr3zinibz8hans-r-rcmdcheck-1.4.0
+Running phase: fixupPhase
+rewriting symlink /nix/store/lfifj0nq953ifkgbxiyr3zinibz8hans-r-rcmdcheck-1.4.0/nix-support/propagated-user-env-packages to be relative to /nix/store/lfifj0nq953ifkgbxiyr3zinibz8hans-r-rcmdcheck-1.4.0
+checking for references to /private/tmp/nix-build-r-pkgdown-2.1.1.drv-0/ in /nix/store/pmzaj2vcdb5yb6dpcngyl18sd0944g6y-r-pkgdown-2.1.1...
+patching script interpreter paths in /nix/store/pmzaj2vcdb5yb6dpcngyl18sd0944g6y-r-pkgdown-2.1.1
+rewriting symlink /nix/store/pmzaj2vcdb5yb6dpcngyl18sd0944g6y-r-pkgdown-2.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/pmzaj2vcdb5yb6dpcngyl18sd0944g6y-r-pkgdown-2.1.1
+building '/nix/store/s66ia7nxfq97prv7ic7ckg3dzix1ixv5-r-devtools-2.4.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6n1r4dz72zwvb3z3xxyygzws3hfjgqik-devtools_2.4.5.tar.gz
+source root is devtools
+setting SOURCE_DATE_EPOCH to timestamp 1665508356 of file devtools/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘devtools’ ...
+** package ‘devtools’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (devtools)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-devtools-2.4.5.drv-0/ in /nix/store/r00s6d44zq4b5yvfrnalxdp08xnc3ji1-r-devtools-2.4.5...
+patching script interpreter paths in /nix/store/r00s6d44zq4b5yvfrnalxdp08xnc3ji1-r-devtools-2.4.5
+rewriting symlink /nix/store/r00s6d44zq4b5yvfrnalxdp08xnc3ji1-r-devtools-2.4.5/nix-support/propagated-user-env-packages to be relative to /nix/store/r00s6d44zq4b5yvfrnalxdp08xnc3ji1-r-devtools-2.4.5
+building '/nix/store/l4pgdgwxfqcfjyi0j7bh7fcdxwhc54kb-r-activPAL-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/85jwxp17l8vd8kwl9j0j3r1hsvg60r87-activPAL_0.1.3.tar.gz
+source root is activPAL
+setting SOURCE_DATE_EPOCH to timestamp 1563449403 of file activPAL/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘activPAL’ ...
+** package ‘activPAL’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (activPAL)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-activPAL-0.1.3.drv-0/ in /nix/store/3w9sjvaymjmzfn61jgp45fhppm2989rc-r-activPAL-0.1.3...
+patching script interpreter paths in /nix/store/3w9sjvaymjmzfn61jgp45fhppm2989rc-r-activPAL-0.1.3
+rewriting symlink /nix/store/3w9sjvaymjmzfn61jgp45fhppm2989rc-r-activPAL-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/3w9sjvaymjmzfn61jgp45fhppm2989rc-r-activPAL-0.1.3

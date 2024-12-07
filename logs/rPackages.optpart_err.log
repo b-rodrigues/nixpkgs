@@ -1,0 +1,68 @@
+this derivation will be built:
+  /nix/store/9ja1qywvzr4bk0ys3yqqwmi9mdxrs4v9-r-optpart-3.0-3.drv
+this path will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/g9iz6fi0rl5my7914idhiwnbx1py8r3p-optpart_3.0-3.tar.gz
+copying path '/nix/store/g9iz6fi0rl5my7914idhiwnbx1py8r3p-optpart_3.0-3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9ja1qywvzr4bk0ys3yqqwmi9mdxrs4v9-r-optpart-3.0-3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g9iz6fi0rl5my7914idhiwnbx1py8r3p-optpart_3.0-3.tar.gz
+source root is optpart
+setting SOURCE_DATE_EPOCH to timestamp 1579453802 of file optpart/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘optpart’ ...
+** package ‘optpart’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  archi.f90 -o archi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  clcdev.f90 -o clcdev.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  clcdul.f90 -o clcdul.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  clique.f90 -o clique.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  gamma.f90 -o gamma.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  maxpact.f90 -o maxpact.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  optindval.f90 -o optindval.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  optpart.f90 -o optpart.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  optsil.f90 -o optsil.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  opttdev.f90 -o opttdev.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  permute.f90 -o permute.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c random.c -o random.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tabdev.f90 -o tabdev.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o optpart.so archi.o clcdev.o clcdul.o clique.o gamma.o maxpact.o optindval.o optpart.o optsil.o opttdev.o permute.o random.o tabdev.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _clcdev_: does not use standard frame
+ld: warning: could not create compact unwind for _optindval_: does not use standard frame
+ld: warning: could not create compact unwind for _optsil_: does not use standard frame
+ld: warning: could not create compact unwind for _opttdev_: does not use standard frame
+ld: warning: could not create compact unwind for _tabdev_: does not use standard frame
+ld: warning: could not create compact unwind for _clcdul_: registers 21 and 22 not saved contiguously in frame
+ld: warning: could not create compact unwind for _clique_: does not use standard frameld: warning: ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _deltam_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _optpart_: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+
+ld: warning: could not create compact unwind for _maxpact_: does not use standard frame
+installing to /nix/store/h7hxvhla0d4w64in83lbg71c7bdsrhrw-r-optpart-3.0-3/library/00LOCK-optpart/00new/optpart/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (optpart)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-optpart-3.0-3.drv-0/ in /nix/store/h7hxvhla0d4w64in83lbg71c7bdsrhrw-r-optpart-3.0-3...
+patching script interpreter paths in /nix/store/h7hxvhla0d4w64in83lbg71c7bdsrhrw-r-optpart-3.0-3
+rewriting symlink /nix/store/h7hxvhla0d4w64in83lbg71c7bdsrhrw-r-optpart-3.0-3/nix-support/propagated-user-env-packages to be relative to /nix/store/h7hxvhla0d4w64in83lbg71c7bdsrhrw-r-optpart-3.0-3

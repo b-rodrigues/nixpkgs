@@ -1,0 +1,67 @@
+these 2 derivations will be built:
+  /nix/store/30lh11yd1x64jggsxj1b04jpbfm9wh2b-r-PBSmodelling-2.69.3.drv
+  /nix/store/7cyvn6sgqh01hmqlc1s9rwbm9sanz8lk-r-PredictABEL-1.2-4.drv
+this path will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/37qa0m7d2dv00hdwmllklvpsib6pddhw-PredictABEL_1.2-4.tar.gz
+copying path '/nix/store/37qa0m7d2dv00hdwmllklvpsib6pddhw-PredictABEL_1.2-4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/30lh11yd1x64jggsxj1b04jpbfm9wh2b-r-PBSmodelling-2.69.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9pk5hm90m511v78j1pv4cz4ff7shfkg3-PBSmodelling_2.69.3.tar.gz
+source root is PBSmodelling
+setting SOURCE_DATE_EPOCH to timestamp 1699544405 of file PBSmodelling/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PBSmodelling’ ...
+** package ‘PBSmodelling’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fib.c -o fib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fib2.c -o fib2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c parser.c -o parser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PBSmodelling.so fib.o fib2.o init.o parser.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/gp0kbhkqsiqrzk4gfmjm6zp7nvqadz6j-r-PBSmodelling-2.69.3/library/00LOCK-PBSmodelling/00new/PBSmodelling/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 26690 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-PBSmodelling-2.69.3.drv-0/RtmpNqFcgv/file67de1a17384d'
+2024-11-27 04:15:58.235 R[26690:100760635] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+ERROR: lazy loading failed for package ‘PBSmodelling’
+* removing ‘/nix/store/gp0kbhkqsiqrzk4gfmjm6zp7nvqadz6j-r-PBSmodelling-2.69.3/library/PBSmodelling’
+error: builder for '/nix/store/30lh11yd1x64jggsxj1b04jpbfm9wh2b-r-PBSmodelling-2.69.3.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘PBSmodelling’ ...
+       > ** package ‘PBSmodelling’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fib.c -o fib.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fib2.c -o fib2.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c parser.c -o parser.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PBSmodelling.so fib.o fib2.o init.o parser.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > installing to /nix/store/gp0kbhkqsiqrzk4gfmjm6zp7nvqadz6j-r-PBSmodelling-2.69.3/library/00LOCK-PBSmodelling/00new/PBSmodelling/libs
+       > ** R
+       > ** data
+       > ** demo
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 26690 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-PBSmodelling-2.69.3.drv-0/RtmpNqFcgv/file67de1a17384d'
+       > 2024-11-27 04:15:58.235 R[26690:100760635] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+       > ERROR: lazy loading failed for package ‘PBSmodelling’
+       > * removing ‘/nix/store/gp0kbhkqsiqrzk4gfmjm6zp7nvqadz6j-r-PBSmodelling-2.69.3/library/PBSmodelling’
+       For full logs, run 'nix log /nix/store/30lh11yd1x64jggsxj1b04jpbfm9wh2b-r-PBSmodelling-2.69.3.drv'.
+error: 1 dependencies of derivation '/nix/store/7cyvn6sgqh01hmqlc1s9rwbm9sanz8lk-r-PredictABEL-1.2-4.drv' failed to build

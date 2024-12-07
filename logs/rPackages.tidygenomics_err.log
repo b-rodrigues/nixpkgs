@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/qmhg7szp69yk00mcx57hv9r6l4vkvnx4-r-tidygenomics-0.1.2.drv
+this path will be fetched (0.29 MiB download, 0.29 MiB unpacked):
+  /nix/store/lfrnp5baxw8hbpnvsq2y1dwbi0r4khqc-tidygenomics_0.1.2.tar.gz
+copying path '/nix/store/lfrnp5baxw8hbpnvsq2y1dwbi0r4khqc-tidygenomics_0.1.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qmhg7szp69yk00mcx57hv9r6l4vkvnx4-r-tidygenomics-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lfrnp5baxw8hbpnvsq2y1dwbi0r4khqc-tidygenomics_0.1.2.tar.gz
+source root is tidygenomics
+setting SOURCE_DATE_EPOCH to timestamp 1565265002 of file tidygenomics/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tidygenomics’ ...
+** package ‘tidygenomics’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cluster_interval.cpp -o cluster_interval.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tidygenomics_init.c -o tidygenomics_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tidygenomics.so RcppExports.o cluster_interval.o tidygenomics_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/m6kwj99lzi5yk6a833gbwzspvrgvywnk-r-tidygenomics-0.1.2/library/00LOCK-tidygenomics/00new/tidygenomics/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tidygenomics)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tidygenomics-0.1.2.drv-0/ in /nix/store/m6kwj99lzi5yk6a833gbwzspvrgvywnk-r-tidygenomics-0.1.2...
+patching script interpreter paths in /nix/store/m6kwj99lzi5yk6a833gbwzspvrgvywnk-r-tidygenomics-0.1.2
+rewriting symlink /nix/store/m6kwj99lzi5yk6a833gbwzspvrgvywnk-r-tidygenomics-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/m6kwj99lzi5yk6a833gbwzspvrgvywnk-r-tidygenomics-0.1.2

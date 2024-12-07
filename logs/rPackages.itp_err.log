@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/x377a92kl67fw0h7cd040a3cmhbmjbwx-r-itp-1.2.1.drv
+this path will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/a9v9f1hdzpp1h7cyridacr43palyfr9v-itp_1.2.1.tar.gz
+copying path '/nix/store/a9v9f1hdzpp1h7cyridacr43palyfr9v-itp_1.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x377a92kl67fw0h7cd040a3cmhbmjbwx-r-itp-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/a9v9f1hdzpp1h7cyridacr43palyfr9v-itp_1.2.1.tar.gz
+source root is itp
+setting SOURCE_DATE_EPOCH to timestamp 1701529202 of file itp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘itp’ ...
+** package ‘itp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c itp.cpp -o itp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c itp_c.cpp -o itp_c.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c user_fns.cpp -o user_fns.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o itp.so RcppExports.o itp.o itp_c.o user_fns.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8p7bq1m40sfc4kxmcab9wzhhjk7hklgy-r-itp-1.2.1/library/00LOCK-itp/00new/itp/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (itp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-itp-1.2.1.drv-0/ in /nix/store/8p7bq1m40sfc4kxmcab9wzhhjk7hklgy-r-itp-1.2.1...
+patching script interpreter paths in /nix/store/8p7bq1m40sfc4kxmcab9wzhhjk7hklgy-r-itp-1.2.1
+rewriting symlink /nix/store/8p7bq1m40sfc4kxmcab9wzhhjk7hklgy-r-itp-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/8p7bq1m40sfc4kxmcab9wzhhjk7hklgy-r-itp-1.2.1

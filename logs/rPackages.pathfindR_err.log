@@ -1,0 +1,66 @@
+these 2 derivations will be built:
+  /nix/store/4zvb6mfz0piqgpqx6kpp84vbc4qxp0kl-r-pathfindR.data-2.1.0.drv
+  /nix/store/fky04ixz3c294qr9qbw8jk7r3yqmkmr3-r-pathfindR-2.4.1.drv
+these 3 paths will be fetched (17.64 MiB download, 54.87 MiB unpacked):
+  /nix/store/pixyv0q2475vhpyazf4386w0xpmv2fhv-pathfindR.data_2.1.0.tar.gz
+  /nix/store/w5wlfykzixywxvk6690vd3v89vyclpnj-pathfindR_2.4.1.tar.gz
+  /nix/store/m1yjr3h5s0pc20vknl9ih1ywzrjzdvfq-zulu-ca-jdk-minimal-jre-21.0.4
+copying path '/nix/store/w5wlfykzixywxvk6690vd3v89vyclpnj-pathfindR_2.4.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/m1yjr3h5s0pc20vknl9ih1ywzrjzdvfq-zulu-ca-jdk-minimal-jre-21.0.4' from 'https://cache.nixos.org'...
+copying path '/nix/store/pixyv0q2475vhpyazf4386w0xpmv2fhv-pathfindR.data_2.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4zvb6mfz0piqgpqx6kpp84vbc4qxp0kl-r-pathfindR.data-2.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pixyv0q2475vhpyazf4386w0xpmv2fhv-pathfindR.data_2.1.0.tar.gz
+source root is pathfindR.data
+setting SOURCE_DATE_EPOCH to timestamp 1714258203 of file pathfindR.data/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pathfindR.data’ ...
+** package ‘pathfindR.data’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pathfindR.data)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pathfindR.data-2.1.0.drv-0/ in /nix/store/miycwwsq6gf8q6d86cjnzq72zif3jc62-r-pathfindR.data-2.1.0...
+patching script interpreter paths in /nix/store/miycwwsq6gf8q6d86cjnzq72zif3jc62-r-pathfindR.data-2.1.0
+building '/nix/store/fky04ixz3c294qr9qbw8jk7r3yqmkmr3-r-pathfindR-2.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/w5wlfykzixywxvk6690vd3v89vyclpnj-pathfindR_2.4.1.tar.gz
+source root is pathfindR
+setting SOURCE_DATE_EPOCH to timestamp 1714836605 of file pathfindR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘ggkegg’ is not available for package ‘pathfindR’
+* removing ‘/nix/store/a1g7jrwgcs20jdcxybclanrb7wa5wqnx-r-pathfindR-2.4.1/library/pathfindR’
+error: builder for '/nix/store/fky04ixz3c294qr9qbw8jk7r3yqmkmr3-r-pathfindR-2.4.1.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/w5wlfykzixywxvk6690vd3v89vyclpnj-pathfindR_2.4.1.tar.gz
+       > source root is pathfindR
+       > setting SOURCE_DATE_EPOCH to timestamp 1714836605 of file pathfindR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘ggkegg’ is not available for package ‘pathfindR’
+       > * removing ‘/nix/store/a1g7jrwgcs20jdcxybclanrb7wa5wqnx-r-pathfindR-2.4.1/library/pathfindR’
+       For full logs, run 'nix log /nix/store/fky04ixz3c294qr9qbw8jk7r3yqmkmr3-r-pathfindR-2.4.1.drv'.

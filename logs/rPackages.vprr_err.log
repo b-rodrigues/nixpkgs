@@ -1,0 +1,56 @@
+this derivation will be built:
+  /nix/store/lvakly3mbf7gn2972imqpaa1lw8065ay-r-vprr-0.2.3.drv
+this path will be fetched (3.27 MiB download, 3.28 MiB unpacked):
+  /nix/store/2j02vg3712v5b9318v0xdzg31xnan8hh-vprr_0.2.3.tar.gz
+copying path '/nix/store/2j02vg3712v5b9318v0xdzg31xnan8hh-vprr_0.2.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lvakly3mbf7gn2972imqpaa1lw8065ay-r-vprr-0.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2j02vg3712v5b9318v0xdzg31xnan8hh-vprr_0.2.3.tar.gz
+source root is vprr
+setting SOURCE_DATE_EPOCH to timestamp 1657635602 of file vprr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘vprr’ ...
+** package ‘vprr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Avis dans ctd_df_cols(ctd_files[i]) :
+  CTD data columns named based on defaults!
+Avis dans ctd_df_cols(ctd_files[i]) :
+  CTD data columns named based on defaults!
+✔ Setting active project to "/private/tmp/nix-build-r-vprr-0.2.3.drv-0/vprr".
+✔ Saving "ctd_dat_combine" to "data/ctd_dat_combine.rda".
+☐ Document your data (see <https://r-pkgs.org/data.html>).
+✔ Saving "roi_dat_combine" to "data/roi_dat_combine.rda".
+☐ Document your data (see <https://r-pkgs.org/data.html>).
+✔ Saving "roimeas_dat_combine" to "data/roimeas_dat_combine.rda".
+☐ Document your data (see <https://r-pkgs.org/data.html>).
+Joining with `by = join_by(time_ms)`
+Joining with `by = join_by(time_ms, conductivity, temperature, pressure,
+salinity, fluor_ref, fluorescence_mv, turbidity_ref, turbidity_mv, altitude_NA,
+day, hour, station, sigmaT, depth)`
+✔ Saving "ctd_roi_merge" to "data/ctd_roi_merge.rda".
+☐ Document your data (see <https://r-pkgs.org/data.html>).
+✔ Saving "ctd_roi_oce" to "data/ctd_roi_oce.rda".
+☐ Document your data (see <https://r-pkgs.org/data.html>).
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (vprr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-vprr-0.2.3.drv-0/ in /nix/store/0hhwzb4jiwsd784p8dxfly1wcf70bswc-r-vprr-0.2.3...
+patching script interpreter paths in /nix/store/0hhwzb4jiwsd784p8dxfly1wcf70bswc-r-vprr-0.2.3
+rewriting symlink /nix/store/0hhwzb4jiwsd784p8dxfly1wcf70bswc-r-vprr-0.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/0hhwzb4jiwsd784p8dxfly1wcf70bswc-r-vprr-0.2.3

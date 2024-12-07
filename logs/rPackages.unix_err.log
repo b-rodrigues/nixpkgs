@@ -1,0 +1,50 @@
+these 2 derivations will be built:
+  /nix/store/4smfm9yd419h4khir4nyi4i876nq824f-unix_1.5.9.tar.gz.drv
+  /nix/store/6p2ld81idnnp7rr9yi702w3vqmlppq7c-r-unix-1.5.9.drv
+building '/nix/store/4smfm9yd419h4khir4nyi4i876nq824f-unix_1.5.9.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/unix_1.5.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 20651  100 20651    0     0   190k      0 --:--:-- --:--:-- --:--:--  192k
+building '/nix/store/6p2ld81idnnp7rr9yi702w3vqmlppq7c-r-unix-1.5.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7d6g4jw8yqxfl4w9rdx4ir3sffq6ixan-unix_1.5.9.tar.gz
+source root is unix
+setting SOURCE_DATE_EPOCH to timestamp 1728033005 of file unix/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘unix’ ...
+** package ‘unix’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Building without AppArmor (Darwin)
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+rm -f unix.so chroot.o fork.o process.o register.o rlimit.o userinfo.o util.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSYS_BUILD_SAFE  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c chroot.c -o chroot.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSYS_BUILD_SAFE  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fork.c -o fork.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSYS_BUILD_SAFE  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c process.c -o process.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSYS_BUILD_SAFE  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c register.c -o register.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSYS_BUILD_SAFE  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rlimit.c -o rlimit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSYS_BUILD_SAFE  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c userinfo.c -o userinfo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DSYS_BUILD_SAFE  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c util.c -o util.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o unix.so chroot.o fork.o process.o register.o rlimit.o userinfo.o util.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/1gl7v4arwcjhf06qfdm98098v7j7n58l-r-unix-1.5.9/library/00LOCK-unix/00new/unix/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (unix)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-unix-1.5.9.drv-0/ in /nix/store/1gl7v4arwcjhf06qfdm98098v7j7n58l-r-unix-1.5.9...
+patching script interpreter paths in /nix/store/1gl7v4arwcjhf06qfdm98098v7j7n58l-r-unix-1.5.9

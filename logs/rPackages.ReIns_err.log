@@ -1,0 +1,50 @@
+this derivation will be built:
+  /nix/store/iy06m253cblg12r9xh2bghcdzbk7a9bj-r-ReIns-1.0.14.drv
+this path will be fetched (0.50 MiB download, 0.50 MiB unpacked):
+  /nix/store/qai6rqp3ampgndzqzpbq18ylp27ijm60-ReIns_1.0.14.tar.gz
+copying path '/nix/store/qai6rqp3ampgndzqzpbq18ylp27ijm60-ReIns_1.0.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/iy06m253cblg12r9xh2bghcdzbk7a9bj-r-ReIns-1.0.14.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qai6rqp3ampgndzqzpbq18ylp27ijm60-ReIns_1.0.14.tar.gz
+source root is ReIns
+setting SOURCE_DATE_EPOCH to timestamp 1699008008 of file ReIns/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ReIns’ ...
+** package ‘ReIns’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -fPIC  -g -O2   -c STDF.cpp -o STDF.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -fPIC  -g -O2   -c SpliceEM.cpp -o SpliceEM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -fPIC  -g -O2   -c SpliceEM_Estep.cpp -o SpliceEM_Estep.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -fPIC  -g -O2   -c SpliceEM_Mstep.cpp -o SpliceEM_Mstep.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -fPIC  -g -O2   -c SpliceEM_aux.cpp -o SpliceEM_aux.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ReIns.so RcppExports.o STDF.o SpliceEM.o SpliceEM_Estep.o SpliceEM_Mstep.o SpliceEM_aux.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/gva4xn0ymjnkanx4f2ji3w867s0sa1v7-r-ReIns-1.0.14/library/00LOCK-ReIns/00new/ReIns/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ReIns)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ReIns-1.0.14.drv-0/ in /nix/store/gva4xn0ymjnkanx4f2ji3w867s0sa1v7-r-ReIns-1.0.14...
+patching script interpreter paths in /nix/store/gva4xn0ymjnkanx4f2ji3w867s0sa1v7-r-ReIns-1.0.14
+rewriting symlink /nix/store/gva4xn0ymjnkanx4f2ji3w867s0sa1v7-r-ReIns-1.0.14/nix-support/propagated-user-env-packages to be relative to /nix/store/gva4xn0ymjnkanx4f2ji3w867s0sa1v7-r-ReIns-1.0.14

@@ -1,0 +1,52 @@
+this derivation will be built:
+  /nix/store/n10zy6y9krzm07k0rvyigkl2nbrfx22z-r-marquee-0.1.0.drv
+this path will be fetched (2.21 MiB download, 2.21 MiB unpacked):
+  /nix/store/q8q26ld5k37n1pbvmzmh6knhv19h11zq-marquee_0.1.0.tar.gz
+copying path '/nix/store/q8q26ld5k37n1pbvmzmh6knhv19h11zq-marquee_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/n10zy6y9krzm07k0rvyigkl2nbrfx22z-r-marquee-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q8q26ld5k37n1pbvmzmh6knhv19h11zq-marquee_0.1.0.tar.gz
+source root is marquee
+setting SOURCE_DATE_EPOCH to timestamp 1716913202 of file marquee/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘marquee’ ...
+** package ‘marquee’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpp11.cpp -o cpp11.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c marquee.cpp -o marquee.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c md4c.c -o md4c.o
+md4c.c:148:9: warning: 'OFF_MAX' macro redefined [-Wmacro-redefined]
+#define OFF_MAX     (sizeof(OFF) == 8 ? UINT64_MAX : UINT32_MAX)
+        ^
+/nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/limits.h:140:9: note: previous definition is here
+#define OFF_MAX         LLONG_MAX       /* max value for an off_t */
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o marquee.so cpp11.o marquee.o md4c.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pvnxgw24shgccfj6gxjr0jniw6i4r0z6-r-marquee-0.1.0/library/00LOCK-marquee/00new/marquee/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (marquee)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-marquee-0.1.0.drv-0/ in /nix/store/pvnxgw24shgccfj6gxjr0jniw6i4r0z6-r-marquee-0.1.0...
+patching script interpreter paths in /nix/store/pvnxgw24shgccfj6gxjr0jniw6i4r0z6-r-marquee-0.1.0
+rewriting symlink /nix/store/pvnxgw24shgccfj6gxjr0jniw6i4r0z6-r-marquee-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/pvnxgw24shgccfj6gxjr0jniw6i4r0z6-r-marquee-0.1.0

@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/f0x2r0a9xnghvi8b38yir2yzs9rjmfnk-r-plsmod-1.0.0.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/wmsxddh09pq07c0n4c3acg4b1i50apbd-plsmod_1.0.0.tar.gz
+copying path '/nix/store/wmsxddh09pq07c0n4c3acg4b1i50apbd-plsmod_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f0x2r0a9xnghvi8b38yir2yzs9rjmfnk-r-plsmod-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/wmsxddh09pq07c0n4c3acg4b1i50apbd-plsmod_1.0.0.tar.gz
+source root is plsmod
+setting SOURCE_DATE_EPOCH to timestamp 1662492002 of file plsmod/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘mixOmics’ is not available for package ‘plsmod’
+* removing ‘/nix/store/qjnbq3g8paa5k5q5s40x7hsip814s7b9-r-plsmod-1.0.0/library/plsmod’
+error: builder for '/nix/store/f0x2r0a9xnghvi8b38yir2yzs9rjmfnk-r-plsmod-1.0.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/wmsxddh09pq07c0n4c3acg4b1i50apbd-plsmod_1.0.0.tar.gz
+       > source root is plsmod
+       > setting SOURCE_DATE_EPOCH to timestamp 1662492002 of file plsmod/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘mixOmics’ is not available for package ‘plsmod’
+       > * removing ‘/nix/store/qjnbq3g8paa5k5q5s40x7hsip814s7b9-r-plsmod-1.0.0/library/plsmod’
+       For full logs, run 'nix log /nix/store/f0x2r0a9xnghvi8b38yir2yzs9rjmfnk-r-plsmod-1.0.0.drv'.

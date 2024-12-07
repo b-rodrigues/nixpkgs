@@ -1,0 +1,59 @@
+these 2 derivations will be built:
+  /nix/store/10lis4hzxwf27caclp3pxa8pnmzf4vzz-unrtf_1.4.7.tar.gz.drv
+  /nix/store/vfmpbpqraspqj673drbis8phchas74mg-r-unrtf-1.4.7.drv
+building '/nix/store/10lis4hzxwf27caclp3pxa8pnmzf4vzz-unrtf_1.4.7.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/unrtf_1.4.7.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 81825  100 81825    0     0   586k      0 --:--:-- --:--:-- --:--:--  583k
+building '/nix/store/vfmpbpqraspqj673drbis8phchas74mg-r-unrtf-1.4.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7rbjga6f49b5rk05gl5y7wkr4kxdk60k-unrtf_1.4.7.tar.gz
+source root is unrtf
+setting SOURCE_DATE_EPOCH to timestamp 1729984802 of file unrtf/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘unrtf’ ...
+** package ‘unrtf’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+rm -Rf libunrtf/attr.o libunrtf/convert.o libunrtf/error.o libunrtf/hash.o libunrtf/main.o libunrtf/malloc.o    libunrtf/my_iconv.o libunrtf/output.o libunrtf/parse.o libunrtf/path.o libunrtf/unicode.o libunrtf/user.o libunrtf/util.o libunrtf/word.o unrtf
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/attr.c -o libunrtf/attr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/convert.c -o libunrtf/convert.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/error.c -o libunrtf/error.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/hash.c -o libunrtf/hash.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/main.c -o libunrtf/main.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/malloc.c -o libunrtf/malloc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/my_iconv.c -o libunrtf/my_iconv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/output.c -o libunrtf/output.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/parse.c -o libunrtf/parse.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/path.c -o libunrtf/path.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/unicode.c -o libunrtf/unicode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/user.c -o libunrtf/user.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/util.c -o libunrtf/util.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibunrtf -DHAVE_CONFIG_H -DPKGDATADIR=\"../share\" -D__USE_MINGW_ACCESS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c libunrtf/word.c -o libunrtf/word.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -o unrtf libunrtf/attr.o libunrtf/convert.o libunrtf/error.o libunrtf/hash.o libunrtf/main.o libunrtf/malloc.o  libunrtf/my_iconv.o libunrtf/output.o libunrtf/parse.o libunrtf/path.o libunrtf/unicode.o libunrtf/user.o libunrtf/util.o libunrtf/word.o   -L/nix/store/bizz2sjb47iinc0zz19zmg2k9llk4mg7-pcre2-10.44/lib  -ldeflate -llzma -lbz2 -lz -ldl -lm -liconv -licuuc -licui18n
+mkdir -p ../inst/bin
+cp -f unrtf ../inst/bin/
+cp -Rf share ../inst/
+installing via 'install.libs.R' to /nix/store/rqpzn64aqlp0wlqkrin1xmds2sbni5f1-r-unrtf-1.4.7/library/00LOCK-unrtf/00new/unrtf
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (unrtf)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-unrtf-1.4.7.drv-0/ in /nix/store/rqpzn64aqlp0wlqkrin1xmds2sbni5f1-r-unrtf-1.4.7...
+patching script interpreter paths in /nix/store/rqpzn64aqlp0wlqkrin1xmds2sbni5f1-r-unrtf-1.4.7
+rewriting symlink /nix/store/rqpzn64aqlp0wlqkrin1xmds2sbni5f1-r-unrtf-1.4.7/nix-support/propagated-user-env-packages to be relative to /nix/store/rqpzn64aqlp0wlqkrin1xmds2sbni5f1-r-unrtf-1.4.7

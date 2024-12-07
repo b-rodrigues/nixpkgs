@@ -1,0 +1,50 @@
+this derivation will be built:
+  /nix/store/lfn9xbc8yhl5f1laik9a97mw3sq4d4a7-r-mcmcsae-0.7.7.drv
+this path will be fetched (0.32 MiB download, 0.32 MiB unpacked):
+  /nix/store/b3kqscvmnw9zscdd9pilx6ddscxbq7gr-mcmcsae_0.7.7.tar.gz
+copying path '/nix/store/b3kqscvmnw9zscdd9pilx6ddscxbq7gr-mcmcsae_0.7.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lfn9xbc8yhl5f1laik9a97mw3sq4d4a7-r-mcmcsae-0.7.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b3kqscvmnw9zscdd9pilx6ddscxbq7gr-mcmcsae_0.7.7.tar.gz
+source root is mcmcsae
+setting SOURCE_DATE_EPOCH to timestamp 1709005202 of file mcmcsae/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mcmcsae’ ...
+** package ‘mcmcsae’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DSTRICT_R_HEADERS -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DSTRICT_R_HEADERS -fPIC  -g -O2   -c TN.cpp -o TN.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DSTRICT_R_HEADERS -fPIC  -g -O2   -c c_export.cpp -o c_export.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c chMatrix.c -o chMatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mcmcsae_init.c -o mcmcsae_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DSTRICT_R_HEADERS -fPIC  -g -O2   -c random.cpp -o random.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DSTRICT_R_HEADERS -fPIC  -g -O2   -c speed_ups.cpp -o speed_ups.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -I'/nix/store/hwvm4m8dfrkrrfyqnmf275jlpk2warfp-r-GIGrvg-0.8/library/GIGrvg/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DSTRICT_R_HEADERS -fPIC  -g -O2   -c tabMatrix.cpp -o tabMatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mcmcsae.so RcppExports.o TN.o c_export.o chMatrix.o mcmcsae_init.o random.o speed_ups.o tabMatrix.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xlfqyv4zb8jr8ifd967lrkhs4h3jqkzr-r-mcmcsae-0.7.7/library/00LOCK-mcmcsae/00new/mcmcsae/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mcmcsae)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mcmcsae-0.7.7.drv-0/ in /nix/store/xlfqyv4zb8jr8ifd967lrkhs4h3jqkzr-r-mcmcsae-0.7.7...
+patching script interpreter paths in /nix/store/xlfqyv4zb8jr8ifd967lrkhs4h3jqkzr-r-mcmcsae-0.7.7
+rewriting symlink /nix/store/xlfqyv4zb8jr8ifd967lrkhs4h3jqkzr-r-mcmcsae-0.7.7/nix-support/propagated-user-env-packages to be relative to /nix/store/xlfqyv4zb8jr8ifd967lrkhs4h3jqkzr-r-mcmcsae-0.7.7

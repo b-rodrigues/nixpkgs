@@ -1,0 +1,45 @@
+these 2 derivations will be built:
+  /nix/store/fgmzbpfai0ciz5vjpljmmkp1k430bk2r-maxstablePCA_0.1.1.tar.gz.drv
+  /nix/store/h7v3b351rf1vijbisllwvkkhhvnnnmj2-r-maxstablePCA-0.1.1.drv
+building '/nix/store/fgmzbpfai0ciz5vjpljmmkp1k430bk2r-maxstablePCA_0.1.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/maxstablePCA_0.1.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 12270  100 12270    0     0   103k      0 --:--:-- --:--:-- --:--:--  104k
+building '/nix/store/h7v3b351rf1vijbisllwvkkhhvnnnmj2-r-maxstablePCA-0.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zx96sy4wm1p4pr0yq21p24h5bai3arfc-maxstablePCA_0.1.1.tar.gz
+source root is maxstablePCA
+setting SOURCE_DATE_EPOCH to timestamp 1725641402 of file maxstablePCA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘maxstablePCA’ ...
+** package ‘maxstablePCA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c maxmatmul.c -o maxmatmul.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c stabletaildep.c -o stabletaildep.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o maxstablePCA.so init.o maxmatmul.o stabletaildep.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/6dhmfpgjfcscyk09k93xvnky77zpmm6f-r-maxstablePCA-0.1.1/library/00LOCK-maxstablePCA/00new/maxstablePCA/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (maxstablePCA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-maxstablePCA-0.1.1.drv-0/ in /nix/store/6dhmfpgjfcscyk09k93xvnky77zpmm6f-r-maxstablePCA-0.1.1...
+patching script interpreter paths in /nix/store/6dhmfpgjfcscyk09k93xvnky77zpmm6f-r-maxstablePCA-0.1.1
+rewriting symlink /nix/store/6dhmfpgjfcscyk09k93xvnky77zpmm6f-r-maxstablePCA-0.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/6dhmfpgjfcscyk09k93xvnky77zpmm6f-r-maxstablePCA-0.1.1

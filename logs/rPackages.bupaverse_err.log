@@ -1,0 +1,109 @@
+these 4 derivations will be built:
+  /nix/store/262xaf852gxc123vkpdwf1rqirlh4y22-processmapR_0.5.5.tar.gz.drv
+  /nix/store/287m1r9f5ndjh8j765vyx2isyhjdaja2-r-processcheckR-0.1.4.drv
+  /nix/store/n3i5dxmvzna2qg9fyb0jb0558ka6mcm9-r-processmapR-0.5.5.drv
+  /nix/store/cgllbvy4qnvqgy08jiksqflsjq4vfann-r-bupaverse-0.1.0.drv
+building '/nix/store/287m1r9f5ndjh8j765vyx2isyhjdaja2-r-processcheckR-0.1.4.drv'...
+building '/nix/store/262xaf852gxc123vkpdwf1rqirlh4y22-processmapR_0.5.5.tar.gz.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/676k3jakma0ywjmvjs3qcdc0hpn51ma8-processcheckR_0.1.4.tar.gz
+source root is processcheckR
+setting SOURCE_DATE_EPOCH to timestamp 1664790008 of file processcheckR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+
+trying https://cran.r-project.org/src/contrib/processmapR_0.5.5.tar.gz
+Running phase: checkPhase
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: installPhase
+* installing *source* package ‘processcheckR’ ...
+** package ‘processcheckR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+100  807k  100  807k    0     0  2952k      0 --:--:-- --:--:-- --:--:-- 2957k
+building '/nix/store/n3i5dxmvzna2qg9fyb0jb0558ka6mcm9-r-processmapR-0.5.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/47jb41g0w5z6vajvpv68bqj0wx8q6j21-processmapR_0.5.5.tar.gz
+source root is processmapR
+** help
+setting SOURCE_DATE_EPOCH to timestamp 1725023402 of file processmapR/MD5
+Running phase: patchPhase
+*** installing help indices
+*** copying figures
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** building package indices
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+* installing *source* package ‘processmapR’ ...
+** package ‘processmapR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c count_precedence.cpp -o count_precedence.o
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (processcheckR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-processcheckR-0.1.4.drv-0/ in /nix/store/kzns48lbfh3g7dq6cajby9w4ywhxqfc6-r-processcheckR-0.1.4...
+patching script interpreter paths in /nix/store/kzns48lbfh3g7dq6cajby9w4ywhxqfc6-r-processcheckR-0.1.4
+rewriting symlink /nix/store/kzns48lbfh3g7dq6cajby9w4ywhxqfc6-r-processcheckR-0.1.4/nix-support/propagated-user-env-packages to be relative to /nix/store/kzns48lbfh3g7dq6cajby9w4ywhxqfc6-r-processcheckR-0.1.4
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o processmapR.so RcppExports.o count_precedence.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/p7wvnh7zf6ly700ms01v1450zr5wnnzg-r-processmapR-0.5.5/library/00LOCK-processmapR/00new/processmapR/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (processmapR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-processmapR-0.5.5.drv-0/ in /nix/store/p7wvnh7zf6ly700ms01v1450zr5wnnzg-r-processmapR-0.5.5...
+patching script interpreter paths in /nix/store/p7wvnh7zf6ly700ms01v1450zr5wnnzg-r-processmapR-0.5.5
+rewriting symlink /nix/store/p7wvnh7zf6ly700ms01v1450zr5wnnzg-r-processmapR-0.5.5/nix-support/propagated-user-env-packages to be relative to /nix/store/p7wvnh7zf6ly700ms01v1450zr5wnnzg-r-processmapR-0.5.5
+building '/nix/store/cgllbvy4qnvqgy08jiksqflsjq4vfann-r-bupaverse-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/wbdx7bsh2ngfbfsvdbm5ig8wksr6vcyq-bupaverse_0.1.0.tar.gz
+source root is bupaverse
+setting SOURCE_DATE_EPOCH to timestamp 1665073819 of file bupaverse/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘bupaverse’ ...
+** package ‘bupaverse’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bupaverse)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-bupaverse-0.1.0.drv-0/ in /nix/store/gwv7ifj22yqsfyy9r2ijsngjwhqw4f0i-r-bupaverse-0.1.0...
+patching script interpreter paths in /nix/store/gwv7ifj22yqsfyy9r2ijsngjwhqw4f0i-r-bupaverse-0.1.0
+rewriting symlink /nix/store/gwv7ifj22yqsfyy9r2ijsngjwhqw4f0i-r-bupaverse-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/gwv7ifj22yqsfyy9r2ijsngjwhqw4f0i-r-bupaverse-0.1.0

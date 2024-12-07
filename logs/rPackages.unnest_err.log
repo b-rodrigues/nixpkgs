@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/hj0siifb44snrm377d7sarzz03vilx4y-unnest_0.0.6.tar.gz.drv
+  /nix/store/csksri51jvcha11cvd7il5bjqf7bfjgs-r-unnest-0.0.6.drv
+building '/nix/store/hj0siifb44snrm377d7sarzz03vilx4y-unnest_0.0.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/unnest_0.0.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 42137  100 42137    0     0   298k      0 --:--:-- --:--:-- --:--:--  300k
+building '/nix/store/csksri51jvcha11cvd7il5bjqf7bfjgs-r-unnest-0.0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5fx0dfq8yc2pqqsnxg1layyd7rhy47im-unnest_0.0.6.tar.gz
+source root is unnest
+setting SOURCE_DATE_EPOCH to timestamp 1729372802 of file unnest/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘unnest’ ...
+** package ‘unnest’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Spec.cpp -o Spec.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c unnest.cpp -o unnest.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c utils.cpp -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o unnest.so Spec.o init.o unnest.o utils.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/q7b0aph78kjlh80ysa1m14h16bv7p8qh-r-unnest-0.0.6/library/00LOCK-unnest/00new/unnest/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (unnest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-unnest-0.0.6.drv-0/ in /nix/store/q7b0aph78kjlh80ysa1m14h16bv7p8qh-r-unnest-0.0.6...
+patching script interpreter paths in /nix/store/q7b0aph78kjlh80ysa1m14h16bv7p8qh-r-unnest-0.0.6

@@ -1,0 +1,55 @@
+these 2 derivations will be built:
+  /nix/store/vhgfb7g5wgh05dr5rhhh80ci5qllfmn9-LocalCop_0.0.2.tar.gz.drv
+  /nix/store/xdqg38km7hhqiv0hk24pw3yzngqzx37b-r-LocalCop-0.0.2.drv
+building '/nix/store/vhgfb7g5wgh05dr5rhhh80ci5qllfmn9-LocalCop_0.0.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/LocalCop_0.0.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  568k  100  568k    0     0  2568k      0 --:--:-- --:--:-- --:--:-- 2573k
+building '/nix/store/xdqg38km7hhqiv0hk24pw3yzngqzx37b-r-LocalCop-0.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fqk9vy9qw0xnyxpdkmilqb4cgj14pdnc-LocalCop_0.0.2.tar.gz
+source root is LocalCop
+setting SOURCE_DATE_EPOCH to timestamp 1726162863 of file LocalCop/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LocalCop’ ...
+** package ‘LocalCop’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c init_dummy_file.cpp -o init_dummy_file.o
+(cd TMB; /nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript \
+--no-save --no-restore compile.R '-I"../../inst/include"')
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-LocalCop-0.0.2.drv-0/LocalCop/src/TMB »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include" -I"/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_LocalCop_TMBExports  -DCPPAD_FRAMEWORK -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I"../../inst/include" -fPIC  -g -O2   -c LocalCop_TMBExports.cpp -o LocalCop_TMBExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LocalCop_TMBExports.so LocalCop_TMBExports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-LocalCop-0.0.2.drv-0/LocalCop/src/TMB »
+[1] TRUE
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LocalCop.so init_dummy_file.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ys4bga4z4a22s5ib6d8hhzn3b9r2643v-r-LocalCop-0.0.2/library/00LOCK-LocalCop/00new/LocalCop/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LocalCop)
+installPhase completed in 37 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LocalCop-0.0.2.drv-0/ in /nix/store/ys4bga4z4a22s5ib6d8hhzn3b9r2643v-r-LocalCop-0.0.2...
+patching script interpreter paths in /nix/store/ys4bga4z4a22s5ib6d8hhzn3b9r2643v-r-LocalCop-0.0.2
+rewriting symlink /nix/store/ys4bga4z4a22s5ib6d8hhzn3b9r2643v-r-LocalCop-0.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/ys4bga4z4a22s5ib6d8hhzn3b9r2643v-r-LocalCop-0.0.2

@@ -1,0 +1,49 @@
+this derivation will be built:
+  /nix/store/rkj0ysy13f3h8mny9sd4zsxrdvy7dh1p-r-MareyMap-1.3.7.drv
+this path will be fetched (0.90 MiB download, 0.90 MiB unpacked):
+  /nix/store/mfakwlg42pc9qaxa1s3dkiwznd6k1cx2-MareyMap_1.3.7.tar.gz
+copying path '/nix/store/mfakwlg42pc9qaxa1s3dkiwznd6k1cx2-MareyMap_1.3.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rkj0ysy13f3h8mny9sd4zsxrdvy7dh1p-r-MareyMap-1.3.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mfakwlg42pc9qaxa1s3dkiwznd6k1cx2-MareyMap_1.3.7.tar.gz
+source root is MareyMap
+setting SOURCE_DATE_EPOCH to timestamp 1706042566 of file MareyMap/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MareyMap’ ...
+** package ‘MareyMap’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 36618 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-MareyMap-1.3.7.drv-0/RtmpsVDMQO/file8f053e9797cc'
+ERROR: lazy loading failed for package ‘MareyMap’
+* removing ‘/nix/store/030hsfx40fg1r2k29krj5np23j6kj2cz-r-MareyMap-1.3.7/library/MareyMap’
+error: builder for '/nix/store/rkj0ysy13f3h8mny9sd4zsxrdvy7dh1p-r-MareyMap-1.3.7.drv' failed with exit code 1;
+       last 20 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/mfakwlg42pc9qaxa1s3dkiwznd6k1cx2-MareyMap_1.3.7.tar.gz
+       > source root is MareyMap
+       > setting SOURCE_DATE_EPOCH to timestamp 1706042566 of file MareyMap/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘MareyMap’ ...
+       > ** package ‘MareyMap’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 36618 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-MareyMap-1.3.7.drv-0/RtmpsVDMQO/file8f053e9797cc'
+       > ERROR: lazy loading failed for package ‘MareyMap’
+       > * removing ‘/nix/store/030hsfx40fg1r2k29krj5np23j6kj2cz-r-MareyMap-1.3.7/library/MareyMap’
+       For full logs, run 'nix log /nix/store/rkj0ysy13f3h8mny9sd4zsxrdvy7dh1p-r-MareyMap-1.3.7.drv'.

@@ -1,0 +1,153 @@
+these 5 derivations will be built:
+  /nix/store/ldbqfcnj1v0dfxnwhc05zdams7xvwwz3-r-tis-1.39.drv
+  /nix/store/r3ld8gzn7xx47f0fx6zgqlkbmcb5jqkv-r-Ecfun-0.3-6.drv
+  /nix/store/ckx664wax465lc89pzsb8gy07wrfbx3i-r-Ecdat-0.4-2.drv
+  /nix/store/8jllzn9lmvav98841f1kyyfjbsdkg1ag-r-DWreg-2.0.drv
+  /nix/store/8ybz3sdf61xxwbrrngswf6di1b5bl6xs-r-BDWreg-1.3.0.drv
+building '/nix/store/ldbqfcnj1v0dfxnwhc05zdams7xvwwz3-r-tis-1.39.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sv24nrnf56yg19kd9sjypdvhjrnb1r7b-tis_1.39.tar.gz
+source root is tis
+setting SOURCE_DATE_EPOCH to timestamp 1632858602 of file tis/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tis’ ...
+** package ‘tis’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dgtsv.c -o dgtsv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lintegrate.c -o lintegrate.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tis_init.c -o tis_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tis.so dgtsv.o lintegrate.o tis_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/x0a3an9jqqhw6xzy6mr1mmk06aaa5gvk-r-tis-1.39/library/00LOCK-tis/00new/tis/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tis)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tis-1.39.drv-0/ in /nix/store/x0a3an9jqqhw6xzy6mr1mmk06aaa5gvk-r-tis-1.39...
+patching script interpreter paths in /nix/store/x0a3an9jqqhw6xzy6mr1mmk06aaa5gvk-r-tis-1.39
+building '/nix/store/r3ld8gzn7xx47f0fx6zgqlkbmcb5jqkv-r-Ecfun-0.3-6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gzw0jabkvm11bwl8kgls3y46mp7wmq9c-Ecfun_0.3-6.tar.gz
+source root is Ecfun
+setting SOURCE_DATE_EPOCH to timestamp 1731405602 of file Ecfun/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Ecfun’ ...
+** package ‘Ecfun’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Ecfun)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Ecfun-0.3-6.drv-0/ in /nix/store/s760sf6may1svx242hcv6dws3a353j37-r-Ecfun-0.3-6...
+patching script interpreter paths in /nix/store/s760sf6may1svx242hcv6dws3a353j37-r-Ecfun-0.3-6
+rewriting symlink /nix/store/s760sf6may1svx242hcv6dws3a353j37-r-Ecfun-0.3-6/nix-support/propagated-user-env-packages to be relative to /nix/store/s760sf6may1svx242hcv6dws3a353j37-r-Ecfun-0.3-6
+building '/nix/store/ckx664wax465lc89pzsb8gy07wrfbx3i-r-Ecdat-0.4-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g3l09aq6x8b3cfsk7adpzlpn3783imqf-Ecdat_0.4-2.tar.gz
+source root is Ecdat
+setting SOURCE_DATE_EPOCH to timestamp 1665879991 of file Ecdat/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Ecdat’ ...
+** package ‘Ecdat’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Ecdat)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Ecdat-0.4-2.drv-0/ in /nix/store/w92k8z3a9a9jbvywxivql69d6r1hx3bc-r-Ecdat-0.4-2...
+patching script interpreter paths in /nix/store/w92k8z3a9a9jbvywxivql69d6r1hx3bc-r-Ecdat-0.4-2
+rewriting symlink /nix/store/w92k8z3a9a9jbvywxivql69d6r1hx3bc-r-Ecdat-0.4-2/nix-support/propagated-user-env-packages to be relative to /nix/store/w92k8z3a9a9jbvywxivql69d6r1hx3bc-r-Ecdat-0.4-2
+building '/nix/store/8jllzn9lmvav98841f1kyyfjbsdkg1ag-r-DWreg-2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4d3363icr0pfcaw0c1icwsbbasd0s1mx-DWreg_2.0.tar.gz
+source root is DWreg
+setting SOURCE_DATE_EPOCH to timestamp 1468837571 of file DWreg/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘DWreg’ ...
+** package ‘DWreg’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (DWreg)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-DWreg-2.0.drv-0/ in /nix/store/izr8zx5pwwymdf1sm2248vdv9sb8ji27-r-DWreg-2.0...
+patching script interpreter paths in /nix/store/izr8zx5pwwymdf1sm2248vdv9sb8ji27-r-DWreg-2.0
+rewriting symlink /nix/store/izr8zx5pwwymdf1sm2248vdv9sb8ji27-r-DWreg-2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/izr8zx5pwwymdf1sm2248vdv9sb8ji27-r-DWreg-2.0
+building '/nix/store/8ybz3sdf61xxwbrrngswf6di1b5bl6xs-r-BDWreg-1.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xk9w3v375asmv693zriazbqxfg9av7fg-BDWreg_1.3.0.tar.gz
+source root is BDWreg
+setting SOURCE_DATE_EPOCH to timestamp 1706532002 of file BDWreg/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘BDWreg’ ...
+** package ‘BDWreg’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (BDWreg)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-BDWreg-1.3.0.drv-0/ in /nix/store/ajk3087grsgrb2kab50myg2h876wlhks-r-BDWreg-1.3.0...
+patching script interpreter paths in /nix/store/ajk3087grsgrb2kab50myg2h876wlhks-r-BDWreg-1.3.0
+rewriting symlink /nix/store/ajk3087grsgrb2kab50myg2h876wlhks-r-BDWreg-1.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/ajk3087grsgrb2kab50myg2h876wlhks-r-BDWreg-1.3.0

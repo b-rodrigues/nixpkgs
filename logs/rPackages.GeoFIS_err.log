@@ -1,0 +1,752 @@
+this derivation will be built:
+  /nix/store/i689lwbzx0yzfivpf3rznbqnxfybgsr0-r-GeoFIS-1.1.0.drv
+building '/nix/store/i689lwbzx0yzfivpf3rznbqnxfybgsr0-r-GeoFIS-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zd7ylxrs9x5zcw0zlrr9aqv0sv43kdr1-GeoFIS_1.1.0.tar.gz
+source root is GeoFIS
+setting SOURCE_DATE_EPOCH to timestamp 1725353410 of file GeoFIS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘GeoFIS’ ...
+** package ‘GeoFIS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c zoning_module.cpp -o zoning_module.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c zoning_wrapper.cpp -o zoning_wrapper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c util/double/double.cpp -o util/double/double.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c util/double/boost_double_comparison.cpp -o util/double/boost_double_comparison.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/voronoi/voronoi_process_impl.cpp -o geofis/process/zoning/voronoi/voronoi_process_impl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/voronoi/voronoi_process.cpp -o geofis/process/zoning/voronoi/voronoi_process.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/neighborhood/neighborhood_process_impl.cpp -o geofis/process/zoning/neighborhood/neighborhood_process_impl.o
+In file included from geofis/process/zoning/voronoi/voronoi_process.cpp:39:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process.hpp:42:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/move/unique_ptr.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from util/double/boost_double_comparison.cpp:39:
+In file included from ./util/double/boost_double_comparison.h:47:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/tools/floating_point_comparison.hpp:16:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/detail/global_typedef.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/utils/basic_cstring/basic_cstring.hpp:20:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/utils/basic_cstring/basic_cstring_fwd.hpp:19:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/detail/config.hpp:16:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from util/double/double.cpp:41:
+In file included from ./util/double/boost_double_comparison.h:47:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/tools/floating_point_comparison.hpp:16:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/detail/global_typedef.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/utils/basic_cstring/basic_cstring.hpp:20:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/utils/basic_cstring/basic_cstring_fwd.hpp:19:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/test/detail/config.hpp:16:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from geofis/process/zoning/voronoi/voronoi_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:45:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/functions.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/begin.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/config.hpp:14:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/detail/workaround.hpp:8:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/workaround.hpp:41:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from geofis/process/zoning/neighborhood/neighborhood_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:45:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/functions.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/begin.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/config.hpp:14:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/detail/workaround.hpp:8:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/workaround.hpp:41:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/neighborhood/neighborhood_process.cpp -o geofis/process/zoning/neighborhood/neighborhood_process.o
+In file included from geofis/process/zoning/neighborhood/neighborhood_process.cpp:39:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process.hpp:42:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/move/unique_ptr.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/fusion/fusion_process_impl.cpp -o geofis/process/zoning/fusion/fusion_process_impl.o
+In file included from geofis/process/zoning/voronoi/voronoi_process.cpp:39:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process.hpp:43:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/voronoi/voronoi_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/neighborhood/neighborhood_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from zoning_wrapper.cpp:39:
+In file included from ./zoning_wrapper.h:43:
+In file included from ./geofis/process/zoning/zoning_process.hpp:42:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/move/unique_ptr.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from zoning_module.cpp:40:
+In file included from ./util/functional/maximum.hpp:46:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/algorithm/max_element.hpp:13:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/concept_check.hpp:20:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/concept/assert.hpp:7:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from geofis/process/zoning/voronoi/voronoi_process.cpp:39:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process.hpp:43:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from geofis/process/zoning/neighborhood/neighborhood_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from geofis/process/zoning/voronoi/voronoi_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/voronoi/voronoi_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from geofis/process/zoning/fusion/fusion_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/fusion/fusion_process_impl.hpp:43:
+In file included from ./geofis/process/zoning/fusion/fusion_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:45:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/functions.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/begin.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/config.hpp:14:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/detail/workaround.hpp:8:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/workaround.hpp:41:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/fusion/fusion_process.cpp -o geofis/process/zoning/fusion/fusion_process.o
+In file included from zoning_module.cpp:47:
+In file included from ./geofis/algorithm/zoning/merge/area/area_merge.hpp:43:
+In file included from ./geofis/geometry/area/geometry_area.hpp:42:
+In file included from ./geofis/geometry/area/geometry_area_traits.hpp:42:
+In file included from ./CGAL/Polygon_2.h:25:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from zoning_wrapper.cpp:39:
+In file included from ./zoning_wrapper.h:43:
+In file included from ./geofis/process/zoning/zoning_process.hpp:43:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/fusion/fusion_process.cpp:39:
+In file included from ./geofis/process/zoning/fusion/fusion_process.hpp:42:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/move/unique_ptr.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from zoning_wrapper.cpp:39:
+In file included from ./zoning_wrapper.h:43:
+In file included from ./geofis/process/zoning/zoning_process.hpp:43:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from geofis/process/zoning/neighborhood/neighborhood_process.cpp:39:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process.hpp:43:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/fusion/fusion_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/fusion/fusion_process_impl.hpp:43:
+In file included from ./geofis/process/zoning/fusion/fusion_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/neighborhood/neighborhood_process.cpp:39:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process.hpp:43:
+In file included from ./geofis/process/zoning/neighborhood/neighborhood_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from zoning_module.cpp:48:
+In file included from ./zoning_wrapper.h:43:
+In file included from ./geofis/process/zoning/zoning_process.hpp:43:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from geofis/process/zoning/fusion/fusion_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/fusion/fusion_process_impl.hpp:43:
+In file included from ./geofis/process/zoning/fusion/fusion_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from geofis/process/zoning/fusion/fusion_process.cpp:39:
+In file included from ./geofis/process/zoning/fusion/fusion_process.hpp:43:
+In file included from ./geofis/process/zoning/fusion/fusion_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/fusion/fusion_process.cpp:39:
+In file included from ./geofis/process/zoning/fusion/fusion_process.hpp:43:
+In file included from ./geofis/process/zoning/fusion/fusion_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+4 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/merge/merge_process_impl.cpp -o geofis/process/zoning/merge/merge_process_impl.o
+In file included from geofis/process/zoning/merge/merge_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/merge/merge_process_impl.hpp:43:
+In file included from ./geofis/process/zoning/merge/merge_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:45:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/functions.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/begin.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/config.hpp:14:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/detail/workaround.hpp:8:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/workaround.hpp:41:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+4 warnings generated.
+In file included from geofis/process/zoning/merge/merge_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/merge/merge_process_impl.hpp:43:
+In file included from ./geofis/process/zoning/merge/merge_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/merge/merge_process.cpp -o geofis/process/zoning/merge/merge_process.o
+In file included from geofis/process/zoning/merge/merge_process.cpp:39:
+In file included from ./geofis/process/zoning/merge/merge_process.hpp:42:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/move/unique_ptr.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from geofis/process/zoning/merge/merge_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/merge/merge_process_impl.hpp:43:
+In file included from ./geofis/process/zoning/merge/merge_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+4 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/zoning_process_impl.cpp -o geofis/process/zoning/zoning_process_impl.o
+In file included from geofis/process/zoning/merge/merge_process.cpp:39:
+In file included from ./geofis/process/zoning/merge/merge_process.hpp:43:
+In file included from ./geofis/process/zoning/merge/merge_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/merge/merge_process.cpp:39:
+In file included from ./geofis/process/zoning/merge/merge_process.hpp:43:
+In file included from ./geofis/process/zoning/merge/merge_process_traits.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+In file included from geofis/process/zoning/zoning_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/zoning_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:45:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/functions.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/begin.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/range/config.hpp:14:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/detail/workaround.hpp:8:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/workaround.hpp:41:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from geofis/process/zoning/zoning_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/zoning_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/zoning_process_impl.cpp:39:
+In file included from ./geofis/process/zoning/zoning_process_impl.hpp:42:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+4 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -DBOOST_NO_AUTO_PTR -DBOOST_ALLOW_DEPRECATED_HEADERS -DBOOST_MP_DISABLE_DEPRECATE_03_WARNING -DBOOST_MATH_DISABLE_DEPRECATED_03_WARNING -DBOOST_DISABLE_ASSERTS -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON -DR_PACKAGE -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geofis/process/zoning/zoning_process.cpp -o geofis/process/zoning/zoning_process.o
+In file included from geofis/process/zoning/zoning_process.cpp:39:
+In file included from ./geofis/process/zoning/zoning_process.hpp:42:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/move/unique_ptr.hpp:15:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config.hpp:48:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/config/stdlib/libcpp.hpp:98:11: warning: 'BOOST_NO_AUTO_PTR' macro redefined [-Wmacro-redefined]
+#  define BOOST_NO_AUTO_PTR
+          ^
+<command line>:3:9: note: previous definition is here
+#define BOOST_NO_AUTO_PTR 1
+        ^
+In file included from geofis/process/zoning/zoning_process.cpp:39:
+In file included from ./geofis/process/zoning/zoning_process.hpp:43:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:21:
+In file included from ./CGAL/config.h:161:
+./CGAL/internal/enable_third_party_libraries.h:30:6: warning: "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose." [-W#warnings]
+#    warning "<gmp.h> cannot be found. Less efficient number types will be used instead. Define CGAL_NO_GMP=1 if that is on purpose."
+     ^
+In file included from geofis/process/zoning/zoning_process.cpp:39:
+In file included from ./geofis/process/zoning/zoning_process.hpp:43:
+In file included from ./geofis/process/zoning/zoning_process_traits.hpp:48:
+In file included from ./geofis/algorithm/zoning/geometry/zoning_geometry_traits.hpp:42:
+In file included from ./CGAL/Exact_predicates_exact_constructions_kernel.h:20:
+In file included from ./CGAL/Simple_cartesian.h:20:
+In file included from ./CGAL/Cartesian/Cartesian_base.h:20:
+In file included from ./CGAL/basic.h:33:
+In file included from ./CGAL/number_type_basic.h:49:
+./CGAL/FPU.h:481:21: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+    CGAL_IA_GETFPCW(cw);
+                    ^
+./CGAL/FPU.h:481:5: note: use constraint modifier "w"
+    CGAL_IA_GETFPCW(cw);
+    ^
+./CGAL/FPU.h:453:48: note: expanded from macro 'CGAL_IA_GETFPCW'
+#define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+                                               ^
+./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+  CGAL_IA_SETFPCW(cw);
+                  ^
+./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+  CGAL_IA_SETFPCW(cw);
+  ^
+./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+#define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+                                                     ^
+4 warnings generated.
+4 warnings generated.
+4 warnings generated.
+4 warnings generated.
+4 warnings generated.
+4 warnings generated.
+4 warnings generated.
+4 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o GeoFIS.so RcppExports.o zoning_module.o zoning_wrapper.o util/double/double.o util/double/boost_double_comparison.o geofis/process/zoning/voronoi/voronoi_process_impl.o geofis/process/zoning/voronoi/voronoi_process.o geofis/process/zoning/neighborhood/neighborhood_process_impl.o geofis/process/zoning/neighborhood/neighborhood_process.o geofis/process/zoning/fusion/fusion_process_impl.o geofis/process/zoning/fusion/fusion_process.o geofis/process/zoning/merge/merge_process_impl.o geofis/process/zoning/merge/merge_process.o geofis/process/zoning/zoning_process_impl.o geofis/process/zoning/zoning_process.o -L/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/lib -lmpfr -lgmp -lFisPro -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: library not found for -lmpfr
+clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/share/make/shlib.mk:10: GeoFIS.so] Error 1
+ERROR: compilation failed for package ‘GeoFIS’
+* removing ‘/nix/store/yf6ymcdlpcnksi7jxk4dx1piqb56l1f4-r-GeoFIS-1.1.0/library/GeoFIS’
+error: builder for '/nix/store/i689lwbzx0yzfivpf3rznbqnxfybgsr0-r-GeoFIS-1.1.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > #define CGAL_IA_GETFPCW(CW) asm volatile ("MRS %0, FPCR" : "=r" (CW))
+       >                                                ^
+       > ./CGAL/FPU.h:491:19: warning: value size does not match register size specified by the constraint and modifier [-Wasm-operand-widths]
+       >   CGAL_IA_SETFPCW(cw);
+       >                   ^
+       > ./CGAL/FPU.h:491:3: note: use constraint modifier "w"
+       >   CGAL_IA_SETFPCW(cw);
+       >   ^
+       > ./CGAL/FPU.h:452:54: note: expanded from macro 'CGAL_IA_SETFPCW'
+       > #define CGAL_IA_SETFPCW(CW) asm volatile ("MSR FPCR, %0" : :"r" (CW))
+       >                                                      ^
+       > 4 warnings generated.
+       > 4 warnings generated.
+       > 4 warnings generated.
+       > 4 warnings generated.
+       > 4 warnings generated.
+       > 4 warnings generated.
+       > 4 warnings generated.
+       > 4 warnings generated.
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o GeoFIS.so RcppExports.o zoning_module.o zoning_wrapper.o util/double/double.o util/double/boost_double_comparison.o geofis/process/zoning/voronoi/voronoi_process_impl.o geofis/process/zoning/voronoi/voronoi_process.o geofis/process/zoning/neighborhood/neighborhood_process_impl.o geofis/process/zoning/neighborhood/neighborhood_process.o geofis/process/zoning/fusion/fusion_process_impl.o geofis/process/zoning/fusion/fusion_process.o geofis/process/zoning/merge/merge_process_impl.o geofis/process/zoning/merge/merge_process.o geofis/process/zoning/zoning_process_impl.o geofis/process/zoning/zoning_process.o -L/nix/store/fh4lzv7q6q3vydbg69vzi7g2fzh4xgiv-r-FisPro-1.1.4/library/FisPro/lib -lmpfr -lgmp -lFisPro -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > ld: library not found for -lmpfr
+       > clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/share/make/shlib.mk:10: GeoFIS.so] Error 1
+       > ERROR: compilation failed for package ‘GeoFIS’
+       > * removing ‘/nix/store/yf6ymcdlpcnksi7jxk4dx1piqb56l1f4-r-GeoFIS-1.1.0/library/GeoFIS’
+       For full logs, run 'nix log /nix/store/i689lwbzx0yzfivpf3rznbqnxfybgsr0-r-GeoFIS-1.1.0.drv'.

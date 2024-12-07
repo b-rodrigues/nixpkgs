@@ -1,0 +1,98 @@
+these 4 derivations will be built:
+  /nix/store/7dp4sg9xxmfxjg2m07miw9dqwy0vzl5x-r-skellam-0.2.3.drv
+  /nix/store/k61b6s4wj65rszllv2nl80s72m6wisnl-r-MN-1.0.drv
+  /nix/store/sm3yf61vmaaaanwcskyy538qdbc4n6vk-MLE_1.2.tar.gz.drv
+  /nix/store/hlx6g3plq52cxi2paz6iaxam0jwnv8hk-r-MLE-1.2.drv
+these 2 paths will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/pczj4dfpvkghna3b9mvlfa1vz0bcyygw-MN_1.0.tar.gz
+  /nix/store/46dd9pdp3sfcd5aih7aj6gbzgviqi9gy-skellam_0.2.3.tar.gz
+copying path '/nix/store/pczj4dfpvkghna3b9mvlfa1vz0bcyygw-MN_1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/46dd9pdp3sfcd5aih7aj6gbzgviqi9gy-skellam_0.2.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/sm3yf61vmaaaanwcskyy538qdbc4n6vk-MLE_1.2.tar.gz.drv'...
+building '/nix/store/7dp4sg9xxmfxjg2m07miw9dqwy0vzl5x-r-skellam-0.2.3.drv'...
+
+trying https://cran.r-project.org/src/contrib/MLE_1.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+building '/nix/store/k61b6s4wj65rszllv2nl80s72m6wisnl-r-MN-1.0.drv'...
+100 22656  100 22656    0     0   202k      0 --:--:-- --:--:-- --:--:--  202k
+Running phase: unpackPhase
+unpacking source archive /nix/store/46dd9pdp3sfcd5aih7aj6gbzgviqi9gy-skellam_0.2.3.tar.gz
+source root is skellam
+setting SOURCE_DATE_EPOCH to timestamp 1711374002 of file skellam/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/pczj4dfpvkghna3b9mvlfa1vz0bcyygw-MN_1.0.tar.gz
+source root is MN
+setting SOURCE_DATE_EPOCH to timestamp 1716380410 of file MN/MD5
+Running phase: patchPhase
+* installing *source* package ‘skellam’ ...
+** package ‘skellam’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MN’ ...
+** package ‘MN’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from temporary location
+** testing if installed package keeps a record of temporary installation path
+* DONE (skellam)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-skellam-0.2.3.drv-0/ in /nix/store/hqwdv3hgjwa4ryc7kj5skqnksjhaf5nf-r-skellam-0.2.3...
+patching script interpreter paths in /nix/store/hqwdv3hgjwa4ryc7kj5skqnksjhaf5nf-r-skellam-0.2.3
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MN)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MN-1.0.drv-0/ in /nix/store/zafzmf0gl3m311268clc3crhlsi822ij-r-MN-1.0...
+patching script interpreter paths in /nix/store/zafzmf0gl3m311268clc3crhlsi822ij-r-MN-1.0
+rewriting symlink /nix/store/zafzmf0gl3m311268clc3crhlsi822ij-r-MN-1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/zafzmf0gl3m311268clc3crhlsi822ij-r-MN-1.0
+building '/nix/store/hlx6g3plq52cxi2paz6iaxam0jwnv8hk-r-MLE-1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ya9wa1prn3z2zbr89qjlzv8p8fy12fbl-MLE_1.2.tar.gz
+source root is MLE
+setting SOURCE_DATE_EPOCH to timestamp 1729723202 of file MLE/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MLE’ ...
+** package ‘MLE’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MLE)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MLE-1.2.drv-0/ in /nix/store/wx1r5w1d2j1bzhs2wsj5h111sl0lwwb6-r-MLE-1.2...
+patching script interpreter paths in /nix/store/wx1r5w1d2j1bzhs2wsj5h111sl0lwwb6-r-MLE-1.2
+rewriting symlink /nix/store/wx1r5w1d2j1bzhs2wsj5h111sl0lwwb6-r-MLE-1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/wx1r5w1d2j1bzhs2wsj5h111sl0lwwb6-r-MLE-1.2

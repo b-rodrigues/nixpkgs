@@ -1,0 +1,40 @@
+this derivation will be built:
+  /nix/store/h7iw36k9kalp2vxxa8868cmy1xgr40ad-r-incubate-1.3.0.drv
+this path will be fetched (0.23 MiB download, 0.23 MiB unpacked):
+  /nix/store/q54gw1vl9zkhj12m0z4s0578jp6pi7ls-incubate_1.3.0.tar.gz
+copying path '/nix/store/q54gw1vl9zkhj12m0z4s0578jp6pi7ls-incubate_1.3.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h7iw36k9kalp2vxxa8868cmy1xgr40ad-r-incubate-1.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q54gw1vl9zkhj12m0z4s0578jp6pi7ls-incubate_1.3.0.tar.gz
+source root is incubate
+setting SOURCE_DATE_EPOCH to timestamp 1723799402 of file incubate/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘incubate’ ...
+** package ‘incubate’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (incubate)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-incubate-1.3.0.drv-0/ in /nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0...
+patching script interpreter paths in /nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0
+/nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0/library/incubate/scripts/simul_test.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0/library/incubate/scripts/simul_bootstrap.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0/library/incubate/scripts/simul_confint.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0/library/incubate/scripts/gather_results.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+rewriting symlink /nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/q0p1fvqxgwcwbrkz1yvv9kq23ws8xlyk-r-incubate-1.3.0

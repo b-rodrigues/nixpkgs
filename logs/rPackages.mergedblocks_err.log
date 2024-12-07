@@ -1,0 +1,146 @@
+these 5 derivations will be built:
+  /nix/store/g4d7x97ffd85clvsgbgvpc93k26xypn2-mergedblocks_1.1.1.tar.gz.drv
+  /nix/store/ghw6kgqq2f5p81zbf5z9ix0y9pdll7sf-PwrGSD_2.3.8.tar.gz.drv
+  /nix/store/mfdw081pclzh94qvgf6ldnmx8gdzvswm-r-PwrGSD-2.3.8.drv
+  /nix/store/vg95qx6vaqg24rw91xsq59yr8abbifzp-r-randomizeR-3.0.2.drv
+  /nix/store/42ilixqixmcr8ahjcjcwkm3m5ln482bh-r-mergedblocks-1.1.1.drv
+this path will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/bg1dxlyhbxd3d059y9dik2m847n2m72n-randomizeR_3.0.2.tar.gz
+copying path '/nix/store/bg1dxlyhbxd3d059y9dik2m847n2m72n-randomizeR_3.0.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g4d7x97ffd85clvsgbgvpc93k26xypn2-mergedblocks_1.1.1.tar.gz.drv'...
+building '/nix/store/ghw6kgqq2f5p81zbf5z9ix0y9pdll7sf-PwrGSD_2.3.8.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/mergedblocks_1.1.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14348  100 14348    0     0   137k      0 --:--:-- --:--:-- --:--:--  138k
+
+trying https://cran.r-project.org/src/contrib/PwrGSD_2.3.8.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  672k  100  672k    0     0  2853k      0 --:--:-- --:--:-- --:--:-- 2849k
+building '/nix/store/mfdw081pclzh94qvgf6ldnmx8gdzvswm-r-PwrGSD-2.3.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jjpg8r7l513pb2qqqhpvj6cfkam3crxk-PwrGSD_2.3.8.tar.gz
+source root is PwrGSD
+setting SOURCE_DATE_EPOCH to timestamp 1728603002 of file PwrGSD/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PwrGSD’ ...
+** package ‘PwrGSD’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c AsyPwrGSD.c -o AsyPwrGSD.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Finv.c -o Finv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c SimPwrGSD.c -o SimPwrGSD.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c StCu2Bnds.c -o StCu2Bnds.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c WtdLogRank.c -o WtdLogRank.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c agghaz.c -o agghaz.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cmptpwrgsd.c -o cmptpwrgsd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cpblocked.c -o cpblocked.o
+AsyPwrGSD.c:255:20: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+      if((*(nbnd+1)==2)) *(pbold+1) = *bHay;
+          ~~~~~~~~~^~~
+AsyPwrGSD.c:255:20: note: remove extraneous parentheses around the comparison to silence this warning
+      if((*(nbnd+1)==2)) *(pbold+1) = *bHay;
+         ~         ^  ~
+AsyPwrGSD.c:255:20: note: use '=' to turn this equality comparison into an assignment
+      if((*(nbnd+1)==2)) *(pbold+1) = *bHay;
+                   ^~
+                   =
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c drift.c -o drift.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c driftfu.c -o driftfu.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c grpseqbnds.c -o grpseqbnds.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c htilde.c -o htilde.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c intsurvdiff.c -o intsurvdiff.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lookup.c -o lookup.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c myapprox.c -o myapprox.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mystack.c -o mystack.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mysurvfit.c -o mysurvfit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c projectend.c -o projectend.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rao-blackwell.c -o rao-blackwell.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c trand.c -o trand.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PwrGSD.so AsyPwrGSD.o Finv.o SimPwrGSD.o StCu2Bnds.o WtdLogRank.o agghaz.o cmptpwrgsd.o cpblocked.o drift.o driftfu.o grpseqbnds.o htilde.o intsurvdiff.o lookup.o myapprox.o mystack.o mysurvfit.o projectend.o rao-blackwell.o registerDynamicSymbol.o trand.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/f4limiv0g3hqhrsria378ynfnr5vlhxv-r-PwrGSD-2.3.8/library/00LOCK-PwrGSD/00new/PwrGSD/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PwrGSD)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PwrGSD-2.3.8.drv-0/ in /nix/store/f4limiv0g3hqhrsria378ynfnr5vlhxv-r-PwrGSD-2.3.8...
+patching script interpreter paths in /nix/store/f4limiv0g3hqhrsria378ynfnr5vlhxv-r-PwrGSD-2.3.8
+rewriting symlink /nix/store/f4limiv0g3hqhrsria378ynfnr5vlhxv-r-PwrGSD-2.3.8/nix-support/propagated-user-env-packages to be relative to /nix/store/f4limiv0g3hqhrsria378ynfnr5vlhxv-r-PwrGSD-2.3.8
+building '/nix/store/vg95qx6vaqg24rw91xsq59yr8abbifzp-r-randomizeR-3.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bg1dxlyhbxd3d059y9dik2m847n2m72n-randomizeR_3.0.2.tar.gz
+source root is randomizeR
+setting SOURCE_DATE_EPOCH to timestamp 1695066602 of file randomizeR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘randomizeR’ ...
+** package ‘randomizeR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (randomizeR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-randomizeR-3.0.2.drv-0/ in /nix/store/q0prh50isvz9q5w50g2q05v8anxzd4ma-r-randomizeR-3.0.2...
+patching script interpreter paths in /nix/store/q0prh50isvz9q5w50g2q05v8anxzd4ma-r-randomizeR-3.0.2
+rewriting symlink /nix/store/q0prh50isvz9q5w50g2q05v8anxzd4ma-r-randomizeR-3.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/q0prh50isvz9q5w50g2q05v8anxzd4ma-r-randomizeR-3.0.2
+building '/nix/store/42ilixqixmcr8ahjcjcwkm3m5ln482bh-r-mergedblocks-1.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/50sk1g01qwcn5vfg773fsij1wrpmwafm-mergedblocks_1.1.1.tar.gz
+source root is mergedblocks
+setting SOURCE_DATE_EPOCH to timestamp 1730791806 of file mergedblocks/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mergedblocks’ ...
+** package ‘mergedblocks’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mergedblocks)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mergedblocks-1.1.1.drv-0/ in /nix/store/w365whc6yc7h9nfsw0lwiqs6xydpkcrx-r-mergedblocks-1.1.1...
+patching script interpreter paths in /nix/store/w365whc6yc7h9nfsw0lwiqs6xydpkcrx-r-mergedblocks-1.1.1
+rewriting symlink /nix/store/w365whc6yc7h9nfsw0lwiqs6xydpkcrx-r-mergedblocks-1.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/w365whc6yc7h9nfsw0lwiqs6xydpkcrx-r-mergedblocks-1.1.1

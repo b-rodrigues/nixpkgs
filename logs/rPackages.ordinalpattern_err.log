@@ -1,0 +1,43 @@
+these 2 derivations will be built:
+  /nix/store/13mx91gbhaqdv04lx32g2l2c0gkzihck-ordinalpattern_0.2.6.tar.gz.drv
+  /nix/store/4v7fvggjdwlwkrpg1nji01ydpblac2pz-r-ordinalpattern-0.2.6.drv
+building '/nix/store/13mx91gbhaqdv04lx32g2l2c0gkzihck-ordinalpattern_0.2.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/ordinalpattern_0.2.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  9056  100  9056    0     0    97k      0 --:--:-- --:--:-- --:--:--   98k
+building '/nix/store/4v7fvggjdwlwkrpg1nji01ydpblac2pz-r-ordinalpattern-0.2.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qssp6icw4ma9vgbck2xmpx3sgvrs7005-ordinalpattern_0.2.6.tar.gz
+source root is ordinalpattern
+setting SOURCE_DATE_EPOCH to timestamp 1731328802 of file ordinalpattern/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ordinalpattern’ ...
+** package ‘ordinalpattern’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ordinalpattern.c -o ordinalpattern.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ordinalpattern.so ordinalpattern.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/0blm7wjq6m6n1ywnzbv46fz44x0rxqfn-r-ordinalpattern-0.2.6/library/00LOCK-ordinalpattern/00new/ordinalpattern/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ordinalpattern)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ordinalpattern-0.2.6.drv-0/ in /nix/store/0blm7wjq6m6n1ywnzbv46fz44x0rxqfn-r-ordinalpattern-0.2.6...
+patching script interpreter paths in /nix/store/0blm7wjq6m6n1ywnzbv46fz44x0rxqfn-r-ordinalpattern-0.2.6
+rewriting symlink /nix/store/0blm7wjq6m6n1ywnzbv46fz44x0rxqfn-r-ordinalpattern-0.2.6/nix-support/propagated-user-env-packages to be relative to /nix/store/0blm7wjq6m6n1ywnzbv46fz44x0rxqfn-r-ordinalpattern-0.2.6

@@ -1,0 +1,74 @@
+these 2 derivations will be built:
+  /nix/store/hjvxlrb9x2inc1mmlji6r2ifvj1v4kxn-r-SMUT-1.1.drv
+  /nix/store/0ah0k6wrxd5flsaxymgpd5w1whrnlljw-r-jewel-2.0.2.drv
+these 2 paths will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/jnb6fqc7bqn63v9vn04h6h1h84sza1zs-SMUT_1.1.tar.gz
+  /nix/store/mx2gwf9ml8xqryn7s1q2d4x20c6i3l13-jewel_2.0.2.tar.gz
+copying path '/nix/store/mx2gwf9ml8xqryn7s1q2d4x20c6i3l13-jewel_2.0.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/jnb6fqc7bqn63v9vn04h6h1h84sza1zs-SMUT_1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hjvxlrb9x2inc1mmlji6r2ifvj1v4kxn-r-SMUT-1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jnb6fqc7bqn63v9vn04h6h1h84sza1zs-SMUT_1.1.tar.gz
+source root is SMUT
+setting SOURCE_DATE_EPOCH to timestamp 1569300008 of file SMUT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SMUT’ ...
+** package ‘SMUT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c matrixproduct.cpp -o matrixproduct.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SMUT.so RcppExports.o matrixproduct.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/7cc9jjd3bdbx95ggajr4fc4sabi3lrck-r-SMUT-1.1/library/00LOCK-SMUT/00new/SMUT/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SMUT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SMUT-1.1.drv-0/ in /nix/store/7cc9jjd3bdbx95ggajr4fc4sabi3lrck-r-SMUT-1.1...
+patching script interpreter paths in /nix/store/7cc9jjd3bdbx95ggajr4fc4sabi3lrck-r-SMUT-1.1
+rewriting symlink /nix/store/7cc9jjd3bdbx95ggajr4fc4sabi3lrck-r-SMUT-1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/7cc9jjd3bdbx95ggajr4fc4sabi3lrck-r-SMUT-1.1
+building '/nix/store/0ah0k6wrxd5flsaxymgpd5w1whrnlljw-r-jewel-2.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mx2gwf9ml8xqryn7s1q2d4x20c6i3l13-jewel_2.0.2.tar.gz
+source root is jewel
+setting SOURCE_DATE_EPOCH to timestamp 1716412807 of file jewel/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘jewel’ ...
+** package ‘jewel’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (jewel)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-jewel-2.0.2.drv-0/ in /nix/store/y7hvf3rwi7b31xlb37wza04fy3d014a0-r-jewel-2.0.2...
+patching script interpreter paths in /nix/store/y7hvf3rwi7b31xlb37wza04fy3d014a0-r-jewel-2.0.2
+rewriting symlink /nix/store/y7hvf3rwi7b31xlb37wza04fy3d014a0-r-jewel-2.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/y7hvf3rwi7b31xlb37wza04fy3d014a0-r-jewel-2.0.2

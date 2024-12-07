@@ -1,0 +1,111 @@
+this derivation will be built:
+  /nix/store/fxxv216iaparpb8slh9hrnd1a8rhjl0z-r-hpa-1.3.3.drv
+this path will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/783a8ng86q4n21pjrjm1ia3m7524hlwy-hpa_1.3.3.tar.gz
+copying path '/nix/store/783a8ng86q4n21pjrjm1ia3m7524hlwy-hpa_1.3.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fxxv216iaparpb8slh9hrnd1a8rhjl0z-r-hpa-1.3.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/783a8ng86q4n21pjrjm1ia3m7524hlwy-hpa_1.3.3.tar.gz
+source root is hpa
+setting SOURCE_DATE_EPOCH to timestamp 1701241210 of file hpa/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hpa’ ...
+** package ‘hpa’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ParallelFunctions.cpp -o ParallelFunctions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hpa0.cpp -o hpa0.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hpaBinary.cpp -o hpaBinary.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hpaML.cpp -o hpaML.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hpaMain.cpp -o hpaMain.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hpaSelection.cpp -o hpaSelection.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hpaValidation.cpp -o hpaValidation.o
+In file included from hpa0.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+hpa0.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+hpaMain.cpp:6:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP
+        ^
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+hpaBinary.cpp:6:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP
+        ^
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+hpaSelection.cpp:7:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP
+        ^
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c normalMoments.cpp -o normalMoments.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c polynomialIndex.cpp -o polynomialIndex.o
+In file included from normalMoments.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+normalMoments.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c spline.cpp -o spline.o
+1 warning generated.
+polynomialIndex.cpp:3:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP
+        ^
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+spline.cpp:3:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP
+        ^
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o hpa.so ParallelFunctions.o RcppExports.o hpa0.o hpaBinary.o hpaML.o hpaMain.o hpaSelection.o hpaValidation.o normalMoments.o polynomialIndex.o spline.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/00LOCK-hpa/00new/hpa/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hpa)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hpa-1.3.3.drv-0/ in /nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3...
+patching script interpreter paths in /nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3
+rewriting symlink /nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/nix-support/propagated-user-env-packages to be relative to /nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3

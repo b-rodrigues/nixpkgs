@@ -1,0 +1,67 @@
+these 2 derivations will be built:
+  /nix/store/lv7q62ashfb934q2vd18y39jnmaf2s7m-tm.plugin.mail_0.3-1.tar.gz.drv
+  /nix/store/c204psdwiv6rfbbdv4xx56hsca0wv8qr-r-tm.plugin.mail-0.3-1.drv
+building '/nix/store/lv7q62ashfb934q2vd18y39jnmaf2s7m-tm.plugin.mail_0.3-1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/tm.plugin.mail_0.3-1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 17167  100 17167    0     0   152k      0 --:--:-- --:--:-- --:--:--  152k
+building '/nix/store/c204psdwiv6rfbbdv4xx56hsca0wv8qr-r-tm.plugin.mail-0.3-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1j54h6w1i5h966rs3a6257vp9jgq4ffx-tm.plugin.mail_0.3-1.tar.gz
+source root is tm.plugin.mail
+setting SOURCE_DATE_EPOCH to timestamp 1726148324 of file tm.plugin.mail/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tm.plugin.mail’ ...
+** package ‘tm.plugin.mail’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: le chargement du package ou de l'espace de noms a échoué pour ‘tm.plugin.mail’ :
+.onLoad a échoué dans loadNamespace() pour 'tm.plugin.mail', détails :
+  appel : NULL
+  erreur : Installation of Python not found, Python bindings not loaded.
+Please create a default virtual environment with `reticulate::virtualenv_create('r-reticulate')`.
+Erreur : le chargement a échoué
+Exécution arrêtée
+ERROR: loading failed
+* removing ‘/nix/store/n7cqyvhrxg05x82mjnqjf0zy5a9k462i-r-tm.plugin.mail-0.3-1/library/tm.plugin.mail’
+error: builder for '/nix/store/c204psdwiv6rfbbdv4xx56hsca0wv8qr-r-tm.plugin.mail-0.3-1.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘tm.plugin.mail’ ...
+       > ** package ‘tm.plugin.mail’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > ** help
+       > *** installing help indices
+       > ** building package indices
+       > ** testing if installed package can be loaded from temporary location
+       > Error: le chargement du package ou de l'espace de noms a échoué pour ‘tm.plugin.mail’ :
+       > .onLoad a échoué dans loadNamespace() pour 'tm.plugin.mail', détails :
+       >   appel : NULL
+       >   erreur : Installation of Python not found, Python bindings not loaded.
+       > Please create a default virtual environment with `reticulate::virtualenv_create('r-reticulate')`.
+       > Erreur : le chargement a échoué
+       > Exécution arrêtée
+       > ERROR: loading failed
+       > * removing ‘/nix/store/n7cqyvhrxg05x82mjnqjf0zy5a9k462i-r-tm.plugin.mail-0.3-1/library/tm.plugin.mail’
+       For full logs, run 'nix log /nix/store/c204psdwiv6rfbbdv4xx56hsca0wv8qr-r-tm.plugin.mail-0.3-1.drv'.

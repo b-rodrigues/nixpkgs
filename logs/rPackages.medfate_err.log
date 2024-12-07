@@ -1,0 +1,120 @@
+these 7 derivations will be built:
+  /nix/store/nv7i9asrq5q39fyr03n83jjj2nyqdcx5-r-RNetCDF-2.9-2.drv
+  /nix/store/34x5gcwf4jrh7c97zfjs7ds155llgfij-r-ncmeta-0.4.0.drv
+  /nix/store/6hvx0ifmy1nf5ddm5ic10ahr1vwnbnjd-meteoland_2.2.2.tar.gz.drv
+  /nix/store/mdzjd7cyimlblmkifcjdl8di8s2dz9z2-r-ncdfgeom-1.1.6.drv
+  /nix/store/1pl8mwrj33yb7miwi63qga614pf8sdms-r-meteoland-2.2.2.drv
+  /nix/store/2vcbhycsgxlsw934is4q5svhfkacdb88-medfate_4.7.0.tar.gz.drv
+  /nix/store/1779gbnslrlk6dv7p5a257gp8ar7g0f4-r-medfate-4.7.0.drv
+this path will be fetched (4.01 MiB download, 4.01 MiB unpacked):
+  /nix/store/sw0j6y584iiy7211gi0dpa8k8kv9c8la-ncdfgeom_1.1.6.tar.gz
+building '/nix/store/2vcbhycsgxlsw934is4q5svhfkacdb88-medfate_4.7.0.tar.gz.drv'...
+copying path '/nix/store/sw0j6y584iiy7211gi0dpa8k8kv9c8la-ncdfgeom_1.1.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6hvx0ifmy1nf5ddm5ic10ahr1vwnbnjd-meteoland_2.2.2.tar.gz.drv'...
+building '/nix/store/nv7i9asrq5q39fyr03n83jjj2nyqdcx5-r-RNetCDF-2.9-2.drv'...
+
+trying https://cran.r-project.org/src/contrib/medfate_4.7.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/meteoland_2.2.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  733k  100  733k    0     0  2506k      0 --:--:-- --:--:-- --:--:-- 2504k
+Running phase: unpackPhase
+unpacking source archive /nix/store/mwq8wwd7s1sb2xcmd2dicy8mrjzfnfyi-RNetCDF_2.9-2.tar.gz
+source root is RNetCDF
+setting SOURCE_DATE_EPOCH to timestamp 1711324802 of file RNetCDF/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RNetCDF’ ...
+** package ‘RNetCDF’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+100 2496k  100 2496k    0     0  5151k      0 --:--:-- --:--:-- --:--:-- 5157k
+configure: Find compiler/linker variables from environment:
+checking CFLAGS... -g -O2
+checking CPPFLAGS... -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1
+checking LDFLAGS... -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib
+checking LIBS... 
+configure: Select C compiler:
+checking C compiler from --with-mpicc... 
+checking C compiler from R... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+configure: Find compiler/linker variables from R:
+checking R_CFLAGS... -g -O2
+checking R_CPPFLAGS... -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1
+checking R_LDFLAGS... -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to enable C11 features... none needed
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc options needed to detect all undeclared functions... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking whether _WIN32 is declared... no
+checking whether __APPLE__ is declared... yes
+configure: Operating system is macOS
+checking for nc-config... yes
+configure: Check compiler/linker variables from nc-config:
+checking NC_CC... clang
+checking NC_CC matches selected C compiler... no ... specify --with-mpicc if needed
+checking nc-config --cflags... -I/nix/store/k71lwlcnw26kp9ggzsygqhbqbpws6ixp-netcdf-4.9.2/include
+checking nc-config allows --static option... yes
+checking nc-config --libs --static... -L/nix/store/k71lwlcnw26kp9ggzsygqhbqbpws6ixp-netcdf-4.9.2/lib -lnetcdf -lhdf5_hl -lhdf5 -lm -lz -lzip -lbz2 -lzstd -lxml2 -lcurl
+configure: Check compiler type sizes and language features
+checking size of int... 0
+checking size of long long... 0
+checking size of size_t... 0
+checking for C/C++ restrict keyword... __restrict__
+configure: Check NetCDF features:
+checking for netcdf.h... yes
+checking for library containing nc_open... no
+configure: error: netcdf library was not linked - defining LDFLAGS may help
+ERROR: configuration failed for package ‘RNetCDF’
+* removing ‘/nix/store/vnyz6cy2qz29x2a1qp9v81iqbann2yc6-r-RNetCDF-2.9-2/library/RNetCDF’
+error: builder for '/nix/store/nv7i9asrq5q39fyr03n83jjj2nyqdcx5-r-RNetCDF-2.9-2.drv' failed with exit code 1;
+       last 25 log lines:
+       > checking for strings.h... yes
+       > checking for sys/stat.h... yes
+       > checking for sys/types.h... yes
+       > checking for unistd.h... yes
+       > checking whether _WIN32 is declared... no
+       > checking whether __APPLE__ is declared... yes
+       > configure: Operating system is macOS
+       > checking for nc-config... yes
+       > configure: Check compiler/linker variables from nc-config:
+       > checking NC_CC... clang
+       > checking NC_CC matches selected C compiler... no ... specify --with-mpicc if needed
+       > checking nc-config --cflags... -I/nix/store/k71lwlcnw26kp9ggzsygqhbqbpws6ixp-netcdf-4.9.2/include
+       > checking nc-config allows --static option... yes
+       > checking nc-config --libs --static... -L/nix/store/k71lwlcnw26kp9ggzsygqhbqbpws6ixp-netcdf-4.9.2/lib -lnetcdf -lhdf5_hl -lhdf5 -lm -lz -lzip -lbz2 -lzstd -lxml2 -lcurl
+       > configure: Check compiler type sizes and language features
+       > checking size of int... 0
+       > checking size of long long... 0
+       > checking size of size_t... 0
+       > checking for C/C++ restrict keyword... __restrict__
+       > configure: Check NetCDF features:
+       > checking for netcdf.h... yes
+       > checking for library containing nc_open... no
+       > configure: error: netcdf library was not linked - defining LDFLAGS may help
+       > ERROR: configuration failed for package ‘RNetCDF’
+       > * removing ‘/nix/store/vnyz6cy2qz29x2a1qp9v81iqbann2yc6-r-RNetCDF-2.9-2/library/RNetCDF’
+       For full logs, run 'nix log /nix/store/nv7i9asrq5q39fyr03n83jjj2nyqdcx5-r-RNetCDF-2.9-2.drv'.
+error: 1 dependencies of derivation '/nix/store/mdzjd7cyimlblmkifcjdl8di8s2dz9z2-r-ncdfgeom-1.1.6.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/1pl8mwrj33yb7miwi63qga614pf8sdms-r-meteoland-2.2.2.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/1779gbnslrlk6dv7p5a257gp8ar7g0f4-r-medfate-4.7.0.drv' failed to build

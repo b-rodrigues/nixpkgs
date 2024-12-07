@@ -1,0 +1,63 @@
+these 2 derivations will be built:
+  /nix/store/gd41yk0smi565qh435gwibnh4lzdypa1-rcontroll_0.1.2.tar.gz.drv
+  /nix/store/sg130a14z6fdfmqyf4avh7xw2xjbpz6n-r-rcontroll-0.1.2.drv
+building '/nix/store/gd41yk0smi565qh435gwibnh4lzdypa1-rcontroll_0.1.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/rcontroll_0.1.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1806k  100 1806k    0     0  4737k      0 --:--:-- --:--:-- --:--:-- 4742k
+building '/nix/store/sg130a14z6fdfmqyf4avh7xw2xjbpz6n-r-rcontroll-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nwwzdb8qahlhjxg4k5mlr5j836psnhx8-rcontroll_0.1.2.tar.gz
+source root is rcontroll
+setting SOURCE_DATE_EPOCH to timestamp 1727686202 of file rcontroll/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rcontroll’ ...
+** package ‘rcontroll’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+configure: rcontroll: 0.1.0
+checking whether we have a suitable tempdir... /private/tmp/nix-build-r-rcontroll-0.1.2.drv-0
+checking for gsl-config... /nix/store/ls773ncbbsj5n6mpy8hdajj3zqnsqps9-gsl-2.8-dev/bin/gsl-config
+configure: creating ./config.status
+config.status: creating src/Makevars
+
+  --------------------------------------------------
+  Configuration for rcontroll 0.1.0
+
+    gsl-flags: -I/nix/store/ls773ncbbsj5n6mpy8hdajj3zqnsqps9-gsl-2.8-dev/include
+    gsl-libs:  -L/nix/store/601xz3wng6ghsjbm9fl8pkncya7pp03h-gsl-2.8/lib -lgsl -lgslcblas
+
+  --------------------------------------------------
+
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/ls773ncbbsj5n6mpy8hdajj3zqnsqps9-gsl-2.8-dev/include -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/ls773ncbbsj5n6mpy8hdajj3zqnsqps9-gsl-2.8-dev/include -fPIC  -g -O2   -c troll_rcpp.cpp -o troll_rcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rcontroll.so RcppExports.o troll_rcpp.o -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -L/nix/store/601xz3wng6ghsjbm9fl8pkncya7pp03h-gsl-2.8/lib -lgsl -lgslcblas -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/mmpn9dzf1j4af0fcf4xz0yz1d4vwdhpr-r-rcontroll-0.1.2/library/00LOCK-rcontroll/00new/rcontroll/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rcontroll)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rcontroll-0.1.2.drv-0/ in /nix/store/mmpn9dzf1j4af0fcf4xz0yz1d4vwdhpr-r-rcontroll-0.1.2...
+patching script interpreter paths in /nix/store/mmpn9dzf1j4af0fcf4xz0yz1d4vwdhpr-r-rcontroll-0.1.2
+rewriting symlink /nix/store/mmpn9dzf1j4af0fcf4xz0yz1d4vwdhpr-r-rcontroll-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/mmpn9dzf1j4af0fcf4xz0yz1d4vwdhpr-r-rcontroll-0.1.2

@@ -1,0 +1,60 @@
+these 2 derivations will be built:
+  /nix/store/wv1b9zg98zfv0hx9h3hwwv8s7lnzn969-r-gprofiler2-0.2.3.drv
+  /nix/store/zqvbm2yhmvrlbszywmsyasfl8ig25xlj-r-DFD-0.2.0.drv
+building '/nix/store/wv1b9zg98zfv0hx9h3hwwv8s7lnzn969-r-gprofiler2-0.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/871xmmqykgl1q843czbsa4byqx1rk0mf-gprofiler2_0.2.3.tar.gz
+source root is gprofiler2
+setting SOURCE_DATE_EPOCH to timestamp 1708725002 of file gprofiler2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gprofiler2’ ...
+** package ‘gprofiler2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gprofiler2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gprofiler2-0.2.3.drv-0/ in /nix/store/qfly7kb270jgvvv24pgd6ayqkzc26q56-r-gprofiler2-0.2.3...
+patching script interpreter paths in /nix/store/qfly7kb270jgvvv24pgd6ayqkzc26q56-r-gprofiler2-0.2.3
+rewriting symlink /nix/store/qfly7kb270jgvvv24pgd6ayqkzc26q56-r-gprofiler2-0.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/qfly7kb270jgvvv24pgd6ayqkzc26q56-r-gprofiler2-0.2.3
+building '/nix/store/zqvbm2yhmvrlbszywmsyasfl8ig25xlj-r-DFD-0.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fals159ryij2vjnis7k60ls886rvjbki-DFD_0.2.0.tar.gz
+source root is DFD
+setting SOURCE_DATE_EPOCH to timestamp 1724869202 of file DFD/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependencies ‘signatureSearch’, ‘signatureSearchData’ are not available for package ‘DFD’
+* removing ‘/nix/store/w6xkcqb6y9mg1sqalffppxbfcyh0n8qq-r-DFD-0.2.0/library/DFD’
+error: builder for '/nix/store/zqvbm2yhmvrlbszywmsyasfl8ig25xlj-r-DFD-0.2.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/fals159ryij2vjnis7k60ls886rvjbki-DFD_0.2.0.tar.gz
+       > source root is DFD
+       > setting SOURCE_DATE_EPOCH to timestamp 1724869202 of file DFD/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependencies ‘signatureSearch’, ‘signatureSearchData’ are not available for package ‘DFD’
+       > * removing ‘/nix/store/w6xkcqb6y9mg1sqalffppxbfcyh0n8qq-r-DFD-0.2.0/library/DFD’
+       For full logs, run 'nix log /nix/store/zqvbm2yhmvrlbszywmsyasfl8ig25xlj-r-DFD-0.2.0.drv'.

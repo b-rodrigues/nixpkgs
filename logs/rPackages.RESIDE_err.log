@@ -1,0 +1,82 @@
+these 3 derivations will be built:
+  /nix/store/9m30j8fxgvk7m2xvqlha7bxp4dg03z83-RESIDE_0.3.2.tar.gz.drv
+  /nix/store/p395bdvhnncdix5jy0v3ik0ilmng2dhn-r-simstudy-0.8.1.drv
+  /nix/store/yc99kd9mf6jqgv4xiar4lvr63ll9m48g-r-RESIDE-0.3.2.drv
+this path will be fetched (1.26 MiB download, 1.26 MiB unpacked):
+  /nix/store/nv9z86fb8w2rf2klxwv1b2ivvfphw965-simstudy_0.8.1.tar.gz
+copying path '/nix/store/nv9z86fb8w2rf2klxwv1b2ivvfphw965-simstudy_0.8.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9m30j8fxgvk7m2xvqlha7bxp4dg03z83-RESIDE_0.3.2.tar.gz.drv'...
+building '/nix/store/p395bdvhnncdix5jy0v3ik0ilmng2dhn-r-simstudy-0.8.1.drv'...
+
+trying https://cran.r-project.org/src/contrib/RESIDE_0.3.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  659k  100  659k    0     0  2345k      0 --:--:-- --:--:-- --:--:-- 2347k
+Running phase: unpackPhase
+unpacking source archive /nix/store/nv9z86fb8w2rf2klxwv1b2ivvfphw965-simstudy_0.8.1.tar.gz
+source root is simstudy
+setting SOURCE_DATE_EPOCH to timestamp 1722273602 of file simstudy/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘simstudy’ ...
+** package ‘simstudy’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/74ysr7mik4wfbzdfk0sjp9czjlm09226-r-pbv-0.5-47/library/pbv/include' -I'/nix/store/8vv53m3jxr7g288raqrgqypg9ygbh8jz-r-fastglm-0.0.3/library/fastglm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/74ysr7mik4wfbzdfk0sjp9czjlm09226-r-pbv-0.5-47/library/pbv/include' -I'/nix/store/8vv53m3jxr7g288raqrgqypg9ygbh8jz-r-fastglm-0.0.3/library/fastglm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c srcRcpp.cpp -o srcRcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o simstudy.so RcppExports.o srcRcpp.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/h30in3ch29bv8qhza669j6bw2k72xfn4-r-simstudy-0.8.1/library/00LOCK-simstudy/00new/simstudy/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (simstudy)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-simstudy-0.8.1.drv-0/ in /nix/store/h30in3ch29bv8qhza669j6bw2k72xfn4-r-simstudy-0.8.1...
+patching script interpreter paths in /nix/store/h30in3ch29bv8qhza669j6bw2k72xfn4-r-simstudy-0.8.1
+rewriting symlink /nix/store/h30in3ch29bv8qhza669j6bw2k72xfn4-r-simstudy-0.8.1/nix-support/propagated-user-env-packages to be relative to /nix/store/h30in3ch29bv8qhza669j6bw2k72xfn4-r-simstudy-0.8.1
+building '/nix/store/yc99kd9mf6jqgv4xiar4lvr63ll9m48g-r-RESIDE-0.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/364iww32yyfbxcxml3j59fkahiwbmas5-RESIDE_0.3.2.tar.gz
+source root is RESIDE
+setting SOURCE_DATE_EPOCH to timestamp 1729185009 of file RESIDE/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RESIDE’ ...
+** package ‘RESIDE’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RESIDE)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RESIDE-0.3.2.drv-0/ in /nix/store/qyxsy9pbzrg8ijj1l85ixl5wgr4jbvja-r-RESIDE-0.3.2...
+patching script interpreter paths in /nix/store/qyxsy9pbzrg8ijj1l85ixl5wgr4jbvja-r-RESIDE-0.3.2
+rewriting symlink /nix/store/qyxsy9pbzrg8ijj1l85ixl5wgr4jbvja-r-RESIDE-0.3.2/nix-support/propagated-user-env-packages to be relative to /nix/store/qyxsy9pbzrg8ijj1l85ixl5wgr4jbvja-r-RESIDE-0.3.2

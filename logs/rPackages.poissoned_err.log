@@ -1,0 +1,44 @@
+these 2 derivations will be built:
+  /nix/store/di0gg08ad2r666ghfyjgdcwb56vml8hd-poissoned_0.1.3.tar.gz.drv
+  /nix/store/6bplwn1prgbdzkw87hp8gm1fgjzsph6a-r-poissoned-0.1.3.drv
+building '/nix/store/di0gg08ad2r666ghfyjgdcwb56vml8hd-poissoned_0.1.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/poissoned_0.1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  9152  100  9152    0     0   107k      0 --:--:-- --:--:-- --:--:--  107k
+building '/nix/store/6bplwn1prgbdzkw87hp8gm1fgjzsph6a-r-poissoned-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dypsdyyf55xv2ksyhb94b7839kzk0m4l-poissoned_0.1.3.tar.gz
+source root is poissoned
+setting SOURCE_DATE_EPOCH to timestamp 1729513807 of file poissoned/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘poissoned’ ...
+** package ‘poissoned’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c poisson.c -o poisson.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c utils.c -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o poissoned.so init.o poisson.o utils.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/76x541s9w23qqd0p5g9b98a63jn5dm9m-r-poissoned-0.1.3/library/00LOCK-poissoned/00new/poissoned/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (poissoned)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-poissoned-0.1.3.drv-0/ in /nix/store/76x541s9w23qqd0p5g9b98a63jn5dm9m-r-poissoned-0.1.3...
+patching script interpreter paths in /nix/store/76x541s9w23qqd0p5g9b98a63jn5dm9m-r-poissoned-0.1.3

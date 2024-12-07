@@ -1,0 +1,68 @@
+these 2 derivations will be built:
+  /nix/store/yv1lm14l0cxaf5vbf2jq7gf1g0fykpy8-rlibkriging_0.9-0.4.tar.gz.drv
+  /nix/store/3h1b5i5s4p31pmrr8av5sx7gifclwgb2-r-rlibkriging-0.9-0.4.drv
+building '/nix/store/yv1lm14l0cxaf5vbf2jq7gf1g0fykpy8-rlibkriging_0.9-0.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/rlibkriging_0.9-0.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3681k  100 3681k    0     0  5701k      0 --:--:-- --:--:-- --:--:-- 5698k
+building '/nix/store/3h1b5i5s4p31pmrr8av5sx7gifclwgb2-r-rlibkriging-0.9-0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/c2qswcnl7nwvv7iap1y03frcbl3pyxl5-rlibkriging_0.9-0.4.tar.gz
+source root is rlibkriging
+setting SOURCE_DATE_EPOCH to timestamp 1727908803 of file rlibkriging/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rlibkriging’ ...
+** package ‘rlibkriging’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+
+------------------ CMAKE NOT FOUND --------------------
+
+CMake was not found on the PATH. Please install CMake:
+
+ - sudo yum install cmake          (Fedora/CentOS; inside a terminal)
+ - sudo apt install cmake          (Debian/Ubuntu; inside a terminal).
+ - sudo pacman -S cmake            (Arch Linux; inside a terminal).
+ - sudo brew install cmake         (MacOS; inside a terminal with Homebrew)
+ - sudo port install cmake         (MacOS; inside a terminal with MacPorts)
+
+Alternatively install CMake from: <https://cmake.org/>
+
+-------------------------------------------------------
+
+ERROR: configuration failed for package ‘rlibkriging’
+* removing ‘/nix/store/s8plag13w61bzsgksip3p9348i8c8w37-r-rlibkriging-0.9-0.4/library/rlibkriging’
+error: builder for '/nix/store/3h1b5i5s4p31pmrr8av5sx7gifclwgb2-r-rlibkriging-0.9-0.4.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘rlibkriging’ ...
+       > ** package ‘rlibkriging’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       >
+       > ------------------ CMAKE NOT FOUND --------------------
+       >
+       > CMake was not found on the PATH. Please install CMake:
+       >
+       >  - sudo yum install cmake          (Fedora/CentOS; inside a terminal)
+       >  - sudo apt install cmake          (Debian/Ubuntu; inside a terminal).
+       >  - sudo pacman -S cmake            (Arch Linux; inside a terminal).
+       >  - sudo brew install cmake         (MacOS; inside a terminal with Homebrew)
+       >  - sudo port install cmake         (MacOS; inside a terminal with MacPorts)
+       >
+       > Alternatively install CMake from: <https://cmake.org/>
+       >
+       > -------------------------------------------------------
+       >
+       > ERROR: configuration failed for package ‘rlibkriging’
+       > * removing ‘/nix/store/s8plag13w61bzsgksip3p9348i8c8w37-r-rlibkriging-0.9-0.4/library/rlibkriging’
+       For full logs, run 'nix log /nix/store/3h1b5i5s4p31pmrr8av5sx7gifclwgb2-r-rlibkriging-0.9-0.4.drv'.

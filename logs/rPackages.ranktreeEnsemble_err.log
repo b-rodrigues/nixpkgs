@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/75dzif8bavxi720jpim6m1lgn5bn6xmc-r-ranktreeEnsemble-0.23.drv
+this path will be fetched (0.55 MiB download, 0.55 MiB unpacked):
+  /nix/store/hv14swxg8xhazkszssbg49w7iv0ml804-ranktreeEnsemble_0.23.tar.gz
+copying path '/nix/store/hv14swxg8xhazkszssbg49w7iv0ml804-ranktreeEnsemble_0.23.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/75dzif8bavxi720jpim6m1lgn5bn6xmc-r-ranktreeEnsemble-0.23.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hv14swxg8xhazkszssbg49w7iv0ml804-ranktreeEnsemble_0.23.tar.gz
+source root is ranktreeEnsemble
+setting SOURCE_DATE_EPOCH to timestamp 1716522602 of file ranktreeEnsemble/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ranktreeEnsemble’ ...
+** package ‘ranktreeEnsemble’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c convert_genepairs.cpp -o convert_genepairs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ranktreeEnsemble.so RcppExports.o convert_genepairs.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/spx3x5xpc463mvm7lprk0m6mpaah0ckg-r-ranktreeEnsemble-0.23/library/00LOCK-ranktreeEnsemble/00new/ranktreeEnsemble/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ranktreeEnsemble)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ranktreeEnsemble-0.23.drv-0/ in /nix/store/spx3x5xpc463mvm7lprk0m6mpaah0ckg-r-ranktreeEnsemble-0.23...
+patching script interpreter paths in /nix/store/spx3x5xpc463mvm7lprk0m6mpaah0ckg-r-ranktreeEnsemble-0.23
+rewriting symlink /nix/store/spx3x5xpc463mvm7lprk0m6mpaah0ckg-r-ranktreeEnsemble-0.23/nix-support/propagated-user-env-packages to be relative to /nix/store/spx3x5xpc463mvm7lprk0m6mpaah0ckg-r-ranktreeEnsemble-0.23

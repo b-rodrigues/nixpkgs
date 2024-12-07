@@ -1,0 +1,120 @@
+these 4 derivations will be built:
+  /nix/store/217byfhk0gia5xbpk0aglzdi4cgbvrdr-r-phyr-1.1.0.drv
+  /nix/store/gidq9ry3vimbi2p38b0b3lkwpczclysw-phylolm.hp_0.0-2.tar.gz.drv
+  /nix/store/zbx28mc3jrd2zvfw4z96zd1kvl42zcsh-r-rr2-1.1.1.drv
+  /nix/store/s6vix5ngmbqdk40yn3c3f56yk0shvk0r-r-phylolm.hp-0.0-2.drv
+these 2 paths will be fetched (1.44 MiB download, 1.44 MiB unpacked):
+  /nix/store/vgs6ynp21lmd932s80dd9h6yw1w90gz1-phyr_1.1.0.tar.gz
+  /nix/store/2is4a3086j4bpdl9rxk9dpkgf704rrm9-rr2_1.1.1.tar.gz
+copying path '/nix/store/2is4a3086j4bpdl9rxk9dpkgf704rrm9-rr2_1.1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gidq9ry3vimbi2p38b0b3lkwpczclysw-phylolm.hp_0.0-2.tar.gz.drv'...
+copying path '/nix/store/vgs6ynp21lmd932s80dd9h6yw1w90gz1-phyr_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+
+trying https://cran.r-project.org/src/contrib/phylolm.hp_0.0-2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  8401  100  8401    0     0  70550      0 --:--:-- --:--:-- --:--:-- 70596
+building '/nix/store/217byfhk0gia5xbpk0aglzdi4cgbvrdr-r-phyr-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vgs6ynp21lmd932s80dd9h6yw1w90gz1-phyr_1.1.0.tar.gz
+source root is phyr
+setting SOURCE_DATE_EPOCH to timestamp 1608276605 of file phyr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘phyr’ ...
+** package ‘phyr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c binaryPGLMM.cpp -o binaryPGLMM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cor_phylo.cpp -o cor_phylo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pcd.cpp -o pcd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pglmm_binary.cpp -o pglmm_binary.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pglmm_gaussian.cpp -o pglmm_gaussian.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c psv.cpp -o psv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o phyr.so RcppExports.o binaryPGLMM.o cor_phylo.o pcd.o pglmm_binary.o pglmm_gaussian.o psv.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/qa57dmmcbylg8qgncgxgpfsfxfbqjx14-r-phyr-1.1.0/library/00LOCK-phyr/00new/phyr/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (phyr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-phyr-1.1.0.drv-0/ in /nix/store/qa57dmmcbylg8qgncgxgpfsfxfbqjx14-r-phyr-1.1.0...
+patching script interpreter paths in /nix/store/qa57dmmcbylg8qgncgxgpfsfxfbqjx14-r-phyr-1.1.0
+rewriting symlink /nix/store/qa57dmmcbylg8qgncgxgpfsfxfbqjx14-r-phyr-1.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/qa57dmmcbylg8qgncgxgpfsfxfbqjx14-r-phyr-1.1.0
+building '/nix/store/zbx28mc3jrd2zvfw4z96zd1kvl42zcsh-r-rr2-1.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2is4a3086j4bpdl9rxk9dpkgf704rrm9-rr2_1.1.1.tar.gz
+source root is rr2
+setting SOURCE_DATE_EPOCH to timestamp 1692627605 of file rr2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rr2’ ...
+** package ‘rr2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rr2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rr2-1.1.1.drv-0/ in /nix/store/qy8bbhrc4kmjfqc46j42rncd5zhw09wk-r-rr2-1.1.1...
+patching script interpreter paths in /nix/store/qy8bbhrc4kmjfqc46j42rncd5zhw09wk-r-rr2-1.1.1
+rewriting symlink /nix/store/qy8bbhrc4kmjfqc46j42rncd5zhw09wk-r-rr2-1.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/qy8bbhrc4kmjfqc46j42rncd5zhw09wk-r-rr2-1.1.1
+building '/nix/store/s6vix5ngmbqdk40yn3c3f56yk0shvk0r-r-phylolm.hp-0.0-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gi2d68sv9ikc0z8bf826gb5j2nh8fmi1-phylolm.hp_0.0-2.tar.gz
+source root is phylolm.hp
+setting SOURCE_DATE_EPOCH to timestamp 1732372802 of file phylolm.hp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘phylolm.hp’ ...
+** package ‘phylolm.hp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (phylolm.hp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-phylolm.hp-0.0-2.drv-0/ in /nix/store/64axlyshqbmla55v1p4yjzz5dm20xh8m-r-phylolm.hp-0.0-2...
+patching script interpreter paths in /nix/store/64axlyshqbmla55v1p4yjzz5dm20xh8m-r-phylolm.hp-0.0-2
+rewriting symlink /nix/store/64axlyshqbmla55v1p4yjzz5dm20xh8m-r-phylolm.hp-0.0-2/nix-support/propagated-user-env-packages to be relative to /nix/store/64axlyshqbmla55v1p4yjzz5dm20xh8m-r-phylolm.hp-0.0-2

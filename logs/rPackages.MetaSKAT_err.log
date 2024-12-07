@@ -1,0 +1,53 @@
+these 2 derivations will be built:
+  /nix/store/k60yfmvqi3mjhs89v6c72fm4xfm1rnrm-MetaSKAT_0.90.tar.gz.drv
+  /nix/store/h5z2ap2z601pk311r3q3rwqlm8k0bq86-r-MetaSKAT-0.90.drv
+building '/nix/store/k60yfmvqi3mjhs89v6c72fm4xfm1rnrm-MetaSKAT_0.90.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/MetaSKAT_0.90.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  478k  100  478k    0     0  2000k      0 --:--:-- --:--:-- --:--:-- 2003k
+building '/nix/store/h5z2ap2z601pk311r3q3rwqlm8k0bq86-r-MetaSKAT-0.90.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xbhzxzf8nl6xd3pmmfqw5y5spbzhqh9r-MetaSKAT_0.90.tar.gz
+source root is MetaSKAT
+setting SOURCE_DATE_EPOCH to timestamp 1728394207 of file MetaSKAT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MetaSKAT’ ...
+** package ‘MetaSKAT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Interface_Meta.cpp -o Interface_Meta.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MatFile.cpp -o MatFile.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Meta.cpp -o Meta.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Permutation.cpp -o Permutation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RFunc.cpp -o RFunc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Read_BED.cpp -o Read_BED.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Read_Dosage.cpp -o Read_Dosage.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c crc32.cpp -o crc32.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MetaSKAT.so Interface_Meta.o MatFile.o Meta.o Permutation.o RFunc.o Read_BED.o Read_Dosage.o crc32.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/n5fam71qlihh79v96fg2mrba1b5h5d9a-r-MetaSKAT-0.90/library/00LOCK-MetaSKAT/00new/MetaSKAT/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MetaSKAT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MetaSKAT-0.90.drv-0/ in /nix/store/n5fam71qlihh79v96fg2mrba1b5h5d9a-r-MetaSKAT-0.90...
+patching script interpreter paths in /nix/store/n5fam71qlihh79v96fg2mrba1b5h5d9a-r-MetaSKAT-0.90
+rewriting symlink /nix/store/n5fam71qlihh79v96fg2mrba1b5h5d9a-r-MetaSKAT-0.90/nix-support/propagated-user-env-packages to be relative to /nix/store/n5fam71qlihh79v96fg2mrba1b5h5d9a-r-MetaSKAT-0.90

@@ -1,0 +1,153 @@
+this derivation will be built:
+  /nix/store/lrlym5rzg3mn9h7cdd4ck64zw7ksxps3-r-magi-1.2.4.drv
+this path will be fetched (0.55 MiB download, 0.55 MiB unpacked):
+  /nix/store/f7kp6kfnl5b8d55sla94s1zhjgjhsa3b-magi_1.2.4.tar.gz
+copying path '/nix/store/f7kp6kfnl5b8d55sla94s1zhjgjhsa3b-magi_1.2.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lrlym5rzg3mn9h7cdd4ck64zw7ksxps3-r-magi-1.2.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/f7kp6kfnl5b8d55sla94s1zhjgjhsa3b-magi_1.2.4.tar.gz
+source root is magi
+setting SOURCE_DATE_EPOCH to timestamp 1719077402 of file magi/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘magi’ ...
+** package ‘magi’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c MagiMain.cpp -o MagiMain.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c MagiSolver.cpp -o MagiSolver.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c RcppFullloglikelihood.cpp -o RcppFullloglikelihood.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c RcppTestingUtilities.cpp -o RcppTestingUtilities.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c RcppTranslation.cpp -o RcppTranslation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c RcppWrapper.cpp -o RcppWrapper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c RcppXthetasigma.cpp -o RcppXthetasigma.o
+In file included from MagiSolver.cpp:3:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+In file included from RcppXthetasigma.cpp:3:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+In file included from RcppFullloglikelihood.cpp:3:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+In file included from RcppWrapper.cpp:2:
+In file included from ./RcppWrapper.h:9:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+In file included from RcppTestingUtilities.cpp:10:
+In file included from ./RcppWrapper.h:9:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c Rcppgpsmoothing.cpp -o Rcppgpsmoothing.o
+Rcppgpsmoothing.cpp:1:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c RcppsolveMagi.cpp -o RcppsolveMagi.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c Sampler.cpp -o Sampler.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c band.cpp -o band.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c classDefinition.cpp -o classDefinition.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c dynamicalSystemModels.cpp -o dynamicalSystemModels.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c fullloglikelihood.cpp -o fullloglikelihood.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c gpcov.cpp -o gpcov.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c hmc.cpp -o hmc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c testingUtilities.cpp -o testingUtilities.o
+In file included from fullloglikelihood.cpp:3:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c tgtdistr.cpp -o tgtdistr.o
+tgtdistr.cpp:2:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+In file included from gpcov.cpp:3:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/5x5s2smlkf1d058033b2rrc0ly8ib4xx-r-roptim-0.1.6/library/roptim/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -I'../inst/include' -fPIC  -g -O2   -c xthetasigma.cpp -o xthetasigma.o
+1 warning generated.
+1 warning generated.
+In file included from testingUtilities.cpp:3:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+In file included from xthetasigma.cpp:3:
+./tgtdistr.h:4:9: warning: 'NDEBUG' macro redefined [-Wmacro-redefined]
+#define NDEBUG
+        ^
+<command line>:3:9: note: previous definition is here
+#define NDEBUG 1
+        ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o magi.so MagiMain.o MagiSolver.o RcppExports.o RcppFullloglikelihood.o RcppTestingUtilities.o RcppTranslation.o RcppWrapper.o RcppXthetasigma.o Rcppgpsmoothing.o RcppsolveMagi.o Sampler.o band.o classDefinition.o dynamicalSystemModels.o fullloglikelihood.o gpcov.o hmc.o testingUtilities.o tgtdistr.o xthetasigma.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/729rr7i8jkszy8503y2hha0bm2rz6ac8-r-magi-1.2.4/library/00LOCK-magi/00new/magi/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (magi)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-magi-1.2.4.drv-0/ in /nix/store/729rr7i8jkszy8503y2hha0bm2rz6ac8-r-magi-1.2.4...
+patching script interpreter paths in /nix/store/729rr7i8jkszy8503y2hha0bm2rz6ac8-r-magi-1.2.4
+rewriting symlink /nix/store/729rr7i8jkszy8503y2hha0bm2rz6ac8-r-magi-1.2.4/nix-support/propagated-user-env-packages to be relative to /nix/store/729rr7i8jkszy8503y2hha0bm2rz6ac8-r-magi-1.2.4

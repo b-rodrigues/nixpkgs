@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/hz80b01f657n8yqir7f7mfw1n5xriyxa-r-npbr-1.8.drv
+this path will be fetched (2.20 MiB download, 2.20 MiB unpacked):
+  /nix/store/3sbga1lhlachnpxybcik7c45xgd8fml8-npbr_1.8.tar.gz
+copying path '/nix/store/3sbga1lhlachnpxybcik7c45xgd8fml8-npbr_1.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hz80b01f657n8yqir7f7mfw1n5xriyxa-r-npbr-1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3sbga1lhlachnpxybcik7c45xgd8fml8-npbr_1.8.tar.gz
+source root is npbr
+setting SOURCE_DATE_EPOCH to timestamp 1679475606 of file npbr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘npbr’ ...
+** package ‘npbr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c npbr_init.c -o npbr_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sigma2m.c -o sigma2m.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o npbr.so npbr_init.o sigma2m.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/72wr2g6sf4gwjhsb9k9a45hy07d0z1s1-r-npbr-1.8/library/00LOCK-npbr/00new/npbr/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (npbr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-npbr-1.8.drv-0/ in /nix/store/72wr2g6sf4gwjhsb9k9a45hy07d0z1s1-r-npbr-1.8...
+patching script interpreter paths in /nix/store/72wr2g6sf4gwjhsb9k9a45hy07d0z1s1-r-npbr-1.8
+rewriting symlink /nix/store/72wr2g6sf4gwjhsb9k9a45hy07d0z1s1-r-npbr-1.8/nix-support/propagated-user-env-packages to be relative to /nix/store/72wr2g6sf4gwjhsb9k9a45hy07d0z1s1-r-npbr-1.8

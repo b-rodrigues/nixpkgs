@@ -1,0 +1,45 @@
+these 2 derivations will be built:
+  /nix/store/5i5lfjwzfv3kg9z307nyjq9gphn5wz0y-SplitSoftening_2.1-1.tar.gz.drv
+  /nix/store/74zbmzvc688pj5wsx20x74gy9x0ws86m-r-SplitSoftening-2.1-1.drv
+building '/nix/store/5i5lfjwzfv3kg9z307nyjq9gphn5wz0y-SplitSoftening_2.1-1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/SplitSoftening_2.1-1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 16587  100 16587    0     0   135k      0 --:--:-- --:--:-- --:--:--  136k
+building '/nix/store/74zbmzvc688pj5wsx20x74gy9x0ws86m-r-SplitSoftening-2.1-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/30ai3mw6b7cis1cc3yhsif3zfyw9j1rp-SplitSoftening_2.1-1.tar.gz
+source root is SplitSoftening
+setting SOURCE_DATE_EPOCH to timestamp 1730062202 of file SplitSoftening/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SplitSoftening’ ...
+** package ‘SplitSoftening’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c SplitSoftening_init.c -o SplitSoftening_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c auc_trapezoid.c -o auc_trapezoid.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bound_by_esd.c -o bound_by_esd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pred_soft.c -o pred_soft.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SplitSoftening.so SplitSoftening_init.o auc_trapezoid.o bound_by_esd.o pred_soft.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/36lhd6cglkmv33v7yyrx0079k4q6dcrg-r-SplitSoftening-2.1-1/library/00LOCK-SplitSoftening/00new/SplitSoftening/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SplitSoftening)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SplitSoftening-2.1-1.drv-0/ in /nix/store/36lhd6cglkmv33v7yyrx0079k4q6dcrg-r-SplitSoftening-2.1-1...
+patching script interpreter paths in /nix/store/36lhd6cglkmv33v7yyrx0079k4q6dcrg-r-SplitSoftening-2.1-1

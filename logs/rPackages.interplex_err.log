@@ -1,0 +1,93 @@
+these 2 derivations will be built:
+  /nix/store/f6ww3dmgb9sxzam5i0azyi5x3rzp1wdi-r-simplextree-1.0.1.drv
+  /nix/store/xckkg2y07n49a0in9ryz7dzy66sxp3i5-r-interplex-0.1.2.drv
+these 2 paths will be fetched (0.31 MiB download, 0.31 MiB unpacked):
+  /nix/store/drk7la5dggwn0xzp90had7mlxvxz1m3l-interplex_0.1.2.tar.gz
+  /nix/store/dfww255jq5b4ll1f8axhczvm6xfxc5bg-simplextree_1.0.1.tar.gz
+copying path '/nix/store/drk7la5dggwn0xzp90had7mlxvxz1m3l-interplex_0.1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/dfww255jq5b4ll1f8axhczvm6xfxc5bg-simplextree_1.0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f6ww3dmgb9sxzam5i0azyi5x3rzp1wdi-r-simplextree-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dfww255jq5b4ll1f8axhczvm6xfxc5bg-simplextree_1.0.1.tar.gz
+source root is simplextree
+setting SOURCE_DATE_EPOCH to timestamp 1599913202 of file simplextree/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘simplextree’ ...
+** package ‘simplextree’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c UnionFind.cpp -o UnionFind.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c discreteR.cpp -o discreteR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c nerve.cpp -o nerve.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c simplextree_module.cpp -o simplextree_module.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o simplextree.so RcppExports.o UnionFind.o discreteR.o nerve.o simplextree_module.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/90dlkpd46bj79q3y1i5j4xcmilhrld45-r-simplextree-1.0.1/library/00LOCK-simplextree/00new/simplextree/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Filtration” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Filtration” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UnionFind” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UnionFind” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Filtration” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_Filtration” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SimplexTree” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UnionFind” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UnionFind” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (simplextree)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-simplextree-1.0.1.drv-0/ in /nix/store/90dlkpd46bj79q3y1i5j4xcmilhrld45-r-simplextree-1.0.1...
+patching script interpreter paths in /nix/store/90dlkpd46bj79q3y1i5j4xcmilhrld45-r-simplextree-1.0.1
+rewriting symlink /nix/store/90dlkpd46bj79q3y1i5j4xcmilhrld45-r-simplextree-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/90dlkpd46bj79q3y1i5j4xcmilhrld45-r-simplextree-1.0.1
+building '/nix/store/xckkg2y07n49a0in9ryz7dzy66sxp3i5-r-interplex-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/drk7la5dggwn0xzp90had7mlxvxz1m3l-interplex_0.1.2.tar.gz
+source root is interplex
+setting SOURCE_DATE_EPOCH to timestamp 1708424407 of file interplex/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘interplex’ ...
+** package ‘interplex’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (interplex)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-interplex-0.1.2.drv-0/ in /nix/store/1x31qi1zpgqga2wr0pl8rx7fayq1g93z-r-interplex-0.1.2...
+patching script interpreter paths in /nix/store/1x31qi1zpgqga2wr0pl8rx7fayq1g93z-r-interplex-0.1.2
+rewriting symlink /nix/store/1x31qi1zpgqga2wr0pl8rx7fayq1g93z-r-interplex-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/1x31qi1zpgqga2wr0pl8rx7fayq1g93z-r-interplex-0.1.2

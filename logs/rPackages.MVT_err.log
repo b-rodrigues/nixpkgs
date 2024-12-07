@@ -1,0 +1,62 @@
+these 2 derivations will be built:
+  /nix/store/5pgw26sjx5nw8qssnfca7vbnkf1f1vfa-MVT_0.3-81.tar.gz.drv
+  /nix/store/6wckkakmf5xca702p48vs172h34qac4z-r-MVT-0.3-81.drv
+building '/nix/store/5pgw26sjx5nw8qssnfca7vbnkf1f1vfa-MVT_0.3-81.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/MVT_0.3-81.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 34223  100 34223    0     0   296k      0 --:--:-- --:--:-- --:--:--  298k
+building '/nix/store/6wckkakmf5xca702p48vs172h34qac4z-r-MVT-0.3-81.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vicn0mfryq1fc58qqrnvcayhg4cpgzfb-MVT_0.3-81.tar.gz
+source root is MVT
+setting SOURCE_DATE_EPOCH to timestamp 1727178002 of file MVT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MVT’ ...
+** package ‘MVT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RNG.c -o RNG.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_init_MVT.c -o R_init_MVT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c base.c -o base.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c brent.c -o brent.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dispatcher.c -o dispatcher.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c distn.c -o distn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c family.c -o family.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fitter_CS.c -o fitter_CS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fitter_DIAG.c -o fitter_DIAG.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fitter_HOMO.c -o fitter_HOMO.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fitter_UN.c -o fitter_UN.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c interface.c -o interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c shared.c -o shared.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/6zygyb6974jhnyyrs0mhgsnvl00ckanh-r-fastmatrix-0.5-7721/library/fastmatrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c wilson-hilferty.c -o wilson-hilferty.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MVT.so RNG.o R_init_MVT.o base.o brent.o dispatcher.o distn.o family.o fitter_CS.o fitter_DIAG.o fitter_HOMO.o fitter_UN.o interface.o shared.o wilson-hilferty.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -lm -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/rpz1lnbhm09v95njvax2d3rpnsfiznrb-r-MVT-0.3-81/library/00LOCK-MVT/00new/MVT/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MVT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MVT-0.3-81.drv-0/ in /nix/store/rpz1lnbhm09v95njvax2d3rpnsfiznrb-r-MVT-0.3-81...
+patching script interpreter paths in /nix/store/rpz1lnbhm09v95njvax2d3rpnsfiznrb-r-MVT-0.3-81
+rewriting symlink /nix/store/rpz1lnbhm09v95njvax2d3rpnsfiznrb-r-MVT-0.3-81/nix-support/propagated-user-env-packages to be relative to /nix/store/rpz1lnbhm09v95njvax2d3rpnsfiznrb-r-MVT-0.3-81

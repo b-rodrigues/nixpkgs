@@ -1,0 +1,171 @@
+this derivation will be built:
+  /nix/store/9vfiq131b23zwzb6f0gaxfwypgxb6alf-r-RobustAFT-1.4-7.drv
+this path will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/jzih0xxmy7hgsdjhar6z2xwrf194zaaf-RobustAFT_1.4-7.tar.gz
+copying path '/nix/store/jzih0xxmy7hgsdjhar6z2xwrf194zaaf-RobustAFT_1.4-7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9vfiq131b23zwzb6f0gaxfwypgxb6alf-r-RobustAFT-1.4-7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jzih0xxmy7hgsdjhar6z2xwrf194zaaf-RobustAFT_1.4-7.tar.gz
+source root is RobustAFT
+setting SOURCE_DATE_EPOCH to timestamp 1692636002 of file RobustAFT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RobustAFT’ ...
+** package ‘RobustAFT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c robaft.f -o robaft.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c tmlest.f -o tmlest.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RobustAFT.so init.o robaft.o tmlest.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _chis1wp_: does not use standard frame
+ld: warning: could not create compact unwind for _whimed_: does not use standard frame
+ld: warning: could not create compact unwind for _srpsimm_: does not use standard frame
+ld: warning: could not create compact unwind for _rogmbl_: does not use standard frame
+ld: warning: could not create compact unwind for _ronorm_: does not use standard frame
+ld: warning: could not create compact unwind for _funorm_: does not use standard frame
+ld: warning: could not create compact unwind for _f0gmbl_: does not use standard frame
+ld: warning: could not create compact unwind for _fugmbl_: does not use standard frame
+ld: warning: could not create compact unwind for _messge_.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for _wsknorm_: does not use standard frame
+ld: warning: could not create compact unwind for _messge_: does not use standard frame
+ld: warning: could not create compact unwind for _srrgfl3_: does not use standard frame
+ld: warning: could not create compact unwind for _solvt2_: does not use standard frame
+ld: warning: could not create compact unwind for _srpezez_: does not use standard frame
+ld: warning: could not create compact unwind for _srezez_: does not use standard frame
+ld: warning: could not create compact unwind for _srd2w_: does not use standard frame
+ld: warning: could not create compact unwind for _srd1w_: does not use standard frame
+ld: warning: could not create compact unwind for _srialfaw_: does not use standard frame
+ld: warning: could not create compact unwind for _srxexpd_: does not use standard frame
+ld: warning: could not create compact unwind for _lgamad_: does not use standard frame
+ld: warning: could not create compact unwind for _xexpd_: does not use standard frame
+ld: warning: could not create compact unwind for _cerfd_: does not use standard frame
+ld: warning: could not create compact unwind for _gaussd_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _wskgmbl_: does not use standard frame
+could not create compact unwind for _srrhow_: does not use standard frameld: warning: could not create compact unwind for _srrhog_: does not use standard frame
+ld: warning: could not create compact unwind for _dgumbl_: does not use standard frame
+ld: warning: could not create compact unwind for _fgumbl_: does not use standard frame
+
+ld: warning: could not create compact unwind for _srpweibl_: does not use standard frame
+ld: warning: could not create compact unwind for _srrgfl2_: does not use standard frame
+ld: warning: could not create compact unwind for _srcerfd_: does not use standard frame
+ld: warning: could not create compact unwind for _srgaussd_: does not use standard frame
+ld: warning: could not create compact unwind for _nrm2_: does not use standard frame
+ld: warning: could not create compact unwind for _q1k15d_: does not use standard frame
+ld: warning: could not create compact unwind for _qage1d_: does not use standard frame
+ld: warning: could not create compact unwind for _intgrd_: does not use standard frame
+ld: warning: could not create compact unwind for _srbetan_: does not use standard frame
+ld: warning: could not create compact unwind for _refsgmb_: does not use standard frame
+ld: warning: could not create compact unwind for _ialphan_: does not use standard frame
+ld: warning: could not create compact unwind for _gmbrjac_: does not use standard frame
+ld: warning: could not create compact unwind for _srq1k15t_: does not use standard frame
+ld: warning: could not create compact unwind for _gmb2res_: does not use standard frame
+ld: warning: could not create compact unwind for _srqage1t_: does not use standard frame
+ld: warning: could not create compact unwind for _gmb1res_: does not use standard frame
+ld: warning: could not create compact unwind for _srintmw_: does not use standard frame
+ld: warning: could not create compact unwind for _gmbrres_: does not use standard frame
+ld: warning: could not create compact unwind for _srbetaw_: does not use standard frame
+ld: warning: could not create compact unwind for _refsnrm_: does not use standard frame
+ld: warning: could not create compact unwind for _srxerf_: does not use standard frame
+ld: warning: could not create compact unwind for _nrmrjac_: does not use standard frame
+ld: warning: could not create compact unwind for _if_tmlnf_: does not use standard frame
+ld: warning: could not create compact unwind for _nrm2res_: does not use standard frame
+ld: warning: could not create compact unwind for _av_tmlnf_: does not use standard frame
+ld: warning: could not create compact unwind for _nrm1res_: does not use standard frame
+ld: warning: could not create compact unwind for _srf0w_: does not use standard frame
+ld: warning: could not create compact unwind for _av_tmlwf_: does not use standard frame
+ld: warning: could not create compact unwind for _qn_: does not use standard frameld: warning: could not create compact unwind for _nrmrres_: does not use standard frame
+ld: warning: could not create compact unwind for _rhogmb_: does not use standard frame
+
+ld: warning: could not create compact unwind for _sigsgmb_: does not use standard frame
+ld: warning: could not create compact unwind for _srt1_: does not use standard frame
+ld: warning: could not create compact unwind for _srt2_: does not use standard frame
+ld: warning: could not create compact unwind for _kmedmad_: does not use standard frame
+ld: warning: could not create compact unwind for _sigscens_: does not use standard frame
+ld: warning: could not create compact unwind for _monitr_: does not use standard frame
+ld: warning: could not create compact unwind for _qrss_: does not use standard frame
+ld: warning: could not create compact unwind for _scal_: does not use standard frame
+ld: warning: could not create compact unwind for _qrssh_: does not use standard frame
+ld: warning: could not create compact unwind for _swap_: does not use standard frame
+ld: warning: could not create compact unwind for _rimtrf_: does not use standard frame
+ld: warning: could not create compact unwind for _mtt1_: does not use standard frame
+ld: warning: could not create compact unwind for _minv_: does not use standard frame
+ld: warning: could not create compact unwind for _dotp_: does not use standard frame
+ld: warning: could not create compact unwind for _mchl_: does not use standard frame
+ld: warning: could not create compact unwind for _ktaskv_: does not use standard frame
+ld: warning: could not create compact unwind for _facs_: does not use standard frame
+ld: warning: could not create compact unwind for _kffacv_: does not use standard frame
+ld: warning: could not create compact unwind for _fstord_: does not use standard frame
+ld: warning: could not create compact unwind for _ricll1_: does not use standard frame
+ld: warning: could not create compact unwind for _newsig_: does not use standard frame
+ld: warning: could not create compact unwind for _rysigm_: does not use standard frame
+ld: warning: could not create compact unwind for _lywalg_: does not use standard frame
+ld: warning: could not create compact unwind for _icthet_: does not use standard frame
+ld: warning: could not create compact unwind for _rywalg_: does not use standard frame
+ld: warning: could not create compact unwind for _int45_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _hsest2z_: does not use standard frame
+ld: warning: could not create compact unwind for _hysestz_: does not use standard frame
+ld: warning: could not create compact unwind for _xexp_: does not use standard frame
+ld: warning: could not create compact unwind for _cerf_: does not use standard frame
+ld: warning: could not create compact unwind for _gauss_: does not use standard frame
+ld: warning: could not create compact unwind for _rhonrm_: does not use standard frame
+ld: warning: could not create compact unwind for _sigsnrm_: does not use standard frame
+ld: warning: could not create compact unwind for _bisigam_: does not use standard frame
+ld: warning: could not create compact unwind for _sigmajl_: does not use standard frame
+ld: warning: could not create compact unwind for _sigama_: does not use standard frame
+ld: warning: could not create compact unwind for _smincc_: does not use standard frame
+ld: warning: could not create compact unwind for _xerf_: does not use standard frame
+ld: warning: could not create compact unwind for _w0gmb_: does not use standard frame
+ld: warning: could not create compact unwind for _dfrpar_: does not use standard frame
+ld: warning: could not create compact unwind for _rpardf_: does not use standard frame
+ld: warning: could not create compact unwind for _chisq_: does not use standard frame
+ld: warning: could not create compact unwind for _lmdd_: does not use standard frame
+ld: warning: could not create compact unwind for _chiphi_: does not use standard frame
+ld: warning: could not create compact unwind for _pspphi_: does not use standard frame
+ld: warning: could not create compact unwind for _ps2phi_: does not use standard frame
+ld: warning: could not create compact unwind for _monitw_: does not use standard frame
+ld: warning: could not create compact unwind for _monitc_: does not use standard frame
+ld: warning: could not create compact unwind for _monita_: does not use standard frame
+ld: warning: could not create compact unwind for _monitg_: does not use standard frame
+ld: warning: could not create compact unwind for _int44_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _sminac_: does not use standard frame
+ld: warning: could not create compact unwind for _sigmbl_: does not use standard frame
+ld: warning: could not create compact unwind for _drgfli_: does not use standard frame
+ld: warning: could not create compact unwind for _intgamd_: does not use standard frame
+ld: warning: could not create compact unwind for _whsknrm_: does not use standard frame
+ld: warning: could not create compact unwind for _wgmbl_: does not use standard frame
+ld: warning: could not create compact unwind for _whskgmb_: does not use standard frame
+ld: warning: could not create compact unwind for _srf0g_: does not use standard frame
+ld: warning: could not create compact unwind for _sumrres_: does not use standard frame
+ld: warning: could not create compact unwind for _sum1res_: does not use standard frame
+ld: warning: could not create compact unwind for _sum2res_: does not use standard frame
+ld: warning: could not create compact unwind for _sumrjac_: does not use standard frame
+ld: warning: could not create compact unwind for _sumxnrm_: does not use standard frame
+ld: warning: could not create compact unwind for _intxgmb_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/lsjz0jnhgvig6dy7qwl25qg7whp45gb8-r-RobustAFT-1.4-7/library/00LOCK-RobustAFT/00new/RobustAFT/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RobustAFT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RobustAFT-1.4-7.drv-0/ in /nix/store/lsjz0jnhgvig6dy7qwl25qg7whp45gb8-r-RobustAFT-1.4-7...
+patching script interpreter paths in /nix/store/lsjz0jnhgvig6dy7qwl25qg7whp45gb8-r-RobustAFT-1.4-7
+rewriting symlink /nix/store/lsjz0jnhgvig6dy7qwl25qg7whp45gb8-r-RobustAFT-1.4-7/nix-support/propagated-user-env-packages to be relative to /nix/store/lsjz0jnhgvig6dy7qwl25qg7whp45gb8-r-RobustAFT-1.4-7

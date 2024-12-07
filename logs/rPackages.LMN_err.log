@@ -1,0 +1,105 @@
+these 2 derivations will be built:
+  /nix/store/azvzildmpnm3l2fi5jpzwf7g7bvrp65f-r-SuperGauss-2.0.3.drv
+  /nix/store/7q8cm71wm7r8zjh9d9qqyvpwrpkqrh3q-r-LMN-1.1.3.drv
+this path will be fetched (0.20 MiB download, 0.20 MiB unpacked):
+  /nix/store/5490f603a4d615cqf4ivlpvlx73f73kn-LMN_1.1.3.tar.gz
+copying path '/nix/store/5490f603a4d615cqf4ivlpvlx73f73kn-LMN_1.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/azvzildmpnm3l2fi5jpzwf7g7bvrp65f-r-SuperGauss-2.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/615bdvjchxrd7wp5m7dhg4g04yv7ncza-SuperGauss_2.0.3.tar.gz
+source root is SuperGauss
+setting SOURCE_DATE_EPOCH to timestamp 1645735202 of file SuperGauss/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SuperGauss’ ...
+** package ‘SuperGauss’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... none needed
+checking for pkg-config... /nix/store/c6v2ngygy55zamyz17z94brbz2vrsi1z-pkg-config-wrapper-0.29.2/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for FFTW... yes
+configure: creating ./config.status
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c CirculantExports.cpp -o CirculantExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c DurbinLevinsonExports.cpp -o DurbinLevinsonExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c FFTExports.cpp -o FFTExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c NormalCirculantExports.cpp -o NormalCirculantExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c NormalToeplitzExports.cpp -o NormalToeplitzExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c PCGExports.cpp -o PCGExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c ToeplitzExports.cpp -o ToeplitzExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SuperGauss.so CirculantExports.o DurbinLevinsonExports.o FFTExports.o NormalCirculantExports.o NormalToeplitzExports.o PCGExports.o RcppExports.o ToeplitzExports.o -L/nix/store/04cn366y3lb0cdwy4nbq9yq1ihhhmihl-fftw-double-3.3.10/lib -lfftw3 -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yxwn1d1gg5rizkl3bwzij9c8n9kzl4xy-r-SuperGauss-2.0.3/library/00LOCK-SuperGauss/00new/SuperGauss/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘ncol’ du package ‘base’ dans package ‘SuperGauss’
+Une nouvelle fonction générique est créée pour ‘nrow’ du package ‘base’ dans package ‘SuperGauss’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SuperGauss)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SuperGauss-2.0.3.drv-0/ in /nix/store/yxwn1d1gg5rizkl3bwzij9c8n9kzl4xy-r-SuperGauss-2.0.3...
+patching script interpreter paths in /nix/store/yxwn1d1gg5rizkl3bwzij9c8n9kzl4xy-r-SuperGauss-2.0.3
+rewriting symlink /nix/store/yxwn1d1gg5rizkl3bwzij9c8n9kzl4xy-r-SuperGauss-2.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/yxwn1d1gg5rizkl3bwzij9c8n9kzl4xy-r-SuperGauss-2.0.3
+building '/nix/store/7q8cm71wm7r8zjh9d9qqyvpwrpkqrh3q-r-LMN-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5490f603a4d615cqf4ivlpvlx73f73kn-LMN_1.1.3.tar.gz
+source root is LMN
+setting SOURCE_DATE_EPOCH to timestamp 1661185202 of file LMN/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LMN’ ...
+** package ‘LMN’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CholeskyExports.cpp -o CholeskyExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c DurbinLevinsonExports.cpp -o DurbinLevinsonExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c DurbinLevinsonIP.cpp -o DurbinLevinsonIP.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LMN.so CholeskyExports.o DurbinLevinsonExports.o DurbinLevinsonIP.o RcppExports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/0vizzfcp71shvwk0cpj9zdj3916vnbvg-r-LMN-1.1.3/library/00LOCK-LMN/00new/LMN/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LMN)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LMN-1.1.3.drv-0/ in /nix/store/0vizzfcp71shvwk0cpj9zdj3916vnbvg-r-LMN-1.1.3...
+patching script interpreter paths in /nix/store/0vizzfcp71shvwk0cpj9zdj3916vnbvg-r-LMN-1.1.3
+rewriting symlink /nix/store/0vizzfcp71shvwk0cpj9zdj3916vnbvg-r-LMN-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/0vizzfcp71shvwk0cpj9zdj3916vnbvg-r-LMN-1.1.3

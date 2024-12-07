@@ -1,0 +1,73 @@
+these 2 derivations will be built:
+  /nix/store/adkx6j89a4a5dqd3l7m1k62lz8kjyzn4-r-spgwr-0.6-37.drv
+  /nix/store/lvprl7ps2wywh26gxqrkg3wpxg4kpk70-r-GWLelast-1.2.2.drv
+these 2 paths will be fetched (2.11 MiB download, 2.11 MiB unpacked):
+  /nix/store/a2v1cpkb1vr6knlkar71c8m82sjpks4g-GWLelast_1.2.2.tar.gz
+  /nix/store/dbj3rmq5ilhz58rz4ra3g76yn82m6z9q-spgwr_0.6-37.tar.gz
+copying path '/nix/store/a2v1cpkb1vr6knlkar71c8m82sjpks4g-GWLelast_1.2.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/dbj3rmq5ilhz58rz4ra3g76yn82m6z9q-spgwr_0.6-37.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/adkx6j89a4a5dqd3l7m1k62lz8kjyzn4-r-spgwr-0.6-37.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dbj3rmq5ilhz58rz4ra3g76yn82m6z9q-spgwr_0.6-37.tar.gz
+source root is spgwr
+setting SOURCE_DATE_EPOCH to timestamp 1718025602 of file spgwr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spgwr’ ...
+** package ‘spgwr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c gwe.c -o gwe.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spgwr.so gwe.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xmgqpb5a12vd7dilysl6waz81p85m6qr-r-spgwr-0.6-37/library/00LOCK-spgwr/00new/spgwr/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spgwr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spgwr-0.6-37.drv-0/ in /nix/store/xmgqpb5a12vd7dilysl6waz81p85m6qr-r-spgwr-0.6-37...
+patching script interpreter paths in /nix/store/xmgqpb5a12vd7dilysl6waz81p85m6qr-r-spgwr-0.6-37
+rewriting symlink /nix/store/xmgqpb5a12vd7dilysl6waz81p85m6qr-r-spgwr-0.6-37/nix-support/propagated-user-env-packages to be relative to /nix/store/xmgqpb5a12vd7dilysl6waz81p85m6qr-r-spgwr-0.6-37
+building '/nix/store/lvprl7ps2wywh26gxqrkg3wpxg4kpk70-r-GWLelast-1.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/a2v1cpkb1vr6knlkar71c8m82sjpks4g-GWLelast_1.2.2.tar.gz
+source root is GWLelast
+setting SOURCE_DATE_EPOCH to timestamp 1549803796 of file GWLelast/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘GWLelast’ ...
+** package ‘GWLelast’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (GWLelast)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-GWLelast-1.2.2.drv-0/ in /nix/store/3vx8pcfj24lnyf3cxch236m5pwqbqrlw-r-GWLelast-1.2.2...
+patching script interpreter paths in /nix/store/3vx8pcfj24lnyf3cxch236m5pwqbqrlw-r-GWLelast-1.2.2
+rewriting symlink /nix/store/3vx8pcfj24lnyf3cxch236m5pwqbqrlw-r-GWLelast-1.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/3vx8pcfj24lnyf3cxch236m5pwqbqrlw-r-GWLelast-1.2.2

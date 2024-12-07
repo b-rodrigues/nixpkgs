@@ -1,0 +1,116 @@
+these 2 derivations will be built:
+  /nix/store/y9i9pf4k6cnyc7mbjblniz354bvijxp5-string2path_0.1.8.tar.gz.drv
+  /nix/store/a93cf7cw1c4mliwjci1da4p2p82wicvv-r-string2path-0.1.8.drv
+building '/nix/store/y9i9pf4k6cnyc7mbjblniz354bvijxp5-string2path_0.1.8.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/string2path_0.1.8.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1573k  100 1573k    0     0  4646k      0 --:--:-- --:--:-- --:--:-- 4654k
+building '/nix/store/a93cf7cw1c4mliwjci1da4p2p82wicvv-r-string2path-0.1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1vinfp5hwi8yvkmh9z10mvajy99mbm3j-string2path_0.1.8.tar.gz
+source root is string2path
+setting SOURCE_DATE_EPOCH to timestamp 1724475003 of file string2path/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘string2path’ ...
+** package ‘string2path’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+*** Checking if cargo is installed
+*** Checking if cargo is newer than the required version
+*** cargo is ok
+using Rust package manager: 'cargo 1.82.0 (8f40fc59f 2024-08-21)'
+./configure: line 26: rustc: command not found
+using Rust compiler: ''
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+rm -Rf string2path.so init.o ./rust/.cargo ./rust/target//release/libstring2path.a
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+# vendoring (Note: to avoid NOTE of "Found the following hidden files and
+# directories", .cargo needs to be created here)
+if [ "yes" = "yes" ]; then \
+  /nix/store/41dh2jr0d4ixcbjvkw72hqvrj0kv3mfh-gnutar-1.35/bin/tar --extract --xz -f ./rust/vendor.tar.xz -C ./rust && \
+    mkdir -p ./rust/.cargo && \
+    cp ./cargo_vendor_config.toml ./rust/.cargo/config.toml; \
+fi
+if [ "" != "wasm32-unknown-emscripten" ]; then \
+   export CARGO_HOME="/private/tmp/nix-build-r-string2path-0.1.8.drv-0/string2path/src/.cargo" && cd ./rust && cargo build --jobs 1 --lib --release --offline; \
+else \
+  export CC="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc" && \
+  export CFLAGS="-g -O2 " && \
+  export CARGO_PROFILE_RELEASE_PANIC="abort" && \
+   export CARGO_HOME="/private/tmp/nix-build-r-string2path-0.1.8.drv-0/string2path/src/.cargo" && cd ./rust && cargo +nightly build --lib --release --target  -Zbuild-std=panic_abort,std --offline; \
+fi
+warning: a `-j` argument was passed to Cargo but Cargo is also configured with an external jobserver in its environment, ignoring the `-j` parameter
+   Compiling autocfg v1.3.0
+   Compiling libm v0.2.8
+   Compiling proc-macro2 v1.0.84
+   Compiling unicode-ident v1.0.12
+   Compiling arrayvec v0.7.4
+   Compiling libc v0.2.155
+   Compiling version_check v0.9.4
+   Compiling cc v1.0.98
+   Compiling float_next_after v1.0.0
+   Compiling tinyvec_macros v0.1.1
+   Compiling log v0.4.21
+   Compiling slotmap v1.0.7
+   Compiling tinyvec v1.6.0
+   Compiling num-traits v0.2.19
+   Compiling once_cell v1.19.0
+   Compiling savvy-ffi v0.6.4
+   Compiling ttf-parser v0.21.1
+   Compiling savvy v0.6.4
+   Compiling memmap2 v0.9.4
+   Compiling quote v1.0.36
+   Compiling syn v2.0.66
+   Compiling euclid v0.22.10
+   Compiling fontdb v0.17.0
+   Compiling lyon_geom v1.0.5
+   Compiling lyon_path v1.0.5
+   Compiling lyon_algorithms v1.0.4
+   Compiling lyon_tessellation v1.0.15
+   Compiling savvy-bindgen v0.6.4
+   Compiling lyon v1.0.1
+   Compiling savvy-macro v0.6.4
+   Compiling string2path v0.2.0 (/private/tmp/nix-build-r-string2path-0.1.8.drv-0/string2path/src/rust)
+warning: unexpected `cfg` condition name: `savvy_test`
+   --> src/lib.rs:204:7
+    |
+204 | #[cfg(savvy_test)]
+    |       ^^^^^^^^^^
+    |
+    = help: expected names are: `clippy`, `debug_assertions`, `doc`, `docsrs`, `doctest`, `feature`, `fmt_debug`, `miri`, `overflow_checks`, `panic`, `proc_macro`, `relocation_model`, `rustfmt`, `sanitize`, `sanitizer_cfi_generalize_pointers`, `sanitizer_cfi_normalize_integers`, `target_abi`, `target_arch`, `target_endian`, `target_env`, `target_family`, `target_feature`, `target_has_atomic`, `target_has_atomic_equal_alignment`, `target_has_atomic_load_store`, `target_os`, `target_pointer_width`, `target_thread_local`, `target_vendor`, `test`, `ub_checks`, `unix`, and `windows`
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(savvy_test)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(savvy_test)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: `string2path` (lib) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 6.50s
+rm -Rf /private/tmp/nix-build-r-string2path-0.1.8.drv-0/string2path/src/.cargo ./rust/target//release/build
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o string2path.so init.o -L./rust/target//release -lstring2path -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/inpny49109s33mim6sq6m1wjgy2nc80q-r-string2path-0.1.8/library/00LOCK-string2path/00new/string2path/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (string2path)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-string2path-0.1.8.drv-0/ in /nix/store/inpny49109s33mim6sq6m1wjgy2nc80q-r-string2path-0.1.8...
+patching script interpreter paths in /nix/store/inpny49109s33mim6sq6m1wjgy2nc80q-r-string2path-0.1.8
+rewriting symlink /nix/store/inpny49109s33mim6sq6m1wjgy2nc80q-r-string2path-0.1.8/nix-support/propagated-user-env-packages to be relative to /nix/store/inpny49109s33mim6sq6m1wjgy2nc80q-r-string2path-0.1.8

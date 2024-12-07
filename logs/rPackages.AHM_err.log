@@ -1,0 +1,125 @@
+these 3 derivations will be built:
+  /nix/store/gd4vijv6nxxnb3jd4zn2v5wpzvm3vfy3-r-plgp-1.1-12.drv
+  /nix/store/mr7c6wq600nd63jj7z4vbgz29g3y4r3z-r-mixexp-1.2.7.1.drv
+  /nix/store/xs4inr6f7f8y04sqlv4zf87if521m0pl-r-AHM-1.0.1.drv
+building '/nix/store/mr7c6wq600nd63jj7z4vbgz29g3y4r3z-r-mixexp-1.2.7.1.drv'...
+building '/nix/store/gd4vijv6nxxnb3jd4zn2v5wpzvm3vfy3-r-plgp-1.1-12.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/aqci6jgx77b9c28a8p825vxn7scjg5gv-mixexp_1.2.7.1.tar.gz
+source root is mixexp
+setting SOURCE_DATE_EPOCH to timestamp 1729666232 of file mixexp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/58bivy1mmp4x8shmxq5qh4nzxa6nc8dw-plgp_1.1-12.tar.gz
+source root is plgp
+setting SOURCE_DATE_EPOCH to timestamp 1666189957 of file plgp/MD5
+Running phase: patchPhase
+* installing *source* package ‘mixexp’ ...
+** package ‘mixexp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** libs
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+using C compiler: ‘clang version 16.0.6’
+Running phase: installPhase
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cnvrt.f -o cnvrt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+* installing *source* package ‘plgp’ ...
+** package ‘plgp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DRPRINT  -fPIC  -g -O2  -c covar.c -o covar.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DRPRINT  -fPIC  -g -O2  -c entropy.c -o entropy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DRPRINT  -fPIC  -g -O2  -c ieci.c -o ieci.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DRPRINT  -fPIC  -g -O2  -c linalg.c -o linalg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DRPRINT  -fPIC  -g -O2  -c matrix.c -o matrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DRPRINT  -fPIC  -g -O2  -c plgp_init.c -o plgp_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNDEBUG -DRPRINT  -fPIC  -g -O2  -c rhelp.c -o rhelp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mixexp.so cnvrt.o init.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allnr_: does not use standard frame
+ld: warning: could not create compact unwind for _cnvrt_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/ky8y6gdv5cr4wnv1vdy0fc6lzh9jf079-r-mixexp-1.2.7.1/library/00LOCK-mixexp/00new/mixexp/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o plgp.so covar.o entropy.o ieci.o linalg.o matrix.o plgp_init.o rhelp.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/yqxmnbwmwgffx134xdwkayndc4sfw6lz-r-plgp-1.1-12/library/00LOCK-plgp/00new/plgp/libs
+** R
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (plgp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-plgp-1.1-12.drv-0/ in /nix/store/yqxmnbwmwgffx134xdwkayndc4sfw6lz-r-plgp-1.1-12...
+patching script interpreter paths in /nix/store/yqxmnbwmwgffx134xdwkayndc4sfw6lz-r-plgp-1.1-12
+rewriting symlink /nix/store/yqxmnbwmwgffx134xdwkayndc4sfw6lz-r-plgp-1.1-12/nix-support/propagated-user-env-packages to be relative to /nix/store/yqxmnbwmwgffx134xdwkayndc4sfw6lz-r-plgp-1.1-12
+** testing if installed package keeps a record of temporary installation path
+* DONE (mixexp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mixexp-1.2.7.1.drv-0/ in /nix/store/ky8y6gdv5cr4wnv1vdy0fc6lzh9jf079-r-mixexp-1.2.7.1...
+patching script interpreter paths in /nix/store/ky8y6gdv5cr4wnv1vdy0fc6lzh9jf079-r-mixexp-1.2.7.1
+rewriting symlink /nix/store/ky8y6gdv5cr4wnv1vdy0fc6lzh9jf079-r-mixexp-1.2.7.1/nix-support/propagated-user-env-packages to be relative to /nix/store/ky8y6gdv5cr4wnv1vdy0fc6lzh9jf079-r-mixexp-1.2.7.1
+building '/nix/store/xs4inr6f7f8y04sqlv4zf87if521m0pl-r-AHM-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/s6ziarjfiv7m66g47ygy9lk7xgbszgda-AHM_1.0.1.tar.gz
+source root is AHM
+setting SOURCE_DATE_EPOCH to timestamp 1564304405 of file AHM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘AHM’ ...
+** package ‘AHM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (AHM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-AHM-1.0.1.drv-0/ in /nix/store/avngrdq8jw6xj7p3i7bp8fvp5ixbg52j-r-AHM-1.0.1...
+patching script interpreter paths in /nix/store/avngrdq8jw6xj7p3i7bp8fvp5ixbg52j-r-AHM-1.0.1
+rewriting symlink /nix/store/avngrdq8jw6xj7p3i7bp8fvp5ixbg52j-r-AHM-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/avngrdq8jw6xj7p3i7bp8fvp5ixbg52j-r-AHM-1.0.1

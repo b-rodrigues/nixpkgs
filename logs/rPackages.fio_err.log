@@ -1,0 +1,60 @@
+this derivation will be built:
+  /nix/store/fqypi08cfjfr6nb30rrwmy2arfmdahf0-r-fio-0.1.2.drv
+building '/nix/store/fqypi08cfjfr6nb30rrwmy2arfmdahf0-r-fio-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mssciwhkr3mpvqld6s3dyy47p20hzzgg-fio_0.1.2.tar.gz
+source root is fio
+setting SOURCE_DATE_EPOCH to timestamp 1724746206 of file fio/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘fio’ ...
+** package ‘fio’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+sh: rustc: command not found
+Erreur dans value[[3L]](cond) : 
+  ----------------------- [RUST NOT FOUND]---------------------------
+The 'rustc' compiler was not found on the PATH. Please install
+rustc >= 1.67.1 or higher from:
+https://www.rust-lang.org/tools/install
+
+Alternatively, you may install Rust from your OS package manager:
+ - Debian/Ubuntu: apt-get install rustc
+ - Fedora/CentOS: dnf install rustc
+ - macOS: brew install rustc
+-------------------------------------------------------------------
+Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Exécution arrêtée
+ERROR: configuration failed for package ‘fio’
+* removing ‘/nix/store/mp050zqm061dh16sjrncnz788x6ip2mp-r-fio-0.1.2/library/fio’
+error: builder for '/nix/store/fqypi08cfjfr6nb30rrwmy2arfmdahf0-r-fio-0.1.2.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘fio’ ...
+       > ** package ‘fio’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > sh: rustc: command not found
+       > Erreur dans value[[3L]](cond) :
+       >   ----------------------- [RUST NOT FOUND]---------------------------
+       > The 'rustc' compiler was not found on the PATH. Please install
+       > rustc >= 1.67.1 or higher from:
+       > https://www.rust-lang.org/tools/install
+       >
+       > Alternatively, you may install Rust from your OS package manager:
+       >  - Debian/Ubuntu: apt-get install rustc
+       >  - Fedora/CentOS: dnf install rustc
+       >  - macOS: brew install rustc
+       > -------------------------------------------------------------------
+       > Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+       > Exécution arrêtée
+       > ERROR: configuration failed for package ‘fio’
+       > * removing ‘/nix/store/mp050zqm061dh16sjrncnz788x6ip2mp-r-fio-0.1.2/library/fio’
+       For full logs, run 'nix log /nix/store/fqypi08cfjfr6nb30rrwmy2arfmdahf0-r-fio-0.1.2.drv'.

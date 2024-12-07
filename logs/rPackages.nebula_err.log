@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/3k6s363z8hdaalwjx3m8n4h3a16i4c24-r-nebula-1.5.3.drv
+this path will be fetched (0.55 MiB download, 0.55 MiB unpacked):
+  /nix/store/dgfsn7n6lxzdprgv157v96414xh1gpw4-nebula_1.5.3.tar.gz
+copying path '/nix/store/dgfsn7n6lxzdprgv157v96414xh1gpw4-nebula_1.5.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3k6s363z8hdaalwjx3m8n4h3a16i4c24-r-nebula-1.5.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dgfsn7n6lxzdprgv157v96414xh1gpw4-nebula_1.5.3.tar.gz
+source root is nebula
+setting SOURCE_DATE_EPOCH to timestamp 1708038002 of file nebula/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘SingleCellExperiment’ is not available for package ‘nebula’
+* removing ‘/nix/store/nqlvicxc8mwnd8bvi8yib003pgj670ff-r-nebula-1.5.3/library/nebula’
+error: builder for '/nix/store/3k6s363z8hdaalwjx3m8n4h3a16i4c24-r-nebula-1.5.3.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/dgfsn7n6lxzdprgv157v96414xh1gpw4-nebula_1.5.3.tar.gz
+       > source root is nebula
+       > setting SOURCE_DATE_EPOCH to timestamp 1708038002 of file nebula/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘SingleCellExperiment’ is not available for package ‘nebula’
+       > * removing ‘/nix/store/nqlvicxc8mwnd8bvi8yib003pgj670ff-r-nebula-1.5.3/library/nebula’
+       For full logs, run 'nix log /nix/store/3k6s363z8hdaalwjx3m8n4h3a16i4c24-r-nebula-1.5.3.drv'.

@@ -1,0 +1,101 @@
+these 2 derivations will be built:
+  /nix/store/510q7v99xdyy55m05lgy8qyipzg2vp8c-r-scclust-0.2.5.drv
+  /nix/store/ilbb7hgfcw34ydxsjgb95vbv4y5hka0d-r-quickblock-0.2.2.drv
+these 2 paths will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/98vnzywd3dnb2h44n8bm4bqc3c6dph26-quickblock_0.2.2.tar.gz
+  /nix/store/ha7xrbdlik317yij20n90a717jc2gh2n-scclust_0.2.5.tar.gz
+copying path '/nix/store/98vnzywd3dnb2h44n8bm4bqc3c6dph26-quickblock_0.2.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ha7xrbdlik317yij20n90a717jc2gh2n-scclust_0.2.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/510q7v99xdyy55m05lgy8qyipzg2vp8c-r-scclust-0.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ha7xrbdlik317yij20n90a717jc2gh2n-scclust_0.2.5.tar.gz
+source root is scclust
+setting SOURCE_DATE_EPOCH to timestamp 1722465602 of file scclust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘scclust’ ...
+** package ‘scclust’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibscclust/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c error.c -o error.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibscclust/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c hierarchical.c -o hierarchical.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibscclust/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c internal.c -o internal.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibscclust/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sc_clustering.c -o sc_clustering.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibscclust/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c scclust-init.c -o scclust-init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilibscclust/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c utilities.c -o utilities.o
+(cd libscclust && R_AR="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar" R_CC="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc" R_CPPFLAGS="-DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1" R_CFLAGS="-fPIC -g -O2 " make) || exit 1;
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-scclust-0.2.5.drv-0/scclust/src/libscclust »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/data_set.c -o src/data_set.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/digraph_core.c -o src/digraph_core.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/digraph_operations.c -o src/digraph_operations.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/dist_search_imp.c -o src/dist_search_imp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/error.c -o src/error.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/hierarchical_clustering.c -o src/hierarchical_clustering.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/nng_batch_clustering.c -o src/nng_batch_clustering.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/nng_clustering.c -o src/nng_clustering.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/nng_core.c -o src/nng_core.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/nng_findseeds.c -o src/nng_findseeds.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/scclust_spi.c -o src/scclust_spi.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/scclust.c -o src/scclust.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -fPIC -g -O2   -c src/utilities.c -o src/utilities.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar -rcs libscclust.a src/data_set.o src/digraph_core.o src/digraph_operations.o src/dist_search_imp.o src/error.o src/hierarchical_clustering.o src/nng_batch_clustering.o src/nng_clustering.o src/nng_core.o src/nng_findseeds.o src/scclust_spi.o src/scclust.o src/utilities.o
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-scclust-0.2.5.drv-0/scclust/src/libscclust »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o scclust.so error.o hierarchical.o internal.o sc_clustering.o scclust-init.o utilities.o libscclust/libscclust.a -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/rj6804ljn1j0swra14yyvrcf5ycadjs8-r-scclust-0.2.5/library/00LOCK-scclust/00new/scclust/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (scclust)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-scclust-0.2.5.drv-0/ in /nix/store/rj6804ljn1j0swra14yyvrcf5ycadjs8-r-scclust-0.2.5...
+patching script interpreter paths in /nix/store/rj6804ljn1j0swra14yyvrcf5ycadjs8-r-scclust-0.2.5
+rewriting symlink /nix/store/rj6804ljn1j0swra14yyvrcf5ycadjs8-r-scclust-0.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/rj6804ljn1j0swra14yyvrcf5ycadjs8-r-scclust-0.2.5
+building '/nix/store/ilbb7hgfcw34ydxsjgb95vbv4y5hka0d-r-quickblock-0.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/98vnzywd3dnb2h44n8bm4bqc3c6dph26-quickblock_0.2.2.tar.gz
+source root is quickblock
+setting SOURCE_DATE_EPOCH to timestamp 1722465027 of file quickblock/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘quickblock’ ...
+** package ‘quickblock’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c assign_treatment.c -o assign_treatment.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c error.c -o error.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c estimator.c -o estimator.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c quickblock-init.c -o quickblock-init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o quickblock.so assign_treatment.o error.o estimator.o quickblock-init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xm5mdq0hw7d9i8dm6bdb2pfjxxlbjdaz-r-quickblock-0.2.2/library/00LOCK-quickblock/00new/quickblock/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (quickblock)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-quickblock-0.2.2.drv-0/ in /nix/store/xm5mdq0hw7d9i8dm6bdb2pfjxxlbjdaz-r-quickblock-0.2.2...
+patching script interpreter paths in /nix/store/xm5mdq0hw7d9i8dm6bdb2pfjxxlbjdaz-r-quickblock-0.2.2
+rewriting symlink /nix/store/xm5mdq0hw7d9i8dm6bdb2pfjxxlbjdaz-r-quickblock-0.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/xm5mdq0hw7d9i8dm6bdb2pfjxxlbjdaz-r-quickblock-0.2.2

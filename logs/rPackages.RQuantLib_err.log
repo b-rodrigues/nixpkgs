@@ -1,0 +1,95 @@
+this derivation will be built:
+  /nix/store/28dh279f449x2lh96yfj8qr34h1b0a39-r-RQuantLib-0.4.24.drv
+these 5 paths will be fetched (27.31 MiB download, 275.13 MiB unpacked):
+  /nix/store/75i4gf07z8js633d0gyih00r99fhg67s-RQuantLib_0.4.24.tar.gz
+  /nix/store/x3x31y0f7ba70g96h7wx8xidbws0jv5x-boost-1.86.0
+  /nix/store/zk5i90r340qd1cx8w0xz62l47q5ca85i-boost-1.86.0-dev
+  /nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36
+  /nix/store/3g0nix8hd1qhnszz0j7l7pfmggabx858-quantlib-1.36-dev
+copying path '/nix/store/75i4gf07z8js633d0gyih00r99fhg67s-RQuantLib_0.4.24.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36' from 'https://cache.nixos.org'...
+copying path '/nix/store/x3x31y0f7ba70g96h7wx8xidbws0jv5x-boost-1.86.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/zk5i90r340qd1cx8w0xz62l47q5ca85i-boost-1.86.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/3g0nix8hd1qhnszz0j7l7pfmggabx858-quantlib-1.36-dev' from 'https://cache.nixos.org'...
+building '/nix/store/28dh279f449x2lh96yfj8qr34h1b0a39-r-RQuantLib-0.4.24.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/75i4gf07z8js633d0gyih00r99fhg67s-RQuantLib_0.4.24.tar.gz
+source root is RQuantLib
+setting SOURCE_DATE_EPOCH to timestamp 1722441001 of file RQuantLib/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RQuantLib’ ...
+** package ‘RQuantLib’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -E
+checking whether the compiler supports GNU C++... (cached) yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... (cached) yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 option to enable C++11 features... (cached) none needed
+checking for R... yes
+checking for quantlib-config... yes
+checking for suitable QuantLib version... yes (1.36.0)
+checking for Boost development files... yes
+checking for minimal Boost version... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+
+RQuantlib 0.4.24 (using QuantLib 1.36.0)
+======================================
+
+cxxflags:   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include 
+libs:       -L/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/lib -lQuantLib
+
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c affine.cpp -o affine.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c asian.cpp -o asian.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c barrier_binary.cpp -o barrier_binary.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c bermudan.cpp -o bermudan.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c bonds.cpp -o bonds.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c calendars.cpp -o calendars.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c curves.cpp -o curves.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c dates.cpp -o dates.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c daycounter.cpp -o daycounter.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c discount.cpp -o discount.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c hullwhite.cpp -o hullwhite.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c implieds.cpp -o implieds.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c modules.cpp -o modules.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c sabr.cpp -o sabr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c schedule.cpp -o schedule.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c utils.cpp -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c vanilla.cpp -o vanilla.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/include  -I../inst/include -I.  -fPIC  -g -O2   -c zero.cpp -o zero.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RQuantLib.so RcppExports.o affine.o asian.o barrier_binary.o bermudan.o bonds.o calendars.o curves.o dates.o daycounter.o discount.o hullwhite.o implieds.o modules.o sabr.o schedule.o utils.o vanilla.o zero.o -L/nix/store/3d80wf2xgdjz3nf6q4n9qnii9xjndz4c-quantlib-1.36/lib -lQuantLib -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/c49pxf96xa6lljwk1ph8qjw09a825b75-r-RQuantLib-0.4.24/library/00LOCK-RQuantLib/00new/RQuantLib/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RQuantLib)
+installPhase completed in 40 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RQuantLib-0.4.24.drv-0/ in /nix/store/c49pxf96xa6lljwk1ph8qjw09a825b75-r-RQuantLib-0.4.24...
+patching script interpreter paths in /nix/store/c49pxf96xa6lljwk1ph8qjw09a825b75-r-RQuantLib-0.4.24
+rewriting symlink /nix/store/c49pxf96xa6lljwk1ph8qjw09a825b75-r-RQuantLib-0.4.24/nix-support/propagated-user-env-packages to be relative to /nix/store/c49pxf96xa6lljwk1ph8qjw09a825b75-r-RQuantLib-0.4.24

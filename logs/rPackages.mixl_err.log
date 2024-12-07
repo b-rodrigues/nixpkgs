@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/9qx73mgq6rwin94609rhnpip9caai1ly-r-mixl-1.3.4.drv
+this path will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/k37wlj8ngqdbjfa14pwj5prgxhci4mrm-mixl_1.3.4.tar.gz
+copying path '/nix/store/k37wlj8ngqdbjfa14pwj5prgxhci4mrm-mixl_1.3.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9qx73mgq6rwin94609rhnpip9caai1ly-r-mixl-1.3.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/k37wlj8ngqdbjfa14pwj5prgxhci4mrm-mixl_1.3.4.tar.gz
+source root is mixl
+setting SOURCE_DATE_EPOCH to timestamp 1707307802 of file mixl/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mixl’ ...
+** package ‘mixl’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+if printf "#include <omp.h>\nint main() { return omp_get_num_threads(); }"  | \
+    `/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R CMD config CC` `/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R CMD config CFLAGS`  -xc - >/dev/null 2>&1; then \
+        echo "OpenMP supported"; \
+        sed -e 's|@openmp_cflags@|$(SHLIB_OPENMP_CFLAGS)|' ../inst/include/MIXL_OPENMP_FLAG.in > ../inst/include/MIXL_OPENMP_FLAG ; \
+        sed -e 's|@openmp_cflags@|$(SHLIB_OPENMP_CFLAGS)|' ../inst/include/MIXL_OPENMP_FLAG.in > ../inst/include/MIXL_OPENMP_FLAG ; \
+else \
+        echo "OpenMP not supported"; \
+        sed -e 's|@openmp_cflags@||' ../inst/include/MIXL_OPENMP_FLAG.in > ../inst/include/MIXL_OPENMP_FLAG ; \
+fi
+OpenMP not supported
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mixl)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mixl-1.3.4.drv-0/ in /nix/store/vfzb0w2rb73anaqmk24w8ni4jfa0rfn5-r-mixl-1.3.4...
+patching script interpreter paths in /nix/store/vfzb0w2rb73anaqmk24w8ni4jfa0rfn5-r-mixl-1.3.4
+rewriting symlink /nix/store/vfzb0w2rb73anaqmk24w8ni4jfa0rfn5-r-mixl-1.3.4/nix-support/propagated-user-env-packages to be relative to /nix/store/vfzb0w2rb73anaqmk24w8ni4jfa0rfn5-r-mixl-1.3.4

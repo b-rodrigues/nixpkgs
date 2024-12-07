@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/0p0w3yrlbwfzfp4kyyijlsc4rah3rr3j-r-hdme-0.6.0.drv
+this path will be fetched (0.37 MiB download, 0.37 MiB unpacked):
+  /nix/store/c4vali9msj26p2jf49wy9hb300rr9ipb-hdme_0.6.0.tar.gz
+copying path '/nix/store/c4vali9msj26p2jf49wy9hb300rr9ipb-hdme_0.6.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0p0w3yrlbwfzfp4kyyijlsc4rah3rr3j-r-hdme-0.6.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/c4vali9msj26p2jf49wy9hb300rr9ipb-hdme_0.6.0.tar.gz
+source root is hdme
+setting SOURCE_DATE_EPOCH to timestamp 1684264202 of file hdme/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hdme’ ...
+** package ‘hdme’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mu_lasso.cpp -o mu_lasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o hdme.so RcppExports.o mu_lasso.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/glssqcjif9h08llk4fywfcz9k3d4nr48-r-hdme-0.6.0/library/00LOCK-hdme/00new/hdme/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hdme)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hdme-0.6.0.drv-0/ in /nix/store/glssqcjif9h08llk4fywfcz9k3d4nr48-r-hdme-0.6.0...
+patching script interpreter paths in /nix/store/glssqcjif9h08llk4fywfcz9k3d4nr48-r-hdme-0.6.0
+rewriting symlink /nix/store/glssqcjif9h08llk4fywfcz9k3d4nr48-r-hdme-0.6.0/nix-support/propagated-user-env-packages to be relative to /nix/store/glssqcjif9h08llk4fywfcz9k3d4nr48-r-hdme-0.6.0

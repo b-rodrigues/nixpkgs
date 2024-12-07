@@ -1,0 +1,49 @@
+these 2 derivations will be built:
+  /nix/store/m9zv8k9hsi9djhj74k0hhlgrd1ipksl9-spatialsample_0.6.0.tar.gz.drv
+  /nix/store/dhp6lnswcxidjdilh9xikdm4sgy2c45j-r-spatialsample-0.6.0.drv
+building '/nix/store/m9zv8k9hsi9djhj74k0hhlgrd1ipksl9-spatialsample_0.6.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/spatialsample_0.6.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3826k  100 3826k    0     0  7886k      0 --:--:-- --:--:-- --:--:-- 7888k
+building '/nix/store/dhp6lnswcxidjdilh9xikdm4sgy2c45j-r-spatialsample-0.6.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vpywmm5hyzx335plh2hjd5y6hrd04j3m-spatialsample_0.6.0.tar.gz
+source root is spatialsample
+setting SOURCE_DATE_EPOCH to timestamp 1727893202 of file spatialsample/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spatialsample’ ...
+** package ‘spatialsample’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c code.cpp -o code.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpp11.cpp -o cpp11.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spatialsample.so code.o cpp11.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/7vhy7jhzard7xdp0k5x335x5kzgb7cwx-r-spatialsample-0.6.0/library/00LOCK-spatialsample/00new/spatialsample/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spatialsample)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spatialsample-0.6.0.drv-0/ in /nix/store/7vhy7jhzard7xdp0k5x335x5kzgb7cwx-r-spatialsample-0.6.0...
+patching script interpreter paths in /nix/store/7vhy7jhzard7xdp0k5x335x5kzgb7cwx-r-spatialsample-0.6.0
+rewriting symlink /nix/store/7vhy7jhzard7xdp0k5x335x5kzgb7cwx-r-spatialsample-0.6.0/nix-support/propagated-user-env-packages to be relative to /nix/store/7vhy7jhzard7xdp0k5x335x5kzgb7cwx-r-spatialsample-0.6.0

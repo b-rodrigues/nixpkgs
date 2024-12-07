@@ -1,0 +1,120 @@
+these 2 derivations will be built:
+  /nix/store/s9x297caqp22la0mhkhacxlypa10kszb-DEploid_0.5.4.tar.gz.drv
+  /nix/store/rhypzrb29jfi9cmxjnxq63ipldqxp3hz-r-DEploid-0.5.4.drv
+building '/nix/store/s9x297caqp22la0mhkhacxlypa10kszb-DEploid_0.5.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/DEploid_0.5.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  324k  100  324k    0     0  1670k      0 --:--:-- --:--:-- --:--:-- 1671k
+building '/nix/store/rhypzrb29jfi9cmxjnxq63ipldqxp3hz-r-DEploid-0.5.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/i4cdk34f50lfs7m96pvv8rdfggc5091i-DEploid_0.5.4.tar.gz
+source root is DEploid
+setting SOURCE_DATE_EPOCH to timestamp 1728895202 of file DEploid/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘DEploid’ ...
+** package ‘DEploid’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c rvcf.cpp -o rvcf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c dEploidr.cpp -o dEploidr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c test_exports.cpp -o test_exports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c DEploid/dEploidIO.cpp -o DEploid/dEploidIO.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c DEploid/ibd.cpp -o DEploid/ibd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c DEploid/mcmc.cpp -o DEploid/mcmc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/share/R/include/ -IDEploid/ -IDEploid/codeCogs/ -IDEploid/random/ -IDEploid/gzstream/ -IDEploid/lasso/  -DVERSION="\"R\"" -DRBUILD -DSTRICT_R_HEADERS -fPIC  -g -O2   -c DEploid/panel.cpp -o DEploid/panel.o
+In file included from DEploid/mcmc.cpp:32:
+In file included from DEploid/updateHap.hpp:29:
+In file included from DEploid/panel.hpp:29:
+In file included from DEploid/txtReader.hpp:34:
+DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+In file included from DEploid/dEploidIO.cpp:30:
+In file included from DEploid/updateHap.hpp:29:
+In file included from DEploid/panel.hpp:29:
+In file included from DEploid/txtReader.hpp:34:
+DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+In file included from DEploid/ibd.cpp:32:
+In file included from DEploid/ibd.hpp:33:
+In file included from DEploid/dEploidIO.hpp:34:
+In file included from DEploid/panel.hpp:29:
+In file included from DEploid/txtReader.hpp:34:
+DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+1 error generated.
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: DEploid/mcmc.o] Error 1
+1 error generated.
+make: *** Attente des tâches non terminées....
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: DEploid/ibd.o] Error 1
+In file included from DEploid/panel.cpp:26:
+In file included from DEploid/panel.hpp:29:
+In file included from DEploid/txtReader.hpp:34:
+DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: DEploid/dEploidIO.o] Error 1
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: DEploid/panel.o] Error 1
+In file included from rvcf.cpp:2:
+In file included from DEploid/vcfReader.hpp:32:
+DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: rvcf.o] Error 1
+In file included from dEploidr.cpp:28:
+In file included from DEploid/mcmc.hpp:31:
+In file included from DEploid/dEploidIO.hpp:34:
+In file included from DEploid/panel.hpp:29:
+In file included from DEploid/txtReader.hpp:34:
+DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: dEploidr.o] Error 1
+ERROR: compilation failed for package ‘DEploid’
+* removing ‘/nix/store/9m3wg19kx2krgdfl14208gl4jvyl9wg3-r-DEploid-0.5.4/library/DEploid’
+error: builder for '/nix/store/rhypzrb29jfi9cmxjnxq63ipldqxp3hz-r-DEploid-0.5.4.drv' failed with exit code 1;
+       last 25 log lines:
+       > DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+       > #include <zlib.h>
+       >          ^~~~~~~~
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: DEploid/dEploidIO.o] Error 1
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: DEploid/panel.o] Error 1
+       > In file included from rvcf.cpp:2:
+       > In file included from DEploid/vcfReader.hpp:32:
+       > DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+       > #include <zlib.h>
+       >          ^~~~~~~~
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: rvcf.o] Error 1
+       > In file included from dEploidr.cpp:28:
+       > In file included from DEploid/mcmc.hpp:31:
+       > In file included from DEploid/dEploidIO.hpp:34:
+       > In file included from DEploid/panel.hpp:29:
+       > In file included from DEploid/txtReader.hpp:34:
+       > DEploid/gzstream/gzstream.h:35:10: fatal error: 'zlib.h' file not found
+       > #include <zlib.h>
+       >          ^~~~~~~~
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: dEploidr.o] Error 1
+       > ERROR: compilation failed for package ‘DEploid’
+       > * removing ‘/nix/store/9m3wg19kx2krgdfl14208gl4jvyl9wg3-r-DEploid-0.5.4/library/DEploid’
+       For full logs, run 'nix log /nix/store/rhypzrb29jfi9cmxjnxq63ipldqxp3hz-r-DEploid-0.5.4.drv'.

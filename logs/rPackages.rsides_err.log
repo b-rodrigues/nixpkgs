@@ -1,0 +1,594 @@
+this derivation will be built:
+  /nix/store/55y4qfz8sf3qd5nfk7bc9c12m22kfyq3-r-rsides-0.1.drv
+this path will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/36sdqgfq18kapq8hqg16rkrxmnrjsd3g-rsides_0.1.tar.gz
+copying path '/nix/store/36sdqgfq18kapq8hqg16rkrxmnrjsd3g-rsides_0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/55y4qfz8sf3qd5nfk7bc9c12m22kfyq3-r-rsides-0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/36sdqgfq18kapq8hqg16rkrxmnrjsd3g-rsides_0.1.tar.gz
+source root is rsides
+setting SOURCE_DATE_EPOCH to timestamp 1718038802 of file rsides/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rsides’ ...
+** package ‘rsides’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rsides.cpp -o rsides.o
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:486:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix<double>::const_iterator1, double>' requested here
+            public random_access_iterator_base<dense_random_access_iterator_tag,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:714:50: note: in instantiation of member class 'boost::numeric::ublas::matrix<double>::const_iterator1' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                                                 ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_proxy.hpp:265:50: note: in instantiation of member class 'boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>::const_iterator' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                                                 ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_expression.hpp:1510:29: note: in instantiation of member class 'boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>::const_iterator' requested here
+        typedef typename E::const_iterator::iterator_category iterator_category;
+                            ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_expression.hpp:1638:16: note: in instantiation of template class 'boost::numeric::ublas::vector_scalar_unary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_index_norm_inf<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>>>' requested here
+        return expression_type (e ());
+               ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:145:40: note: in instantiation of function template specialization 'boost::numeric::ublas::index_norm_inf<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>>' requested here
+            size_type i_norm_inf = i + index_norm_inf (project (mci, range (i, size1)));
+                                       ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:714:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>::const_iterator, double>' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_proxy.hpp:265:50: note: in instantiation of member class 'boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>::const_iterator' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                                                 ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_expression.hpp:1510:29: note: in instantiation of member class 'boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>::const_iterator' requested here
+        typedef typename E::const_iterator::iterator_category iterator_category;
+                            ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_expression.hpp:1638:16: note: in instantiation of template class 'boost::numeric::ublas::vector_scalar_unary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_index_norm_inf<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>>>' requested here
+        return expression_type (e ());
+               ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:145:40: note: in instantiation of function template specialization 'boost::numeric::ublas::index_norm_inf<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>>' requested here
+            size_type i_norm_inf = i + index_norm_inf (project (mci, range (i, size1)));
+                                       ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_proxy.hpp:265:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>::const_iterator, double>' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_expression.hpp:1510:29: note: in instantiation of member class 'boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>::const_iterator' requested here
+        typedef typename E::const_iterator::iterator_category iterator_category;
+                            ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_expression.hpp:1638:16: note: in instantiation of template class 'boost::numeric::ublas::vector_scalar_unary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_index_norm_inf<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>>>' requested here
+        return expression_type (e ());
+               ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:145:40: note: in instantiation of function template specialization 'boost::numeric::ublas::index_norm_inf<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>>' requested here
+            size_type i_norm_inf = i + index_norm_inf (project (mci, range (i, size1)));
+                                       ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:809:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix<double>::const_iterator2, double>' requested here
+            public random_access_iterator_base<dense_random_access_iterator_tag,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:241:50: note: in instantiation of member class 'boost::numeric::ublas::matrix<double>::const_iterator2' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                                                 ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/vector_assign.hpp:603:57: note: in instantiation of member class 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::const_iterator' requested here
+                                            typename E::const_iterator::iterator_category>::storage_category storage_category;
+                                                        ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:192:17: note: in instantiation of function template specialization 'boost::numeric::ublas::vector_swap<boost::numeric::ublas::scalar_swap, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>' requested here
+                vector_swap<scalar_swap> (*this, mr);
+                ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:150:41: note: in instantiation of member function 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::swap' requested here
+                    row (m, i_norm_inf).swap (mri);
+                                        ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:241:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::const_iterator, double>' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/vector_assign.hpp:603:57: note: in instantiation of member class 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::const_iterator' requested here
+                                            typename E::const_iterator::iterator_category>::storage_category storage_category;
+                                                        ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:192:17: note: in instantiation of function template specialization 'boost::numeric::ublas::vector_swap<boost::numeric::ublas::scalar_swap, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>' requested here
+                vector_swap<scalar_swap> (*this, mr);
+                ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:150:41: note: in instantiation of member function 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::swap' requested here
+                    row (m, i_norm_inf).swap (mri);
+                                        ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:990:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix<double>::iterator2, double>' requested here
+            public random_access_iterator_base<dense_random_access_iterator_tag,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:349:50: note: in instantiation of member class 'boost::numeric::ublas::matrix<double>::iterator2' requested here
+            public iterator_base_traits<typename subiterator_type::iterator_category>::template
+                                                 ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/vector_assign.hpp:509:31: note: in instantiation of member class 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::iterator' requested here
+        typedef F<typename V::iterator::reference, typename E::iterator::reference> functor_type;
+                              ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/vector_assign.hpp:604:9: note: in instantiation of function template specialization 'boost::numeric::ublas::vector_swap<boost::numeric::ublas::scalar_swap, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>' requested here
+        vector_swap<F> (v, e, storage_category ());
+        ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:192:17: note: in instantiation of function template specialization 'boost::numeric::ublas::vector_swap<boost::numeric::ublas::scalar_swap, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>' requested here
+                vector_swap<scalar_swap> (*this, mr);
+                ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:150:41: note: in instantiation of member function 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::swap' requested here
+                    row (m, i_norm_inf).swap (mri);
+                                        ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:349:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::iterator, double>' requested here
+            public iterator_base_traits<typename subiterator_type::iterator_category>::template
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/vector_assign.hpp:509:31: note: in instantiation of member class 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::iterator' requested here
+        typedef F<typename V::iterator::reference, typename E::iterator::reference> functor_type;
+                              ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/vector_assign.hpp:604:9: note: in instantiation of function template specialization 'boost::numeric::ublas::vector_swap<boost::numeric::ublas::scalar_swap, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>' requested here
+        vector_swap<F> (v, e, storage_category ());
+        ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:192:17: note: in instantiation of function template specialization 'boost::numeric::ublas::vector_swap<boost::numeric::ublas::scalar_swap, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>' requested here
+                vector_swap<scalar_swap> (*this, mr);
+                ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:150:41: note: in instantiation of member function 'boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>::swap' requested here
+                    row (m, i_norm_inf).swap (mri);
+                                        ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector_proxy.hpp:265:20: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>::const_iterator, double>' requested here
+            public iterator_base_traits<typename const_subiterator_type::iterator_category>::template
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:461:19: note: in instantiation of member class 'boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>::const_iterator' requested here
+            typename E2::const_iterator::iterator_category>::iterator_category>::template
+                         ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1364:59: note: in instantiation of member class 'boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>::const_iterator1' requested here
+                                              typename E::const_iterator1::iterator_category,
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:2548:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_minus_assign, boost::numeric::ublas::matrix_range<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>>' requested here
+            matrix_assign<scalar_minus_assign> (*this, ae);
+            ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:159:69: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_range<boost::numeric::ublas::matrix<double>>::minus_assign<boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>>' requested here
+            project (m, range (i + 1, size1), range (i + 1, size2)).minus_assign (
+                                                                    ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:460:13: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>::const_iterator1, double>' requested here
+            public iterator_base_traits<typename iterator_restrict_traits<typename E1::const_iterator::iterator_category,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1364:59: note: in instantiation of member class 'boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>::const_iterator1' requested here
+                                              typename E::const_iterator1::iterator_category,
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:2548:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_minus_assign, boost::numeric::ublas::matrix_range<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>>' requested here
+            matrix_assign<scalar_minus_assign> (*this, ae);
+            ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:159:69: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_range<boost::numeric::ublas::matrix<double>>::minus_assign<boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>>' requested here
+            project (m, range (i + 1, size1), range (i + 1, size2)).minus_assign (
+                                                                    ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:661:13: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>::const_iterator2, double>' requested here
+            public iterator_base_traits<typename iterator_restrict_traits<typename E1::const_iterator::iterator_category,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1365:59: note: in instantiation of member class 'boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>::const_iterator2' requested here
+                                              typename E::const_iterator2::iterator_category>::storage_category storage_category;
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_proxy.hpp:2548:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_minus_assign, boost::numeric::ublas::matrix_range<boost::numeric::ublas::matrix<double>>, boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>>' requested here
+            matrix_assign<scalar_minus_assign> (*this, ae);
+            ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/lu.hpp:159:69: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_range<boost::numeric::ublas::matrix<double>>::minus_assign<boost::numeric::ublas::vector_matrix_binary<boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_column<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::vector_range<boost::numeric::ublas::matrix_row<boost::numeric::ublas::matrix<double>>>, boost::numeric::ublas::scalar_multiplies<double, double>>>' requested here
+            project (m, range (i + 1, size1), range (i + 1, size2)).minus_assign (
+                                                                    ^
+rsides.cpp:1587:15: note: in instantiation of function template specialization 'boost::numeric::ublas::lu_factorize<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::permutation_matrix<>>' requested here
+    int res = lu_factorize(A,pm); 
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:149:21: warning: 'iterator<boost::numeric::ublas::sparse_bidirectional_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:4059:20: note: in instantiation of template class 'boost::numeric::ublas::bidirectional_iterator_base<boost::numeric::ublas::sparse_bidirectional_iterator_tag, boost::numeric::ublas::identity_matrix<double>::const_iterator1, double>' requested here
+            public bidirectional_iterator_base<sparse_bidirectional_iterator_tag,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1364:59: note: in instantiation of member class 'boost::numeric::ublas::identity_matrix<double>::const_iterator1' requested here
+                                              typename E::const_iterator1::iterator_category,
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:359:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_assign, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::identity_matrix<double>>' requested here
+            matrix_assign<scalar_assign> (*this, ae);
+            ^
+rsides.cpp:1590:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix<double>::assign<boost::numeric::ublas::identity_matrix<double>>' requested here
+    inverse.assign(ublas::identity_matrix<double>(A.size1())); 
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::sparse_bidirectional_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:149:21: warning: 'iterator<boost::numeric::ublas::sparse_bidirectional_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:4207:20: note: in instantiation of template class 'boost::numeric::ublas::bidirectional_iterator_base<boost::numeric::ublas::sparse_bidirectional_iterator_tag, boost::numeric::ublas::identity_matrix<double>::const_iterator2, double>' requested here
+            public bidirectional_iterator_base<sparse_bidirectional_iterator_tag,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1365:59: note: in instantiation of member class 'boost::numeric::ublas::identity_matrix<double>::const_iterator2' requested here
+                                              typename E::const_iterator2::iterator_category>::storage_category storage_category;
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:359:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_assign, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::identity_matrix<double>>' requested here
+            matrix_assign<scalar_assign> (*this, ae);
+            ^
+rsides.cpp:1590:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix<double>::assign<boost::numeric::ublas::identity_matrix<double>>' requested here
+    inverse.assign(ublas::identity_matrix<double>(A.size1())); 
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::sparse_bidirectional_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:1596:13: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>::const_iterator1, double>' requested here
+            public iterator_base_traits<typename E::const_iterator2::iterator_category>::template
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:4961:81: note: in instantiation of member class 'boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>::const_iterator1' requested here
+            public iterator_base_traits<typename iterator_restrict_traits<typename E1::const_iterator1::iterator_category,
+                                                                                       ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1364:59: note: in instantiation of member class 'boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>::const_iterator1' requested here
+                                              typename E::const_iterator1::iterator_category,
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:172:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_assign, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+            matrix_assign<scalar_assign> (*this, ae);
+            ^
+rsides.cpp:1812:34: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix<double>::matrix<boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+    ublas::matrix<double> trxx = prod(trans(x), x);
+                                 ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:4961:13: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>::const_iterator1, double>' requested here
+            public iterator_base_traits<typename iterator_restrict_traits<typename E1::const_iterator1::iterator_category,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1364:59: note: in instantiation of member class 'boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>::const_iterator1' requested here
+                                              typename E::const_iterator1::iterator_category,
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:172:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_assign, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+            matrix_assign<scalar_assign> (*this, ae);
+            ^
+rsides.cpp:1812:34: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix<double>::matrix<boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+    ublas::matrix<double> trxx = prod(trans(x), x);
+                                 ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:5223:13: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>::const_iterator2, double>' requested here
+            public iterator_base_traits<typename iterator_restrict_traits<typename E1::const_iterator1::iterator_category,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1365:59: note: in instantiation of member class 'boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>::const_iterator2' requested here
+                                              typename E::const_iterator2::iterator_category>::storage_category storage_category;
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:172:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_assign, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+            matrix_assign<scalar_assign> (*this, ae);
+            ^
+rsides.cpp:1812:34: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix<double>::matrix<boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix_unary2<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::scalar_identity<double>>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+    ublas::matrix<double> trxx = prod(trans(x), x);
+                                 ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:4961:13: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>::const_iterator1, double>' requested here
+            public iterator_base_traits<typename iterator_restrict_traits<typename E1::const_iterator1::iterator_category,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1364:59: note: in instantiation of member class 'boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>::const_iterator1' requested here
+                                              typename E::const_iterator1::iterator_category,
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:172:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_assign, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+            matrix_assign<scalar_assign> (*this, ae);
+            ^
+rsides.cpp:1817:33: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix<double>::matrix<boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+    ublas::matrix<double> est = prod(trxx_inv, txy);
+                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from rsides.cpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:18:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/vector.hpp:21:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/storage.hpp:27:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/traits.hpp:21:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/iterator.hpp:204:21: warning: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' is deprecated [-Wdeprecated-declarations]
+        public std::iterator<IC, T> {
+                    ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix_expression.hpp:5223:13: note: in instantiation of template class 'boost::numeric::ublas::random_access_iterator_base<boost::numeric::ublas::dense_random_access_iterator_tag, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>::const_iterator2, double>' requested here
+            public iterator_base_traits<typename iterator_restrict_traits<typename E1::const_iterator1::iterator_category,
+                   ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/detail/matrix_assign.hpp:1365:59: note: in instantiation of member class 'boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>::const_iterator2' requested here
+                                              typename E::const_iterator2::iterator_category>::storage_category storage_category;
+                                                          ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/numeric/ublas/matrix.hpp:172:13: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix_assign<boost::numeric::ublas::scalar_assign, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+            matrix_assign<scalar_assign> (*this, ae);
+            ^
+rsides.cpp:1817:33: note: in instantiation of function template specialization 'boost::numeric::ublas::matrix<double>::matrix<boost::numeric::ublas::matrix_matrix_binary<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix_matrix_prod<boost::numeric::ublas::matrix<double>, boost::numeric::ublas::matrix<double>, double>>>' requested here
+    ublas::matrix<double> est = prod(trxx_inv, txy);
+                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__iterator/iterator.h:24:29: note: 'iterator<boost::numeric::ublas::dense_random_access_iterator_tag, double>' has been explicitly marked deprecated here
+struct _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX17 iterator
+                            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:808:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+#    define _LIBCPP_DEPRECATED_IN_CXX17 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+17 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rsides.so RcppExports.o rsides.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/hil1nmjyh3fpfwhh8ld2c70j4y08700z-r-rsides-0.1/library/00LOCK-rsides/00new/rsides/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rsides)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rsides-0.1.drv-0/ in /nix/store/hil1nmjyh3fpfwhh8ld2c70j4y08700z-r-rsides-0.1...
+patching script interpreter paths in /nix/store/hil1nmjyh3fpfwhh8ld2c70j4y08700z-r-rsides-0.1
+rewriting symlink /nix/store/hil1nmjyh3fpfwhh8ld2c70j4y08700z-r-rsides-0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/hil1nmjyh3fpfwhh8ld2c70j4y08700z-r-rsides-0.1

@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/akfwvpxvr0lxdf5maj6bdibr3rlfzk6s-r-simfam-1.1.6.drv
+this path will be fetched (1.16 MiB download, 1.16 MiB unpacked):
+  /nix/store/dby5bg4hsnvdjvwgibw2m6fl04gi9y5p-simfam_1.1.6.tar.gz
+copying path '/nix/store/dby5bg4hsnvdjvwgibw2m6fl04gi9y5p-simfam_1.1.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/akfwvpxvr0lxdf5maj6bdibr3rlfzk6s-r-simfam-1.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dby5bg4hsnvdjvwgibw2m6fl04gi9y5p-simfam_1.1.6.tar.gz
+source root is simfam
+setting SOURCE_DATE_EPOCH to timestamp 1673301002 of file simfam/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘simfam’ ...
+** package ‘simfam’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geno_fam_cpp.cpp -o geno_fam_cpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o simfam.so RcppExports.o geno_fam_cpp.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/nfsqqyvdcmmpnvsh9f4cig5ls86dd165-r-simfam-1.1.6/library/00LOCK-simfam/00new/simfam/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (simfam)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-simfam-1.1.6.drv-0/ in /nix/store/nfsqqyvdcmmpnvsh9f4cig5ls86dd165-r-simfam-1.1.6...
+patching script interpreter paths in /nix/store/nfsqqyvdcmmpnvsh9f4cig5ls86dd165-r-simfam-1.1.6
+rewriting symlink /nix/store/nfsqqyvdcmmpnvsh9f4cig5ls86dd165-r-simfam-1.1.6/nix-support/propagated-user-env-packages to be relative to /nix/store/nfsqqyvdcmmpnvsh9f4cig5ls86dd165-r-simfam-1.1.6

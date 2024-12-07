@@ -1,0 +1,60 @@
+these 2 derivations will be built:
+  /nix/store/r9j6wjgds42bk0qaiq138l3yhk6d2x9w-mmrm_0.3.14.tar.gz.drv
+  /nix/store/18i2ddb7mxff190klp6zbc2sb3zh9nkn-r-mmrm-0.3.14.drv
+building '/nix/store/r9j6wjgds42bk0qaiq138l3yhk6d2x9w-mmrm_0.3.14.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/mmrm_0.3.14.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  763k  100  763k    0     0  2721k      0 --:--:-- --:--:-- --:--:-- 2725k
+building '/nix/store/18i2ddb7mxff190klp6zbc2sb3zh9nkn-r-mmrm-0.3.14.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8agyil8lcxrshq1xml1pi57hnbmfih1g-mmrm_0.3.14.tar.gz
+source root is mmrm
+setting SOURCE_DATE_EPOCH to timestamp 1727479801 of file mmrm/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mmrm’ ...
+** package ‘mmrm’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c empirical.cpp -o empirical.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c exports.cpp -o exports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c jacobian.cpp -o jacobian.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c kr_comp.cpp -o kr_comp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c mmrm.cpp -o mmrm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c predict.cpp -o predict.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c test-chol_cache.cpp -o test-chol_cache.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c test-covariance.cpp -o test-covariance.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c test-derivatives.cpp -o test-derivatives.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c test-runner.cpp -o test-runner.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c test-utils.cpp -o test-utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -D TMBAD_FRAMEWORK -D EIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fPIC  -g -O2   -c tmb.cpp -o tmb.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mmrm.so empirical.o exports.o jacobian.o kr_comp.o mmrm.o predict.o test-chol_cache.o test-covariance.o test-derivatives.o test-runner.o test-utils.o tmb.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xqbma4dgsi67qzxyifgffpg50r1piv0i-r-mmrm-0.3.14/library/00LOCK-mmrm/00new/mmrm/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mmrm)
+installPhase completed in 57 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mmrm-0.3.14.drv-0/ in /nix/store/xqbma4dgsi67qzxyifgffpg50r1piv0i-r-mmrm-0.3.14...
+patching script interpreter paths in /nix/store/xqbma4dgsi67qzxyifgffpg50r1piv0i-r-mmrm-0.3.14
+rewriting symlink /nix/store/xqbma4dgsi67qzxyifgffpg50r1piv0i-r-mmrm-0.3.14/nix-support/propagated-user-env-packages to be relative to /nix/store/xqbma4dgsi67qzxyifgffpg50r1piv0i-r-mmrm-0.3.14

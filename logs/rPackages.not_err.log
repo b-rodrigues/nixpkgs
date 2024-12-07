@@ -1,0 +1,45 @@
+these 2 derivations will be built:
+  /nix/store/vjcpxa27gdqppr81gcjcx1cqb4srkfhl-not_1.6.tar.gz.drv
+  /nix/store/mc9k8ybrb9miw3aqbbn4kg0ajld0zm15-r-not-1.6.drv
+building '/nix/store/vjcpxa27gdqppr81gcjcx1cqb4srkfhl-not_1.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/not_1.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 22931  100 22931    0     0   198k      0 --:--:-- --:--:-- --:--:--  199k
+building '/nix/store/mc9k8ybrb9miw3aqbbn4kg0ajld0zm15-r-not-1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2cj2hvjdj9jjz9ql5zlpcrpx81k07fmx-not_1.6.tar.gz
+source root is not
+setting SOURCE_DATE_EPOCH to timestamp 1727098828 of file not/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘not’ ...
+** package ‘not’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c changepoints_tree.c -o changepoints_tree.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c contrasts.c -o contrasts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c not.c -o not.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c not_init.c -o not_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o not.so changepoints_tree.o contrasts.o not.o not_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/c5c5bikq4lq491yi8i31bgf5bf679hhp-r-not-1.6/library/00LOCK-not/00new/not/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (not)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-not-1.6.drv-0/ in /nix/store/c5c5bikq4lq491yi8i31bgf5bf679hhp-r-not-1.6...
+patching script interpreter paths in /nix/store/c5c5bikq4lq491yi8i31bgf5bf679hhp-r-not-1.6

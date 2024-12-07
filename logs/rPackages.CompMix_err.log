@@ -1,0 +1,136 @@
+these 4 derivations will be built:
+  /nix/store/2qqij3brgjsmb6v8bhv0yad4givbb0h0-r-higlasso-0.9.0.drv
+  /nix/store/f9f8gzw1sngb7d5nqgwpalr2swh1ipcm-r-plotROC-2.3.1.drv
+  /nix/store/x9iiz1hi3rz11ps6m4y87vznvdymx2j6-r-gWQS-3.0.5.drv
+  /nix/store/qfpmff0fikk25gz5pkdgk818hckp87rv-r-CompMix-0.1.0.drv
+building '/nix/store/2qqij3brgjsmb6v8bhv0yad4givbb0h0-r-higlasso-0.9.0.drv'...
+building '/nix/store/f9f8gzw1sngb7d5nqgwpalr2swh1ipcm-r-plotROC-2.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jhphvb2s05f6ylwyax1ba7jfjyjqj9l4-higlasso_0.9.0.tar.gz
+source root is higlasso
+setting SOURCE_DATE_EPOCH to timestamp 1590428403 of file higlasso/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘higlasso’ ...
+** package ‘higlasso’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+Running phase: unpackPhase
+unpacking source archive /nix/store/h0mm1ssl53pxir84lf5f031zan4lrkaf-plotROC_2.3.1.tar.gz
+source root is plotROC
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+setting SOURCE_DATE_EPOCH to timestamp 1696596002 of file plotROC/MD5
+Running phase: patchPhase
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_NO_DEBUG -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DARMA_NO_DEBUG -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c higlasso.cpp -o higlasso.o
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘plotROC’ ...
+** package ‘plotROC’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (plotROC)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-plotROC-2.3.1.drv-0/ in /nix/store/167hjampkcn5fx37bv520z5aan7wpkw1-r-plotROC-2.3.1...
+patching script interpreter paths in /nix/store/167hjampkcn5fx37bv520z5aan7wpkw1-r-plotROC-2.3.1
+rewriting symlink /nix/store/167hjampkcn5fx37bv520z5aan7wpkw1-r-plotROC-2.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/167hjampkcn5fx37bv520z5aan7wpkw1-r-plotROC-2.3.1
+building '/nix/store/x9iiz1hi3rz11ps6m4y87vznvdymx2j6-r-gWQS-3.0.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5i3yc8vsn3x0kxli1v3qkc86csbdr8gx-gWQS_3.0.5.tar.gz
+source root is gWQS
+setting SOURCE_DATE_EPOCH to timestamp 1700173206 of file gWQS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gWQS’ ...
+** package ‘gWQS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o higlasso.so RcppExports.o higlasso.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+** building package indices
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/87fvwh2i54dip9pa6k5r3mbyrx39xx05-r-higlasso-0.9.0/library/00LOCK-higlasso/00new/higlasso/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (higlasso)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-higlasso-0.9.0.drv-0/ in /nix/store/87fvwh2i54dip9pa6k5r3mbyrx39xx05-r-higlasso-0.9.0...
+patching script interpreter paths in /nix/store/87fvwh2i54dip9pa6k5r3mbyrx39xx05-r-higlasso-0.9.0
+** testing if installed package can be loaded from final location
+rewriting symlink /nix/store/87fvwh2i54dip9pa6k5r3mbyrx39xx05-r-higlasso-0.9.0/nix-support/propagated-user-env-packages to be relative to /nix/store/87fvwh2i54dip9pa6k5r3mbyrx39xx05-r-higlasso-0.9.0
+** testing if installed package keeps a record of temporary installation path
+* DONE (gWQS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gWQS-3.0.5.drv-0/ in /nix/store/f9nxlvn5lkla7n40029s105knfhrp64c-r-gWQS-3.0.5...
+patching script interpreter paths in /nix/store/f9nxlvn5lkla7n40029s105knfhrp64c-r-gWQS-3.0.5
+rewriting symlink /nix/store/f9nxlvn5lkla7n40029s105knfhrp64c-r-gWQS-3.0.5/nix-support/propagated-user-env-packages to be relative to /nix/store/f9nxlvn5lkla7n40029s105knfhrp64c-r-gWQS-3.0.5
+building '/nix/store/qfpmff0fikk25gz5pkdgk818hckp87rv-r-CompMix-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ijj2kxf9f245zr7f5z3xm496cd3dga6z-CompMix_0.1.0.tar.gz
+source root is CompMix
+setting SOURCE_DATE_EPOCH to timestamp 1716379802 of file CompMix/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘CompMix’ ...
+** package ‘CompMix’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (CompMix)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-CompMix-0.1.0.drv-0/ in /nix/store/l5fqx8li673x5a5fpw1lqhimdnrim5kk-r-CompMix-0.1.0...
+patching script interpreter paths in /nix/store/l5fqx8li673x5a5fpw1lqhimdnrim5kk-r-CompMix-0.1.0
+rewriting symlink /nix/store/l5fqx8li673x5a5fpw1lqhimdnrim5kk-r-CompMix-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/l5fqx8li673x5a5fpw1lqhimdnrim5kk-r-CompMix-0.1.0

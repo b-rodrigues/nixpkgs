@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/bkrrb8899clxvjp0cwvayaqj735ava24-r-webfakes-1.3.1.drv
+this path will be fetched (0.38 MiB download, 0.38 MiB unpacked):
+  /nix/store/a45b69lpgy7fasq3gc8x7p373nvgj7ad-webfakes_1.3.1.tar.gz
+copying path '/nix/store/a45b69lpgy7fasq3gc8x7p373nvgj7ad-webfakes_1.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bkrrb8899clxvjp0cwvayaqj735ava24-r-webfakes-1.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/a45b69lpgy7fasq3gc8x7p373nvgj7ad-webfakes_1.3.1.tar.gz
+source root is webfakes
+setting SOURCE_DATE_EPOCH to timestamp 1714035603 of file webfakes/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘webfakes’ ...
+** package ‘webfakes’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_CGI -DNO_FILES -fPIC  -g -O2  -c civetweb.c -o civetweb.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_CGI -DNO_FILES -fPIC  -g -O2  -c cleancall.c -o cleancall.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_CGI -DNO_FILES -fPIC  -g -O2  -c crc32.c -o crc32.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_CGI -DNO_FILES -fPIC  -g -O2  -c errors.c -o errors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_CGI -DNO_FILES -fPIC  -g -O2  -c rweb.c -o rweb.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o webfakes.so civetweb.o cleancall.o crc32.o errors.o rweb.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/c2qrh8w6bbdz5sm8mkc4vdh718r3429j-r-webfakes-1.3.1/library/00LOCK-webfakes/00new/webfakes/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (webfakes)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-webfakes-1.3.1.drv-0/ in /nix/store/c2qrh8w6bbdz5sm8mkc4vdh718r3429j-r-webfakes-1.3.1...
+patching script interpreter paths in /nix/store/c2qrh8w6bbdz5sm8mkc4vdh718r3429j-r-webfakes-1.3.1

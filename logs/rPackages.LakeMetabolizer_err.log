@@ -1,0 +1,77 @@
+these 2 derivations will be built:
+  /nix/store/0vky780w58vavwxniimdjycxs52divbc-r-rLakeAnalyzer-1.11.4.1.drv
+  /nix/store/i04a29i8rrmyq5yaxvivcarah3xlk61a-r-LakeMetabolizer-1.5.5.drv
+these 2 paths will be fetched (1.04 MiB download, 1.06 MiB unpacked):
+  /nix/store/ih0kl5ibij5zg2zm8fwc8mm5z2mfclsc-LakeMetabolizer_1.5.5.tar.gz
+  /nix/store/ixjr2gaxvkgrfvdi394f3qj99d0jgbak-rLakeAnalyzer_1.11.4.1.tar.gz
+copying path '/nix/store/ih0kl5ibij5zg2zm8fwc8mm5z2mfclsc-LakeMetabolizer_1.5.5.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ixjr2gaxvkgrfvdi394f3qj99d0jgbak-rLakeAnalyzer_1.11.4.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0vky780w58vavwxniimdjycxs52divbc-r-rLakeAnalyzer-1.11.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ixjr2gaxvkgrfvdi394f3qj99d0jgbak-rLakeAnalyzer_1.11.4.1.tar.gz
+source root is rLakeAnalyzer
+setting SOURCE_DATE_EPOCH to timestamp 1560105946 of file rLakeAnalyzer/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rLakeAnalyzer’ ...
+** package ‘rLakeAnalyzer’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rLakeAnalyzer)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rLakeAnalyzer-1.11.4.1.drv-0/ in /nix/store/ambc02czkmfdbkyjax8bjyfrvmxk312d-r-rLakeAnalyzer-1.11.4.1...
+patching script interpreter paths in /nix/store/ambc02czkmfdbkyjax8bjyfrvmxk312d-r-rLakeAnalyzer-1.11.4.1
+rewriting symlink /nix/store/ambc02czkmfdbkyjax8bjyfrvmxk312d-r-rLakeAnalyzer-1.11.4.1/nix-support/propagated-user-env-packages to be relative to /nix/store/ambc02czkmfdbkyjax8bjyfrvmxk312d-r-rLakeAnalyzer-1.11.4.1
+building '/nix/store/i04a29i8rrmyq5yaxvivcarah3xlk61a-r-LakeMetabolizer-1.5.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ih0kl5ibij5zg2zm8fwc8mm5z2mfclsc-LakeMetabolizer_1.5.5.tar.gz
+source root is LakeMetabolizer
+setting SOURCE_DATE_EPOCH to timestamp 1668555016 of file LakeMetabolizer/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LakeMetabolizer’ ...
+** package ‘LakeMetabolizer’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c LakeMetabolizer_init.c -o LakeMetabolizer_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c kalmanLoop.c -o kalmanLoop.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c kalmanLoopTemp.c -o kalmanLoopTemp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mleLoop.c -o mleLoop.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LakeMetabolizer.so LakeMetabolizer_init.o kalmanLoop.o kalmanLoopTemp.o mleLoop.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/s20a4j76sfcl3zqzkljps4l7jma1nvav-r-LakeMetabolizer-1.5.5/library/00LOCK-LakeMetabolizer/00new/LakeMetabolizer/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LakeMetabolizer)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LakeMetabolizer-1.5.5.drv-0/ in /nix/store/s20a4j76sfcl3zqzkljps4l7jma1nvav-r-LakeMetabolizer-1.5.5...
+patching script interpreter paths in /nix/store/s20a4j76sfcl3zqzkljps4l7jma1nvav-r-LakeMetabolizer-1.5.5
+rewriting symlink /nix/store/s20a4j76sfcl3zqzkljps4l7jma1nvav-r-LakeMetabolizer-1.5.5/nix-support/propagated-user-env-packages to be relative to /nix/store/s20a4j76sfcl3zqzkljps4l7jma1nvav-r-LakeMetabolizer-1.5.5

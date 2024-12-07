@@ -1,0 +1,87 @@
+these 4 derivations will be built:
+  /nix/store/828s49sbs688snrdgrzwpi8hvrprrd5d-SAMtool_1.8.0.tar.gz.drv
+  /nix/store/0wavmk9nq648c6sva2swyzqpmcpyyf7f-r-SAMtool-1.8.0.drv
+  /nix/store/4nvsy5cbwp8b7n570712259nwvlpyzcw-openMSE_1.0.1.tar.gz.drv
+  /nix/store/xh5i6z25pb8dl21h45dxcffapnhr6ql6-r-openMSE-1.0.1.drv
+building '/nix/store/4nvsy5cbwp8b7n570712259nwvlpyzcw-openMSE_1.0.1.tar.gz.drv'...
+building '/nix/store/828s49sbs688snrdgrzwpi8hvrprrd5d-SAMtool_1.8.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/openMSE_1.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  117k  100  117k    0     0   742k      0 --:--:-- --:--:-- --:--:--  744k
+
+trying https://cran.r-project.org/src/contrib/SAMtool_1.8.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  311k  100  311k    0     0  1675k      0 --:--:-- --:--:-- --:--:-- 1681k
+building '/nix/store/0wavmk9nq648c6sva2swyzqpmcpyyf7f-r-SAMtool-1.8.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hhkg7jrz72hkiyvydn6j73l62kfk545n-SAMtool_1.8.0.tar.gz
+source root is SAMtool
+setting SOURCE_DATE_EPOCH to timestamp 1731023403 of file SAMtool/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SAMtool’ ...
+** package ‘SAMtool’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c SAMtool.cpp -o SAMtool.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SAMtool.so SAMtool.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/y9xhjj6pcf938w95v3150d7jwmkwll8z-r-SAMtool-1.8.0/library/00LOCK-SAMtool/00new/SAMtool/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘simulate’ dans package ‘SAMtool’
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SAMtool)
+installPhase completed in 43 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SAMtool-1.8.0.drv-0/ in /nix/store/y9xhjj6pcf938w95v3150d7jwmkwll8z-r-SAMtool-1.8.0...
+patching script interpreter paths in /nix/store/y9xhjj6pcf938w95v3150d7jwmkwll8z-r-SAMtool-1.8.0
+rewriting symlink /nix/store/y9xhjj6pcf938w95v3150d7jwmkwll8z-r-SAMtool-1.8.0/nix-support/propagated-user-env-packages to be relative to /nix/store/y9xhjj6pcf938w95v3150d7jwmkwll8z-r-SAMtool-1.8.0
+building '/nix/store/xh5i6z25pb8dl21h45dxcffapnhr6ql6-r-openMSE-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ngmwvsb143jswvjlcq8yhdzn2w16q25c-openMSE_1.0.1.tar.gz
+source root is openMSE
+setting SOURCE_DATE_EPOCH to timestamp 1727195402 of file openMSE/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘openMSE’ ...
+** package ‘openMSE’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (openMSE)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-openMSE-1.0.1.drv-0/ in /nix/store/0qjkwzsj1sbyg11qbvaxnzqb6yd6vmjc-r-openMSE-1.0.1...
+patching script interpreter paths in /nix/store/0qjkwzsj1sbyg11qbvaxnzqb6yd6vmjc-r-openMSE-1.0.1
+rewriting symlink /nix/store/0qjkwzsj1sbyg11qbvaxnzqb6yd6vmjc-r-openMSE-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/0qjkwzsj1sbyg11qbvaxnzqb6yd6vmjc-r-openMSE-1.0.1

@@ -1,0 +1,47 @@
+these 2 derivations will be built:
+  /nix/store/1k6gbhq6lsiq6cb5hmm6xzz8g80s9zc4-PeakSegOptimal_2024.10.1.tar.gz.drv
+  /nix/store/g3qz92cnshimad791655w0g9hy0hr1cl-r-PeakSegOptimal-2024.10.1.drv
+building '/nix/store/1k6gbhq6lsiq6cb5hmm6xzz8g80s9zc4-PeakSegOptimal_2024.10.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/PeakSegOptimal_2024.10.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  127k  100  127k    0     0   773k      0 --:--:-- --:--:-- --:--:--  776k
+building '/nix/store/g3qz92cnshimad791655w0g9hy0hr1cl-r-PeakSegOptimal-2024.10.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bdaq21m81kxl2b5d5srfy84dcz7in39z-PeakSegOptimal_2024.10.1.tar.gz
+source root is PeakSegOptimal
+setting SOURCE_DATE_EPOCH to timestamp 1727844002 of file PeakSegOptimal/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PeakSegOptimal’ ...
+** package ‘PeakSegOptimal’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PeakSegFPOPLog.cpp -o PeakSegFPOPLog.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PeakSegPDPALog.cpp -o PeakSegPDPALog.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c funPieceListLog.cpp -o funPieceListLog.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c interface.cpp -o interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PeakSegOptimal.so PeakSegFPOPLog.o PeakSegPDPALog.o funPieceListLog.o interface.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/04w3cfqxxliksg0h54z5ssv531n6kfn2-r-PeakSegOptimal-2024.10.1/library/00LOCK-PeakSegOptimal/00new/PeakSegOptimal/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PeakSegOptimal)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PeakSegOptimal-2024.10.1.drv-0/ in /nix/store/04w3cfqxxliksg0h54z5ssv531n6kfn2-r-PeakSegOptimal-2024.10.1...
+patching script interpreter paths in /nix/store/04w3cfqxxliksg0h54z5ssv531n6kfn2-r-PeakSegOptimal-2024.10.1
+rewriting symlink /nix/store/04w3cfqxxliksg0h54z5ssv531n6kfn2-r-PeakSegOptimal-2024.10.1/nix-support/propagated-user-env-packages to be relative to /nix/store/04w3cfqxxliksg0h54z5ssv531n6kfn2-r-PeakSegOptimal-2024.10.1

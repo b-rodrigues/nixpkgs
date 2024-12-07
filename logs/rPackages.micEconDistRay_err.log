@@ -1,0 +1,243 @@
+these 5 derivations will be built:
+  /nix/store/6k77sw13giwaxkvcxyjzw4qxy2p2zsr3-r-mnorm-1.2.2.drv
+  /nix/store/am7d83rqx057kz4gqz8ldlsqp9ps4g04-sfaR_1.0.1.tar.gz.drv
+  /nix/store/jkscci9kmxrv7935r1y64448wl50imz3-r-trustOptim-0.8.7.3.drv
+  /nix/store/bmjfs20hfmjkkqb840697jrhhb3693lg-r-sfaR-1.0.1.drv
+  /nix/store/14l0kq2l20n52m4j7svbz2kgn40zwpb9-r-micEconDistRay-0.1-2.drv
+these 3 paths will be fetched (0.16 MiB download, 0.16 MiB unpacked):
+  /nix/store/zm97gvxw48rhkmqpzs6csw9aw9k6hznj-micEconDistRay_0.1-2.tar.gz
+  /nix/store/g6mj2sb5dl2skmy3b9yns4d1h6wvg41l-mnorm_1.2.2.tar.gz
+  /nix/store/ivfjzkbarjhd45k2g09z96qazbc8sfmb-trustOptim_0.8.7.3.tar.gz
+copying path '/nix/store/zm97gvxw48rhkmqpzs6csw9aw9k6hznj-micEconDistRay_0.1-2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/g6mj2sb5dl2skmy3b9yns4d1h6wvg41l-mnorm_1.2.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ivfjzkbarjhd45k2g09z96qazbc8sfmb-trustOptim_0.8.7.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/am7d83rqx057kz4gqz8ldlsqp9ps4g04-sfaR_1.0.1.tar.gz.drv'...
+building '/nix/store/6k77sw13giwaxkvcxyjzw4qxy2p2zsr3-r-mnorm-1.2.2.drv'...
+building '/nix/store/jkscci9kmxrv7935r1y64448wl50imz3-r-trustOptim-0.8.7.3.drv'...
+
+trying https://cran.r-project.org/src/contrib/sfaR_1.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/g6mj2sb5dl2skmy3b9yns4d1h6wvg41l-mnorm_1.2.2.tar.gz
+source root is mnorm
+setting SOURCE_DATE_EPOCH to timestamp 1701241802 of file mnorm/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100  667k  100  667k    0     0  2696k      0 --:--:-- --:--:-- --:--:-- 2700k
+Running phase: unpackPhase
+unpacking source archive /nix/store/ivfjzkbarjhd45k2g09z96qazbc8sfmb-trustOptim_0.8.7.3.tar.gz
+source root is trustOptim
+setting SOURCE_DATE_EPOCH to timestamp 1633939802 of file trustOptim/MD5
+Running phase: patchPhase
+* installing *source* package ‘mnorm’ ...
+** package ‘mnorm’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+using C++ compiler: ‘clang version 16.0.6’
+Running phase: checkPhase
+Running phase: installPhase
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c GaussLegendre.cpp -o GaussLegendre.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cmnorm.cpp -o cmnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dmnorm.cpp -o dmnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c halton.cpp -o halton.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pmnorm.cpp -o pmnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c qmnorm.cpp -o qmnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rmnorm.cpp -o rmnorm.o
+* installing *source* package ‘trustOptim’ ...
+** package ‘trustOptim’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c trustOptim.cpp -o trustOptim.o
+In file included from dmnorm.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+dmnorm.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+In file included from pmnorm.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+pmnorm.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+In file included from halton.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+halton.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+In file included from qmnorm.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+qmnorm.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+In file included from rmnorm.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+rmnorm.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+In file included from cmnorm.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+cmnorm.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/2cgjibivsr8h2czjijy9ddil4hr3wkgq-r-hpa-1.3.3/library/hpa/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c t0.cpp -o t0.o
+1 warning generated.
+1 warning generated.
+In file included from t0.cpp:2:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+t0.cpp:1:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o trustOptim.so RcppExports.o init.o trustOptim.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/j3wlghirzzxhn7fmss5gwb68vk24r5nk-r-trustOptim-0.8.7.3/library/00LOCK-trustOptim/00new/trustOptim/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (trustOptim)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-trustOptim-0.8.7.3.drv-0/ in /nix/store/j3wlghirzzxhn7fmss5gwb68vk24r5nk-r-trustOptim-0.8.7.3...
+patching script interpreter paths in /nix/store/j3wlghirzzxhn7fmss5gwb68vk24r5nk-r-trustOptim-0.8.7.3
+rewriting symlink /nix/store/j3wlghirzzxhn7fmss5gwb68vk24r5nk-r-trustOptim-0.8.7.3/nix-support/propagated-user-env-packages to be relative to /nix/store/j3wlghirzzxhn7fmss5gwb68vk24r5nk-r-trustOptim-0.8.7.3
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mnorm.so GaussLegendre.o RcppExports.o cmnorm.o dmnorm.o halton.o pmnorm.o qmnorm.o rmnorm.o t0.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/1k2w9qdi77z0xpig6kwd81igdn3xsr3s-r-mnorm-1.2.2/library/00LOCK-mnorm/00new/mnorm/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mnorm)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mnorm-1.2.2.drv-0/ in /nix/store/1k2w9qdi77z0xpig6kwd81igdn3xsr3s-r-mnorm-1.2.2...
+patching script interpreter paths in /nix/store/1k2w9qdi77z0xpig6kwd81igdn3xsr3s-r-mnorm-1.2.2
+rewriting symlink /nix/store/1k2w9qdi77z0xpig6kwd81igdn3xsr3s-r-mnorm-1.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/1k2w9qdi77z0xpig6kwd81igdn3xsr3s-r-mnorm-1.2.2
+building '/nix/store/bmjfs20hfmjkkqb840697jrhhb3693lg-r-sfaR-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/crs5b2xi657xk1rlrgnmlk3caqnn8cmx-sfaR_1.0.1.tar.gz
+source root is sfaR
+setting SOURCE_DATE_EPOCH to timestamp 1730191202 of file sfaR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sfaR’ ...
+** package ‘sfaR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sfaR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sfaR-1.0.1.drv-0/ in /nix/store/aqvry991gwggabnpzb37bqmda6qfgiwk-r-sfaR-1.0.1...
+patching script interpreter paths in /nix/store/aqvry991gwggabnpzb37bqmda6qfgiwk-r-sfaR-1.0.1
+rewriting symlink /nix/store/aqvry991gwggabnpzb37bqmda6qfgiwk-r-sfaR-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/aqvry991gwggabnpzb37bqmda6qfgiwk-r-sfaR-1.0.1
+building '/nix/store/14l0kq2l20n52m4j7svbz2kgn40zwpb9-r-micEconDistRay-0.1-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zm97gvxw48rhkmqpzs6csw9aw9k6hznj-micEconDistRay_0.1-2.tar.gz
+source root is micEconDistRay
+setting SOURCE_DATE_EPOCH to timestamp 1683880802 of file micEconDistRay/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘micEconDistRay’ ...
+** package ‘micEconDistRay’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (micEconDistRay)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-micEconDistRay-0.1-2.drv-0/ in /nix/store/30375sxc11s1ifqz9s3lvfd0mk273742-r-micEconDistRay-0.1-2...
+patching script interpreter paths in /nix/store/30375sxc11s1ifqz9s3lvfd0mk273742-r-micEconDistRay-0.1-2
+rewriting symlink /nix/store/30375sxc11s1ifqz9s3lvfd0mk273742-r-micEconDistRay-0.1-2/nix-support/propagated-user-env-packages to be relative to /nix/store/30375sxc11s1ifqz9s3lvfd0mk273742-r-micEconDistRay-0.1-2

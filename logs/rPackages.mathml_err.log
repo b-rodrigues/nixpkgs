@@ -1,0 +1,1657 @@
+these 4 derivations will be built:
+  /nix/store/yz52i8mxxvl99nmks55y4af4l5vdgk1b-rswipl_9.3.12.tar.gz.drv
+  /nix/store/gl791cfm2wi85r88cvxd7qfi9p9bdd18-r-rswipl-9.3.12.drv
+  /nix/store/jf8x1z6nj5m2ajl5l2lr1mx4j11z0ri0-r-rolog-0.9.18.drv
+  /nix/store/9yfdvd20hkv4gsjqqiw7gwcm8p4b4578-r-mathml-1.2.drv
+these 2 paths will be fetched (0.18 MiB download, 0.18 MiB unpacked):
+  /nix/store/p10js0zsvr76kczk8x8b00snn6a7m1dy-mathml_1.2.tar.gz
+  /nix/store/8q8np91mfsrrwppvxjp6fj1jqsvlrsy7-rolog_0.9.18.tar.gz
+copying path '/nix/store/p10js0zsvr76kczk8x8b00snn6a7m1dy-mathml_1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/8q8np91mfsrrwppvxjp6fj1jqsvlrsy7-rolog_0.9.18.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yz52i8mxxvl99nmks55y4af4l5vdgk1b-rswipl_9.3.12.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/rswipl_9.3.12.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4865k  100 4865k    0     0  5102k      0 --:--:-- --:--:-- --:--:-- 5099k
+building '/nix/store/gl791cfm2wi85r88cvxd7qfi9p9bdd18-r-rswipl-9.3.12.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9hmx71b81bgj0h4acmg6l2id5c3h7c1d-rswipl_9.3.12.tar.gz
+source root is rswipl
+setting SOURCE_DATE_EPOCH to timestamp 1727583603 of file rswipl/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rswipl’ ...
+** package ‘rswipl’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+mkdir -p ../build
+(cd ../build ; CC="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc" CXX="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17" CFLAGS="-g -O2 " CPPFLAGS="-isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1" LDFLAGS="-L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib" CXXFLAGS="-g -O2  -fPIC" cmake -DCMAKE_CXX_STANDARD=17 -DCMAKE_INSTALL_PREFIX=../inst/swipl -DSWIPL_INSTALL_IN_LIB=ON -DINSTALL_DOCUMENTATION=OFF -DBUILD_TESTING=ON -DSWIPL_PACKAGES_JAVA=OFF -DSWIPL_PACKAGES_X=OFF -DSWIPL_PACKAGES_ODBC=OFF -DUSE_GMP=OFF -DSWIPL_PACKAGES_PYTHON=OFF -S ../src/swipl-devel)
+-- The C compiler identification is Clang 16.0.6
+-- The CXX compiler identification is Clang 16.0.6
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting build type to 'Release' as none was specified.
+-- Configuring SWI-Prolog-9.3.12
+CMake Warning at cmake/port/Darwin.cmake:39 (message):
+  Could not find Macport or Homebrew to provide dependencies             trying to
+  configure with default search paths
+Call Stack (most recent call first):
+  cmake/Ports.cmake:7 (include)
+  CMakeLists.txt:129 (include)
+
+
+-- Trying to build without Macports or Homebrew dependencies
+-- Check floating point format
+-- Check floating point format - unknown
+-- The following SWI-Prolog packages are disabled because the required sources are not installed:
+mqi ltx2htm nlp paxos redis stomp PDT pengines pldoc protobufs RDF semweb sweep table bdb tipc swipl-win libedit readline
+Use one of the commands below to add all packages or specific packages
+
+   git -C .. submodule update --init  
+   git -C .. submodule update --init packages/<pkg>
+
+-- Found ZLIB: /nix/store/iy73mkdcq2k949jai8m8bm850dq0ghrk-zlib-1.3.1/lib/libz.dylib (found version "1.3.1")
+-- Looking for cbreak in /nix/store/pf0pg3ggpfl5rmbwhibh2x961vbxvpx3-ncurses-6.4.20221231/lib/libncurses.dylib
+-- Looking for cbreak in /nix/store/pf0pg3ggpfl5rmbwhibh2x961vbxvpx3-ncurses-6.4.20221231/lib/libncurses.dylib - found
+-- Looking for nodelay in /nix/store/pf0pg3ggpfl5rmbwhibh2x961vbxvpx3-ncurses-6.4.20221231/lib/libncurses.dylib
+-- Looking for nodelay in /nix/store/pf0pg3ggpfl5rmbwhibh2x961vbxvpx3-ncurses-6.4.20221231/lib/libncurses.dylib - found
+-- Found Curses: /nix/store/pf0pg3ggpfl5rmbwhibh2x961vbxvpx3-ncurses-6.4.20221231/lib/libncurses.dylib
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Checking for 64-bit off_t
+-- Checking for 64-bit off_t - present
+-- Checking for fseeko/ftello
+-- Checking for fseeko/ftello - present
+-- Large File support - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for threads.h
+-- Looking for threads.h - not found
+-- Looking for wchar.h
+-- Looking for wchar.h - found
+-- Looking for alloca.h
+-- Looking for alloca.h - found
+-- Looking for curses.h
+-- Looking for curses.h - found
+-- Looking for dirent.h
+-- Looking for dirent.h - found
+-- Looking for dl.h
+-- Looking for dl.h - not found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for dmalloc.h
+-- Looking for dmalloc.h - not found
+-- Looking for execinfo.h
+-- Looking for execinfo.h - found
+-- Looking for float.h
+-- Looking for float.h - found
+-- Looking for floatingpoint.h
+-- Looking for floatingpoint.h - not found
+-- Looking for ieeefp.h
+-- Looking for ieeefp.h - not found
+-- Looking for ieee754.h
+-- Looking for ieee754.h - not found
+-- Looking for libloaderapi.h
+-- Looking for libloaderapi.h - not found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for locale.h
+-- Looking for locale.h - found
+-- Looking for malloc.h
+-- Looking for malloc.h - not found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for ncurses/curses.h
+-- Looking for ncurses/curses.h - found
+-- Looking for ncurses/term.h
+-- Looking for ncurses/term.h - found
+-- Looking for poll.h
+-- Looking for poll.h - found
+-- Looking for pwd.h
+-- Looking for pwd.h - found
+-- Looking for shlobj.h
+-- Looking for shlobj.h - not found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for sys/dir.h
+-- Looking for sys/dir.h - found
+-- Looking for sys/file.h
+-- Looking for sys/file.h - found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - found
+-- Looking for sys/ndir.h
+-- Looking for sys/ndir.h - not found
+-- Looking for sys/param.h
+-- Looking for sys/param.h - found
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - found
+-- Looking for sys/select.h
+-- Looking for sys/select.h - found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/syscall.h
+-- Looking for sys/syscall.h - found
+-- Looking for sys/ioctl.h
+-- Looking for sys/ioctl.h - found
+-- Looking for sys/termio.h
+-- Looking for sys/termio.h - not found
+-- Looking for sys/termios.h
+-- Looking for sys/termios.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for sys/wait.h
+-- Looking for sys/wait.h - found
+-- Looking for term.h
+-- Looking for term.h - found
+-- Looking for time.h
+-- Looking for time.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for valgrind/valgrind.h
+-- Looking for valgrind/valgrind.h - not found
+-- Looking for vfork.h
+-- Looking for vfork.h - not found
+-- Looking for mach/thread_act.h
+-- Looking for mach/thread_act.h - found
+-- Looking for sys/stropts.h
+-- Looking for sys/stropts.h - not found
+-- Looking for zlib.h
+-- Looking for zlib.h - found
+-- Looking for crt_externs.h
+-- Looking for crt_externs.h - found
+-- Looking for gperftools/malloc_extension_c.h
+-- Looking for gperftools/malloc_extension_c.h - not found
+-- Performing Test HAVE_GCC_ATOMIC
+-- Performing Test HAVE_GCC_ATOMIC - Success
+-- Performing Test HAVE_GCC_ATOMIC_8
+-- Performing Test HAVE_GCC_ATOMIC_8 - Success
+-- Performing Test HAVE___BUILTIN_MUL_OVERFLOW
+-- Performing Test HAVE___BUILTIN_MUL_OVERFLOW - Success
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - found
+-- Looking for sin in m
+-- Looking for sin in m - found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - not found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of void *
+-- Check size of void * - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of wchar_t
+-- Check size of wchar_t - done
+-- Check size of wint_t
+-- Check size of wint_t - done
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of __int128
+-- Check size of __int128 - done
+-- Check size of z_crc_t
+-- Check size of z_crc_t - done
+-- Check alignment of INT64_T: 
+-- Check alignment of DOUBLE: 
+-- Check alignment of VOIDP: 
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for popen
+-- Looking for popen - found
+-- Looking for strerror
+-- Looking for strerror - found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for getpwnam
+-- Looking for getpwnam - found
+-- Looking for fork
+-- Looking for fork - found
+-- Looking for vfork
+-- Looking for vfork - found
+-- Looking for qsort_r
+-- Looking for qsort_r - found
+-- Looking for qsort_s
+-- Looking for qsort_s - not found
+-- Looking for getpagesize
+-- Looking for getpagesize - found
+-- Looking for access
+-- Looking for access - found
+-- Looking for chmod
+-- Looking for chmod - found
+-- Looking for fchmod
+-- Looking for fchmod - found
+-- Looking for fcntl
+-- Looking for fcntl - found
+-- Looking for fstat
+-- Looking for fstat - found
+-- Looking for ftruncate
+-- Looking for ftruncate - found
+-- Looking for getcwd
+-- Looking for getcwd - found
+-- Looking for getwd
+-- Looking for getwd - found
+-- Looking for opendir
+-- Looking for opendir - found
+-- Looking for readlink
+-- Looking for readlink - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for rename
+-- Looking for rename - found
+-- Looking for stat
+-- Looking for stat - found
+-- Looking for fopen64
+-- Looking for fopen64 - not found
+-- Looking for memmove
+-- Looking for memmove - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for stricmp
+-- Looking for stricmp - not found
+-- Looking for strlwr
+-- Looking for strlwr - not found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for mbsnrtowcs
+-- Looking for mbsnrtowcs - found
+-- Looking for mbcasescoll
+-- Looking for mbcasescoll - not found
+-- Looking for localeconv
+-- Looking for localeconv - found
+-- Looking for wcsdup
+-- Looking for wcsdup - found
+-- Looking for wcsxfrm
+-- Looking for wcsxfrm - found
+-- Looking for getuid
+-- Looking for getuid - found
+-- Looking for getpid
+-- Looking for getpid - found
+-- Looking for waitpid
+-- Looking for waitpid - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for putenv
+-- Looking for putenv - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Looking for confstr
+-- Looking for confstr - found
+-- Looking for getrlimit
+-- Looking for getrlimit - found
+-- Looking for getrusage
+-- Looking for getrusage - found
+-- Looking for _NSGetEnviron
+-- Looking for _NSGetEnviron - found
+-- Looking for mallinfo
+-- Looking for mallinfo - not found
+-- Looking for mallinfo2
+-- Looking for mallinfo2 - not found
+-- Looking for shl_load
+-- Looking for shl_load - not found
+-- Looking for dlopen
+-- Looking for dlopen - found
+-- Looking for dladdr
+-- Looking for dladdr - found
+-- Looking for signal
+-- Looking for signal - found
+-- Looking for sigprocmask
+-- Looking for sigprocmask - found
+-- Looking for sigsetmask
+-- Looking for sigsetmask - found
+-- Looking for siggetmask
+-- Looking for siggetmask - not found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for sigset
+-- Looking for sigset - found
+-- Looking for sigblock
+-- Looking for sigblock - found
+-- Looking for sigaltstack
+-- Looking for sigaltstack - found
+-- Looking for kill
+-- Looking for kill - found
+-- Looking for alarm
+-- Looking for alarm - found
+-- Looking for mtrace
+-- Looking for mtrace - not found
+-- Looking for tgetent
+-- Looking for tgetent - found
+-- Looking for tcsetattr
+-- Looking for tcsetattr - found
+-- Looking for grantpt
+-- Looking for grantpt - found
+-- Looking for sgttyb
+-- Looking for sgttyb - not found
+-- Looking for cfmakeraw
+-- Looking for cfmakeraw - found
+-- Looking for ceil
+-- Looking for ceil - found
+-- Looking for floor
+-- Looking for floor - found
+-- Looking for srand
+-- Looking for srand - found
+-- Looking for srandom
+-- Looking for srandom - found
+-- Looking for random
+-- Looking for random - found
+-- Looking for rint
+-- Looking for rint - found
+-- Looking for fpclass
+-- Looking for fpclass - not found
+-- Looking for fpresetsticky
+-- Looking for fpresetsticky - not found
+-- Looking for fpsetmask
+-- Looking for fpsetmask - not found
+-- Looking for isnan
+-- Looking for isnan - found
+-- Looking for isinf
+-- Looking for isinf - found
+-- Looking for ftime
+-- Looking for ftime - found
+-- Looking for clock_gettime
+-- Looking for clock_gettime - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for localtime_s
+-- Looking for localtime_s - not found
+-- Looking for ctime_r
+-- Looking for ctime_r - found
+-- Looking for asctime_r
+-- Looking for asctime_r - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for sleep
+-- Looking for sleep - found
+-- Looking for usleep
+-- Looking for usleep - found
+-- Looking for select
+-- Looking for select - found
+-- Looking for clock
+-- Looking for clock - found
+-- Looking for times
+-- Looking for times - found
+-- Looking for delay
+-- Looking for delay - not found
+-- Looking for dossleep
+-- Looking for dossleep - not found
+-- Performing Test SYS_CPUSET_H_FOUND
+-- Performing Test SYS_CPUSET_H_FOUND - Failed
+-- Looking for pthread_np.h
+-- Looking for pthread_np.h - not found
+-- Looking for pthread_attr_setaffinity_np
+-- Looking for pthread_attr_setaffinity_np - not found
+-- Looking for pthread_getname_np
+-- Looking for pthread_getname_np - found
+-- Looking for pthread_getw32threadhandle_np
+-- Looking for pthread_getw32threadhandle_np - not found
+-- Looking for pthread_kill
+-- Looking for pthread_kill - found
+-- Looking for pthread_mutexattr_setkind_np
+-- Looking for pthread_mutexattr_setkind_np - not found
+-- Looking for pthread_mutexattr_settype
+-- Looking for pthread_mutexattr_settype - found
+-- Looking for pthread_mutex_timedlock
+-- Looking for pthread_mutex_timedlock - not found
+-- Looking for pthread_setconcurrency
+-- Looking for pthread_setconcurrency - found
+-- Looking for pthread_setname_np
+-- Looking for pthread_setname_np - found
+-- Looking for pthread_sigmask
+-- Looking for pthread_sigmask - found
+-- Looking for pthread_timedjoin_np
+-- Looking for pthread_timedjoin_np - not found
+-- Looking for pthread_getcpuclockid
+-- Looking for pthread_getcpuclockid - not found
+-- Looking for pthread_attr_setstacksize
+-- Looking for pthread_attr_setstacksize - found
+-- Looking for pthread_getattr_np
+-- Looking for pthread_getattr_np - not found
+-- Looking for sched_setaffinity
+-- Looking for sched_setaffinity - not found
+-- Looking for sched_yield
+-- Looking for sched_yield - found
+-- Looking for sema_init
+-- Looking for sema_init - not found
+-- Looking for sem_init
+-- Looking for sem_init - found
+-- Looking for sem_timedwait
+-- Looking for sem_timedwait - not found
+-- Looking for setitimer
+-- Looking for setitimer - found
+-- Checking for recursive mutex support
+-- Performing Test HAVE_PTHREAD_MUTEX_RECURSIVE
+-- Performing Test HAVE_PTHREAD_MUTEX_RECURSIVE - Success
+-- Checking for recursive mutex support -- found
+-- Performing Test HAVE_PTHREAD_SETNAME_NP_WITH_TID
+-- Performing Test HAVE_PTHREAD_SETNAME_NP_WITH_TID - Failed
+-- Performing Test HAVE_PTHREAD_SETNAME_NP_WITH_TID_AND_ARG
+-- Performing Test HAVE_PTHREAD_SETNAME_NP_WITH_TID_AND_ARG - Failed
+-- Performing Test HAVE_GETTID_FUNCTION
+-- Performing Test HAVE_GETTID_FUNCTION - Failed
+-- Performing Test HAVE_GETTID_MACRO
+-- Performing Test HAVE_GETTID_MACRO - Failed
+-- Performing Test HAVE_GETTID_SYSCALL
+-- Performing Test HAVE_GETTID_SYSCALL - Failed
+-- Looking for WSAPoll
+-- Looking for WSAPoll - not found
+-- Looking for WinExec
+-- Looking for WinExec - not found
+-- Looking for F_SETLKW
+-- Looking for F_SETLKW - found
+-- Performing Test HAVE_VAR_TIMEZONE
+-- Performing Test HAVE_VAR_TIMEZONE - Success
+-- Looking for SIGPROF
+-- Looking for SIGPROF - found
+-- Performing Test HAVE_STRUCT_TIME_TM_GMTOFF
+-- Performing Test HAVE_STRUCT_TIME_TM_GMTOFF - Success
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM - Failed
+-- Performing Test HAVE_RU_IDRSS
+-- Performing Test HAVE_RU_IDRSS - Success
+-- Performing Test HAVE_GMP_RANDINIT_MT
+-- Performing Test HAVE_GMP_RANDINIT_MT - Failed
+-- qsort_r() has BSD signature
+-- Performing Test HAVE__BUILTIN_CLZ
+-- Performing Test HAVE__BUILTIN_CLZ - Success
+-- Performing Test HAVE__BUILTIN_POPCOUNT
+-- Performing Test HAVE__BUILTIN_POPCOUNT - Success
+-- Performing Test HAVE___BUILTIN_EXPECT
+-- Performing Test HAVE___BUILTIN_EXPECT - Success
+-- Performing Test HAVE___THREAD
+-- Performing Test HAVE___THREAD - Success
+-- Performing Test HAVE_VOLATILE
+-- Performing Test HAVE_VOLATILE - Success
+-- Performing Test HAVE_INLINE
+-- Performing Test HAVE_INLINE - Success
+-- Performing Test O_LABEL_ADDRESSES
+-- Performing Test O_LABEL_ADDRESSES - Success
+-- Performing Test HAVE_WEAK_ATTRIBUTE
+-- Performing Test HAVE_WEAK_ATTRIBUTE - Failed
+-- Performing Test HAVE_VISIBILITY_ATTRIBUTE
+-- Performing Test HAVE_VISIBILITY_ATTRIBUTE - Success
+-- Performing Test HAVE_ALLOCA
+-- Performing Test HAVE_ALLOCA - Success
+-- Performing Test HAVE_SIGNBIT
+-- Performing Test HAVE_SIGNBIT - Success
+-- Check for signal return type in <signal.h>
+-- Check for signal handler return type type void  - found
+-- sysconf() support for _SC_NPROCESSORS_CONF
+-- sysconf() supports _SC_NPROCESSORS_CONF  - found
+-- Performing Test TIME_WITH_SYS_TIME
+-- Performing Test TIME_WITH_SYS_TIME - Success
+-- llround(nextoward(0.5),-10) == 0 (ok)
+-- copysign(1.0, modf(-0.0, _)) == -1.0 (ok)
+-- Looking for socket in socket
+-- Looking for socket in socket - not found
+-- Looking for gethostent in nsl
+-- Looking for gethostent in nsl - not found
+-- Looking for socket
+-- Looking for socket - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - found
+-- Looking for sys/un.h
+-- Looking for sys/un.h - found
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Performing Test HAVE_H_ERRNO
+-- Performing Test HAVE_H_ERRNO - Success
+-- Performing Test HAVE_IP_MREQN
+-- Performing Test HAVE_IP_MREQN - Success
+-- Could NOT find LibUUID (missing: LIBUUID_INCLUDE_DIR UUID_LIBRARY) 
+-- Looking for crypt
+-- Looking for crypt - found
+-- Looking for syslog
+-- Looking for syslog - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for utime.h
+-- Looking for utime.h - found
+-- Looking for crypt.h
+-- Looking for crypt.h - found
+-- Looking for syslog.h
+-- Looking for syslog.h - found
+-- Looking for sys/prctl.h
+-- Looking for sys/prctl.h - not found
+-- Looking for netinet/tcp.h
+-- Looking for netinet/tcp.h - found
+-- Looking for setsid
+-- Looking for setsid - found
+-- Looking for utime
+-- Looking for utime - found
+-- Looking for strcasestr
+-- Looking for strcasestr - found
+-- Looking for pipe2
+-- Looking for pipe2 - not found
+-- Looking for prctl
+-- Looking for prctl - not found
+-- Looking for initgroups
+-- Looking for initgroups - found
+-- Looking for setgroups
+-- Looking for setgroups - found
+-- Looking for malloc_info
+-- Looking for malloc_info - not found
+-- Looking for open_memstream
+-- Looking for open_memstream - found
+-- Looking for posix_spawn
+-- Looking for posix_spawn - found
+-- Looking for gai_strerror
+-- Looking for gai_strerror - found
+-- Looking for hstrerror
+-- Looking for hstrerror - found
+-- Looking for setpriority
+-- Looking for setpriority - found
+-- Searching for jQuery
+-- No system jquery.js; using our own
+-- Looking for io.h
+-- Looking for io.h - not found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Could NOT find LibArchive (missing: LibArchive_LIBRARY LibArchive_INCLUDE_DIR) (Required is at least version "3.0.0")
+-- Could NOT find PCRE (missing: PCRE_LIBRARY PCRE_INCLUDE_DIR) 
+-- Could NOT find LibYAML (missing: LIBYAML_INCLUDE_DIR YAML_LIBRARY) 
+-- Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY OPENSSL_INCLUDE_DIR) 
+-- Configuring done (90.0s)
+-- Generating done (0.5s)
+-- Build files have been written to: /tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/build
+LD_LIBRARY_PATH=/private/tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/src/../build/src: cmake --build ../build
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/build »
+[  0%] Building C object src/CMakeFiles/defatom.dir/defatom.c.o
+[  0%] Generating ../home/library/dcg/.created
+[  0%] Building C object src/CMakeFiles/mkvmi.dir/mkvmi.c.o
+[  0%] Generating ../home/library/unicode/.created
+[  0%] Generating ../home/library/clp/.created
+[  1%] Generating ../home/boot/.created
+[  1%] Generating ../home/library/.created
+[  1%] Generating ../../home/library/ext/zlib/.created
+[  1%] Generating ../../home/library/ext/zlib/zlib.pl
+[  1%] Generating ../home/library/dcg/basics.pl
+[  1%] Generating ../home/boot/apply.pl
+[  1%] Generating ../home/library/clp/bounds.pl
+[  1%] Generating ../home/library/aggregate.pl
+[  1%] Generating ../home/library/unicode/blocks.pl
+[  2%] Linking C executable defatom
+[  2%] Built target plugin_zlib__pl_libs
+[  3%] Generating ../home/boot/attvar.pl
+[  3%] Generating ../home/library/clp/clp_distinct.pl
+[  3%] Generating ../home/library/dcg/high_order.pl
+[  3%] Generating ../home/library/unicode/unicode_data.pl
+[  3%] Generating ../home/library/ansi_term.pl
+[  3%] Linking C executable mkvmi
+[  3%] Generating ../home/library/clp/clp_events.pl
+[  3%] Generating ../home/boot/autoload.pl
+[  3%] Built target core_library_dcg
+[  3%] Built target core_library_unicode
+[  4%] Generating ../home/library/apply.pl
+[  4%] Generating ../home/library/lynx/.created
+[  4%] Generating ../home/library/apply_macros.pl
+[  4%] Generating ../home/library/clp/clpb.pl
+[  4%] Generating ../home/boot/bags.pl
+[  4%] Generating ../home/library/dialect/.created
+[  4%] Generating ../home/library/lynx/format.pl
+[  4%] Generating ../home/library/dialect/swi/.created
+[  5%] Generating ../home/library/clp/clpfd.pl
+[  5%] Generating ../home/library/arithmetic.pl
+[  5%] Generating ../home/boot/dcg.pl
+[  5%] Generating ../home/library/lynx/html_style.pl
+[  5%] Generating ../home/library/clp/simplex.pl
+[  5%] Generating ../home/boot/dicts.pl
+[  5%] Built target defatom
+[  5%] Generating ../home/library/dialect/bim.pl
+[  5%] Generating ../home/library/assoc.pl
+[  5%] Generating ../home/library/dialect/swi/syspred_options.pl
+[  5%] Generating ../home/library/lynx/html_text.pl
+[  5%] Built target core_library_clp
+[  6%] Generating ../home/library/dialect/commons.pl
+[  6%] Built target core_library_dialect_swi
+[  6%] Generating ../home/boot/dwim.pl
+[  6%] Generating ../home/library/atom.pl
+[  6%] Built target mkvmi
+[  6%] Generating ../home/boot/engines.pl
+[  6%] Generating ../home/library/dialect/eclipse/.created
+[  6%] Generating ../home/library/lynx/pldoc_style.pl
+[  6%] Generating ../home/library/dialect/hprolog.pl
+[  6%] Generating ../home/library/backcomp.pl
+[  7%] Generating ../home/boot/expand.pl
+[  7%] Generating ../home/boot/gc.pl
+[  7%] Generating ../home/library/dialect/hprolog/.created
+[  7%] Generating ../home/library/dialect/sicstus/.created
+[  7%] Built target core_library_lynx
+[  8%] Generating ../home/library/dialect/eclipse/test_util_iso.pl
+[  8%] Generating ../home/library/dialect/ifprolog.pl
+[  8%] Generating ../home/library/base32.pl
+[  8%] Generating ../home/boot/history.pl
+[  8%] Built target core_library_dialect_eclipse
+[  8%] Generating ../home/library/dialect/hprolog/format.pl
+[  8%] Generating ../home/library/dialect/sicstus/README.TXT
+[  8%] Generating ../home/library/dialect/sicstus.pl
+[  9%] Generating ../home/library/dialect/sicstus4/.created
+[ 10%] Generating ../home/library/base64.pl
+[ 10%] Generating ../home/boot/init.pl
+[ 10%] Generating ../home/boot/iri.pl
+[ 10%] Generating ../home/library/dialect/iso/.created
+[ 11%] Generating ../home/library/dialect/sicstus/arrays.pl
+[ 11%] Built target core_library_dialect_hprolog
+[ 11%] Generating ../home/library/dialect/sicstus4.pl
+[ 11%] Generating ../home/library/broadcast.pl
+[ 11%] Generating ../home/library/dialect/sicstus4/aggregate.pl
+[ 11%] Generating ../home/boot/license.pl
+[ 11%] Generating ../home/library/dialect/iso/iso_predicates.pl
+[ 11%] Generating ../home/library/dialect/sicstus/block.pl
+[ 11%] Generating ../home/library/dialect/xsb.pl
+[ 11%] Generating ../home/library/charsio.pl
+[ 11%] Generating ../home/library/dialect/sicstus4/between.pl
+[ 12%] Generating ../home/library/dialect/yap/.created
+[ 12%] Generating ../home/boot/load.pl
+[ 12%] Generating ../home/library/dialect/xsb/.created
+[ 12%] Built target core_library_dialect_iso
+[ 12%] Generating ../home/library/dialect/sicstus/lists.pl
+[ 12%] Generating ../home/library/dialect/yap.pl
+[ 12%] Generating ../home/library/check.pl
+[ 12%] Generating ../home/library/dialect/sicstus4/clpfd.pl
+[ 12%] Generating ../home/boot/messages.pl
+[ 12%] Generating ../home/library/dialect/yap/README.TXT
+[ 12%] Generating ../home/library/dialect/xsb/README.md
+[ 12%] Generating ../home/library/dialect/sicstus/ordsets.pl
+[ 12%] Built target core_library_dialect
+[ 12%] Generating ../home/library/check_installation.pl
+[ 12%] Generating ../home/library/dialect/sicstus4/file_systems.pl
+[ 13%] Generating ../home/boot/packs.pl
+[ 13%] Generating ../home/library/theme/.created
+[ 13%] Built target core_library_dialect_yap
+[ 13%] Generating ../home/library/dialect/xsb/basics.pl
+[ 13%] Generating ../home/library/dialect/sicstus/sockets.pl
+[ 13%] Generating ../home/library/codesio.pl
+[ 13%] Generating ../home/library/dialect/sicstus4/lists.pl
+[ 13%] Generating ../home/boot/predopts.pl
+[ 13%] Generating ../home/library/dialect/xsb/consult.pl
+[ 13%] Generating ../home/library/iri_scheme/.created
+[ 14%] Generating ../home/library/theme/auto.pl
+[ 14%] Generating ../home/library/dialect/sicstus/swipl-lfr.pl
+[ 14%] Generating ../home/library/build/.created
+[ 14%] Generating ../home/library/coinduction.pl
+[ 14%] Generating ../home/library/dialect/sicstus4/ordsets.pl
+[ 14%] Generating ../home/boot/qlf.pl
+[ 14%] Generating ../home/library/dialect/xsb/curr_sym.pl
+[ 14%] Generating ../home/library/theme/dark.pl
+[ 14%] Generating ../home/library/dialect/sicstus/system.pl
+[ 14%] Generating ../home/library/iri_scheme/file.pl
+[ 14%] Generating ../home/library/console_input.pl
+[ 14%] Generating ../home/boot/rc.pl
+[ 14%] Generating ../home/library/build/cmake.pl
+[ 15%] Generating ../home/library/dialect/sicstus4/samsort.pl
+[ 15%] Generating ../home/library/dialect/xsb/error_handler.pl
+[ 15%] Built target core_library_theme
+[ 15%] Generating ../home/library/dialect/sicstus/terms.pl
+[ 15%] Built target core_library_iri_scheme
+[ 16%] Generating ../home/library/csv.pl
+[ 16%] Generating ../home/library/dialect/sicstus4/sets.pl
+[ 16%] Generating ../home/boot/syspred.pl
+[ 16%] Generating ../home/library/dialect/sicstus4/sockets.pl
+[ 18%] Generating ../home/library/dialect/xsb/gensym.pl
+[ 18%] Generating ../home/library/build/conan.pl
+[ 19%] Generating ../home/library/dialect/sicstus/timeout.pl
+[ 19%] Generating ../home/library/ctypes.pl
+[ 19%] Generating ../home/boot/tabling.pl
+[ 19%] Generating ../home/library/build/make.pl
+[ 19%] Generating ../home/library/dialect/sicstus4/system.pl
+[ 19%] Generating ../home/demo/.created
+[ 19%] Generating ../home/library/dialect/xsb/gpp.pl
+[ 19%] Generating ../home/boot/toplevel.pl
+[ 19%] Generating ../home/library/date.pl
+[ 19%] Built target core_library_dialect_sicstus
+[ 19%] Generating ../home/library/dialect/sicstus4/terms.pl
+[ 19%] Generating ../home/library/dialect/xsb/intern.pl
+[ 19%] Generating ../home/library/build/tools.pl
+[ 19%] Generating ../home/library/debug.pl
+[ 19%] Generating ../home/library/dialect/xsb/lists.pl
+[ 19%] Generating ../home/boot/topvars.pl
+[ 20%] Generating ../home/demo/README.md
+[ 20%] Generating ../home/library/dialect.pl
+[ 20%] Generating ../home/library/dialect/xsb/machine.pl
+[ 20%] Built target core_library_build
+[ 20%] Generating ../home/library/dialect/sicstus4/timeout.pl
+[ 20%] Generating ../home/library/dialect/xsb/ordsets.pl
+[ 20%] Generating ../home/library/dialect/xsb/setof.pl
+[ 20%] Built target core_boot
+[ 20%] Generating ../home/demo/likes.pl
+[ 20%] Generating ../home/library/dicts.pl
+[ 20%] Generating ../home/library/dif.pl
+[ 20%] Generating ../home/library/dialect/xsb/source.pl
+[ 20%] Generating ../home/library/dialect/sicstus4/types.pl
+[ 21%] Generating ../home/library/dialect/xsb/standard.pl
+[ 21%] Generating ../home/library/dialect/xsb/storage.pl
+[ 22%] Generating ../home/library/edit.pl
+[ 22%] Generating ../home/library/edinburgh.pl
+[ 22%] Built target core_demo
+[ 22%] Built target core_library_dialect_sicstus4
+[ 22%] Generating ../home/library/dialect/xsb/string.pl
+[ 22%] Generating ../home/library/error.pl
+[ 22%] Generating ../home/cmake/.created
+[ 22%] Generating ../home/library/dialect/xsb/thread.pl
+[ 22%] Generating ../home/library/dialect/xsb/timed_call.pl
+[ 22%] Generating ../home/library/explain.pl
+[ 22%] Generating ../home/library/files.pl
+[ 22%] Generating ../home/library/fastrw.pl
+[ 22%] Generating ../home/cmake/swipl.cmake
+[ 22%] Generating ../home/app/.created
+[ 22%] Built target core_library_dialect_xsb
+[ 22%] Generating ../home/include/.created
+[ 22%] Generating ../home/include/sicstus/.created
+[ 22%] Generating ../home/library/gensym.pl
+[ 22%] Built target core_cmake
+[ 22%] Generating ../home/app/README.md
+[ 22%] Generating ../home/include/SWI-Prolog.h
+[ 22%] Generating ../home/library/git.pl
+[ 22%] Generating ../home/include/Yap/.created
+[ 22%] Generating ../home/include/sicstus/sicstus.h
+[ 22%] Generating ../../home/library/ext/chr/chr/.created
+[ 22%] Generating ../../home/doc/packages/examples/chr/.created
+[ 22%] Generating ../home/app/app.pl
+[ 22%] Generating ../home/include/SWI-Stream.h
+[ 22%] Generating ../../home/library/ext/clib/.created
+[ 23%] Generating ../home/library/hashtable.pl
+[ 23%] Built target core_compat_sicstus
+[ 23%] Generating ../home/include/Yap/YapInterface.h
+[ 23%] Generating ../home/app/pack.pl
+[ 23%] Generating ../../home/doc/packages/examples/chr/bool.chr
+[ 23%] Generating ../../home/library/ext/chr/chr/a_star.pl
+[ 23%] Built target core_headers
+[ 23%] Generating ../home/library/heaps.pl
+[ 23%] Built target core_compat_yap
+[ 23%] Generating ../../home/library/ext/clib/memfile.pl
+[ 23%] Generating ../../home/doc/packages/examples/chr/chrfreeze.chr
+[ 23%] Generating ../home/app/qlf.pl
+[ 24%] Generating ../../home/doc/packages/examples/chr/chrdif.chr
+[ 24%] Generating ../../home/library/ext/chr/chr/binomialheap.pl
+[ 25%] Generating ../../home/library/ext/clib/filesex.pl
+[ 25%] Generating ../home/library/hotfix.pl
+[ 25%] Built target plugin_memfile__pl_libs
+[ 25%] Generating ../../home/library/ext/clib/uri.pl
+[ 25%] Generating ../home/library/increval.pl
+[ 25%] Built target core_app
+[ 25%] Generating ../../home/doc/packages/examples/chr/family.chr
+[ 25%] Generating ../../home/library/ext/chr/chr/builtins.pl
+[ 25%] Built target plugin_files__pl_libs
+[ 25%] Generating ../home/library/intercept.pl
+[ 25%] Generating ../home/library/iostream.pl
+[ 25%] Built target plugin_uri__pl_libs
+[ 26%] Generating ../../home/library/ext/chr/chr/chr_compiler_errors.pl
+[ 26%] Generating ../home/library/lazy_lists.pl
+[ 26%] Generating ../../home/doc/packages/examples/chr/fib.chr
+[ 26%] Generating ../../home/library/ext/chr/chr/chr_compiler_options.pl
+[ 26%] Generating ../../home/library/ext/clib/prolog_stream.pl
+[ 26%] Generating ../home/library/listing.pl
+[ 26%] Generating ../../home/library/ext/chr/chr/chr_compiler_utility.pl
+[ 26%] Generating ../../home/doc/packages/examples/chr/fibonacci.chr
+[ 26%] Generating ../../home/doc/packages/examples/chr/gcd.chr
+[ 26%] Generating ../../home/doc/packages/examples/chr/leq.chr
+[ 26%] Generating ../../home/library/ext/chr/chr/chr_debug.pl
+[ 26%] Generating ../../home/library/ext/clib/md5.pl
+[ 27%] Generating ../home/library/lists.pl
+[ 27%] Built target plugin_prolog_stream__pl_libs
+[ 27%] Generating ../../home/library/ext/chr/chr/chr_hashtable_store.pl
+[ 27%] Generating ../../home/library/ext/chr/chr/chr_integertable_store.pl
+[ 27%] Generating ../../home/library/ext/chr/chr/chr_messages.pl
+[ 27%] Generating ../../home/doc/packages/examples/chr/listdom.chr
+[ 27%] Generating ../../home/library/ext/chr/chr/chr_op.pl
+[ 28%] Built target plugin_md54pl__pl_libs
+[ 28%] Generating ../home/library/macros.pl
+[ 29%] Generating ../../home/library/ext/chr/chr/chr_runtime.pl
+[ 29%] Generating ../../home/library/ext/chr/chr/clean_code.pl
+[ 29%] Generating ../../home/library/ext/chr/chr/find.pl
+[ 30%] Generating ../../home/doc/packages/examples/chr/primes.chr
+[ 30%] Generating ../../home/library/ext/clib/crypt.pl
+[ 30%] Generating ../home/library/main.pl
+[ 30%] Generating ../../home/library/ext/chr/chr/listmap.pl
+[ 30%] Generating ../../home/library/ext/chr/chr/pairlist.pl
+[ 31%] Generating ../../home/library/ext/clib/hash_stream.pl
+[ 31%] Built target plugin_chr_example_files
+[ 31%] Built target plugin_crypt__pl_libs
+[ 31%] Generating ../../home/library/ext/clib/sha.pl
+[ 31%] Generating ../home/library/modules.pl
+[ 31%] Generating ../home/library/make.pl
+[ 31%] Built target plugin_chr_chr_pl_libs
+[ 31%] Generating ../../home/library/ext/clib/cgi.pl
+[ 31%] Built target plugin_hashstream__pl_libs
+[ 32%] Built target plugin_sha4pl__pl_libs
+[ 32%] Generating ../home/library/nb_rbtrees.pl
+[ 32%] Generating ../home/library/nb_set.pl
+[ 32%] Generating ../../home/library/ext/clib/process.pl
+[ 32%] Generating ../../home/library/ext/clib/time.pl
+[ 32%] Built target plugin_cgi__pl_libs
+[ 32%] Generating ../../home/library/ext/clib/streaminfo.pl
+[ 32%] Generating ../home/library/obfuscate.pl
+[ 33%] Built target plugin_process__pl_libs
+[ 33%] Built target plugin_time__pl_libs
+[ 33%] Generating ../../home/library/ext/clib/unix.pl
+[ 34%] Generating ../../home/library/ext/clib/uid.pl
+[ 34%] Built target plugin_streaminfo__pl_libs
+[ 35%] Generating ../home/library/occurs.pl
+[ 35%] Generating ../../home/library/ext/clib/rlimit.pl
+[ 35%] Built target plugin_unix__pl_libs
+[ 35%] Built target plugin_uid__pl_libs
+[ 35%] Generating ../../home/library/ext/clib/syslog.pl
+[ 35%] Generating ../../home/library/ext/clib/sched.pl
+[ 35%] Generating ../home/library/operators.pl
+[ 35%] Generating ../home/library/option.pl
+[ 35%] Generating ../../home/library/ext/clib/uuid.pl
+[ 35%] Generating ../home/library/optparse.pl
+[ 35%] Built target plugin_rlimit__pl_libs
+[ 35%] Built target plugin_syslog__pl_libs
+[ 35%] Generating ../../home/library/ext/clib/prolog_server.pl
+[ 35%] Generating ../home/library/ordsets.pl
+[ 36%] Built target plugin_sched__pl_libs
+[ 36%] Built target plugin_uuid__pl_libs
+[ 36%] Generating ../home/library/oset.pl
+[ 36%] Generating ../home/library/pairs.pl
+[ 36%] Generating ../../home/library/ext/clib/socket.pl
+[ 36%] Generating ../../home/library/ext/clpqr/clpq/.created
+[ 36%] Generating ../../home/library/ext/clpqr/.created
+[ 36%] Generating ../../home/library/ext/clpqr/clpr/.created
+[ 37%] Generating ../home/library/persistency.pl
+[ 37%] Generating ../home/library/pio.pl
+[ 37%] Generating ../../home/library/ext/clib/streampool.pl
+[ 37%] Generating ../../home/library/ext/clpqr/clpqr/.created
+[ 37%] Generating ../../home/library/ext/inclpr/inclpr/.created
+[ 37%] Generating ../../home/library/ext/clpqr/clpq/bb_q.pl
+[ 37%] Generating ../../home/library/ext/clpqr/clpq.pl
+[ 37%] Generating ../home/library/portray_text.pl
+[ 37%] Generating ../../home/library/ext/clpqr/clpr/bb_r.pl
+[ 38%] Generating ../../home/library/ext/clib/udp_broadcast.pl
+[ 38%] Generating ../../home/library/ext/clpqr/clpqr/class.pl
+[ 38%] Generating ../../home/library/ext/clpqr/clpq/bv_q.pl
+[ 38%] Generating ../../home/library/ext/clpqr/clpr.pl
+[ 39%] Generating ../../home/library/ext/clpqr/clpr/bv_r.pl
+[ 39%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_consistency.pl
+[ 39%] Generating ../home/library/pprint.pl
+[ 39%] Generating ../../home/library/ext/inclpr/.created
+[ 39%] Built target plugin_socket__pl_libs
+[ 39%] Generating ../../home/library/ext/clpqr/clpqr/dump.pl
+[ 39%] Generating ../../home/library/ext/clpqr/clpq/fourmotz_q.pl
+[ 39%] Generating ../../home/library/ext/clpqr/clpr/fourmotz_r.pl
+[ 39%] Built target plugin_clpqr__pl_libs
+[ 39%] Generating ../home/library/predicate_options.pl
+[ 39%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_core.pl
+[ 40%] Generating ../../home/library/ext/clpqr/clpqr/geler.pl
+[ 41%] Generating ../../home/library/ext/inclpr/inclpr.pl
+[ 41%] Generating ../../home/library/ext/clpqr/clpq/ineq_q.pl
+[ 41%] Generating ../../home/doc/packages/examples/inclpr/.created
+[ 41%] Generating ../../home/library/ext/clpqr/clpr/ineq_r.pl
+[ 41%] Generating ../home/library/prolog_autoload.pl
+[ 41%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_interval_arithmetic.pl
+[ 41%] Built target plugin_inclpr__pl_libs
+[ 41%] Generating ../../home/library/ext/clpqr/clpqr/highlight.pl
+[ 41%] Generating ../../home/library/ext/clpqr/clpq/itf_q.pl
+[ 42%] Generating ../../home/include/SWI-cpp.h
+[ 42%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_inversion.pl
+[ 42%] Generating ../home/library/prolog_breakpoints.pl
+[ 43%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_natural_interval_extension.pl
+[ 43%] Generating ../../home/doc/packages/examples/inclpr/benchmarks.pl
+[ 43%] Generating ../../home/library/ext/clpqr/clpr/itf_r.pl
+[ 43%] Generating ../../home/library/ext/clpqr/clpqr/itf.pl
+[ 44%] Generating ../../home/library/ext/clpqr/clpq/nf_q.pl
+[ 44%] Generating ../../home/include/SWI-cpp2-atommap.h
+[ 44%] Built target plugin_inclpr_example_files
+[ 44%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_newton.pl
+[ 44%] Generating ../home/library/prolog_clause.pl
+[ 44%] Generating ../../home/library/ext/clpqr/clpq/store_q.pl
+[ 44%] Generating ../../home/library/ext/clpqr/clpr/nf_r.pl
+[ 44%] Generating ../../home/library/ext/clpqr/clpqr/ordering.pl
+[ 44%] Generating ../../home/include/SWI-cpp2-plx.h
+[ 44%] Generating ../../home/library/ext/clpqr/clpr/store_r.pl
+[ 44%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_ordering.pl
+[ 44%] Generating ../../home/library/ext/inclpr/inclpr/inclpr_symbolic_processing.pl
+[ 45%] Generating ../home/library/prolog_code.pl
+[ 45%] Generating ../home/library/prolog_codewalk.pl
+[ 45%] Built target plugin_clpq_priv_clpq_pl_libs
+[ 45%] Generating ../../home/library/ext/clpqr/clpqr/project.pl
+[ 45%] Generating ../../home/include/SWI-cpp2.cpp
+[ 45%] Built target plugin_clpr_priv_clpr_pl_libs
+[ 45%] Generating ../home/library/prolog_colour.pl
+[ 45%] Built target plugin_inclpr_priv_inclpr_pl_libs
+[ 45%] Generating ../../home/library/ext/clpqr/clpqr/redund.pl
+[ 45%] Generating ../home/library/prolog_config.pl
+[ 45%] Generating ../../home/include/SWI-cpp2.h
+[ 45%] Built target plugin_clpqr_priv_clpqr_pl_libs
+[ 45%] Generating ../../home/doc/packages/examples/cpp/.created
+[ 45%] Generating ../../home/library/ext/http/http/.created
+[ 46%] Generating ../../home/library/ext/http/http/.created
+[ 46%] Generating ../home/library/prolog_coverage.pl
+[ 46%] Built target pkg_cpp_headers
+[ 46%] Generating ../../home/library/ext/http/http/.created
+[ 46%] Generating ../../home/library/ext/http/http/.created
+[ 47%] Generating ../../home/doc/packages/examples/cpp/README.md
+[ 47%] Generating ../home/library/prolog_debug.pl
+[ 47%] Generating ../../home/library/ext/http/http/http_json.pl
+[ 47%] Generating ../../home/library/ext/http/http/html_head.pl
+[ 48%] Generating ../../home/library/ext/http/http/.created
+[ 48%] Generating ../../home/library/ext/http/http/http_stream.pl
+[ 48%] Generating ../../home/library/ext/http/http/hub.pl
+[ 48%] Generating ../../home/doc/packages/examples/cpp/likes.cpp
+[ 48%] Generating ../../home/library/ext/http/http/dcg_basics.pl
+[ 48%] Generating ../home/library/prolog_deps.pl
+[ 48%] Generating ../../home/library/ext/http/http/html_quasiquotations.pl
+[ 49%] Generating ../../home/library/ext/http/http/json.pl
+[ 49%] Built target plugin_http_stream_http_pl_libs
+[ 49%] Generating ../../home/library/ext/http/http/README.md
+[ 49%] Generating ../../home/library/ext/http/http/http_client.pl
+[ 49%] Generating ../../home/doc/packages/examples/cpp/likes.pl
+[ 49%] Generating ../../home/library/ext/http/http/websocket.pl
+[ 49%] Generating ../../home/library/ext/http/http/ax.pl
+[ 50%] Generating ../home/library/prolog_evaluable.pl
+[ 50%] Generating ../../home/library/ext/http/http/html_write.pl
+[ 50%] Generating ../../home/library/ext/http/http/json_convert.pl
+[ 50%] Generating ../../home/doc/packages/examples/cpp/test_cpp.cpp
+[ 50%] Generating ../../home/library/ext/http/http/http_error.pl
+[ 51%] Built target plugin_websocket_http_pl_libs
+[ 51%] Generating ../../home/library/ext/http/http/graphql.pl
+[ 51%] Generating ../home/library/prolog_format.pl
+[ 51%] Generating ../../home/library/ext/http/http/http_path.pl
+[ 51%] Generating ../../home/library/ext/http/http/http_header.pl
+[ 51%] Built target plugin_json_http_pl_libs
+[ 51%] Generating ../../home/doc/packages/examples/cpp/test_ffi.c
+[ 51%] Generating ../../home/library/ext/http/http/http_open.pl
+[ 51%] Generating ../../home/library/ext/http/http/web/css/.created
+[ 51%] Generating ../home/library/prolog_history.pl
+[ 51%] Generating ../../home/library/ext/http/http/htmx.pl
+[ 51%] Generating ../../home/library/ext/http/http/mimetype.pl
+[ 51%] Built target plugin_cpp_example_files
+[ 51%] Generating ../../home/library/ext/http/http/http_proxy.pl
+[ 51%] Generating ../../home/library/ext/http/http/http_authenticate.pl
+[ 51%] Generating ../../home/library/ext/http/http/web/icons/.created
+[ 51%] Generating ../home/library/prolog_jiti.pl
+[ 51%] Generating ../../home/library/ext/http/http/term_html.pl
+[ 51%] Generating ../../home/library/ext/http/http/web/css/dirindex.css
+[ 51%] Generating ../../home/library/http/web/js/.created
+[ 51%] Generating ../../home/library/ext/http/http/http_sgml_plugin.pl
+[ 51%] Generating ../home/library/prolog_metainference.pl
+[ 51%] Generating ../../home/library/ext/http/http/http_cookie.pl
+[ 51%] Built target plugin_html_libs_http_pl_libs
+[ 51%] Generating ../../home/library/ext/http/http/web/css/openid.css
+[ 52%] Generating ../../home/doc/packages/examples/http/.created
+[ 52%] Generating ../../home/library/ext/http/http/web/icons/back.png
+[ 53%] Generating ../../home/library/ext/http/http/js_grammar.pl
+[ 53%] Generating ../../home/library/http/web/js/jquery-3.6.0.min.js
+[ 53%] Generating ../home/library/prolog_pack.pl
+[ 53%] Generating ../../home/library/ext/http/http/http_cors.pl
+[ 53%] Generating ../../home/library/ext/http/http/web/icons/c.png
+[ 53%] Built target plugin_http_css_http_web_css_pl_libs
+[ 54%] Generating ../../home/doc/packages/examples/http/README.md
+[ 54%] Generating ../../home/library/ext/http/http/js_write.pl
+[ 54%] Generating ../../home/library/ext/http/http/mimepack.pl
+[ 55%] Generating ../../home/doc/packages/examples/http/pwp/.created
+[ 55%] Built target plugin_http_jquery
+[ 55%] Generating ../home/library/prolog_profile.pl
+[ 56%] Generating ../../home/library/ext/http/http/http_digest.pl
+[ 56%] Generating ../../home/library/ext/http/http/web/icons/compressed.png
+[ 56%] Generating ../../home/doc/packages/examples/http/calc.pl
+[ 56%] Built target plugin_http_client_libs_http_pl_libs
+[ 56%] Generating ../home/library/prolog_source.pl
+[ 56%] Generating ../../home/doc/packages/examples/http/pwp/context.pwp
+[ 56%] Generating ../../home/doc/packages/examples/http/demo_body.pl
+[ 56%] Generating ../../home/library/ext/http/http/http_dirindex.pl
+[ 56%] Generating ../../home/library/ext/http/http/web/icons/folder.png
+[ 56%] Generating ../../home/doc/packages/examples/http/demo_client.pl
+[ 57%] Generating ../../home/library/ext/plunit/.created
+[ 58%] Generating ../home/library/prolog_stack.pl
+[ 58%] Generating ../../home/doc/packages/examples/http/demo_daemon.pl
+[ 58%] Generating ../../home/doc/packages/examples/http/demo_files.pl
+[ 58%] Generating ../../home/doc/packages/examples/http/pwp/index.pwp
+[ 58%] Generating ../../home/library/ext/http/http/http_dispatch.pl
+[ 58%] Generating ../../home/library/ext/http/http/web/icons/generic.png
+[ 58%] Generating ../../home/doc/packages/examples/http/demo_hello.pl
+[ 58%] Generating ../home/library/prolog_trace.pl
+[ 58%] Generating ../../home/library/ext/plunit/plunit.pl
+[ 58%] Generating ../../home/doc/packages/examples/http/demo_login.pl
+[ 58%] Generating ../home/library/prolog_versions.pl
+[ 58%] Generating ../../home/doc/packages/examples/http/pwp/pwp1.pwp
+[ 58%] Generating ../../home/library/ext/http/http/http_dyn_workers.pl
+[ 58%] Generating ../../home/library/ext/http/http/web/icons/layout.png
+[ 58%] Generating ../home/library/prolog_wrap.pl
+[ 58%] Generating ../../home/library/ext/http/http/web/icons/openid-logo-square.png
+[ 58%] Generating ../../home/library/ext/plunit/test_wizard.pl
+[ 59%] Generating ../../home/doc/packages/examples/http/demo_openid.pl
+[ 59%] Generating ../home/library/prolog_xref.pl
+[ 59%] Generating ../../home/library/ext/http/http/http_exception.pl
+[ 59%] Generating ../../home/doc/packages/examples/http/pwp/pwp2.pwp
+[ 60%] Generating ../../home/library/ext/http/http/web/icons/openid-logo-tiny.png
+[ 60%] Generating ../home/library/pure_input.pl
+[ 61%] Generating ../../home/doc/packages/examples/http/pwp/pwp3.pwp
+[ 61%] Generating ../../home/doc/packages/examples/http/demo_pwp.pl
+[ 61%] Built target plugin_plunit__pl_libs
+[ 61%] Built target plugin_http_icons_http_web_icons_pl_libs
+[ 61%] Generating ../home/library/qpforeign.pl
+[ 61%] Generating ../../home/doc/packages/examples/http/pwp/pwp4.pwp
+[ 61%] Generating ../../home/library/ext/http/http/http_files.pl
+[ 61%] Generating ../home/library/qsave.pl
+[ 62%] Generating ../home/library/quasi_quotations.pl
+[ 62%] Generating ../../home/doc/packages/examples/http/demo_rest.pl
+[ 62%] Generating ../../home/library/ext/http/http/http_hook.pl
+[ 62%] Generating ../../home/doc/packages/examples/http/pwp/pwp5.pwp
+[ 62%] Generating ../home/library/quintus.pl
+[ 62%] Generating ../../home/doc/packages/examples/http/pwp/pwp6.pwp
+[ 62%] Generating ../../home/doc/packages/examples/plunit/.created
+[ 62%] Generating ../../home/doc/packages/examples/http/demo_threads.pl
+[ 62%] Generating ../../home/library/ext/sgml/.created
+[ 62%] Generating ../../home/library/ext/http/http/http_host.pl
+[ 62%] Generating ../../home/doc/packages/examples/http/pwp/pwp7.pwp
+[ 62%] Generating ../home/library/random.pl
+[ 62%] Generating ../../home/library/ext/sgml/DTD/.created
+[ 62%] Generating ../../home/doc/packages/examples/http/pwp/pwp8.pwp
+[ 62%] Generating ../../home/doc/packages/examples/http/linux-init-script
+[ 63%] Generating ../../home/library/ext/http/http/http_load.pl
+[ 63%] Generating ../../home/doc/packages/examples/plunit/read.pl
+[ 63%] Generating ../../home/library/ext/sgml/c14n2.pl
+[ 63%] Generating ../../home/doc/packages/examples/plunit/simple.pl
+[ 63%] Generating ../home/library/rbtrees.pl
+[ 63%] Generating ../../home/doc/packages/examples/http/pwp/pwpdb.pl
+[ 63%] Generating ../../home/library/ext/sgml/DTD/HTML4.dcl
+[ 63%] Generating ../../home/doc/packages/examples/http/systemd-script.service
+[ 63%] Generating ../../home/library/ext/http/http/http_log.pl
+[ 64%] Generating ../../home/library/ext/sgml/DTD/HTML4.dtd
+[ 65%] Generating ../../home/library/ext/sgml/iso_639.pl
+[ 65%] Built target plugin_plunit_example_files
+[ 65%] Generating ../home/library/readln.pl
+[ 65%] Generating ../../home/library/ext/sgml/pwp.pl
+[ 65%] Built target plugin_http_pwp_example_files
+[ 65%] Generating ../../home/library/ext/sgml/DTD/HTML4.soc
+[ 65%] Generating ../../home/doc/packages/examples/http/upstart-script.conf
+[ 65%] Generating ../../home/library/ext/http/http/http_multipart_plugin.pl
+[ 65%] Generating ../../home/library/ext/sgml/DTD/HTML5.dtd
+[ 65%] Generating ../home/library/readutil.pl
+[ 65%] Generating ../../home/library/ext/sgml/DTD/HTMLlat1.ent
+[ 65%] Generating ../../home/library/ext/sgml/sgml.pl
+[ 65%] Built target plugin_http_example_files
+[ 65%] Generating ../../home/library/ext/http/http/http_openid.pl
+[ 65%] Generating ../home/library/record.pl
+[ 66%] Generating ../home/library/rwlocks.pl
+[ 66%] Generating ../home/library/sandbox.pl
+[ 66%] Generating static atoms and functors
+[ 66%] Generating ../../home/library/ext/sgml/DTD/HTMLspec.ent
+[ 67%] Generating ../../home/library/ext/utf8proc/.created
+[ 67%] Generating ../../home/library/ext/sgml/sgml_write.pl
+[ 67%] Generating ../../home/library/ext/http/http/http_parameters.pl
+[ 67%] Generating ../home/library/settings.pl
+[ 67%] Generating ../home/library/shell.pl
+[ 67%] Generating ../home/library/shlib.pl
+[ 67%] Generating ../../home/library/ext/sgml/DTD/HTMLsym.ent
+[ 67%] Generating ../../home/library/ext/utf8proc/unicode.pl
+[ 67%] Generating ../../home/library/ext/sgml/xpath.pl
+[ 67%] Generating ../../home/library/ext/http/http/http_pwp.pl
+[ 67%] Generating ../home/library/sort.pl
+[ 67%] Generating ../home/library/solution_sequences.pl
+[ 67%] Built target plugin_sgml_DTD_pl_libs
+[ 67%] Built target plugin_utf8proc__pl_libs
+[ 67%] Generating ../../home/library/ext/http/http/http_redis_plugin.pl
+[ 67%] Built target core-constants
+[ 68%] Generating ../../home/library/ext/http/http/http_server.pl
+[ 68%] Generating ../../home/library/ext/sgml/xsdp_types.pl
+[ 68%] Generating ../../home/library/ext/http/http/http_server_files.pl
+[ 68%] Generating ../home/library/statistics.pl
+[ 69%] Generating ../home/library/streams.pl
+[ 69%] Generating ../home/library/strings.pl
+[ 69%] Generating VMI metadata into vmi-metadata.h
+[ 69%] Generating ../home/library/system.pl
+[ 69%] Generating ../../home/library/ext/http/http/http_server_health.pl
+[ 69%] Generating ../../home/library/ext/http/http/http_session.pl
+[ 69%] Built target plugin_sgml__pl_libs
+[ 69%] Generating ../../home/library/ext/http/http/http_unix_daemon.pl
+[ 69%] Generating ../../home/library/ext/http/http/http_wrapper.pl
+[ 69%] Generating ../../home/library/ext/http/http/thread_httpd.pl
+[ 69%] Generating ../home/library/tables.pl
+[ 69%] Generating ../home/library/tabling.pl
+[ 69%] Generating ../home/library/terms.pl
+[ 69%] Generating ../../home/library/ext/http/http/yadis.pl
+[ 69%] Generating ../home/library/thread.pl
+[ 69%] Generating ../home/library/tty.pl
+[ 69%] Generating ../home/library/thread_pool.pl
+[ 70%] Generating ../home/library/threadutil.pl
+[ 70%] Generating ../home/library/ugraphs.pl
+[ 70%] Generating ../home/library/url.pl
+[ 70%] Built target plugin_http_server_libs_http_pl_libs
+[ 70%] Generating ../home/library/utf8.pl
+[ 70%] Built target vmi-metadata
+[ 70%] Generating ../home/library/varnumbers.pl
+[ 71%] Generating ../home/library/wfs.pl
+[ 71%] Generating ../home/library/vm.pl
+[ 71%] Generating ../home/library/when.pl
+[ 71%] Generating ../home/library/www_browser.pl
+[ 71%] Generating ../home/library/writef.pl
+[ 71%] Generating ../home/library/zip.pl
+[ 71%] Generating ../home/library/yall.pl
+[ 71%] Building C object src/CMakeFiles/swiplobjs.dir/pl-bag.c.o
+[ 71%] Building C object src/CMakeFiles/swiplobjs.dir/pl-arith.c.o
+[ 72%] Building C object src/CMakeFiles/swiplobjs.dir/pl-wam.c.o
+[ 72%] Building C object src/CMakeFiles/swiplobjs.dir/pl-error.c.o
+[ 72%] Building C object src/CMakeFiles/swiplobjs.dir/pl-atom.c.o
+[ 72%] Building C object src/CMakeFiles/swipl-ld.dir/swipl-ld.c.o
+[ 72%] Building C object src/CMakeFiles/swiplobjs.dir/pl-comp.c.o
+[ 72%] Built target core_library
+[ 72%] Built target prolog_home
+[ 72%] Building C object src/CMakeFiles/swiplobjs.dir/pl-zip.c.o
+[ 72%] Building C object src/CMakeFiles/swiplobjs.dir/pl-dwim.c.o
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-ext.c.o
+[ 73%] Linking C executable swipl-ld
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-flag.c.o
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-funct.c.o
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-gc.c.o
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-privitf.c.o
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-list.c.o
+[ 73%] Built target swipl-ld
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-string.c.o
+[ 73%] Building C object src/CMakeFiles/swiplobjs.dir/pl-load.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-modul.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-op.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-prims.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-pro.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-proc.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-prof.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-read.c.o
+[ 74%] Building C object src/CMakeFiles/swiplobjs.dir/pl-rec.c.o
+[ 75%] Building C object src/CMakeFiles/swiplobjs.dir/pl-setup.c.o
+[ 75%] Building C object src/CMakeFiles/swiplobjs.dir/pl-sys.c.o
+[ 75%] Building C object src/CMakeFiles/swiplobjs.dir/pl-trace.c.o
+[ 75%] Building C object src/CMakeFiles/swiplobjs.dir/pl-util.c.o
+[ 75%] Building C object src/CMakeFiles/swiplobjs.dir/pl-qlf.c.o
+[ 75%] Building C object src/CMakeFiles/swiplobjs.dir/pl-write.c.o
+[ 75%] Building C object src/CMakeFiles/swiplobjs.dir/pl-term.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-thread.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-xterm.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-srcfile.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-attvar.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-gvar.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-btree.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-init.c.o
+[ 76%] Building C object src/CMakeFiles/swiplobjs.dir/pl-gmp.c.o
+[ 77%] Building C object src/CMakeFiles/swiplobjs.dir/pl-segstack.c.o
+[ 77%] Building C object src/CMakeFiles/swiplobjs.dir/pl-hash.c.o
+[ 77%] Building C object src/CMakeFiles/swiplobjs.dir/pl-version.c.o
+[ 77%] Building C object src/CMakeFiles/swiplobjs.dir/pl-codetable.c.o
+[ 77%] Building C object src/CMakeFiles/swiplobjs.dir/pl-supervisor.c.o
+[ 77%] Building C object src/CMakeFiles/swiplobjs.dir/pl-dbref.c.o
+[ 77%] Building C object src/CMakeFiles/swiplobjs.dir/pl-termhash.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-variant.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-assert.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-copyterm.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-debug.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-cont.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-ressymbol.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-dict.c.o
+[ 78%] Building C object src/CMakeFiles/swiplobjs.dir/pl-trie.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-indirect.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-rsort.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-tabling.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-mutex.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-allocpool.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-wrap.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-event.c.o
+[ 79%] Building C object src/CMakeFiles/swiplobjs.dir/pl-transaction.c.o
+[ 80%] Building C object src/CMakeFiles/swiplobjs.dir/pl-undo.c.o
+[ 80%] Building C object src/CMakeFiles/swiplobjs.dir/pl-alloc.c.o
+[ 80%] Building C object src/CMakeFiles/swiplobjs.dir/pl-index.c.o
+[ 80%] Building C object src/CMakeFiles/swiplobjs.dir/pl-fli.c.o
+[ 80%] Building C object src/CMakeFiles/swiplobjs.dir/pl-coverage.c.o
+[ 80%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-buffer.c.o
+[ 80%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-ctype.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-file.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-files.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-glob.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-os.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-stream.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-string.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-table.c.o
+[ 81%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-text.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-utf8.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-fmt.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-option.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-dtoa.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-cstack.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-codelist.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-prologflag.c.o
+[ 82%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-tai.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-locale.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/os/pl-apple.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/caltime_tai.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/caltime_utc.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/leapsecs_sub.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/caldate_fmjd.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/leapsecs_add.c.o
+[ 83%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/leapsecs_init.c.o
+[ 84%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/caldate_mjd.c.o
+[ 84%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/leapsecs_read.c.o
+[ 84%] Building C object src/CMakeFiles/swiplobjs.dir/pl-bf.c.o
+[ 84%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/tai_pack.c.o
+[ 84%] Building C object src/CMakeFiles/swiplobjs.dir/libtai/tai_unpack.c.o
+[ 84%] Building C object src/CMakeFiles/swiplobjs.dir/libbf/bf_gmp.c.o
+[ 85%] Building C object src/CMakeFiles/swiplobjs.dir/libbf/cutils.c.o
+[ 85%] Building C object src/CMakeFiles/swiplobjs.dir/libbf/libbf.c.o
+[ 85%] Building C object src/CMakeFiles/swiplobjs.dir/libbf/mersenne-twister.c.o
+[ 85%] Building C object src/CMakeFiles/swiplobjs.dir/minizip/zip.c.o
+[ 85%] Building C object src/CMakeFiles/swiplobjs.dir/minizip/unzip.c.o
+[ 85%] Building C object src/CMakeFiles/swiplobjs.dir/minizip/ioapi.c.o
+[ 85%] Built target swiplobjs
+[ 85%] Linking C shared library libswipl.dylib
+[ 85%] Built target libswipl
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_files.dir/error.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_md54pl.dir/md54pl.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_prolog_stream.dir/prolog_stream.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_readutil.dir/readutil.c.o
+[ 85%] Building C object src/CMakeFiles/swipl.dir/pl-main.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_uri.dir/uri.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_memfile.dir/error.c.o
+[ 85%] Building C object packages/zlib/CMakeFiles/plugin_zlib4pl.dir/zlib4pl.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_files.dir/files.c.o
+[ 85%] Linking C executable swipl
+[ 85%] Linking C shared module prolog_stream.so
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_md54pl.dir/md5.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_memfile.dir/memfile.c.o
+[ 85%] Linking C shared module readutil.so
+[ 85%] Linking C shared module zlib4pl.so
+[ 85%] Linking C shared module files.so
+[ 85%] Linking C shared module md54pl.so
+[ 85%] Linking C shared module memfile.so
+[ 85%] Linking C shared module uri.so
+[ 85%] Built target swipl
+[ 85%] Built target plugin_readutil
+[ 85%] Built target plugin_prolog_stream
+[ 85%] Built target plugin_zlib4pl
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_hashstream.dir/hash_stream.c.o
+[ 85%] Building C object packages/clib/CMakeFiles/plugin_crypt.dir/error.c.o
+[ 85%] Built target plugin_files
+[ 86%] Building C object packages/clib/CMakeFiles/plugin_sha4pl.dir/error.c.o
+[ 86%] Built target plugin_md54pl
+[ 86%] Building C object packages/clib/CMakeFiles/plugin_cgi.dir/error.c.o
+[ 87%] Building C object packages/clib/CMakeFiles/plugin_time.dir/error.c.o
+[ 87%] Building C object packages/clib/CMakeFiles/plugin_process.dir/error.c.o
+[ 87%] Building C object packages/clib/CMakeFiles/plugin_crypt.dir/crypt.c.o
+[ 87%] Building C object packages/clib/CMakeFiles/plugin_sha4pl.dir/sha4pl.c.o
+[ 87%] Built target plugin_memfile
+[ 87%] Built target plugin_uri
+[ 87%] Building C object packages/clib/CMakeFiles/plugin_hashstream.dir/md5.c.o
+[ 88%] Building C object packages/clib/CMakeFiles/plugin_cgi.dir/form.c.o
+[ 88%] Building C object packages/clib/CMakeFiles/plugin_sha4pl.dir/sha1/sha1.c.o
+[ 88%] Building C object packages/clib/CMakeFiles/plugin_cgi.dir/cgi.c.o
+[ 88%] Building C object packages/clib/CMakeFiles/plugin_time.dir/time.c.o
+[ 88%] Building C object packages/clib/CMakeFiles/plugin_process.dir/process.c.o
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_crypt.dir/md5.c.o
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_crypt.dir/md5passwd.c.o
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_hashstream.dir/sha1/sha1.c.o
+[ 89%] Linking C shared module cgi.so
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_sha4pl.dir/sha1/sha2.c.o
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_streaminfo.dir/error.c.o
+[ 89%] Linking C shared module crypt.so
+[ 89%] Linking C shared module time.so
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_unix.dir/error.c.o
+[ 89%] Linking C shared module process.so
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_hashstream.dir/sha1/sha2.c.o
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_streaminfo.dir/streaminfo.c.o
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_unix.dir/unix.c.o
+[ 89%] Built target plugin_cgi
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_sha4pl.dir/sha1/hmac_sha1.c.o
+[ 89%] Linking C shared module streaminfo.so
+[ 89%] Building C object packages/clib/CMakeFiles/plugin_sha4pl.dir/sha1/hmac_sha256.c.o
+[ 89%] Built target plugin_crypt
+[ 89%] Built target plugin_time
+[ 90%] Linking C shared module unix.so
+[ 90%] Built target plugin_process
+[ 90%] Linking C shared module hashstream.so
+[ 90%] Building C object packages/clib/CMakeFiles/plugin_uid.dir/error.c.o
+[ 90%] Linking C shared module sha4pl.so
+[ 90%] Building C object packages/clib/CMakeFiles/plugin_uid.dir/uid.c.o
+[ 91%] Building C object packages/clib/CMakeFiles/plugin_rlimit.dir/error.c.o
+[ 92%] Building C object packages/clib/CMakeFiles/plugin_syslog.dir/syslog.c.o
+[ 92%] Built target plugin_streaminfo
+[ 92%] Linking C shared module uid.so
+[ 92%] Building C object packages/clib/CMakeFiles/plugin_rlimit.dir/rlimit.c.o
+[ 92%] Linking C shared module syslog.so
+[ 92%] Building C object packages/clib/CMakeFiles/plugin_sched.dir/sched.c.o
+[ 92%] Built target plugin_unix
+[ 92%] Building C object packages/clib/CMakeFiles/plugin_socket.dir/error.c.o
+[ 92%] Linking C shared module rlimit.so
+[ 92%] Built target plugin_hashstream
+[ 92%] Built target plugin_sha4pl
+[ 92%] Linking C shared module sched.so
+[ 92%] Building C object packages/clib/CMakeFiles/plugin_socket.dir/socket.c.o
+[ 92%] Building C object packages/inclpr/CMakeFiles/plugin_inclpr.dir/inclpr.c.o
+[ 92%] Building C object packages/cpp/CMakeFiles/plugin_test_ffi.dir/test_ffi.c.o
+[ 92%] Built target plugin_uid
+[ 92%] Building CXX object packages/cpp/CMakeFiles/plugin_test_cpp.dir/test_cpp.cpp.o
+[ 92%] Built target plugin_syslog
+[ 92%] Building C object packages/http/CMakeFiles/plugin_json.dir/json.c.o
+[ 92%] Building C object packages/clib/CMakeFiles/plugin_socket.dir/nonblockio.c.o
+[ 92%] Linking C shared module test_ffi.so
+[ 92%] Linking C shared module inclpr.so
+[ 92%] Built target plugin_rlimit
+[ 92%] Building C object packages/http/CMakeFiles/plugin_http_stream.dir/http_stream.c.o
+[ 92%] Built target plugin_sched
+[ 92%] Linking C shared module json.so
+[ 92%] Building C object packages/http/CMakeFiles/plugin_websocket.dir/websocket.c.o
+[ 92%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/parser.c.o
+[ 92%] Linking C shared module socket.so
+[ 92%] Built target plugin_inclpr
+[ 92%] Built target plugin_test_ffi
+[ 92%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/util.c.o
+[ 92%] Linking C shared module http_stream.so
+[ 92%] Linking C shared module websocket.so
+[ 92%] Building C object packages/utf8proc/CMakeFiles/plugin_unicode4pl.dir/unicode4pl.c.o
+[ 92%] Built target plugin_json
+[ 92%] Generating ../home/boot.prc
+[ 92%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/charmap.c.o
+[ 92%] Built target plugin_socket
+[ 92%] Building C object packages/utf8proc/CMakeFiles/plugin_unicode4pl.dir/utf8proc.c.o
+[ 92%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/catalog.c.o
+[ 92%] Built target plugin_websocket
+[ 92%] Built target plugin_http_stream
+[ 92%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/xmlns.c.o
+[ 92%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/model.c.o
+[ 93%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/utf8.c.o
+[ 93%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/xml_unicode.c.o
+[ 93%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/quote.c.o
+[ 93%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/sgml2pl.c.o
+[ 93%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/xsd.c.o
+[ 93%] Building C object packages/sgml/CMakeFiles/plugin_sgml2pl.dir/error.c.o
+[ 93%] Linking C shared module unicode4pl.so
+[ 96%] Built target bootfile
+[ 96%] Built target core
+[ 96%] Linking C shared module sgml2pl.so
+[ 96%] Build home/library/lynx/INDEX.pl
+[ 96%] Build home/library/clp/INDEX.pl
+[ 96%] Build home/library/unicode/INDEX.pl
+[ 96%] Build home/library/dcg/INDEX.pl
+[ 96%] QLF compiling prolog_colour.qlf
+[ 96%] Built target plugin_unicode4pl
+[ 96%] Built target library_index_library_unicode
+[ 96%] Built target library_index_library_clp
+[ 96%] Built target library_index_library_lynx
+[ 96%] Built target library_index_library_dcg
+[ 96%] Built target qlf-prolog_colour
+[ 97%] QLF compiling prolog_xref.qlf
+[ 97%] Build home/library/ext/http/http/INDEX.pl
+[ 97%] Build home/library/ext/clib/INDEX.pl
+[ 98%] -- CHR bootstrap compilation step 1
+[ 98%] Build home/library/ext/plunit/INDEX.pl
+[ 98%] Built target library_index_library_ext_plunit
+[100%] Build home/library/ext/sgml/INDEX.pl
+[100%] Generating chr.pl
+[100%] Built target plugin_sgml2pl
+[100%] Built target qlf-prolog_xref
+[100%] Built target library_index_library_ext_sgml
+[100%] Build home/library/ext/utf8proc/INDEX.pl
+[100%] Build home/library/ext/zlib/INDEX.pl
+[100%] -- CHR bootstrap compilation step 2
+[100%] Built target library_index_library_ext_zlib
+[100%] Built target library_index_library_ext_utf8proc
+[100%] -- CHR bootstrap compilation step 3
+[100%] Built target library_index_library_ext_http_http
+[100%] -- CHR bootstrap compilation step 4
+[100%] Linking CXX shared module test_cpp.so
+[100%] Built target plugin_test_cpp
+[100%] Built target library_index_library_ext_clib
+[100%] Build home/library/INDEX.pl
+[100%] Built target library_index_library
+[100%] Built target chr_compile
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/build »
+cmake --install ../build
+-- Install configuration: "Release"
+(cd ../build ; LD_LIBRARY_PATH=/private/tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/src/../build/src: ctest)
+Test project /tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/build
+Connected to MAKE jobserver
+      Start  1: swipl:abi-version
+ 1/60 Test  #1: swipl:abi-version ................   Passed    0.01 sec
+      Start  2: swipl:basic
+ 2/60 Test  #2: swipl:basic ......................   Passed    0.35 sec
+      Start  3: swipl:unprotected
+ 3/60 Test  #3: swipl:unprotected ................   Passed    0.29 sec
+      Start  4: swipl:core
+ 4/60 Test  #4: swipl:core .......................   Passed    1.29 sec
+      Start  5: swipl:db
+ 5/60 Test  #5: swipl:db .........................   Passed    0.68 sec
+      Start  6: swipl:attvar
+ 6/60 Test  #6: swipl:attvar .....................   Passed    0.14 sec
+      Start  7: swipl:debug
+ 7/60 Test  #7: swipl:debug ......................   Passed    0.55 sec
+      Start  8: swipl:tabling
+ 8/60 Test  #8: swipl:tabling ....................   Passed   24.00 sec
+      Start  9: swipl:library
+ 9/60 Test  #9: swipl:library ....................   Passed    2.03 sec
+      Start 10: swipl:compile
+10/60 Test #10: swipl:compile ....................   Passed    0.09 sec
+      Start 11: swipl:charset
+11/60 Test #11: swipl:charset ....................   Passed    0.09 sec
+      Start 12: swipl:eclipse
+12/60 Test #12: swipl:eclipse ....................   Passed    0.07 sec
+      Start 13: swipl:clp
+13/60 Test #13: swipl:clp ........................   Passed    0.12 sec
+      Start 14: swipl:GC
+14/60 Test #14: swipl:GC .........................   Passed    1.06 sec
+      Start 15: swipl:save
+15/60 Test #15: swipl:save .......................   Passed    1.38 sec
+      Start 16: swipl:files
+16/60 Test #16: swipl:files ......................   Passed    1.35 sec
+      Start 17: swipl:transaction
+17/60 Test #17: swipl:transaction ................   Passed    0.17 sec
+      Start 18: swipl:xsb/basic_tests
+18/60 Test #18: swipl:xsb/basic_tests ............   Passed    0.25 sec
+      Start 19: swipl:xsb/ai_tests
+19/60 Test #19: swipl:xsb/ai_tests ...............   Passed    0.24 sec
+      Start 20: swipl:xsb/ptq
+20/60 Test #20: swipl:xsb/ptq ....................   Passed    0.19 sec
+      Start 21: swipl:xsb/neg_tests
+21/60 Test #21: swipl:xsb/neg_tests ..............   Passed    0.25 sec
+      Start 22: swipl:xsb/delay_tests
+22/60 Test #22: swipl:xsb/delay_tests ............   Passed    0.35 sec
+      Start 23: swipl:xsb/wfs_tests
+23/60 Test #23: swipl:xsb/wfs_tests ..............   Passed    0.22 sec
+      Start 24: swipl:xsb/table_tests
+24/60 Test #24: swipl:xsb/table_tests ............   Passed    0.48 sec
+      Start 25: swipl:xsb/incremental_tests
+25/60 Test #25: swipl:xsb/incremental_tests ......   Passed    0.13 sec
+      Start 26: swipl:xsb/nonmt_tests
+26/60 Test #26: swipl:xsb/nonmt_tests ............   Passed    0.14 sec
+      Start 27: swipl:xsb/sub_tests
+27/60 Test #27: swipl:xsb/sub_tests ..............   Passed    0.18 sec
+      Start 28: swipl:thread
+28/60 Test #28: swipl:thread .....................   Passed    5.88 sec
+      Start 29: swipl:thread_wait
+29/60 Test #29: swipl:thread_wait ................   Passed    1.01 sec
+      Start 30: swipl:signals
+30/60 Test #30: swipl:signals ....................   Passed    0.76 sec
+      Start 31: swipl:rational
+31/60 Test #31: swipl:rational ...................   Passed    0.11 sec
+      Start 32: chr:chr
+32/60 Test #32: chr:chr ..........................   Passed    0.42 sec
+      Start 33: clib:crypt
+33/60 Test #33: clib:crypt .......................   Passed    0.07 sec
+      Start 34: clib:memfile
+34/60 Test #34: clib:memfile .....................   Passed    0.09 sec
+      Start 35: clib:readutil
+35/60 Test #35: clib:readutil ....................   Passed    0.07 sec
+      Start 36: clib:stream
+36/60 Test #36: clib:stream ......................   Passed    0.06 sec
+      Start 37: clib:uri
+37/60 Test #37: clib:uri .........................   Passed    0.08 sec
+      Start 38: clib:filesex
+38/60 Test #38: clib:filesex .....................   Passed    0.07 sec
+      Start 39: clib:cgi
+39/60 Test #39: clib:cgi .........................   Passed    0.07 sec
+      Start 40: clib:time
+40/60 Test #40: clib:time ........................   Passed    1.41 sec
+      Start 41: clib:process
+41/60 Test #41: clib:process .....................   Passed    0.43 sec
+      Start 42: clib:socket
+42/60 Test #42: clib:socket ......................   Passed    4.62 sec
+      Start 43: clib:af_unix
+43/60 Test #43: clib:af_unix .....................   Passed    0.04 sec
+      Start 44: clib:udp_sockets
+44/60 Test #44: clib:udp_sockets .................   Passed    0.07 sec
+      Start 45: clib:uuid
+45/60 Test #45: clib:uuid ........................   Passed    0.06 sec
+      Start 46: cpp:ffi
+46/60 Test #46: cpp:ffi ..........................   Passed    0.26 sec
+      Start 47: cpp:cpp
+47/60 Test #47: cpp:cpp ..........................Subprocess aborted***Exception:   0.26 sec
+      Start 48: http:json
+48/60 Test #48: http:json ........................   Passed    0.16 sec
+      Start 49: http:term_html
+49/60 Test #49: http:term_html ...................   Passed    0.30 sec
+      Start 50: http:cgi_stream
+50/60 Test #50: http:cgi_stream ..................   Passed    0.13 sec
+      Start 51: http:http
+51/60 Test #51: http:http ........................   Passed    0.40 sec
+      Start 52: http:multipart
+52/60 Test #52: http:multipart ...................   Passed    0.13 sec
+      Start 53: http:proxy
+53/60 Test #53: http:proxy .......................   Passed    0.16 sec
+      Start 54: http:websocket
+54/60 Test #54: http:websocket ...................   Passed    0.43 sec
+      Start 55: http:graphql
+55/60 Test #55: http:graphql .....................   Passed    0.12 sec
+      Start 56: sgml:sgml
+56/60 Test #56: sgml:sgml ........................   Passed    0.06 sec
+      Start 57: sgml:sgml_write
+57/60 Test #57: sgml:sgml_write ..................   Passed    0.05 sec
+      Start 58: sgml:xsd
+58/60 Test #58: sgml:xsd .........................   Passed    0.08 sec
+      Start 59: sgml:c14n
+59/60 Test #59: sgml:c14n ........................   Passed    0.09 sec
+      Start 60: zlib:zlib
+60/60 Test #60: zlib:zlib ........................   Passed    0.16 sec
+
+98% tests passed, 1 tests failed out of 60
+
+Total Test time (real) =  54.20 sec
+
+The following tests FAILED:
+         47 - cpp:cpp (Subprocess aborted)
+Errors while running CTest
+Output from these tests are in: /tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/build/Testing/Temporary/LastTest.log
+Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+make: [Makevars:26: ../build/done] Error 8 (ignorée)
+rm ../inst/swipl/bin/swipl
+rm ../inst/swipl/bin/swipl-ld
+rm ../inst/swipl/lib/swipl/bin/*/swipl
+rm ../inst/swipl/lib/swipl/bin/*/swipl-ld
+touch ../build/done
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iswipl-devel/src -I../inst/swipl/lib/swipl/include -D_REENTRANT -D__SWI_PROLOG__ -D__SWI_EMBEDDED__ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iswipl-devel/src -I../inst/swipl/lib/swipl/include -D_REENTRANT -D__SWI_PROLOG__ -D__SWI_EMBEDDED__ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c rswipl.cpp -o rswipl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rswipl.so RcppExports.o rswipl.o -L/tmp/nix-build-r-rswipl-9.3.12.drv-0/rswipl/inst/swipl/lib -lswipl -Wl,-rpath,$ORIGIN/../swipl/lib -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing via 'install.libs.R' to /nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12/library/00LOCK-rswipl/00new/rswipl
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rswipl)
+installPhase completed in 2 minutes 57 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rswipl-9.3.12.drv-0/ in /nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12...
+patching script interpreter paths in /nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12
+rewriting symlink /nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12/nix-support/propagated-user-env-packages to be relative to /nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12
+building '/nix/store/jf8x1z6nj5m2ajl5l2lr1mx4j11z0ri0-r-rolog-0.9.18.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8q8np91mfsrrwppvxjp6fj1jqsvlrsy7-rolog_0.9.18.tar.gz
+source root is rolog
+setting SOURCE_DATE_EPOCH to timestamp 1720555802 of file rolog/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rolog’ ...
+** package ‘rolog’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+Found SWI-Prolog at /nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12/library/rswipl/swipl/lib/swipl
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12/library/rswipl/swipl/lib/swipl/include" -D_REENTRANT -D__SWI_PROLOG__ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12/library/rswipl/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12/library/rswipl/swipl/lib/swipl/include" -D_REENTRANT -D__SWI_PROLOG__ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/vi566b1f9f0kb7bma48m65cv1xxsibbl-r-rswipl-9.3.12/library/rswipl/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c crolog.cpp -o crolog.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rolog.so RcppExports.o crolog.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/q885kw9nnammp851kyjr8agz4inv37xa-r-rolog-0.9.18/library/00LOCK-rolog/00new/rolog/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rolog)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rolog-0.9.18.drv-0/ in /nix/store/q885kw9nnammp851kyjr8agz4inv37xa-r-rolog-0.9.18...
+patching script interpreter paths in /nix/store/q885kw9nnammp851kyjr8agz4inv37xa-r-rolog-0.9.18
+rewriting symlink /nix/store/q885kw9nnammp851kyjr8agz4inv37xa-r-rolog-0.9.18/nix-support/propagated-user-env-packages to be relative to /nix/store/q885kw9nnammp851kyjr8agz4inv37xa-r-rolog-0.9.18
+building '/nix/store/9yfdvd20hkv4gsjqqiw7gwcm8p4b4578-r-mathml-1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/p10js0zsvr76kczk8x8b00snn6a7m1dy-mathml_1.2.tar.gz
+source root is mathml
+setting SOURCE_DATE_EPOCH to timestamp 1689456002 of file mathml/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mathml’ ...
+** package ‘mathml’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mathml)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mathml-1.2.drv-0/ in /nix/store/md3kg2qh4h6cw4jw3nkdbhm3f8c7ifgy-r-mathml-1.2...
+patching script interpreter paths in /nix/store/md3kg2qh4h6cw4jw3nkdbhm3f8c7ifgy-r-mathml-1.2
+rewriting symlink /nix/store/md3kg2qh4h6cw4jw3nkdbhm3f8c7ifgy-r-mathml-1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/md3kg2qh4h6cw4jw3nkdbhm3f8c7ifgy-r-mathml-1.2

@@ -1,0 +1,51 @@
+this derivation will be built:
+  /nix/store/j2ngp9pqfh24n9bv01bhzi6pv6p2vark-r-phenex-1.4-5.drv
+this path will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/b2jvqaayainfixdp2698j35yy6b6cc6p-phenex_1.4-5.tar.gz
+copying path '/nix/store/b2jvqaayainfixdp2698j35yy6b6cc6p-phenex_1.4-5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/j2ngp9pqfh24n9bv01bhzi6pv6p2vark-r-phenex-1.4-5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b2jvqaayainfixdp2698j35yy6b6cc6p-phenex_1.4-5.tar.gz
+source root is phenex
+setting SOURCE_DATE_EPOCH to timestamp 1496057740 of file phenex/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘phenex’ ...
+** package ‘phenex’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c analyzeBits.c -o analyzeBits.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c condition.c -o condition.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c date2doy.c -o date2doy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c phenex.c -o phenex.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c quicksort.c -o quicksort.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ravg.c -o ravg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c savgol.c -o savgol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sigmoid.c -o sigmoid.o
+date2doy.c:59:3: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                else
+                ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o phenex.so analyzeBits.o condition.o date2doy.o phenex.o quicksort.o ravg.o savgol.o sigmoid.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/f8ajk2idfgn97dvgswfk4xmzg9kh283d-r-phenex-1.4-5/library/00LOCK-phenex/00new/phenex/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (phenex)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-phenex-1.4-5.drv-0/ in /nix/store/f8ajk2idfgn97dvgswfk4xmzg9kh283d-r-phenex-1.4-5...
+patching script interpreter paths in /nix/store/f8ajk2idfgn97dvgswfk4xmzg9kh283d-r-phenex-1.4-5
+rewriting symlink /nix/store/f8ajk2idfgn97dvgswfk4xmzg9kh283d-r-phenex-1.4-5/nix-support/propagated-user-env-packages to be relative to /nix/store/f8ajk2idfgn97dvgswfk4xmzg9kh283d-r-phenex-1.4-5

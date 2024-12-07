@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/2frb98w0wxqz7b1njdxbb7gv4bks6vxk-r-asciicast-2.3.1.drv
+building '/nix/store/2frb98w0wxqz7b1njdxbb7gv4bks6vxk-r-asciicast-2.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qlmg4zfdwmssdba9vsm9wfinqdpdswjy-asciicast_2.3.1.tar.gz
+source root is asciicast
+setting SOURCE_DATE_EPOCH to timestamp 1705559402 of file asciicast/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘asciicast’ ...
+** package ‘asciicast’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/p6hgcsnjd7icdwm3dlxz62d4lfdxppl9-r-processx-3.8.4/library/processx/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c r.c -o r.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/p6hgcsnjd7icdwm3dlxz62d4lfdxppl9-r-processx-3.8.4/library/processx/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c common.c -o common.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/p6hgcsnjd7icdwm3dlxz62d4lfdxppl9-r-processx-3.8.4/library/processx/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c client.c -o client.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rem r.o common.o -L"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib" -lR -L/nix/store/bizz2sjb47iinc0zz19zmg2k9llk4mg7-pcre2-10.44/lib -lpcre2-8 -ldeflate -llzma -lbz2 -lz -ldl -lm -liconv -licuuc -licui18n
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib" -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o asciicastclient.so \
+        client.o common.o  \
+         -L"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib" -lR
+installing via 'install.libs.R' to /nix/store/78cb3yk5azbbyrmin4xzpkkj8f1axgaa-r-asciicast-2.3.1/library/00LOCK-asciicast/00new/asciicast
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (asciicast)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-asciicast-2.3.1.drv-0/ in /nix/store/78cb3yk5azbbyrmin4xzpkkj8f1axgaa-r-asciicast-2.3.1...
+patching script interpreter paths in /nix/store/78cb3yk5azbbyrmin4xzpkkj8f1axgaa-r-asciicast-2.3.1
+rewriting symlink /nix/store/78cb3yk5azbbyrmin4xzpkkj8f1axgaa-r-asciicast-2.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/78cb3yk5azbbyrmin4xzpkkj8f1axgaa-r-asciicast-2.3.1

@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/yrabj71d22xma2pg195rifwma0sf3mks-r-spGARCH-0.2.2.drv
+this path will be fetched (0.19 MiB download, 0.19 MiB unpacked):
+  /nix/store/riiq6rdq7h92cxb1zmmnwi4iapfi04bv-spGARCH_0.2.2.tar.gz
+copying path '/nix/store/riiq6rdq7h92cxb1zmmnwi4iapfi04bv-spGARCH_0.2.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yrabj71d22xma2pg195rifwma0sf3mks-r-spGARCH-0.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/riiq6rdq7h92cxb1zmmnwi4iapfi04bv-spGARCH_0.2.2.tar.gz
+source root is spGARCH
+setting SOURCE_DATE_EPOCH to timestamp 1599030603 of file spGARCH/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spGARCH’ ...
+** package ‘spGARCH’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Estimation.cpp -o Estimation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/yinajiaszib2jvw30pv6r5c649bsc68y-r-Matrix-1.7-1/library/Matrix/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Simulations.cpp -o Simulations.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spGARCH.so Estimation.o RcppExports.o Simulations.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/dp1z2jac39rybfrdnw8lf3isvcnmqivp-r-spGARCH-0.2.2/library/00LOCK-spGARCH/00new/spGARCH/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spGARCH)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spGARCH-0.2.2.drv-0/ in /nix/store/dp1z2jac39rybfrdnw8lf3isvcnmqivp-r-spGARCH-0.2.2...
+patching script interpreter paths in /nix/store/dp1z2jac39rybfrdnw8lf3isvcnmqivp-r-spGARCH-0.2.2
+rewriting symlink /nix/store/dp1z2jac39rybfrdnw8lf3isvcnmqivp-r-spGARCH-0.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/dp1z2jac39rybfrdnw8lf3isvcnmqivp-r-spGARCH-0.2.2

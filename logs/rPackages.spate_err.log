@@ -1,0 +1,62 @@
+this derivation will be built:
+  /nix/store/s09rc8vq16d5mxlfd9w7mic3qzxizly0-r-spate-1.7.5.drv
+this path will be fetched (1.17 MiB download, 1.17 MiB unpacked):
+  /nix/store/4s0y2y775c1g8xcll3ijydw96zizpg6b-spate_1.7.5.tar.gz
+copying path '/nix/store/4s0y2y775c1g8xcll3ijydw96zizpg6b-spate_1.7.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/s09rc8vq16d5mxlfd9w7mic3qzxizly0-r-spate-1.7.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4s0y2y775c1g8xcll3ijydw96zizpg6b-spate_1.7.5.tar.gz
+source root is spate
+setting SOURCE_DATE_EPOCH to timestamp 1696334402 of file spate/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spate’ ...
+** package ‘spate’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... none needed
+checking how to run the C preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -E
+checking for gcc... (cached) /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... (cached) yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... (cached) none needed
+checking for pkg-config... /nix/store/c6v2ngygy55zamyz17z94brbz2vrsi1z-pkg-config-wrapper-0.29.2/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for FFTW... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/rq9rfbavxw2qijx10bfs41aahjbyw8pa-fftw-double-3.3.10-dev/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ffbs.spectral.c -o ffbs.spectral.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spate.so ffbs.spectral.o -L/nix/store/04cn366y3lb0cdwy4nbq9yq1ihhhmihl-fftw-double-3.3.10/lib -lfftw3 -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/v5v778jmwlflbwhqfa5yilxnxss9spiw-r-spate-1.7.5/library/00LOCK-spate/00new/spate/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spate)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spate-1.7.5.drv-0/ in /nix/store/v5v778jmwlflbwhqfa5yilxnxss9spiw-r-spate-1.7.5...
+patching script interpreter paths in /nix/store/v5v778jmwlflbwhqfa5yilxnxss9spiw-r-spate-1.7.5
+rewriting symlink /nix/store/v5v778jmwlflbwhqfa5yilxnxss9spiw-r-spate-1.7.5/nix-support/propagated-user-env-packages to be relative to /nix/store/v5v778jmwlflbwhqfa5yilxnxss9spiw-r-spate-1.7.5

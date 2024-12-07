@@ -1,0 +1,101 @@
+these 3 derivations will be built:
+  /nix/store/0h462q20l1wqs4v6gbxpwcy65px9xqii-r-tableHTML-2.1.2.drv
+  /nix/store/dz2z6bc1x2srliqnsc4wgdxkakki3rb8-r-textBoxPlacement-1.0.drv
+  /nix/store/mj6rnh8x8xvihniqf6hiylxp1b7073wy-r-SherlockHolmes-1.0.1.drv
+these 3 paths will be fetched (6.13 MiB download, 6.22 MiB unpacked):
+  /nix/store/lmgk5v8jk5si56va8hgxq4fi19m63pv0-SherlockHolmes_1.0.1.tar.gz
+  /nix/store/njs8mv5k2h0ba9ddmhh5i12pzjxvvnxc-tableHTML_2.1.2.tar.gz
+  /nix/store/vvrkvhhp35km2kvrwnz9mh7kx8ilpzkv-textBoxPlacement_1.0.tar.gz
+copying path '/nix/store/lmgk5v8jk5si56va8hgxq4fi19m63pv0-SherlockHolmes_1.0.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/njs8mv5k2h0ba9ddmhh5i12pzjxvvnxc-tableHTML_2.1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/vvrkvhhp35km2kvrwnz9mh7kx8ilpzkv-textBoxPlacement_1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dz2z6bc1x2srliqnsc4wgdxkakki3rb8-r-textBoxPlacement-1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vvrkvhhp35km2kvrwnz9mh7kx8ilpzkv-textBoxPlacement_1.0.tar.gz
+source root is textBoxPlacement
+setting SOURCE_DATE_EPOCH to timestamp 1678994402 of file textBoxPlacement/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+building '/nix/store/0h462q20l1wqs4v6gbxpwcy65px9xqii-r-tableHTML-2.1.2.drv'...
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘textBoxPlacement’ ...
+** package ‘textBoxPlacement’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/njs8mv5k2h0ba9ddmhh5i12pzjxvvnxc-tableHTML_2.1.2.tar.gz
+** help
+*** installing help indices
+** building package indices
+source root is tableHTML
+setting SOURCE_DATE_EPOCH to timestamp 1681756202 of file tableHTML/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+* installing *source* package ‘tableHTML’ ...
+** package ‘tableHTML’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** testing if installed package can be loaded from final location
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package keeps a record of temporary installation path
+* DONE (textBoxPlacement)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-textBoxPlacement-1.0.drv-0/ in /nix/store/8gm9i996hlaf6kaq3kln12nyqmzp7rh6-r-textBoxPlacement-1.0...
+patching script interpreter paths in /nix/store/8gm9i996hlaf6kaq3kln12nyqmzp7rh6-r-textBoxPlacement-1.0
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tableHTML)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tableHTML-2.1.2.drv-0/ in /nix/store/c82ph9s6f34y5q1w7579n5qk007p7jyq-r-tableHTML-2.1.2...
+patching script interpreter paths in /nix/store/c82ph9s6f34y5q1w7579n5qk007p7jyq-r-tableHTML-2.1.2
+rewriting symlink /nix/store/c82ph9s6f34y5q1w7579n5qk007p7jyq-r-tableHTML-2.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/c82ph9s6f34y5q1w7579n5qk007p7jyq-r-tableHTML-2.1.2
+building '/nix/store/mj6rnh8x8xvihniqf6hiylxp1b7073wy-r-SherlockHolmes-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lmgk5v8jk5si56va8hgxq4fi19m63pv0-SherlockHolmes_1.0.1.tar.gz
+source root is SherlockHolmes
+setting SOURCE_DATE_EPOCH to timestamp 1680014406 of file SherlockHolmes/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SherlockHolmes’ ...
+** package ‘SherlockHolmes’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SherlockHolmes)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SherlockHolmes-1.0.1.drv-0/ in /nix/store/nifdczyn9v4c09zz5zxw0j96izc4gcqz-r-SherlockHolmes-1.0.1...
+patching script interpreter paths in /nix/store/nifdczyn9v4c09zz5zxw0j96izc4gcqz-r-SherlockHolmes-1.0.1
+rewriting symlink /nix/store/nifdczyn9v4c09zz5zxw0j96izc4gcqz-r-SherlockHolmes-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/nifdczyn9v4c09zz5zxw0j96izc4gcqz-r-SherlockHolmes-1.0.1

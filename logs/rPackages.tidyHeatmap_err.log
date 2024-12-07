@@ -1,0 +1,57 @@
+this derivation will be built:
+  /nix/store/4kibs1v7xxw3p3nkpprvh73mcqxblf0d-r-tidyHeatmap-1.8.1.drv
+this path will be fetched (4.09 MiB download, 4.12 MiB unpacked):
+  /nix/store/8m26q63nyfwp4wdj4f4c94fcwc6a410q-tidyHeatmap_1.8.1.tar.gz
+copying path '/nix/store/8m26q63nyfwp4wdj4f4c94fcwc6a410q-tidyHeatmap_1.8.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4kibs1v7xxw3p3nkpprvh73mcqxblf0d-r-tidyHeatmap-1.8.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8m26q63nyfwp4wdj4f4c94fcwc6a410q-tidyHeatmap_1.8.1.tar.gz
+source root is tidyHeatmap
+setting SOURCE_DATE_EPOCH to timestamp 1653031203 of file tidyHeatmap/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tidyHeatmap’ ...
+** package ‘tidyHeatmap’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur dans loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  l'espace de noms ‘ComplexHeatmap’ 1.6.0 est en train de charger, mais >= 2.2.0 est requis
+Appels : <Anonymous> ... namespaceImportFrom -> asNamespace -> loadNamespace
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘tidyHeatmap’
+* removing ‘/nix/store/5vxdazg928fkfc1js3h49vd9q15ap96x-r-tidyHeatmap-1.8.1/library/tidyHeatmap’
+error: builder for '/nix/store/4kibs1v7xxw3p3nkpprvh73mcqxblf0d-r-tidyHeatmap-1.8.1.drv' failed with exit code 1;
+       last 24 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/8m26q63nyfwp4wdj4f4c94fcwc6a410q-tidyHeatmap_1.8.1.tar.gz
+       > source root is tidyHeatmap
+       > setting SOURCE_DATE_EPOCH to timestamp 1653031203 of file tidyHeatmap/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘tidyHeatmap’ ...
+       > ** package ‘tidyHeatmap’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur dans loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) :
+       >   l'espace de noms ‘ComplexHeatmap’ 1.6.0 est en train de charger, mais >= 2.2.0 est requis
+       > Appels : <Anonymous> ... namespaceImportFrom -> asNamespace -> loadNamespace
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘tidyHeatmap’
+       > * removing ‘/nix/store/5vxdazg928fkfc1js3h49vd9q15ap96x-r-tidyHeatmap-1.8.1/library/tidyHeatmap’
+       For full logs, run 'nix log /nix/store/4kibs1v7xxw3p3nkpprvh73mcqxblf0d-r-tidyHeatmap-1.8.1.drv'.

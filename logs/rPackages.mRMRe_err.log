@@ -1,0 +1,51 @@
+these 2 derivations will be built:
+  /nix/store/48ai6pkr4qx3xixkhx648cbcx15ws96b-mRMRe_2.1.2.2.tar.gz.drv
+  /nix/store/707nchr4hjrj653yia93yzkmn6pf1yb4-r-mRMRe-2.1.2.2.drv
+building '/nix/store/48ai6pkr4qx3xixkhx648cbcx15ws96b-mRMRe_2.1.2.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/mRMRe_2.1.2.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1508k  100 1508k    0     0  4326k      0 --:--:-- --:--:-- --:--:-- 4321k
+building '/nix/store/707nchr4hjrj653yia93yzkmn6pf1yb4-r-mRMRe-2.1.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qld5qm4sib4rvazx8vfpp47h8qq1afn4-mRMRe_2.1.2.2.tar.gz
+source root is mRMRe
+setting SOURCE_DATE_EPOCH to timestamp 1730784158 of file mRMRe/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mRMRe’ ...
+** package ‘mRMRe’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Data.cpp -o Data.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Filter.cpp -o Filter.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Math.cpp -o Math.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Matrix.cpp -o Matrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MutualInformationMatrix.cpp -o MutualInformationMatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c exports.cpp -o exports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mRMRe.so Data.o Filter.o Math.o Matrix.o MutualInformationMatrix.o exports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/dr25xxjil3mw2ysvy7aaw6p50wl8g09q-r-mRMRe-2.1.2.2/library/00LOCK-mRMRe/00new/mRMRe/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mRMRe)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mRMRe-2.1.2.2.drv-0/ in /nix/store/dr25xxjil3mw2ysvy7aaw6p50wl8g09q-r-mRMRe-2.1.2.2...
+patching script interpreter paths in /nix/store/dr25xxjil3mw2ysvy7aaw6p50wl8g09q-r-mRMRe-2.1.2.2
+rewriting symlink /nix/store/dr25xxjil3mw2ysvy7aaw6p50wl8g09q-r-mRMRe-2.1.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/dr25xxjil3mw2ysvy7aaw6p50wl8g09q-r-mRMRe-2.1.2.2

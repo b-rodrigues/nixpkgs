@@ -1,0 +1,118 @@
+this derivation will be built:
+  /nix/store/ih6ppmxp2yh9iqk1d6bfjn5wdii02shx-r-mrfDepth-1.0.17.drv
+this path will be fetched (1.70 MiB download, 1.70 MiB unpacked):
+  /nix/store/8a2p0z1c562jwzmxshmj1f7nbbvz5giv-mrfDepth_1.0.17.tar.gz
+copying path '/nix/store/8a2p0z1c562jwzmxshmj1f7nbbvz5giv-mrfDepth_1.0.17.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ih6ppmxp2yh9iqk1d6bfjn5wdii02shx-r-mrfDepth-1.0.17.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8a2p0z1c562jwzmxshmj1f7nbbvz5giv-mrfDepth_1.0.17.tar.gz
+source root is mrfDepth
+setting SOURCE_DATE_EPOCH to timestamp 1716585602 of file mrfDepth/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mrfDepth’ ...
+** package ‘mrfDepth’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c AdjOutlyingness.cpp -o AdjOutlyingness.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Auxiliary.f -o Auxiliary.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Bagplot.f -o Bagplot.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c HalfSpaceDepth2D.f -o HalfSpaceDepth2D.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c HalfSpaceDepthContour2D.f -o HalfSpaceDepthContour2D.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c HalfSpaceDepthDeepestLoc.f -o HalfSpaceDepthDeepestLoc.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -fPIC  -O1 -g -c -o HalfSpaceDepthMedian.o HalfSpaceDepthMedian.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c HalfSpaceDepthND.f -o HalfSpaceDepthND.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c HalfspaceDepth3D.f -o HalfspaceDepth3D.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c LinAlg.f -o LinAlg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c Outlyingness.cpp -o Outlyingness.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Random.f -o Random.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c RegresDepth3D.f -o RegresDepth3D.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c RegresDepth4D.f -o RegresDepth4D.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c RegresDepthDeepest.f -o RegresDepthDeepest.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c RegresDepthNd.f -o RegresDepthNd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c auxyl.cpp -o auxyl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c dirOutl.cpp -o dirOutl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c dirOutl_aux.cpp -o dirOutl_aux.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c hdepthND.cpp -o hdepthND.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c mc.cpp -o mc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c medcouple.cpp -o medcouple.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mrfDepth_init.c -o mrfDepth_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c randy.cpp -o randy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mrfDepth.so AdjOutlyingness.o Auxiliary.o Bagplot.o HalfSpaceDepth2D.o HalfSpaceDepthContour2D.o HalfSpaceDepthDeepestLoc.o HalfSpaceDepthMedian.o HalfSpaceDepthND.o HalfspaceDepth3D.o LinAlg.o Outlyingness.o Random.o RegresDepth3D.o RegresDepth4D.o RegresDepthDeepest.o RegresDepthNd.o auxyl.o dirOutl.o dirOutl_aux.o hdepthND.o mc.o medcouple.o mrfDepth_init.o randy.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _fillcont_: does not use standard frameld: warning: could not create compact unwind for _dpmedian_: does not use standard frame
+ld: warning: could not create compact unwind for _deepest_: does not use standard frame
+ld: warning: could not create compact unwind for _hsdep21_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _hsdepth31b_: does not use standard frame
+ld: warning: could not create compact unwind for _isofin98_: does not use standard frame
+ld: warning: could not create compact unwind for _checkdata2d_: does not use standard frame
+ld: warning: could not create compact unwind for _iso2hdw_: does not use standard frame
+ld: warning: could not create compact unwind for _halfmed2d_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _hsdep2_: does not use standard framecould not create compact unwind for _stand_: does not use standard frame
+ld: warning: ld: warning: ld: warning: could not create compact unwind for _bagplotf_: does not use standard framecould not create compact unwind for _adjust_: does not use standard frame
+could not create compact unwind for _dep_: does not use standard frame
+could not create compact unwind for _hsdepth31_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _hsdepth_deepest_: does not use standard framecould not create compact unwind for _vert_: register 20 saved somewhere other than in frame
+
+ld: warning: could not create compact unwind for _rdepth41b_: does not use standard frame
+ld: warning: could not create compact unwind for _rdepth31b_: does not use standard frame
+ld: warning: could not create compact unwind for _rdraw_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _hsdepnp2_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _reduce_rdepth_appr_: does not use standard framecould not create compact unwind for _standrdepth31_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _dep_rdepth_appr_: does not use standard frame
+ld: warning: could not create compact unwind for _tql2_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _rdepth31_: does not use standard framecould not create compact unwind for _rdepth_appr_a_: does not use standard frame
+
+ld: warning: could not create compact unwind for _stand_rdepth_appr_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _rdepth3_: does not use standard frame
+could not create compact unwind for _stand_hsdepthnd_: does not use standard frame
+could not create compact unwind for _norrandp_: does not use standard frameld: warning: could not create compact unwind for _hsdepnp1_: does not use standard frame
+ld: warning: could not create compact unwind for _rdepth_: does not use standard frame
+ld: warning: could not create compact unwind for _newdir_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _sectionpoint_: does not use standard frame
+ld: warning: could not create compact unwind for _dpmedian_regdepth_: does not use standard frame
+ld: warning: could not create compact unwind for _sweepmedres_: does not use standard frameld: warning: could not create compact unwind for _standhsdep31_: does not use standard frameld: warning: could not create compact unwind for _rdepth_appr1_: does not use standard frame
+
+could not create compact unwind for _tred2_: does not use standard frame
+
+could not create compact unwind for _standrdepth41_: does not use standard frame
+ld: warning: could not create compact unwind for _reduce_: does not use standard frame
+ld: warning: could not create compact unwind for _rdepthnd_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _hsdepnp_: does not use standard frame
+ld: warning: could not create compact unwind for _equat_: registers 21 and 22 not saved contiguously in frame
+could not create compact unwind for _rdepth41_: does not use standard frame
+ld: warning: could not create compact unwind for _rdepth4_: does not use standard frame
+
+ld: warning: could not create compact unwind for _hsdep3_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/s7igap0vkbs644fi4y5424z8hz1qp8b8-r-mrfDepth-1.0.17/library/00LOCK-mrfDepth/00new/mrfDepth/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mrfDepth)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mrfDepth-1.0.17.drv-0/ in /nix/store/s7igap0vkbs644fi4y5424z8hz1qp8b8-r-mrfDepth-1.0.17...
+patching script interpreter paths in /nix/store/s7igap0vkbs644fi4y5424z8hz1qp8b8-r-mrfDepth-1.0.17
+rewriting symlink /nix/store/s7igap0vkbs644fi4y5424z8hz1qp8b8-r-mrfDepth-1.0.17/nix-support/propagated-user-env-packages to be relative to /nix/store/s7igap0vkbs644fi4y5424z8hz1qp8b8-r-mrfDepth-1.0.17

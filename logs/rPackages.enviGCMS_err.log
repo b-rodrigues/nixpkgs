@@ -1,0 +1,614 @@
+these 3 derivations will be built:
+  /nix/store/hx6wckm99zcyah2f312mddsq7iqn7y2p-r-RcppClassic-0.9.13.drv
+  /nix/store/sa69pqlvv667d5ddyp01zjg8302jcrcz-r-Rdisop-1.30.0.drv
+  /nix/store/6a4jfyikq1yl6nj4wm2bb0axgzqwnjhk-r-enviGCMS-0.7.1.drv
+building '/nix/store/hx6wckm99zcyah2f312mddsq7iqn7y2p-r-RcppClassic-0.9.13.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7l9f9k3j7pppibkp2ibayhagqakyi2lj-RcppClassic_0.9.13.tar.gz
+source root is RcppClassic
+setting SOURCE_DATE_EPOCH to timestamp 1669021802 of file RcppClassic/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RcppClassic’ ...
+** package ‘RcppClassic’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppDate.cpp -o RcppDate.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppDateVector.cpp -o RcppDateVector.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppDatetime.cpp -o RcppDatetime.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppDatetimeVector.cpp -o RcppDatetimeVector.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppFrame.cpp -o RcppFrame.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppFunction.cpp -o RcppFunction.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppList.cpp -o RcppList.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppNumList.cpp -o RcppNumList.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppParams.cpp -o RcppParams.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppResultSet.cpp -o RcppResultSet.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppStringVector.cpp -o RcppStringVector.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppStringVectorView.cpp -o RcppStringVectorView.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c copyMessageToR.cpp -o copyMessageToR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -o libRcppClassic.dylib RcppDate.o RcppDateVector.o RcppDatetime.o RcppDatetimeVector.o RcppFrame.o RcppFunction.o RcppList.o RcppNumList.o RcppParams.o RcppResultSet.o RcppStringVector.o RcppStringVectorView.o copyMessageToR.o init.o -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup    -L"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib" -lR -lintl -Wl,-framework -Wl,CoreFoundation
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar qc libRcppClassic.a RcppDate.o RcppDateVector.o RcppDatetime.o RcppDatetimeVector.o RcppFrame.o RcppFunction.o RcppList.o RcppNumList.o RcppParams.o RcppResultSet.o RcppStringVector.o RcppStringVectorView.o copyMessageToR.o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppClassic.so RcppDate.o RcppDateVector.o RcppDatetime.o RcppDatetimeVector.o RcppFrame.o RcppFunction.o RcppList.o RcppNumList.o RcppParams.o RcppResultSet.o RcppStringVector.o RcppStringVectorView.o copyMessageToR.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+cp libRcppClassic.dylib ../inst/lib
+cp libRcppClassic.a ../inst/lib
+rm libRcppClassic.dylib libRcppClassic.a
+installing to /nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/00LOCK-RcppClassic/00new/RcppClassic/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppClassic)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppClassic-0.9.13.drv-0/ in /nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13...
+patching script interpreter paths in /nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13
+rewriting symlink /nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/nix-support/propagated-user-env-packages to be relative to /nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13
+building '/nix/store/sa69pqlvv667d5ddyp01zjg8302jcrcz-r-Rdisop-1.30.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/i9kpi81icazxlm12sjzfbvj3hv3h7svg-Rdisop_1.30.0.tar.gz
+source root is Rdisop
+setting SOURCE_DATE_EPOCH to timestamp 1444784448 of file Rdisop/src/imslib/tools/scoredecompositions.cpp
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Updating Autotools / GNU config script to a newer upstream version: ./src/imslib/config/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./src/imslib/config/config.guess
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rdisop’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c disop.cpp -o disop.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/element.cpp -o imslib/src/ims/element.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/composedelement.cpp -o imslib/src/ims/composedelement.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/isotopedistribution.cpp -o imslib/src/ims/isotopedistribution.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/alphabet.cpp -o imslib/src/ims/alphabet.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/weights.cpp -o imslib/src/ims/weights.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/distributedalphabet.cpp -o imslib/src/ims/distributedalphabet.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/transformation.cpp -o imslib/src/ims/transformation.o
+In file included from imslib/src/ims/alphabet.cpp:6:
+In file included from ./imslib/src/ims/alphabet.h:9:
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: note: use 'noexcept(false)' instead
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+                                                    noexcept(false)
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: note: use 'noexcept(false)' instead
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+                                                                                                 noexcept(false)
+In file included from imslib/src/ims/alphabet.cpp:6:
+./imslib/src/ims/alphabet.h:113:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:113:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:133:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:133:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:220:47: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                virtual void load(const std::string& fname) throw (IOException);
+                                                            ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:220:47: note: use 'noexcept(false)' instead
+                virtual void load(const std::string& fname) throw (IOException);
+                                                            ^~~~~~~~~~~~~~~~~~~
+                                                            noexcept(false)
+./imslib/src/ims/alphabet.h:234:4: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                        throw (IOException);
+                        ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:234:4: note: use 'noexcept(false)' instead
+                        throw (IOException);
+                        ^~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+In file included from imslib/src/ims/alphabet.cpp:7:
+./imslib/src/ims/utils/compose_f_gx_t.h:66:16: error: no template named 'unary_function' in namespace 'std'; did you mean '__unary_function'?
+ : public std::unary_function<typename OP2::argument_type,
+          ~~~~~^~~~~~~~~~~~~~
+               __unary_function
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__functional/unary_function.h:46:1: note: '__unary_function' declared here
+using __unary_function = __unary_function_keep_layout_base<_Arg, _Result>;
+^
+In file included from imslib/src/ims/distributedalphabet.cpp:7:
+In file included from ./imslib/src/ims/distributedalphabet.h:7:
+In file included from ./imslib/src/ims/alphabet.h:9:
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: note: use 'noexcept(false)' instead
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+                                                    noexcept(false)
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: note: use 'noexcept(false)' instead
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+                                                                                                 noexcept(false)
+In file included from imslib/src/ims/alphabet.cpp:8:
+./imslib/src/ims/utils/compose_f_gx_hy_t.h:57:16: error: no template named 'binary_function' in namespace 'std'; did you mean '__binary_function'?
+ : public std::binary_function<typename OP2::argument_type,
+          ~~~~~^~~~~~~~~~~~~~~
+               __binary_function
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__functional/binary_function.h:49:1: note: '__binary_function' declared here
+using __binary_function = __binary_function_keep_layout_base<_Arg1, _Arg2, _Result>;
+^
+In file included from imslib/src/ims/composedelement.cpp:8:
+In file included from ./imslib/src/ims/composedelement.h:8:
+In file included from ./imslib/src/ims/alphabet.h:9:
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: note: use 'noexcept(false)' instead
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+                                                    noexcept(false)
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: note: use 'noexcept(false)' instead
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+                                                                                                 noexcept(false)
+In file included from imslib/src/ims/distributedalphabet.cpp:7:
+In file included from ./imslib/src/ims/distributedalphabet.h:7:
+./imslib/src/ims/alphabet.h:113:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:113:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:133:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:133:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:220:47: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                virtual void load(const std::string& fname) throw (IOException);
+                                                            ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:220:47: note: use 'noexcept(false)' instead
+                virtual void load(const std::string& fname) throw (IOException);
+                                                            ^~~~~~~~~~~~~~~~~~~
+                                                            noexcept(false)
+./imslib/src/ims/alphabet.h:234:4: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                        throw (IOException);
+                        ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:234:4: note: use 'noexcept(false)' instead
+                        throw (IOException);
+                        ^~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+In file included from disop.cpp:18:
+In file included from ./imslib/src/ims/alphabet.h:9:
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: note: use 'noexcept(false)' instead
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+                                                    noexcept(false)
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: note: use 'noexcept(false)' instead
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+                                                                                                 noexcept(false)
+In file included from imslib/src/ims/distributedalphabet.cpp:7:
+./imslib/src/ims/distributedalphabet.h:103:46: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                virtual void load(const std::string& name) throw (IOException);
+                                                           ^~~~~~~~~~~~~~~~~~~
+In file included from imslib/src/ims/composedelement.cpp:./imslib/src/ims/distributedalphabet.h:8103:
+In file included from ./imslib/src/ims/composedelement.h:8:
+./imslib/src/ims/alphabet.h:113:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:113:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:133:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:133:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:220:47: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                virtual void load(const std::string& fname) throw (IOException);
+                                                            ^~~~~~~~~~~~~~~~~~~
+imslib/src/ims/alphabet.cpp:26:11: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                                throw (UnknownCharacterException) {
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~./imslib/src/ims/alphabet.h:46: note: use 'noexcept(false)' instead
+
+                virtual void load(const std::string& name) throw (IOException);
+                                                           ^~~~~~~~~~~~~~~~~~~
+                                                           noexcept(false)
+imslib/src/ims/alphabet.cpp./imslib/src/ims/distributedalphabet.h:::110:22015:4726: : error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+:note: use 'noexcept(false)' instead
+11                                                                                                                throw (IOException);
+                virtual void load(const std::string& fname) throw (IOException);
+:                                                            ^~~~~~~~~~~~~~~~~~~ 
+note: use 'noexcept(false)' instead                                                                                                                ^~~~~~~~~~~~~~~~~~~
+
+                                                                                throw (UnknownCharacterException) {                                                            noexcept(false)
+./imslib/src/ims/distributedalphabet.h:110
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:                                                                                noexcept(false)15./imslib/src/ims/alphabet.h
+:: 234:4note: : use 'noexcept(false)' instead
+error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                                                                throw (IOException);                        throw (IOException);
+
+                                                                                                                ^~~~~~~~~~~~~~~~~~~                        ^~~~~~~~~~~~~~~~~~~
+
+                                                                                                                noexcept(false)
+./imslib/src/ims/alphabet.h:234:4: note: use 'noexcept(false)' instead
+                        throw (IOException);
+                        ^~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+In file included from disop.cpp:18:
+./imslib/src/ims/alphabet.h:113:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:113:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:133:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~imslib/src/ims/distributedalphabet.cpp:57:57: ~~error: 
+ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+void DistributedAlphabet::load(const std::string& name) throw (IOException) {
+                                                        ^~~~~~~~~~~~~~~~~~~
+imslib/src/ims/distributedalphabet.cpp:57:57: note: use 'noexcept(false)' instead
+void DistributedAlphabet::load(const std::string& name) throw (IOException) {
+                                                        ^~~~~~~~~~~~~~~~~~~
+                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:133:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/alphabet.h:220:47: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                virtual void load(const std::string& fname) throw (IOException);
+                                                            ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:220:47: note: use 'noexcept(false)' instead
+                virtual void load(const std::string& fname) throw (IOException);
+                                                            ^~~~~~~~~~~~~~~~~~~
+                                                            noexcept(false)
+./imslib/src/ims/alphabet.h:234:4: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                        throw (IOException);
+                        ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/alphabet.h:234:4: note: use 'noexcept(false)' instead
+                        throw (IOException);
+                        ^~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+imslib/src/ims/distributedalphabet.cpp:68:32: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                        AlphabetParser<>* parser) throw (IOException) {
+                                                                  ^~~~~~~~~~~~~~~~~~~
+imslib/src/ims/distributedalphabet.cpp:68:32: note: use 'noexcept(false)' instead
+                                        AlphabetParser<>* parser) throw (IOException) {
+                                                                  ^~~~~~~~~~~~~~~~~~~
+                                                                  noexcept(false)
+In file included from imslib/src/ims/composedelement.cpp:8:
+In file included from ./imslib/src/ims/composedelement.h:10:
+./imslib/src/ims/base/parser/abstractmoleculesequenceparser.h:23:7: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                throw (UnknownCharacterException) = 0;
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/abstractmoleculesequenceparser.h:23:7: note: use 'noexcept(false)' instead
+                                                throw (UnknownCharacterException) = 0;
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                noexcept(false)
+imslib/src/ims/alphabet.cpp:33:21: error: no member named 'bind2nd' in namespace 'std'
+                compose_f_gx(std::bind2nd(std::equal_to<name_type>(), name),
+                             ~~~~~^
+imslib/src/ims/alphabet.cpp:34:8: error: no member named 'mem_fun_ref' in namespace 'std'
+                std::mem_fun_ref(&element_type::getName))) < elements.end();
+                ~~~~~^
+imslib/src/ims/alphabet.cpp:39:12: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                                        throw (UnknownCharacterException) {
+                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+imslib/src/ims/alphabet.cpp:39:12: note: use 'noexcept(false)' instead
+                                                                                        throw (UnknownCharacterException) {
+                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                        noexcept(false)
+In file included from imslib/src/ims/composedelement.cpp:8:
+./imslib/src/ims/composedelement.h:204:58: error: no template named 'auto_ptr' in namespace 'std'
+                void initializeElements(const Alphabet& alphabet, std::auto_ptr<sequence_parser_type> parser)
+                                                                  ~~~~~^
+./imslib/src/ims/composedelement.h:95:4: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/composedelement.h:95:4: note: use 'noexcept(false)' instead
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+./imslib/src/ims/composedelement.h:205:4: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/composedelement.h:205:4: note: use 'noexcept(false)' instead
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+In file included from disop.cpp:22:
+In file included from ./imslib/src/ims/composedelement.h:10:
+./imslib/src/ims/base/parser/abstractmoleculesequenceparser.h:23:7: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                throw (UnknownCharacterException) = 0;
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/abstractmoleculesequenceparser.h:23:7: note: use 'noexcept(false)' instead
+                                                throw (UnknownCharacterException) = 0;
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                noexcept(false)
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/isotopespecies.cpp -o imslib/src/ims/isotopespecies.o
+imslib/src/ims/alphabet.cpp:74:11: error: no member named 'mem_fun_ref' in namespace 'std'
+                                        std::mem_fun_ref(&element_type::getName),
+                                        ~~~~~^
+imslib/src/ims/alphabet.cpp:75:11: error: no member named 'mem_fun_ref' in namespace 'std'
+                                        std::mem_fun_ref(&element_type::getName)));
+                                        ~~~~~^
+imslib/src/ims/alphabet.cpp:84:47: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+void Alphabet::load(const std::string& fname) throw (IOException) {
+                                              ^~~~~~~~~~~~~~~~~~~
+imslib/src/ims/alphabet.cpp:84:47: note: use 'noexcept(false)' instead
+void Alphabet::load(const std::string& fname) throw (IOException) {
+                                              ^~~~~~~~~~~~~~~~~~~
+                                              noexcept(false)
+imslib/src/ims/alphabet.cpp:90:15: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                                                                throw (IOException) {
+                                                                                                                ^~~~~~~~~~~~~~~~~~~
+imslib/src/ims/alphabet.cpp:90:15: note: use 'noexcept(false)' instead
+                                                                                                                throw (IOException) {
+                                                                                                                ^~~~~~~~~~~~~~~~~~~
+                                                                                                                noexcept(false)
+In file included from imslib/src/ims/composedelement.cpp:9:
+./imslib/src/ims/base/parser/moleculesequenceparser.h:17:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/moleculesequenceparser.h:17:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/base/parser/moleculesequenceparser.h:20:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/moleculesequenceparser.h:20:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/base/parser/moleculesequenceparser.h:27:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/moleculesequenceparser.h:27:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+In file included from imslib/src/ims/composedelement.cpp:10:
+./imslib/src/ims/base/parser/standardmoleculesequenceparser.h:20:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/standardmoleculesequenceparser.h:20:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/base/parser/standardmoleculesequenceparser.h:23:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/standardmoleculesequenceparser.h:23:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+./imslib/src/ims/base/parser/standardmoleculesequenceparser.h:30:10: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/standardmoleculesequenceparser.h:30:10: note: use 'noexcept(false)' instead
+                                                                        throw (UnknownCharacterException);
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                        noexcept(false)
+imslib/src/ims/composedelement.cpp:24:3: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                throw (UnknownCharacterException) {
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+imslib/src/ims/composedelement.cpp:24:3: note: use 'noexcept(false)' instead
+                throw (UnknownCharacterException) {
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                noexcept(false)
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k04rabimwhfvaam09sj3frs5110334pd-r-RcppClassic-0.9.13/library/RcppClassic/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I./imslib/src/ -fPIC  -g -O2   -c imslib/src/ims/base/parser/alphabettextparser.cpp -o imslib/src/ims/base/parser/alphabettextparser.o
+In file included from disop.cpp:22:
+./imslib/src/ims/composedelement.h:204:58: error: no template named 'auto_ptr' in namespace 'std'
+                void initializeElements(const Alphabet& alphabet, std::auto_ptr<sequence_parser_type> parser)
+                                                                  ~~~~~^
+./imslib/src/ims/composedelement.h:95:4: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/composedelement.h:95:4: note: use 'noexcept(false)' instead
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+./imslib/src/ims/composedelement.h:205:4: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/composedelement.h:205:4: note: use 'noexcept(false)' instead
+                        throw (UnknownCharacterException);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        noexcept(false)
+imslib/src/ims/composedelement.cpp:26:7: error: no member named 'auto_ptr' in namespace 'std'
+        std::auto_ptr<sequence_parser_type> parser;
+        ~~~~~^
+imslib/src/ims/composedelement.cpp:26:16: error: unexpected type name 'sequence_parser_type': expected expression
+        std::auto_ptr<sequence_parser_type> parser;
+                      ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+In file included from disop.cpp:26:
+./imslib/src/ims/decomp/realmassdecomposer.h:103:8: error: no template named 'auto_ptr' in namespace 'std'
+                std::auto_ptr<integer_decomposer_type> decomposer;
+                ~~~~~^
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: imslib/src/ims/composedelement.o] Error 1
+In file included from disop.cpp:28:
+./imslib/src/ims/decomp/decomputils.h:74:80: error: no member named 'bind2nd' in namespace 'std'
+        valuesRange.erase(std::remove_if(valuesRange.begin(), valuesRange.end(), std::bind2nd(std::less<T>(), 0)), valuesRange.end());
+                                                                                 ~~~~~^
+make: *** Attente des tâches non terminées....
+./imslib/src/ims/decomp/decomputils.h:81:80: error: no member named 'bind2nd' in namespace 'std'
+        valuesRange.erase(std::remove_if(valuesRange.begin(), valuesRange.end(), std::bind2nd(std::less<T>(), 0)), valuesRange.end());
+                                                                                 ~~~~~^
+10 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: imslib/src/ims/distributedalphabet.o] Error 1
+16 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: imslib/src/ims/alphabet.o] Error 1
+disop.cpp:315:6: error: use of undeclared identifier 'bind2nd'
+                                        bind2nd(multiplies<abundance_type>(), scale));  // operation (*scale)
+                                        ^
+disop.cpp:346:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+      error_return(exceptionMesg); 
+                   ^~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/Rinternals.h:1223:38: note: expanded from macro 'error_return'
+#define error_return(msg)       { Rf_error(msg);           return R_NilValue; }
+                                           ^~~
+disop.cpp:346:20: note: treat the string as an argument to avoid this
+      error_return(exceptionMesg); 
+                   ^
+                   "%s", 
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/Rinternals.h:1223:38: note: expanded from macro 'error_return'
+#define error_return(msg)       { Rf_error(msg);           return R_NilValue; }
+                                           ^
+disop.cpp:349:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+      error_return(exceptionMesg); 
+                   ^~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/Rinternals.h:1223:38: note: expanded from macro 'error_return'
+#define error_return(msg)       { Rf_error(msg);           return R_NilValue; }
+                                           ^~~
+disop.cpp:349:20: note: treat the string as an argument to avoid this
+      error_return(exceptionMesg); 
+                   ^
+                   "%s", 
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/Rinternals.h:1223:38: note: expanded from macro 'error_return'
+#define error_return(msg)       { Rf_error(msg);           return R_NilValue; }
+                                           ^
+disop.cpp:481:14: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    Rf_error(exceptionMesg); 
+             ^~~~~~~~~~~~~
+disop.cpp:481:14: note: treat the string as an argument to avoid this
+    Rf_error(exceptionMesg); 
+             ^
+             "%s", 
+disop.cpp:484:18: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    error_return(exceptionMesg); 
+                 ^~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/Rinternals.h:1223:38: note: expanded from macro 'error_return'
+#define error_return(msg)       { Rf_error(msg);           return R_NilValue; }
+                                           ^~~
+disop.cpp:484:18: note: treat the string as an argument to avoid this
+    error_return(exceptionMesg); 
+                 ^
+                 "%s", 
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/Rinternals.h:1223:38: note: expanded from macro 'error_return'
+#define error_return(msg)       { Rf_error(msg);           return R_NilValue; }
+                                           ^
+disop.cpp:825:59: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    const char *symbol = CHAR(Rf_asChar(getListElement(l, "name")));
+                                                          ^
+disop.cpp:827:80: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    nominal_mass_type nominalmass = (nominal_mass_type) REAL(getListElement(l, "mass"))[0];
+                                                                               ^
+disop.cpp:829:38: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    SEXP isotope = getListElement(l, "isotope");        
+                                     ^
+disop.cpp:831:57: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    int numisotopes = Rf_length(getListElement(isotope, "mass"));
+                                                        ^
+disop.cpp:832:49: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    double *mass = REAL(getListElement(isotope, "mass"));       
+                                                ^
+disop.cpp:833:54: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+    double *abundance = REAL(getListElement(isotope, "abundance"));     
+                                                     ^
+In file included from imslib/src/ims/base/parser/alphabettextparser.cpp:3:
+In file included from ./imslib/src/ims/base/parser/alphabettextparser.h:4:
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:37:39: note: use 'noexcept(false)' instead
+                void load(const std::string& fname) throw (IOException);
+                                                    ^~~~~~~~~~~~~~~~~~~
+                                                    noexcept(false)
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+./imslib/src/ims/base/parser/alphabetparser.h:58:98: note: use 'noexcept(false)' instead
+void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+                                                                                                 ^~~~~~~~~~~~~~~~~~~
+                                                                                                 noexcept(false)
+2 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: imslib/src/ims/base/parser/alphabettextparser.o] Error 1
+disop.cpp:696:13: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+          Rf_error(exceptionMesg);
+                   ^~~~~~~~~~~~~
+disop.cpp:342:9: note: in instantiation of function template specialization 'rlistScores<double>' requested here
+          rl = rlistScores(scores, Rf_asInteger(z));
+               ^
+disop.cpp:696:13: note: treat the string as an argument to avoid this
+          Rf_error(exceptionMesg);
+                   ^
+                   "%s", 
+11 warnings and 14 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: disop.o] Error 1
+ERROR: compilation failed for package ‘Rdisop’
+* removing ‘/nix/store/nqcfaallg2an5aac2j880pnbpf6bjilf-r-Rdisop-1.30.0/library/Rdisop’
+error: builder for '/nix/store/sa69pqlvv667d5ddyp01zjg8302jcrcz-r-Rdisop-1.30.0.drv' failed with exit code 1;
+       last 25 log lines:
+       >                                                     ^~~~~~~~~~~~~~~~~~~
+       >                                                     noexcept(false)
+       > ./imslib/src/ims/base/parser/alphabetparser.h:58:98: error: ISO C++17 does not allow dynamic exception specifications [-Wdynamic-exception-spec]
+       > void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+       >                                                                                                  ^~~~~~~~~~~~~~~~~~~
+       > ./imslib/src/ims/base/parser/alphabetparser.h:58:98: note: use 'noexcept(false)' instead
+       > void AlphabetParser<AlphabetElementType, Container, InputSource>::load(const std::string& fname) throw (IOException) {
+       >                                                                                                  ^~~~~~~~~~~~~~~~~~~
+       >                                                                                                  noexcept(false)
+       > 2 errors generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: imslib/src/ims/base/parser/alphabettextparser.o] Error 1
+       > disop.cpp:696:13: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+       >           Rf_error(exceptionMesg);
+       >                    ^~~~~~~~~~~~~
+       > disop.cpp:342:9: note: in instantiation of function template specialization 'rlistScores<double>' requested here
+       >           rl = rlistScores(scores, Rf_asInteger(z));
+       >                ^
+       > disop.cpp:696:13: note: treat the string as an argument to avoid this
+       >           Rf_error(exceptionMesg);
+       >                    ^
+       >                    "%s",
+       > 11 warnings and 14 errors generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: disop.o] Error 1
+       > ERROR: compilation failed for package ‘Rdisop’
+       > * removing ‘/nix/store/nqcfaallg2an5aac2j880pnbpf6bjilf-r-Rdisop-1.30.0/library/Rdisop’
+       For full logs, run 'nix log /nix/store/sa69pqlvv667d5ddyp01zjg8302jcrcz-r-Rdisop-1.30.0.drv'.
+error: 1 dependencies of derivation '/nix/store/6a4jfyikq1yl6nj4wm2bb0axgzqwnjhk-r-enviGCMS-0.7.1.drv' failed to build

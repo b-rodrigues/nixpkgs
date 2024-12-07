@@ -1,0 +1,57 @@
+this derivation will be built:
+  /nix/store/bly7jfiss45ksarl96jksqd7jd7fwyzp-r-Rpoppler-0.1-3.drv
+this path will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/nvizggh494lqplx6kmqdszshaagbwayk-Rpoppler_0.1-3.tar.gz
+copying path '/nix/store/nvizggh494lqplx6kmqdszshaagbwayk-Rpoppler_0.1-3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bly7jfiss45ksarl96jksqd7jd7fwyzp-r-Rpoppler-0.1-3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nvizggh494lqplx6kmqdszshaagbwayk-Rpoppler_0.1-3.tar.gz
+source root is Rpoppler
+setting SOURCE_DATE_EPOCH to timestamp 1723547611 of file Rpoppler/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: glibPreInstallPhase
+Running phase: installPhase
+* installing *source* package ‘Rpoppler’ ...
+** package ‘Rpoppler’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for pkg-config... /nix/store/c6v2ngygy55zamyz17z94brbz2vrsi1z-pkg-config-wrapper-0.29.2/bin/pkg-config
+checking whether pkg-config knows about poppler-glib >= 0.18.0... yes
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... yes
+checking whether we can use setErrorFunction... no
+checking whether we can use setErrorCallback... no
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/config.h
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/czxybss90yhbsrai630ry5cmz5syhkqf-poppler-glib-24.02.0-dev/include/poppler/glib -I/nix/store/106n8l681jmpjhr3yjzzb28l9cmsvr29-cairo-1.18.2-dev/include/cairo -I/nix/store/r49jr9sqzq70qpmncvv4qzdid3w3iazc-freetype-2.13.3-dev/include/freetype2 -I/nix/store/r49jr9sqzq70qpmncvv4qzdid3w3iazc-freetype-2.13.3-dev/include -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -fPIC  -g -O2  -c Rpoppler.c -o Rpoppler.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/czxybss90yhbsrai630ry5cmz5syhkqf-poppler-glib-24.02.0-dev/include/poppler/glib -I/nix/store/106n8l681jmpjhr3yjzzb28l9cmsvr29-cairo-1.18.2-dev/include/cairo -I/nix/store/r49jr9sqzq70qpmncvv4qzdid3w3iazc-freetype-2.13.3-dev/include/freetype2 -I/nix/store/r49jr9sqzq70qpmncvv4qzdid3w3iazc-freetype-2.13.3-dev/include -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -fPIC  -g -O2   -c error.cc -o error.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/nix/store/czxybss90yhbsrai630ry5cmz5syhkqf-poppler-glib-24.02.0-dev/include/poppler/glib -I/nix/store/106n8l681jmpjhr3yjzzb28l9cmsvr29-cairo-1.18.2-dev/include/cairo -I/nix/store/r49jr9sqzq70qpmncvv4qzdid3w3iazc-freetype-2.13.3-dev/include/freetype2 -I/nix/store/r49jr9sqzq70qpmncvv4qzdid3w3iazc-freetype-2.13.3-dev/include -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rpoppler.so Rpoppler.o error.o init.o -L/nix/store/9ixww70y9rby0jch465iiwbqz1j9zcvf-poppler-glib-24.02.0/lib -L/nix/store/w8h30kvic3ygmw6hkz5ysn287b9ng4rm-cairo-1.18.2/lib -L/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib -lpoppler-glib -lgobject-2.0 -lglib-2.0 -lcairo -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/k2a7fyzzzwanj5xg4ik7mjk16hcinpdx-r-Rpoppler-0.1-3/library/00LOCK-Rpoppler/00new/Rpoppler/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rpoppler)
+Running phase: glibPreFixupPhase
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rpoppler-0.1-3.drv-0/ in /nix/store/k2a7fyzzzwanj5xg4ik7mjk16hcinpdx-r-Rpoppler-0.1-3...
+patching script interpreter paths in /nix/store/k2a7fyzzzwanj5xg4ik7mjk16hcinpdx-r-Rpoppler-0.1-3

@@ -1,0 +1,103 @@
+these 3 derivations will be built:
+  /nix/store/5mpvhwxkk633k7wilpk8mx0pv1bckq33-r-smallarea-0.1.drv
+  /nix/store/9dqvb9p7jmfwvazc52xhw3i2gkgxf119-saeMSPE_1.3.tar.gz.drv
+  /nix/store/mpscp9hba84fdv2h719cc5vzrv41f903-r-saeMSPE-1.3.drv
+this path will be fetched (0.24 MiB download, 0.24 MiB unpacked):
+  /nix/store/g9xrllf58fg10g5kmnq6g7mv3jfv039z-smallarea_0.1.tar.gz
+copying path '/nix/store/g9xrllf58fg10g5kmnq6g7mv3jfv039z-smallarea_0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9dqvb9p7jmfwvazc52xhw3i2gkgxf119-saeMSPE_1.3.tar.gz.drv'...
+building '/nix/store/5mpvhwxkk633k7wilpk8mx0pv1bckq33-r-smallarea-0.1.drv'...
+
+trying https://cran.r-project.org/src/contrib/saeMSPE_1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404
+
+trying https://cran.r-project.org/src/contrib/Archive/saeMSPE/saeMSPE_1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/g9xrllf58fg10g5kmnq6g7mv3jfv039z-smallarea_0.1.tar.gz
+100  179k  100  179k    0     0  1087k      0 --:--:-- --:--:-- --:--:-- 1093k
+source root is smallarea
+setting SOURCE_DATE_EPOCH to timestamp 1444041467 of file smallarea/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘smallarea’ ...
+** package ‘smallarea’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (smallarea)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-smallarea-0.1.drv-0/ in /nix/store/snf3n7pb7pvh4vlfvf3yf1c7626bzda2-r-smallarea-0.1...
+patching script interpreter paths in /nix/store/snf3n7pb7pvh4vlfvf3yf1c7626bzda2-r-smallarea-0.1
+rewriting symlink /nix/store/snf3n7pb7pvh4vlfvf3yf1c7626bzda2-r-smallarea-0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/snf3n7pb7pvh4vlfvf3yf1c7626bzda2-r-smallarea-0.1
+building '/nix/store/mpscp9hba84fdv2h719cc5vzrv41f903-r-saeMSPE-1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hpby26q26mqxnszap35lv6ng3fnjxnwl-saeMSPE_1.3.tar.gz
+source root is saeMSPE
+setting SOURCE_DATE_EPOCH to timestamp 1731921002 of file saeMSPE/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘saeMSPE’ ...
+** package ‘saeMSPE’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c saeMSPE-function.cpp -o saeMSPE-function.o
+saeMSPE-function.cpp:5:10: fatal error: 'gsl/gsl_multimin.h' file not found
+#include <gsl/gsl_multimin.h>
+         ^~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: saeMSPE-function.o] Error 1
+make: *** Attente des tâches non terminées....
+ERROR: compilation failed for package ‘saeMSPE’
+* removing ‘/nix/store/xyi2h3ikwyw2dci14qi42h94l0a2ijy7-r-saeMSPE-1.3/library/saeMSPE’
+error: builder for '/nix/store/mpscp9hba84fdv2h719cc5vzrv41f903-r-saeMSPE-1.3.drv' failed with exit code 1;
+       last 25 log lines:
+       > unpacking source archive /nix/store/hpby26q26mqxnszap35lv6ng3fnjxnwl-saeMSPE_1.3.tar.gz
+       > source root is saeMSPE
+       > setting SOURCE_DATE_EPOCH to timestamp 1731921002 of file saeMSPE/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘saeMSPE’ ...
+       > ** package ‘saeMSPE’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** libs
+       > using C++ compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c saeMSPE-function.cpp -o saeMSPE-function.o
+       > saeMSPE-function.cpp:5:10: fatal error: 'gsl/gsl_multimin.h' file not found
+       > #include <gsl/gsl_multimin.h>
+       >          ^~~~~~~~~~~~~~~~~~~~
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: saeMSPE-function.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > ERROR: compilation failed for package ‘saeMSPE’
+       > * removing ‘/nix/store/xyi2h3ikwyw2dci14qi42h94l0a2ijy7-r-saeMSPE-1.3/library/saeMSPE’
+       For full logs, run 'nix log /nix/store/mpscp9hba84fdv2h719cc5vzrv41f903-r-saeMSPE-1.3.drv'.

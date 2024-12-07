@@ -1,0 +1,46 @@
+this derivation will be built:
+  /nix/store/6lwy3mv0knfc49dpcirwagz0pqj27wkh-r-RGBM-1.0-11.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/3lhzrpfa5vy8xyifhbkfdqlmjxic3s2d-RGBM_1.0-11.tar.gz
+copying path '/nix/store/3lhzrpfa5vy8xyifhbkfdqlmjxic3s2d-RGBM_1.0-11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6lwy3mv0knfc49dpcirwagz0pqj27wkh-r-RGBM-1.0-11.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3lhzrpfa5vy8xyifhbkfdqlmjxic3s2d-RGBM_1.0-11.tar.gz
+source root is RGBM
+setting SOURCE_DATE_EPOCH to timestamp 1681462214 of file RGBM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RGBM’ ...
+** package ‘RGBM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_init_RGBM.c -o R_init_RGBM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pcg_basic.c -o pcg_basic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c solver_test.cpp -o solver_test.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test_regression_stump.cpp -o test_regression_stump.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test_regression_stump_R.cpp -o test_regression_stump_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c train_regression_stump.cpp -o train_regression_stump.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c train_regression_stump_R.cpp -o train_regression_stump_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RGBM.so R_init_RGBM.o pcg_basic.o solver_test.o test_regression_stump.o test_regression_stump_R.o train_regression_stump.o train_regression_stump_R.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/fyfr97flcf4azl9lfwq4axfddm0i7z3c-r-RGBM-1.0-11/library/00LOCK-RGBM/00new/RGBM/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RGBM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RGBM-1.0-11.drv-0/ in /nix/store/fyfr97flcf4azl9lfwq4axfddm0i7z3c-r-RGBM-1.0-11...
+patching script interpreter paths in /nix/store/fyfr97flcf4azl9lfwq4axfddm0i7z3c-r-RGBM-1.0-11
+rewriting symlink /nix/store/fyfr97flcf4azl9lfwq4axfddm0i7z3c-r-RGBM-1.0-11/nix-support/propagated-user-env-packages to be relative to /nix/store/fyfr97flcf4azl9lfwq4axfddm0i7z3c-r-RGBM-1.0-11

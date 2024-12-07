@@ -1,0 +1,63 @@
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:34:12:
+           33|
+           34|   strict = derivationStrict drvAttrs;
+             |            ^
+           35|
+
+       … while evaluating derivation 'r-icesDatsuQC-1.2.0'
+         whose name attribute is located at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:336:7
+
+       … while evaluating attribute 'nativeBuildInputs' of derivation 'r-icesDatsuQC-1.2.0'
+         at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:380:7:
+          379|       depsBuildBuild              = elemAt (elemAt dependencies 0) 0;
+          380|       nativeBuildInputs           = elemAt (elemAt dependencies 0) 1;
+             |       ^
+          381|       depsBuildTarget             = elemAt (elemAt dependencies 0) 2;
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Package ‘xvfb-run-1+g87f6705’ in /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/tools/misc/xvfb-run/default.nix:59 is not available on the requested hostPlatform:
+         hostPlatform.config = "aarch64-apple-darwin"
+         package.meta.platforms = [
+           "aarch64-linux"
+           "armv5tel-linux"
+           "armv6l-linux"
+           "armv7a-linux"
+           "armv7l-linux"
+           "i686-linux"
+           "loongarch64-linux"
+           "m68k-linux"
+           "microblaze-linux"
+           "microblazeel-linux"
+           "mips-linux"
+           "mips64-linux"
+           "mips64el-linux"
+           "mipsel-linux"
+           "powerpc64-linux"
+           "powerpc64le-linux"
+           "riscv32-linux"
+           "riscv64-linux"
+           "s390-linux"
+           "s390x-linux"
+           "x86_64-linux"
+         ]
+         package.meta.badPlatforms = [ ]
+       , refusing to evaluate.
+
+       a) To temporarily allow packages that are unsupported for this system, you can use an environment variable
+          for a single invocation of the nix tools.
+
+            $ export NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1
+
+          Note: When using `nix shell`, `nix build`, `nix develop`, etc with a flake,
+                then pass `--impure` in order to allow use of environment variables.
+
+       b) For `nixos-rebuild` you can set
+         { nixpkgs.config.allowUnsupportedSystem = true; }
+       in configuration.nix to override this.
+
+       c) For `nix-env`, `nix-build`, `nix-shell` or any other Nix command you can add
+         { allowUnsupportedSystem = true; }
+       to ~/.config/nixpkgs/config.nix.

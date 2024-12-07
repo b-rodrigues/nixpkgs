@@ -1,0 +1,72 @@
+these 2 derivations will be built:
+  /nix/store/65zx5a976q473gjmkmdxdrzp5b74j2my-r-inspectdf-0.0.12.drv
+  /nix/store/z0yj8j6b8icp79s80x8j32x9gzj040as-r-bulkreadr-1.1.1.drv
+building '/nix/store/65zx5a976q473gjmkmdxdrzp5b74j2my-r-inspectdf-0.0.12.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/0ny61b90riamw1fr26jximyk31l45w5s-inspectdf_0.0.12.tar.gz
+source root is inspectdf
+setting SOURCE_DATE_EPOCH to timestamp 1660026602 of file inspectdf/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘inspectdf’ ...
+** package ‘inspectdf’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c count_levels.cpp -o count_levels.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c na_count.cpp -o na_count.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o inspectdf.so RcppExports.o count_levels.o na_count.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/63m2wq6cb1jd361b73lv10f097571xa7-r-inspectdf-0.0.12/library/00LOCK-inspectdf/00new/inspectdf/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (inspectdf)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-inspectdf-0.0.12.drv-0/ in /nix/store/63m2wq6cb1jd361b73lv10f097571xa7-r-inspectdf-0.0.12...
+patching script interpreter paths in /nix/store/63m2wq6cb1jd361b73lv10f097571xa7-r-inspectdf-0.0.12
+rewriting symlink /nix/store/63m2wq6cb1jd361b73lv10f097571xa7-r-inspectdf-0.0.12/nix-support/propagated-user-env-packages to be relative to /nix/store/63m2wq6cb1jd361b73lv10f097571xa7-r-inspectdf-0.0.12
+building '/nix/store/z0yj8j6b8icp79s80x8j32x9gzj040as-r-bulkreadr-1.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/l496k89lv2k6pdhs7bm0w7254i94bgvy-bulkreadr_1.1.1.tar.gz
+source root is bulkreadr
+setting SOURCE_DATE_EPOCH to timestamp 1716756002 of file bulkreadr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘bulkreadr’ ...
+** package ‘bulkreadr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bulkreadr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-bulkreadr-1.1.1.drv-0/ in /nix/store/lpzs2sagwwfwvdbd7c5j6hnmwbcyb3wd-r-bulkreadr-1.1.1...
+patching script interpreter paths in /nix/store/lpzs2sagwwfwvdbd7c5j6hnmwbcyb3wd-r-bulkreadr-1.1.1
+rewriting symlink /nix/store/lpzs2sagwwfwvdbd7c5j6hnmwbcyb3wd-r-bulkreadr-1.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/lpzs2sagwwfwvdbd7c5j6hnmwbcyb3wd-r-bulkreadr-1.1.1

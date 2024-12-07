@@ -1,0 +1,46 @@
+this derivation will be built:
+  /nix/store/64yxxvy0pa64j8bbxhp7f9g3k09lx4sw-r-PROsetta-0.4.1.drv
+this path will be fetched (1.40 MiB download, 1.40 MiB unpacked):
+  /nix/store/l7mgm7v50wdxwn7anb5w4n4xdywz25a0-PROsetta_0.4.1.tar.gz
+copying path '/nix/store/l7mgm7v50wdxwn7anb5w4n4xdywz25a0-PROsetta_0.4.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/64yxxvy0pa64j8bbxhp7f9g3k09lx4sw-r-PROsetta-0.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/l7mgm7v50wdxwn7anb5w4n4xdywz25a0-PROsetta_0.4.1.tar.gz
+source root is PROsetta
+setting SOURCE_DATE_EPOCH to timestamp 1675449150 of file PROsetta/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PROsetta’ ...
+** package ‘PROsetta’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c LtoEAP.cpp -o LtoEAP.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PROsetta.so LtoEAP.o RcppExports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zsp2lqg965sq8jh8dpl5nvgqfjyjm27w-r-PROsetta-0.4.1/library/00LOCK-PROsetta/00new/PROsetta/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PROsetta)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PROsetta-0.4.1.drv-0/ in /nix/store/zsp2lqg965sq8jh8dpl5nvgqfjyjm27w-r-PROsetta-0.4.1...
+patching script interpreter paths in /nix/store/zsp2lqg965sq8jh8dpl5nvgqfjyjm27w-r-PROsetta-0.4.1
+rewriting symlink /nix/store/zsp2lqg965sq8jh8dpl5nvgqfjyjm27w-r-PROsetta-0.4.1/nix-support/propagated-user-env-packages to be relative to /nix/store/zsp2lqg965sq8jh8dpl5nvgqfjyjm27w-r-PROsetta-0.4.1

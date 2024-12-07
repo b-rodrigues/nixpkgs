@@ -1,0 +1,172 @@
+these 6 derivations will be built:
+  /nix/store/r93i30qncgd18jgn0j97lminr0nd9w8j-r-DR.SC-3.4.drv
+  /nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv
+  /nix/store/r4fbkba59w10n6ivcy3l5vjy7blhbc2i-r-org.Mm.eg.db-3.2.3.drv
+  /nix/store/z33wvg4h56hifnav00myf57kdnigg0wv-r-harmony-1.2.1.drv
+  /nix/store/jzhclg3yprh652hs7hpkgrxfi8lj1283-r-ProFAST-1.4.drv
+  /nix/store/yc90glfl95f10h5s4aq0xnyszqgk4b6y-r-CAESAR.Suite-0.1.0.drv
+building '/nix/store/r93i30qncgd18jgn0j97lminr0nd9w8j-r-DR.SC-3.4.drv'...
+building '/nix/store/z33wvg4h56hifnav00myf57kdnigg0wv-r-harmony-1.2.1.drv'...
+building '/nix/store/r4fbkba59w10n6ivcy3l5vjy7blhbc2i-r-org.Mm.eg.db-3.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pa2czavcsa5lr9cyvd7qzmm5nsq3mg45-harmony_1.2.1.tar.gz
+source root is harmony
+setting SOURCE_DATE_EPOCH to timestamp 1724796602 of file harmony/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/1iwgixrkslk2g3nwfxzp7bliagw67ly8-org.Mm.eg.db_3.2.3.tar.gz
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: unpackPhase
+Running phase: installPhase
+unpacking source archive /nix/store/afc59lcxxwmpzy44hm2lwrawgza28l8f-DR.SC_3.4.tar.gz
+source root is DR.SC
+setting SOURCE_DATE_EPOCH to timestamp 1710837602 of file DR.SC/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘harmony’ ...
+** package ‘harmony’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c harmony.cpp -o harmony.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c utils.cpp -o utils.o
+* installing *source* package ‘DR.SC’ ...
+** package ‘DR.SC’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DARMA_64BIT_WORD -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DARMA_64BIT_WORD -fPIC  -g -O2   -c getNB_fast.cpp -o getNB_fast.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DARMA_64BIT_WORD -fPIC  -g -O2   -c mt_paral_job.cpp -o mt_paral_job.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DARMA_64BIT_WORD -fPIC  -g -O2   -c mt_paral_job2.cpp -o mt_paral_job2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DARMA_64BIT_WORD -fPIC  -g -O2   -c simulDRcluster_main.cpp -o simulDRcluster_main.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DARMA_64BIT_WORD -fPIC  -g -O2   -c utilSimulDRcluster.cpp -o utilSimulDRcluster.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DARMA_64BIT_WORD -fPIC  -g -O2   -c wpca.cpp -o wpca.o
+source root is org.Mm.eg.db
+setting SOURCE_DATE_EPOCH to timestamp 1444431775 of file org.Mm.eg.db/DESCRIPTION
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+simulDRcluster_main.cpp:20:9: warning: 'INT_MIN' macro redefined [-Wmacro-redefined]
+#define INT_MIN (-INT_MAX - 1)
+        ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/resource-root/include/limits.h:51:9: note: previous definition is here
+#define INT_MIN   (-__INT_MAX__  -1)
+        ^
+Message d'avis :
+remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’ 
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package can be loaded from final location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package keeps a record of temporary installation path
+* DONE (org.Mm.eg.db)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-org.Mm.eg.db-3.2.3.drv-0/ in /nix/store/50n3xxlmmxrxk6rnp994wyxllv7rp898-r-org.Mm.eg.db-3.2.3...
+patching script interpreter paths in /nix/store/50n3xxlmmxrxk6rnp994wyxllv7rp898-r-org.Mm.eg.db-3.2.3
+rewriting symlink /nix/store/50n3xxlmmxrxk6rnp994wyxllv7rp898-r-org.Mm.eg.db-3.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/50n3xxlmmxrxk6rnp994wyxllv7rp898-r-org.Mm.eg.db-3.2.3
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o DR.SC.so RcppExports.o getNB_fast.o mt_paral_job.o mt_paral_job2.o simulDRcluster_main.o utilSimulDRcluster.o wpca.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/cz4hzmmfrwr4fsydhdkaj68l58k6ifmq-r-DR.SC-3.4/library/00LOCK-DR.SC/00new/DR.SC/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o harmony.so RcppExports.o harmony.o utils.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/wphbxy01y2kk8mdixsqmvlmpsrsjng0h-r-harmony-1.2.1/library/00LOCK-harmony/00new/harmony/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (harmony)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-harmony-1.2.1.drv-0/ in /nix/store/wphbxy01y2kk8mdixsqmvlmpsrsjng0h-r-harmony-1.2.1...
+patching script interpreter paths in /nix/store/wphbxy01y2kk8mdixsqmvlmpsrsjng0h-r-harmony-1.2.1
+rewriting symlink /nix/store/wphbxy01y2kk8mdixsqmvlmpsrsjng0h-r-harmony-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/wphbxy01y2kk8mdixsqmvlmpsrsjng0h-r-harmony-1.2.1
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (DR.SC)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-DR.SC-3.4.drv-0/ in /nix/store/cz4hzmmfrwr4fsydhdkaj68l58k6ifmq-r-DR.SC-3.4...
+patching script interpreter paths in /nix/store/cz4hzmmfrwr4fsydhdkaj68l58k6ifmq-r-DR.SC-3.4
+rewriting symlink /nix/store/cz4hzmmfrwr4fsydhdkaj68l58k6ifmq-r-DR.SC-3.4/nix-support/propagated-user-env-packages to be relative to /nix/store/cz4hzmmfrwr4fsydhdkaj68l58k6ifmq-r-DR.SC-3.4
+building '/nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nrnpra5ngihnjfs9cdlrgdy6lkqa7yb7-PRECAST_1.6.5.tar.gz
+source root is PRECAST
+setting SOURCE_DATE_EPOCH to timestamp 1710837002 of file PRECAST/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘scater’ is not available for package ‘PRECAST’
+* removing ‘/nix/store/i8r1m2w3lglh0ik6d054bjpdscg3xxgl-r-PRECAST-1.6.5/library/PRECAST’
+error: builder for '/nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/nrnpra5ngihnjfs9cdlrgdy6lkqa7yb7-PRECAST_1.6.5.tar.gz
+       > source root is PRECAST
+       > setting SOURCE_DATE_EPOCH to timestamp 1710837002 of file PRECAST/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘scater’ is not available for package ‘PRECAST’
+       > * removing ‘/nix/store/i8r1m2w3lglh0ik6d054bjpdscg3xxgl-r-PRECAST-1.6.5/library/PRECAST’
+       For full logs, run 'nix log /nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv'.
+error: 1 dependencies of derivation '/nix/store/jzhclg3yprh652hs7hpkgrxfi8lj1283-r-ProFAST-1.4.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/yc90glfl95f10h5s4aq0xnyszqgk4b6y-r-CAESAR.Suite-0.1.0.drv' failed to build

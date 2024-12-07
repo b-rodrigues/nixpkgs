@@ -1,0 +1,63 @@
+this derivation will be built:
+  /nix/store/wccvzsdj56s42zyd77rszv2aavf8glhj-r-udunits2-0.13.2.1.drv
+this path will be fetched (0.07 MiB download, 0.07 MiB unpacked):
+  /nix/store/9jbzjydk98c2n6db4fqfzqlfhi5k3w6k-udunits2_0.13.2.1.tar.gz
+copying path '/nix/store/9jbzjydk98c2n6db4fqfzqlfhi5k3w6k-udunits2_0.13.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wccvzsdj56s42zyd77rszv2aavf8glhj-r-udunits2-0.13.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9jbzjydk98c2n6db4fqfzqlfhi5k3w6k-udunits2_0.13.2.1.tar.gz
+source root is udunits2
+setting SOURCE_DATE_EPOCH to timestamp 1647028850 of file udunits2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘udunits2’ ...
+** package ‘udunits2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to enable C11 features... none needed
+checking for XML_ParserCreate in -lexpat... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for udunits2.h... yes
+checking for ut_read_xml in -ludunits2... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c udunits2_R.c -o udunits2_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o udunits2.so init.o udunits2_R.o -ludunits2 -lexpat -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4wdqpbflgqhr5yxhlci5638v8wl3iz8k-r-udunits2-0.13.2.1/library/00LOCK-udunits2/00new/udunits2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (udunits2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-udunits2-0.13.2.1.drv-0/ in /nix/store/4wdqpbflgqhr5yxhlci5638v8wl3iz8k-r-udunits2-0.13.2.1...
+patching script interpreter paths in /nix/store/4wdqpbflgqhr5yxhlci5638v8wl3iz8k-r-udunits2-0.13.2.1

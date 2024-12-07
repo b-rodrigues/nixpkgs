@@ -1,0 +1,67 @@
+these 2 derivations will be built:
+  /nix/store/zycnq9pnvzk1p4nvzkrjf5mbpwir29zr-rtiktoken_0.0.6.tar.gz.drv
+  /nix/store/hphjfxxwiwwg0i9yw9ijzgjmrywmpv8r-r-rtiktoken-0.0.6.drv
+building '/nix/store/zycnq9pnvzk1p4nvzkrjf5mbpwir29zr-rtiktoken_0.0.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/rtiktoken_0.0.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 5361k  100 5361k    0     0  8719k      0 --:--:-- --:--:-- --:--:-- 8731k
+building '/nix/store/hphjfxxwiwwg0i9yw9ijzgjmrywmpv8r-r-rtiktoken-0.0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bzigdz9w36l64v12fdfnwrdn6l0n22ha-rtiktoken_0.0.6.tar.gz
+source root is rtiktoken
+setting SOURCE_DATE_EPOCH to timestamp 1730907602 of file rtiktoken/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rtiktoken’ ...
+** package ‘rtiktoken’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+sh: rustc: command not found
+Erreur dans value[[3L]](cond) : 
+  ----------------------- [RUST NOT FOUND]---------------------------
+The 'rustc' compiler was not found on the PATH. Please install
+rustc >= 1.65.0 or higher from:
+https://www.rust-lang.org/tools/install
+
+Alternatively, you may install Rust from your OS package manager:
+ - Debian/Ubuntu: apt-get install rustc
+ - Fedora/CentOS: dnf install rustc
+ - macOS: brew install rustc
+-------------------------------------------------------------------
+Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Exécution arrêtée
+ERROR: configuration failed for package ‘rtiktoken’
+* removing ‘/nix/store/5b40jxlj5xr19ar81my7d7i0ygr0ml2q-r-rtiktoken-0.0.6/library/rtiktoken’
+error: builder for '/nix/store/hphjfxxwiwwg0i9yw9ijzgjmrywmpv8r-r-rtiktoken-0.0.6.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘rtiktoken’ ...
+       > ** package ‘rtiktoken’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > sh: rustc: command not found
+       > Erreur dans value[[3L]](cond) :
+       >   ----------------------- [RUST NOT FOUND]---------------------------
+       > The 'rustc' compiler was not found on the PATH. Please install
+       > rustc >= 1.65.0 or higher from:
+       > https://www.rust-lang.org/tools/install
+       >
+       > Alternatively, you may install Rust from your OS package manager:
+       >  - Debian/Ubuntu: apt-get install rustc
+       >  - Fedora/CentOS: dnf install rustc
+       >  - macOS: brew install rustc
+       > -------------------------------------------------------------------
+       > Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+       > Exécution arrêtée
+       > ERROR: configuration failed for package ‘rtiktoken’
+       > * removing ‘/nix/store/5b40jxlj5xr19ar81my7d7i0ygr0ml2q-r-rtiktoken-0.0.6/library/rtiktoken’
+       For full logs, run 'nix log /nix/store/hphjfxxwiwwg0i9yw9ijzgjmrywmpv8r-r-rtiktoken-0.0.6.drv'.

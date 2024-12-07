@@ -1,0 +1,146 @@
+these 4 derivations will be built:
+  /nix/store/b2kzgr3wsyp7jgmdmq51pdw0v7vdgvs4-r-ThresholdROC-2.9.4.drv
+  /nix/store/f5sbwqpg4nd7fx5yp4ycaamm1xvgpxmj-r-memisc-0.99.31.8.1.drv
+  /nix/store/skfsdd64s18jjpmycdq8ajjnx4xjk4pg-r-mclogit-0.9.6.drv
+  /nix/store/xgx48m2b2zrk4wwqjgybs7y8a42fx93q-r-EQUALSTATS-0.5.0.drv
+building '/nix/store/b2kzgr3wsyp7jgmdmq51pdw0v7vdgvs4-r-ThresholdROC-2.9.4.drv'...
+building '/nix/store/f5sbwqpg4nd7fx5yp4ycaamm1xvgpxmj-r-memisc-0.99.31.8.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bz955znczwlpm1j3x1fdmz7rm7blgxkp-ThresholdROC_2.9.4.tar.gz
+source root is ThresholdROC
+setting SOURCE_DATE_EPOCH to timestamp 1712949013 of file ThresholdROC/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/5p9v80pw6mc72p47681hb3i11yfjm3r3-memisc_0.99.31.8.1.tar.gz
+source root is memisc
+setting SOURCE_DATE_EPOCH to timestamp 1729786802 of file memisc/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+* installing *source* package ‘ThresholdROC’ ...
+** package ‘ThresholdROC’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+Running phase: checkPhase
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: installPhase
+* installing *source* package ‘memisc’ ...
+** package ‘memisc’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dta-for-R.c -o dta-for-R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dta117-for-R.c -o dta117-for-R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dumbswap.c -o dumbswap.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init-memisc.c -o init-memisc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c numeric_if_possible.c -o numeric_if_possible.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c parsehelpers.c -o parsehelpers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pspp-portableStream-for-R.c -o pspp-portableStream-for-R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pspp-system-for-R.c -o pspp-system-for-R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c readfixed.c -o readfixed.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rofile.c -o rofile.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c update_data_frame.c -o update_data_frame.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o memisc.so dta-for-R.o dta117-for-R.o dumbswap.o init-memisc.o numeric_if_possible.o parsehelpers.o pspp-portableStream-for-R.o pspp-system-for-R.o readfixed.o rofile.o update_data_frame.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/bkzgs44sqzxkrfgnv5d1ny40wqvw9k7d-r-memisc-0.99.31.8.1/library/00LOCK-memisc/00new/memisc/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ThresholdROC)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ThresholdROC-2.9.4.drv-0/ in /nix/store/28gwsq93cy4gif68bz3p7920gkifkcjv-r-ThresholdROC-2.9.4...
+patching script interpreter paths in /nix/store/28gwsq93cy4gif68bz3p7920gkifkcjv-r-ThresholdROC-2.9.4
+rewriting symlink /nix/store/28gwsq93cy4gif68bz3p7920gkifkcjv-r-ThresholdROC-2.9.4/nix-support/propagated-user-env-packages to be relative to /nix/store/28gwsq93cy4gif68bz3p7920gkifkcjv-r-ThresholdROC-2.9.4
+Une nouvelle fonction générique est créée pour ‘contrasts’ dans package ‘memisc’
+dans la méthode pour ‘description’ avec la signature ‘"tbl_df"’ : aucune définition de la classe “tbl_df” n'est trouvée
+dans la méthode pour ‘codebook’ avec la signature ‘"tbl_df"’ : aucune définition de la classe “tbl_df” n'est trouvée
+Une nouvelle fonction générique est créée pour ‘contrasts<-’ du package ‘stats’ dans package ‘memisc’
+Une nouvelle fonction générique est créée pour ‘as.ordered’ du package ‘base’ dans package ‘memisc’
+Une nouvelle fonction générique est créée pour ‘as.factor’ du package ‘base’ dans package ‘memisc’
+Une nouvelle fonction générique est créée pour ‘%in%’ du package ‘base’ dans package ‘memisc’
+Une nouvelle fonction générique est créée pour ‘sample’ du package ‘base’ dans package ‘memisc’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (memisc)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-memisc-0.99.31.8.1.drv-1/ in /nix/store/bkzgs44sqzxkrfgnv5d1ny40wqvw9k7d-r-memisc-0.99.31.8.1...
+patching script interpreter paths in /nix/store/bkzgs44sqzxkrfgnv5d1ny40wqvw9k7d-r-memisc-0.99.31.8.1
+rewriting symlink /nix/store/bkzgs44sqzxkrfgnv5d1ny40wqvw9k7d-r-memisc-0.99.31.8.1/nix-support/propagated-user-env-packages to be relative to /nix/store/bkzgs44sqzxkrfgnv5d1ny40wqvw9k7d-r-memisc-0.99.31.8.1
+building '/nix/store/skfsdd64s18jjpmycdq8ajjnx4xjk4pg-r-mclogit-0.9.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b7nav6qrp4vr5w00dxar2v0qk6hf950z-mclogit_0.9.6.tar.gz
+source root is mclogit
+setting SOURCE_DATE_EPOCH to timestamp 1666864957 of file mclogit/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mclogit’ ...
+** package ‘mclogit’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mclogit)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mclogit-0.9.6.drv-0/ in /nix/store/lwngyn2dajp9rs6m836wxa1jilf7km30-r-mclogit-0.9.6...
+patching script interpreter paths in /nix/store/lwngyn2dajp9rs6m836wxa1jilf7km30-r-mclogit-0.9.6
+rewriting symlink /nix/store/lwngyn2dajp9rs6m836wxa1jilf7km30-r-mclogit-0.9.6/nix-support/propagated-user-env-packages to be relative to /nix/store/lwngyn2dajp9rs6m836wxa1jilf7km30-r-mclogit-0.9.6
+building '/nix/store/xgx48m2b2zrk4wwqjgybs7y8a42fx93q-r-EQUALSTATS-0.5.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/i8y8588bgzf034wcgb9nv8dhsd7drqh1-EQUALSTATS_0.5.0.tar.gz
+source root is EQUALSTATS
+setting SOURCE_DATE_EPOCH to timestamp 1727080202 of file EQUALSTATS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘EQUALSTATS’ ...
+** package ‘EQUALSTATS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (EQUALSTATS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-EQUALSTATS-0.5.0.drv-0/ in /nix/store/rwxl79pgfgbgmp5qn5nslz9kiarp83ky-r-EQUALSTATS-0.5.0...
+patching script interpreter paths in /nix/store/rwxl79pgfgbgmp5qn5nslz9kiarp83ky-r-EQUALSTATS-0.5.0
+rewriting symlink /nix/store/rwxl79pgfgbgmp5qn5nslz9kiarp83ky-r-EQUALSTATS-0.5.0/nix-support/propagated-user-env-packages to be relative to /nix/store/rwxl79pgfgbgmp5qn5nslz9kiarp83ky-r-EQUALSTATS-0.5.0

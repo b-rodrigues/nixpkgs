@@ -1,0 +1,165 @@
+these 5 derivations will be built:
+  /nix/store/19srdp4mrw6v4pzyh5bv1nj6988d3k0b-r-gsDesign-3.6.5.drv
+  /nix/store/2lmxk3fqk5iwrvhs5s2yx28dz4ba9nx4-r-schoolmath-0.4.2.drv
+  /nix/store/8p1r5wkn5fxj9cva2p9bhd79bnish373-r-rjmcmc-0.4.5.drv
+  /nix/store/8s8b3zn6bgk3wa6a2yvfzl090qjgijk9-r-superdiag-2.0.drv
+  /nix/store/ic880kira07d55pnd9r7cjpkxv1vckwm-r-BayesOrdDesign-0.1.2.drv
+building '/nix/store/19srdp4mrw6v4pzyh5bv1nj6988d3k0b-r-gsDesign-3.6.5.drv'...
+building '/nix/store/8p1r5wkn5fxj9cva2p9bhd79bnish373-r-rjmcmc-0.4.5.drv'...
+building '/nix/store/2lmxk3fqk5iwrvhs5s2yx28dz4ba9nx4-r-schoolmath-0.4.2.drv'...
+building '/nix/store/8s8b3zn6bgk3wa6a2yvfzl090qjgijk9-r-superdiag-2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/y9svw78k5djcdrq9ldnkjnzlnbqb02rz-gsDesign_3.6.5.tar.gz
+source root is gsDesign
+setting SOURCE_DATE_EPOCH to timestamp 1731625202 of file gsDesign/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/5p4716wd3fx1xdh18dhgp2k2m1kmg6ah-rjmcmc_0.4.5.tar.gz
+source root is rjmcmc
+setting SOURCE_DATE_EPOCH to timestamp 1562682002 of file rjmcmc/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/gxr3msqkjfx28i58nfmxqkm6yjw2288w-schoolmath_0.4.2.tar.gz
+source root is schoolmath
+setting SOURCE_DATE_EPOCH to timestamp 1692627602 of file schoolmath/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+* installing *source* package ‘rjmcmc’ ...
+** package ‘rjmcmc’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: installPhase
+** R
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/kcsxzlahanabz7j08f395yfzcqs067vg-superdiag_2.0.tar.gz
+* installing *source* package ‘gsDesign’ ...
+** package ‘gsDesign’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+source root is superdiag
+setting SOURCE_DATE_EPOCH to timestamp 1607160002 of file superdiag/MD5
+Running phase: patchPhase
+** libs
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+* installing *source* package ‘schoolmath’ ...
+** package ‘schoolmath’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+using C compiler: ‘clang version 16.0.6’
+Running phase: installPhase
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c gridpts.c -o gridpts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c gsbound.c -o gsbound.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c gsbound1.c -o gsbound1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c gsdensity.c -o gsdensity.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c h1.c -o h1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c hupdate.c -o hupdate.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c probpos.c -o probpos.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rprobrej.c -o rprobrej.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c stdnorpts.c -o stdnorpts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o gsDesign.so gridpts.o gsbound.o gsbound1.o gsdensity.o h1.o hupdate.o init.o probpos.o rprobrej.o stdnorpts.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+* installing *source* package ‘superdiag’ ...
+** package ‘superdiag’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+installing to /nix/store/8inh21l0zkn30w4frlya9s8snpnsajkd-r-gsDesign-3.6.5/library/00LOCK-gsDesign/00new/gsDesign/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** byte-compile and prepare package for lazy loading
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from temporary location
+** testing if installed package keeps a record of temporary installation path
+* DONE (schoolmath)
+Running phase: fixupPhase
+** help
+checking for references to /private/tmp/nix-build-r-schoolmath-0.4.2.drv-0/ in /nix/store/qjxwgblbz0466ws9qbmzp05q5hklfq0g-r-schoolmath-0.4.2...
+*** installing help indices
+** building package indices
+patching script interpreter paths in /nix/store/qjxwgblbz0466ws9qbmzp05q5hklfq0g-r-schoolmath-0.4.2
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (superdiag)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-superdiag-2.0.drv-0/ in /nix/store/20ginfyyyj1maa2smh52z3il3fglzi1n-r-superdiag-2.0...
+patching script interpreter paths in /nix/store/20ginfyyyj1maa2smh52z3il3fglzi1n-r-superdiag-2.0
+rewriting symlink /nix/store/20ginfyyyj1maa2smh52z3il3fglzi1n-r-superdiag-2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/20ginfyyyj1maa2smh52z3il3fglzi1n-r-superdiag-2.0
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rjmcmc)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rjmcmc-0.4.5.drv-0/ in /nix/store/4fg1pzj3b3sk4lw9yydz8kg3aijwl00a-r-rjmcmc-0.4.5...
+patching script interpreter paths in /nix/store/4fg1pzj3b3sk4lw9yydz8kg3aijwl00a-r-rjmcmc-0.4.5
+rewriting symlink /nix/store/4fg1pzj3b3sk4lw9yydz8kg3aijwl00a-r-rjmcmc-0.4.5/nix-support/propagated-user-env-packages to be relative to /nix/store/4fg1pzj3b3sk4lw9yydz8kg3aijwl00a-r-rjmcmc-0.4.5
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gsDesign)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gsDesign-3.6.5.drv-0/ in /nix/store/8inh21l0zkn30w4frlya9s8snpnsajkd-r-gsDesign-3.6.5...
+patching script interpreter paths in /nix/store/8inh21l0zkn30w4frlya9s8snpnsajkd-r-gsDesign-3.6.5
+rewriting symlink /nix/store/8inh21l0zkn30w4frlya9s8snpnsajkd-r-gsDesign-3.6.5/nix-support/propagated-user-env-packages to be relative to /nix/store/8inh21l0zkn30w4frlya9s8snpnsajkd-r-gsDesign-3.6.5
+building '/nix/store/ic880kira07d55pnd9r7cjpkxv1vckwm-r-BayesOrdDesign-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/p4dbxgk8diklan7idpwqxi7ppzxc17r4-BayesOrdDesign_0.1.2.tar.gz
+source root is BayesOrdDesign
+setting SOURCE_DATE_EPOCH to timestamp 1668417614 of file BayesOrdDesign/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘BayesOrdDesign’ ...
+** package ‘BayesOrdDesign’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (BayesOrdDesign)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-BayesOrdDesign-0.1.2.drv-0/ in /nix/store/q08a7rvpqhq6gpkzaizkgmrsa4481b0b-r-BayesOrdDesign-0.1.2...
+patching script interpreter paths in /nix/store/q08a7rvpqhq6gpkzaizkgmrsa4481b0b-r-BayesOrdDesign-0.1.2
+rewriting symlink /nix/store/q08a7rvpqhq6gpkzaizkgmrsa4481b0b-r-BayesOrdDesign-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/q08a7rvpqhq6gpkzaizkgmrsa4481b0b-r-BayesOrdDesign-0.1.2

@@ -1,0 +1,66 @@
+these 5 derivations will be built:
+  /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv
+  /nix/store/p5kk8g18jy6zjk9f03y0ha2wwn2w2m0b-r-ggm-2.5.1.drv
+  /nix/store/zjir9w0f3v51nlw0xqgn1mqql64gf5y8-r-RBGL-1.46.0.drv
+  /nix/store/l0cxbijdbn7jci6zjywrd4va53v9y50g-r-pcalg-2.7-12.drv
+  /nix/store/niy101b3gz3ni1g5xj2ycn8m34928yvc-r-qtlnet-1.5.4.drv
+this path will be fetched (3.02 MiB download, 3.02 MiB unpacked):
+  /nix/store/66mfbjcsx0dv9r0v2mpl51lylarfk5wq-qtlnet_1.5.4.tar.gz
+copying path '/nix/store/66mfbjcsx0dv9r0v2mpl51lylarfk5wq-qtlnet_1.5.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fac79mzcbdrkazwfsyzj2najqw8lik3r-graph_1.48.0.tar.gz
+source root is graph
+setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘graph’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+mv graph.so BioC_graph.so
+installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘graph’
+* removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+error: builder for '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > source root is graph
+       > setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘graph’ ...
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > mv graph.so BioC_graph.so
+       > installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘graph’
+       > * removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+       For full logs, run 'nix log /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'.
+error: 1 dependencies of derivation '/nix/store/niy101b3gz3ni1g5xj2ycn8m34928yvc-r-qtlnet-1.5.4.drv' failed to build

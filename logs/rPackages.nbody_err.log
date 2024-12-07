@@ -1,0 +1,45 @@
+these 2 derivations will be built:
+  /nix/store/cxnp07jn03blj01cksn6zgyvqcalpk2q-nbody_1.41.tar.gz.drv
+  /nix/store/5rgvmpkc7rg56a5nq9mcaqsmihzfbhr2-r-nbody-1.41.drv
+building '/nix/store/cxnp07jn03blj01cksn6zgyvqcalpk2q-nbody_1.41.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/nbody_1.41.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 21909  100 21909    0     0   156k      0 --:--:-- --:--:-- --:--:--  157k
+building '/nix/store/5rgvmpkc7rg56a5nq9mcaqsmihzfbhr2-r-nbody-1.41.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8fdfqfllvg7q6wqrm6wnmxm83z602kmp-nbody_1.41.tar.gz
+source root is nbody
+setting SOURCE_DATE_EPOCH to timestamp 1724165405 of file nbody/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘nbody’ ...
+** package ‘nbody’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c accelerations.cpp -o accelerations.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c energypot.cpp -o energypot.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o nbody.so RcppExports.o accelerations.o energypot.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8dcz4qvag6ya882vja95g0j5kq05zxl3-r-nbody-1.41/library/00LOCK-nbody/00new/nbody/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (nbody)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-nbody-1.41.drv-0/ in /nix/store/8dcz4qvag6ya882vja95g0j5kq05zxl3-r-nbody-1.41...
+patching script interpreter paths in /nix/store/8dcz4qvag6ya882vja95g0j5kq05zxl3-r-nbody-1.41
+rewriting symlink /nix/store/8dcz4qvag6ya882vja95g0j5kq05zxl3-r-nbody-1.41/nix-support/propagated-user-env-packages to be relative to /nix/store/8dcz4qvag6ya882vja95g0j5kq05zxl3-r-nbody-1.41

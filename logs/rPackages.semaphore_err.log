@@ -1,0 +1,44 @@
+these 2 derivations will be built:
+  /nix/store/n4f33db4q64fzfrdyn61pkikbrv7zwmh-semaphore_1.0.2.tar.gz.drv
+  /nix/store/i75iwg51lhrm3kxa640qh74q3bmj17y5-r-semaphore-1.0.2.drv
+building '/nix/store/n4f33db4q64fzfrdyn61pkikbrv7zwmh-semaphore_1.0.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/semaphore_1.0.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  5573  100  5573    0     0  63811      0 --:--:-- --:--:-- --:--:-- 64057
+building '/nix/store/i75iwg51lhrm3kxa640qh74q3bmj17y5-r-semaphore-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/shhd1yjhw3shhl5719hk8ssisbm9v1xs-semaphore_1.0.2.tar.gz
+source root is semaphore
+setting SOURCE_DATE_EPOCH to timestamp 1731486602 of file semaphore/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘semaphore’ ...
+** package ‘semaphore’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c semaphore.cpp -o semaphore.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o semaphore.so RcppExports.o semaphore.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/bzq9qqbrd991vph74msaqbd8nqs1n7x2-r-semaphore-1.0.2/library/00LOCK-semaphore/00new/semaphore/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (semaphore)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-semaphore-1.0.2.drv-0/ in /nix/store/bzq9qqbrd991vph74msaqbd8nqs1n7x2-r-semaphore-1.0.2...
+patching script interpreter paths in /nix/store/bzq9qqbrd991vph74msaqbd8nqs1n7x2-r-semaphore-1.0.2
+rewriting symlink /nix/store/bzq9qqbrd991vph74msaqbd8nqs1n7x2-r-semaphore-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/bzq9qqbrd991vph74msaqbd8nqs1n7x2-r-semaphore-1.0.2

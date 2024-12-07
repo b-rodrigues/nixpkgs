@@ -1,0 +1,101 @@
+these 3 derivations will be built:
+  /nix/store/1csl4ydnwd5i49fzizsgfnqxybmhran1-r-tmcn-0.2-13.drv
+  /nix/store/xj0395900r86v1p3lkn59sfk7ad4vjl7-r-do-2.0.0.1.drv
+  /nix/store/ddd5aankk5fagr9f58jjqnwqikbg3rid-r-base.rms-1.0.drv
+building '/nix/store/1csl4ydnwd5i49fzizsgfnqxybmhran1-r-tmcn-0.2-13.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pv10zxcs1j106cqn9zpi9q38vqigj70a-tmcn_0.2-13.tar.gz
+source root is tmcn
+setting SOURCE_DATE_EPOCH to timestamp 1565239202 of file tmcn/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tmcn’ ...
+** package ‘tmcn’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tmcn_encoding_isbig5.cpp -o tmcn_encoding_isbig5.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tmcn_encoding_isgb18030.cpp -o tmcn_encoding_isgb18030.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tmcn_encoding_isgb2312.cpp -o tmcn_encoding_isgb2312.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tmcn_encoding_isgbk.cpp -o tmcn_encoding_isgbk.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tmcn_encoding_isutf8.cpp -o tmcn_encoding_isutf8.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tmcn_init.cpp -o tmcn_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tmcn.so tmcn_encoding_isbig5.o tmcn_encoding_isgb18030.o tmcn_encoding_isgb2312.o tmcn_encoding_isgbk.o tmcn_encoding_isutf8.o tmcn_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4j0wwz6g3pd826p84z8pprys7v21r0k8-r-tmcn-0.2-13/library/00LOCK-tmcn/00new/tmcn/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tmcn)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tmcn-0.2-13.drv-0/ in /nix/store/4j0wwz6g3pd826p84z8pprys7v21r0k8-r-tmcn-0.2-13...
+patching script interpreter paths in /nix/store/4j0wwz6g3pd826p84z8pprys7v21r0k8-r-tmcn-0.2-13
+building '/nix/store/xj0395900r86v1p3lkn59sfk7ad4vjl7-r-do-2.0.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/crir1ws0jb3ig4l2sznayk4dnrwnc5kg-do_2.0.0.1.tar.gz
+source root is do
+setting SOURCE_DATE_EPOCH to timestamp 1726075237 of file do/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘do’ ...
+** package ‘do’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (do)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-do-2.0.0.1.drv-0/ in /nix/store/im8yn5w2apb1lq4jxwd2j0bf3kf7z906-r-do-2.0.0.1...
+patching script interpreter paths in /nix/store/im8yn5w2apb1lq4jxwd2j0bf3kf7z906-r-do-2.0.0.1
+rewriting symlink /nix/store/im8yn5w2apb1lq4jxwd2j0bf3kf7z906-r-do-2.0.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/im8yn5w2apb1lq4jxwd2j0bf3kf7z906-r-do-2.0.0.1
+building '/nix/store/ddd5aankk5fagr9f58jjqnwqikbg3rid-r-base.rms-1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/n9sx232kiyb3amdvxayb0f2x79mnfgdi-base.rms_1.0.tar.gz
+source root is base.rms
+setting SOURCE_DATE_EPOCH to timestamp 1596280208 of file base.rms/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘base.rms’ ...
+** package ‘base.rms’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (base.rms)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-base.rms-1.0.drv-0/ in /nix/store/ia4xi6bipq4x8jrqb45zw9wpqvm4v2zb-r-base.rms-1.0...
+patching script interpreter paths in /nix/store/ia4xi6bipq4x8jrqb45zw9wpqvm4v2zb-r-base.rms-1.0
+rewriting symlink /nix/store/ia4xi6bipq4x8jrqb45zw9wpqvm4v2zb-r-base.rms-1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/ia4xi6bipq4x8jrqb45zw9wpqvm4v2zb-r-base.rms-1.0

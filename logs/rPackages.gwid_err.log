@@ -1,0 +1,272 @@
+these 4 derivations will be built:
+  /nix/store/w4wa2sl33hhzmn900vinin95fw42kpsi-r-gdsfmt-1.6.2.drv
+  /nix/store/p23w81lww6nr5kbz8cpmqlgl3bakp141-r-SNPRelate-1.4.2.drv
+  /nix/store/qniw6n8zl7gqyayznircc6v7nw68nicc-gwid_0.3.0.tar.gz.drv
+  /nix/store/kzz7s3g175xichwqazni59vv9i6lz81d-r-gwid-0.3.0.drv
+building '/nix/store/qniw6n8zl7gqyayznircc6v7nw68nicc-gwid_0.3.0.tar.gz.drv'...
+building '/nix/store/w4wa2sl33hhzmn900vinin95fw42kpsi-r-gdsfmt-1.6.2.drv'...
+
+trying https://cran.r-project.org/src/contrib/gwid_0.3.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/z5f8f0w2jrfw73n3n1zn9bp65ry8j5vx-gdsfmt_1.6.2.tar.gz
+source root is gdsfmt
+setting SOURCE_DATE_EPOCH to timestamp 1446177588 of file gdsfmt/src/gdsfmt.cpp
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100 1260k  100 1260k    0     0  3973k      0 --:--:-- --:--:-- --:--:-- 3977k
+* installing *source* package ‘gdsfmt’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_CoreArray.cpp -o R_CoreArray.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gdsfmt.cpp -o gdsfmt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/CoreArray.cpp -o CoreArray/CoreArray.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dAllocator.cpp -o CoreArray/dAllocator.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dAny.cpp -o CoreArray/dAny.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dBase.cpp -o CoreArray/dBase.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dBitGDS.cpp -o CoreArray/dBitGDS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dEndian.cpp -o CoreArray/dEndian.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dFile.cpp -o CoreArray/dFile.o
+CoreArray/dBase.cpp:786:26: error: expected ';' after expression
+                        auto_ptr<CdStreamPipe> FC(_PipeItems[L-1]);
+                                              ^
+                                              ;
+CoreArray/dBase.cpp:786:4: error: use of undeclared identifier 'auto_ptr'
+                        auto_ptr<CdStreamPipe> FC(_PipeItems[L-1]);
+                        ^
+CoreArray/dBase.cpp:786:27: error: use of undeclared identifier 'FC'
+                        auto_ptr<CdStreamPipe> FC(_PipeItems[L-1]);
+                                               ^
+CoreArray/dBase.cpp:789:14: error: use of undeclared identifier 'FC'
+                        _Stream = FC->FreePipe();
+                                  ^
+gdsfmt.cpp:320:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:320:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:378:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:378:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:389:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:389:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:400:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:400:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:412:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:412:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:449:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:449:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:492:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:492:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:606:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:606:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:680:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:680:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:696:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:696:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:762:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:762:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:786:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:786:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:837:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+4 errors generated.
+gdsfmt.cpp:837:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:946:10: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+                        error(GDS_GetError());
+                              ^~~~~~~~~~~~~~
+gdsfmt.cpp:946:10: note: treat the string as an argument to avoid this
+                        error(GDS_GetError());
+                              ^
+                              "%s", 
+gdsfmt.cpp:962:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:962:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:1219:2: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+        COREARRAY_CATCH
+        ^~~~~~~~~~~~~~~
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^~~~~~~~~~~~~~
+gdsfmt.cpp:1219:2: note: treat the string as an argument to avoid this
+../inst/include/R_GDS_CPP.h:79:24: note: expanded from macro 'COREARRAY_CATCH'
+                if (has_error) error(GDS_GetError()); \
+                                     ^
+gdsfmt.cpp:1281:34: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+                        if (XLENGTH(Param) > 1) error(ERR_UNUSED);
+                                                      ^~~~~~~~~~
+gdsfmt.cpp:1281:34: note: treat the string as an argument to avoid this
+                        if (XLENGTH(Param) > 1) error(ERR_UNUSED);
+                                                      ^
+                                                      "%s", 
+gdsfmt.cpp:1283:34: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+                        if (XLENGTH(Param) > 0) error(ERR_UNUSED);
+                                                      ^~~~~~~~~~
+gdsfmt.cpp:1283:34: note: treat the string as an argument to avoid this
+                        if (XLENGTH(Param) > 0) error(ERR_UNUSED);
+                                                      ^
+                                                      "%s", 
+gdsfmt.cpp:1307:34: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+                        if (XLENGTH(Param) > n) error(ERR_UNUSED);
+                                                      ^~~~~~~~~~
+gdsfmt.cpp:1307:34: note: treat the string as an argument to avoid this
+                        if (XLENGTH(Param) > n) error(ERR_UNUSED);
+                                                      ^
+                                                      "%s", 
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dParallel.cpp -o CoreArray/dParallel.o
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: CoreArray/dBase.o] Error 1
+make: *** Attente des tâches non terminées....
+20 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: gdsfmt.o] Error 1
+CoreArray/dFile.cpp:2461:4: warning: '~CdGDSFile' has a non-throwing exception specification but can still throw [-Wexceptions]
+                        throw ErrSerial("Log::Release() should return 0 here.");
+                        ^
+CoreArray/dFile.cpp:2454:12: note: destructor has a implicit non-throwing exception specification
+CdGDSFile::~CdGDSFile()
+           ^
+1 warning generated.
+ERROR: compilation failed for package ‘gdsfmt’
+* removing ‘/nix/store/5va3q897wkkzk1xyfahd0k0lxvr13px4-r-gdsfmt-1.6.2/library/gdsfmt’
+error: builder for '/nix/store/w4wa2sl33hhzmn900vinin95fw42kpsi-r-gdsfmt-1.6.2.drv' failed with exit code 1;
+       last 25 log lines:
+       >                         if (XLENGTH(Param) > 0) error(ERR_UNUSED);
+       >                                                       ^
+       >                                                       "%s",
+       > gdsfmt.cpp:1307:34: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+       >                         if (XLENGTH(Param) > n) error(ERR_UNUSED);
+       >                                                       ^~~~~~~~~~
+       > gdsfmt.cpp:1307:34: note: treat the string as an argument to avoid this
+       >                         if (XLENGTH(Param) > n) error(ERR_UNUSED);
+       >                                                       ^
+       >                                                       "%s",
+       > fatal error: too many errors emitted, stopping now [-ferror-limit=]
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSING_R -I../inst/include -ICoreArray  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CoreArray/dParallel.cpp -o CoreArray/dParallel.o
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: CoreArray/dBase.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > 20 errors generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: gdsfmt.o] Error 1
+       > CoreArray/dFile.cpp:2461:4: warning: '~CdGDSFile' has a non-throwing exception specification but can still throw [-Wexceptions]
+       >                         throw ErrSerial("Log::Release() should return 0 here.");
+       >                         ^
+       > CoreArray/dFile.cpp:2454:12: note: destructor has a implicit non-throwing exception specification
+       > CdGDSFile::~CdGDSFile()
+       >            ^
+       > 1 warning generated.
+       > ERROR: compilation failed for package ‘gdsfmt’
+       > * removing ‘/nix/store/5va3q897wkkzk1xyfahd0k0lxvr13px4-r-gdsfmt-1.6.2/library/gdsfmt’
+       For full logs, run 'nix log /nix/store/w4wa2sl33hhzmn900vinin95fw42kpsi-r-gdsfmt-1.6.2.drv'.
+error: 1 dependencies of derivation '/nix/store/kzz7s3g175xichwqazni59vv9i6lz81d-r-gwid-0.3.0.drv' failed to build

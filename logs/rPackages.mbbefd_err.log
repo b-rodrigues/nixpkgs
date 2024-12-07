@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/fr6nppn861rk79c7r899n86masw683jz-mbbefd_0.8.12.tar.gz.drv
+  /nix/store/bm4skzp91njjrq1gk1fnbi5slxzrd4qf-r-mbbefd-0.8.12.drv
+building '/nix/store/fr6nppn861rk79c7r899n86masw683jz-mbbefd_0.8.12.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/mbbefd_0.8.12.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  300k  100  300k    0     0  1498k      0 --:--:-- --:--:-- --:--:-- 1502k
+building '/nix/store/bm4skzp91njjrq1gk1fnbi5slxzrd4qf-r-mbbefd-0.8.12.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6j5cn5kng2nc3y1q914c1xy8sql06j7h-mbbefd_0.8.12.tar.gz
+source root is mbbefd
+setting SOURCE_DATE_EPOCH to timestamp 1729197002 of file mbbefd/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mbbefd’ ...
+** package ‘mbbefd’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mbbefdRcppCode.cpp -o mbbefdRcppCode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mbbefd.so RcppExports.o mbbefdRcppCode.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/h4ds53mh7nz8jmf9phyi19x81610qvzm-r-mbbefd-0.8.12/library/00LOCK-mbbefd/00new/mbbefd/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mbbefd)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mbbefd-0.8.12.drv-0/ in /nix/store/h4ds53mh7nz8jmf9phyi19x81610qvzm-r-mbbefd-0.8.12...
+patching script interpreter paths in /nix/store/h4ds53mh7nz8jmf9phyi19x81610qvzm-r-mbbefd-0.8.12
+rewriting symlink /nix/store/h4ds53mh7nz8jmf9phyi19x81610qvzm-r-mbbefd-0.8.12/nix-support/propagated-user-env-packages to be relative to /nix/store/h4ds53mh7nz8jmf9phyi19x81610qvzm-r-mbbefd-0.8.12

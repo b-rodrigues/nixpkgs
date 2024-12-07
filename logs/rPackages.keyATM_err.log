@@ -1,0 +1,183 @@
+this derivation will be built:
+  /nix/store/c2aqz5b07x6mp89z9hw0x7x3i4a51f7j-r-keyATM-0.5.2.drv
+this path will be fetched (0.14 MiB download, 0.14 MiB unpacked):
+  /nix/store/hkm0fjaphxf0w2458w4mdjamg62v2flm-keyATM_0.5.2.tar.gz
+copying path '/nix/store/hkm0fjaphxf0w2458w4mdjamg62v2flm-keyATM_0.5.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/c2aqz5b07x6mp89z9hw0x7x3i4a51f7j-r-keyATM-0.5.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hkm0fjaphxf0w2458w4mdjamg62v2flm-keyATM_0.5.2.tar.gz
+source root is keyATM
+setting SOURCE_DATE_EPOCH to timestamp 1713970206 of file keyATM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘keyATM’ ...
+** package ‘keyATM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c LDA_base.cpp -o LDA_base.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c LDA_weight.cpp -o LDA_weight.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c LDA_weightCov.cpp -o LDA_weightCov.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c LDA_weightHMM.cpp -o LDA_weightHMM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c count.cpp -o count.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c helper.cpp -o helper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c initialize.cpp -o initialize.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c keyATM_HMM.cpp -o keyATM_HMM.o
+In file included from LDA_weightCov.cpp:1:
+In file included from ./LDA_weightCov.h:9:
+In file included from ./LDA_base.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+In file included from LDA_weightHMM.cpp:1:
+In file included from ./LDA_weightHMM.h:9:
+In file included from ./LDA_base.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+In file included from LDA_weight.cpp:1:
+In file included from ./LDA_weight.h:9:
+In file included from ./keyATM_base.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+In file included from LDA_base.cpp:1:
+In file included from ./LDA_base.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c keyATM_base.cpp -o keyATM_base.o
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c keyATM_cov.cpp -o keyATM_cov.o
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c keyATM_covPG.cpp -o keyATM_covPG.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c keyATM_meta.cpp -o keyATM_meta.o
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c keyATMvb_call.cpp -o keyATMvb_call.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c keyATMvb_main.cpp -o keyATMvb_main.o
+In file included from keyATM_HMM.cpp:1:
+In file included from ./keyATM_HMM.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c read.cpp -o read.o
+In file included from keyATM_base.cpp:1:
+In file included from ./keyATM_base.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+In file included from keyATM_cov.cpp:1:
+In file included from ./keyATM_cov.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+In file included from keyATM_covPG.cpp:1:
+In file included from ./keyATM_covPG.h:10:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+In file included from keyATM_meta.cpp:1:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sampler.cpp -o sampler.o
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c train.cpp -o train.o
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c utils.cpp -o utils.o
+3 warnings generated.
+3 warnings generated.
+In file included from train.cpp:15:
+In file included from ./keyATM_base.h:9:
+./keyATM_meta.h:258:61: warning: implicit conversion from 'long long' to 'double' changes value from 4606921278410026770 to 4606921278410027008 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(b * (u.x - 4606921278410026770LL) + 4606921278410026770LL);
+                                                          ~ ^~~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:265:50: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      u.x = (long long)(3248660424278399LL * a + 0x3fdf127e83d16f12LL);
+                                               ~ ^~~~~~~~~~~~~~~~~~~~
+./keyATM_meta.h:266:25: warning: implicit conversion from 'long long' to 'double' changes value from 4602417678782656274 to 4602417678782656512 [-Wimplicit-const-int-float-conversion]
+      v.x = (long long)(0x3fdf127e83d16f12LL - 3248660424278399LL * a);
+                        ^~~~~~~~~~~~~~~~~~~~ ~
+3 warnings generated.
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o keyATM.so LDA_base.o LDA_weight.o LDA_weightCov.o LDA_weightHMM.o RcppExports.o count.o helper.o initialize.o keyATM_HMM.o keyATM_base.o keyATM_cov.o keyATM_covPG.o keyATM_meta.o keyATMvb_call.o keyATMvb_main.o read.o sampler.o train.o utils.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/rb94s4g3c2vx7ag423dhyns1gjfj6ldy-r-keyATM-0.5.2/library/00LOCK-keyATM/00new/keyATM/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (keyATM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-keyATM-0.5.2.drv-0/ in /nix/store/rb94s4g3c2vx7ag423dhyns1gjfj6ldy-r-keyATM-0.5.2...
+patching script interpreter paths in /nix/store/rb94s4g3c2vx7ag423dhyns1gjfj6ldy-r-keyATM-0.5.2
+rewriting symlink /nix/store/rb94s4g3c2vx7ag423dhyns1gjfj6ldy-r-keyATM-0.5.2/nix-support/propagated-user-env-packages to be relative to /nix/store/rb94s4g3c2vx7ag423dhyns1gjfj6ldy-r-keyATM-0.5.2

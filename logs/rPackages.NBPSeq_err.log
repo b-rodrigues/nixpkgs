@@ -1,0 +1,41 @@
+this derivation will be built:
+  /nix/store/qflysr4m462xm3xns88j5wk7xd1pnpmr-r-NBPSeq-0.3.1.drv
+this path will be fetched (0.20 MiB download, 0.20 MiB unpacked):
+  /nix/store/8qilxsdczyqypvnrn1dwr9dz6vraiicf-NBPSeq_0.3.1.tar.gz
+copying path '/nix/store/8qilxsdczyqypvnrn1dwr9dz6vraiicf-NBPSeq_0.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qflysr4m462xm3xns88j5wk7xd1pnpmr-r-NBPSeq-0.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8qilxsdczyqypvnrn1dwr9dz6vraiicf-NBPSeq_0.3.1.tar.gz
+source root is NBPSeq
+setting SOURCE_DATE_EPOCH to timestamp 1654772526 of file NBPSeq/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘NBPSeq’ ...
+** package ‘NBPSeq’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lm.c -o lm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o NBPSeq.so lm.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/idkn8cpifcl5ksgzs9kyf3p2wzrs7ld8-r-NBPSeq-0.3.1/library/00LOCK-NBPSeq/00new/NBPSeq/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (NBPSeq)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-NBPSeq-0.3.1.drv-0/ in /nix/store/idkn8cpifcl5ksgzs9kyf3p2wzrs7ld8-r-NBPSeq-0.3.1...
+patching script interpreter paths in /nix/store/idkn8cpifcl5ksgzs9kyf3p2wzrs7ld8-r-NBPSeq-0.3.1
+rewriting symlink /nix/store/idkn8cpifcl5ksgzs9kyf3p2wzrs7ld8-r-NBPSeq-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/idkn8cpifcl5ksgzs9kyf3p2wzrs7ld8-r-NBPSeq-0.3.1

@@ -1,0 +1,71 @@
+these 2 derivations will be built:
+  /nix/store/m8qbp1hbvsdm1ndsk7ran9wkqz4mlik1-r-wrswoR-1.1.1.drv
+  /nix/store/16zsdwrqacwckkn61m9pxp3g0pvd62w2-r-mlfit-0.5.3.drv
+these 2 paths will be fetched (0.15 MiB download, 0.15 MiB unpacked):
+  /nix/store/inqbjfzgiy3bvxw8m9r11ck3d1wzb1i6-mlfit_0.5.3.tar.gz
+  /nix/store/iwck8qbpcy1gxnskj0ar30qa8x1sp6fw-wrswoR_1.1.1.tar.gz
+copying path '/nix/store/inqbjfzgiy3bvxw8m9r11ck3d1wzb1i6-mlfit_0.5.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/iwck8qbpcy1gxnskj0ar30qa8x1sp6fw-wrswoR_1.1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m8qbp1hbvsdm1ndsk7ran9wkqz4mlik1-r-wrswoR-1.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/iwck8qbpcy1gxnskj0ar30qa8x1sp6fw-wrswoR_1.1.1.tar.gz
+source root is wrswoR
+setting SOURCE_DATE_EPOCH to timestamp 1595787602 of file wrswoR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘wrswoR’ ...
+** package ‘wrswoR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sample_int_crank.cpp -o sample_int_crank.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o wrswoR.so RcppExports.o sample_int_crank.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/48q7cmzvg3w98sfrmk8wwfkdf3fzss3i-r-wrswoR-1.1.1/library/00LOCK-wrswoR/00new/wrswoR/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (wrswoR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-wrswoR-1.1.1.drv-0/ in /nix/store/48q7cmzvg3w98sfrmk8wwfkdf3fzss3i-r-wrswoR-1.1.1...
+patching script interpreter paths in /nix/store/48q7cmzvg3w98sfrmk8wwfkdf3fzss3i-r-wrswoR-1.1.1
+rewriting symlink /nix/store/48q7cmzvg3w98sfrmk8wwfkdf3fzss3i-r-wrswoR-1.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/48q7cmzvg3w98sfrmk8wwfkdf3fzss3i-r-wrswoR-1.1.1
+building '/nix/store/16zsdwrqacwckkn61m9pxp3g0pvd62w2-r-mlfit-0.5.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/inqbjfzgiy3bvxw8m9r11ck3d1wzb1i6-mlfit_0.5.3.tar.gz
+source root is mlfit
+setting SOURCE_DATE_EPOCH to timestamp 1633675802 of file mlfit/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mlfit’ ...
+** package ‘mlfit’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mlfit)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mlfit-0.5.3.drv-0/ in /nix/store/dxz45bf3qm0cr9p5fzgy45sggrk4ajhw-r-mlfit-0.5.3...
+patching script interpreter paths in /nix/store/dxz45bf3qm0cr9p5fzgy45sggrk4ajhw-r-mlfit-0.5.3
+rewriting symlink /nix/store/dxz45bf3qm0cr9p5fzgy45sggrk4ajhw-r-mlfit-0.5.3/nix-support/propagated-user-env-packages to be relative to /nix/store/dxz45bf3qm0cr9p5fzgy45sggrk4ajhw-r-mlfit-0.5.3

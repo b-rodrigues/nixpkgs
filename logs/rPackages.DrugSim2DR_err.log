@@ -1,0 +1,98 @@
+these 2 derivations will be built:
+  /nix/store/42fd2s1lfzb1jisrl4b5grpwwc6c3sx2-r-ChemmineR-2.22.3.drv
+  /nix/store/3wnc052fbj70yxl2kprn9hssn6vhkmvh-r-DrugSim2DR-0.1.1.drv
+building '/nix/store/42fd2s1lfzb1jisrl4b5grpwwc6c3sx2-r-ChemmineR-2.22.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hkdhqgp1372qw4rw4fmb2rxsvrrrxniy-ChemmineR_2.22.3.tar.gz
+source root is ChemmineR
+setting SOURCE_DATE_EPOCH to timestamp 1451958816 of file ChemmineR/src/similarity.cc
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ChemmineR’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c DisjointSets.cpp -o DisjointSets.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c cluster.cc -o cluster.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c cstrsplit.cc -o cstrsplit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c desc.cc -o desc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c fingerprints.cc -o fingerprints.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c formats.cc -o formats.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c molecule.cc -o molecule.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c r_wrap.cc -o r_wrap.o
+r_wrap.cc:563:7: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+      register size_t l = 0;
+      ^~~~~~~~~
+r_wrap.cc:564:7: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+      register size_t r = iter->size - 1;
+      ^~~~~~~~~
+r_wrap.cc:567:2: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+        register size_t i = (l + r) >> 1; 
+        ^~~~~~~~~
+r_wrap.cc:570:4: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+          register int compare = strcmp(name, iname);
+          ^~~~~~~~~
+r_wrap.cc:614:7: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+      register size_t i = 0;
+      ^~~~~~~~~
+r_wrap.cc:633:3: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  register const unsigned char *u = (unsigned char *) ptr;
+  ^~~~~~~~~
+r_wrap.cc:634:3: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  register const unsigned char *eu =  u + sz;
+  ^~~~~~~~~
+r_wrap.cc:636:5: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+    register unsigned char uu = *u;
+    ^~~~~~~~~
+r_wrap.cc:648:3: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  register unsigned char *u = (unsigned char *) ptr;
+  ^~~~~~~~~
+r_wrap.cc:649:3: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  register const unsigned char *eu = u + sz;
+  ^~~~~~~~~
+r_wrap.cc:651:5: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+    register char d = *(c++);
+    ^~~~~~~~~
+r_wrap.cc:652:5: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+    register unsigned char uu;
+    ^~~~~~~~~
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c script.cc -o script.o
+12 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:200: r_wrap.o] Error 1
+make: *** Attente des tâches non terminées....
+ERROR: compilation failed for package ‘ChemmineR’
+* removing ‘/nix/store/9i3cjw5vdxd5n95v4hl508k5wm599sw7-r-ChemmineR-2.22.3/library/ChemmineR’
+error: builder for '/nix/store/42fd2s1lfzb1jisrl4b5grpwwc6c3sx2-r-ChemmineR-2.22.3.drv' failed with exit code 1;
+       last 25 log lines:
+       >   ^~~~~~~~~
+       > r_wrap.cc:634:3: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+       >   register const unsigned char *eu =  u + sz;
+       >   ^~~~~~~~~
+       > r_wrap.cc:636:5: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+       >     register unsigned char uu = *u;
+       >     ^~~~~~~~~
+       > r_wrap.cc:648:3: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+       >   register unsigned char *u = (unsigned char *) ptr;
+       >   ^~~~~~~~~
+       > r_wrap.cc:649:3: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+       >   register const unsigned char *eu = u + sz;
+       >   ^~~~~~~~~
+       > r_wrap.cc:651:5: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+       >     register char d = *(c++);
+       >     ^~~~~~~~~
+       > r_wrap.cc:652:5: error: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+       >     register unsigned char uu;
+       >     ^~~~~~~~~
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2   -c script.cc -o script.o
+       > 12 errors generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:200: r_wrap.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > ERROR: compilation failed for package ‘ChemmineR’
+       > * removing ‘/nix/store/9i3cjw5vdxd5n95v4hl508k5wm599sw7-r-ChemmineR-2.22.3/library/ChemmineR’
+       For full logs, run 'nix log /nix/store/42fd2s1lfzb1jisrl4b5grpwwc6c3sx2-r-ChemmineR-2.22.3.drv'.
+error: 1 dependencies of derivation '/nix/store/3wnc052fbj70yxl2kprn9hssn6vhkmvh-r-DrugSim2DR-0.1.1.drv' failed to build

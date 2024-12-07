@@ -1,0 +1,81 @@
+these 3 derivations will be built:
+  /nix/store/6j4fjjp77d0ds69k0i08hhbypjsvyhh0-r-npsurvSS-1.1.0.drv
+  /nix/store/hfqsis50rbcvwg1npjs972m832n7wfv3-gsDesign2_1.1.3.tar.gz.drv
+  /nix/store/1c4nbhyswb9rl0dd178qkcqdb00yadyv-r-gsDesign2-1.1.3.drv
+this path will be fetched (0.28 MiB download, 0.28 MiB unpacked):
+  /nix/store/a86y4gzv246793r7hykliksj6k88kg1l-npsurvSS_1.1.0.tar.gz
+copying path '/nix/store/a86y4gzv246793r7hykliksj6k88kg1l-npsurvSS_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hfqsis50rbcvwg1npjs972m832n7wfv3-gsDesign2_1.1.3.tar.gz.drv'...
+building '/nix/store/6j4fjjp77d0ds69k0i08hhbypjsvyhh0-r-npsurvSS-1.1.0.drv'...
+
+trying https://cran.r-project.org/src/contrib/gsDesign2_1.1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/a86y4gzv246793r7hykliksj6k88kg1l-npsurvSS_1.1.0.tar.gz
+source root is npsurvSS
+setting SOURCE_DATE_EPOCH to timestamp 1715205602 of file npsurvSS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+100  433k  100  433k    0     0  1811k      0 --:--:-- --:--:-- --:--:-- 1814k
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘npsurvSS’ ...
+** package ‘npsurvSS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (npsurvSS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-npsurvSS-1.1.0.drv-0/ in /nix/store/cxzjr5qz75wxpvcqi4hpi638ifkq2xcv-r-npsurvSS-1.1.0...
+patching script interpreter paths in /nix/store/cxzjr5qz75wxpvcqi4hpi638ifkq2xcv-r-npsurvSS-1.1.0
+building '/nix/store/1c4nbhyswb9rl0dd178qkcqdb00yadyv-r-gsDesign2-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7akf0y8sv4wqc3ia54glmiam30dw0kyi-gsDesign2_1.1.3.tar.gz
+source root is gsDesign2
+setting SOURCE_DATE_EPOCH to timestamp 1731708602 of file gsDesign2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gsDesign2’ ...
+** package ‘gsDesign2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gridpts.cpp -o gridpts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c h1.cpp -o h1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hupdate.cpp -o hupdate.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o gsDesign2.so RcppExports.o gridpts.o h1.o hupdate.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pblschrnw9f4krzc1ixhnm7i8drbzp8w-r-gsDesign2-1.1.3/library/00LOCK-gsDesign2/00new/gsDesign2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gsDesign2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gsDesign2-1.1.3.drv-0/ in /nix/store/pblschrnw9f4krzc1ixhnm7i8drbzp8w-r-gsDesign2-1.1.3...
+patching script interpreter paths in /nix/store/pblschrnw9f4krzc1ixhnm7i8drbzp8w-r-gsDesign2-1.1.3
+rewriting symlink /nix/store/pblschrnw9f4krzc1ixhnm7i8drbzp8w-r-gsDesign2-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/pblschrnw9f4krzc1ixhnm7i8drbzp8w-r-gsDesign2-1.1.3

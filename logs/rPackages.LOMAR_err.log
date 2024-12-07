@@ -1,0 +1,87 @@
+these 4 derivations will be built:
+  /nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv
+  /nix/store/qb4hkwm8yagvjfqk3y9270k471hkjflp-LOMAR_0.5.0.tar.gz.drv
+  /nix/store/qxwk71psyhhklyxlb1mlsx0ids5lg48l-r-EBImage-4.12.2.drv
+  /nix/store/xp3jzi92k0ab4kqn7x9626rsm4sdyw4d-r-LOMAR-0.5.0.drv
+building '/nix/store/qb4hkwm8yagvjfqk3y9270k471hkjflp-LOMAR_0.5.0.tar.gz.drv'...
+building '/nix/store/qxwk71psyhhklyxlb1mlsx0ids5lg48l-r-EBImage-4.12.2.drv'...
+building '/nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv'...
+
+trying https://cran.r-project.org/src/contrib/LOMAR_0.5.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/k56n83d751mcf537vr2hpz16vsq3x17w-EBImage_4.12.2.tar.gz
+source root is EBImage
+setting SOURCE_DATE_EPOCH to timestamp 1448069850 of file EBImage/src/watershed.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: unpackPhase
+Running phase: checkPhase
+unpacking source archive /nix/store/zhpl373812hlf104rz84nxy6bkvjs7qj-rhdf5_2.14.0.tar.gz
+100  520k  100  520k    0     0  2163k      0 --:--:-- --:--:-- --:--:-- 2161k
+Running phase: installPhase
+source root is rhdf5
+setting SOURCE_DATE_EPOCH to timestamp 1444789283 of file rhdf5/src/wrap.c
+Running phase: patchPhase
+applying patch /nix/store/mcjq45n91sgxw8asl2lvdjfmf4lrc5ff-rhdf5.patch
+patching file src/Makevars
+Hunk #1 FAILED at 1.
+1 out of 1 hunk FAILED -- saving rejects to file src/Makevars.rej
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/src/h5testLock.c b/src/h5testLock.c
+|index b326444..5d58b4a 100644
+|--- a/src/h5testLock.c
+|+++ b/src/h5testLock.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 41
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/src/h5testLock.h b/src/h5testLock.h
+|index 2c1c5e4..25914ff 100644
+|--- a/src/h5testLock.h
+|+++ b/src/h5testLock.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+error: builder for '/nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > Perhaps you used the wrong -p or --strip option?
+       > The text leading up to this was:
+       > --------------------------
+       > |diff --git a/src/h5testLock.c b/src/h5testLock.c
+       > |index b326444..5d58b4a 100644
+       > |--- a/src/h5testLock.c
+       > |+++ b/src/h5testLock.c
+       > --------------------------
+       > File to patch:
+       > Skip this patch? [y]
+       > Skipping patch.
+       > 1 out of 1 hunk ignored
+       > can't find file to patch at input line 41
+       > Perhaps you used the wrong -p or --strip option?
+       > The text leading up to this was:
+       > --------------------------
+       > |diff --git a/src/h5testLock.h b/src/h5testLock.h
+       > |index 2c1c5e4..25914ff 100644
+       > |--- a/src/h5testLock.h
+       > |+++ b/src/h5testLock.h
+       > --------------------------
+       > File to patch:
+       > Skip this patch? [y]
+       > Skipping patch.
+       > 1 out of 1 hunk ignored
+       For full logs, run 'nix log /nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv'.
+error: 1 dependencies of derivation '/nix/store/xp3jzi92k0ab4kqn7x9626rsm4sdyw4d-r-LOMAR-0.5.0.drv' failed to build

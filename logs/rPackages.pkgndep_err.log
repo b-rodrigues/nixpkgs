@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/2xa9nzpn35b206ggdh8h25va10jzki0k-r-pkgndep-1.99.3.drv
+this path will be fetched (1.51 MiB download, 1.51 MiB unpacked):
+  /nix/store/ssdlx9g97x5xphdg8chf2511ian3w55f-pkgndep_1.99.3.tar.gz
+copying path '/nix/store/ssdlx9g97x5xphdg8chf2511ian3w55f-pkgndep_1.99.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2xa9nzpn35b206ggdh8h25va10jzki0k-r-pkgndep-1.99.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ssdlx9g97x5xphdg8chf2511ian3w55f-pkgndep_1.99.3.tar.gz
+source root is pkgndep
+setting SOURCE_DATE_EPOCH to timestamp 1697176202 of file pkgndep/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘BiocVersion’ is not available for package ‘pkgndep’
+* removing ‘/nix/store/ipkvlvdm3i3zqwyc5mv3l2yfc4x9g5k7-r-pkgndep-1.99.3/library/pkgndep’
+error: builder for '/nix/store/2xa9nzpn35b206ggdh8h25va10jzki0k-r-pkgndep-1.99.3.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/ssdlx9g97x5xphdg8chf2511ian3w55f-pkgndep_1.99.3.tar.gz
+       > source root is pkgndep
+       > setting SOURCE_DATE_EPOCH to timestamp 1697176202 of file pkgndep/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘BiocVersion’ is not available for package ‘pkgndep’
+       > * removing ‘/nix/store/ipkvlvdm3i3zqwyc5mv3l2yfc4x9g5k7-r-pkgndep-1.99.3/library/pkgndep’
+       For full logs, run 'nix log /nix/store/2xa9nzpn35b206ggdh8h25va10jzki0k-r-pkgndep-1.99.3.drv'.

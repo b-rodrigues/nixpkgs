@@ -1,0 +1,57 @@
+these 3 derivations will be built:
+  /nix/store/k57fvhrasphq10m466nyvxc8i7z9j70q-r-summarytools-1.0.1.drv
+  /nix/store/kddjfvppglxzp72xlizyw49d50j2lzda-StepReg_1.5.5.tar.gz.drv
+  /nix/store/6f07s9qb0c66hfpdg95dkd7cj4hdkb3c-r-StepReg-1.5.5.drv
+building '/nix/store/kddjfvppglxzp72xlizyw49d50j2lzda-StepReg_1.5.5.tar.gz.drv'...
+building '/nix/store/k57fvhrasphq10m466nyvxc8i7z9j70q-r-summarytools-1.0.1.drv'...
+
+trying https://cran.r-project.org/src/contrib/StepReg_1.5.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/7yf7xiy17jcalgjdv4n35v5qn8qxk9ik-summarytools_1.0.1.tar.gz
+source root is summarytools
+setting SOURCE_DATE_EPOCH to timestamp 1653031805 of file summarytools/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100 3530k  100 3530k    0     0  6469k      0 --:--:-- --:--:-- --:--:-- 6478k
+* installing *source* package ‘summarytools’ ...
+** package ‘summarytools’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 19548 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-summarytools-1.0.1.drv-0/RtmpScAgK2/file4c2e454d138c'
+ERROR: lazy loading failed for package ‘summarytools’
+* removing ‘/nix/store/8r4h9yzyqbkphqjrs6asbdwi0kz4nfx5-r-summarytools-1.0.1/library/summarytools’
+error: builder for '/nix/store/k57fvhrasphq10m466nyvxc8i7z9j70q-r-summarytools-1.0.1.drv' failed with exit code 1;
+       last 21 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/7yf7xiy17jcalgjdv4n35v5qn8qxk9ik-summarytools_1.0.1.tar.gz
+       > source root is summarytools
+       > setting SOURCE_DATE_EPOCH to timestamp 1653031805 of file summarytools/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘summarytools’ ...
+       > ** package ‘summarytools’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 19548 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-summarytools-1.0.1.drv-0/RtmpScAgK2/file4c2e454d138c'
+       > ERROR: lazy loading failed for package ‘summarytools’
+       > * removing ‘/nix/store/8r4h9yzyqbkphqjrs6asbdwi0kz4nfx5-r-summarytools-1.0.1/library/summarytools’
+       For full logs, run 'nix log /nix/store/k57fvhrasphq10m466nyvxc8i7z9j70q-r-summarytools-1.0.1.drv'.
+error: 1 dependencies of derivation '/nix/store/6f07s9qb0c66hfpdg95dkd7cj4hdkb3c-r-StepReg-1.5.5.drv' failed to build

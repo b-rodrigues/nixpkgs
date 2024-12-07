@@ -1,0 +1,83 @@
+this derivation will be built:
+  /nix/store/ykrq4jnqmr24v15dv4qz9r79cjs35psw-r-ROpenCVLite-4.90.2.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/7xlmz132x1f27hcfl284apsglpsv8ils-ROpenCVLite_4.90.2.tar.gz
+copying path '/nix/store/7xlmz132x1f27hcfl284apsglpsv8ils-ROpenCVLite_4.90.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ykrq4jnqmr24v15dv4qz9r79cjs35psw-r-ROpenCVLite-4.90.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7xlmz132x1f27hcfl284apsglpsv8ils-ROpenCVLite_4.90.2.tar.gz
+source root is ROpenCVLite
+setting SOURCE_DATE_EPOCH to timestamp 1722514202 of file ROpenCVLite/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ROpenCVLite’ ...
+** package ‘ROpenCVLite’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+./configure: line 1: type: cmake: not found
+
+------------------ CMAKE NOT FOUND --------------------
+
+CMake was not found on the PATH. Please install CMake:
+
+ - installr::install.cmake()  (Windows; inside the R console)
+ - yum install cmake          (Fedora/CentOS; inside a terminal)
+ - apt install cmake          (Debian/Ubuntu; inside a terminal).
+ - brew install cmake         (MacOS; inside a terminal with Homebrew)
+ - port install cmake         (MacOS; inside a terminal with MacPorts)
+
+Alternatively install CMake from: <https://cmake.org/>
+
+-------------------------------------------------------
+
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+sh: cmake: command not found
+Avis dans system("cmake --version", ignore.stdout = TRUE) :
+  erreur lors de l'exécution d'une commande
+------------------ CMAKE NOT FOUND --------------------
+
+CMake was not found on the PATH. Please install CMake:
+
+ - installr::install.cmake()  (Windows; inside the R console)
+ - yum install cmake          (Fedora/CentOS; inside a terminal)
+ - apt install cmake          (Debian/Ubuntu; inside a terminal)
+ - brew install cmake         (MacOS; inside a terminal with Homebrew)
+ - port install cmake         (MacOS; inside a terminal with MacPorts)
+
+Alternatively install CMake from: <https://cmake.org/>
+
+-------------------------------------------------------
+
+** testing if installed package can be loaded from final location
+sh: cmake: command not found
+Avis dans system("cmake --version", ignore.stdout = TRUE) :
+  erreur lors de l'exécution d'une commande
+------------------ CMAKE NOT FOUND --------------------
+
+CMake was not found on the PATH. Please install CMake:
+
+ - installr::install.cmake()  (Windows; inside the R console)
+ - yum install cmake          (Fedora/CentOS; inside a terminal)
+ - apt install cmake          (Debian/Ubuntu; inside a terminal)
+ - brew install cmake         (MacOS; inside a terminal with Homebrew)
+ - port install cmake         (MacOS; inside a terminal with MacPorts)
+
+Alternatively install CMake from: <https://cmake.org/>
+
+-------------------------------------------------------
+
+** testing if installed package keeps a record of temporary installation path
+* DONE (ROpenCVLite)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ROpenCVLite-4.90.2.drv-0/ in /nix/store/al23xbw7ky2w7r4ssxhxl76l2y3ppv8w-r-ROpenCVLite-4.90.2...
+patching script interpreter paths in /nix/store/al23xbw7ky2w7r4ssxhxl76l2y3ppv8w-r-ROpenCVLite-4.90.2

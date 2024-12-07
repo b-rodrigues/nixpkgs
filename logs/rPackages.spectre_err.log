@@ -1,0 +1,49 @@
+this derivation will be built:
+  /nix/store/8zljjil1kya75bp914mzxgspxq1q5rhp-r-spectre-1.0.2.drv
+this path will be fetched (0.28 MiB download, 0.28 MiB unpacked):
+  /nix/store/96z98hy4n7k2c4fndc03m1n9mrn0xbm5-spectre_1.0.2.tar.gz
+copying path '/nix/store/96z98hy4n7k2c4fndc03m1n9mrn0xbm5-spectre_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8zljjil1kya75bp914mzxgspxq1q5rhp-r-spectre-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/96z98hy4n7k2c4fndc03m1n9mrn0xbm5-spectre_1.0.2.tar.gz
+source root is spectre
+setting SOURCE_DATE_EPOCH to timestamp 1626503402 of file spectre/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spectre’ ...
+** package ‘spectre’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c minconf.cpp -o minconf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c optimizer.cpp -o optimizer.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test-minconf.cpp -o test-minconf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/2jyzzpby7w4nv2fmvj9iwc3vxz4c8z58-r-testthat-3.2.1.1/library/testthat/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test-runner.cpp -o test-runner.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spectre.so RcppExports.o minconf.o optimizer.o test-minconf.o test-runner.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8j207b7ihl72hv6xc2qfrypz85vb8hvx-r-spectre-1.0.2/library/00LOCK-spectre/00new/spectre/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spectre)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spectre-1.0.2.drv-0/ in /nix/store/8j207b7ihl72hv6xc2qfrypz85vb8hvx-r-spectre-1.0.2...
+patching script interpreter paths in /nix/store/8j207b7ihl72hv6xc2qfrypz85vb8hvx-r-spectre-1.0.2
+rewriting symlink /nix/store/8j207b7ihl72hv6xc2qfrypz85vb8hvx-r-spectre-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/8j207b7ihl72hv6xc2qfrypz85vb8hvx-r-spectre-1.0.2

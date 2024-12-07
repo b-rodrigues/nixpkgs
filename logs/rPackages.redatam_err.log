@@ -1,0 +1,59 @@
+these 2 derivations will be built:
+  /nix/store/28m9ckhjmgbb5069z6m3ycka6d48had3-redatam_2.0.4.tar.gz.drv
+  /nix/store/9xbqh87gchssgsz75rlwwqmz9c1l1kpw-r-redatam-2.0.4.drv
+building '/nix/store/28m9ckhjmgbb5069z6m3ycka6d48had3-redatam_2.0.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/redatam_2.0.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  117k  100  117k    0     0   583k      0 --:--:-- --:--:-- --:--:--  585k
+building '/nix/store/9xbqh87gchssgsz75rlwwqmz9c1l1kpw-r-redatam-2.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/cq2zv19wnzgac1gvvxpbrdx7jxqmkp1x-redatam_2.0.4.tar.gz
+source root is redatam
+setting SOURCE_DATE_EPOCH to timestamp 1731655802 of file redatam/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘redatam’ ...
+** package ‘redatam’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c vendor/pugixml.cpp -o vendor/pugixml.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/readers/BitArrayReader.cpp -o redatamlib/readers/BitArrayReader.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/readers/ByteArrayReader.cpp -o redatamlib/readers/ByteArrayReader.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/entities/Entity.cpp -o redatamlib/entities/Entity.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/readers/FuzzyEntityParser.cpp -o redatamlib/readers/FuzzyEntityParser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/readers/FuzzyVariableParser.cpp -o redatamlib/readers/FuzzyVariableParser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/exporters/ParentIDCalculator.cpp -o redatamlib/exporters/ParentIDCalculator.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/exporters/RListExporter.cpp -o redatamlib/exporters/RListExporter.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/entities/RedatamDatabase.cpp -o redatamlib/entities/RedatamDatabase.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/entities/Variable.cpp -o redatamlib/entities/Variable.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/readers/XMLParser.cpp -o redatamlib/readers/XMLParser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c redatamlib/utils.cpp -o redatamlib/utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c main.cpp -o main.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ivendor -Iredatamlib -Iredatamlib/entities -Iredatamlib/exporters -Iredatamlib/readers -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpp11.cpp -o cpp11.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o redatam.so vendor/pugixml.o redatamlib/readers/BitArrayReader.o redatamlib/readers/ByteArrayReader.o redatamlib/entities/Entity.o redatamlib/readers/FuzzyEntityParser.o redatamlib/readers/FuzzyVariableParser.o redatamlib/exporters/ParentIDCalculator.o redatamlib/exporters/RListExporter.o redatamlib/entities/RedatamDatabase.o redatamlib/entities/Variable.o redatamlib/readers/XMLParser.o redatamlib/utils.o main.o cpp11.o -Lvendor -Lredatamlib -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ibvrshlvwqcmkk6xqy6c4az5w3amx29p-r-redatam-2.0.4/library/00LOCK-redatam/00new/redatam/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (redatam)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-redatam-2.0.4.drv-0/ in /nix/store/ibvrshlvwqcmkk6xqy6c4az5w3amx29p-r-redatam-2.0.4...
+patching script interpreter paths in /nix/store/ibvrshlvwqcmkk6xqy6c4az5w3amx29p-r-redatam-2.0.4
+rewriting symlink /nix/store/ibvrshlvwqcmkk6xqy6c4az5w3amx29p-r-redatam-2.0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/ibvrshlvwqcmkk6xqy6c4az5w3amx29p-r-redatam-2.0.4

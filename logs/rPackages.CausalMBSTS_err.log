@@ -1,0 +1,185 @@
+these 3 derivations will be built:
+  /nix/store/l1hzfms63rbdvhj5pddlm8dc3fqr1d8f-r-MixMatrix-0.2.8.drv
+  /nix/store/zngqg2cl43zrw2xfpnxng19m2gxhxs6g-r-KFAS-1.5.1.drv
+  /nix/store/jf5mfyik5vr4bscihpn4wq6y8n373iks-r-CausalMBSTS-0.1.1.drv
+building '/nix/store/zngqg2cl43zrw2xfpnxng19m2gxhxs6g-r-KFAS-1.5.1.drv'...
+building '/nix/store/l1hzfms63rbdvhj5pddlm8dc3fqr1d8f-r-MixMatrix-0.2.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ws40qa90rrafk14cf8vvwyqvx514fp3x-KFAS_1.5.1.tar.gz
+source root is KFAS
+setting SOURCE_DATE_EPOCH to timestamp 1693902002 of file KFAS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/b05a0kf0g37lmj1ms1ib2yhfrwvr7c9s-MixMatrix_0.2.8.tar.gz
+source root is MixMatrix
+setting SOURCE_DATE_EPOCH to timestamp 1727728802 of file MixMatrix/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+* installing *source* package ‘KFAS’ ...
+Running phase: configurePhase
+** package ‘KFAS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  approx.f90 -o approx.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  approxloop.f90 -o approxloop.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  artransform.f90 -o artransform.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cdistwrap.c -o cdistwrap.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  covmeanw.f90 -o covmeanw.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  filter1step.f90 -o filter1step.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  filter1stepnovar.f90 -o filter1stepnovar.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  filtersimfast.f90 -o filtersimfast.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  gloglik.f90 -o gloglik.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  gsmoothall.f90 -o gsmoothall.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+* installing *source* package ‘MixMatrix’ ...
+** package ‘MixMatrix’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  isample.f90 -o isample.o
+** libs
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  isamplefilter.f90 -o isamplefilter.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  kfilter.f90 -o kfilter.o
+using C++ compiler: ‘clang version 16.0.6’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  kfilter2.f90 -o kfilter2.o
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c posdefsqrt.cpp -o posdefsqrt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c stats.cpp -o stats.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c utils.cpp -o utils.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  kfstheta.f90 -o kfstheta.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ldl.f90 -o ldl.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ldlssm.f90 -o ldlssm.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  marginalxx.f90 -o marginalxx.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  mvfilter.f90 -o mvfilter.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ngfilter.f90 -o ngfilter.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ngloglik.f90 -o ngloglik.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ngsmooth.f90 -o ngsmooth.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  predict.f90 -o predict.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ptheta.f90 -o ptheta.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  pytheta.f90 -o pytheta.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  simfilter.f90 -o simfilter.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  simgaussian.f90 -o simgaussian.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  simgaussianuncond.f90 -o simgaussianuncond.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  smoothonestep.f90 -o smoothonestep.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  smoothsim.f90 -o smoothsim.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  smoothsimfast.f90 -o smoothsimfast.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o KFAS.so approx.o approxloop.o artransform.o cdistwrap.o covmeanw.o filter1step.o filter1stepnovar.o filtersimfast.o gloglik.o gsmoothall.o init.o isample.o isamplefilter.o kfilter.o kfilter2.o kfstheta.o ldl.o ldlssm.o marginalxx.o mvfilter.o ngfilter.o ngloglik.o ngsmooth.o predict.o ptheta.o pytheta.o simfilter.o simgaussian.o simgaussianuncond.o smoothonestep.o smoothsim.o smoothsimfast.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _dfilter1step_: does not use standard frame
+ld: warning: could not create compact unwind for _filter1step_: does not use standard frame
+ld: warning: could not create compact unwind for _dfilter1step2_: does not use standard frame
+ld: warning: could not create compact unwind for _filter1step2_: does not use standard frame
+ld: warning: could not create compact unwind for _covmeanw_: does not use standard frame
+ld: warning: could not create compact unwind for _approx_: does not use standard frame
+ld: warning: could not create compact unwind for _gloglik_: does not use standard frame
+ld: warning: could not create compact unwind for _filtersimfast_: does not use standard frameld: warning: could not create compact unwind for _covmeanwprotect_: does not use standard frame
+ld: warning: could not create compact unwind for _gsmoothall_: does not use standard frame
+ld: warning: could not create compact unwind for _isamplefilter_: does not use standard frame
+ld: warning: could not create compact unwind for _kfilter_: does not use standard frame
+ld: warning: could not create compact unwind for _kfstheta_: does not use standard frame
+ld: warning: could not create compact unwind for _ldl_: does not use standard frame
+ld: warning: could not create compact unwind for _kfilter2_: does not use standard frame
+ld: warning: could not create compact unwind for _dfilter1stepnv_: does not use standard frame
+ld: warning: could not create compact unwind for _filter1stepnv_: does not use standard frame
+ld: warning: could not create compact unwind for _approxloop_: does not use standard frame
+ld: warning: could not create compact unwind for _isample_: does not use standard frameld: warning: could not create compact unwind for _ldlssm_: does not use standard frame
+ld: warning: could not create compact unwind for _ngfilter_: does not use standard frame
+
+ld: warning: could not create compact unwind for _ngsmooth_: does not use standard frame
+ld: warning: could not create compact unwind for _ngloglik_: does not use standard frame
+ld: warning: could not create compact unwind for _mvfilter_: does not use standard frame
+ld: warning: could not create compact unwind for _signaltheta_: does not use standard frame
+ld: warning: could not create compact unwind for _zalpha_: does not use standard frame
+ld: warning: could not create compact unwind for _simfilter_: does not use standard frame
+ld: warning: could not create compact unwind for _pytheta_: does not use standard frame
+ld: warning: could not create compact unwind for _smooth1step_: does not use standard frame
+ld: warning: could not create compact unwind for _simgaussian_: does not use standard frame
+ld: warning: could not create compact unwind for _simgaussianuncond_: does not use standard frame
+ld: warning: could not create compact unwind for _smoothsimfast_: does not use standard frame
+ld: warning: could not create compact unwind for _smoothsim_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+
+ld: warning: could not create compact unwind for _pthetafirst_: does not use standard frame
+ld: warning: could not create compact unwind for _pthetarest_: does not use standard frame
+ld: warning: could not create compact unwind for _marginalxx_: does not use standard frame
+ld: warning: could not create compact unwind for _dsmooth1step_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/y1dvknlkakydqgga2qy996jiq3qmhphi-r-KFAS-1.5.1/library/00LOCK-KFAS/00new/KFAS/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MixMatrix.so RcppExports.o posdefsqrt.o stats.o utils.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/l9sjgnjvwlvqjv969y36nxdzhyxjr2fg-r-MixMatrix-0.2.8/library/00LOCK-MixMatrix/00new/MixMatrix/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from final location
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package keeps a record of temporary installation path
+* DONE (KFAS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-KFAS-1.5.1.drv-0/ in /nix/store/y1dvknlkakydqgga2qy996jiq3qmhphi-r-KFAS-1.5.1...
+patching script interpreter paths in /nix/store/y1dvknlkakydqgga2qy996jiq3qmhphi-r-KFAS-1.5.1
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MixMatrix)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MixMatrix-0.2.8.drv-0/ in /nix/store/l9sjgnjvwlvqjv969y36nxdzhyxjr2fg-r-MixMatrix-0.2.8...
+patching script interpreter paths in /nix/store/l9sjgnjvwlvqjv969y36nxdzhyxjr2fg-r-MixMatrix-0.2.8
+rewriting symlink /nix/store/l9sjgnjvwlvqjv969y36nxdzhyxjr2fg-r-MixMatrix-0.2.8/nix-support/propagated-user-env-packages to be relative to /nix/store/l9sjgnjvwlvqjv969y36nxdzhyxjr2fg-r-MixMatrix-0.2.8
+building '/nix/store/jf5mfyik5vr4bscihpn4wq6y8n373iks-r-CausalMBSTS-0.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/k770mrid3f7p9mg0bk2nvhxwhb8kcvcq-CausalMBSTS_0.1.1.tar.gz
+source root is CausalMBSTS
+setting SOURCE_DATE_EPOCH to timestamp 1633475409 of file CausalMBSTS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘CausalMBSTS’ ...
+** package ‘CausalMBSTS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (CausalMBSTS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-CausalMBSTS-0.1.1.drv-0/ in /nix/store/2a4kifjgvzz79yfkflr9461spbzrvvnm-r-CausalMBSTS-0.1.1...
+patching script interpreter paths in /nix/store/2a4kifjgvzz79yfkflr9461spbzrvvnm-r-CausalMBSTS-0.1.1
+rewriting symlink /nix/store/2a4kifjgvzz79yfkflr9461spbzrvvnm-r-CausalMBSTS-0.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/2a4kifjgvzz79yfkflr9461spbzrvvnm-r-CausalMBSTS-0.1.1

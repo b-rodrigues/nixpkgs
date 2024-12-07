@@ -1,0 +1,111 @@
+these 4 derivations will be built:
+  /nix/store/9cdgg72dimyg0sa7zlpgkwsm7k9kg0ja-pkgcache_2.2.3.tar.gz.drv
+  /nix/store/mqcd908gjcqischr5bcbmfs6nlx0rwwi-r-pkgcache-2.2.3.drv
+  /nix/store/89qkx3skyqkl57rxvwy6jm81bjlbvamb-r-pkgdepends-0.8.0.drv
+  /nix/store/yg5mpsgr4zdixq96w6ir6kzmyh8y6a8r-r-checkpoint-1.0.2.drv
+building '/nix/store/9cdgg72dimyg0sa7zlpgkwsm7k9kg0ja-pkgcache_2.2.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/pkgcache_2.2.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  260k  100  260k    0     0  1108k      0 --:--:-- --:--:-- --:--:-- 1112k
+building '/nix/store/mqcd908gjcqischr5bcbmfs6nlx0rwwi-r-pkgcache-2.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/l58pbxcq9dyc2p5wfmd99ni8anaa68sj-pkgcache_2.2.3.tar.gz
+source root is pkgcache
+setting SOURCE_DATE_EPOCH to timestamp 1726162823 of file pkgcache/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pkgcache’ ...
+** package ‘pkgcache’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c errors.c -o errors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lib.c -o lib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c winfiles.c -o winfiles.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pkgcache.so errors.o init.o lib.o winfiles.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/51524k0mv9sxvfh79gqd1yvm67i9lii4-r-pkgcache-2.2.3/library/00LOCK-pkgcache/00new/pkgcache/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pkgcache)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pkgcache-2.2.3.drv-0/ in /nix/store/51524k0mv9sxvfh79gqd1yvm67i9lii4-r-pkgcache-2.2.3...
+patching script interpreter paths in /nix/store/51524k0mv9sxvfh79gqd1yvm67i9lii4-r-pkgcache-2.2.3
+rewriting symlink /nix/store/51524k0mv9sxvfh79gqd1yvm67i9lii4-r-pkgcache-2.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/51524k0mv9sxvfh79gqd1yvm67i9lii4-r-pkgcache-2.2.3
+building '/nix/store/89qkx3skyqkl57rxvwy6jm81bjlbvamb-r-pkgdepends-0.8.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nrasy00hfqsvxy0mvvyrz02abi0gihxr-pkgdepends_0.8.0.tar.gz
+source root is pkgdepends
+setting SOURCE_DATE_EPOCH to timestamp 1726162818 of file pkgdepends/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#! /usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pkgdepends’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+*** Running ./configure
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pkgdepends)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pkgdepends-0.8.0.drv-0/ in /nix/store/dyp8vmzp4wgnnfdjfqanwdnbqa0m23m9-r-pkgdepends-0.8.0...
+patching script interpreter paths in /nix/store/dyp8vmzp4wgnnfdjfqanwdnbqa0m23m9-r-pkgdepends-0.8.0
+rewriting symlink /nix/store/dyp8vmzp4wgnnfdjfqanwdnbqa0m23m9-r-pkgdepends-0.8.0/nix-support/propagated-user-env-packages to be relative to /nix/store/dyp8vmzp4wgnnfdjfqanwdnbqa0m23m9-r-pkgdepends-0.8.0
+building '/nix/store/yg5mpsgr4zdixq96w6ir6kzmyh8y6a8r-r-checkpoint-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/cjshb7x9fdl6gcy3kc1jpnbymzkz37j7-checkpoint_1.0.2.tar.gz
+source root is checkpoint
+setting SOURCE_DATE_EPOCH to timestamp 1643397009 of file checkpoint/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘checkpoint’ ...
+** package ‘checkpoint’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (checkpoint)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-checkpoint-1.0.2.drv-0/ in /nix/store/fd76d35ggqi0i5n8763izdk34xmrcm28-r-checkpoint-1.0.2...
+patching script interpreter paths in /nix/store/fd76d35ggqi0i5n8763izdk34xmrcm28-r-checkpoint-1.0.2
+rewriting symlink /nix/store/fd76d35ggqi0i5n8763izdk34xmrcm28-r-checkpoint-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/fd76d35ggqi0i5n8763izdk34xmrcm28-r-checkpoint-1.0.2

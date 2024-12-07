@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/pi30sjsqxgnfzzh3994miz0h61h1w0vb-r-IOHanalyzer-0.1.8.10.drv
+this path will be fetched (1.44 MiB download, 1.44 MiB unpacked):
+  /nix/store/msl2g7b34bgah9kgysv1ndsah58dfvyg-IOHanalyzer_0.1.8.10.tar.gz
+copying path '/nix/store/msl2g7b34bgah9kgysv1ndsah58dfvyg-IOHanalyzer_0.1.8.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pi30sjsqxgnfzzh3994miz0h61h1w0vb-r-IOHanalyzer-0.1.8.10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/msl2g7b34bgah9kgysv1ndsah58dfvyg-IOHanalyzer_0.1.8.10.tar.gz
+source root is IOHanalyzer
+setting SOURCE_DATE_EPOCH to timestamp 1709297557 of file IOHanalyzer/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IOHanalyzer’ ...
+** package ‘IOHanalyzer’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c align.cc -o align.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c read.cc -o read.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IOHanalyzer.so RcppExports.o align.o read.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/gqk9rx67x6h7xw7sl5axkkmdybgk3hb0-r-IOHanalyzer-0.1.8.10/library/00LOCK-IOHanalyzer/00new/IOHanalyzer/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IOHanalyzer)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IOHanalyzer-0.1.8.10.drv-0/ in /nix/store/gqk9rx67x6h7xw7sl5axkkmdybgk3hb0-r-IOHanalyzer-0.1.8.10...
+patching script interpreter paths in /nix/store/gqk9rx67x6h7xw7sl5axkkmdybgk3hb0-r-IOHanalyzer-0.1.8.10
+rewriting symlink /nix/store/gqk9rx67x6h7xw7sl5axkkmdybgk3hb0-r-IOHanalyzer-0.1.8.10/nix-support/propagated-user-env-packages to be relative to /nix/store/gqk9rx67x6h7xw7sl5axkkmdybgk3hb0-r-IOHanalyzer-0.1.8.10

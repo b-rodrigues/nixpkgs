@@ -1,0 +1,109 @@
+these 8 derivations will be built:
+  /nix/store/6bs4nh75f52bam334sm45ww6b28fpih0-r-affyio-1.40.0.drv
+  /nix/store/araxngdsqvha9v3sgqcd6sds9gyqs112-r-preprocessCore-1.32.0.drv
+  /nix/store/lxzpsk5ccj737303m1mbqkz0861f0wim-r-BiocInstaller-1.20.3.drv
+  /nix/store/9r6g7mhxjx8xwhirkdfngpi1pay2x1x3-r-affy-1.48.0.drv
+  /nix/store/rxaznmz9ci2dndirzklrfm4f3hfxz119-lfproQC_1.4.0.tar.gz.drv
+  /nix/store/ypa4hx878my4q03gx9fikrj5sqpadlci-vsn_3.38.0.tar.gz.drv
+  /nix/store/y4xb8qm15pvxzxi3xm5kljknp0mqhsn4-r-vsn-3.38.0.drv
+  /nix/store/mgx8xy17qisj2drfr5c4d6lp9k5ccxqq-r-lfproQC-1.4.0.drv
+building '/nix/store/rxaznmz9ci2dndirzklrfm4f3hfxz119-lfproQC_1.4.0.tar.gz.drv'...
+building '/nix/store/ypa4hx878my4q03gx9fikrj5sqpadlci-vsn_3.38.0.tar.gz.drv'...
+building '/nix/store/lxzpsk5ccj737303m1mbqkz0861f0wim-r-BiocInstaller-1.20.3.drv'...
+building '/nix/store/6bs4nh75f52bam334sm45ww6b28fpih0-r-affyio-1.40.0.drv'...
+building '/nix/store/araxngdsqvha9v3sgqcd6sds9gyqs112-r-preprocessCore-1.32.0.drv'...
+
+trying https://cran.r-project.org/src/contrib/lfproQC_1.4.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1583k  100 1583k    0     0  4877k      0 --:--:-- --:--:-- --:--:-- 4871k
+
+trying https://bioconductor.statistik.tu-dortmund.de/packages/3.2/bioc/src/contrib/vsn_3.38.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1344k  100 1344k    0     0  3832k      0 --:--:-- --:--:-- --:--:-- 3829k
+Running phase: unpackPhase
+unpacking source archive /nix/store/r05jnacs6a07kx1qgfcz1v6fc9lc9lna-BiocInstaller_1.20.3.tar.gz
+source root is BiocInstaller
+setting SOURCE_DATE_EPOCH to timestamp 1462997595 of file BiocInstaller/DESCRIPTION
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/s5ck3n0c1rw9lhvmzvaqz5iiyizbrs9d-affyio_1.40.0.tar.gz
+source root is affyio
+setting SOURCE_DATE_EPOCH to timestamp 1444782745 of file affyio/src/read_pgf.c
+Running phase: patchPhase
+* installing *source* package ‘BiocInstaller’ ...
+** using staged installation
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/jqrfixmmp7rkj19wvwn0d7msrlnp5l7s-preprocessCore_1.32.0.tar.gz
+source root is preprocessCore
+setting SOURCE_DATE_EPOCH to timestamp 1444782747 of file preprocessCore/src/weightedkerneldensity.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘affyio’ ...
+** using staged installation
+* installing *source* package ‘preprocessCore’ ...
+** using staged installation
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Avis dans read.dcf(conn) :
+  URL 'https://bioconductor.org/BiocInstaller.dcf': statut 'SSL connect error'
+Bioconductor version 3.2 (BiocInstaller 1.20.3), ?biocLite for help
+Error: le chargement du package ou de l'espace de noms a échoué pour ‘BiocInstaller’ :
+.onAttach a échoué dans attachNamespace() pour 'BiocInstaller', détails :
+  appel : if (IS_END_OF_LIFE) {
+  erreur : l'argument est de longueur nulle
+Erreur : le chargement a échoué
+Exécution arrêtée
+ERROR: loading failed
+* removing ‘/nix/store/8mj6p2laa1h15j32p95v3skcxfrl88f1-r-BiocInstaller-1.20.3/library/BiocInstaller’
+error: builder for '/nix/store/lxzpsk5ccj737303m1mbqkz0861f0wim-r-BiocInstaller-1.20.3.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘BiocInstaller’ ...
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > ** help
+       > *** installing help indices
+       > ** building package indices
+       > ** testing if installed package can be loaded from temporary location
+       > Avis dans read.dcf(conn) :
+       >   URL 'https://bioconductor.org/BiocInstaller.dcf': statut 'SSL connect error'
+       > Bioconductor version 3.2 (BiocInstaller 1.20.3), ?biocLite for help
+       > Error: le chargement du package ou de l'espace de noms a échoué pour ‘BiocInstaller’ :
+       > .onAttach a échoué dans attachNamespace() pour 'BiocInstaller', détails :
+       >   appel : if (IS_END_OF_LIFE) {
+       >   erreur : l'argument est de longueur nulle
+       > Erreur : le chargement a échoué
+       > Exécution arrêtée
+       > ERROR: loading failed
+       > * removing ‘/nix/store/8mj6p2laa1h15j32p95v3skcxfrl88f1-r-BiocInstaller-1.20.3/library/BiocInstaller’
+       For full logs, run 'nix log /nix/store/lxzpsk5ccj737303m1mbqkz0861f0wim-r-BiocInstaller-1.20.3.drv'.
+error: 1 dependencies of derivation '/nix/store/9r6g7mhxjx8xwhirkdfngpi1pay2x1x3-r-affy-1.48.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/y4xb8qm15pvxzxi3xm5kljknp0mqhsn4-r-vsn-3.38.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/mgx8xy17qisj2drfr5c4d6lp9k5ccxqq-r-lfproQC-1.4.0.drv' failed to build

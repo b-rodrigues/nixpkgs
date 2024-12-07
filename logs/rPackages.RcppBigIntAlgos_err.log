@@ -1,0 +1,57 @@
+this derivation will be built:
+  /nix/store/cdk00gmv598543p00kdj3s0ahz6n75wl-r-RcppBigIntAlgos-1.1.0.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/ij2yb815shdhwj0lyy3jxxb7l05yq5v5-RcppBigIntAlgos_1.1.0.tar.gz
+copying path '/nix/store/ij2yb815shdhwj0lyy3jxxb7l05yq5v5-RcppBigIntAlgos_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cdk00gmv598543p00kdj3s0ahz6n75wl-r-RcppBigIntAlgos-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ij2yb815shdhwj0lyy3jxxb7l05yq5v5-RcppBigIntAlgos_1.1.0.tar.gz
+source root is RcppBigIntAlgos
+setting SOURCE_DATE_EPOCH to timestamp 1692189277 of file RcppBigIntAlgos/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RcppBigIntAlgos’ ...
+** package ‘RcppBigIntAlgos’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ConvertUtils.cpp -o ConvertUtils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Divisors.cpp -o Divisors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c DivisorsUtils.cpp -o DivisorsUtils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c GmpConvert.cpp -o GmpConvert.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c LenstraECM.cpp -o LenstraECM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MultiPoly.cpp -o MultiPoly.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c NumThreads.cpp -o NumThreads.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PollardRho.cpp -o PollardRho.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Polynomial.cpp -o Polynomial.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PrimeFactorUtils.cpp -o PrimeFactorUtils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PrimeFactorization.cpp -o PrimeFactorization.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c QuadraticSieve.cpp -o QuadraticSieve.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ReduceMatrix.cpp -o ReduceMatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c SieveUtils.cpp -o SieveUtils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c SolutionSearch.cpp -o SolutionSearch.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c StdConvert.cpp -o StdConvert.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c TonelliShanks.cpp -o TonelliShanks.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpp11.cpp -o cpp11.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppBigIntAlgos.so ConvertUtils.o Divisors.o DivisorsUtils.o GmpConvert.o LenstraECM.o MultiPoly.o NumThreads.o PollardRho.o Polynomial.o PrimeFactorUtils.o PrimeFactorization.o QuadraticSieve.o ReduceMatrix.o SieveUtils.o SolutionSearch.o StdConvert.o TonelliShanks.o cpp11.o -lgmp -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/hiqzlxg52gzci2f7w0xmcwr3k94g929f-r-RcppBigIntAlgos-1.1.0/library/00LOCK-RcppBigIntAlgos/00new/RcppBigIntAlgos/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppBigIntAlgos)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppBigIntAlgos-1.1.0.drv-0/ in /nix/store/hiqzlxg52gzci2f7w0xmcwr3k94g929f-r-RcppBigIntAlgos-1.1.0...
+patching script interpreter paths in /nix/store/hiqzlxg52gzci2f7w0xmcwr3k94g929f-r-RcppBigIntAlgos-1.1.0
+rewriting symlink /nix/store/hiqzlxg52gzci2f7w0xmcwr3k94g929f-r-RcppBigIntAlgos-1.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/hiqzlxg52gzci2f7w0xmcwr3k94g929f-r-RcppBigIntAlgos-1.1.0

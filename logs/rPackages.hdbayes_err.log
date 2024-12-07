@@ -1,0 +1,90 @@
+these 4 derivations will be built:
+  /nix/store/yi5k236h7dslw9s646xyj0slwf717lnp-instantiate_0.2.3.tar.gz.drv
+  /nix/store/70j224g4h3g671d3wpv8imkyahhll5yi-r-instantiate-0.2.3.drv
+  /nix/store/by6yaa4b2m3jhj449p5qma2mf0y5y7ci-hdbayes_0.1.1.tar.gz.drv
+  /nix/store/aydyhaz8yw4j4x9x8x0q5y0q6l6plzvx-r-hdbayes-0.1.1.drv
+building '/nix/store/by6yaa4b2m3jhj449p5qma2mf0y5y7ci-hdbayes_0.1.1.tar.gz.drv'...
+building '/nix/store/yi5k236h7dslw9s646xyj0slwf717lnp-instantiate_0.2.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/hdbayes_0.1.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/instantiate_0.2.3.tar.gz
+100  274k  100  274k    0     0  1400k      0 --:--:-- --:--:-- --:--:-- 1400k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 20812  100 20812    0     0   192k      0 --:--:-- --:--:-- --:--:--  193k
+building '/nix/store/70j224g4h3g671d3wpv8imkyahhll5yi-r-instantiate-0.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xbzaygjd32fw497d0vpd0xcqpbi1ac9l-instantiate_0.2.3.tar.gz
+source root is instantiate
+setting SOURCE_DATE_EPOCH to timestamp 1727893206 of file instantiate/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘instantiate’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DCMDSTAN='""' -DCMDSTAN_INSTALL='""' -fPIC  -g -O2  -c cmdstan.c -o cmdstan.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o instantiate.so cmdstan.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing via 'install.libs.R' to /nix/store/y435fkylf4qy94d85h5czx0qcx3lwql7-r-instantiate-0.2.3/library/00LOCK-instantiate/00new/instantiate
+Implicit installation: {instantiate} will use cmdstanr::cmdstan_path() to find CmdStan when the CMDSTAN_INSTALL environment variable is unset.
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (instantiate)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-instantiate-0.2.3.drv-0/ in /nix/store/y435fkylf4qy94d85h5czx0qcx3lwql7-r-instantiate-0.2.3...
+patching script interpreter paths in /nix/store/y435fkylf4qy94d85h5czx0qcx3lwql7-r-instantiate-0.2.3
+/nix/store/y435fkylf4qy94d85h5czx0qcx3lwql7-r-instantiate-0.2.3/library/instantiate/configuration/cleanup.win: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/y435fkylf4qy94d85h5czx0qcx3lwql7-r-instantiate-0.2.3/library/instantiate/configuration/cleanup: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+rewriting symlink /nix/store/y435fkylf4qy94d85h5czx0qcx3lwql7-r-instantiate-0.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/y435fkylf4qy94d85h5czx0qcx3lwql7-r-instantiate-0.2.3
+building '/nix/store/aydyhaz8yw4j4x9x8x0q5y0q6l6plzvx-r-hdbayes-0.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rkqk9nipisnjxz41k94laxhiz3a0f6yr-hdbayes_0.1.1.tar.gz
+source root is hdbayes
+setting SOURCE_DATE_EPOCH to timestamp 1724370602 of file hdbayes/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hdbayes’ ...
+** package ‘hdbayes’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+installing via 'install.libs.R' to /nix/store/hnwrimvvfknjl05bg9iwnkvswwms59pl-r-hdbayes-0.1.1/library/00LOCK-hdbayes/00new/hdbayes
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hdbayes)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hdbayes-0.1.1.drv-0/ in /nix/store/hnwrimvvfknjl05bg9iwnkvswwms59pl-r-hdbayes-0.1.1...
+patching script interpreter paths in /nix/store/hnwrimvvfknjl05bg9iwnkvswwms59pl-r-hdbayes-0.1.1
+rewriting symlink /nix/store/hnwrimvvfknjl05bg9iwnkvswwms59pl-r-hdbayes-0.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/hnwrimvvfknjl05bg9iwnkvswwms59pl-r-hdbayes-0.1.1

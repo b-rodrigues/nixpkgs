@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/mig6x62acwljpgm0zzcrxv2a4kcblhx8-r-ypssc-1.1.0.drv
+this path will be fetched (1.24 MiB download, 1.24 MiB unpacked):
+  /nix/store/iwjg1kyydwn6ds6vhqhsl5rs5ay1y0mm-ypssc_1.1.0.tar.gz
+copying path '/nix/store/iwjg1kyydwn6ds6vhqhsl5rs5ay1y0mm-ypssc_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mig6x62acwljpgm0zzcrxv2a4kcblhx8-r-ypssc-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/iwjg1kyydwn6ds6vhqhsl5rs5ay1y0mm-ypssc_1.1.0.tar.gz
+source root is ypssc
+setting SOURCE_DATE_EPOCH to timestamp 1638051003 of file ypssc/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ypssc’ ...
+** package ‘ypssc’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 72097 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-ypssc-1.1.0.drv-0/RtmpdnPnIO/file118c633229d94'
+ERROR: lazy loading failed for package ‘ypssc’
+* removing ‘/nix/store/3ikdhycrgg3apqvwy6i56904x0s613rh-r-ypssc-1.1.0/library/ypssc’
+error: builder for '/nix/store/mig6x62acwljpgm0zzcrxv2a4kcblhx8-r-ypssc-1.1.0.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/iwjg1kyydwn6ds6vhqhsl5rs5ay1y0mm-ypssc_1.1.0.tar.gz
+       > source root is ypssc
+       > setting SOURCE_DATE_EPOCH to timestamp 1638051003 of file ypssc/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘ypssc’ ...
+       > ** package ‘ypssc’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 72097 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-ypssc-1.1.0.drv-0/RtmpdnPnIO/file118c633229d94'
+       > ERROR: lazy loading failed for package ‘ypssc’
+       > * removing ‘/nix/store/3ikdhycrgg3apqvwy6i56904x0s613rh-r-ypssc-1.1.0/library/ypssc’
+       For full logs, run 'nix log /nix/store/mig6x62acwljpgm0zzcrxv2a4kcblhx8-r-ypssc-1.1.0.drv'.

@@ -1,0 +1,81 @@
+these 2 derivations will be built:
+  /nix/store/bicwkwzn586f1dvgpjwvfcl4mvsf9h9x-r-papeR-1.0-5.drv
+  /nix/store/mhnw51k0s8f8f6lgnka3mf9gn9703chj-r-iClick-1.5.drv
+these 2 paths will be fetched (0.98 MiB download, 0.98 MiB unpacked):
+  /nix/store/f8ym0j16azxc13akrfq3y0klviibi1yi-iClick_1.5.tar.gz
+  /nix/store/g8yvzkaic0mwhlaa6s7x22njmxbly857-papeR_1.0-5.tar.gz
+copying path '/nix/store/f8ym0j16azxc13akrfq3y0klviibi1yi-iClick_1.5.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/g8yvzkaic0mwhlaa6s7x22njmxbly857-papeR_1.0-5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bicwkwzn586f1dvgpjwvfcl4mvsf9h9x-r-papeR-1.0-5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g8yvzkaic0mwhlaa6s7x22njmxbly857-papeR_1.0-5.tar.gz
+source root is papeR
+setting SOURCE_DATE_EPOCH to timestamp 1616452211 of file papeR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘papeR’ ...
+** package ‘papeR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (papeR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-papeR-1.0-5.drv-0/ in /nix/store/1zlc1n49ip05fbncl7p9w6b6bqg2zpba-r-papeR-1.0-5...
+patching script interpreter paths in /nix/store/1zlc1n49ip05fbncl7p9w6b6bqg2zpba-r-papeR-1.0-5
+rewriting symlink /nix/store/1zlc1n49ip05fbncl7p9w6b6bqg2zpba-r-papeR-1.0-5/nix-support/propagated-user-env-packages to be relative to /nix/store/1zlc1n49ip05fbncl7p9w6b6bqg2zpba-r-papeR-1.0-5
+building '/nix/store/mhnw51k0s8f8f6lgnka3mf9gn9703chj-r-iClick-1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/f8ym0j16azxc13akrfq3y0klviibi1yi-iClick_1.5.tar.gz
+source root is iClick
+setting SOURCE_DATE_EPOCH to timestamp 1542888018 of file iClick/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘iClick’ ...
+** package ‘iClick’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+sh: line 1: 35309 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-iClick-1.5.drv-0/RtmpXtJUw6/file89e8324668a0'
+ERROR: lazy loading failed for package ‘iClick’
+* removing ‘/nix/store/cv42ssvmzb2yscnzx586al5bgdnm5gyv-r-iClick-1.5/library/iClick’
+error: builder for '/nix/store/mhnw51k0s8f8f6lgnka3mf9gn9703chj-r-iClick-1.5.drv' failed with exit code 1;
+       last 20 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/f8ym0j16azxc13akrfq3y0klviibi1yi-iClick_1.5.tar.gz
+       > source root is iClick
+       > setting SOURCE_DATE_EPOCH to timestamp 1542888018 of file iClick/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘iClick’ ...
+       > ** package ‘iClick’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 35309 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-iClick-1.5.drv-0/RtmpXtJUw6/file89e8324668a0'
+       > ERROR: lazy loading failed for package ‘iClick’
+       > * removing ‘/nix/store/cv42ssvmzb2yscnzx586al5bgdnm5gyv-r-iClick-1.5/library/iClick’
+       For full logs, run 'nix log /nix/store/mhnw51k0s8f8f6lgnka3mf9gn9703chj-r-iClick-1.5.drv'.

@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/scsi91gqg8qk6n4q0x1amqlq87dy0grd-r-imcExperiment-0.99.0.drv
+this path will be fetched (1.90 MiB download, 1.90 MiB unpacked):
+  /nix/store/5wla78yfq8r66nr9nfd7qrig10drb6am-imcExperiment_0.99.0.tar.gz
+copying path '/nix/store/5wla78yfq8r66nr9nfd7qrig10drb6am-imcExperiment_0.99.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/scsi91gqg8qk6n4q0x1amqlq87dy0grd-r-imcExperiment-0.99.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5wla78yfq8r66nr9nfd7qrig10drb6am-imcExperiment_0.99.0.tar.gz
+source root is imcExperiment
+setting SOURCE_DATE_EPOCH to timestamp 1629364802 of file imcExperiment/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘SingleCellExperiment’ is not available for package ‘imcExperiment’
+* removing ‘/nix/store/lx396dm0q904ymnvvp50hijr1n9gqzvg-r-imcExperiment-0.99.0/library/imcExperiment’
+error: builder for '/nix/store/scsi91gqg8qk6n4q0x1amqlq87dy0grd-r-imcExperiment-0.99.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/5wla78yfq8r66nr9nfd7qrig10drb6am-imcExperiment_0.99.0.tar.gz
+       > source root is imcExperiment
+       > setting SOURCE_DATE_EPOCH to timestamp 1629364802 of file imcExperiment/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘SingleCellExperiment’ is not available for package ‘imcExperiment’
+       > * removing ‘/nix/store/lx396dm0q904ymnvvp50hijr1n9gqzvg-r-imcExperiment-0.99.0/library/imcExperiment’
+       For full logs, run 'nix log /nix/store/scsi91gqg8qk6n4q0x1amqlq87dy0grd-r-imcExperiment-0.99.0.drv'.

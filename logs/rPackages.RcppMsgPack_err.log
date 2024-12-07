@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/bqkxblb3pj230wd63n96k2a0njg9x54y-r-RcppMsgPack-0.2.3.drv
+this path will be fetched (0.86 MiB download, 0.93 MiB unpacked):
+  /nix/store/jjrfsbykfvrr37rmccm2vgxsmm70xhzp-RcppMsgPack_0.2.3.tar.gz
+copying path '/nix/store/jjrfsbykfvrr37rmccm2vgxsmm70xhzp-RcppMsgPack_0.2.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bqkxblb3pj230wd63n96k2a0njg9x54y-r-RcppMsgPack-0.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jjrfsbykfvrr37rmccm2vgxsmm70xhzp-RcppMsgPack_0.2.3.tar.gz
+source root is RcppMsgPack
+setting SOURCE_DATE_EPOCH to timestamp 1542575404 of file RcppMsgPack/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RcppMsgPack’ ...
+** package ‘RcppMsgPack’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c example1.cpp -o example1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c example2.cpp -o example2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c rcppmsgpack_c_functions.cpp -o rcppmsgpack_c_functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppMsgPack.so RcppExports.o example1.o example2.o rcppmsgpack_c_functions.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/3xm1l0r5alibkfkxj1xxnhw9m3rvxmy2-r-RcppMsgPack-0.2.3/library/00LOCK-RcppMsgPack/00new/RcppMsgPack/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppMsgPack)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppMsgPack-0.2.3.drv-0/ in /nix/store/3xm1l0r5alibkfkxj1xxnhw9m3rvxmy2-r-RcppMsgPack-0.2.3...
+patching script interpreter paths in /nix/store/3xm1l0r5alibkfkxj1xxnhw9m3rvxmy2-r-RcppMsgPack-0.2.3
+rewriting symlink /nix/store/3xm1l0r5alibkfkxj1xxnhw9m3rvxmy2-r-RcppMsgPack-0.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/3xm1l0r5alibkfkxj1xxnhw9m3rvxmy2-r-RcppMsgPack-0.2.3

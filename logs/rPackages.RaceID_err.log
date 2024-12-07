@@ -1,0 +1,56 @@
+these 2 derivations will be built:
+  /nix/store/18bp0m2iz3xjx7n1yma6zallv9l1zj0x-RaceID_0.3.9.tar.gz.drv
+  /nix/store/jqp93gww4akn9aklk6ddy4cicdlkzxsp-r-RaceID-0.3.9.drv
+building '/nix/store/18bp0m2iz3xjx7n1yma6zallv9l1zj0x-RaceID_0.3.9.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/RaceID_0.3.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4842k  100 4842k    0     0  7946k      0 --:--:-- --:--:-- --:--:-- 7939k
+building '/nix/store/jqp93gww4akn9aklk6ddy4cicdlkzxsp-r-RaceID-0.3.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/w20inpa9l21wj4y5r1dxybz2j2brn7sh-RaceID_0.3.9.tar.gz
+source root is RaceID
+setting SOURCE_DATE_EPOCH to timestamp 1732488602 of file RaceID/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RaceID’ ...
+** package ‘RaceID’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c VarID.cpp -o VarID.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_hello_world.cpp -o rcpp_hello_world.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RaceID.so RcppExports.o VarID.o rcpp_hello_world.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pnwq6xi1grs9ck7df99s52wg126l3ap4-r-RaceID-0.3.9/library/00LOCK-RaceID/00new/RaceID/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_harmony” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (RaceID)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RaceID-0.3.9.drv-0/ in /nix/store/pnwq6xi1grs9ck7df99s52wg126l3ap4-r-RaceID-0.3.9...
+patching script interpreter paths in /nix/store/pnwq6xi1grs9ck7df99s52wg126l3ap4-r-RaceID-0.3.9
+rewriting symlink /nix/store/pnwq6xi1grs9ck7df99s52wg126l3ap4-r-RaceID-0.3.9/nix-support/propagated-user-env-packages to be relative to /nix/store/pnwq6xi1grs9ck7df99s52wg126l3ap4-r-RaceID-0.3.9

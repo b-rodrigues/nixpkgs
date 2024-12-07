@@ -1,0 +1,108 @@
+these 4 derivations will be built:
+  /nix/store/730zskbpf08xiyrnsfkn7yqlf18iy1cl-mpmsim_3.1.0.tar.gz.drv
+  /nix/store/i4jmfsqaz78323wylipla4w0hzqzvvbp-r-Rage-1.6.0.drv
+  /nix/store/kxw32q94xv78ypggih75pg1d5ncw6mi5-r-popbio-2.8.drv
+  /nix/store/gjy4jly7692s23gyc74mkkkf2sz0kcaq-r-mpmsim-3.1.0.drv
+these 2 paths will be fetched (1.15 MiB download, 1.15 MiB unpacked):
+  /nix/store/ym3knf57bms3pp18snj6cjhv4qykkbk2-Rage_1.6.0.tar.gz
+  /nix/store/qgx2a2riizcmi9xz44d4s44c9ls957dq-popbio_2.8.tar.gz
+copying path '/nix/store/ym3knf57bms3pp18snj6cjhv4qykkbk2-Rage_1.6.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qgx2a2riizcmi9xz44d4s44c9ls957dq-popbio_2.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/730zskbpf08xiyrnsfkn7yqlf18iy1cl-mpmsim_3.1.0.tar.gz.drv'...
+building '/nix/store/kxw32q94xv78ypggih75pg1d5ncw6mi5-r-popbio-2.8.drv'...
+
+trying https://cran.r-project.org/src/contrib/mpmsim_3.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+building '/nix/store/i4jmfsqaz78323wylipla4w0hzqzvvbp-r-Rage-1.6.0.drv'...
+100  382k  100  382k    0     0  1763k      0 --:--:-- --:--:-- --:--:-- 1764k
+Running phase: unpackPhase
+unpacking source archive /nix/store/qgx2a2riizcmi9xz44d4s44c9ls957dq-popbio_2.8.tar.gz
+source root is popbio
+setting SOURCE_DATE_EPOCH to timestamp 1711668602 of file popbio/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘popbio’ ...
+** package ‘popbio’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/ym3knf57bms3pp18snj6cjhv4qykkbk2-Rage_1.6.0.tar.gz
+source root is Rage
+setting SOURCE_DATE_EPOCH to timestamp 1696010559 of file Rage/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rage’ ...
+** package ‘Rage’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (popbio)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-popbio-2.8.drv-0/ in /nix/store/makdgywz8f3vg3znbnqf4km84z18ylmm-r-popbio-2.8...
+patching script interpreter paths in /nix/store/makdgywz8f3vg3znbnqf4km84z18ylmm-r-popbio-2.8
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rage)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rage-1.6.0.drv-0/ in /nix/store/8jjimka16q5dzh81g0anfmndkkc2xm8w-r-Rage-1.6.0...
+patching script interpreter paths in /nix/store/8jjimka16q5dzh81g0anfmndkkc2xm8w-r-Rage-1.6.0
+rewriting symlink /nix/store/8jjimka16q5dzh81g0anfmndkkc2xm8w-r-Rage-1.6.0/nix-support/propagated-user-env-packages to be relative to /nix/store/8jjimka16q5dzh81g0anfmndkkc2xm8w-r-Rage-1.6.0
+building '/nix/store/gjy4jly7692s23gyc74mkkkf2sz0kcaq-r-mpmsim-3.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8aac5qdsfzf46s0nrcnv4fshr502hn32-mpmsim_3.1.0.tar.gz
+source root is mpmsim
+setting SOURCE_DATE_EPOCH to timestamp 1728768002 of file mpmsim/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mpmsim’ ...
+** package ‘mpmsim’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mpmsim)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mpmsim-3.1.0.drv-0/ in /nix/store/v92zkyrg5v9fam9hn4mx7i1spnmwyjz6-r-mpmsim-3.1.0...
+patching script interpreter paths in /nix/store/v92zkyrg5v9fam9hn4mx7i1spnmwyjz6-r-mpmsim-3.1.0
+rewriting symlink /nix/store/v92zkyrg5v9fam9hn4mx7i1spnmwyjz6-r-mpmsim-3.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/v92zkyrg5v9fam9hn4mx7i1spnmwyjz6-r-mpmsim-3.1.0

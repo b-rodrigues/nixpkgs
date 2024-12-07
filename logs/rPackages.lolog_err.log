@@ -1,0 +1,143 @@
+this derivation will be built:
+  /nix/store/igi1mjlqq65g50m8v11vv6m3c628q8k3-r-lolog-1.3.1.drv
+this path will be fetched (0.82 MiB download, 0.82 MiB unpacked):
+  /nix/store/z3wa6rsz7d81m2gfwmgnawxk8f86n8if-lolog_1.3.1.tar.gz
+copying path '/nix/store/z3wa6rsz7d81m2gfwmgnawxk8f86n8if-lolog_1.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/igi1mjlqq65g50m8v11vv6m3c628q8k3-r-lolog-1.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z3wa6rsz7d81m2gfwmgnawxk8f86n8if-lolog_1.3.1.tar.gz
+source root is lolog
+setting SOURCE_DATE_EPOCH to timestamp 1701952802 of file lolog/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lolog’ ...
+** package ‘lolog’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppModule.cpp -o RcppModule.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c StatController.cpp -o StatController.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c main.cpp -o main.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test_BinaryNet.cpp -o test_BinaryNet.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test_Constraints.cpp -o test_Constraints.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test_LatentOrderLikelhood.cpp -o test_LatentOrderLikelhood.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test_ParamParser.cpp -o test_ParamParser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c test_Stats.cpp -o test_Stats.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tests.cpp -o tests.o
+In file included from RcppModule.cpp:6:
+In file included from ../inst/include/LatentOrderLikelihood.h:4:
+In file included from ../inst/include/Model.h:6:
+../inst/include/StatController.h:58:18: warning: instantiation of variable 'lolog::StatController<lolog::Undirected>::statMapPtr' required here, but no definition is available [-Wundefined-var-template]
+            pS = statMapPtr->at(name);
+                 ^
+../inst/include/Model.h:371:60: note: in instantiation of member function 'lolog::StatController<lolog::Undirected>::getStat' requested here
+        AbstractStat<Engine>* ps = StatController<Engine>::getStat(name, params);
+                                                           ^
+RcppModule.cpp:81:48: note: in instantiation of member function 'lolog::Model<lolog::Undirected>::addStatistic' requested here
+    .method("addStatistic",&Model<Undirected>::addStatistic)
+                                               ^
+../inst/include/StatController.h:35:23: note: forward declaration of template entity is here
+    static StatMapPtr statMapPtr;
+                      ^
+../inst/include/StatController.h:58:18: note: add an explicit instantiation declaration to suppress this warning if 'lolog::StatController<lolog::Undirected>::statMapPtr' is explicitly instantiated in another translation unit
+            pS = statMapPtr->at(name);
+                 ^
+../inst/include/StatController.h:74:18: warning: instantiation of variable 'lolog::StatController<lolog::Undirected>::offsetMapPtr' required here, but no definition is available [-Wundefined-var-template]
+            pS = offsetMapPtr->at(name);
+                 ^
+../inst/include/Model.h:384:62: note: in instantiation of member function 'lolog::StatController<lolog::Undirected>::getOffset' requested here
+        AbstractOffset<Engine>* ps = StatController<Engine>::getOffset(name, params);
+                                                             ^
+RcppModule.cpp:82:45: note: in instantiation of member function 'lolog::Model<lolog::Undirected>::addOffset' requested here
+    .method("addOffset",&Model<Undirected>::addOffset)
+                                            ^
+../inst/include/StatController.h:36:25: note: forward declaration of template entity is here
+    static OffsetMapPtr offsetMapPtr;
+                        ^
+../inst/include/StatController.h:74:18: note: add an explicit instantiation declaration to suppress this warning if 'lolog::StatController<lolog::Undirected>::offsetMapPtr' is explicitly instantiated in another translation unit
+            pS = offsetMapPtr->at(name);
+                 ^
+../inst/include/StatController.h:58:18: warning: instantiation of variable 'lolog::StatController<lolog::Directed>::statMapPtr' required here, but no definition is available [-Wundefined-var-template]
+            pS = statMapPtr->at(name);
+                 ^
+../inst/include/Model.h:371:60: note: in instantiation of member function 'lolog::StatController<lolog::Directed>::getStat' requested here
+        AbstractStat<Engine>* ps = StatController<Engine>::getStat(name, params);
+                                                           ^
+RcppModule.cpp:98:46: note: in instantiation of member function 'lolog::Model<lolog::Directed>::addStatistic' requested here
+    .method("addStatistic",&Model<Directed>::addStatistic)
+                                             ^
+../inst/include/StatController.h:35:23: note: forward declaration of template entity is here
+    static StatMapPtr statMapPtr;
+                      ^
+../inst/include/StatController.h:58:18: note: add an explicit instantiation declaration to suppress this warning if 'lolog::StatController<lolog::Directed>::statMapPtr' is explicitly instantiated in another translation unit
+            pS = statMapPtr->at(name);
+                 ^
+../inst/include/StatController.h:74:18: warning: instantiation of variable 'lolog::StatController<lolog::Directed>::offsetMapPtr' required here, but no definition is available [-Wundefined-var-template]
+            pS = offsetMapPtr->at(name);
+                 ^
+../inst/include/Model.h:384:62: note: in instantiation of member function 'lolog::StatController<lolog::Directed>::getOffset' requested here
+        AbstractOffset<Engine>* ps = StatController<Engine>::getOffset(name, params);
+                                                             ^
+RcppModule.cpp:99:43: note: in instantiation of member function 'lolog::Model<lolog::Directed>::addOffset' requested here
+    .method("addOffset",&Model<Directed>::addOffset)
+                                          ^
+../inst/include/StatController.h:36:25: note: forward declaration of template entity is here
+    static OffsetMapPtr offsetMapPtr;
+                        ^
+../inst/include/StatController.h:74:18: note: add an explicit instantiation declaration to suppress this warning if 'lolog::StatController<lolog::Directed>::offsetMapPtr' is explicitly instantiated in another translation unit
+            pS = offsetMapPtr->at(name);
+                 ^
+4 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o lolog.so RcppExports.o RcppModule.o StatController.o main.o test_BinaryNet.o test_Constraints.o test_LatentOrderLikelhood.o test_ParamParser.o test_Stats.o tests.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/c3fb14cpi8854cp14m210qnp8a5xvibl-r-lolog-1.3.1/library/00LOCK-lolog/00new/lolog/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+dans la méthode pour ‘[’ avec la signature ‘"Rcpp_DirectedNet"’ : aucune définition de la classe “Rcpp_DirectedNet” n'est trouvée
+dans la méthode pour ‘[’ avec la signature ‘"Rcpp_UndirectedNet"’ : aucune définition de la classe “Rcpp_UndirectedNet” n'est trouvée
+dans la méthode pour ‘[<-’ avec la signature ‘"Rcpp_DirectedNet"’ : aucune définition de la classe “Rcpp_DirectedNet” n'est trouvée
+dans la méthode pour ‘[<-’ avec la signature ‘"Rcpp_UndirectedNet"’ : aucune définition de la classe “Rcpp_UndirectedNet” n'est trouvée
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_DirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_DirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_DirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedLatentOrderLikelihood” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_UndirectedNet” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (lolog)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lolog-1.3.1.drv-0/ in /nix/store/c3fb14cpi8854cp14m210qnp8a5xvibl-r-lolog-1.3.1...
+patching script interpreter paths in /nix/store/c3fb14cpi8854cp14m210qnp8a5xvibl-r-lolog-1.3.1
+rewriting symlink /nix/store/c3fb14cpi8854cp14m210qnp8a5xvibl-r-lolog-1.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/c3fb14cpi8854cp14m210qnp8a5xvibl-r-lolog-1.3.1

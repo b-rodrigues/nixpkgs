@@ -1,0 +1,147 @@
+this derivation will be built:
+  /nix/store/k9fbj2d1p4i5q759gry4wgfw8sqd2kkx-r-tgcd-2.7.drv
+this path will be fetched (0.16 MiB download, 0.16 MiB unpacked):
+  /nix/store/97jw8fcjwclrqk52x87r2cdn7905wk4z-tgcd_2.7.tar.gz
+copying path '/nix/store/97jw8fcjwclrqk52x87r2cdn7905wk4z-tgcd_2.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/k9fbj2d1p4i5q759gry4wgfw8sqd2kkx-r-tgcd-2.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/97jw8fcjwclrqk52x87r2cdn7905wk4z-tgcd_2.7.tar.gz
+source root is tgcd
+setting SOURCE_DATE_EPOCH to timestamp 1694182802 of file tgcd/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tgcd’ ...
+** package ‘tgcd’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  bisect.f90 -o bisect.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcAm.f90 -o calcAm.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcFct.f90 -o calcFct.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcLv.f90 -o calcLv.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_frt1.f90 -o calcMaty_frt1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_frt2.f90 -o calcMaty_frt2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_frt3.f90 -o calcMaty_frt3.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_gnr1.f90 -o calcMaty_gnr1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_gnr2.f90 -o calcMaty_gnr2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_gnr3.f90 -o calcMaty_gnr3.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_lw.f90 -o calcMaty_lw.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_lw1.f90 -o calcMaty_lw1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_mix1.f90 -o calcMaty_mix1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_mix2.f90 -o calcMaty_mix2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_mix3.f90 -o calcMaty_mix3.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_pdf1.f90 -o calcMaty_pdf1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcMaty_pdf2.f90 -o calcMaty_pdf2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcShape.f90 -o calcShape.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calcei.f90 -o calcei.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  comb_next.f90 -o comb_next.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  hpSort.f90 -o hpSort.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  lambertW.f90 -o lambertW.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  lmtl_all.f90 -o lmtl_all.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lsoda.f -o lsoda.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  lubksb.f90 -o lubksb.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ludcmp.f90 -o ludcmp.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  minpack.f90 -o minpack.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  qeOTOR.f90 -o qeOTOR.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  r8vec_uniform_01.f90 -o r8vec_uniform_01.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  savgol.f90 -o savgol.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  savgol_filter.f90 -o savgol_filter.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  simPeak.f90 -o simPeak.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcd_drive.f90 -o tgcd_drive.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcd_frt.f90 -o tgcd_frt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tgcd_init.c -o tgcd_init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcd_nonfrt.f90 -o tgcd_nonfrt.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_frt1.f90 -o tgcfunc_frt1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_frt2.f90 -o tgcfunc_frt2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_frt3.f90 -o tgcfunc_frt3.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_gnr1.f90 -o tgcfunc_gnr1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_gnr2.f90 -o tgcfunc_gnr2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_gnr3.f90 -o tgcfunc_gnr3.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_lw.f90 -o tgcfunc_lw.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_lw1.f90 -o tgcfunc_lw1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_mix1.f90 -o tgcfunc_mix1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_mix2.f90 -o tgcfunc_mix2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_mix3.f90 -o tgcfunc_mix3.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_pdf1.f90 -o tgcfunc_pdf1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tgcfunc_pdf2.f90 -o tgcfunc_pdf2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  wrightOmega.f90 -o wrightOmega.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tgcd.so bisect.o calcAm.o calcFct.o calcLv.o calcMaty_frt1.o calcMaty_frt2.o calcMaty_frt3.o calcMaty_gnr1.o calcMaty_gnr2.o calcMaty_gnr3.o calcMaty_lw.o calcMaty_lw1.o calcMaty_mix1.o calcMaty_mix2.o calcMaty_mix3.o calcMaty_pdf1.o calcMaty_pdf2.o calcShape.o calcei.o comb_next.o hpSort.o lambertW.o lmtl_all.o lsoda.o lubksb.o ludcmp.o minpack.o qeOTOR.o r8vec_uniform_01.o savgol.o savgol_filter.o simPeak.o tgcd_drive.o tgcd_frt.o tgcd_init.o tgcd_nonfrt.o tgcfunc_frt1.o tgcfunc_frt2.o tgcfunc_frt3.o tgcfunc_gnr1.o tgcfunc_gnr2.o tgcfunc_gnr3.o tgcfunc_lw.o tgcfunc_lw1.o tgcfunc_mix1.o tgcfunc_mix2.o tgcfunc_mix3.o tgcfunc_pdf1.o tgcfunc_pdf2.o wrightOmega.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _calcmaty_frt1_: does not use standard frame
+ld: warning: could not create compact unwind for _calcam_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_frt3_: does not use standard frame
+ld: warning: could not create compact unwind for _calclv_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_gnr2_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_gnr3_: does not use standard frame
+ld: warning: ld: warning: ld: warning: could not create compact unwind for _calcmaty_mix1_: does not use standard frame
+could not create compact unwind for _bisect_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_lw1_: does not use standard framecould not create compact unwind for _calcmaty_mix3_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_pdf1_: does not use standard frame
+
+ld: warning: could not create compact unwind for _calcmaty_mix2_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_gnr1_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_pdf2_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _calcmaty_lw_: does not use standard frame
+ld: warning: could not create compact unwind for _calcei_: does not use standard frame
+could not create compact unwind for _wapr_: does not use standard frame
+ld: warning: could not create compact unwind for _lambertw_: does not use standard frame
+ld: warning: could not create compact unwind for _lmtl_all_: does not use standard frame
+ld: warning: could not create compact unwind for _qeotor_: does not use standard frame
+ld: warning: could not create compact unwind for _qrsolv_: does not use standard frame
+ld: warning: could not create compact unwind for _lmpar_: does not use standard frame
+ld: warning: could not create compact unwind for _qrfac_: does not use standard frame
+ld: warning: could not create compact unwind for _lmdif_: does not use standard frame
+ld: warning: could not create compact unwind for _lmdif1_: does not use standard frame
+ld: warning: could not create compact unwind for _savgol_filter_: does not use standard frame
+ld: warning: could not create compact unwind for _calcmaty_frt2_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcd_frt_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcd_nonfrt_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcfunc_frt1_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcfunc_frt3_: does not use standard frame
+ld: warning: could not create compact unwind for _savgol_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcfunc_gnr1_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcfunc_gnr2_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcfunc_gnr3_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcfunc_lw1_: does not use standard frame
+ld: warning: could not create compact unwind for _tgcfunc_mix2_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbfa_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _tgcfunc_pdf1_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _simpeak_: does not use standard frame
+could not create compact unwind for _tgcfunc_mix1_: does not use standard frame
+ld: warning: could not create compact unwind for _dgefa_: does not use standard frame
+ld: warning: could not create compact unwind for _dprja_: does not use standard frame
+could not create compact unwind for _tgcfunc_lw_: does not use standard frameld: warning: could not create compact unwind for _tgcfunc_mix3_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbsl_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _dgesl_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _tgcfunc_frt2_: does not use standard framecould not create compact unwind for _wrightomega_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+could not create compact unwind for _tgcfunc_pdf2_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+
+
+ld: warning: could not create compact unwind for _dintdy_: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _dstoda_: does not use standard frame
+ld: warning: could not create compact unwind for _dlsoda_: does not use standard frame
+installing to /nix/store/b4w9n71cqhwaci353dzihninsdp757bz-r-tgcd-2.7/library/00LOCK-tgcd/00new/tgcd/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tgcd)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tgcd-2.7.drv-0/ in /nix/store/b4w9n71cqhwaci353dzihninsdp757bz-r-tgcd-2.7...
+patching script interpreter paths in /nix/store/b4w9n71cqhwaci353dzihninsdp757bz-r-tgcd-2.7

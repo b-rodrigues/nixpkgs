@@ -1,0 +1,71 @@
+these 2 derivations will be built:
+  /nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv
+  /nix/store/0hrahmspggh06imhcqdqydx2lm00i4l2-r-karyotapR-1.0.1.drv
+this path will be fetched (1.10 MiB download, 1.10 MiB unpacked):
+  /nix/store/gyj0ki94bjxbrj15290lfghqvs0qa6ak-karyotapR_1.0.1.tar.gz
+copying path '/nix/store/gyj0ki94bjxbrj15290lfghqvs0qa6ak-karyotapR_1.0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zhpl373812hlf104rz84nxy6bkvjs7qj-rhdf5_2.14.0.tar.gz
+source root is rhdf5
+setting SOURCE_DATE_EPOCH to timestamp 1444789283 of file rhdf5/src/wrap.c
+Running phase: patchPhase
+applying patch /nix/store/mcjq45n91sgxw8asl2lvdjfmf4lrc5ff-rhdf5.patch
+patching file src/Makevars
+Hunk #1 FAILED at 1.
+1 out of 1 hunk FAILED -- saving rejects to file src/Makevars.rej
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/src/h5testLock.c b/src/h5testLock.c
+|index b326444..5d58b4a 100644
+|--- a/src/h5testLock.c
+|+++ b/src/h5testLock.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 41
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/src/h5testLock.h b/src/h5testLock.h
+|index 2c1c5e4..25914ff 100644
+|--- a/src/h5testLock.h
+|+++ b/src/h5testLock.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+error: builder for '/nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > Perhaps you used the wrong -p or --strip option?
+       > The text leading up to this was:
+       > --------------------------
+       > |diff --git a/src/h5testLock.c b/src/h5testLock.c
+       > |index b326444..5d58b4a 100644
+       > |--- a/src/h5testLock.c
+       > |+++ b/src/h5testLock.c
+       > --------------------------
+       > File to patch:
+       > Skip this patch? [y]
+       > Skipping patch.
+       > 1 out of 1 hunk ignored
+       > can't find file to patch at input line 41
+       > Perhaps you used the wrong -p or --strip option?
+       > The text leading up to this was:
+       > --------------------------
+       > |diff --git a/src/h5testLock.h b/src/h5testLock.h
+       > |index 2c1c5e4..25914ff 100644
+       > |--- a/src/h5testLock.h
+       > |+++ b/src/h5testLock.h
+       > --------------------------
+       > File to patch:
+       > Skip this patch? [y]
+       > Skipping patch.
+       > 1 out of 1 hunk ignored
+       For full logs, run 'nix log /nix/store/41mk66wwq84ljb8halqniqzsf1q24h9a-r-rhdf5-2.14.0.drv'.
+error: 1 dependencies of derivation '/nix/store/0hrahmspggh06imhcqdqydx2lm00i4l2-r-karyotapR-1.0.1.drv' failed to build

@@ -1,0 +1,49 @@
+these 2 derivations will be built:
+  /nix/store/qhjs4znyyfv88vl0axmqbc8h9x6r58ss-iNEXT.3D_1.0.6.tar.gz.drv
+  /nix/store/w7yzn9gbvpxcbyqp9vfbi6dcvlyqmvxb-r-iNEXT.3D-1.0.6.drv
+building '/nix/store/qhjs4znyyfv88vl0axmqbc8h9x6r58ss-iNEXT.3D_1.0.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/iNEXT.3D_1.0.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2744k  100 2744k    0     0  5675k      0 --:--:-- --:--:-- --:--:-- 5671k
+building '/nix/store/w7yzn9gbvpxcbyqp9vfbi6dcvlyqmvxb-r-iNEXT.3D-1.0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9s7gn5cjc22ys6xqyx9hkm20f3jlmy7v-iNEXT.3D_1.0.6.tar.gz
+source root is iNEXT.3D
+setting SOURCE_DATE_EPOCH to timestamp 1724328005 of file iNEXT.3D/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘iNEXT.3D’ ...
+** package ‘iNEXT.3D’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c FDRcpp.cpp -o FDRcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PDRcpp.cpp -o PDRcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c TDRcpp.cpp -o TDRcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o iNEXT.3D.so FDRcpp.o PDRcpp.o RcppExports.o TDRcpp.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ijniy5f05b660n10ggdai0fzyz1adk34-r-iNEXT.3D-1.0.6/library/00LOCK-iNEXT.3D/00new/iNEXT.3D/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (iNEXT.3D)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-iNEXT.3D-1.0.6.drv-0/ in /nix/store/ijniy5f05b660n10ggdai0fzyz1adk34-r-iNEXT.3D-1.0.6...
+patching script interpreter paths in /nix/store/ijniy5f05b660n10ggdai0fzyz1adk34-r-iNEXT.3D-1.0.6
+rewriting symlink /nix/store/ijniy5f05b660n10ggdai0fzyz1adk34-r-iNEXT.3D-1.0.6/nix-support/propagated-user-env-packages to be relative to /nix/store/ijniy5f05b660n10ggdai0fzyz1adk34-r-iNEXT.3D-1.0.6

@@ -1,0 +1,45 @@
+these 2 derivations will be built:
+  /nix/store/md754x8dcsvs1rgqmj4ca5692v9n11h3-quanteda.textplots_0.95.tar.gz.drv
+  /nix/store/w95dnfjslp2ssnmmzay62jbx8g85p7yl-r-quanteda.textplots-0.95.drv
+building '/nix/store/md754x8dcsvs1rgqmj4ca5692v9n11h3-quanteda.textplots_0.95.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/quanteda.textplots_0.95.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 43697  100 43697    0     0   315k      0 --:--:-- --:--:-- --:--:--  316k
+building '/nix/store/w95dnfjslp2ssnmmzay62jbx8g85p7yl-r-quanteda.textplots-0.95.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vs6f3wpj92qixrsxx8qgk4mzlqvn38v9-quanteda.textplots_0.95.tar.gz
+source root is quanteda.textplots
+setting SOURCE_DATE_EPOCH to timestamp 1724817003 of file quanteda.textplots/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘quanteda.textplots’ ...
+** package ‘quanteda.textplots’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c wordcloud.cpp -o wordcloud.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o quanteda.textplots.so RcppExports.o wordcloud.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9qs5k156xm5pn0g4179cdzfmk0kivsjw-r-quanteda.textplots-0.95/library/00LOCK-quanteda.textplots/00new/quanteda.textplots/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (quanteda.textplots)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-quanteda.textplots-0.95.drv-0/ in /nix/store/9qs5k156xm5pn0g4179cdzfmk0kivsjw-r-quanteda.textplots-0.95...
+patching script interpreter paths in /nix/store/9qs5k156xm5pn0g4179cdzfmk0kivsjw-r-quanteda.textplots-0.95
+rewriting symlink /nix/store/9qs5k156xm5pn0g4179cdzfmk0kivsjw-r-quanteda.textplots-0.95/nix-support/propagated-user-env-packages to be relative to /nix/store/9qs5k156xm5pn0g4179cdzfmk0kivsjw-r-quanteda.textplots-0.95

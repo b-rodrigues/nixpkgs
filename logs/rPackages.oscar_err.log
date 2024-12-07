@@ -1,0 +1,124 @@
+this derivation will be built:
+  /nix/store/xm64a5bn530mj46kx23w0fz1rp2k9ip4-r-oscar-1.2.1.drv
+this path will be fetched (0.50 MiB download, 0.50 MiB unpacked):
+  /nix/store/a6mpac638fpqs6zgf75n86xxia551hys-oscar_1.2.1.tar.gz
+copying path '/nix/store/a6mpac638fpqs6zgf75n86xxia551hys-oscar_1.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xm64a5bn530mj46kx23w0fz1rp2k9ip4-r-oscar-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/a6mpac638fpqs6zgf75n86xxia551hys-oscar_1.2.1.tar.gz
+source root is oscar
+setting SOURCE_DATE_EPOCH to timestamp 1696254008 of file oscar/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘oscar’ ...
+** package ‘oscar’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  dbdc.f90 -o dbdc.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c plqdf1.f -o plqdf1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c oscarc.c -o oscarc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o oscar.so dbdc.o oscarc.o plqdf1.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___functions_MOD___copy_functions_Set_info: does not use standard frame
+ld: warning: could not create compact unwind for ___bundle1_MOD_update_b1: does not use standard frame
+ld: warning: could not create compact unwind for ___bundle1_MOD_init_bundle_b1: does not use standard frame
+ld: warning: could not create compact unwind for ___bundle2_MOD_update_b2: does not use standard frame
+ld: warning: could not create compact unwind for ___bundle2_MOD_init_bundle_b2: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_heapsort_k: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_heapsort_ind: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_subgradient_f1: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_subgra: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_f2: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard framecould not create compact unwind for _plrmr1_: does not use standard frame
+
+ld: warning: could not create compact unwind for _mxvmul_: does not use standard frame
+ld: warning: could not create compact unwind for _pladf1_: does not use standard frame
+ld: warning: could not create compact unwind for _plmina_: registers 19 and 20 not saved contiguously in frame
+ld: warning: ld: warning: could not create compact unwind for ___functions_MOD_f1: does not use standard frame
+could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frameld: warning: ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: 
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+could not create compact unwind for _plqdf1_: does not use standard frame
+could not create compact unwind for ___functions_MOD_func: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_f1_sub: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_failures: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_rescaling_beta_log: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_my_log_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_reduced_log: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_sub_log: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_log: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_my_mse_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_reduced_mse: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_sub_mse: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_mse: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_my_cox_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_reduced_cox: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_sub_cox: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_data_cox: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_mx_reduced: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_deallocate_mx_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_matrices_cox: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_my_log_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_data_log: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_my_mse_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_data_mse: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_my_cox_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_data_cox: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_mx_reduced: does not use standard frame
+ld: warning: could not create compact unwind for ___functions_MOD_allocate_mx_subp: does not use standard frame
+ld: warning: could not create compact unwind for ___dbdc_MOD_subproblem_solver: does not use standard frame
+ld: warning: could not create compact unwind for ___dbdc_MOD_quadratic_solver: does not use standard frame
+ld: warning: could not create compact unwind for ___dbdc_MOD_guaranteeing_clarke: does not use standard frame
+ld: warning: could not create compact unwind for ___dbdc_MOD_main_iteration: does not use standard frame
+ld: warning: could not create compact unwind for ___dbdc_MOD_dbdc_algorithm: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_sub_MOD_calq2: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_sub_MOD_calq: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_sub_MOD_trlieq2: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_sub_MOD_rwaxv2: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _dobun.7.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_sub_MOD_cwmaxv: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_mod_MOD_agskip.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_mod_MOD_aggsr1.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_mod_MOD_agbfgs.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_mod_MOD_dlsr1.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_mod_MOD_dlbfgs.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for ___initializat_MOD_deallocate_lmbminfo_subp_log: does not use standard frame
+ld: warning: could not create compact unwind for ___initializat_MOD_deallocate_lmbminfo_subp_mse: does not use standard frame
+ld: warning: could not create compact unwind for ___initializat_MOD_init_lmbminfo: does not use standard frame
+ld: warning: could not create compact unwind for ___initializat_MOD_deallocate_x_var: does not use standard frame
+ld: warning: could not create compact unwind for ___initializat_MOD_allocate_xn: does not use standard frame
+ld: warning: could not create compact unwind for ___obj_fun_MOD_myf: does not use standard frame
+ld: warning: could not create compact unwind for ___lmbm_mod_MOD_lmbm: does not use standard frame
+ld: warning: could not create compact unwind for _oscar_logistic_f_: does not use standard frame
+ld: warning: could not create compact unwind for _oscar_mse_f_: does not use standard frame
+ld: warning: could not create compact unwind for _oscar_cox_f_: does not use standard frame
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-oscar-1.2.1.drv-0/oscar/src »
+make[1]: Rien à faire pour « oscar.so ».
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-oscar-1.2.1.drv-0/oscar/src »
+installing to /nix/store/7x7jlppg54ylp379pagfgdz1xa0mgfc2-r-oscar-1.2.1/library/00LOCK-oscar/00new/oscar/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (oscar)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-oscar-1.2.1.drv-0/ in /nix/store/7x7jlppg54ylp379pagfgdz1xa0mgfc2-r-oscar-1.2.1...
+patching script interpreter paths in /nix/store/7x7jlppg54ylp379pagfgdz1xa0mgfc2-r-oscar-1.2.1
+rewriting symlink /nix/store/7x7jlppg54ylp379pagfgdz1xa0mgfc2-r-oscar-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/7x7jlppg54ylp379pagfgdz1xa0mgfc2-r-oscar-1.2.1

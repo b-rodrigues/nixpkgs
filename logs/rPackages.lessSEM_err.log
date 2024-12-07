@@ -1,0 +1,897 @@
+this derivation will be built:
+  /nix/store/2xh7l6jd92dn1ll3rr6xqw58s3vy6l9n-r-lessSEM-1.5.5.drv
+this path will be fetched (0.99 MiB download, 0.99 MiB unpacked):
+  /nix/store/is6z02c63kdyfgnhxh2w0k945gmgbsqa-lessSEM_1.5.5.tar.gz
+copying path '/nix/store/is6z02c63kdyfgnhxh2w0k945gmgbsqa-lessSEM_1.5.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2xh7l6jd92dn1ll3rr6xqw58s3vy6l9n-r-lessSEM-1.5.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/is6z02c63kdyfgnhxh2w0k945gmgbsqa-lessSEM_1.5.5.tar.gz
+source root is lessSEM
+setting SOURCE_DATE_EPOCH to timestamp 1705929602 of file lessSEM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lessSEM’ ...
+** package ‘lessSEM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c SEM.cpp -o SEM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c WLS.cpp -o WLS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c callFitFunction.cpp -o callFitFunction.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c cappedL1.cpp -o cappedL1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c dataset.cpp -o dataset.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c derivativeStructure.cpp -o derivativeStructure.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c elasticNet.cpp -o elasticNet.o
+In file included from RcppExports.cpp:4:
+In file included from ./../inst/include/lessSEM.h:4:
+In file included from ../inst/include/lesstimate/include/lesstimate.h:4:
+In file included from ../inst/include/lesstimate/include/lesstimate/common_headers.h:21:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c generalPurposeElasticNet.cpp -o generalPurposeElasticNet.o
+In file included from cappedL1.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c glmnet_cappedL1.cpp -o glmnet_cappedL1.o
+In file included from elasticNet.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c glmnet_generalPurposeMixedPenalty.cpp -o glmnet_generalPurposeMixedPenalty.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c glmnet_lsp.cpp -o glmnet_lsp.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c glmnet_mcp.cpp -o glmnet_mcp.o
+In file included from generalPurposeElasticNet.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+In file included from glmnet_generalPurposeMixedPenalty.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+In file included from glmnet_cappedL1.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+In file included from glmnet_lsp.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+In file included from glmnet_mcp.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c glmnet_mixed.cpp -o glmnet_mixed.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c glmnet_scad.cpp -o glmnet_scad.o
+In file included from glmnet_mixed.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+In file included from glmnet_scad.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c gradients.cpp -o gradients.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c implied.cpp -o implied.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c impliedDerivatives.cpp -o impliedDerivatives.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c ista_generalPurposeMixedPenalty.cpp -o ista_generalPurposeMixedPenalty.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c ista_lsp.cpp -o ista_lsp.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c ista_mcp.cpp -o ista_mcp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c ista_mixed.cpp -o ista_mixed.o
+In file included from ista_generalPurposeMixedPenalty.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c ista_scad.cpp -o ista_scad.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c logicalMatch.cpp -o logicalMatch.o
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c mgSEM.cpp -o mgSEM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c multivariateNormal.cpp -o multivariateNormal.o
+In file included from ista_lsp.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+In file included from ista_mcp.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c parameters.cpp -o parameters.o
+In file included from ista_mixed.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+In file included from ista_scad.cpp:1:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:25:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:30:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r/headers.h:66:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/platform/compiler.h:153:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/unordered_map:523:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__hash_table:26:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'lessSEM::penaltyMixedPenaltyBase' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<lessSEM::penaltyMixedPenaltyBase>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator.h:173:15: note: in instantiation of member function 'std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>::~unique_ptr' requested here
+        __p->~_Tp();
+              ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/allocator_traits.h:315:13: note: in instantiation of member function 'std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::destroy' requested here
+        __a.destroy(__p);
+            ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:303:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>>::destroy<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__end_));
+                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:144:10: note: (skipping 1 context in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+        {__destruct_at_end(__new_last, false_type());}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:102:10: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::__destruct_at_end' requested here
+        {__destruct_at_end(__begin_);}
+         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__split_buffer:360:5: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::clear' requested here
+    clear();
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1580:49: note: in instantiation of member function 'std::__split_buffer<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>, std::allocator<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>> &>::~__split_buffer' requested here
+    __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+                                                ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/vector:1603:9: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::__emplace_back_slow_path<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+        __emplace_back_slow_path(std::forward<_Args>(__args)...);
+        ^
+../inst/include/lesstimate/include/lesstimate/ista_mixedPenalty.h:500:21: note: in instantiation of function template specialization 'std::vector<std::unique_ptr<lessSEM::penaltyMixedPenaltyBase>>::emplace_back<std::unique_ptr<lessSEM::penaltyMixedNone>>' requested here
+      pen.penalties.emplace_back(std::move(currentPen));
+                    ^
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I../inst/include/ -fPIC  -g -O2   -c scores.cpp -o scores.o
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o lessSEM.so RcppExports.o SEM.o WLS.o callFitFunction.o cappedL1.o dataset.o derivativeStructure.o elasticNet.o generalPurposeElasticNet.o glmnet_cappedL1.o glmnet_generalPurposeMixedPenalty.o glmnet_lsp.o glmnet_mcp.o glmnet_mixed.o glmnet_scad.o gradients.o implied.o impliedDerivatives.o ista_generalPurposeMixedPenalty.o ista_lsp.o ista_mcp.o ista_mixed.o ista_scad.o logicalMatch.o mgSEM.o multivariateNormal.o parameters.o scores.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib -ltbb -ltbbmalloc -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/2l7m65lv7d0w85pmbkm2q6cgp2vx67mf-r-lessSEM-1.5.5/library/00LOCK-lessSEM/00new/lessSEM/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_SEMCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SEMCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltySEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltySEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltymgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltymgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1MgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1MgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_SEMCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SEMCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaCappedL1mgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaLSPMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltySEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltySEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltymgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltymgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetScadMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1SEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1MgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetCappedL1MgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMcpMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetLspMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_bfgsEnetMgSEM” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurpose” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_glmnetMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaEnetGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_istaMixedPenaltyGeneralPurposeCpp” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (lessSEM)
+installPhase completed in 33 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lessSEM-1.5.5.drv-0/ in /nix/store/2l7m65lv7d0w85pmbkm2q6cgp2vx67mf-r-lessSEM-1.5.5...
+patching script interpreter paths in /nix/store/2l7m65lv7d0w85pmbkm2q6cgp2vx67mf-r-lessSEM-1.5.5
+rewriting symlink /nix/store/2l7m65lv7d0w85pmbkm2q6cgp2vx67mf-r-lessSEM-1.5.5/nix-support/propagated-user-env-packages to be relative to /nix/store/2l7m65lv7d0w85pmbkm2q6cgp2vx67mf-r-lessSEM-1.5.5

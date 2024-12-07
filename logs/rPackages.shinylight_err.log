@@ -1,0 +1,48 @@
+this derivation will be built:
+  /nix/store/qrrw6p6vd4qjjv28zayyrlr4rzhxrav8-r-shinylight-1.2.drv
+building '/nix/store/qrrw6p6vd4qjjv28zayyrlr4rzhxrav8-r-shinylight-1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3ij66059qnwin1pg7k9d63qqahnd5qna-shinylight_1.2.tar.gz
+source root is shinylight
+setting SOURCE_DATE_EPOCH to timestamp 1713830410 of file shinylight/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘shinylight’ ...
+** package ‘shinylight’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Error in value[[3L]](cond) : argument inutilisé (cond)
+Erreur : impossible de charger le code R depuis le package ‘shinylight’
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘shinylight’
+* removing ‘/nix/store/nxgc457mn14dp5zv093f94l6ng1rh0y1-r-shinylight-1.2/library/shinylight’
+error: builder for '/nix/store/qrrw6p6vd4qjjv28zayyrlr4rzhxrav8-r-shinylight-1.2.drv' failed with exit code 1;
+       last 21 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/3ij66059qnwin1pg7k9d63qqahnd5qna-shinylight_1.2.tar.gz
+       > source root is shinylight
+       > setting SOURCE_DATE_EPOCH to timestamp 1713830410 of file shinylight/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘shinylight’ ...
+       > ** package ‘shinylight’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Error in value[[3L]](cond) : argument inutilisé (cond)
+       > Erreur : impossible de charger le code R depuis le package ‘shinylight’
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘shinylight’
+       > * removing ‘/nix/store/nxgc457mn14dp5zv093f94l6ng1rh0y1-r-shinylight-1.2/library/shinylight’
+       For full logs, run 'nix log /nix/store/qrrw6p6vd4qjjv28zayyrlr4rzhxrav8-r-shinylight-1.2.drv'.

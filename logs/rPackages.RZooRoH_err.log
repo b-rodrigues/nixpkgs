@@ -1,0 +1,67 @@
+this derivation will be built:
+  /nix/store/ckrzdmrrdbrqc2raqi6zgwal7vkh80fy-r-RZooRoH-0.3.2.1.drv
+this path will be fetched (1.85 MiB download, 1.95 MiB unpacked):
+  /nix/store/8lpggwh9bd199v5pn27anj3ryv4jldhn-RZooRoH_0.3.2.1.tar.gz
+copying path '/nix/store/8lpggwh9bd199v5pn27anj3ryv4jldhn-RZooRoH_0.3.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ckrzdmrrdbrqc2raqi6zgwal7vkh80fy-r-RZooRoH-0.3.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8lpggwh9bd199v5pn27anj3ryv4jldhn-RZooRoH_0.3.2.1.tar.gz
+source root is RZooRoH
+setting SOURCE_DATE_EPOCH to timestamp 1698396002 of file RZooRoH/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RZooRoH’ ...
+** package ‘RZooRoH’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RZooRoH_init.c -o RZooRoH_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c random_number_wrapper.c -o random_number_wrapper.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zooEM.f90 -o zooEM.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zooFB.f90 -o zooFB.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zooSIM.f90 -o zooSIM.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zooViterbi.f90 -o zooViterbi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zoolayerEM.f90 -o zoolayerEM.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zoolayerFB.f90 -o zoolayerFB.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zoolayerViterbi.f90 -o zoolayerViterbi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zoolayerlik.f90 -o zoolayerlik.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  zoolik.f90 -o zoolik.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RZooRoH.so RZooRoH_init.o random_number_wrapper.o zooEM.o zooFB.o zooSIM.o zooViterbi.o zoolayerEM.o zoolayerFB.o zoolayerViterbi.o zoolayerlik.o zoolik.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _zoofb_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _zoolayerem_: does not use standard frameld: warning: could not create compact unwind for _zoolayerfb_: does not use standard frame
+could not create compact unwind for _zooem_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _zoolayerviterbi_: does not use standard frame
+ld: warning: could not create compact unwind for _zooviterbi_: does not use standard frame
+ld: warning: could not create compact unwind for _zoolayerlik_: does not use standard frame
+ld: warning: could not create compact unwind for _zoosim_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+could not create compact unwind for _zoolik_: does not use standard frame
+installing to /nix/store/1liak6pbdmx9a9k5dw2i1p8y9i8yrkiy-r-RZooRoH-0.3.2.1/library/00LOCK-RZooRoH/00new/RZooRoH/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RZooRoH)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RZooRoH-0.3.2.1.drv-0/ in /nix/store/1liak6pbdmx9a9k5dw2i1p8y9i8yrkiy-r-RZooRoH-0.3.2.1...
+patching script interpreter paths in /nix/store/1liak6pbdmx9a9k5dw2i1p8y9i8yrkiy-r-RZooRoH-0.3.2.1
+rewriting symlink /nix/store/1liak6pbdmx9a9k5dw2i1p8y9i8yrkiy-r-RZooRoH-0.3.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/1liak6pbdmx9a9k5dw2i1p8y9i8yrkiy-r-RZooRoH-0.3.2.1

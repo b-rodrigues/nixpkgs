@@ -1,0 +1,69 @@
+these 2 derivations will be built:
+  /nix/store/jvw2p1j1rp246rvnh6hwgq2czv5kk3gy-r-log4r-0.4.4.drv
+  /nix/store/y8rkn3b16p42frmdywqg1hkw2ldacbpr-r-archetyper-0.1.0.drv
+building '/nix/store/jvw2p1j1rp246rvnh6hwgq2czv5kk3gy-r-log4r-0.4.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q2f7hwdl17fzb298vkl6snlp14k2bign-log4r_0.4.4.tar.gz
+source root is log4r
+setting SOURCE_DATE_EPOCH to timestamp 1728710401 of file log4r/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘log4r’ ...
+** package ‘log4r’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c log4r.c -o log4r.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c logfmt.c -o logfmt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o log4r.so log4r.o logfmt.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/70acw0zifmdf8m916v1vhaj4454sbffg-r-log4r-0.4.4/library/00LOCK-log4r/00new/log4r/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (log4r)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-log4r-0.4.4.drv-0/ in /nix/store/70acw0zifmdf8m916v1vhaj4454sbffg-r-log4r-0.4.4...
+patching script interpreter paths in /nix/store/70acw0zifmdf8m916v1vhaj4454sbffg-r-log4r-0.4.4
+building '/nix/store/y8rkn3b16p42frmdywqg1hkw2ldacbpr-r-archetyper-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9g2wnlglg6bwy26h8bsirr0g1r2g5y8d-archetyper_0.1.0.tar.gz
+source root is archetyper
+setting SOURCE_DATE_EPOCH to timestamp 1615989605 of file archetyper/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘archetyper’ ...
+** package ‘archetyper’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (archetyper)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-archetyper-0.1.0.drv-0/ in /nix/store/i1cakarmr3i96r5jm6idkfjkcjq4w4w2-r-archetyper-0.1.0...
+patching script interpreter paths in /nix/store/i1cakarmr3i96r5jm6idkfjkcjq4w4w2-r-archetyper-0.1.0
+rewriting symlink /nix/store/i1cakarmr3i96r5jm6idkfjkcjq4w4w2-r-archetyper-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/i1cakarmr3i96r5jm6idkfjkcjq4w4w2-r-archetyper-0.1.0

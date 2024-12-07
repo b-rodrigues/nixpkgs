@@ -1,0 +1,57 @@
+this derivation will be built:
+  /nix/store/7xgzabijdg52qfdxi3za8vwfr92zvsms-r-adbcpostgresql-0.15.0.drv
+building '/nix/store/7xgzabijdg52qfdxi3za8vwfr92zvsms-r-adbcpostgresql-0.15.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vf030kxygs5n47pm9ddl19vszqw1rdiq-adbcpostgresql_0.15.0.tar.gz
+source root is adbcpostgresql
+setting SOURCE_DATE_EPOCH to timestamp 1731628206 of file adbcpostgresql/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘adbcpostgresql’ ...
+** package ‘adbcpostgresql’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Checking for --configure-vars INCLUDE_DIR or LIB_DIR
+Using pg_config to locate libpq headers/libs
+Testing R CMD SHLIB with -I/nix/store/jvw9nsblsbh9m4n551sq7qnw82hhsv08-postgresql-16.4-dev/include -I/nix/store/6zmdhpn7ls3jvn1hqib2cc6rx3sjhy3b-icu4c-74.2-dev/include -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -I/nix/store/c19i88s2vy088rb706xiiq4hkhb98b6h-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/58d6w770fw1419xvig0bcqv7wpzym1x5-lz4-1.10.0-dev/include -I/nix/store/f3xidy6iab0asgslw0fvfdcf991qinrd-zstd-1.5.6-dev/include  -L/nix/store/l9w6d22hrcrxkv005g2gbzhvk64vp4rm-postgresql-16.4-lib/lib -lpq -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -L/nix/store/sqhnyj0xigqpm8kfid2kvpan05i112gv-libxml2-2.13.4/lib -L/nix/store/c8ax8z1ixxrpd3j7haxacfvbabnw43s3-lz4-1.10.0-lib/lib -L/nix/store/wsjvldpv9gclwnh5xqv1wwlvpkm024si-zstd-1.5.6/lib -Wl,-dead_strip_dylibs -lpgcommon -lpgport -lzstd -llz4 -lxml2 -lssl -lcrypto -lgssapi_krb5 -lz -lreadline -lm  
+Test compile failed
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/jvw9nsblsbh9m4n551sq7qnw82hhsv08-postgresql-16.4-dev/include -I/nix/store/6zmdhpn7ls3jvn1hqib2cc6rx3sjhy3b-icu4c-74.2-dev/include -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -I/nix/store/c19i88s2vy088rb706xiiq4hkhb98b6h-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/58d6w770fw1419xvig0bcqv7wpzym1x5-lz4-1.10.0-dev/include -I/nix/store/f3xidy6iab0asgslw0fvfdcf991qinrd-zstd-1.5.6-dev/include   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tools/test.c -o tools/test.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o compile_test tools/test.o -L/nix/store/l9w6d22hrcrxkv005g2gbzhvk64vp4rm-postgresql-16.4-lib/lib -lpq -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -L/nix/store/sqhnyj0xigqpm8kfid2kvpan05i112gv-libxml2-2.13.4/lib -L/nix/store/c8ax8z1ixxrpd3j7haxacfvbabnw43s3-lz4-1.10.0-lib/lib -L/nix/store/wsjvldpv9gclwnh5xqv1wwlvpkm024si-zstd-1.5.6/lib -Wl,-dead_strip_dylibs -lpgcommon -lpgport -lzstd -llz4 -lxml2 -lssl -lcrypto -lgssapi_krb5 -lz -lreadline -lm -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: library not found for -lssl
+clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/share/make/shlib.mk:10: compile_test] Error 1
+ERROR: configuration failed for package ‘adbcpostgresql’
+* removing ‘/nix/store/5gh1yl01zgfihv2yb0hv8inys97g6962-r-adbcpostgresql-0.15.0/library/adbcpostgresql’
+error: builder for '/nix/store/7xgzabijdg52qfdxi3za8vwfr92zvsms-r-adbcpostgresql-0.15.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > unpacking source archive /nix/store/vf030kxygs5n47pm9ddl19vszqw1rdiq-adbcpostgresql_0.15.0.tar.gz
+       > source root is adbcpostgresql
+       > setting SOURCE_DATE_EPOCH to timestamp 1731628206 of file adbcpostgresql/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘adbcpostgresql’ ...
+       > ** package ‘adbcpostgresql’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > Checking for --configure-vars INCLUDE_DIR or LIB_DIR
+       > Using pg_config to locate libpq headers/libs
+       > Testing R CMD SHLIB with -I/nix/store/jvw9nsblsbh9m4n551sq7qnw82hhsv08-postgresql-16.4-dev/include -I/nix/store/6zmdhpn7ls3jvn1hqib2cc6rx3sjhy3b-icu4c-74.2-dev/include -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -I/nix/store/c19i88s2vy088rb706xiiq4hkhb98b6h-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/58d6w770fw1419xvig0bcqv7wpzym1x5-lz4-1.10.0-dev/include -I/nix/store/f3xidy6iab0asgslw0fvfdcf991qinrd-zstd-1.5.6-dev/include  -L/nix/store/l9w6d22hrcrxkv005g2gbzhvk64vp4rm-postgresql-16.4-lib/lib -lpq -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -L/nix/store/sqhnyj0xigqpm8kfid2kvpan05i112gv-libxml2-2.13.4/lib -L/nix/store/c8ax8z1ixxrpd3j7haxacfvbabnw43s3-lz4-1.10.0-lib/lib -L/nix/store/wsjvldpv9gclwnh5xqv1wwlvpkm024si-zstd-1.5.6/lib -Wl,-dead_strip_dylibs -lpgcommon -lpgport -lzstd -llz4 -lxml2 -lssl -lcrypto -lgssapi_krb5 -lz -lreadline -lm
+       > Test compile failed
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/jvw9nsblsbh9m4n551sq7qnw82hhsv08-postgresql-16.4-dev/include -I/nix/store/6zmdhpn7ls3jvn1hqib2cc6rx3sjhy3b-icu4c-74.2-dev/include -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -I/nix/store/c19i88s2vy088rb706xiiq4hkhb98b6h-libxml2-2.13.4-dev/include/libxml2 -I/nix/store/58d6w770fw1419xvig0bcqv7wpzym1x5-lz4-1.10.0-dev/include -I/nix/store/f3xidy6iab0asgslw0fvfdcf991qinrd-zstd-1.5.6-dev/include   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tools/test.c -o tools/test.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o compile_test tools/test.o -L/nix/store/l9w6d22hrcrxkv005g2gbzhvk64vp4rm-postgresql-16.4-lib/lib -lpq -isysroot /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -L/nix/store/sqhnyj0xigqpm8kfid2kvpan05i112gv-libxml2-2.13.4/lib -L/nix/store/c8ax8z1ixxrpd3j7haxacfvbabnw43s3-lz4-1.10.0-lib/lib -L/nix/store/wsjvldpv9gclwnh5xqv1wwlvpkm024si-zstd-1.5.6/lib -Wl,-dead_strip_dylibs -lpgcommon -lpgport -lzstd -llz4 -lxml2 -lssl -lcrypto -lgssapi_krb5 -lz -lreadline -lm -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > ld: library not found for -lssl
+       > clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/share/make/shlib.mk:10: compile_test] Error 1
+       > ERROR: configuration failed for package ‘adbcpostgresql’
+       > * removing ‘/nix/store/5gh1yl01zgfihv2yb0hv8inys97g6962-r-adbcpostgresql-0.15.0/library/adbcpostgresql’
+       For full logs, run 'nix log /nix/store/7xgzabijdg52qfdxi3za8vwfr92zvsms-r-adbcpostgresql-0.15.0.drv'.

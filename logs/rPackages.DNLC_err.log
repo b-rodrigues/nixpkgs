@@ -1,0 +1,134 @@
+these 8 derivations will be built:
+  /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv
+  /nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv
+  /nix/store/jywlby4zg3b9b7wwbbqs3gi75bsvb497-r-GSEABase-1.32.0.drv
+  /nix/store/zjir9w0f3v51nlw0xqgn1mqql64gf5y8-r-RBGL-1.46.0.drv
+  /nix/store/2ch9w1di0nrmh6h4v4nwqsrc80fsjsgp-r-Category-2.36.0.drv
+  /nix/store/qnh4gs85cpirk821hzlk6ilr3y91qwxk-r-AnnotationForge-1.12.2.drv
+  /nix/store/55clbv2n7z1r0anr59768s0929xp2zhh-r-GOstats-2.36.0.drv
+  /nix/store/rccv3v023xabd4bkla523j2l80r4q3ll-r-DNLC-1.0.0.drv
+building '/nix/store/qnh4gs85cpirk821hzlk6ilr3y91qwxk-r-AnnotationForge-1.12.2.drv'...
+building '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'...
+building '/nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dnrnrhr95w2k2i6lmdvjapv5q7rz5jqc-AnnotationForge_1.12.2.tar.gz
+source root is AnnotationForge
+setting SOURCE_DATE_EPOCH to timestamp 1452914232 of file AnnotationForge/inst/doc/makeProbePackage.pdf
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/fac79mzcbdrkazwfsyzj2najqw8lik3r-graph_1.48.0.tar.gz
+source root is graph
+setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘AnnotationForge’ ...
+** using staged installation
+** R
+Running phase: unpackPhase
+unpacking source archive /nix/store/nasj7wpna8py8ck226zkspmk2br6niha-genefilter_1.52.1.tar.gz
+** inst
+source root is genefilter
+* installing *source* package ‘graph’ ...
+** using staged installation
+setting SOURCE_DATE_EPOCH to timestamp 1453944267 of file genefilter/src/ttest.f
+** libs
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** byte-compile and prepare package for lazy loading
+Running phase: configurePhase
+Running phase: buildPhase
+using C compiler: ‘clang version 16.0.6’
+Running phase: checkPhase
+Running phase: installPhase
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+* installing *source* package ‘genefilter’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c half_range_mode.cpp -o half_range_mode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c nd.c -o nd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pAUC.c -o pAUC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowPAUCs.c -o rowPAUCs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowttests.c -o rowttests.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c ttest.f -o ttest.o
+nd.c:24:10: fatal error: 'S.h' file not found
+#include "S.h"
+         ^~~~~
+1 error generated.
+rowttests.c:172:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:172:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+rowttests.c:181:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:181:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+2 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: rowttests.o] Error 1
+make: *** Attente des tâches non terminées....
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: nd.o] Error 1
+mv graph.so BioC_graph.so
+installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+half_range_mode.cpp:100:88: warning: format specifies type 'int' but the argument has type 'size_type' (aka 'unsigned long') [-Wformat]
+    if (diag) Rprintf( "N = %i, N'' = %i, w = %.4f, |J| = %i\n", N, N_double_prime, w, J.size() );
+                                                          ~~                           ^~~~~~~~
+                                                          %zu
+Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘graph’
+* removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+error: builder for '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > source root is graph
+       > setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘graph’ ...
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > mv graph.so BioC_graph.so
+       > installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘graph’
+       > * removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+       For full logs, run 'nix log /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'.
+error: 1 dependencies of derivation '/nix/store/55clbv2n7z1r0anr59768s0929xp2zhh-r-GOstats-2.36.0.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/rccv3v023xabd4bkla523j2l80r4q3ll-r-DNLC-1.0.0.drv' failed to build

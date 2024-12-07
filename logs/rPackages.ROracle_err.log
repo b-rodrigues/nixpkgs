@@ -1,0 +1,21 @@
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:34:12:
+           33|
+           34|   strict = derivationStrict drvAttrs;
+             |            ^
+           35|
+
+       … while evaluating derivation 'r-ROracle-1.3-1.1'
+         whose name attribute is located at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:336:7
+
+       … while evaluating attribute 'configureFlags' of derivation 'r-ROracle-1.3-1.1'
+         at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:394:7:
+          393|       # This parameter is sometimes a string, sometimes null, and sometimes a list, yuck
+          394|       configureFlags =
+             |       ^
+          395|         configureFlags
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Unsupported system: aarch64-darwin

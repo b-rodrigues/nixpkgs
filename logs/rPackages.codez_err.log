@@ -1,0 +1,70 @@
+these 2 derivations will be built:
+  /nix/store/j1car7nih6yyy1n0sghjkvdwclgqn6j3-r-greybox-2.0.2.drv
+  /nix/store/8v3gm86xp276ng4n3788igki0lvllcsa-r-codez-1.0.0.drv
+building '/nix/store/j1car7nih6yyy1n0sghjkvdwclgqn6j3-r-greybox-2.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/s7jpnqinkzh45zgql66jy54k4cp669lh-greybox_2.0.2.tar.gz
+source root is greybox
+setting SOURCE_DATE_EPOCH to timestamp 1724776802 of file greybox/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘greybox’ ...
+** package ‘greybox’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c polyMult.cpp -o polyMult.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o greybox.so RcppExports.o polyMult.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9mbkvcsfhqffpsj983mds69f3pqjir7h-r-greybox-2.0.2/library/00LOCK-greybox/00new/greybox/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (greybox)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-greybox-2.0.2.drv-0/ in /nix/store/9mbkvcsfhqffpsj983mds69f3pqjir7h-r-greybox-2.0.2...
+patching script interpreter paths in /nix/store/9mbkvcsfhqffpsj983mds69f3pqjir7h-r-greybox-2.0.2
+rewriting symlink /nix/store/9mbkvcsfhqffpsj983mds69f3pqjir7h-r-greybox-2.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/9mbkvcsfhqffpsj983mds69f3pqjir7h-r-greybox-2.0.2
+building '/nix/store/8v3gm86xp276ng4n3788igki0lvllcsa-r-codez-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/x77hs36gvxwbzv7z1nwi15wc4nhk6282-codez_1.0.0.tar.gz
+source root is codez
+setting SOURCE_DATE_EPOCH to timestamp 1663945802 of file codez/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘codez’ ...
+** package ‘codez’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (codez)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-codez-1.0.0.drv-0/ in /nix/store/gh5znv0z5ig84hww9m0lwj2avjbzl0ki-r-codez-1.0.0...
+patching script interpreter paths in /nix/store/gh5znv0z5ig84hww9m0lwj2avjbzl0ki-r-codez-1.0.0
+rewriting symlink /nix/store/gh5znv0z5ig84hww9m0lwj2avjbzl0ki-r-codez-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/gh5znv0z5ig84hww9m0lwj2avjbzl0ki-r-codez-1.0.0

@@ -1,0 +1,79 @@
+this derivation will be built:
+  /nix/store/ac66in92y6zbk6zb9335hxckr0m282s3-r-OpenCL-0.2-10.drv
+these 4 paths will be fetched (0.17 MiB download, 1.28 MiB unpacked):
+  /nix/store/ayqqd2fn135vyvg8gsc9ff5zj9l7mbnq-OpenCL_0.2-10.tar.gz
+  /nix/store/p97xr30zy42lpayjc0sar2h8ym1g7cvh-ocl-icd-2.3.2
+  /nix/store/d0y1qwsn7j5vvjq8jgj8655hwi2ls46x-opencl-clhpp-2024.05.08
+  /nix/store/i17pjvz3biwmvfvx5wrfzsvg3kx4c2nf-opencl-headers-2024.05.08
+copying path '/nix/store/ayqqd2fn135vyvg8gsc9ff5zj9l7mbnq-OpenCL_0.2-10.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/p97xr30zy42lpayjc0sar2h8ym1g7cvh-ocl-icd-2.3.2' from 'https://cache.nixos.org'...
+copying path '/nix/store/i17pjvz3biwmvfvx5wrfzsvg3kx4c2nf-opencl-headers-2024.05.08' from 'https://cache.nixos.org'...
+copying path '/nix/store/d0y1qwsn7j5vvjq8jgj8655hwi2ls46x-opencl-clhpp-2024.05.08' from 'https://cache.nixos.org'...
+building '/nix/store/ac66in92y6zbk6zb9335hxckr0m282s3-r-OpenCL-0.2-10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ayqqd2fn135vyvg8gsc9ff5zj9l7mbnq-OpenCL_0.2-10.tar.gz
+source root is OpenCL
+setting SOURCE_DATE_EPOCH to timestamp 1703241207 of file OpenCL/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘OpenCL’ ...
+** package ‘OpenCL’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c buffer.c -o buffer.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ocl.c -o ocl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c oclerr.c -o oclerr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c reg.c -o reg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c wrap.c -o wrap.o
+buffer.c:197:32: error: call to undeclared library function 'calloc' with type 'void *(unsigned long, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        intermediate = (float*)calloc(XLENGTH(res), sizeof(float));
+                               ^
+buffer.c:197:32: note: include the header <stdlib.h> or explicitly provide a declaration for 'calloc'
+buffer.c:206:13: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+            free(intermediate);
+            ^
+buffer.c:206:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 errors generated.
+wrap.c:143:16: error: call to undeclared function 'atoll'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        long long l = atoll(c);
+                      ^
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: buffer.o] Error 1
+make: *** Attente des tâches non terminées....
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: wrap.o] Error 1
+ERROR: compilation failed for package ‘OpenCL’
+* removing ‘/nix/store/bmchvf3ygg386kak50gplwb4rrjn6b8p-r-OpenCL-0.2-10/library/OpenCL’
+error: builder for '/nix/store/ac66in92y6zbk6zb9335hxckr0m282s3-r-OpenCL-0.2-10.drv' failed with exit code 1;
+       last 25 log lines:
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c buffer.c -o buffer.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ocl.c -o ocl.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c oclerr.c -o oclerr.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c reg.c -o reg.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c wrap.c -o wrap.o
+       > buffer.c:197:32: error: call to undeclared library function 'calloc' with type 'void *(unsigned long, unsigned long)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       >         intermediate = (float*)calloc(XLENGTH(res), sizeof(float));
+       >                                ^
+       > buffer.c:197:32: note: include the header <stdlib.h> or explicitly provide a declaration for 'calloc'
+       > buffer.c:206:13: error: call to undeclared library function 'free' with type 'void (void *)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       >             free(intermediate);
+       >             ^
+       > buffer.c:206:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+       > 2 errors generated.
+       > wrap.c:143:16: error: call to undeclared function 'atoll'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       >         long long l = atoll(c);
+       >                       ^
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: buffer.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: wrap.o] Error 1
+       > ERROR: compilation failed for package ‘OpenCL’
+       > * removing ‘/nix/store/bmchvf3ygg386kak50gplwb4rrjn6b8p-r-OpenCL-0.2-10/library/OpenCL’
+       For full logs, run 'nix log /nix/store/ac66in92y6zbk6zb9335hxckr0m282s3-r-OpenCL-0.2-10.drv'.

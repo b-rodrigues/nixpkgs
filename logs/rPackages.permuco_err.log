@@ -1,0 +1,50 @@
+these 2 derivations will be built:
+  /nix/store/ch8d727c8x26mzd7vfhbjkwcyylpgzly-permuco_1.1.3.tar.gz.drv
+  /nix/store/3byzsq4xsdj93jsidxp0vcss93v2r4gd-r-permuco-1.1.3.drv
+building '/nix/store/ch8d727c8x26mzd7vfhbjkwcyylpgzly-permuco_1.1.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/permuco_1.1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1141k  100 1141k    0     0  3552k      0 --:--:-- --:--:-- --:--:-- 3555k
+building '/nix/store/3byzsq4xsdj93jsidxp0vcss93v2r4gd-r-permuco-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d7klqpz8nnjm0qmz0mz9j34d0ybx672n-permuco_1.1.3.tar.gz
+source root is permuco
+setting SOURCE_DATE_EPOCH to timestamp 1724614802 of file permuco/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘permuco’ ...
+** package ‘permuco’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c clusterdepth.cpp -o clusterdepth.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tfce.cpp -o tfce.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c troendle.cpp -o troendle.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o permuco.so RcppExports.o clusterdepth.o tfce.o troendle.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/299sy4dy1ybwsvsz88ncdi0zvip61pbm-r-permuco-1.1.3/library/00LOCK-permuco/00new/permuco/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (permuco)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-permuco-1.1.3.drv-0/ in /nix/store/299sy4dy1ybwsvsz88ncdi0zvip61pbm-r-permuco-1.1.3...
+patching script interpreter paths in /nix/store/299sy4dy1ybwsvsz88ncdi0zvip61pbm-r-permuco-1.1.3
+rewriting symlink /nix/store/299sy4dy1ybwsvsz88ncdi0zvip61pbm-r-permuco-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/299sy4dy1ybwsvsz88ncdi0zvip61pbm-r-permuco-1.1.3

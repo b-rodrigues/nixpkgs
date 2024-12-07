@@ -1,0 +1,74 @@
+these 2 derivations will be built:
+  /nix/store/h0f839clk8h42p48870jn5am8vxpcil9-r-bigrquery-1.5.1.drv
+  /nix/store/h49xk56c79fb7jngd2pzb7qng1wi84q7-r-allofus-1.2.0.drv
+building '/nix/store/h0f839clk8h42p48870jn5am8vxpcil9-r-bigrquery-1.5.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xv9d0qj595skyq61iba9f9fk63qmp8vp-bigrquery_1.5.1.tar.gz
+source root is bigrquery
+setting SOURCE_DATE_EPOCH to timestamp 1710436202 of file bigrquery/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘bigrquery’ ...
+** package ‘bigrquery’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -I'/nix/store/3c27sg19hmcj55hlxssc7hizixvj5rxy-r-rapidjsonr-1.2.0/library/rapidjsonr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c BqField.cpp -o BqField.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -I'/nix/store/3c27sg19hmcj55hlxssc7hizixvj5rxy-r-rapidjsonr-1.2.0/library/rapidjsonr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c base64.c -o base64.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/s8kadyz083p6s8ssybgj4fbgxa8xznv7-r-cpp11-0.5.0/library/cpp11/include' -I'/nix/store/3c27sg19hmcj55hlxssc7hizixvj5rxy-r-rapidjsonr-1.2.0/library/rapidjsonr/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpp11.cpp -o cpp11.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o bigrquery.so BqField.o base64.o cpp11.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/sczycp0dyl05kz3a6nfhl6kxxnwcz51y-r-bigrquery-1.5.1/library/00LOCK-bigrquery/00new/bigrquery/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bigrquery)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-bigrquery-1.5.1.drv-0/ in /nix/store/sczycp0dyl05kz3a6nfhl6kxxnwcz51y-r-bigrquery-1.5.1...
+patching script interpreter paths in /nix/store/sczycp0dyl05kz3a6nfhl6kxxnwcz51y-r-bigrquery-1.5.1
+rewriting symlink /nix/store/sczycp0dyl05kz3a6nfhl6kxxnwcz51y-r-bigrquery-1.5.1/nix-support/propagated-user-env-packages to be relative to /nix/store/sczycp0dyl05kz3a6nfhl6kxxnwcz51y-r-bigrquery-1.5.1
+building '/nix/store/h49xk56c79fb7jngd2pzb7qng1wi84q7-r-allofus-1.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8g62z8xagy0lg4kz7gc51apna1nly8w5-allofus_1.2.0.tar.gz
+source root is allofus
+setting SOURCE_DATE_EPOCH to timestamp 1730880602 of file allofus/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘allofus’ ...
+** package ‘allofus’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (allofus)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-allofus-1.2.0.drv-0/ in /nix/store/9154fz9z37vir3pd8w02zsa3j9wykir5-r-allofus-1.2.0...
+patching script interpreter paths in /nix/store/9154fz9z37vir3pd8w02zsa3j9wykir5-r-allofus-1.2.0
+rewriting symlink /nix/store/9154fz9z37vir3pd8w02zsa3j9wykir5-r-allofus-1.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/9154fz9z37vir3pd8w02zsa3j9wykir5-r-allofus-1.2.0

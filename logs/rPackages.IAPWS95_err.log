@@ -1,0 +1,190 @@
+this derivation will be built:
+  /nix/store/n3vf12ckchsgvavphmz4r6nbhj63k68l-r-IAPWS95-1.2.4.drv
+this path will be fetched (0.10 MiB download, 0.10 MiB unpacked):
+  /nix/store/xmi1zk8if7bgm88fkrzxvil4p98bj2y1-IAPWS95_1.2.4.tar.gz
+copying path '/nix/store/xmi1zk8if7bgm88fkrzxvil4p98bj2y1-IAPWS95_1.2.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/n3vf12ckchsgvavphmz4r6nbhj63k68l-r-IAPWS95-1.2.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xmi1zk8if7bgm88fkrzxvil4p98bj2y1-IAPWS95_1.2.4.tar.gz
+source root is IAPWS95
+setting SOURCE_DATE_EPOCH to timestamp 1694431954 of file IAPWS95/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IAPWS95’ ...
+** package ‘IAPWS95’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  IAPWS9521D.f90 -o IAPWS9521D.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c IAPWS95_init.c -o IAPWS95_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IAPWS95.so IAPWS9521D.o IAPWS95_init.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _itpeg_: does not use standard frame
+ld: warning: could not create compact unwind for _vpeqn_: does not use standard frame
+ld: warning: could not create compact unwind for _dleqn_: does not use standard frame
+ld: warning: could not create compact unwind for _dveqn_: does not use standard frame
+ld: warning: could not create compact unwind for _phirtt_: does not use standard frame
+ld: warning: could not create compact unwind for _phird_: does not use standard frame
+ld: warning: could not create compact unwind for _phirdd_: does not use standard frame
+ld: warning: could not create compact unwind for _phirdt_: does not use standard frame
+ld: warning: could not create compact unwind for _phir_: does not use standard frame
+ld: warning: could not create compact unwind for _crmxwres_: does not use standard frame
+ld: warning: could not create compact unwind for _itpegz_: does not use standard frame
+ld: warning: could not create compact unwind for _itpegs2_: does not use standard frame
+ld: warning: could not create compact unwind for _itpegb_: does not use standard frame
+ld: warning: could not create compact unwind for _itpegs_: does not use standard frame
+ld: warning: could not create compact unwind for _tsatitz_: does not use standard frame
+ld: warning: could not create compact unwind for _qualy_: does not use standard frame
+ld: warning: could not create compact unwind for _ptd_: does not use standard frame
+ld: warning: could not create compact unwind for _dpddtd_: does not use standard frame
+ld: warning: could not create compact unwind for _slsatit_: does not use standard frame
+ld: warning: could not create compact unwind for _mxwpres_: does not use standard frame
+ld: warning: could not create compact unwind for _mxwdlres_: does not use standard frame
+ld: warning: could not create compact unwind for _mxwdvres_: does not use standard frame
+ld: warning: could not create compact unwind for _tsatit_: does not use standard frame
+ld: warning: could not create compact unwind for _psatt_: does not use standard frame
+ld: warning: could not create compact unwind for _tvpit_: does not use standard frame
+ld: warning: could not create compact unwind for _psatit_: does not use standard frame
+ld: warning: could not create compact unwind for _tdvit_: does not use standard frame
+ld: warning: could not create compact unwind for _dvsatit_: does not use standard frame
+ld: warning: could not create compact unwind for _tdlit_: does not use standard frame
+ld: warning: could not create compact unwind for _dlsatit_: does not use standard frame
+ld: warning: could not create compact unwind for _tsatd_: does not use standard frame
+ld: warning: could not create compact unwind for _pditer_: does not use standard frame
+ld: warning: could not create compact unwind for _phirt_: does not use standard frame
+ld: warning: could not create compact unwind for _htd_: does not use standard frame
+ld: warning: could not create compact unwind for _hft_: does not use standard frame
+ld: warning: could not create compact unwind for _dhiter_: does not use standard frame
+ld: warning: could not create compact unwind for _tdh_: does not use standard frame
+ld: warning: could not create compact unwind for _thiterz_: does not use standard frame
+ld: warning: could not create compact unwind for _thiter_: does not use standard frame
+ld: warning: could not create compact unwind for _tidh2res_: does not use standard frame
+ld: warning: could not create compact unwind for _tdiphres_: does not use standard frame
+ld: warning: could not create compact unwind for _tdihsres_: does not use standard frame
+ld: warning: could not create compact unwind for _svsatitcrit_: does not use standard frame
+ld: warning: could not create compact unwind for _svsatittr_: does not use standard frame
+ld: warning: could not create compact unwind for _tsats_: does not use standard frame
+ld: warning: could not create compact unwind for _dsiter_: does not use standard frame
+ld: warning: could not create compact unwind for _svsatit_: does not use standard frame
+ld: warning: could not create compact unwind for _svsatitmid_: does not use standard frame
+ld: warning: could not create compact unwind for _hsiter_: does not use standard frame
+ld: warning: could not create compact unwind for _tsiter_: does not use standard frame
+ld: warning: could not create compact unwind for _dts_: does not use standard frame
+ld: warning: could not create compact unwind for _dhs_: does not use standard frame
+ld: warning: could not create compact unwind for _tids2res_: does not use standard frame
+ld: warning: could not create compact unwind for _tdihs2res_: does not use standard frame
+ld: warning: could not create compact unwind for _tdipsres_: does not use standard frame
+ld: warning: could not create compact unwind for _svsatres_: does not use standard frame
+ld: warning: could not create compact unwind for _slsatres_: does not use standard frame
+ld: warning: could not create compact unwind for _visctd_: does not use standard frame
+ld: warning: could not create compact unwind for _cptd_: does not use standard frame
+ld: warning: could not create compact unwind for _cvtd_: does not use standard frame
+ld: warning: could not create compact unwind for _cndtd_: does not use standard frame
+ld: warning: could not create compact unwind for _dsoave_: does not use standard frame
+ld: warning: could not create compact unwind for _tpiter_: does not use standard frame
+ld: warning: could not create compact unwind for _phiter_: does not use standard frame
+ld: warning: could not create compact unwind for _psiter_: does not use standard frame
+ld: warning: could not create compact unwind for _utp_: does not use standard frame
+ld: warning: could not create compact unwind for _stp_: does not use standard frame
+ld: warning: could not create compact unwind for _htp_: does not use standard frame
+ld: warning: could not create compact unwind for _dtp_: does not use standard frame
+ld: warning: could not create compact unwind for _vtp_: does not use standard frame
+ld: warning: could not create compact unwind for _sgt_: does not use standard frame
+ld: warning: could not create compact unwind for _sft_: does not use standard frame
+ld: warning: could not create compact unwind for _hgt_: does not use standard frame
+ld: warning: could not create compact unwind for _dgt_: does not use standard frame
+ld: warning: could not create compact unwind for _dft_: does not use standard frame
+ld: warning: could not create compact unwind for _tsatp_: does not use standard frame
+ld: warning: could not create compact unwind for _psattab_: does not use standard frame
+ld: warning: could not create compact unwind for _tsattab_: does not use standard frame
+ld: warning: could not create compact unwind for _hfttab_: does not use standard frame
+ld: warning: could not create compact unwind for _satdhsoft_: does not use standard frame
+ld: warning: could not create compact unwind for _satvhsoft_: does not use standard frame
+ld: warning: could not create compact unwind for _satdhsofp_: does not use standard frame
+ld: warning: could not create compact unwind for _satvhsofp_: does not use standard frame
+ld: warning: could not create compact unwind for _vtpctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _vptctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _dtpctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _dptctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _htpctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _hptctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _stpctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _sptctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _utpctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _uptctetab_: does not use standard frame
+ld: warning: could not create compact unwind for _kvisctd_: does not use standard frame
+ld: warning: could not create compact unwind for _prandttd_: does not use standard frame
+ld: warning: could not create compact unwind for _pmeltt_: does not use standard frame
+ld: warning: could not create compact unwind for _std_: does not use standard frame
+ld: warning: could not create compact unwind for _ftd_: does not use standard frame
+ld: warning: could not create compact unwind for _ftp_: does not use standard frame
+ld: warning: could not create compact unwind for _utd_: does not use standard frame
+ld: warning: could not create compact unwind for _wtd_: does not use standard frame
+ld: warning: could not create compact unwind for _cvtp_: does not use standard frame
+ld: warning: could not create compact unwind for _cptp_: does not use standard frame
+ld: warning: could not create compact unwind for _wtp_: does not use standard frame
+ld: warning: could not create compact unwind for _dth_: does not use standard frame
+ld: warning: could not create compact unwind for _tdp_: does not use standard frame
+ld: warning: could not create compact unwind for _tds_: does not use standard frame
+ld: warning: could not create compact unwind for _tps_: does not use standard frame
+ld: warning: could not create compact unwind for _dps_: does not use standard frame
+ld: warning: could not create compact unwind for _hps_: does not use standard frame
+ld: warning: could not create compact unwind for _tph_: does not use standard frame
+ld: warning: could not create compact unwind for _dph_: does not use standard frame
+ld: warning: could not create compact unwind for _sph_: does not use standard frame
+ld: warning: could not create compact unwind for _ths_: does not use standard frame
+ld: warning: could not create compact unwind for _uft_: does not use standard frame
+ld: warning: could not create compact unwind for _ugt_: does not use standard frame
+ld: warning: could not create compact unwind for _cvft_: does not use standard frame
+ld: warning: could not create compact unwind for _cvgt_: does not use standard frame
+ld: warning: could not create compact unwind for _cpft_: does not use standard frame
+ld: warning: could not create compact unwind for _cpgt_: does not use standard frame
+ld: warning: could not create compact unwind for _wft_: does not use standard frame
+ld: warning: could not create compact unwind for _wgt_: does not use standard frame
+ld: warning: could not create compact unwind for _dfp_: does not use standard frame
+ld: warning: could not create compact unwind for _dgp_: does not use standard frame
+ld: warning: could not create compact unwind for _psatd_: does not use standard frame
+ld: warning: could not create compact unwind for _dfs_: does not use standard frame
+ld: warning: could not create compact unwind for _dgs_: does not use standard frame
+ld: warning: could not create compact unwind for _psats_: does not use standard frame
+ld: warning: could not create compact unwind for _fugatp_: does not use standard frame
+ld: warning: could not create compact unwind for _gibbstp_: does not use standard frame
+ld: warning: could not create compact unwind for _jtctd_: does not use standard frame
+ld: warning: could not create compact unwind for _thrctd_: does not use standard frame
+ld: warning: could not create compact unwind for _bt_: does not use standard frame
+ld: warning: could not create compact unwind for _ct_: does not use standard frame
+ld: warning: could not create compact unwind for _kapatd_: does not use standard frame
+ld: warning: could not create compact unwind for _ztd_: does not use standard frame
+ld: warning: could not create compact unwind for _dpdttd_: does not use standard frame
+ld: warning: could not create compact unwind for _dddttd_: does not use standard frame
+ld: warning: could not create compact unwind for _dpddtp_: does not use standard frame
+ld: warning: could not create compact unwind for _dddttp_: does not use standard frame
+ld: warning: could not create compact unwind for _dpdttp_: does not use standard frame
+installing to /nix/store/sb57828bav5903lqwa3lbbyvalzcalv1-r-IAPWS95-1.2.4/library/00LOCK-IAPWS95/00new/IAPWS95/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IAPWS95)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IAPWS95-1.2.4.drv-0/ in /nix/store/sb57828bav5903lqwa3lbbyvalzcalv1-r-IAPWS95-1.2.4...
+patching script interpreter paths in /nix/store/sb57828bav5903lqwa3lbbyvalzcalv1-r-IAPWS95-1.2.4
+rewriting symlink /nix/store/sb57828bav5903lqwa3lbbyvalzcalv1-r-IAPWS95-1.2.4/nix-support/propagated-user-env-packages to be relative to /nix/store/sb57828bav5903lqwa3lbbyvalzcalv1-r-IAPWS95-1.2.4

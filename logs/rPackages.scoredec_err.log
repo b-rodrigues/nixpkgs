@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/py6chzhi264inipsrr9yngjk10k2yyv1-scoredec_0.1.2.tar.gz.drv
+  /nix/store/ci7a8q54zijihl6kjpls6xn80rs1i0mk-r-scoredec-0.1.2.drv
+building '/nix/store/py6chzhi264inipsrr9yngjk10k2yyv1-scoredec_0.1.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/scoredec_0.1.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  164k  100  164k    0     0   991k      0 --:--:-- --:--:-- --:--:--  993k
+building '/nix/store/ci7a8q54zijihl6kjpls6xn80rs1i0mk-r-scoredec-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/x2mq2glsn97z9drx4rfxpy173qcyc2xh-scoredec_0.1.2.tar.gz
+source root is scoredec
+setting SOURCE_DATE_EPOCH to timestamp 1732085401 of file scoredec/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘scoredec’ ...
+** package ‘scoredec’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_scoredec.cpp -o rcpp_scoredec.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_scoredec_int.cpp -o rcpp_scoredec_int.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o scoredec.so RcppExports.o rcpp_scoredec.o rcpp_scoredec_int.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/sajsfygv4jzk3blf7lyhbfim26jg9m4y-r-scoredec-0.1.2/library/00LOCK-scoredec/00new/scoredec/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (scoredec)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-scoredec-0.1.2.drv-0/ in /nix/store/sajsfygv4jzk3blf7lyhbfim26jg9m4y-r-scoredec-0.1.2...
+patching script interpreter paths in /nix/store/sajsfygv4jzk3blf7lyhbfim26jg9m4y-r-scoredec-0.1.2
+rewriting symlink /nix/store/sajsfygv4jzk3blf7lyhbfim26jg9m4y-r-scoredec-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/sajsfygv4jzk3blf7lyhbfim26jg9m4y-r-scoredec-0.1.2

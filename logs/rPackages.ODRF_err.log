@@ -1,0 +1,88 @@
+these 2 derivations will be built:
+  /nix/store/7xfhjpi7pk04694ax230cm9r7xw53ab1-r-Pursuit-1.0.5.drv
+  /nix/store/2fna3l1wfiy5w5xaq2hzvy7ajq5znz61-r-ODRF-0.0.4.drv
+these 2 paths will be fetched (0.26 MiB download, 0.26 MiB unpacked):
+  /nix/store/vsk7wnq4b4g17ydh8w3za8kzmw38qhxl-ODRF_0.0.4.tar.gz
+  /nix/store/9cdsg054g1jjs1s8qmfm3qmhhngc8yy0-Pursuit_1.0.5.tar.gz
+copying path '/nix/store/vsk7wnq4b4g17ydh8w3za8kzmw38qhxl-ODRF_0.0.4.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9cdsg054g1jjs1s8qmfm3qmhhngc8yy0-Pursuit_1.0.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7xfhjpi7pk04694ax230cm9r7xw53ab1-r-Pursuit-1.0.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9cdsg054g1jjs1s8qmfm3qmhhngc8yy0-Pursuit_1.0.5.tar.gz
+source root is Pursuit
+setting SOURCE_DATE_EPOCH to timestamp 1718985602 of file Pursuit/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Pursuit’ ...
+** package ‘Pursuit’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PP_IndexC.c -o PP_IndexC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PursuitRegister.c -o PursuitRegister.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Pursuit.so PP_IndexC.o PursuitRegister.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/m5qdrybwz8gg74kfhq0yq6p9ipqvx1c6-r-Pursuit-1.0.5/library/00LOCK-Pursuit/00new/Pursuit/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Pursuit)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Pursuit-1.0.5.drv-0/ in /nix/store/m5qdrybwz8gg74kfhq0yq6p9ipqvx1c6-r-Pursuit-1.0.5...
+patching script interpreter paths in /nix/store/m5qdrybwz8gg74kfhq0yq6p9ipqvx1c6-r-Pursuit-1.0.5
+rewriting symlink /nix/store/m5qdrybwz8gg74kfhq0yq6p9ipqvx1c6-r-Pursuit-1.0.5/nix-support/propagated-user-env-packages to be relative to /nix/store/m5qdrybwz8gg74kfhq0yq6p9ipqvx1c6-r-Pursuit-1.0.5
+building '/nix/store/2fna3l1wfiy5w5xaq2hzvy7ajq5znz61-r-ODRF-0.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vsk7wnq4b4g17ydh8w3za8kzmw38qhxl-ODRF_0.0.4.tar.gz
+source root is ODRF
+setting SOURCE_DATE_EPOCH to timestamp 1685247602 of file ODRF/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ODRF’ ...
+** package ‘ODRF’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c best_cut_node.cpp -o best_cut_node.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gini_split.cpp -o gini_split.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c infogain_split.cpp -o infogain_split.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mse_split.cpp -o mse_split.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ppOpt.cpp -o ppOpt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c predict_ODT.cpp -o predict_ODT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ODRF.so RcppExports.o best_cut_node.o gini_split.o infogain_split.o mse_split.o ppOpt.o predict_ODT.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/dykqj9h1v787az0y7jkq5lg30p5j4m1y-r-ODRF-0.0.4/library/00LOCK-ODRF/00new/ODRF/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ODRF)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ODRF-0.0.4.drv-0/ in /nix/store/dykqj9h1v787az0y7jkq5lg30p5j4m1y-r-ODRF-0.0.4...
+patching script interpreter paths in /nix/store/dykqj9h1v787az0y7jkq5lg30p5j4m1y-r-ODRF-0.0.4
+rewriting symlink /nix/store/dykqj9h1v787az0y7jkq5lg30p5j4m1y-r-ODRF-0.0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/dykqj9h1v787az0y7jkq5lg30p5j4m1y-r-ODRF-0.0.4

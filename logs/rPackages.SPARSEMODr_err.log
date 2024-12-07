@@ -1,0 +1,46 @@
+this derivation will be built:
+  /nix/store/klp8w29sk3aj5y9y38rbkz0sdkq4spfg-r-SPARSEMODr-1.2.0.drv
+this path will be fetched (0.79 MiB download, 0.79 MiB unpacked):
+  /nix/store/23w21fwzqlqzlrkvpbh3qwi4qhaw23q6-SPARSEMODr_1.2.0.tar.gz
+copying path '/nix/store/23w21fwzqlqzlrkvpbh3qwi4qhaw23q6-SPARSEMODr_1.2.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/klp8w29sk3aj5y9y38rbkz0sdkq4spfg-r-SPARSEMODr-1.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/23w21fwzqlqzlrkvpbh3qwi4qhaw23q6-SPARSEMODr_1.2.0.tar.gz
+source root is SPARSEMODr
+setting SOURCE_DATE_EPOCH to timestamp 1658263802 of file SPARSEMODr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SPARSEMODr’ ...
+** package ‘SPARSEMODr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Nrutil.cpp -o Nrutil.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c covid19_model.cpp -o covid19_model.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c interface.cpp -o interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c seir_model.cpp -o seir_model.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c time_window_utils.cpp -o time_window_utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SPARSEMODr.so Nrutil.o RcppExports.o covid19_model.o interface.o seir_model.o time_window_utils.o -lgsl -lgslcblas -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9sfa0krb6pq1wx6vydgmnvpg5ajhr0mh-r-SPARSEMODr-1.2.0/library/00LOCK-SPARSEMODr/00new/SPARSEMODr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SPARSEMODr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SPARSEMODr-1.2.0.drv-0/ in /nix/store/9sfa0krb6pq1wx6vydgmnvpg5ajhr0mh-r-SPARSEMODr-1.2.0...
+patching script interpreter paths in /nix/store/9sfa0krb6pq1wx6vydgmnvpg5ajhr0mh-r-SPARSEMODr-1.2.0
+rewriting symlink /nix/store/9sfa0krb6pq1wx6vydgmnvpg5ajhr0mh-r-SPARSEMODr-1.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/9sfa0krb6pq1wx6vydgmnvpg5ajhr0mh-r-SPARSEMODr-1.2.0

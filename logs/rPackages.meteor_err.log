@@ -1,0 +1,51 @@
+this derivation will be built:
+  /nix/store/a4k96pvp7hs6ql2jisjy3cgd1g6k7sky-r-meteor-0.4-5.drv
+this path will be fetched (0.62 MiB download, 0.62 MiB unpacked):
+  /nix/store/bg628l7x292is6j5sdhfm3y7pf69mp0w-meteor_0.4-5.tar.gz
+copying path '/nix/store/bg628l7x292is6j5sdhfm3y7pf69mp0w-meteor_0.4-5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/a4k96pvp7hs6ql2jisjy3cgd1g6k7sky-r-meteor-0.4-5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bg628l7x292is6j5sdhfm3y7pf69mp0w-meteor_0.4-5.tar.gz
+source root is meteor
+setting SOURCE_DATE_EPOCH to timestamp 1689530402 of file meteor/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘meteor’ ...
+** package ‘meteor’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c biovars.cpp -o biovars.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pwc.cpp -o pwc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pwc_raster.cpp -o pwc_raster.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c simmeteo.cpp -o simmeteo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c wbgt.cpp -o wbgt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c wth_rcpp.cpp -o wth_rcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o meteor.so RcppExports.o biovars.o pwc.o pwc_raster.o simmeteo.o wbgt.o wth_rcpp.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/fxfq2g840l1b59vkcpza20gqdbdxnzz8-r-meteor-0.4-5/library/00LOCK-meteor/00new/meteor/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+dans la méthode pour ‘photoperiod’ avec la signature ‘x="SpatRaster"’ : aucune définition de la classe “SpatRaster” n'est trouvée
+dans la méthode pour ‘Tg’ avec la signature ‘x="SpatRasterDataset"’ : aucune définition de la classe “SpatRasterDataset” n'est trouvée
+dans la méthode pour ‘Tnwb’ avec la signature ‘x="SpatRasterDataset"’ : aucune définition de la classe “SpatRasterDataset” n'est trouvée
+dans la méthode pour ‘WBGT’ avec la signature ‘x="SpatRasterDataset"’ : aucune définition de la classe “SpatRasterDataset” n'est trouvée
+dans la méthode pour ‘pwc’ avec la signature ‘x="SpatRaster"’ : aucune définition de la classe “SpatRaster” n'est trouvée
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (meteor)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-meteor-0.4-5.drv-0/ in /nix/store/fxfq2g840l1b59vkcpza20gqdbdxnzz8-r-meteor-0.4-5...
+patching script interpreter paths in /nix/store/fxfq2g840l1b59vkcpza20gqdbdxnzz8-r-meteor-0.4-5
+rewriting symlink /nix/store/fxfq2g840l1b59vkcpza20gqdbdxnzz8-r-meteor-0.4-5/nix-support/propagated-user-env-packages to be relative to /nix/store/fxfq2g840l1b59vkcpza20gqdbdxnzz8-r-meteor-0.4-5

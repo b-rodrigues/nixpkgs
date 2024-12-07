@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/cp6cm5jj0j14hrfa1vamdwz4vdp1aij8-QuadratiK_1.1.2.tar.gz.drv
+  /nix/store/n2d1wlfsm22lm8f53q8x7kvsfwdrigqr-r-QuadratiK-1.1.2.drv
+building '/nix/store/cp6cm5jj0j14hrfa1vamdwz4vdp1aij8-QuadratiK_1.1.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/QuadratiK_1.1.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  576k  100  576k    0     0  2196k      0 --:--:-- --:--:-- --:--:-- 2199k
+building '/nix/store/n2d1wlfsm22lm8f53q8x7kvsfwdrigqr-r-QuadratiK-1.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9zwbqryrbpq9rjpi394anml1xwpcqbnl-QuadratiK_1.1.2.tar.gz
+source root is QuadratiK
+setting SOURCE_DATE_EPOCH to timestamp 1730199602 of file QuadratiK/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘QuadratiK’ ...
+** package ‘QuadratiK’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c kernel_function.cpp -o kernel_function.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o QuadratiK.so RcppExports.o kernel_function.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/iwarnkqp2z296ymypldbx5ah8rqgvbgp-r-QuadratiK-1.1.2/library/00LOCK-QuadratiK/00new/QuadratiK/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (QuadratiK)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-QuadratiK-1.1.2.drv-0/ in /nix/store/iwarnkqp2z296ymypldbx5ah8rqgvbgp-r-QuadratiK-1.1.2...
+patching script interpreter paths in /nix/store/iwarnkqp2z296ymypldbx5ah8rqgvbgp-r-QuadratiK-1.1.2
+rewriting symlink /nix/store/iwarnkqp2z296ymypldbx5ah8rqgvbgp-r-QuadratiK-1.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/iwarnkqp2z296ymypldbx5ah8rqgvbgp-r-QuadratiK-1.1.2

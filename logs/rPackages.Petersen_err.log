@@ -1,0 +1,75 @@
+these 2 derivations will be built:
+  /nix/store/h9a2vqbc520wk69pflcdzb7fwlv64r74-r-SPAS-2024.1.31.drv
+  /nix/store/05ygw29g9caz3yl0yjbfjqyrrz1hkadp-r-Petersen-2024.6.1.drv
+these 2 paths will be fetched (0.28 MiB download, 0.28 MiB unpacked):
+  /nix/store/vg76hiqqxmgy5p69iw62knh8bnfb5a6l-Petersen_2024.6.1.tar.gz
+  /nix/store/8zrr03kvr3mpwvbs7lqg579rb3b0823k-SPAS_2024.1.31.tar.gz
+copying path '/nix/store/vg76hiqqxmgy5p69iw62knh8bnfb5a6l-Petersen_2024.6.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/8zrr03kvr3mpwvbs7lqg579rb3b0823k-SPAS_2024.1.31.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h9a2vqbc520wk69pflcdzb7fwlv64r74-r-SPAS-2024.1.31.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8zrr03kvr3mpwvbs7lqg579rb3b0823k-SPAS_2024.1.31.tar.gz
+source root is SPAS
+setting SOURCE_DATE_EPOCH to timestamp 1706216402 of file SPAS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SPAS’ ...
+** package ‘SPAS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c SPAS_log_cond_likelihood_C.cpp -o SPAS_log_cond_likelihood_C.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SPAS.so SPAS_log_cond_likelihood_C.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/nvhgkqq1wbp0kkv3cjqxf34pca977h8c-r-SPAS-2024.1.31/library/00LOCK-SPAS/00new/SPAS/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SPAS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SPAS-2024.1.31.drv-0/ in /nix/store/nvhgkqq1wbp0kkv3cjqxf34pca977h8c-r-SPAS-2024.1.31...
+patching script interpreter paths in /nix/store/nvhgkqq1wbp0kkv3cjqxf34pca977h8c-r-SPAS-2024.1.31
+rewriting symlink /nix/store/nvhgkqq1wbp0kkv3cjqxf34pca977h8c-r-SPAS-2024.1.31/nix-support/propagated-user-env-packages to be relative to /nix/store/nvhgkqq1wbp0kkv3cjqxf34pca977h8c-r-SPAS-2024.1.31
+building '/nix/store/05ygw29g9caz3yl0yjbfjqyrrz1hkadp-r-Petersen-2024.6.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vg76hiqqxmgy5p69iw62knh8bnfb5a6l-Petersen_2024.6.1.tar.gz
+source root is Petersen
+setting SOURCE_DATE_EPOCH to timestamp 1717136404 of file Petersen/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Petersen’ ...
+** package ‘Petersen’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Petersen)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Petersen-2024.6.1.drv-0/ in /nix/store/px9ybxyjb7xfyspl293mczskylg6kqg6-r-Petersen-2024.6.1...
+patching script interpreter paths in /nix/store/px9ybxyjb7xfyspl293mczskylg6kqg6-r-Petersen-2024.6.1
+rewriting symlink /nix/store/px9ybxyjb7xfyspl293mczskylg6kqg6-r-Petersen-2024.6.1/nix-support/propagated-user-env-packages to be relative to /nix/store/px9ybxyjb7xfyspl293mczskylg6kqg6-r-Petersen-2024.6.1

@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/q0ajl0rggb5hc3i6q58c31ski0skas9n-r-scBSP-1.0.0.drv
+this path will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/pmy0izl3vvbfqhwrs03bny36xra5b1y1-scBSP_1.0.0.tar.gz
+copying path '/nix/store/pmy0izl3vvbfqhwrs03bny36xra5b1y1-scBSP_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/q0ajl0rggb5hc3i6q58c31ski0skas9n-r-scBSP-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pmy0izl3vvbfqhwrs03bny36xra5b1y1-scBSP_1.0.0.tar.gz
+source root is scBSP
+setting SOURCE_DATE_EPOCH to timestamp 1714708202 of file scBSP/inst/doc/manual.pdf
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘scBSP’
+* removing ‘/nix/store/s6ssvvv5n836wm92bk1hqws8mvg41bq1-r-scBSP-1.0.0/library/scBSP’
+error: builder for '/nix/store/q0ajl0rggb5hc3i6q58c31ski0skas9n-r-scBSP-1.0.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/pmy0izl3vvbfqhwrs03bny36xra5b1y1-scBSP_1.0.0.tar.gz
+       > source root is scBSP
+       > setting SOURCE_DATE_EPOCH to timestamp 1714708202 of file scBSP/inst/doc/manual.pdf
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘scBSP’
+       > * removing ‘/nix/store/s6ssvvv5n836wm92bk1hqws8mvg41bq1-r-scBSP-1.0.0/library/scBSP’
+       For full logs, run 'nix log /nix/store/q0ajl0rggb5hc3i6q58c31ski0skas9n-r-scBSP-1.0.0.drv'.

@@ -1,0 +1,101 @@
+these 3 derivations will be built:
+  /nix/store/0w4vm3qz60vcs2b49xq3kb79pc8z1x4b-r-migration.indices-0.3.1.drv
+  /nix/store/rzsjqw5k71a774r8c87yir7qr9fbm3a3-r-mipfp-3.2.1.drv
+  /nix/store/1dclxcbh4wnwa5mw2vifk4n9f98g4yr6-r-migest-2.0.4.drv
+these 3 paths will be fetched (0.39 MiB download, 0.39 MiB unpacked):
+  /nix/store/mzsa794bzjf17i1qkivhcakdj6kc9zrj-migest_2.0.4.tar.gz
+  /nix/store/hqa33adf14dx381nc6il2q1gnwnlpxq1-migration.indices_0.3.1.tar.gz
+  /nix/store/r3ll493sn6rvdh0x0ps2d494s0fcx21d-mipfp_3.2.1.tar.gz
+copying path '/nix/store/mzsa794bzjf17i1qkivhcakdj6kc9zrj-migest_2.0.4.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/hqa33adf14dx381nc6il2q1gnwnlpxq1-migration.indices_0.3.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/r3ll493sn6rvdh0x0ps2d494s0fcx21d-mipfp_3.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0w4vm3qz60vcs2b49xq3kb79pc8z1x4b-r-migration.indices-0.3.1.drv'...
+building '/nix/store/rzsjqw5k71a774r8c87yir7qr9fbm3a3-r-mipfp-3.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hqa33adf14dx381nc6il2q1gnwnlpxq1-migration.indices_0.3.1.tar.gz
+source root is migration.indices
+setting SOURCE_DATE_EPOCH to timestamp 1655133009 of file migration.indices/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/r3ll493sn6rvdh0x0ps2d494s0fcx21d-mipfp_3.2.1.tar.gz
+source root is mipfp
+setting SOURCE_DATE_EPOCH to timestamp 1535530207 of file mipfp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+* installing *source* package ‘migration.indices’ ...
+** package ‘migration.indices’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mipfp’ ...
+** package ‘mipfp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** help
+*** installing help indices
+** building package indices
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (migration.indices)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-migration.indices-0.3.1.drv-0/ in /nix/store/a6y1a3bb04g9l1axlg9vkhsn2nnlgl4j-r-migration.indices-0.3.1...
+** help
+patching script interpreter paths in /nix/store/a6y1a3bb04g9l1axlg9vkhsn2nnlgl4j-r-migration.indices-0.3.1
+rewriting symlink /nix/store/a6y1a3bb04g9l1axlg9vkhsn2nnlgl4j-r-migration.indices-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/a6y1a3bb04g9l1axlg9vkhsn2nnlgl4j-r-migration.indices-0.3.1
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mipfp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mipfp-3.2.1.drv-0/ in /nix/store/7l3xg8s66v7znm2lkkxcp3jr9kz3kbks-r-mipfp-3.2.1...
+patching script interpreter paths in /nix/store/7l3xg8s66v7znm2lkkxcp3jr9kz3kbks-r-mipfp-3.2.1
+rewriting symlink /nix/store/7l3xg8s66v7znm2lkkxcp3jr9kz3kbks-r-mipfp-3.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/7l3xg8s66v7znm2lkkxcp3jr9kz3kbks-r-mipfp-3.2.1
+building '/nix/store/1dclxcbh4wnwa5mw2vifk4n9f98g4yr6-r-migest-2.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mzsa794bzjf17i1qkivhcakdj6kc9zrj-migest_2.0.4.tar.gz
+source root is migest
+setting SOURCE_DATE_EPOCH to timestamp 1700296802 of file migest/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘migest’ ...
+** package ‘migest’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (migest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-migest-2.0.4.drv-0/ in /nix/store/19s1z0nkh2rqn8x45bxxi1lxng196ir4-r-migest-2.0.4...
+patching script interpreter paths in /nix/store/19s1z0nkh2rqn8x45bxxi1lxng196ir4-r-migest-2.0.4
+rewriting symlink /nix/store/19s1z0nkh2rqn8x45bxxi1lxng196ir4-r-migest-2.0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/19s1z0nkh2rqn8x45bxxi1lxng196ir4-r-migest-2.0.4

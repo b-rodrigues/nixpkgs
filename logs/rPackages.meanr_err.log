@@ -1,0 +1,65 @@
+this derivation will be built:
+  /nix/store/l5ps7gvk76av890dmqh5615jhmalcvqw-r-meanr-0.1-6.drv
+this path will be fetched (0.17 MiB download, 0.17 MiB unpacked):
+  /nix/store/mlxx817rn2knrbf43npgl5avd9c2a9fm-meanr_0.1-6.tar.gz
+copying path '/nix/store/mlxx817rn2knrbf43npgl5avd9c2a9fm-meanr_0.1-6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/l5ps7gvk76av890dmqh5615jhmalcvqw-r-meanr-0.1-6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mlxx817rn2knrbf43npgl5avd9c2a9fm-meanr_0.1-6.tar.gz
+source root is meanr
+setting SOURCE_DATE_EPOCH to timestamp 1702234808 of file meanr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘meanr’ ...
+** package ‘meanr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... none needed
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to support OpenMP... unsupported
+ 
+******************* Results of meanr package configure *******************
+ 
+* OpenMP Report
+*   >> Compiler support: no
+*   >> CFLAGS = 
+**************************************************************************
+ 
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/sexputils -fPIC  -g -O2  -c meanr_native.c -o meanr_native.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/sexputils -fPIC  -g -O2  -c meanr_nthreads.c -o meanr_nthreads.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/sexputils -fPIC  -g -O2  -c score.c -o score.o
+score.c:135:9: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+        for (size_t j=0; j<inlen; j++)
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o meanr.so meanr_native.o meanr_nthreads.o score.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/frm4n2hsr78y9k96nfhzcirij5v8bl80-r-meanr-0.1-6/library/00LOCK-meanr/00new/meanr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (meanr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-meanr-0.1-6.drv-0/ in /nix/store/frm4n2hsr78y9k96nfhzcirij5v8bl80-r-meanr-0.1-6...
+patching script interpreter paths in /nix/store/frm4n2hsr78y9k96nfhzcirij5v8bl80-r-meanr-0.1-6

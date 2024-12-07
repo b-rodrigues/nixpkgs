@@ -1,0 +1,85 @@
+these 3 derivations will be built:
+  /nix/store/m22ma2yqzni1h4nynb8a1cwyqpy2dgd9-Luminescence_0.9.26.tar.gz.drv
+  /nix/store/zw5yp9kx89aydbdpybvxbvn98g24fz55-r-Luminescence-0.9.26.drv
+  /nix/store/r37ygz3bm5sg2psnz3sxlm79grvq652f-r-BayLum-0.3.2.drv
+building '/nix/store/m22ma2yqzni1h4nynb8a1cwyqpy2dgd9-Luminescence_0.9.26.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/Luminescence_0.9.26.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1745k  100 1745k    0     0  3873k      0 --:--:-- --:--:-- --:--:-- 3870k
+building '/nix/store/zw5yp9kx89aydbdpybvxbvn98g24fz55-r-Luminescence-0.9.26.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lbzi36cwvpkvh082jl8wkymw87mdyp2y-Luminescence_0.9.26.tar.gz
+source root is Luminescence
+setting SOURCE_DATE_EPOCH to timestamp 1731931214 of file Luminescence/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Luminescence’ ...
+** package ‘Luminescence’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c create_UID.cpp -o create_UID.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c src_analyse_IRSARRF_SRS.cpp -o src_analyse_IRSARRF_SRS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c src_create_RLumDataCurve_matrix.cpp -o src_create_RLumDataCurve_matrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c src_get_XSYG_curve_values.cpp -o src_get_XSYG_curve_values.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Luminescence.so RcppExports.o create_UID.o src_analyse_IRSARRF_SRS.o src_create_RLumDataCurve_matrix.o src_get_XSYG_curve_values.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/axwmg4kk5fkvfk9k9bz0qvdbvc940cmx-r-Luminescence-0.9.26/library/00LOCK-Luminescence/00new/Luminescence/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Luminescence)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Luminescence-0.9.26.drv-0/ in /nix/store/axwmg4kk5fkvfk9k9bz0qvdbvc940cmx-r-Luminescence-0.9.26...
+patching script interpreter paths in /nix/store/axwmg4kk5fkvfk9k9bz0qvdbvc940cmx-r-Luminescence-0.9.26
+rewriting symlink /nix/store/axwmg4kk5fkvfk9k9bz0qvdbvc940cmx-r-Luminescence-0.9.26/nix-support/propagated-user-env-packages to be relative to /nix/store/axwmg4kk5fkvfk9k9bz0qvdbvc940cmx-r-Luminescence-0.9.26
+building '/nix/store/r37ygz3bm5sg2psnz3sxlm79grvq652f-r-BayLum-0.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q2mwsyiavrnwja1x14gn9cr38llx9jc5-BayLum_0.3.2.tar.gz
+source root is BayLum
+setting SOURCE_DATE_EPOCH to timestamp 1718548806 of file BayLum/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘BayLum’ ...
+** package ‘BayLum’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (BayLum)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-BayLum-0.3.2.drv-0/ in /nix/store/y8i503anp2zj33gaaqgkais9021aciwb-r-BayLum-0.3.2...
+patching script interpreter paths in /nix/store/y8i503anp2zj33gaaqgkais9021aciwb-r-BayLum-0.3.2
+rewriting symlink /nix/store/y8i503anp2zj33gaaqgkais9021aciwb-r-BayLum-0.3.2/nix-support/propagated-user-env-packages to be relative to /nix/store/y8i503anp2zj33gaaqgkais9021aciwb-r-BayLum-0.3.2

@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/wdqdiy0gsq5gq4p5f651c5vj0fvx4y3d-r-litteR-1.0.0.drv
+this path will be fetched (2.41 MiB download, 2.61 MiB unpacked):
+  /nix/store/xfh06z800y5isp2wdvkfs2i452g8wklv-litteR_1.0.0.tar.gz
+copying path '/nix/store/xfh06z800y5isp2wdvkfs2i452g8wklv-litteR_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wdqdiy0gsq5gq4p5f651c5vj0fvx4y3d-r-litteR-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xfh06z800y5isp2wdvkfs2i452g8wklv-litteR_1.0.0.tar.gz
+source root is litteR
+setting SOURCE_DATE_EPOCH to timestamp 1661542326 of file litteR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘litteR’ ...
+** package ‘litteR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 88720 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-litteR-1.0.0.drv-0/RtmpPWJFiS/file15a8b2c181529'
+ERROR: lazy loading failed for package ‘litteR’
+* removing ‘/nix/store/8z7p1g2f2jwyhjvszm10xjm4szxcyfrb-r-litteR-1.0.0/library/litteR’
+error: builder for '/nix/store/wdqdiy0gsq5gq4p5f651c5vj0fvx4y3d-r-litteR-1.0.0.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/xfh06z800y5isp2wdvkfs2i452g8wklv-litteR_1.0.0.tar.gz
+       > source root is litteR
+       > setting SOURCE_DATE_EPOCH to timestamp 1661542326 of file litteR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘litteR’ ...
+       > ** package ‘litteR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 88720 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-litteR-1.0.0.drv-0/RtmpPWJFiS/file15a8b2c181529'
+       > ERROR: lazy loading failed for package ‘litteR’
+       > * removing ‘/nix/store/8z7p1g2f2jwyhjvszm10xjm4szxcyfrb-r-litteR-1.0.0/library/litteR’
+       For full logs, run 'nix log /nix/store/wdqdiy0gsq5gq4p5f651c5vj0fvx4y3d-r-litteR-1.0.0.drv'.

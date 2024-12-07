@@ -1,0 +1,89 @@
+this derivation will be built:
+  /nix/store/vjlywjg1ss8lfjamh91crmhi62hqcixd-r-PropClust-1.4-7.drv
+this path will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/zvxi4pqjyjzrsn19xvfgpr4zign8ksvl-PropClust_1.4-7.tar.gz
+copying path '/nix/store/zvxi4pqjyjzrsn19xvfgpr4zign8ksvl-PropClust_1.4-7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vjlywjg1ss8lfjamh91crmhi62hqcixd-r-PropClust-1.4-7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zvxi4pqjyjzrsn19xvfgpr4zign8ksvl-PropClust_1.4-7.tar.gz
+source root is PropClust
+setting SOURCE_DATE_EPOCH to timestamp 1696596005 of file PropClust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PropClust’ ...
+** package ‘PropClust’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  PropClustParallelTrials.f90 -o PropClustParallelTrials.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c minWhichMin.c -o minWhichMin.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PropClust.so PropClustParallelTrials.o init.o minWhichMin.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___tools_MOD_standard_gamma: does not use standard frame
+ld: warning: could not create compact unwind for ___tools_MOD_log_poisson_tail: does not use standard frame
+ld: warning: could not create compact unwind for ___tools_MOD_calc_loglik: does not use standard frame
+ld: warning: could not create compact unwind for ___tools_MOD_poisson_loglikelihood: does not use standard frame
+ld: warning: could not create compact unwind for ___tools_MOD_fit_graph_model: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_initialize_asum: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_initialize_psum: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_reorder_adj: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_first_matmult: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_compose_map: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_decompose_map: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_findinv: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_update_ahat: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_initialize_parameters: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_k_medioids: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_quick_cluster2: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_quick_cluster: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_initialize_clusters: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_modify_loglik: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_update_cluster_assignments2: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_update_parameters_once_parallel: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_update_parameters_qnewtn_parallel: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_update_parameters_qnewtn: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_update_parameters: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_update_cluster_assignments: does not use standard frame
+ld: warning: could not create compact unwind for ___multigraph_MOD_quick_cluster_trial: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_count_letterpairs: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_extend_word_list: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_bisect_string_list: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_update_adj_counts: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_update_word_pair_counts: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_sort_strings: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_replace_string: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_process_line: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_fix_name: does not use standard frame
+ld: warning: could not create compact unwind for ___string_manipulation_MOD_remove_trailing_numbers: does not use standard frame
+ld: warning: could not create compact unwind for _propensitydecomposition_: does not use standard frame
+ld: warning: could not create compact unwind for _propensityclustering_: does not use standard frame
+ld: warning: could not create compact unwind for _propdecompaccel_: does not use standard frame
+ld: warning: could not create compact unwind for _propdecompaccelparallel_: does not use standard frame
+ld: warning: could not create compact unwind for _propclusttrial_: does not use standard frame
+ld: warning: could not create compact unwind for _propclustaccel_: does not use standard frame
+ld: warning: could not create compact unwind for _singleclusterupdate_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/0p2hnh5qkg84z09mwafkxkz94yjnai01-r-PropClust-1.4-7/library/00LOCK-PropClust/00new/PropClust/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PropClust)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PropClust-1.4-7.drv-0/ in /nix/store/0p2hnh5qkg84z09mwafkxkz94yjnai01-r-PropClust-1.4-7...
+patching script interpreter paths in /nix/store/0p2hnh5qkg84z09mwafkxkz94yjnai01-r-PropClust-1.4-7
+rewriting symlink /nix/store/0p2hnh5qkg84z09mwafkxkz94yjnai01-r-PropClust-1.4-7/nix-support/propagated-user-env-packages to be relative to /nix/store/0p2hnh5qkg84z09mwafkxkz94yjnai01-r-PropClust-1.4-7

@@ -1,0 +1,40 @@
+this derivation will be built:
+  /nix/store/lywmkv77ap6309xpcw8j6785cbf8lnw9-r-VC2copula-0.1.5.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/aq3sqw6gawyzs7yan5jsrd87mcwm8sc2-VC2copula_0.1.5.tar.gz
+copying path '/nix/store/aq3sqw6gawyzs7yan5jsrd87mcwm8sc2-VC2copula_0.1.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lywmkv77ap6309xpcw8j6785cbf8lnw9-r-VC2copula-0.1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/aq3sqw6gawyzs7yan5jsrd87mcwm8sc2-VC2copula_0.1.5.tar.gz
+source root is VC2copula
+setting SOURCE_DATE_EPOCH to timestamp 1708610402 of file VC2copula/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘VC2copula’ ...
+** package ‘VC2copula’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/jcwmdhdsxbjlryh9z4c0xs0ry5m9h028-r-VineCopula-2.5.1/library/VineCopula/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Tawn2.c -o Tawn2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o VC2copula.so Tawn2.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xcpc5h5ni5z1k0hiv1d84clfviqinryd-r-VC2copula-0.1.5/library/00LOCK-VC2copula/00new/VC2copula/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (VC2copula)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-VC2copula-0.1.5.drv-0/ in /nix/store/xcpc5h5ni5z1k0hiv1d84clfviqinryd-r-VC2copula-0.1.5...
+patching script interpreter paths in /nix/store/xcpc5h5ni5z1k0hiv1d84clfviqinryd-r-VC2copula-0.1.5
+rewriting symlink /nix/store/xcpc5h5ni5z1k0hiv1d84clfviqinryd-r-VC2copula-0.1.5/nix-support/propagated-user-env-packages to be relative to /nix/store/xcpc5h5ni5z1k0hiv1d84clfviqinryd-r-VC2copula-0.1.5

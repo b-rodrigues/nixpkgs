@@ -1,0 +1,80 @@
+these 2 derivations will be built:
+  /nix/store/2ap12g4hfnhwg5x2krgdsc5kbzdbz70n-r-rhoR-1.3.0.3.drv
+  /nix/store/y5h2qylrn650vbcadsivl8k8h7x5r652-r-ncodeR-0.2.0.1.drv
+these 2 paths will be fetched (0.29 MiB download, 0.29 MiB unpacked):
+  /nix/store/lfl95zcv59m6863fvhijh2qyxy0xwfmh-ncodeR_0.2.0.1.tar.gz
+  /nix/store/pkvn5cnjnzb13f4ama49ln6jcrapwkya-rhoR_1.3.0.3.tar.gz
+copying path '/nix/store/lfl95zcv59m6863fvhijh2qyxy0xwfmh-ncodeR_0.2.0.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/pkvn5cnjnzb13f4ama49ln6jcrapwkya-rhoR_1.3.0.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2ap12g4hfnhwg5x2krgdsc5kbzdbz70n-r-rhoR-1.3.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pkvn5cnjnzb13f4ama49ln6jcrapwkya-rhoR_1.3.0.3.tar.gz
+source root is rhoR
+setting SOURCE_DATE_EPOCH to timestamp 1600006803 of file rhoR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rhoR’ ...
+** package ‘rhoR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rhor.cpp -o rhor.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rhoR.so RcppExports.o rhor.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/6gx762yyrd9hhxxscnn7x34y3314dzz9-r-rhoR-1.3.0.3/library/00LOCK-rhoR/00new/rhoR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rhoR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rhoR-1.3.0.3.drv-0/ in /nix/store/6gx762yyrd9hhxxscnn7x34y3314dzz9-r-rhoR-1.3.0.3...
+patching script interpreter paths in /nix/store/6gx762yyrd9hhxxscnn7x34y3314dzz9-r-rhoR-1.3.0.3
+rewriting symlink /nix/store/6gx762yyrd9hhxxscnn7x34y3314dzz9-r-rhoR-1.3.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/6gx762yyrd9hhxxscnn7x34y3314dzz9-r-rhoR-1.3.0.3
+building '/nix/store/y5h2qylrn650vbcadsivl8k8h7x5r652-r-ncodeR-0.2.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lfl95zcv59m6863fvhijh2qyxy0xwfmh-ncodeR_0.2.0.1.tar.gz
+source root is ncodeR
+setting SOURCE_DATE_EPOCH to timestamp 1574188202 of file ncodeR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ncodeR’ ...
+** package ‘ncodeR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ncodeR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ncodeR-0.2.0.1.drv-0/ in /nix/store/6iygcqa95jw84d111j6v302c35k1zx8g-r-ncodeR-0.2.0.1...
+patching script interpreter paths in /nix/store/6iygcqa95jw84d111j6v302c35k1zx8g-r-ncodeR-0.2.0.1
+rewriting symlink /nix/store/6iygcqa95jw84d111j6v302c35k1zx8g-r-ncodeR-0.2.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/6iygcqa95jw84d111j6v302c35k1zx8g-r-ncodeR-0.2.0.1

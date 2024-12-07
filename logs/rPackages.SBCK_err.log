@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/vakgdxr8h6awnr0mhj5nswa3wm9s0svg-r-SBCK-1.0.0.drv
+this path will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/7qwf4dji9y9xpxirdv0vvf31sd5bs3k2-SBCK_1.0.0.tar.gz
+copying path '/nix/store/7qwf4dji9y9xpxirdv0vvf31sd5bs3k2-SBCK_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/vakgdxr8h6awnr0mhj5nswa3wm9s0svg-r-SBCK-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7qwf4dji9y9xpxirdv0vvf31sd5bs3k2-SBCK_1.0.0.tar.gz
+source root is SBCK
+setting SOURCE_DATE_EPOCH to timestamp 1694433010 of file SBCK/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SBCK’ ...
+** package ‘SBCK’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcppeigen_modules.cpp -o rcppeigen_modules.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SBCK.so RcppExports.o rcppeigen_modules.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/kc1x1gpm99x2y0hshbyqwml44sxchhwx-r-SBCK-1.0.0/library/00LOCK-SBCK/00new/SBCK/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_SparseHistBase” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SparseHistBase” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_SparseHistBase” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_SparseHistBase” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (SBCK)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SBCK-1.0.0.drv-0/ in /nix/store/kc1x1gpm99x2y0hshbyqwml44sxchhwx-r-SBCK-1.0.0...
+patching script interpreter paths in /nix/store/kc1x1gpm99x2y0hshbyqwml44sxchhwx-r-SBCK-1.0.0
+rewriting symlink /nix/store/kc1x1gpm99x2y0hshbyqwml44sxchhwx-r-SBCK-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/kc1x1gpm99x2y0hshbyqwml44sxchhwx-r-SBCK-1.0.0

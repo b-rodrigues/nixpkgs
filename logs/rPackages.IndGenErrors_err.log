@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/xhgwrqhs8db5w7d11878d7jfnpb0da18-r-IndGenErrors-0.1.4.drv
+this path will be fetched (0.04 MiB download, 0.05 MiB unpacked):
+  /nix/store/y4vmvh86gf9afnf05l96s4lyqc5jxdii-IndGenErrors_0.1.4.tar.gz
+copying path '/nix/store/y4vmvh86gf9afnf05l96s4lyqc5jxdii-IndGenErrors_0.1.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xhgwrqhs8db5w7d11878d7jfnpb0da18-r-IndGenErrors-0.1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/y4vmvh86gf9afnf05l96s4lyqc5jxdii-IndGenErrors_0.1.4.tar.gz
+source root is IndGenErrors
+setting SOURCE_DATE_EPOCH to timestamp 1688123405 of file IndGenErrors/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IndGenErrors’ ...
+** package ‘IndGenErrors’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c calcul_cvm_crosscor_3d.c -o calcul_cvm_crosscor_3d.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cvmF100.c -o cvmF100.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cvmF50.c -o cvmF50.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IndGenErrors.so calcul_cvm_crosscor_3d.o cvmF100.o cvmF50.o registerDynamicSymbol.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/qfvxd5q6vp5rrkpn6w0j2qsc0afsf9x4-r-IndGenErrors-0.1.4/library/00LOCK-IndGenErrors/00new/IndGenErrors/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IndGenErrors)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IndGenErrors-0.1.4.drv-0/ in /nix/store/qfvxd5q6vp5rrkpn6w0j2qsc0afsf9x4-r-IndGenErrors-0.1.4...
+patching script interpreter paths in /nix/store/qfvxd5q6vp5rrkpn6w0j2qsc0afsf9x4-r-IndGenErrors-0.1.4
+rewriting symlink /nix/store/qfvxd5q6vp5rrkpn6w0j2qsc0afsf9x4-r-IndGenErrors-0.1.4/nix-support/propagated-user-env-packages to be relative to /nix/store/qfvxd5q6vp5rrkpn6w0j2qsc0afsf9x4-r-IndGenErrors-0.1.4

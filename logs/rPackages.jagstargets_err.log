@@ -1,0 +1,139 @@
+these 6 derivations will be built:
+  /nix/store/cgxl7z9zazak03102sm4yzgivqggpp0s-qs2_0.1.2.tar.gz.drv
+  /nix/store/0hrifk5ynrj5flfxc1kjw0xb0h0q6p8c-r-qs2-0.1.2.drv
+  /nix/store/h5aih06g633jxg5i8mz1ahikzs9a9l9y-jagstargets_1.2.2.tar.gz.drv
+  /nix/store/lrcfzja1k3wzgs0b54lnq9f56qm365ly-tarchetypes_0.11.0.tar.gz.drv
+  /nix/store/np0bxywddiz56lkbjmjwapmn81qfcfhw-r-tarchetypes-0.11.0.drv
+  /nix/store/j62dh70nsfjk0x0bnlgycm36k5gsw8ix-r-jagstargets-1.2.2.drv
+building '/nix/store/h5aih06g633jxg5i8mz1ahikzs9a9l9y-jagstargets_1.2.2.tar.gz.drv'...
+building '/nix/store/cgxl7z9zazak03102sm4yzgivqggpp0s-qs2_0.1.2.tar.gz.drv'...
+building '/nix/store/lrcfzja1k3wzgs0b54lnq9f56qm365ly-tarchetypes_0.11.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/jagstargets_1.2.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/qs2_0.1.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  468k  100  468k    0     0  1822k      0 --:--:-- --:--:-- --:--:-- 1824k
+
+trying https://cran.r-project.org/src/contrib/tarchetypes_0.11.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  932k  100  932k    0     0  2782k      0 --:--:-- --:--:-- --:--:-- 2775k
+building '/nix/store/0hrifk5ynrj5flfxc1kjw0xb0h0q6p8c-r-qs2-0.1.2.drv'...
+100  213k  100  213k    0     0   933k      0 --:--:-- --:--:-- --:--:--  936k
+building '/nix/store/np0bxywddiz56lkbjmjwapmn81qfcfhw-r-tarchetypes-0.11.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/m060h8611dvczwbjyj03h6a73qbcy4b0-qs2_0.1.2.tar.gz
+source root is qs2
+setting SOURCE_DATE_EPOCH to timestamp 1732426202 of file qs2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/k7w9xljm4da1jxkdljbpvf5mhg1pq2n7-tarchetypes_0.11.0.tar.gz
+* installing *source* package ‘qs2’ ...
+** package ‘qs2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+source root is tarchetypes
+setting SOURCE_DATE_EPOCH to timestamp 1731688202 of file tarchetypes/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tarchetypes’ ...
+** package ‘tarchetypes’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+checking for pkg-config... no
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+** testing if installed package can be loaded from temporary location
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+** testing if installed package can be loaded from final location
+checking whether clang++ accepts -g... yes
+C++ compiler: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17
+pkg-config not detected -- compiling zstd from source
+Fixed blocksize
+Not using TBB
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+** testing if installed package keeps a record of temporary installation path
+* DONE (tarchetypes)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tarchetypes-0.11.0.drv-0/ in /nix/store/isa2lgq7i4r3syfk0gk7vagzwraif0cy-r-tarchetypes-0.11.0...
+patching script interpreter paths in /nix/store/isa2lgq7i4r3syfk0gk7vagzwraif0cy-r-tarchetypes-0.11.0
+using C++ compiler: ‘clang version 16.0.6’
+rewriting symlink /nix/store/isa2lgq7i4r3syfk0gk7vagzwraif0cy-r-tarchetypes-0.11.0/nix-support/propagated-user-env-packages to be relative to /nix/store/isa2lgq7i4r3syfk0gk7vagzwraif0cy-r-tarchetypes-0.11.0
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -DRCPP_NO_RTTI -DRCPP_NO_SUGAR -I../inst/include -I. -IZSTD -IZSTD/common -IZSTD/decompress -IZSTD/compress   -DIS_UTF8_LOCALE=1 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/ampchrlfrzh7yj5ffay9rhiw1b6fxvp0-r-stringfish-0.16.0/library/stringfish/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_PARALLEL_USE_TBB=0  -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -DRCPP_NO_RTTI -DRCPP_NO_SUGAR -I../inst/include -I. -IZSTD -IZSTD/common -IZSTD/decompress -IZSTD/compress   -DIS_UTF8_LOCALE=1 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/ampchrlfrzh7yj5ffay9rhiw1b6fxvp0-r-stringfish-0.16.0/library/stringfish/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DRCPP_PARALLEL_USE_TBB=0  -fPIC  -g -O2   -c qx_functions.cpp -o qx_functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DRCPP_USE_UNWIND_PROTECT -DRCPP_NO_RTTI -DRCPP_NO_SUGAR -I../inst/include -I. -IZSTD -IZSTD/common -IZSTD/decompress -IZSTD/compress   -DIS_UTF8_LOCALE=1 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/ampchrlfrzh7yj5ffay9rhiw1b6fxvp0-r-stringfish-0.16.0/library/stringfish/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ZSTD/zstd.c -o ZSTD/zstd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar rcs libQSZSTD.a ZSTD/zstd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o qs2.so RcppExports.o qx_functions.o -L. -lQSZSTD -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib -ltbb -ltbbmalloc -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zcihm0z18rkhcmmh2g1gancmnw3kf4r1-r-qs2-0.1.2/library/00LOCK-qs2/00new/qs2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (qs2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-qs2-0.1.2.drv-0/ in /nix/store/zcihm0z18rkhcmmh2g1gancmnw3kf4r1-r-qs2-0.1.2...
+patching script interpreter paths in /nix/store/zcihm0z18rkhcmmh2g1gancmnw3kf4r1-r-qs2-0.1.2
+rewriting symlink /nix/store/zcihm0z18rkhcmmh2g1gancmnw3kf4r1-r-qs2-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/zcihm0z18rkhcmmh2g1gancmnw3kf4r1-r-qs2-0.1.2
+building '/nix/store/j62dh70nsfjk0x0bnlgycm36k5gsw8ix-r-jagstargets-1.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8f4dcq5pp3672iw98bx3c841r2pc6mxs-jagstargets_1.2.2.tar.gz
+source root is jagstargets
+setting SOURCE_DATE_EPOCH to timestamp 1731941402 of file jagstargets/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘jagstargets’ ...
+** package ‘jagstargets’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (jagstargets)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-jagstargets-1.2.2.drv-0/ in /nix/store/bgf0j8x2q615paysibdrrj54cjqghzif-r-jagstargets-1.2.2...
+patching script interpreter paths in /nix/store/bgf0j8x2q615paysibdrrj54cjqghzif-r-jagstargets-1.2.2
+rewriting symlink /nix/store/bgf0j8x2q615paysibdrrj54cjqghzif-r-jagstargets-1.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/bgf0j8x2q615paysibdrrj54cjqghzif-r-jagstargets-1.2.2

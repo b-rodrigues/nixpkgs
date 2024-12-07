@@ -1,0 +1,50 @@
+these 2 derivations will be built:
+  /nix/store/6hsw0h8fk8dqk2z1rp058ap2a1paijyj-simtrial_0.4.2.tar.gz.drv
+  /nix/store/vb1yhj929x6ajk1wl55km29gn82dlp38-r-simtrial-0.4.2.drv
+building '/nix/store/6hsw0h8fk8dqk2z1rp058ap2a1paijyj-simtrial_0.4.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/simtrial_0.4.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  939k  100  939k    0     0  3204k      0 --:--:-- --:--:-- --:--:-- 3215k
+building '/nix/store/vb1yhj929x6ajk1wl55km29gn82dlp38-r-simtrial-0.4.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pr3kv7095k9aldgz5six755dvjpxk4sd-simtrial_0.4.2.tar.gz
+source root is simtrial
+setting SOURCE_DATE_EPOCH to timestamp 1731942602 of file simtrial/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘simtrial’ ...
+** package ‘simtrial’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rpwexp_inverse_cdf.cpp -o rpwexp_inverse_cdf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rpwexp_naive.cpp -o rpwexp_naive.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o simtrial.so RcppExports.o rpwexp_inverse_cdf.o rpwexp_naive.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/m5cglpd7217gfy4cbll1hcy5v4xj87k4-r-simtrial-0.4.2/library/00LOCK-simtrial/00new/simtrial/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (simtrial)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-simtrial-0.4.2.drv-0/ in /nix/store/m5cglpd7217gfy4cbll1hcy5v4xj87k4-r-simtrial-0.4.2...
+patching script interpreter paths in /nix/store/m5cglpd7217gfy4cbll1hcy5v4xj87k4-r-simtrial-0.4.2
+rewriting symlink /nix/store/m5cglpd7217gfy4cbll1hcy5v4xj87k4-r-simtrial-0.4.2/nix-support/propagated-user-env-packages to be relative to /nix/store/m5cglpd7217gfy4cbll1hcy5v4xj87k4-r-simtrial-0.4.2

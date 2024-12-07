@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/gqc0yhhfys1blwn5blh2x2h8xxqbbn54-r-LatticeDesign-2.0-5.drv
+this path will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/nagzhwvjvfls2vssaqy1hpxbp5qhxpvd-LatticeDesign_2.0-5.tar.gz
+copying path '/nix/store/nagzhwvjvfls2vssaqy1hpxbp5qhxpvd-LatticeDesign_2.0-5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gqc0yhhfys1blwn5blh2x2h8xxqbbn54-r-LatticeDesign-2.0-5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nagzhwvjvfls2vssaqy1hpxbp5qhxpvd-LatticeDesign_2.0-5.tar.gz
+source root is LatticeDesign
+setting SOURCE_DATE_EPOCH to timestamp 1668317405 of file LatticeDesign/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LatticeDesign’ ...
+** package ‘LatticeDesign’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ProjSep.c -o ProjSep.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lrslib.c -o lrslib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lrsmp.c -o lrsmp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c selectlss.c -o selectlss.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LatticeDesign.so ProjSep.o init.o lrslib.o lrsmp.o selectlss.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/c06v8vmlg311n4qd3305pzfdjba8bkc5-r-LatticeDesign-2.0-5/library/00LOCK-LatticeDesign/00new/LatticeDesign/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LatticeDesign)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LatticeDesign-2.0-5.drv-0/ in /nix/store/c06v8vmlg311n4qd3305pzfdjba8bkc5-r-LatticeDesign-2.0-5...
+patching script interpreter paths in /nix/store/c06v8vmlg311n4qd3305pzfdjba8bkc5-r-LatticeDesign-2.0-5

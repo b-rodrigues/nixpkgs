@@ -1,0 +1,55 @@
+these 3 derivations will be built:
+  /nix/store/frk97y2ry1nhircbsw2q9sfbznb7szlv-r-misc3d-0.9-1.drv
+  /nix/store/sh1wls71pxj667knyrair888d1zml469-r-plot3D-1.4.1.drv
+  /nix/store/bcsf20apsid72bzczn5zpfhk2251kysr-r-qtlc-1.0.drv
+this path will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/lcnind54gwd11pns9z0ppnzlvjbmby2s-qtlc_1.0.tar.gz
+copying path '/nix/store/lcnind54gwd11pns9z0ppnzlvjbmby2s-qtlc_1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/frk97y2ry1nhircbsw2q9sfbznb7szlv-r-misc3d-0.9-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fqcq41d0bbh7v1hn4kkfw3vmcc9himhq-misc3d_0.9-1.tar.gz
+source root is misc3d
+setting SOURCE_DATE_EPOCH to timestamp 1633637402 of file misc3d/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘misc3d’ ...
+** package ‘misc3d’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 24811 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-misc3d-0.9-1.drv-0/Rtmp88MUdF/file60e650549a4a'
+ERROR: lazy loading failed for package ‘misc3d’
+* removing ‘/nix/store/52yvc860brqs6f7qi4kr9wmp8v0kcslm-r-misc3d-0.9-1/library/misc3d’
+error: builder for '/nix/store/frk97y2ry1nhircbsw2q9sfbznb7szlv-r-misc3d-0.9-1.drv' failed with exit code 1;
+       last 21 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/fqcq41d0bbh7v1hn4kkfw3vmcc9himhq-misc3d_0.9-1.tar.gz
+       > source root is misc3d
+       > setting SOURCE_DATE_EPOCH to timestamp 1633637402 of file misc3d/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘misc3d’ ...
+       > ** package ‘misc3d’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > ** demo
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 24811 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-misc3d-0.9-1.drv-0/Rtmp88MUdF/file60e650549a4a'
+       > ERROR: lazy loading failed for package ‘misc3d’
+       > * removing ‘/nix/store/52yvc860brqs6f7qi4kr9wmp8v0kcslm-r-misc3d-0.9-1/library/misc3d’
+       For full logs, run 'nix log /nix/store/frk97y2ry1nhircbsw2q9sfbznb7szlv-r-misc3d-0.9-1.drv'.
+error: 1 dependencies of derivation '/nix/store/sh1wls71pxj667knyrair888d1zml469-r-plot3D-1.4.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/bcsf20apsid72bzczn5zpfhk2251kysr-r-qtlc-1.0.drv' failed to build

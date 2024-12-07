@@ -1,0 +1,218 @@
+these 3 derivations will be built:
+  /nix/store/nlkrw5hmpv1qd6xzr34cbk6dmlql269d-pbdMPI_0.5-2.tar.gz.drv
+  /nix/store/nx4kb6d64hgwxa3715md5sxsn4cyq1h7-r-pbdMPI-0.5-2.drv
+  /nix/store/71lrgi1rg6fry5y06mxnkmcvz8aji9xn-r-kazaam-0.1-0.drv
+this path will be fetched (0.45 MiB download, 0.47 MiB unpacked):
+  /nix/store/8xgm2y68arms11vzknaiy4lb1713v2ik-kazaam_0.1-0.tar.gz
+copying path '/nix/store/8xgm2y68arms11vzknaiy4lb1713v2ik-kazaam_0.1-0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/nlkrw5hmpv1qd6xzr34cbk6dmlql269d-pbdMPI_0.5-2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/pbdMPI_0.5-2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  411k  100  411k    0     0  1919k      0 --:--:-- --:--:-- --:--:-- 1921k
+building '/nix/store/nx4kb6d64hgwxa3715md5sxsn4cyq1h7-r-pbdMPI-0.5-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q5akx297h689q443r7kxxfxxdd94fjha-pbdMPI_0.5-2.tar.gz
+source root is pbdMPI
+setting SOURCE_DATE_EPOCH to timestamp 1726634402 of file pbdMPI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: installPhase
+* installing *source* package ‘pbdMPI’ ...
+** package ‘pbdMPI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for sed... /nix/store/9m372k9wy0f9aj54zhvsr65w2p9ndwnj-gnused-4.9/bin/sed
+checking for mpicc... mpicc
+checking for ompi_info... ompi_info
+checking for pkg-config... no
+Try sed, mpicc, and ompi_info ...
+>> TMP_INC_DIRS = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include
+Checking /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include ...
+Found /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include/mpi.h ...
+>> TMP_LIB_DIRS = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib
+Checking /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib ...
+Found /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib/libmpi.dylib ...
+Found mpi.h and libmpi.so ... via mpicc --showme
+>> TMP_INC = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include
+>> TMP_LIB = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib
+>> TMP_FOUND = mpicc --showme
+checking for openpty in -lutil... yes
+checking for main in -lpthread... yes
+./configure: line 4664: which: command not found
+./configure: line 4665: which: command not found
+./configure: line 4666: which: command not found
+./configure: line 4670: module: command not found
+ 
+******************* Results of pbdMPI package configure *****************
+ 
+>> MPIRUN = 
+>> MPIEXEC = 
+>> ORTERUN = 
+>> TMP_INC = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include
+>> TMP_LIB = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib
+>> TMP_LIBNAME = libmpi.dylib
+>> TMP_FOUND = mpicc --showme
+>> MPI_ROOT = 
+>> MPITYPE = OPENMPI
+>> MPI_INCLUDE_PATH = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include
+>> MPI_LIBPATH = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib
+>> MPI_LIBNAME = libmpi.dylib
+>> MPI_LIBS =  -lutil -lpthread
+>> MPI_DEFS = -DMPI2
+>> MPI_INCL2 = 
+>> MPI_LDFLAGS = 
+>> PKG_CPPFLAGS = -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI
+>> PKG_LIBS = -L/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib -lmpi  -lutil -lpthread
+>> PROF_LDFLAGS = 
+>> ENABLE_LD_LIBRARY_PATH = no
+ 
+*************************************************************************
+ 
+configure: creating ./config.status
+config.status: creating src/Makevars
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating R/zzz.r
+config.status: creating R/util_execmpi.r
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+echo "MPIRUN = " > Makeconf
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c comm_errors.c -o comm_errors.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c comm_sort_double.c -o comm_sort_double.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c comm_sort_integer.c -o comm_sort_integer.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pkg_dl.c -o pkg_dl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pkg_tools.c -o pkg_tools.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd.c -o spmd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_allgather.c -o spmd_allgather.o
+echo "MPIEXEC = " >> Makeconf
+echo "ORTERUN = " >> Makeconf
+echo "TMP_INC = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include" >> Makeconf
+echo "TMP_LIB = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib" >> Makeconf
+echo "TMP_LIBNAME = libmpi.dylib" >> Makeconf
+echo "TMP_FOUND = mpicc --showme" >> Makeconf
+echo "MPI_ROOT = " >> Makeconf
+echo "MPITYPE = OPENMPI" >> Makeconf
+echo "MPI_INCLUDE_PATH = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include" >> Makeconf
+echo "MPI_LIBPATH = /nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib" >> Makeconf
+echo "MPI_LIBNAME = libmpi.dylib" >> Makeconf
+echo "MPI_LIBS =  -lutil -lpthread" >> Makeconf
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_allgatherv.c -o spmd_allgatherv.o
+echo "MPI_DEFS = -DMPI2" >> Makeconf
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_allreduce.c -o spmd_allreduce.o
+echo "MPI_INCL2 = " >> Makeconf
+echo "MPI_LDFLAGS = " >> Makeconf
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_alltoall.c -o spmd_alltoall.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_alltoallv.c -o spmd_alltoallv.o
+echo "PKG_CPPFLAGS = -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI" >> Makeconf
+echo "PKG_LIBS = -L/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib -lmpi  -lutil -lpthread" >> Makeconf
+echo "PROF_LDFLAGS = " >> Makeconf
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_bcast.c -o spmd_bcast.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_communicator.c -o spmd_communicator.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_communicator_spawn.c -o spmd_communicator_spawn.o
+echo "ENABLE_LD_LIBRARY_PATH = no" >> Makeconf
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_gather.c -o spmd_gather.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_gatherv.c -o spmd_gatherv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_info.c -o spmd_info.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_recv.c -o spmd_recv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_reduce.c -o spmd_reduce.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_scatter.c -o spmd_scatter.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_scatterv.c -o spmd_scatterv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_send.c -o spmd_send.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_sendrecv.c -o spmd_sendrecv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_sendrecv_replace.c -o spmd_sendrecv_replace.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_tool.c -o spmd_tool.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_utility.c -o spmd_utility.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spmd_wait.c -o spmd_wait.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c zzz.c -o zzz.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pbdMPI.so comm_errors.o comm_sort_double.o comm_sort_integer.o pkg_dl.o pkg_tools.o spmd.o spmd_allgather.o spmd_allgatherv.o spmd_allreduce.o spmd_alltoall.o spmd_alltoallv.o spmd_bcast.o spmd_communicator.o spmd_communicator_spawn.o spmd_gather.o spmd_gatherv.o spmd_info.o spmd_recv.o spmd_reduce.o spmd_scatter.o spmd_scatterv.o spmd_send.o spmd_sendrecv.o spmd_sendrecv_replace.o spmd_tool.o spmd_utility.o spmd_wait.o zzz.o -L/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib -lmpi -lutil -lpthread -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing via 'install.libs.R' to /nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/00LOCK-pbdMPI/00new/pbdMPI
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** checking absolute paths in shared objects and dynamic libraries
+* DONE (pbdMPI)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pbdMPI-0.5-2.drv-0/ in /nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2...
+patching script interpreter paths in /nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_spmd/00_test_all.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_spmd/00_test_all.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_long_vector/00_test_all.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_long_vector/00_test_all.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_parallel/00_test_all.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_parallel/00_test_all.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_performance/00_test_all.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_performance/00_test_all.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_send_recv/00_test_all.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_send_recv/00_test_all.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_s4/00_test_all.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_s4/00_test_all.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_rmpi/00_test_all.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/library/pbdMPI/examples/test_rmpi/00_test_spmd.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+rewriting symlink /nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2/nix-support/propagated-user-env-packages to be relative to /nix/store/icc418s1ixcqbk4v5hb2idfpz128wiby-r-pbdMPI-0.5-2
+building '/nix/store/71lrgi1rg6fry5y06mxnkmcvz8aji9xn-r-kazaam-0.1-0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8xgm2y68arms11vzknaiy4lb1713v2ik-kazaam_0.1-0.tar.gz
+source root is kazaam
+setting SOURCE_DATE_EPOCH to timestamp 1498742398 of file kazaam/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘kazaam’ ...
+** package ‘kazaam’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c kazaam_native.c -o kazaam_native.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c trsolve.c -o trsolve.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o kazaam.so kazaam_native.o trsolve.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/1hdlvhcvdd4zx5r57pg8nb68b37wy7rh-r-kazaam-0.1-0/library/00LOCK-kazaam/00new/kazaam/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+[MacBookAir.fritz.box:02842] shmem: mmap: an error occurred while determining whether or not /private/tmp/nix-build-r-kazaam-0.1-0.drv-0/Rtmp2NijQp/ompi.MacBookAir.351/jf.0/2693595136/sm_segment.MacBookAir.351.a08d0000.0 could be created.
+Une nouvelle fonction générique est créée pour ‘nrow’ du package ‘base’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘NROW’ du package ‘base’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘ncol’ du package ‘base’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘NCOL’ du package ‘base’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘colSums’ du package ‘base’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘colMeans’ du package ‘base’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘cov’ du package ‘stats’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘cor’ du package ‘stats’ dans package ‘kazaam’
+Une nouvelle fonction générique est créée pour ‘norm’ du package ‘base’ dans package ‘kazaam’
+Création d'une fonction générique pour ‘svd’ à partir de ‘base’ dans package ‘kazaam’
+    (à partir de la définition implicite sauvegardée)
+Une nouvelle fonction générique est créée pour ‘svd’ du package ‘base’ dans package ‘kazaam’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[MacBookAir.fritz.box:02956] shmem: mmap: an error occurred while determining whether or not /private/tmp/nix-build-r-kazaam-0.1-0.drv-0/Rtmp4bomwn/ompi.MacBookAir.351/jf.0/1539309568/sm_segment.MacBookAir.351.5bc00000.0 could be created.
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+[MacBookAir.fritz.box:02982] shmem: mmap: an error occurred while determining whether or not /private/tmp/nix-build-r-kazaam-0.1-0.drv-0/RtmpvU5K0n/ompi.MacBookAir.351/jf.0/2451505152/sm_segment.MacBookAir.351.921f0000.0 could be created.
+** testing if installed package keeps a record of temporary installation path
+* DONE (kazaam)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-kazaam-0.1-0.drv-0/ in /nix/store/1hdlvhcvdd4zx5r57pg8nb68b37wy7rh-r-kazaam-0.1-0...
+patching script interpreter paths in /nix/store/1hdlvhcvdd4zx5r57pg8nb68b37wy7rh-r-kazaam-0.1-0
+/nix/store/1hdlvhcvdd4zx5r57pg8nb68b37wy7rh-r-kazaam-0.1-0/library/kazaam/batchtests/allrun: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/1hdlvhcvdd4zx5r57pg8nb68b37wy7rh-r-kazaam-0.1-0/library/kazaam/batchtests/run: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+rewriting symlink /nix/store/1hdlvhcvdd4zx5r57pg8nb68b37wy7rh-r-kazaam-0.1-0/nix-support/propagated-user-env-packages to be relative to /nix/store/1hdlvhcvdd4zx5r57pg8nb68b37wy7rh-r-kazaam-0.1-0

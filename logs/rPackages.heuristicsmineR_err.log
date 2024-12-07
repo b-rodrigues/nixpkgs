@@ -1,0 +1,76 @@
+these 2 derivations will be built:
+  /nix/store/wa200gwh24fng28vcxahy07ik2wnf4vc-r-petrinetR-0.3.0.drv
+  /nix/store/6k646cv18jhjad4xrbxrr667cr6zrfc7-r-heuristicsmineR-0.3.0.drv
+these 2 paths will be fetched (0.71 MiB download, 0.71 MiB unpacked):
+  /nix/store/iwk5y59lzx5sl4vyc69szd4ll8svhiy6-heuristicsmineR_0.3.0.tar.gz
+  /nix/store/4q4xi8m8dm925vn7xm3gdnh7mghdz3jg-petrinetR_0.3.0.tar.gz
+copying path '/nix/store/iwk5y59lzx5sl4vyc69szd4ll8svhiy6-heuristicsmineR_0.3.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/4q4xi8m8dm925vn7xm3gdnh7mghdz3jg-petrinetR_0.3.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wa200gwh24fng28vcxahy07ik2wnf4vc-r-petrinetR-0.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4q4xi8m8dm925vn7xm3gdnh7mghdz3jg-petrinetR_0.3.0.tar.gz
+source root is petrinetR
+setting SOURCE_DATE_EPOCH to timestamp 1680528002 of file petrinetR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘petrinetR’ ...
+** package ‘petrinetR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (petrinetR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-petrinetR-0.3.0.drv-0/ in /nix/store/2vvgbfkp3dh3pfhwm1gz3ifrpzm53gd3-r-petrinetR-0.3.0...
+patching script interpreter paths in /nix/store/2vvgbfkp3dh3pfhwm1gz3ifrpzm53gd3-r-petrinetR-0.3.0
+rewriting symlink /nix/store/2vvgbfkp3dh3pfhwm1gz3ifrpzm53gd3-r-petrinetR-0.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/2vvgbfkp3dh3pfhwm1gz3ifrpzm53gd3-r-petrinetR-0.3.0
+building '/nix/store/6k646cv18jhjad4xrbxrr667cr6zrfc7-r-heuristicsmineR-0.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/iwk5y59lzx5sl4vyc69szd4ll8svhiy6-heuristicsmineR_0.3.0.tar.gz
+source root is heuristicsmineR
+setting SOURCE_DATE_EPOCH to timestamp 1680614406 of file heuristicsmineR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘heuristicsmineR’ ...
+** package ‘heuristicsmineR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c count_length_two_loops.cpp -o count_length_two_loops.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c count_parallel_lifecycle.cpp -o count_parallel_lifecycle.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c count_precedence.cpp -o count_precedence.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c count_precedence_lifecycle.cpp -o count_precedence_lifecycle.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o heuristicsmineR.so RcppExports.o count_length_two_loops.o count_parallel_lifecycle.o count_precedence.o count_precedence_lifecycle.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/p3vfnr265i458szjb7l9h96ndll3rgrc-r-heuristicsmineR-0.3.0/library/00LOCK-heuristicsmineR/00new/heuristicsmineR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (heuristicsmineR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-heuristicsmineR-0.3.0.drv-0/ in /nix/store/p3vfnr265i458szjb7l9h96ndll3rgrc-r-heuristicsmineR-0.3.0...
+patching script interpreter paths in /nix/store/p3vfnr265i458szjb7l9h96ndll3rgrc-r-heuristicsmineR-0.3.0
+rewriting symlink /nix/store/p3vfnr265i458szjb7l9h96ndll3rgrc-r-heuristicsmineR-0.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/p3vfnr265i458szjb7l9h96ndll3rgrc-r-heuristicsmineR-0.3.0

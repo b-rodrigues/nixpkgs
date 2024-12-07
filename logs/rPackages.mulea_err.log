@@ -1,0 +1,37 @@
+these 2 derivations will be built:
+  /nix/store/jfg1mz2jh1v9m692lzgz1wv87zv6mwz5-mulea_1.1.1.tar.gz.drv
+  /nix/store/la6pzaam63vh76nyxwy1q51fh54wcy01-r-mulea-1.1.1.drv
+building '/nix/store/jfg1mz2jh1v9m692lzgz1wv87zv6mwz5-mulea_1.1.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/mulea_1.1.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  969k  100  969k    0     0  2923k      0 --:--:-- --:--:-- --:--:-- 2930k
+building '/nix/store/la6pzaam63vh76nyxwy1q51fh54wcy01-r-mulea-1.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xg6w2h4p0ibzmrp4j2g9k6dbd63826sb-mulea_1.1.1.tar.gz
+source root is mulea
+setting SOURCE_DATE_EPOCH to timestamp 1732011611 of file mulea/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘fgsea’ is not available for package ‘mulea’
+* removing ‘/nix/store/2fd9nrhh6hhqakbnd6rqidg9dja5wsb8-r-mulea-1.1.1/library/mulea’
+error: builder for '/nix/store/la6pzaam63vh76nyxwy1q51fh54wcy01-r-mulea-1.1.1.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/xg6w2h4p0ibzmrp4j2g9k6dbd63826sb-mulea_1.1.1.tar.gz
+       > source root is mulea
+       > setting SOURCE_DATE_EPOCH to timestamp 1732011611 of file mulea/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘fgsea’ is not available for package ‘mulea’
+       > * removing ‘/nix/store/2fd9nrhh6hhqakbnd6rqidg9dja5wsb8-r-mulea-1.1.1/library/mulea’
+       For full logs, run 'nix log /nix/store/la6pzaam63vh76nyxwy1q51fh54wcy01-r-mulea-1.1.1.drv'.

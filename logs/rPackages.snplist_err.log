@@ -1,0 +1,46 @@
+this derivation will be built:
+  /nix/store/4vy4wfvvpdb6229dx3hx8q7viawgmmp7-r-snplist-0.18.2.drv
+this path will be fetched (0.23 MiB download, 0.23 MiB unpacked):
+  /nix/store/ric05dzcchpn27bscic7jharaysm8wmp-snplist_0.18.2.tar.gz
+copying path '/nix/store/ric05dzcchpn27bscic7jharaysm8wmp-snplist_0.18.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4vy4wfvvpdb6229dx3hx8q7viawgmmp7-r-snplist-0.18.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ric05dzcchpn27bscic7jharaysm8wmp-snplist_0.18.2.tar.gz
+source root is snplist
+setting SOURCE_DATE_EPOCH to timestamp 1633791606 of file snplist/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘snplist’ ...
+** package ‘snplist’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c exportPLINKSet.cpp -o exportPLINKSet.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o snplist.so exportPLINKSet.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/vwcjqmbqn2v93s5yq2nddhxpcgg7p0dg-r-snplist-0.18.2/library/00LOCK-snplist/00new/snplist/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+** testing if installed package keeps a record of temporary installation path
+* DONE (snplist)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-snplist-0.18.2.drv-0/ in /nix/store/vwcjqmbqn2v93s5yq2nddhxpcgg7p0dg-r-snplist-0.18.2...
+patching script interpreter paths in /nix/store/vwcjqmbqn2v93s5yq2nddhxpcgg7p0dg-r-snplist-0.18.2
+rewriting symlink /nix/store/vwcjqmbqn2v93s5yq2nddhxpcgg7p0dg-r-snplist-0.18.2/nix-support/propagated-user-env-packages to be relative to /nix/store/vwcjqmbqn2v93s5yq2nddhxpcgg7p0dg-r-snplist-0.18.2

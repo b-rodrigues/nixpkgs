@@ -1,0 +1,85 @@
+this derivation will be built:
+  /nix/store/y5461hsg1bhydzq91y2l91gsbdiqpcv7-r-lmm-1.4.drv
+this path will be fetched (0.50 MiB download, 0.50 MiB unpacked):
+  /nix/store/sxcch25s8wd229h78b15idyv9zmiqgdq-lmm_1.4.tar.gz
+copying path '/nix/store/sxcch25s8wd229h78b15idyv9zmiqgdq-lmm_1.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/y5461hsg1bhydzq91y2l91gsbdiqpcv7-r-lmm-1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sxcch25s8wd229h78b15idyv9zmiqgdq-lmm_1.4.tar.gz
+source root is lmm
+setting SOURCE_DATE_EPOCH to timestamp 1692474753 of file lmm/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lmm’ ...
+** package ‘lmm’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lmm.f -o lmm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c package_native_routine_registration_skeleton.c -o package_native_routine_registration_skeleton.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o lmm.so lmm.o package_native_routine_registration_skeleton.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _mkb_: register 22 saved somewhere other than in frame
+ld: warning: could not create compact unwind for _mkw_: registers 25 and 26 not saved contiguously in frame
+ld: warning: could not create compact unwind for _mkwkqnm_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _fscov2_: does not use standard frame
+ld: warning: could not create compact unwind for _mmtm_: register 26 saved somewhere other than in frame
+ld: warning: could not create compact unwind for _mmu_: registers 23 and 24 not saved contiguously in frame
+ld: warning: could not create compact unwind for _bkv_: register 24 saved somewhere other than in frame
+ld: warning: could not create compact unwind for _chv_: does not use standard frame
+ld: warning: could not create compact unwind for _prefstml_: does not use standard frame
+ld: warning: could not create compact unwind for _fscovm2_: does not use standard frame
+ld: warning: could not create compact unwind for _mka_: does not use standard frame
+ld: warning: could not create compact unwind for _mkztvix_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _prefstrm_: does not use standard frame
+ld: warning: could not create compact unwind for _preecme2_: does not use standard frame
+ld: warning: could not create compact unwind for _fscovr2_: does not use standard frame
+ld: warning: could not create compact unwind for _mku_: does not use standard frame
+ld: warning: could not create compact unwind for _gamm_: does not use standard frame
+ld: warning: could not create compact unwind for _drcand_: does not use standard frame
+ld: warning: could not create compact unwind for _drbeta_: does not use standard frame
+ld: warning: could not create compact unwind for _appxdens_: does not use standard frame
+ld: warning: could not create compact unwind for _mku2_: does not use standard frame
+ld: warning: could not create compact unwind for _mkxtwx_: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _gls_: does not use standard frame
+ld: warning: could not create compact unwind for _stval1_: does not use standard frame
+ld: warning: could not create compact unwind for _bfac_: does not use standard frame
+ld: warning: could not create compact unwind for _drxi_: does not use standard frame
+ld: warning: could not create compact unwind for _mgibbs_: does not use standard frame
+ld: warning: could not create compact unwind for _fastmcmc_: does not use standard frame
+ld: warning: could not create compact unwind for _cebayes_: does not use standard frame
+ld: warning: could not create compact unwind for _fastrml_: does not use standard frame
+ld: warning: could not create compact unwind for _fscovr_: does not use standard frame
+ld: warning: could not create compact unwind for _ecmerml_: does not use standard frame
+ld: warning: could not create compact unwind for _fastmode_: does not use standard frame
+ld: warning: could not create compact unwind for _fscovm_: does not use standard frame
+ld: warning: could not create compact unwind for _fastml_: does not use standard frame
+ld: warning: could not create compact unwind for _fscov_: does not use standard frame
+ld: warning: could not create compact unwind for _ecmeml_: does not use standard frame
+installing to /nix/store/yqrp2ag6d6kzf9x7n2l13b6zng8kp6zm-r-lmm-1.4/library/00LOCK-lmm/00new/lmm/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (lmm)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lmm-1.4.drv-0/ in /nix/store/yqrp2ag6d6kzf9x7n2l13b6zng8kp6zm-r-lmm-1.4...
+patching script interpreter paths in /nix/store/yqrp2ag6d6kzf9x7n2l13b6zng8kp6zm-r-lmm-1.4

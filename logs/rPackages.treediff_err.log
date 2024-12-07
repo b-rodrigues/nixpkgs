@@ -1,0 +1,58 @@
+these 10 derivations will be built:
+  /nix/store/965ddb7nlk2vgpq8rlzc883pbg5mzj92-r-Biostrings-2.38.4.drv
+  /nix/store/231z63mhc8wws5al8a2n2q1xcvslvv2r-r-Rsamtools-1.22.0.drv
+  /nix/store/j246hynfbzysv28pzvj7j00r64qm73xm-r-GenomicAlignments-1.6.3.drv
+  /nix/store/2zghk7chwfrkvb03i2rvcq3mq5php9r4-r-rtracklayer-1.30.4.drv
+  /nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv
+  /nix/store/ia5splkz0s7gfnylzigmrld37b88h53i-csaw_1.4.1.tar.gz.drv
+  /nix/store/k672ml5fm77ykn60x3gdlh5jznvvl4k4-r-GenomicFeatures-1.22.13.drv
+  /nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv
+  /nix/store/jnr4xzpx7walrkid5p56a7b6076ng765-r-csaw-1.4.1.drv
+  /nix/store/hjcklw6ljdj2b7ghl0zcvimad0y59vng-r-treediff-0.2.1.drv
+this path will be fetched (0.06 MiB download, 0.10 MiB unpacked):
+  /nix/store/gb0fb8c39dpjmby8c7w2q34x49si82za-treediff_0.2.1.tar.gz
+copying path '/nix/store/gb0fb8c39dpjmby8c7w2q34x49si82za-treediff_0.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv'...
+building '/nix/store/ia5splkz0s7gfnylzigmrld37b88h53i-csaw_1.4.1.tar.gz.drv'...
+building '/nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv'...
+building '/nix/store/965ddb7nlk2vgpq8rlzc883pbg5mzj92-r-Biostrings-2.38.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/h1qyci91jw3x682lrvkf91iwl0j8m01p-adjclust_0.6.10.tar.gz
+source root is adjclust
+setting SOURCE_DATE_EPOCH to timestamp 1728375002 of file adjclust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘adjclust’
+* removing ‘/nix/store/wjrq3ff0jr4y9dn4vj9kr8qby6px4jkm-r-adjclust-0.6.10/library/adjclust’
+
+trying https://bioconductor.statistik.tu-dortmund.de/packages/3.2/bioc/src/contrib/csaw_1.4.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1369k  100 1369k    0     0  4866k      0 --:--:-- --:--:-- --:--:-- 4873k
+Running phase: unpackPhase
+unpacking source archive /nix/store/y5z7r0ff78f66gnmnkiyr9l7171wj8sw-edgeR_3.12.1.tar.gz
+source root is edgeR
+setting SOURCE_DATE_EPOCH to timestamp 1460076787 of file edgeR/src/utils.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+error: builder for '/nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/h1qyci91jw3x682lrvkf91iwl0j8m01p-adjclust_0.6.10.tar.gz
+       > source root is adjclust
+       > setting SOURCE_DATE_EPOCH to timestamp 1728375002 of file adjclust/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘adjclust’
+       > * removing ‘/nix/store/wjrq3ff0jr4y9dn4vj9kr8qby6px4jkm-r-adjclust-0.6.10/library/adjclust’
+       For full logs, run 'nix log /nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv'.
+error: 1 dependencies of derivation '/nix/store/hjcklw6ljdj2b7ghl0zcvimad0y59vng-r-treediff-0.2.1.drv' failed to build

@@ -1,0 +1,85 @@
+these 2 derivations will be built:
+  /nix/store/i3vkqbgggzigb3n591dh848kbjj04jz0-r-rerddap-1.1.0.drv
+  /nix/store/8gbc3kawwq0m4f6kcprl75h5pjjwq6gf-r-PAMmisc-1.12.1.drv
+these 2 paths will be fetched (2.91 MiB download, 2.91 MiB unpacked):
+  /nix/store/x3v0kzyqknsbw8l76daikdnxh2c0spm7-PAMmisc_1.12.1.tar.gz
+  /nix/store/b3dga32n240s5c7sfkv3xh6h0fhsdzzx-rerddap_1.1.0.tar.gz
+copying path '/nix/store/x3v0kzyqknsbw8l76daikdnxh2c0spm7-PAMmisc_1.12.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/b3dga32n240s5c7sfkv3xh6h0fhsdzzx-rerddap_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/i3vkqbgggzigb3n591dh848kbjj04jz0-r-rerddap-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b3dga32n240s5c7sfkv3xh6h0fhsdzzx-rerddap_1.1.0.tar.gz
+source root is rerddap
+setting SOURCE_DATE_EPOCH to timestamp 1705083602 of file rerddap/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rerddap’ ...
+** package ‘rerddap’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rerddap)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rerddap-1.1.0.drv-0/ in /nix/store/idd32qx5w8c97qr9q6ifv642i2hvwcg4-r-rerddap-1.1.0...
+patching script interpreter paths in /nix/store/idd32qx5w8c97qr9q6ifv642i2hvwcg4-r-rerddap-1.1.0
+rewriting symlink /nix/store/idd32qx5w8c97qr9q6ifv642i2hvwcg4-r-rerddap-1.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/idd32qx5w8c97qr9q6ifv642i2hvwcg4-r-rerddap-1.1.0
+building '/nix/store/8gbc3kawwq0m4f6kcprl75h5pjjwq6gf-r-PAMmisc-1.12.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/x3v0kzyqknsbw8l76daikdnxh2c0spm7-PAMmisc_1.12.1.tar.gz
+source root is PAMmisc
+setting SOURCE_DATE_EPOCH to timestamp 1718054401 of file PAMmisc/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PAMmisc’ ...
+** package ‘PAMmisc’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 90587 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-PAMmisc-1.12.1.drv-0/Rtmp2uOQCu/file161d613bca404'
+ERROR: lazy loading failed for package ‘PAMmisc’
+* removing ‘/nix/store/1w7rlqymd25di97ligbg7xl2gci9zs1b-r-PAMmisc-1.12.1/library/PAMmisc’
+error: builder for '/nix/store/8gbc3kawwq0m4f6kcprl75h5pjjwq6gf-r-PAMmisc-1.12.1.drv' failed with exit code 1;
+       last 21 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/x3v0kzyqknsbw8l76daikdnxh2c0spm7-PAMmisc_1.12.1.tar.gz
+       > source root is PAMmisc
+       > setting SOURCE_DATE_EPOCH to timestamp 1718054401 of file PAMmisc/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘PAMmisc’ ...
+       > ** package ‘PAMmisc’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 90587 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-PAMmisc-1.12.1.drv-0/Rtmp2uOQCu/file161d613bca404'
+       > ERROR: lazy loading failed for package ‘PAMmisc’
+       > * removing ‘/nix/store/1w7rlqymd25di97ligbg7xl2gci9zs1b-r-PAMmisc-1.12.1/library/PAMmisc’
+       For full logs, run 'nix log /nix/store/8gbc3kawwq0m4f6kcprl75h5pjjwq6gf-r-PAMmisc-1.12.1.drv'.

@@ -1,0 +1,72 @@
+these 3 derivations will be built:
+  /nix/store/8v7wrkwqpvn95fr49sc1hla9w7hl266k-r-hyd1d-0.5.2.drv
+  /nix/store/dyadrbwj0bdcn9hicywrpjzqr8z5q25c-hydflood_0.5.9.tar.gz.drv
+  /nix/store/davdjhm6i9hgz6vydfd0qkwc719gmz0z-r-hydflood-0.5.9.drv
+building '/nix/store/dyadrbwj0bdcn9hicywrpjzqr8z5q25c-hydflood_0.5.9.tar.gz.drv'...
+building '/nix/store/8v7wrkwqpvn95fr49sc1hla9w7hl266k-r-hyd1d-0.5.2.drv'...
+
+trying https://cran.r-project.org/src/contrib/hydflood_0.5.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/wl9x5nddar51467ar8llvnv7w8xgzyhy-hyd1d_0.5.2.tar.gz
+source root is hyd1d
+setting SOURCE_DATE_EPOCH to timestamp 1720272610 of file hyd1d/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hyd1d’ ...
+** package ‘hyd1d’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+100 2542k  100 2542k    0     0  4159k      0 --:--:-- --:--:-- --:--:-- 4154k
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: le chargement du package ou de l'espace de noms a échoué pour ‘hyd1d’ :
+.onLoad a échoué dans loadNamespace() pour 'hyd1d', détails :
+  appel : readRDS(file_data)
+  erreur : erreur de lecture de la connexion
+Erreur : le chargement a échoué
+Exécution arrêtée
+ERROR: loading failed
+* removing ‘/nix/store/ma1r6k3v0h4q367ymx3z1mqvp3jl43aj-r-hyd1d-0.5.2/library/hyd1d’
+error: builder for '/nix/store/8v7wrkwqpvn95fr49sc1hla9w7hl266k-r-hyd1d-0.5.2.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘hyd1d’ ...
+       > ** package ‘hyd1d’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > ** help
+       > *** installing help indices
+       > *** copying figures
+       > ** building package indices
+       > ** installing vignettes
+       > ** testing if installed package can be loaded from temporary location
+       > Error: le chargement du package ou de l'espace de noms a échoué pour ‘hyd1d’ :
+       > .onLoad a échoué dans loadNamespace() pour 'hyd1d', détails :
+       >   appel : readRDS(file_data)
+       >   erreur : erreur de lecture de la connexion
+       > Erreur : le chargement a échoué
+       > Exécution arrêtée
+       > ERROR: loading failed
+       > * removing ‘/nix/store/ma1r6k3v0h4q367ymx3z1mqvp3jl43aj-r-hyd1d-0.5.2/library/hyd1d’
+       For full logs, run 'nix log /nix/store/8v7wrkwqpvn95fr49sc1hla9w7hl266k-r-hyd1d-0.5.2.drv'.
+error: 1 dependencies of derivation '/nix/store/davdjhm6i9hgz6vydfd0qkwc719gmz0z-r-hydflood-0.5.9.drv' failed to build

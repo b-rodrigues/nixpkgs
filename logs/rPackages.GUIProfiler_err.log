@@ -1,0 +1,104 @@
+these 5 derivations will be built:
+  /nix/store/371nc5zgxn5fk7in5chrrjsqa73nm2qm-r-Nozzle.R1-1.1-1.1.drv
+  /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv
+  /nix/store/kjdadb74r1r8g6cgj38cm0g47wrfrrdn-r-proftools-0.99-3.drv
+  /nix/store/xbrfzrafmv6lrmi03rcjrya5dnynx9yr-r-Rgraphviz-2.14.0.drv
+  /nix/store/31hyn1l23ax8m7b4kip9n3rdbjf5v3wr-r-GUIProfiler-2.0.1.drv
+these 3 paths will be fetched (0.78 MiB download, 0.78 MiB unpacked):
+  /nix/store/i9hnjp333sril8gmnh03shd2naqy7ldd-GUIProfiler_2.0.1.tar.gz
+  /nix/store/vzf7n57yr4d7iijsnzkwi0f9pihadnsr-Nozzle.R1_1.1-1.1.tar.gz
+  /nix/store/bbi7vp2gkmi0bi4lmhgjcs5dxzjgy5qg-proftools_0.99-3.tar.gz
+copying path '/nix/store/i9hnjp333sril8gmnh03shd2naqy7ldd-GUIProfiler_2.0.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/vzf7n57yr4d7iijsnzkwi0f9pihadnsr-Nozzle.R1_1.1-1.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/bbi7vp2gkmi0bi4lmhgjcs5dxzjgy5qg-proftools_0.99-3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'...
+building '/nix/store/371nc5zgxn5fk7in5chrrjsqa73nm2qm-r-Nozzle.R1-1.1-1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fac79mzcbdrkazwfsyzj2najqw8lik3r-graph_1.48.0.tar.gz
+source root is graph
+setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+building '/nix/store/kjdadb74r1r8g6cgj38cm0g47wrfrrdn-r-proftools-0.99-3.drv'...
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘graph’ ...
+** using staged installation
+** libs
+Running phase: unpackPhase
+unpacking source archive /nix/store/vzf7n57yr4d7iijsnzkwi0f9pihadnsr-Nozzle.R1_1.1-1.1.tar.gz
+source root is Nozzle.R1
+setting SOURCE_DATE_EPOCH to timestamp 1655968719 of file Nozzle.R1/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: unpackPhase
+using C compiler: ‘clang version 16.0.6’
+unpacking source archive /nix/store/bbi7vp2gkmi0bi4lmhgjcs5dxzjgy5qg-proftools_0.99-3.tar.gz
+Running phase: installPhase
+using SDK: ‘’
+source root is proftools
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+setting SOURCE_DATE_EPOCH to timestamp 1594189223 of file proftools/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Nozzle.R1’ ...
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+** package ‘Nozzle.R1’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+mv graph.so BioC_graph.so
+installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+* installing *source* package ‘proftools’ ...
+** package ‘proftools’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘graph’
+* removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+error: builder for '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > source root is graph
+       > setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘graph’ ...
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > mv graph.so BioC_graph.so
+       > installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘graph’
+       > * removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+       For full logs, run 'nix log /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'.
+error: 1 dependencies of derivation '/nix/store/31hyn1l23ax8m7b4kip9n3rdbjf5v3wr-r-GUIProfiler-2.0.1.drv' failed to build

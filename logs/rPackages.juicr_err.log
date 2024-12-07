@@ -1,0 +1,49 @@
+this derivation will be built:
+  /nix/store/7f2jd5d3q8cb88zyifgfv9b82c6p2w1b-r-juicr-0.1.drv
+this path will be fetched (0.56 MiB download, 0.56 MiB unpacked):
+  /nix/store/5shnzlaljswxnrgrpgnksgzcwakpa2gy-juicr_0.1.tar.gz
+copying path '/nix/store/5shnzlaljswxnrgrpgnksgzcwakpa2gy-juicr_0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7f2jd5d3q8cb88zyifgfv9b82c6p2w1b-r-juicr-0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5shnzlaljswxnrgrpgnksgzcwakpa2gy-juicr_0.1.tar.gz
+source root is juicr
+setting SOURCE_DATE_EPOCH to timestamp 1619766602 of file juicr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘juicr’ ...
+** package ‘juicr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 93084 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-juicr-0.1.drv-0/RtmpgGfKhw/file16b975076c966'
+2024-11-26 18:17:22.807 R[93084:77753037] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+ERROR: lazy loading failed for package ‘juicr’
+* removing ‘/nix/store/pp1jqmd58935lc2qa3s3d5qzxb9w9rwk-r-juicr-0.1/library/juicr’
+error: builder for '/nix/store/7f2jd5d3q8cb88zyifgfv9b82c6p2w1b-r-juicr-0.1.drv' failed with exit code 1;
+       last 20 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/5shnzlaljswxnrgrpgnksgzcwakpa2gy-juicr_0.1.tar.gz
+       > source root is juicr
+       > setting SOURCE_DATE_EPOCH to timestamp 1619766602 of file juicr/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘juicr’ ...
+       > ** package ‘juicr’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 93084 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-juicr-0.1.drv-0/RtmpgGfKhw/file16b975076c966'
+       > 2024-11-26 18:17:22.807 R[93084:77753037] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+       > ERROR: lazy loading failed for package ‘juicr’
+       > * removing ‘/nix/store/pp1jqmd58935lc2qa3s3d5qzxb9w9rwk-r-juicr-0.1/library/juicr’
+       For full logs, run 'nix log /nix/store/7f2jd5d3q8cb88zyifgfv9b82c6p2w1b-r-juicr-0.1.drv'.

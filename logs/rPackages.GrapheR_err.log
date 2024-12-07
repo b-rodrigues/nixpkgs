@@ -1,0 +1,50 @@
+this derivation will be built:
+  /nix/store/zcxx4kvbflkyg1ss9n2frim99sjpd1h2-r-GrapheR-1.9-86-5.drv
+building '/nix/store/zcxx4kvbflkyg1ss9n2frim99sjpd1h2-r-GrapheR-1.9-86-5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fhf7ijl2p5c4mzxk3m0zn6n2fvn7sd5b-GrapheR_1.9-86-5.tar.gz
+source root is GrapheR
+setting SOURCE_DATE_EPOCH to timestamp 1699285209 of file GrapheR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘GrapheR’ ...
+** package ‘GrapheR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 79856 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-GrapheR-1.9-86-5.drv-0/RtmpWA4bW1/file137eb4ea548ef'
+2024-11-26 15:07:24.329 R[79856:70166987] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+ERROR: lazy loading failed for package ‘GrapheR’
+* removing ‘/nix/store/9rjhiias7y3jkpmm1qivaqn4miqq6nyk-r-GrapheR-1.9-86-5/library/GrapheR’
+error: builder for '/nix/store/zcxx4kvbflkyg1ss9n2frim99sjpd1h2-r-GrapheR-1.9-86-5.drv' failed with exit code 1;
+       last 22 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/fhf7ijl2p5c4mzxk3m0zn6n2fvn7sd5b-GrapheR_1.9-86-5.tar.gz
+       > source root is GrapheR
+       > setting SOURCE_DATE_EPOCH to timestamp 1699285209 of file GrapheR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘GrapheR’ ...
+       > ** package ‘GrapheR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 79856 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-GrapheR-1.9-86-5.drv-0/RtmpWA4bW1/file137eb4ea548ef'
+       > 2024-11-26 15:07:24.329 R[79856:70166987] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+       > ERROR: lazy loading failed for package ‘GrapheR’
+       > * removing ‘/nix/store/9rjhiias7y3jkpmm1qivaqn4miqq6nyk-r-GrapheR-1.9-86-5/library/GrapheR’
+       For full logs, run 'nix log /nix/store/zcxx4kvbflkyg1ss9n2frim99sjpd1h2-r-GrapheR-1.9-86-5.drv'.

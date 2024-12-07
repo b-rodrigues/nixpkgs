@@ -1,0 +1,75 @@
+these 2 derivations will be built:
+  /nix/store/5rhjppsjagskpldgdx3h8nc5hb07vmzw-r-homomorpheR-0.2-2.drv
+  /nix/store/mwhms2nwkvx5lcd3ly9mki2waqqr7xj1-r-distcomp-1.3-3.drv
+building '/nix/store/5rhjppsjagskpldgdx3h8nc5hb07vmzw-r-homomorpheR-0.2-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/29x3pdrw2fi3dx9b8jym6kx0rg49xzkq-homomorpheR_0.2-2.tar.gz
+source root is homomorpheR
+setting SOURCE_DATE_EPOCH to timestamp 1548232210 of file homomorpheR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘homomorpheR’ ...
+** package ‘homomorpheR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (homomorpheR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-homomorpheR-0.2-2.drv-0/ in /nix/store/wfanhrl0xla7mil955iddm0lijwwxzyi-r-homomorpheR-0.2-2...
+patching script interpreter paths in /nix/store/wfanhrl0xla7mil955iddm0lijwwxzyi-r-homomorpheR-0.2-2
+rewriting symlink /nix/store/wfanhrl0xla7mil955iddm0lijwwxzyi-r-homomorpheR-0.2-2/nix-support/propagated-user-env-packages to be relative to /nix/store/wfanhrl0xla7mil955iddm0lijwwxzyi-r-homomorpheR-0.2-2
+building '/nix/store/mwhms2nwkvx5lcd3ly9mki2waqqr7xj1-r-distcomp-1.3-3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/yxms2k15m17lcmvamy7bsj0mpysb6s71-distcomp_1.3-3.tar.gz
+source root is distcomp
+setting SOURCE_DATE_EPOCH to timestamp 1662066002 of file distcomp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘distcomp’ ...
+** package ‘distcomp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c chinv2.c -o chinv2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cholesky2.c -o cholesky2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c chsolve2.c -o chsolve2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c coxcount1.c -o coxcount1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c coxfit6.c -o coxfit6.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c coxmart.c -o coxmart.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dmatrix.c -o dmatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o distcomp.so chinv2.o cholesky2.o chsolve2.o coxcount1.o coxfit6.o coxmart.o dmatrix.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/75wr75b8n29p9rzgszbk2wlssl1f0hid-r-distcomp-1.3-3/library/00LOCK-distcomp/00new/distcomp/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (distcomp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-distcomp-1.3-3.drv-0/ in /nix/store/75wr75b8n29p9rzgszbk2wlssl1f0hid-r-distcomp-1.3-3...
+patching script interpreter paths in /nix/store/75wr75b8n29p9rzgszbk2wlssl1f0hid-r-distcomp-1.3-3
+rewriting symlink /nix/store/75wr75b8n29p9rzgszbk2wlssl1f0hid-r-distcomp-1.3-3/nix-support/propagated-user-env-packages to be relative to /nix/store/75wr75b8n29p9rzgszbk2wlssl1f0hid-r-distcomp-1.3-3

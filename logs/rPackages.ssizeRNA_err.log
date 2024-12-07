@@ -1,0 +1,201 @@
+these 2 derivations will be built:
+  /nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv
+  /nix/store/gimz6gd677kh6ka8qvy6m4bw331z404l-r-ssizeRNA-1.3.2.drv
+this path will be fetched (0.39 MiB download, 0.39 MiB unpacked):
+  /nix/store/nbxlhbk954vr84z9sjic4xcmjns31jma-ssizeRNA_1.3.2.tar.gz
+copying path '/nix/store/nbxlhbk954vr84z9sjic4xcmjns31jma-ssizeRNA_1.3.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/y5z7r0ff78f66gnmnkiyr9l7171wj8sw-edgeR_3.12.1.tar.gz
+source root is edgeR
+setting SOURCE_DATE_EPOCH to timestamp 1460076787 of file edgeR/src/utils.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘edgeR’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_compute_nbdev.cpp -o R_compute_nbdev.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_cr_adjust.cpp -o R_cr_adjust.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_exact_test_by_deviance.cpp -o R_exact_test_by_deviance.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_levenberg.cpp -o R_levenberg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_loess_by_col.cpp -o R_loess_by_col.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_maximize_interpolant.cpp -o R_maximize_interpolant.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_one_group.cpp -o R_one_group.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_process_hairpin_reads.c -o R_process_hairpin_reads.o
+R_process_hairpin_reads.c:464:52: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+      Rprintf(" -- Processing %d million reads\n", (num_read_thisfile / BLOCKSIZE + 1) * 10);
+                              ~~                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              %ld
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_simple_good_turing.cpp -o R_simple_good_turing.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c adj_coxreid.cpp -o adj_coxreid.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fmm_spline.c -o fmm_spline.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c glm_levenberg.cpp -o glm_levenberg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c glm_one_group.cpp -o glm_one_group.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c init.cpp -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c interpolator.cpp -o interpolator.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c matvec_check.cpp -o matvec_check.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c nbdev.cpp -o nbdev.o
+adj_coxreid.cpp:16:5: error: no matching function for call to 'dsytrf_'
+    F77_NAME(dsytrf)(&uplo, &ncoefs, working_matrix, &ncoefs, pivots, &temp_work, &lwork, &info);
+    ^~~~~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^~~~~~
+<scratch space>:421:1: note: expanded from here
+dsytrf_
+^~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/Lapack.h:1392:1: note: candidate function not viable: requires 9 arguments, but 8 were provided
+F77_NAME(dsytrf)(const char* uplo, const La_INT* n,
+^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^
+<scratch space>:127:1: note: expanded from here
+dsytrf_
+^
+adj_coxreid.cpp:60:5: error: no matching function for call to 'dsytrf_'
+    F77_NAME(dsytrf)(&uplo, &ncoefs, working_matrix, &ncoefs, pivots, work, &lwork, &info);
+    ^~~~~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^~~~~~
+<scratch space>:422:1: note: expanded from here
+dsytrf_
+^~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/Lapack.h:1392:1: note: candidate function not viable: requires 9 arguments, but 8 were provided
+F77_NAME(dsytrf)(const char* uplo, const La_INT* n,
+^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^
+<scratch space>:127:1: note: expanded from here
+dsytrf_
+^
+glm_levenberg.cpp:141:9: error: no matching function for call to 'dgemm_'
+        F77_NAME(dgemm)(&transposed, &normal, &ncoefs, &ncoefs, &nlibs,
+        ^~~~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^~~~~~
+<scratch space>:421:1: note: expanded from here
+dgemm_
+^~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/BLAS.h:222:1: note: candidate function not viable: requires 15 arguments, but 13 were provided
+F77_NAME(dgemm)(const char *transa, const char *transb, const BLAS_INT *m,
+^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^
+<scratch space>:313:1: note: expanded from here
+dgemm_
+^
+glm_levenberg.cpp:175:17: error: no matching function for call to 'dpotrf_'
+                F77_NAME(dpotrf)(&uplo, &ncoefs, xwx_copy, &ncoefs, &info);
+                ^~~~~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^~~~~~
+<scratch space>:422:1: note: expanded from here
+dpotrf_
+^~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/Lapack.h:848:1: note: candidate function not viable: requires 6 arguments, but 5 were provided
+F77_NAME(dpotrf)(const char* uplo, const La_INT* n,
+^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^
+<scratch space>:67:1: note: expanded from here
+dpotrf_
+^
+glm_levenberg.cpp:192:13: error: no matching function for call to 'dpotrs_'
+            F77_NAME(dpotrs)(&uplo, &ncoefs, &nrhs, xwx_copy, &ncoefs, dbeta, &ncoefs, &info);
+            ^~~~~~~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^~~~~~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^~~~~~
+<scratch space>:423:1: note: expanded from here
+dpotrs_
+^~~~~~~
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/Lapack.h:860:1: note: candidate function not viable: requires 9 arguments, but 8 were provided
+F77_NAME(dpotrs)(const char* uplo, const La_INT* n,
+^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+#define F77_NAME(x)    F77_CALL(x)
+                       ^
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+# define F77_CALL(x)    x ## _
+                        ^
+<scratch space>:69:1: note: expanded from here
+dpotrs_
+^
+2 errors generated.
+3 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: glm_levenberg.o] Error 1
+make: *** Attente des tâches non terminées....
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: adj_coxreid.o] Error 1
+ERROR: compilation failed for package ‘edgeR’
+* removing ‘/nix/store/khgnmwqs0apkh8lqr5879337mzcnq0f5-r-edgeR-3.12.1/library/edgeR’
+error: builder for '/nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv' failed with exit code 1;
+       last 25 log lines:
+       > /nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+       > # define F77_CALL(x)    x ## _
+       >                         ^~~~~~
+       > <scratch space>:423:1: note: expanded from here
+       > dpotrs_
+       > ^~~~~~~
+       > /nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/Lapack.h:860:1: note: candidate function not viable: requires 9 arguments, but 8 were provided
+       > F77_NAME(dpotrs)(const char* uplo, const La_INT* n,
+       > ^
+       > /nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:108:24: note: expanded from macro 'F77_NAME'
+       > #define F77_NAME(x)    F77_CALL(x)
+       >                        ^
+       > /nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/RS.h:104:22: note: expanded from macro 'F77_CALL'
+       > # define F77_CALL(x)    x ## _
+       >                         ^
+       > <scratch space>:69:1: note: expanded from here
+       > dpotrs_
+       > ^
+       > 2 errors generated.
+       > 3 errors generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: glm_levenberg.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: adj_coxreid.o] Error 1
+       > ERROR: compilation failed for package ‘edgeR’
+       > * removing ‘/nix/store/khgnmwqs0apkh8lqr5879337mzcnq0f5-r-edgeR-3.12.1/library/edgeR’
+       For full logs, run 'nix log /nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv'.
+error: 1 dependencies of derivation '/nix/store/gimz6gd677kh6ka8qvy6m4bw331z404l-r-ssizeRNA-1.3.2.drv' failed to build

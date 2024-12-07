@@ -1,0 +1,57 @@
+these 2 derivations will be built:
+  /nix/store/m1k9jvkmiwyr17z3f2bsj0rxcp18sriv-comtradr_1.0.3.tar.gz.drv
+  /nix/store/mfm1pp06c0lrafhyrsbigmnazpc6fr3m-r-comtradr-1.0.3.drv
+building '/nix/store/m1k9jvkmiwyr17z3f2bsj0rxcp18sriv-comtradr_1.0.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/comtradr_1.0.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3272k  100 3272k    0     0  6289k      0 --:--:-- --:--:-- --:--:-- 6293k
+building '/nix/store/mfm1pp06c0lrafhyrsbigmnazpc6fr3m-r-comtradr-1.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ly7qrphzbws78a2f84702csdjdxlzywp-comtradr_1.0.3.tar.gz
+source root is comtradr
+setting SOURCE_DATE_EPOCH to timestamp 1731692408 of file comtradr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘comtradr’ ...
+** package ‘comtradr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis dans normalizePath("~") :
+  path[1]="/homeless-shelter": No such file or directory
+Avis dans dir.create(dir, recursive = TRUE) :
+  impossible de créer le répertoire '/homeless-shelter/Library', à cause de 'No such file or directory'
+Avis dans normalizePath(dir) :
+  path[1]="/homeless-shelter/Library/Caches/org.R-project.R/R/comtradr": No such file or directory
+Avis dans normalizePath("~") :
+  path[1]="/homeless-shelter": No such file or directory
+** testing if installed package can be loaded from final location
+Avis dans normalizePath("~") :
+  path[1]="/homeless-shelter": No such file or directory
+Avis dans dir.create(dir, recursive = TRUE) :
+  impossible de créer le répertoire '/homeless-shelter/Library', à cause de 'No such file or directory'
+Avis dans normalizePath(dir) :
+  path[1]="/homeless-shelter/Library/Caches/org.R-project.R/R/comtradr": No such file or directory
+Avis dans normalizePath("~") :
+  path[1]="/homeless-shelter": No such file or directory
+** testing if installed package keeps a record of temporary installation path
+* DONE (comtradr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-comtradr-1.0.3.drv-0/ in /nix/store/zba1aa7082mni1n7nrc204flbh5j85nr-r-comtradr-1.0.3...
+patching script interpreter paths in /nix/store/zba1aa7082mni1n7nrc204flbh5j85nr-r-comtradr-1.0.3
+rewriting symlink /nix/store/zba1aa7082mni1n7nrc204flbh5j85nr-r-comtradr-1.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/zba1aa7082mni1n7nrc204flbh5j85nr-r-comtradr-1.0.3

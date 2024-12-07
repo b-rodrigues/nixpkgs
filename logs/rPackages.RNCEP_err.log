@@ -1,0 +1,51 @@
+this derivation will be built:
+  /nix/store/pg6v26kmqw3cmyrp4rf4vaq1wwscqla1-r-RNCEP-1.0.10.drv
+this path will be fetched (0.29 MiB download, 0.29 MiB unpacked):
+  /nix/store/qbccfs3707zjgabw3wja6g9svvr6zwrw-RNCEP_1.0.10.tar.gz
+copying path '/nix/store/qbccfs3707zjgabw3wja6g9svvr6zwrw-RNCEP_1.0.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pg6v26kmqw3cmyrp4rf4vaq1wwscqla1-r-RNCEP-1.0.10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qbccfs3707zjgabw3wja6g9svvr6zwrw-RNCEP_1.0.10.tar.gz
+source root is RNCEP
+setting SOURCE_DATE_EPOCH to timestamp 1590557422 of file RNCEP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RNCEP’ ...
+** package ‘RNCEP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 56888 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-RNCEP-1.0.10.drv-0/Rtmp9FYsfM/filede333c2fd62c'
+ERROR: lazy loading failed for package ‘RNCEP’
+* removing ‘/nix/store/0fp0g0zs19y19pdi9hsmvj0plcdh5iyl-r-RNCEP-1.0.10/library/RNCEP’
+error: builder for '/nix/store/pg6v26kmqw3cmyrp4rf4vaq1wwscqla1-r-RNCEP-1.0.10.drv' failed with exit code 1;
+       last 21 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/qbccfs3707zjgabw3wja6g9svvr6zwrw-RNCEP_1.0.10.tar.gz
+       > source root is RNCEP
+       > setting SOURCE_DATE_EPOCH to timestamp 1590557422 of file RNCEP/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘RNCEP’ ...
+       > ** package ‘RNCEP’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 56888 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-RNCEP-1.0.10.drv-0/Rtmp9FYsfM/filede333c2fd62c'
+       > ERROR: lazy loading failed for package ‘RNCEP’
+       > * removing ‘/nix/store/0fp0g0zs19y19pdi9hsmvj0plcdh5iyl-r-RNCEP-1.0.10/library/RNCEP’
+       For full logs, run 'nix log /nix/store/pg6v26kmqw3cmyrp4rf4vaq1wwscqla1-r-RNCEP-1.0.10.drv'.

@@ -1,0 +1,134 @@
+these 2 derivations will be built:
+  /nix/store/shhhyb8zf7ylbqxni9gk8xd0n73zy1ih-r-tsvio-1.0.6.drv
+  /nix/store/kbr7b65i9qq95smgsya55wiyq3qyxlpl-r-NGCHM-1.0.3.drv
+these 5 paths will be fetched (0.49 MiB download, 3.04 MiB unpacked):
+  /nix/store/0vy9m724hi33mp9fdphh6c38yh8naq29-NGCHM_1.0.3.tar.gz
+  /nix/store/fkgcx3zagwn2ppjb47j68prvrnqdpcdx-hostname-shell_cmds-319.0.1
+  /nix/store/fmxizag1ai8r95zsh6kqr4p7yj0vs245-shell_cmds-319.0.1
+  /nix/store/blcph31k6cq9izaxkkaz10330bs9kf16-shell_cmds-319.0.1-man
+  /nix/store/ag2q8blw28xnckhd19zqv3s65x94zb2z-tsvio_1.0.6.tar.gz
+copying path '/nix/store/0vy9m724hi33mp9fdphh6c38yh8naq29-NGCHM_1.0.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/blcph31k6cq9izaxkkaz10330bs9kf16-shell_cmds-319.0.1-man' from 'https://cache.nixos.org'...
+copying path '/nix/store/fmxizag1ai8r95zsh6kqr4p7yj0vs245-shell_cmds-319.0.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/ag2q8blw28xnckhd19zqv3s65x94zb2z-tsvio_1.0.6.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/fkgcx3zagwn2ppjb47j68prvrnqdpcdx-hostname-shell_cmds-319.0.1' from 'https://cache.nixos.org'...
+building '/nix/store/shhhyb8zf7ylbqxni9gk8xd0n73zy1ih-r-tsvio-1.0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ag2q8blw28xnckhd19zqv3s65x94zb2z-tsvio_1.0.6.tar.gz
+source root is tsvio
+setting SOURCE_DATE_EPOCH to timestamp 1701190802 of file tsvio/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tsvio’ ...
+** package ‘tsvio’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dht.c -o dht.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c genindex.c -o genindex.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c getlines.c -o getlines.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tsvlib.c -o tsvlib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tsvio.so dht.o genindex.o getlines.o tsvlib.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/iikjq5bf356zc5y26lcaza4p9gxk2c4d-r-tsvio-1.0.6/library/00LOCK-tsvio/00new/tsvio/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tsvio)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tsvio-1.0.6.drv-0/ in /nix/store/iikjq5bf356zc5y26lcaza4p9gxk2c4d-r-tsvio-1.0.6...
+patching script interpreter paths in /nix/store/iikjq5bf356zc5y26lcaza4p9gxk2c4d-r-tsvio-1.0.6
+building '/nix/store/kbr7b65i9qq95smgsya55wiyq3qyxlpl-r-NGCHM-1.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/0vy9m724hi33mp9fdphh6c38yh8naq29-NGCHM_1.0.3.tar.gz
+source root is NGCHM
+setting SOURCE_DATE_EPOCH to timestamp 1715202610 of file NGCHM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘NGCHM’ ...
+file ‘inst/base.config/conf.d/01-server-protocol-scl.R’ has the wrong MD5 checksum
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Avis dans checkForExternalUtilities() :
+  CRITICAL WARNING: Unable to verify 'git' installation. Git is required to create NG-CHMs. Install git in order to create NG-CHMs.
+Avis dans checkForExternalUtilities() :
+  Missing suggested external program 'scp'. Some server functionality unavailable.
+Avis dans checkForExternalUtilities() :
+  Missing suggested external program 'ssh'. Some server functionality unavailable.
+Avis dans checkForJavaVersion() :
+  CRITICAL WARNING: Unable to verify Java installation. Java 11 is required to create .ngchm and .html files.
+
+        Install Java 11 or higher for to create .ngchm and .html files.
+
+Avis dans checkForNGCHMSupportFiles() :
+  CRITICAL WARNING: Package NGCHMSupportFiles is not installed. This package is required to create .ngchm and .html files. Please install and load NGCHMSupportFiles with commands: 
+
+        install.packages('NGCHMSupportFiles', repos = c('https://md-anderson-bioinformatics.r-universe.dev', 'https://cloud.r-project.org'))
+
+        library(NGCHMSupportFiles)
+
+Avis dans checkForNGCHMDemoData() :
+  NOTE: Package NGCHMDemoData is not installed. This package is used by the examples and website vignettes. Please install and load NGCHMDemoData with command: 
+
+        install.packages('NGCHMDemoData', repos = c('https://md-anderson-bioinformatics.r-universe.dev', 'https://cloud.r-project.org'))
+
+        library(NGCHMDemoData)
+
+** testing if installed package can be loaded from final location
+Avis dans checkForExternalUtilities() :
+  CRITICAL WARNING: Unable to verify 'git' installation. Git is required to create NG-CHMs. Install git in order to create NG-CHMs.
+Avis dans checkForExternalUtilities() :
+  Missing suggested external program 'scp'. Some server functionality unavailable.
+Avis dans checkForExternalUtilities() :
+  Missing suggested external program 'ssh'. Some server functionality unavailable.
+Avis dans checkForJavaVersion() :
+  CRITICAL WARNING: Unable to verify Java installation. Java 11 is required to create .ngchm and .html files.
+
+        Install Java 11 or higher for to create .ngchm and .html files.
+
+Avis dans checkForNGCHMSupportFiles() :
+  CRITICAL WARNING: Package NGCHMSupportFiles is not installed. This package is required to create .ngchm and .html files. Please install and load NGCHMSupportFiles with commands: 
+
+        install.packages('NGCHMSupportFiles', repos = c('https://md-anderson-bioinformatics.r-universe.dev', 'https://cloud.r-project.org'))
+
+        library(NGCHMSupportFiles)
+
+Avis dans checkForNGCHMDemoData() :
+  NOTE: Package NGCHMDemoData is not installed. This package is used by the examples and website vignettes. Please install and load NGCHMDemoData with command: 
+
+        install.packages('NGCHMDemoData', repos = c('https://md-anderson-bioinformatics.r-universe.dev', 'https://cloud.r-project.org'))
+
+        library(NGCHMDemoData)
+
+** testing if installed package keeps a record of temporary installation path
+* DONE (NGCHM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-NGCHM-1.0.3.drv-0/ in /nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3...
+patching script interpreter paths in /nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3
+/nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3/library/NGCHM/SimpleChmLoader/scl-make-deploy-dir.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3/library/NGCHM/SimpleChmLoader/scl-next-action.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3/library/NGCHM/SimpleChmLoader/scl-driver.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3/library/NGCHM/SimpleChmLoader/scl-update-chm-list.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+rewriting symlink /nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/1ismhmym6jn3w75f56n7pagpi42s41qm-r-NGCHM-1.0.3

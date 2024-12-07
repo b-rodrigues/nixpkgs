@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/34wcwj5ibhg9026raa028qqpkg2gg8yz-r-HhP-1.0.0.drv
+this path will be fetched (0.43 MiB download, 0.43 MiB unpacked):
+  /nix/store/9gqg4aq0i6y3f38d483z0q67hyi82s4w-HhP_1.0.0.tar.gz
+copying path '/nix/store/9gqg4aq0i6y3f38d483z0q67hyi82s4w-HhP_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/34wcwj5ibhg9026raa028qqpkg2gg8yz-r-HhP-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9gqg4aq0i6y3f38d483z0q67hyi82s4w-HhP_1.0.0.tar.gz
+source root is HhP
+setting SOURCE_DATE_EPOCH to timestamp 1669203011 of file HhP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘fmrs’ is not available for package ‘HhP’
+* removing ‘/nix/store/c9l34s5az7y7spmrg2ksx65701x93phi-r-HhP-1.0.0/library/HhP’
+error: builder for '/nix/store/34wcwj5ibhg9026raa028qqpkg2gg8yz-r-HhP-1.0.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/9gqg4aq0i6y3f38d483z0q67hyi82s4w-HhP_1.0.0.tar.gz
+       > source root is HhP
+       > setting SOURCE_DATE_EPOCH to timestamp 1669203011 of file HhP/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘fmrs’ is not available for package ‘HhP’
+       > * removing ‘/nix/store/c9l34s5az7y7spmrg2ksx65701x93phi-r-HhP-1.0.0/library/HhP’
+       For full logs, run 'nix log /nix/store/34wcwj5ibhg9026raa028qqpkg2gg8yz-r-HhP-1.0.0.drv'.

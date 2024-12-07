@@ -1,0 +1,89 @@
+this derivation will be built:
+  /nix/store/4ffapxm55karsak6b6rxk7xgizmkc3ln-r-rtmpt-2.0-1.drv
+this path will be fetched (0.25 MiB download, 0.25 MiB unpacked):
+  /nix/store/3sndimcfhkvs5qsfx16dc808i4aiypvk-rtmpt_2.0-1.tar.gz
+copying path '/nix/store/3sndimcfhkvs5qsfx16dc808i4aiypvk-rtmpt_2.0-1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4ffapxm55karsak6b6rxk7xgizmkc3ln-r-rtmpt-2.0-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3sndimcfhkvs5qsfx16dc808i4aiypvk-rtmpt_2.0-1.tar.gz
+source root is rtmpt
+setting SOURCE_DATE_EPOCH to timestamp 1712227202 of file rtmpt/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rtmpt’ ...
+** package ‘rtmpt’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c Quelle.cpp -o Quelle.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c adaptive_rejection_sampling.cpp -o adaptive_rejection_sampling.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c additions.cpp -o additions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c derivatives.cpp -o derivatives.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c diagnosis.cpp -o diagnosis.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c diffusion.cpp -o diffusion.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c gibbs.cpp -o gibbs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c hamiltonian.cpp -o hamiltonian.o
+diagnosis.cpp:228:21: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                if ((complength == 1) /*&& (PFAD_INDEX(j, k) > -1)*/) {
+                     ~~~~~~~~~~~^~~~
+diagnosis.cpp:228:21: note: remove extraneous parentheses around the comparison to silence this warning
+                if ((complength == 1) /*&& (PFAD_INDEX(j, k) > -1)*/) {
+                    ~           ^   ~
+diagnosis.cpp:228:21: note: use '=' to turn this equality comparison into an assignment
+                if ((complength == 1) /*&& (PFAD_INDEX(j, k) > -1)*/) {
+                                ^~
+                                =
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c hcubature.cpp -o hcubature.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2  -c invtri.c -o invtri.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c joint.cpp -o joint.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c lkj.cpp -o lkj.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c lnnorm.cpp -o lnnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c main.cpp -o main.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c mvtimes.cpp -o mvtimes.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c onetimes.cpp -o onetimes.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c r_wrapper.cpp -o r_wrapper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c rtimes.cpp -o rtimes.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2  -c rtmpt_init.c -o rtmpt_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c rwiener.cpp -o rwiener.o
+onetimes.cpp:140:21: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                if ((complength == 1) /*&& (PFAD_INDEX(j, k) > -1)*/) {
+                     ~~~~~~~~~~~^~~~
+onetimes.cpp:140:21: note: remove extraneous parentheses around the comparison to silence this warning
+                if ((complength == 1) /*&& (PFAD_INDEX(j, k) > -1)*/) {
+                    ~           ^   ~
+onetimes.cpp:140:21: note: use '=' to turn this equality comparison into an assignment
+                if ((complength == 1) /*&& (PFAD_INDEX(j, k) > -1)*/) {
+                                ^~
+                                =
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c specifics.cpp -o specifics.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c times.cpp -o times.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c tools.cpp -o tools.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I/usr/local/include -fPIC  -g -O2   -c trait.cpp -o trait.o
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rtmpt.so Quelle.o adaptive_rejection_sampling.o additions.o derivatives.o diagnosis.o diffusion.o gibbs.o hamiltonian.o hcubature.o invtri.o joint.o lkj.o lnnorm.o main.o mvtimes.o onetimes.o r_wrapper.o rtimes.o rtmpt_init.o rwiener.o specifics.o times.o tools.o trait.o -L/usr/local/lib -lgsl -lgslcblas -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/5vvr20lgjssnszya3s7cj11kn2c4x7wz-r-rtmpt-2.0-1/library/00LOCK-rtmpt/00new/rtmpt/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rtmpt)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rtmpt-2.0-1.drv-0/ in /nix/store/5vvr20lgjssnszya3s7cj11kn2c4x7wz-r-rtmpt-2.0-1...
+patching script interpreter paths in /nix/store/5vvr20lgjssnszya3s7cj11kn2c4x7wz-r-rtmpt-2.0-1
+rewriting symlink /nix/store/5vvr20lgjssnszya3s7cj11kn2c4x7wz-r-rtmpt-2.0-1/nix-support/propagated-user-env-packages to be relative to /nix/store/5vvr20lgjssnszya3s7cj11kn2c4x7wz-r-rtmpt-2.0-1

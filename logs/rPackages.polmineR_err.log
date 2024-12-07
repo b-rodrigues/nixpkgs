@@ -1,0 +1,220 @@
+these 3 derivations will be built:
+  /nix/store/43d4h0k31vw6aii5i631y5capjnghvpj-RcppCWB_0.6.5.tar.gz.drv
+  /nix/store/npnhyi9lryyvf0pp6n493apgnh3myi02-r-RcppCWB-0.6.5.drv
+  /nix/store/1dqflq4h819b25rmmzasj46938jn9ws4-r-polmineR-0.8.9.drv
+this path will be fetched (1.68 MiB download, 1.75 MiB unpacked):
+  /nix/store/2cb59cmifgg061qv4wnv8yrzfvjxy3r2-polmineR_0.8.9.tar.gz
+copying path '/nix/store/2cb59cmifgg061qv4wnv8yrzfvjxy3r2-polmineR_0.8.9.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/43d4h0k31vw6aii5i631y5capjnghvpj-RcppCWB_0.6.5.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/RcppCWB_0.6.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1100k  100 1100k    0     0  3284k      0 --:--:-- --:--:-- --:--:-- 3293k
+building '/nix/store/npnhyi9lryyvf0pp6n493apgnh3myi02-r-RcppCWB-0.6.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z039xwj0wwsdxvva9zlhj079dx9a5hri-RcppCWB_0.6.5.tar.gz
+source root is RcppCWB
+setting SOURCE_DATE_EPOCH to timestamp 1727130007 of file RcppCWB/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: glibPreInstallPhase
+Running phase: installPhase
+* installing *source* package ‘RcppCWB’ ...
+** package ‘RcppCWB’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+* operating system detected for CWB configuration: Darwin
+* compiling for darwin-arm64
+* using CWB platform configuration file: darwin-arm64
+* adapt CWB configuration file to use compiler: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+sed: -e expression #1, char 53: unknown option to `s'
+* using pkg-config to check whether glib-2.0 is available ... yes
+* using pkg-config to get linker flags for glib-2.0: -L/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib -lglib-2.0
+* check whether pcre2 is available ... yes (version: 10.44)
+* checking whether pcre2test is available ... yes
+* check whether pcre2 has been configured with unicode properties support ... yes
+* using pcre2-config to get libdirs for pcre2 (8bit): -L/nix/store/bizz2sjb47iinc0zz19zmg2k9llk4mg7-pcre2-10.44/lib -lpcre2-8
+* using pcre2-config to get cflags for pcre2: -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include
+* using build directory: /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/CQi -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/CQi -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c addons.cpp -o addons.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/CQi -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cl.cpp -o cl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/CQi -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cqp.cpp -o cqp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl -I/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/CQi -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c utils.cpp -o utils.o
+cd cwb; R_PACKAGE_SOURCE=/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb PKG_CONFIG_PATH=/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/lib/pkgconfig:/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/pkgconfig:/nix/store/694hxwmfl7nf8kjh3a5215212q86h9i6-pcre-8.45-dev/lib/pkgconfig:/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/lib/pkgconfig:/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/lib/pkgconfig:/nix/store/2y1rfznclby5hl22j84050c9nwjxa5ak-libffi-3.4.6-dev/lib/pkgconfig make clean
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+sh: line 1: sw_vers: command not found
+for i in cl cqp ; do if [ -f "$i/Makefile" ]; then cd $i; make clean; cd ..; fi; done;
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl »
+sh: line 1: sw_vers: command not found
+rm -f *.o libcl.a registry.output *~
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp »
+sh: line 1: sw_vers: command not found
+rm -f cqp cqpcl cqpserver  *.o ../CQi/*.o parser.output *~ ../CQi/*~
+# TODO what is "parser.output" ? 
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp »
+rm -f *~ config/*/*~ CQi/*~ CQi/*.o technical/*~ TAGS
+rm -f -rf build
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+cd cwb; R_PACKAGE_SOURCE=/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb PKG_CONFIG_PATH=/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/lib/pkgconfig:/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/pkgconfig:/nix/store/694hxwmfl7nf8kjh3a5215212q86h9i6-pcre-8.45-dev/lib/pkgconfig:/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/lib/pkgconfig:/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/lib/pkgconfig:/nix/store/2y1rfznclby5hl22j84050c9nwjxa5ak-libffi-3.4.6-dev/lib/pkgconfig make depend
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+sh: line 1: sw_vers: command not found
+for i in cl cqp  ; do cd $i; make depend.mk; cd ..; done;
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl »
+sh: line 1: sw_vers: command not found
+make[2]: « depend.mk » est à jour.
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp »
+sh: line 1: sw_vers: command not found
+make[2]: « depend.mk » est à jour.
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp »
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+cd cwb; R_PACKAGE_SOURCE=/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb PKG_CONFIG_PATH=/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/lib/pkgconfig:/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/pkgconfig:/nix/store/694hxwmfl7nf8kjh3a5215212q86h9i6-pcre-8.45-dev/lib/pkgconfig:/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/lib/pkgconfig:/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/lib/pkgconfig:/nix/store/2y1rfznclby5hl22j84050c9nwjxa5ak-libffi-3.4.6-dev/lib/pkgconfig make cl
+cd cwb; R_PACKAGE_SOURCE=/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb PKG_CONFIG_PATH=/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/lib/pkgconfig:/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/pkgconfig:/nix/store/694hxwmfl7nf8kjh3a5215212q86h9i6-pcre-8.45-dev/lib/pkgconfig:/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/lib/pkgconfig:/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/lib/pkgconfig:/nix/store/2y1rfznclby5hl22j84050c9nwjxa5ak-libffi-3.4.6-dev/lib/pkgconfig make cqp
+cd cwb; R_PACKAGE_SOURCE=/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb PKG_CONFIG_PATH=/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/lib/pkgconfig:/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/pkgconfig:/nix/store/694hxwmfl7nf8kjh3a5215212q86h9i6-pcre-8.45-dev/lib/pkgconfig:/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/lib/pkgconfig:/nix/store/bx5p9dfdmsryflrfrvwdqnkbh3ll9glz-zlib-1.3.1-dev/lib/pkgconfig:/nix/store/2y1rfznclby5hl22j84050c9nwjxa5ak-libffi-3.4.6-dev/lib/pkgconfig make utils
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+sh: line 1: sw_vers: command not found
+sh: line 1: sw_vers: command not found
+sh: line 1: sw_vers: command not found
+--------------------------------- BUILDING UTILITIES
+cd utils; make
+--------------------------------- BUILDING CQP
+cd cqp; make
+--------------------------------- BUILDING CORPUS LIBRARY (CL)
+cd cl; make
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/utils »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp »
+sh: line 1: sw_vers: command not found
+sh: line 1: sw_vers: command not found
+sh: line 1: sw_vers: command not found
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o globals.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   globals.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o cqp.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   cqp.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   -o cwb-encode.o cwb-encode.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o macros.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   macros.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o symtab.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   symtab.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o ui-helpers.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   ui-helpers.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o eval.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   eval.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o list.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   list.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   -o cwb-makeall.o cwb-makeall.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o lexhash.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   lexhash.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   -o cwb-huffcode.o cwb-huffcode.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o ngram-hash.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   ngram-hash.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   -o cwb-compress-rdx.o cwb-compress-rdx.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o bitfields.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   bitfields.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o storage.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   storage.c
+--------------------------------- CREATING ARCHIVE
+rm -f libcwb.a
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cqs libcwb.a cwb-encode.o cwb-makeall.o cwb-huffcode.o cwb-compress-rdx.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o fileutils.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   fileutils.c
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/utils »
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o tree.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:38 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   tree.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o special-chars.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   special-chars.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o options.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   options.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o regopt.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   regopt.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o corpus.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   corpus.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o corpmanag.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   corpmanag.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o regex2dfa.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   regex2dfa.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o attributes.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   attributes.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o makecomps.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   makecomps.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o output.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   output.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o registry.tab.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   registry.tab.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o ranges.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   ranges.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o builtins.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   builtins.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o lex.creg.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   lex.creg.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o groups.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   groups.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o cdaccess.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   cdaccess.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o targets.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   targets.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o bitio.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   bitio.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o endian.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   endian.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o matchlist.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   matchlist.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o concordance.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   concordance.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o parse_actions.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   parse_actions.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o compression.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:39 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   compression.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o attlist.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   attlist.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o dl_stub.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   dl_stub.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o context_descriptor.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   context_descriptor.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o print-modes.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   print-modes.c
+rm -f libcl.a
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o ascii-print.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   ascii-print.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cqs libcl.a globals.o macros.o ui-helpers.o list.o lexhash.o ngram-hash.o bitfields.o storage.o fileutils.o special-chars.o regopt.o corpus.o attributes.o makecomps.o registry.tab.o lex.creg.o cdaccess.o bitio.o endian.o compression.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o sgml-print.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   sgml-print.c
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl »
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o html-print.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   html-print.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o latex-print.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   latex-print.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o variables.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   variables.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o print_align.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   print_align.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o macro.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   macro.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o parser.tab.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   parser.tab.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o lex.yy.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   lex.yy.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o ../CQi/server.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   ../CQi/server.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o ../CQi/auth.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   ../CQi/auth.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c  -o ../CQi/log.o -Wall -O3 -arch arm64 -mtune=native   -DCOMPILE_DATE=\""Wed Nov 27 03:49:40 UTC 2024"\" -DCWB_VERSION=\"3.4.33\" -I/nix/store/dzpksb6rgp5n6rkr1nkjh6zlvvw78797-glib-2.82.1-dev/include/glib-2.0 -I/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib/glib-2.0/include -I/nix/store/nqk6r82w7lr1wnv7j68wv2ndnqfz3v8c-pcre2-10.44-dev/include   ../CQi/log.c
+rm -f libcqp.a
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cqs libcqp.a cqp.o symtab.o eval.o tree.o options.o corpmanag.o regex2dfa.o output.o ranges.o builtins.o groups.o targets.o matchlist.o concordance.o parse_actions.o attlist.o context_descriptor.o print-modes.o ascii-print.o sgml-print.o html-print.o latex-print.o variables.o print_align.o macro.o parser.tab.o lex.yy.o ../CQi/server.o ../CQi/auth.o ../CQi/log.o
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp »
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppCWB.so RcppExports.o addons.o cl.o cqp.o utils.o -L/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cl -L/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/cqp -L/private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/RcppCWB/src/cwb/utils -lcwb -lcqp -lcl -L/nix/store/7rhy1794b3m0mlxqdlfsh2pys5gmyyip-glib-2.82.1/lib -lglib-2.0 -L/nix/store/bizz2sjb47iinc0zz19zmg2k9llk4mg7-pcre2-10.44/lib -lpcre2-8 -framework Carbon -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/21q4a9rlcnxqj1piahr1lim0gfz6q26s-r-RcppCWB-0.6.5/library/00LOCK-RcppCWB/00new/RcppCWB/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppCWB)
+Running phase: glibPreFixupPhase
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppCWB-0.6.5.drv-0/ in /nix/store/21q4a9rlcnxqj1piahr1lim0gfz6q26s-r-RcppCWB-0.6.5...
+patching script interpreter paths in /nix/store/21q4a9rlcnxqj1piahr1lim0gfz6q26s-r-RcppCWB-0.6.5
+rewriting symlink /nix/store/21q4a9rlcnxqj1piahr1lim0gfz6q26s-r-RcppCWB-0.6.5/nix-support/propagated-user-env-packages to be relative to /nix/store/21q4a9rlcnxqj1piahr1lim0gfz6q26s-r-RcppCWB-0.6.5
+building '/nix/store/1dqflq4h819b25rmmzasj46938jn9ws4-r-polmineR-0.8.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2cb59cmifgg061qv4wnv8yrzfvjxy3r2-polmineR_0.8.9.tar.gz
+source root is polmineR
+setting SOURCE_DATE_EPOCH to timestamp 1698616202 of file polmineR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘polmineR’ ...
+** package ‘polmineR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘nrow’ du package ‘base’ dans package ‘polmineR’
+Une nouvelle fonction générique est créée pour ‘ncol’ du package ‘base’ dans package ‘polmineR’
+Une nouvelle fonction générique est créée pour ‘colnames’ du package ‘base’ dans package ‘polmineR’
+Une nouvelle fonction générique est créée pour ‘sample’ du package ‘base’ dans package ‘polmineR’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (polmineR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-polmineR-0.8.9.drv-0/ in /nix/store/7jwvc2km27ll13xr9zhv06d0j9srhqxa-r-polmineR-0.8.9...
+patching script interpreter paths in /nix/store/7jwvc2km27ll13xr9zhv06d0j9srhqxa-r-polmineR-0.8.9
+rewriting symlink /nix/store/7jwvc2km27ll13xr9zhv06d0j9srhqxa-r-polmineR-0.8.9/nix-support/propagated-user-env-packages to be relative to /nix/store/7jwvc2km27ll13xr9zhv06d0j9srhqxa-r-polmineR-0.8.9

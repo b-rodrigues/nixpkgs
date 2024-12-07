@@ -1,0 +1,37 @@
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:34:12:
+           33|
+           34|   strict = derivationStrict drvAttrs;
+             |            ^
+           35|
+
+       … while evaluating derivation 'r-dateutils-0.1.5'
+         whose name attribute is located at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:336:7
+
+       … while evaluating attribute 'nativeBuildInputs' of derivation 'r-dateutils-0.1.5'
+         at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:380:7:
+          379|       depsBuildBuild              = elemAt (elemAt dependencies 0) 0;
+          380|       nativeBuildInputs           = elemAt (elemAt dependencies 0) 1;
+             |       ^
+          381|       depsBuildTarget             = elemAt (elemAt dependencies 0) 2;
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Package ‘r-x13binary-1.1.61’ in /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/development/r-modules/generic-builder.nix:56 is marked as broken, refusing to evaluate.
+
+       a) To temporarily allow broken packages, you can use an environment variable
+          for a single invocation of the nix tools.
+
+            $ export NIXPKGS_ALLOW_BROKEN=1
+
+          Note: When using `nix shell`, `nix build`, `nix develop`, etc with a flake,
+                then pass `--impure` in order to allow use of environment variables.
+
+       b) For `nixos-rebuild` you can set
+         { nixpkgs.config.allowBroken = true; }
+       in configuration.nix to override this.
+
+       c) For `nix-env`, `nix-build`, `nix-shell` or any other Nix command you can add
+         { allowBroken = true; }
+       to ~/.config/nixpkgs/config.nix.

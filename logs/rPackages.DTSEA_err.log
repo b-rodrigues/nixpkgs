@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/qai9cmzhavzvfm9d0jycshg2k56p0yly-r-DTSEA-0.0.3.drv
+building '/nix/store/qai9cmzhavzvfm9d0jycshg2k56p0yly-r-DTSEA-0.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/h5vjvykjs6ycql35m234wgck7i41mmz4-DTSEA_0.0.3.tar.gz
+source root is DTSEA
+setting SOURCE_DATE_EPOCH to timestamp 1667740802 of file DTSEA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘fgsea’ is not available for package ‘DTSEA’
+* removing ‘/nix/store/x7izigc0qcr5dbaqsy1gpmcnf5h9mmiv-r-DTSEA-0.0.3/library/DTSEA’
+error: builder for '/nix/store/qai9cmzhavzvfm9d0jycshg2k56p0yly-r-DTSEA-0.0.3.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/h5vjvykjs6ycql35m234wgck7i41mmz4-DTSEA_0.0.3.tar.gz
+       > source root is DTSEA
+       > setting SOURCE_DATE_EPOCH to timestamp 1667740802 of file DTSEA/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘fgsea’ is not available for package ‘DTSEA’
+       > * removing ‘/nix/store/x7izigc0qcr5dbaqsy1gpmcnf5h9mmiv-r-DTSEA-0.0.3/library/DTSEA’
+       For full logs, run 'nix log /nix/store/qai9cmzhavzvfm9d0jycshg2k56p0yly-r-DTSEA-0.0.3.drv'.

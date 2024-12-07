@@ -1,0 +1,45 @@
+these 2 derivations will be built:
+  /nix/store/6bpx26gb0llsm3pp5f81sspwfjcjpak1-plpoisson_0.3.1.tar.gz.drv
+  /nix/store/r8jfhc47cl3rlgrncsfbl52ms9xxv7xq-r-plpoisson-0.3.1.drv
+building '/nix/store/6bpx26gb0llsm3pp5f81sspwfjcjpak1-plpoisson_0.3.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/plpoisson_0.3.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 48164  100 48164    0     0   330k      0 --:--:-- --:--:-- --:--:--  328k
+building '/nix/store/r8jfhc47cl3rlgrncsfbl52ms9xxv7xq-r-plpoisson-0.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9n3srfz5vz8m91j0bx9lf9gyyswgygyy-plpoisson_0.3.1.tar.gz
+source root is plpoisson
+setting SOURCE_DATE_EPOCH to timestamp 1727671806 of file plpoisson/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘plpoisson’ ...
+** package ‘plpoisson’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c plpbootstrap.c -o plpbootstrap.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c plpoisson.c -o plpoisson.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o plpoisson.so plpbootstrap.o plpoisson.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4x2gp3xrs2caw22mpcwarcd1g7c3s2gx-r-plpoisson-0.3.1/library/00LOCK-plpoisson/00new/plpoisson/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (plpoisson)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-plpoisson-0.3.1.drv-0/ in /nix/store/4x2gp3xrs2caw22mpcwarcd1g7c3s2gx-r-plpoisson-0.3.1...
+patching script interpreter paths in /nix/store/4x2gp3xrs2caw22mpcwarcd1g7c3s2gx-r-plpoisson-0.3.1

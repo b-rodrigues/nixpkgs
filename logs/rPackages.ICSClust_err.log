@@ -1,0 +1,130 @@
+these 4 derivations will be built:
+  /nix/store/q62sgq8q9i42da40a22j3nbnpbr9ilx1-r-otrimle-2.0.drv
+  /nix/store/f4jxc75qqcni6r0xkhszs4gdh8q3mfq5-tclust_2.0-5.tar.gz.drv
+  /nix/store/zch15fyf0rqqdp096mhhc1mkfdj47g5g-r-tclust-2.0-5.drv
+  /nix/store/agzp89gf01rlhx0r4353q2injz9l45gw-r-ICSClust-0.1.0.drv
+these 2 paths will be fetched (0.37 MiB download, 0.37 MiB unpacked):
+  /nix/store/b2gsgjrmnpzxn2xqzn838fgqd2fsv7w0-ICSClust_0.1.0.tar.gz
+  /nix/store/jwmd3a4zp4a2h7giz3dpn9h37p1w3r0f-otrimle_2.0.tar.gz
+copying path '/nix/store/b2gsgjrmnpzxn2xqzn838fgqd2fsv7w0-ICSClust_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/jwmd3a4zp4a2h7giz3dpn9h37p1w3r0f-otrimle_2.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f4jxc75qqcni6r0xkhszs4gdh8q3mfq5-tclust_2.0-5.tar.gz.drv'...
+building '/nix/store/q62sgq8q9i42da40a22j3nbnpbr9ilx1-r-otrimle-2.0.drv'...
+
+trying https://cran.r-project.org/src/contrib/tclust_2.0-5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/jwmd3a4zp4a2h7giz3dpn9h37p1w3r0f-otrimle_2.0.tar.gz
+source root is otrimle
+setting SOURCE_DATE_EPOCH to timestamp 1622269803 of file otrimle/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100 1037k  100 1037k    0     0  3533k      0 --:--:-- --:--:-- --:--:-- 3540k
+building '/nix/store/zch15fyf0rqqdp096mhhc1mkfdj47g5g-r-tclust-2.0-5.drv'...
+* installing *source* package ‘otrimle’ ...
+** package ‘otrimle’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/hjafcid8qrpqjdd25hicgxa1gsm8wnnw-tclust_2.0-5.tar.gz
+source root is tclust
+setting SOURCE_DATE_EPOCH to timestamp 1729009802 of file tclust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tclust’ ...
+** package ‘tclust’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+** help
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c rlg.cpp -o rlg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c tclust.cpp -o tclust.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c tkmeans.cpp -o tkmeans.o
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (otrimle)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-otrimle-2.0.drv-0/ in /nix/store/xnhwkck6jwlh77sbfpnjkjchqj34lwf0-r-otrimle-2.0...
+patching script interpreter paths in /nix/store/xnhwkck6jwlh77sbfpnjkjchqj34lwf0-r-otrimle-2.0
+rewriting symlink /nix/store/xnhwkck6jwlh77sbfpnjkjchqj34lwf0-r-otrimle-2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/xnhwkck6jwlh77sbfpnjkjchqj34lwf0-r-otrimle-2.0
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tclust.so RcppExports.o rlg.o tclust.o tkmeans.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/s82ywbc0v8152vay8s8nm3xgbykzkax5-r-tclust-2.0-5/library/00LOCK-tclust/00new/tclust/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tclust)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tclust-2.0-5.drv-0/ in /nix/store/s82ywbc0v8152vay8s8nm3xgbykzkax5-r-tclust-2.0-5...
+patching script interpreter paths in /nix/store/s82ywbc0v8152vay8s8nm3xgbykzkax5-r-tclust-2.0-5
+rewriting symlink /nix/store/s82ywbc0v8152vay8s8nm3xgbykzkax5-r-tclust-2.0-5/nix-support/propagated-user-env-packages to be relative to /nix/store/s82ywbc0v8152vay8s8nm3xgbykzkax5-r-tclust-2.0-5
+building '/nix/store/agzp89gf01rlhx0r4353q2injz9l45gw-r-ICSClust-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b2gsgjrmnpzxn2xqzn838fgqd2fsv7w0-ICSClust_0.1.0.tar.gz
+source root is ICSClust
+setting SOURCE_DATE_EPOCH to timestamp 1695302402 of file ICSClust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ICSClust’ ...
+** package ‘ICSClust’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c scatters.cpp -o scatters.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ICSClust.so RcppExports.o scatters.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/xzni5b1rngyss5x6rfs361jr1qf5xg44-r-ICSClust-0.1.0/library/00LOCK-ICSClust/00new/ICSClust/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ICSClust)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ICSClust-0.1.0.drv-0/ in /nix/store/xzni5b1rngyss5x6rfs361jr1qf5xg44-r-ICSClust-0.1.0...
+patching script interpreter paths in /nix/store/xzni5b1rngyss5x6rfs361jr1qf5xg44-r-ICSClust-0.1.0
+rewriting symlink /nix/store/xzni5b1rngyss5x6rfs361jr1qf5xg44-r-ICSClust-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/xzni5b1rngyss5x6rfs361jr1qf5xg44-r-ICSClust-0.1.0

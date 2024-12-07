@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/1jhq01hy0srawqmkg28zxj71zlnbpgg8-r-recmap-1.0.17.drv
+this path will be fetched (1.32 MiB download, 1.32 MiB unpacked):
+  /nix/store/br522zmy60fkgdnmdjp51jrjdq2dj80g-recmap_1.0.17.tar.gz
+copying path '/nix/store/br522zmy60fkgdnmdjp51jrjdq2dj80g-recmap_1.0.17.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/1jhq01hy0srawqmkg28zxj71zlnbpgg8-r-recmap-1.0.17.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/br522zmy60fkgdnmdjp51jrjdq2dj80g-recmap_1.0.17.tar.gz
+source root is recmap
+setting SOURCE_DATE_EPOCH to timestamp 1695508807 of file recmap/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘recmap’ ...
+** package ‘recmap’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Recmap.cpp -o Recmap.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o recmap.so RcppExports.o Recmap.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/862fjj7h4kyh7z3gmzrs1mhc9vvdpw6g-r-recmap-1.0.17/library/00LOCK-recmap/00new/recmap/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (recmap)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-recmap-1.0.17.drv-0/ in /nix/store/862fjj7h4kyh7z3gmzrs1mhc9vvdpw6g-r-recmap-1.0.17...
+patching script interpreter paths in /nix/store/862fjj7h4kyh7z3gmzrs1mhc9vvdpw6g-r-recmap-1.0.17
+rewriting symlink /nix/store/862fjj7h4kyh7z3gmzrs1mhc9vvdpw6g-r-recmap-1.0.17/nix-support/propagated-user-env-packages to be relative to /nix/store/862fjj7h4kyh7z3gmzrs1mhc9vvdpw6g-r-recmap-1.0.17

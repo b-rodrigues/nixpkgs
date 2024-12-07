@@ -1,0 +1,54 @@
+this derivation will be built:
+  /nix/store/zjf3lb1k9ygw04h56hihr9wxjz3khaqw-r-GOxploreR-1.2.7.drv
+building '/nix/store/zjf3lb1k9ygw04h56hihr9wxjz3khaqw-r-GOxploreR-1.2.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5z3pmpzgp0c9a0rsxqagsavgq87mvvfk-GOxploreR_1.2.7.tar.gz
+source root is GOxploreR
+setting SOURCE_DATE_EPOCH to timestamp 1699020603 of file GOxploreR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘GOxploreR’ ...
+** package ‘GOxploreR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Message d'avis :
+remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’ 
+Error in as.list.default(GO.db::GOBPCHILDREN) : 
+  pas de méthode pour convertir automatiquement cette classe S4 en vecteur
+Erreur : impossible de charger le code R depuis le package ‘GOxploreR’
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘GOxploreR’
+* removing ‘/nix/store/vlcx1sflcjwl9jm7p41wrkm7lq6d0nw2-r-GOxploreR-1.2.7/library/GOxploreR’
+error: builder for '/nix/store/zjf3lb1k9ygw04h56hihr9wxjz3khaqw-r-GOxploreR-1.2.7.drv' failed with exit code 1;
+       last 24 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/5z3pmpzgp0c9a0rsxqagsavgq87mvvfk-GOxploreR_1.2.7.tar.gz
+       > source root is GOxploreR
+       > setting SOURCE_DATE_EPOCH to timestamp 1699020603 of file GOxploreR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘GOxploreR’ ...
+       > ** package ‘GOxploreR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Message d'avis :
+       > remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+       > Error in as.list.default(GO.db::GOBPCHILDREN) :
+       >   pas de méthode pour convertir automatiquement cette classe S4 en vecteur
+       > Erreur : impossible de charger le code R depuis le package ‘GOxploreR’
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘GOxploreR’
+       > * removing ‘/nix/store/vlcx1sflcjwl9jm7p41wrkm7lq6d0nw2-r-GOxploreR-1.2.7/library/GOxploreR’
+       For full logs, run 'nix log /nix/store/zjf3lb1k9ygw04h56hihr9wxjz3khaqw-r-GOxploreR-1.2.7.drv'.

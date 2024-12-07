@@ -1,0 +1,110 @@
+this derivation will be built:
+  /nix/store/cvvfww0n87vnivl0lwljbihymcdi5w9j-r-SmoothHazard-2024.04.10.drv
+this path will be fetched (0.11 MiB download, 0.11 MiB unpacked):
+  /nix/store/vax4mkidbl9i6jsa17xnjpv3d859zdm1-SmoothHazard_2024.04.10.tar.gz
+copying path '/nix/store/vax4mkidbl9i6jsa17xnjpv3d859zdm1-SmoothHazard_2024.04.10.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cvvfww0n87vnivl0lwljbihymcdi5w9j-r-SmoothHazard-2024.04.10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vax4mkidbl9i6jsa17xnjpv3d859zdm1-SmoothHazard_2024.04.10.tar.gz
+source root is SmoothHazard
+setting SOURCE_DATE_EPOCH to timestamp 1712779208 of file SmoothHazard/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SmoothHazard’ ...
+** package ‘SmoothHazard’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  commun.f90 -o commun.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  bgos.f90 -o bgos.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  cdfnor.f90 -o cdfnor.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  fonct.f90 -o fonct.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  idmLikelihood.f90 -o idmLikelihood.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c runiran.c -o runiran.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  qgauss1.f90 -o qgauss1.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  survLikelihood.f90 -o survLikelihood.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tri.f90 -o tri.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  optim.f90 -o optim.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  recKappa.f90 -o recKappa.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  idmPlLikelihood.f90 -o idmPlLikelihood.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  idmPlLikelihood2.f90 -o idmPlLikelihood2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  idmPlLikelihood0.f90 -o idmPlLikelihood0.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  survPlLikelihood.f90 -o survPlLikelihood.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  useSurv.f90 -o useSurv.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  distance.f90 -o distance.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  estimv.f90 -o estimv.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  idmPl.f90 -o idmPl.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  idmWeib.f90 -o idmWeib.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  survWeib.f90 -o survWeib.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  survPl.f90 -o survPl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SmoothHazard.so commun.o optim.o recKappa.o bgos.o cdfnor.o distance.o estimv.o fonct.o idmLikelihood.o idmPl.o idmPlLikelihood.o idmPlLikelihood2.o idmPlLikelihood0.o idmWeib.o qgauss1.o survLikelihood.o survPl.o survPlLikelihood.o survWeib.o tri.o useSurv.o init.o runiran.o -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___optim_MOD_valfpa: does not use standard frame
+ld: warning: could not create compact unwind for ___reckappa_MOD_sub_rec: does not use standard frame
+ld: warning: could not create compact unwind for ___optim_MOD_dsinv: does not use standard frame
+ld: warning: could not create compact unwind for _conf1_: does not use standard frame
+ld: warning: could not create compact unwind for _conf_: does not use standard frame
+ld: warning: could not create compact unwind for _cosp_: does not use standard frame
+ld: warning: ld: warning: ld: warning: could not create compact unwind for ___optim_MOD_dchole: does not use standard frameld: warning: could not create compact unwind for _estimv_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _idmlikelihood_: does not use standard frame
+ld: warning: could not create compact unwind for _bgos_: does not use standard frame
+could not create compact unwind for _susp_: does not use standard framecould not create compact unwind for _estimvsurv_: does not use standard frame
+
+ld: warning: ld: warning: ld: warning: could not create compact unwind for _idmpllikelihood2_: does not use standard framecould not create compact unwind for _distance_: does not use standard framecould not create compact unwind for _stvaln_: does not use standard frameld: warning: could not create compact unwind for _idmpllikelihood0_: does not use standard frame
+ld: warning: could not create compact unwind for _idmweib_: does not use standard frame
+could not create compact unwind for _idmpllikelihood_: does not use standard frame
+
+ld: warning: 
+
+ld: warning: could not create compact unwind for _qgauss1_: does not use standard frame
+ld: warning: could not create compact unwind for ___optim_MOD_searpas: does not use standard frameld: warning: could not create compact unwind for _survlikelihood_: does not use standard frame
+ld: warning: could not create compact unwind for _survpllikelihood_: does not use standard frameld: warning: 
+
+ld: warning: could not create compact unwind for _distancesurv_: does not use standard frame
+could not create compact unwind for _calcomeg_: does not use standard frame
+ld: warning: could not create compact unwind for ___optim_MOD_deriva: does not use standard frameld: warning: could not create compact unwind for _calcomegsurv_: does not use standard frame
+ld: warning: could not create compact unwind for _mat_: does not use standard frame
+ld: warning: could not create compact unwind for _mnbrak_: does not use standard frame
+ld: warning: could not create compact unwind for _golden_: does not use standard frame
+ld: warning: could not create compact unwind for _test_: does not use standard frame
+could not create compact unwind for _cumnor_: does not use standard frame
+
+ld: warning: could not create compact unwind for _survweib_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _dinvnr_: does not use standard frame
+ld: warning: could not create compact unwind for ___optim_MOD_marq98: does not use standard framecould not create compact unwind for _survpl_: does not use standard frame
+
+could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _vecspli_: register 79 saved somewhere other than in frame
+ld: warning: could not create compact unwind for _idmpl_: does not use standard frame
+ld: warning: could not create compact unwind for _qgausspl_: does not use standard frame
+ld: warning: could not create compact unwind for _ludcmp_: does not use standard frame
+ld: warning: could not create compact unwind for _qgauss12_: does not use standard frame
+ld: warning: could not create compact unwind for _qgauss13_: does not use standard frame
+ld: warning: could not create compact unwind for _cdfnor_: does not use standard frame
+installing to /nix/store/5qhn9a1mz6bmbf68d99dpr24fij5y3gq-r-SmoothHazard-2024.04.10/library/00LOCK-SmoothHazard/00new/SmoothHazard/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SmoothHazard)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SmoothHazard-2024.04.10.drv-0/ in /nix/store/5qhn9a1mz6bmbf68d99dpr24fij5y3gq-r-SmoothHazard-2024.04.10...
+patching script interpreter paths in /nix/store/5qhn9a1mz6bmbf68d99dpr24fij5y3gq-r-SmoothHazard-2024.04.10
+rewriting symlink /nix/store/5qhn9a1mz6bmbf68d99dpr24fij5y3gq-r-SmoothHazard-2024.04.10/nix-support/propagated-user-env-packages to be relative to /nix/store/5qhn9a1mz6bmbf68d99dpr24fij5y3gq-r-SmoothHazard-2024.04.10

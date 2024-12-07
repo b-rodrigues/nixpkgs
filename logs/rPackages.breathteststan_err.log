@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/yzmw0qk0lr257wp53ilc0r4ck4ymlfp2-r-breathteststan-0.8.5.drv
+building '/nix/store/yzmw0qk0lr257wp53ilc0r4ck4ymlfp2-r-breathteststan-0.8.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/69i3fzka065cfcrhmhk4a9qmq3fnzf10-breathteststan_0.8.5.tar.gz
+source root is breathteststan
+setting SOURCE_DATE_EPOCH to timestamp 1705166406 of file breathteststan/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘breathteststan’ ...
+** package ‘breathteststan’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"../inst/include" -I"/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include/src" -DBOOST_DISABLE_ASSERTS -DEIGEN_NO_DEBUG -DBOOST_MATH_OVERFLOW_ERROR_POLICY=errno_on_error -DUSE_STANC3 -D_HAS_AUTO_PTR_ETC=0 -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -I'/nix/store/gfma5bb11p8p393nrshp1b5c39jy4mvx-r-rstan-2.32.6/library/rstan/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -D_REENTRANT -DSTAN_THREADS   -fPIC  -g -O2   -c stanExports_breath_test_1.cc -o stanExports_breath_test_1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o breathteststan.so RcppExports.o stanExports_breath_test_1.o -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib -ltbb -ltbbmalloc -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib/ -Wl,-rpath,/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib/ -ltbb -ltbbmalloc -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/r17fx75b1sqpxnhqhb01c2a8n9kwxdpz-r-breathteststan-0.8.5/library/00LOCK-breathteststan/00new/breathteststan/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (breathteststan)
+installPhase completed in 42 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-breathteststan-0.8.5.drv-0/ in /nix/store/r17fx75b1sqpxnhqhb01c2a8n9kwxdpz-r-breathteststan-0.8.5...
+patching script interpreter paths in /nix/store/r17fx75b1sqpxnhqhb01c2a8n9kwxdpz-r-breathteststan-0.8.5
+rewriting symlink /nix/store/r17fx75b1sqpxnhqhb01c2a8n9kwxdpz-r-breathteststan-0.8.5/nix-support/propagated-user-env-packages to be relative to /nix/store/r17fx75b1sqpxnhqhb01c2a8n9kwxdpz-r-breathteststan-0.8.5

@@ -1,0 +1,63 @@
+these 2 derivations will be built:
+  /nix/store/c6lfapipj3d9k7crna4kx0flh8yz8y3y-MixfMRI_0.1-4.tar.gz.drv
+  /nix/store/8ypqxld1ch04zhyzikb7nczll94ldsc0-r-MixfMRI-0.1-4.drv
+building '/nix/store/c6lfapipj3d9k7crna4kx0flh8yz8y3y-MixfMRI_0.1-4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/MixfMRI_0.1-4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1244k  100 1244k    0     0  3983k      0 --:--:-- --:--:-- --:--:-- 3988k
+building '/nix/store/8ypqxld1ch04zhyzikb7nczll94ldsc0-r-MixfMRI-0.1-4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/yn9sdpciwqna4lcfjdbncq6vpdcszyp0-MixfMRI_0.1-4.tar.gz
+source root is MixfMRI
+setting SOURCE_DATE_EPOCH to timestamp 1729139402 of file MixfMRI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MixfMRI’ ...
+** package ‘MixfMRI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c my_c_em.c -o my_c_em.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c my_c_apecm.c -o my_c_apecm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spatial.c -o spatial.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c zzz.c -o zzz.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MixfMRI.so my_c_em.o my_c_apecm.o spatial.o zzz.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/00LOCK-MixfMRI/00new/MixfMRI/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MixfMRI)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MixfMRI-0.1-4.drv-0/ in /nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4...
+patching script interpreter paths in /nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/simulation/simu_2d/run_summary.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/simulation/simu_2d/script/run_1.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/simulation/simu_2d/script/run_2.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/timing/run.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/spmd/2d_V/run.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/spmd/3d_V/run.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/spmd/3d_noX/run.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/spmd/2d_noX/run.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/spmd/2d_I/run.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/library/MixfMRI/workflow/spmd/3d_I/run.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+rewriting symlink /nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4/nix-support/propagated-user-env-packages to be relative to /nix/store/r3ybpcjvij08ciplyq1b8czk35sg0qvv-r-MixfMRI-0.1-4

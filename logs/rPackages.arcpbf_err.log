@@ -1,0 +1,60 @@
+this derivation will be built:
+  /nix/store/6z46wz4svdpnk4xchxr6z70dh2ixnmsh-r-arcpbf-0.1.6.drv
+building '/nix/store/6z46wz4svdpnk4xchxr6z70dh2ixnmsh-r-arcpbf-0.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/viiyj39jb5zcc83055byi4ghp5x84ac1-arcpbf_0.1.6.tar.gz
+source root is arcpbf
+setting SOURCE_DATE_EPOCH to timestamp 1727769002 of file arcpbf/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘arcpbf’ ...
+** package ‘arcpbf’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+sh: rustc: command not found
+Erreur dans value[[3L]](cond) : 
+  ----------------------- [RUST NOT FOUND]---------------------------
+The 'rustc' compiler was not found on the PATH. Please install
+rustc >= 1.70 or higher from:
+https://www.rust-lang.org/tools/install
+
+Alternatively, you may install Rust from your OS package manager:
+ - Debian/Ubuntu: apt-get install rustc
+ - Fedora/CentOS: dnf install rustc
+ - macOS: brew install rustc
+-------------------------------------------------------------------
+Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Exécution arrêtée
+ERROR: configuration failed for package ‘arcpbf’
+* removing ‘/nix/store/zgza52l6lq62p60v5mrmd87b6hcn68l9-r-arcpbf-0.1.6/library/arcpbf’
+error: builder for '/nix/store/6z46wz4svdpnk4xchxr6z70dh2ixnmsh-r-arcpbf-0.1.6.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘arcpbf’ ...
+       > ** package ‘arcpbf’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > sh: rustc: command not found
+       > Erreur dans value[[3L]](cond) :
+       >   ----------------------- [RUST NOT FOUND]---------------------------
+       > The 'rustc' compiler was not found on the PATH. Please install
+       > rustc >= 1.70 or higher from:
+       > https://www.rust-lang.org/tools/install
+       >
+       > Alternatively, you may install Rust from your OS package manager:
+       >  - Debian/Ubuntu: apt-get install rustc
+       >  - Fedora/CentOS: dnf install rustc
+       >  - macOS: brew install rustc
+       > -------------------------------------------------------------------
+       > Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+       > Exécution arrêtée
+       > ERROR: configuration failed for package ‘arcpbf’
+       > * removing ‘/nix/store/zgza52l6lq62p60v5mrmd87b6hcn68l9-r-arcpbf-0.1.6/library/arcpbf’
+       For full logs, run 'nix log /nix/store/6z46wz4svdpnk4xchxr6z70dh2ixnmsh-r-arcpbf-0.1.6.drv'.

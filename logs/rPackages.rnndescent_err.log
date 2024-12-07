@@ -1,0 +1,52 @@
+this derivation will be built:
+  /nix/store/3swgv6bbpfp30rn448g0n40dhgyrj36x-r-rnndescent-0.1.6.drv
+this path will be fetched (0.33 MiB download, 0.33 MiB unpacked):
+  /nix/store/plmyw06p7v5jxgvi2h0k7yadpnq1iipa-rnndescent_0.1.6.tar.gz
+copying path '/nix/store/plmyw06p7v5jxgvi2h0k7yadpnq1iipa-rnndescent_0.1.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3swgv6bbpfp30rn448g0n40dhgyrj36x-r-rnndescent-0.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/plmyw06p7v5jxgvi2h0k7yadpnq1iipa-rnndescent_0.1.6.tar.gz
+source root is rnndescent
+setting SOURCE_DATE_EPOCH to timestamp 1715667602 of file rnndescent/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rnndescent’ ...
+** package ‘rnndescent’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_bruteforce.cpp -o rnn_bruteforce.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_hub.cpp -o rnn_hub.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_indextograph.cpp -o rnn_indextograph.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_merge.cpp -o rnn_merge.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_nnd.cpp -o rnn_nnd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_prepare.cpp -o rnn_prepare.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_randnbrs.cpp -o rnn_randnbrs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_rptree.cpp -o rnn_rptree.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_search.cpp -o rnn_search.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/s4d4vm7vq9znbx43lm0sw0pfv5grk63j-r-dqrng-0.4.1/library/dqrng/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/xg6vcplr46pis7dxvvh6cllrhgg6lh0h-r-sitmo-2.0.2/library/sitmo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DSTRICT_R_HEADERS -DRCPP_NO_MODULES -fPIC  -g -O2   -c rnn_util.cpp -o rnn_util.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rnndescent.so RcppExports.o rnn_bruteforce.o rnn_hub.o rnn_indextograph.o rnn_merge.o rnn_nnd.o rnn_prepare.o rnn_randnbrs.o rnn_rptree.o rnn_search.o rnn_util.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/44cfag7vrpcinl39i7di34v2n4bkzqdx-r-rnndescent-0.1.6/library/00LOCK-rnndescent/00new/rnndescent/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rnndescent)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rnndescent-0.1.6.drv-0/ in /nix/store/44cfag7vrpcinl39i7di34v2n4bkzqdx-r-rnndescent-0.1.6...
+patching script interpreter paths in /nix/store/44cfag7vrpcinl39i7di34v2n4bkzqdx-r-rnndescent-0.1.6
+rewriting symlink /nix/store/44cfag7vrpcinl39i7di34v2n4bkzqdx-r-rnndescent-0.1.6/nix-support/propagated-user-env-packages to be relative to /nix/store/44cfag7vrpcinl39i7di34v2n4bkzqdx-r-rnndescent-0.1.6

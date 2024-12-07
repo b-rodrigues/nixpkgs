@@ -1,0 +1,66 @@
+this derivation will be built:
+  /nix/store/46ypk63isw4rqgpamyf6fbva6fryax8g-r-tseriesEntropy-0.7-2.drv
+this path will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/5j469blc5phvkadncy4ydxira8qph74p-tseriesEntropy_0.7-2.tar.gz
+copying path '/nix/store/5j469blc5phvkadncy4ydxira8qph74p-tseriesEntropy_0.7-2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/46ypk63isw4rqgpamyf6fbva6fryax8g-r-tseriesEntropy-0.7-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5j469blc5phvkadncy4ydxira8qph74p-tseriesEntropy_0.7-2.tar.gz
+source root is tseriesEntropy
+setting SOURCE_DATE_EPOCH to timestamp 1691613608 of file tseriesEntropy/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tseriesEntropy’ ...
+** package ‘tseriesEntropy’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tseriesEntropy.f90 -o tseriesEntropy.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tseriesEntropy.so init.o tseriesEntropy.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for ___shared_data_MOD_tabf: does not use standard frame
+ld: warning: could not create compact unwind for ___shared_data_MOD_tabfd: does not use standard frame
+ld: warning: could not create compact unwind for ___shared_data_MOD_srhobiva: does not use standard frame
+ld: warning: could not create compact unwind for ___shared_data_MOD_perm: does not use standard frame
+ld: warning: could not create compact unwind for ___shared_data_MOD_bootr: does not use standard frame
+ld: warning: could not create compact unwind for ___shared_data_MOD_permute: does not use standard frame
+ld: warning: could not create compact unwind for ___shared_data_MOD_kgaussv: does not use standard frame
+ld: warning: could not create compact unwind for _ssuni2_: does not use standard frame
+ld: warning: could not create compact unwind for _ssuni_: does not use standard frame
+ld: warning: could not create compact unwind for _ssbiv2_: does not use standard frame
+ld: warning: could not create compact unwind for _ssbiv_: does not use standard frame
+ld: warning: could not create compact unwind for _mbboot_: does not use standard frame
+ld: warning: could not create compact unwind for _ssbivb_: does not use standard frame
+ld: warning: could not create compact unwind for _ssunib_: does not use standard frame
+ld: warning: could not create compact unwind for _srhointegrandv_: does not use standard frame
+ld: warning: could not create compact unwind for _srhointegrand_: does not use standard frame
+ld: warning: could not create compact unwind for _srhointegrand2_: does not use standard frame
+ld: warning: could not create compact unwind for _kdenestmlcv_: does not use standard frame
+ld: warning: could not create compact unwind for _kdenestmlcvb_: does not use standard frame
+ld: warning: could not create compact unwind for _surrogateacf_: does not use standard frame
+installing to /nix/store/7h906ndbkdyxbss7k5jyp9am84wbb853-r-tseriesEntropy-0.7-2/library/00LOCK-tseriesEntropy/00new/tseriesEntropy/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tseriesEntropy)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tseriesEntropy-0.7-2.drv-0/ in /nix/store/7h906ndbkdyxbss7k5jyp9am84wbb853-r-tseriesEntropy-0.7-2...
+patching script interpreter paths in /nix/store/7h906ndbkdyxbss7k5jyp9am84wbb853-r-tseriesEntropy-0.7-2
+rewriting symlink /nix/store/7h906ndbkdyxbss7k5jyp9am84wbb853-r-tseriesEntropy-0.7-2/nix-support/propagated-user-env-packages to be relative to /nix/store/7h906ndbkdyxbss7k5jyp9am84wbb853-r-tseriesEntropy-0.7-2

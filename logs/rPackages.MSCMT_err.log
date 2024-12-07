@@ -1,0 +1,83 @@
+this derivation will be built:
+  /nix/store/79rbhq7x3n24q60ch2si0nf4ri5immym-r-MSCMT-1.4.0.drv
+this path will be fetched (0.59 MiB download, 0.59 MiB unpacked):
+  /nix/store/r5f8xpqqldv6jpx5zqy3rf47bhqv2d8v-MSCMT_1.4.0.tar.gz
+copying path '/nix/store/r5f8xpqqldv6jpx5zqy3rf47bhqv2d8v-MSCMT_1.4.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/79rbhq7x3n24q60ch2si0nf4ri5immym-r-MSCMT-1.4.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/r5f8xpqqldv6jpx5zqy3rf47bhqv2d8v-MSCMT_1.4.0.tar.gz
+source root is MSCMT
+setting SOURCE_DATE_EPOCH to timestamp 1710843602 of file MSCMT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MSCMT’ ...
+** package ‘MSCMT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c DE.c -o DE.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Helpers.c -o Helpers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c MSCMT.c -o MSCMT.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c inverse.f -o inverse.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c solve.f -o solve.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MSCMT.so DE.o Helpers.o MSCMT.o inverse.o solve.o -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _xdcopy_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frameld: warning: could not create compact unwind for _xdh12_: does not use standard frameld: warning: ld: warning: could not create compact unwind for _dlaswp_: registers 19 and 20 not saved contiguously in framecould not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+
+
+ld: warning: could not create compact unwind for _dwnlt1_: does not use standard frame
+
+ld: warning: could not create compact unwind for _dwnlit_: does not use standard frame
+ld: warning: could not create compact unwind for _d1mach_: does not use standard frame
+ld: warning: could not create compact unwind for _dwnlsm_: does not use standard frame
+ld: warning: could not create compact unwind for _dwnnls_: does not use standard frame
+ld: warning: could not create compact unwind for _dlpdp_: does not use standard frame
+ld: warning: could not create compact unwind for _xdhfti_: does not use standard frame
+ld: warning: could not create compact unwind for _dlsi_: does not use standard frame
+ld: warning: could not create compact unwind for _xdlsei_: does not use standard frame
+ld: warning: could not create compact unwind for _xnnls_: does not use standard frame
+ld: warning: could not create compact unwind for _xldp_: does not use standard frame
+ld: warning: could not create compact unwind for _lsei_: does not use standard frame
+ld: warning: could not create compact unwind for _dgetrs_: does not use standard frame
+ld: warning: could not create compact unwind for _dlamc2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlamch_: does not use standard frame
+ld: warning: could not create compact unwind for _dgetf2_: does not use standard frame
+ld: warning: could not create compact unwind for _dgetrf_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbtrs_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbtf2_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbtrf_: does not use standard frame
+ld: warning: could not create compact unwind for _xxerprn_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbsl_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbfa_: does not use standard frame
+ld: warning: could not create compact unwind for _tridia_: does not use standard frame
+ld: warning: could not create compact unwind for _dgtsv_: does not use standard frame
+ld: warning: could not create compact unwind for _dgefa_: does not use standard frame
+ld: warning: could not create compact unwind for _dgesl_: does not use standard frame
+ld: warning: could not create compact unwind for _xxermsg_: does not use standard frame
+ld: warning: could not create compact unwind for _dgbsv_: does not use standard frame
+ld: warning: could not create compact unwind for _dgesv_: does not use standard frame
+installing to /nix/store/q04gi3wbarx7dvhgl21sn2yfys5rhyn8-r-MSCMT-1.4.0/library/00LOCK-MSCMT/00new/MSCMT/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MSCMT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MSCMT-1.4.0.drv-0/ in /nix/store/q04gi3wbarx7dvhgl21sn2yfys5rhyn8-r-MSCMT-1.4.0...
+patching script interpreter paths in /nix/store/q04gi3wbarx7dvhgl21sn2yfys5rhyn8-r-MSCMT-1.4.0
+rewriting symlink /nix/store/q04gi3wbarx7dvhgl21sn2yfys5rhyn8-r-MSCMT-1.4.0/nix-support/propagated-user-env-packages to be relative to /nix/store/q04gi3wbarx7dvhgl21sn2yfys5rhyn8-r-MSCMT-1.4.0

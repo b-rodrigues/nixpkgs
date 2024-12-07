@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/74r1bsavskg4dvq6qpb4sdrvzkir2m0n-r-svines-0.2.3.drv
+this path will be fetched (0.27 MiB download, 0.27 MiB unpacked):
+  /nix/store/wdm4iyppd7fkk3k144ns8i42vqbn0jl7-svines_0.2.3.tar.gz
+copying path '/nix/store/wdm4iyppd7fkk3k144ns8i42vqbn0jl7-svines_0.2.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/74r1bsavskg4dvq6qpb4sdrvzkir2m0n-r-svines-0.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/wdm4iyppd7fkk3k144ns8i42vqbn0jl7-svines_0.2.3.tar.gz
+source root is svines
+setting SOURCE_DATE_EPOCH to timestamp 1705597802 of file svines/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘svines’ ...
+** package ‘svines’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -pthread -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/h7igi7l8p075wg5nb2wspw8jfiq3j40n-r-wdm-0.2.4/library/wdm/include' -I'/nix/store/vsfmwlkgvsa4d8h3ck43daxrxgxkld2s-r-rvinecopulib-0.6.3.1.1/library/rvinecopulib/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -pthread -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/h7igi7l8p075wg5nb2wspw8jfiq3j40n-r-wdm-0.2.4/library/wdm/include' -I'/nix/store/vsfmwlkgvsa4d8h3ck43daxrxgxkld2s-r-rvinecopulib-0.6.3.1.1/library/rvinecopulib/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c wrappers_svine.cpp -o wrappers_svine.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o svines.so RcppExports.o wrappers_svine.o -lpthread -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/mdsph1y6yrgsay06zfh2rdx9ck68zchy-r-svines-0.2.3/library/00LOCK-svines/00new/svines/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (svines)
+installPhase completed in 32 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-svines-0.2.3.drv-0/ in /nix/store/mdsph1y6yrgsay06zfh2rdx9ck68zchy-r-svines-0.2.3...
+patching script interpreter paths in /nix/store/mdsph1y6yrgsay06zfh2rdx9ck68zchy-r-svines-0.2.3
+rewriting symlink /nix/store/mdsph1y6yrgsay06zfh2rdx9ck68zchy-r-svines-0.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/mdsph1y6yrgsay06zfh2rdx9ck68zchy-r-svines-0.2.3

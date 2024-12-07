@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/fc4yrnx6bh5rn8in3wh3l112ysc3rifq-r-OptGS-1.2.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/i6svii3wr0nv8xh828r63gq7p5p9zia3-OptGS_1.2.tar.gz
+copying path '/nix/store/i6svii3wr0nv8xh828r63gq7p5p9zia3-OptGS_1.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fc4yrnx6bh5rn8in3wh3l112ysc3rifq-r-OptGS-1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/i6svii3wr0nv8xh828r63gq7p5p9zia3-OptGS_1.2.tar.gz
+source root is OptGS
+setting SOURCE_DATE_EPOCH to timestamp 1709211768 of file OptGS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘OptGS’ ...
+** package ‘OptGS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c OptGS.cpp -o OptGS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c OptGS_init.c -o OptGS_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c multistagefunctions_v3.cpp -o multistagefunctions_v3.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c neldermead.cpp -o neldermead.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c normaldistribution.cpp -o normaldistribution.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o OptGS.so OptGS.o OptGS_init.o multistagefunctions_v3.o neldermead.o normaldistribution.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/7xigmchqqj7h8khgdb8kjzw2lfzckvq6-r-OptGS-1.2/library/00LOCK-OptGS/00new/OptGS/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (OptGS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-OptGS-1.2.drv-0/ in /nix/store/7xigmchqqj7h8khgdb8kjzw2lfzckvq6-r-OptGS-1.2...
+patching script interpreter paths in /nix/store/7xigmchqqj7h8khgdb8kjzw2lfzckvq6-r-OptGS-1.2

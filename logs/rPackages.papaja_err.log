@@ -1,0 +1,108 @@
+these 5 derivations will be built:
+  /nix/store/1c6x7qr8mdjdv0h0i78w9xcvzr86r8ww-rmdfiltr_0.1.5.tar.gz.drv
+  /nix/store/4g7mpcfpbvnvwhngfj48zhfkr9wy13fh-r-tinylabels-0.2.4.drv
+  /nix/store/jx9xsf4ch3p8d9m02kdqfavw4rcqg83k-papaja_0.1.3.tar.gz.drv
+  /nix/store/rkmndfy5l8sql0f0h5xqism1cy7v3chd-r-rmdfiltr-0.1.5.drv
+  /nix/store/6v86an8s1crppq9ffyp5gpay1vlgwmpv-r-papaja-0.1.3.drv
+this path will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/z61zng2pqhzq48y0cbszr4dr89lhfh2f-tinylabels_0.2.4.tar.gz
+copying path '/nix/store/z61zng2pqhzq48y0cbszr4dr89lhfh2f-tinylabels_0.2.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jx9xsf4ch3p8d9m02kdqfavw4rcqg83k-papaja_0.1.3.tar.gz.drv'...
+building '/nix/store/1c6x7qr8mdjdv0h0i78w9xcvzr86r8ww-rmdfiltr_0.1.5.tar.gz.drv'...
+building '/nix/store/4g7mpcfpbvnvwhngfj48zhfkr9wy13fh-r-tinylabels-0.2.4.drv'...
+
+trying https://cran.r-project.org/src/contrib/papaja_0.1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/rmdfiltr_0.1.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+100 1004k  100 1004k    0     0  3370k      0 --:--:-- --:--:-- --:--:-- 3371k
+unpacking source archive /nix/store/z61zng2pqhzq48y0cbszr4dr89lhfh2f-tinylabels_0.2.4.tar.gz
+source root is tinylabels
+setting SOURCE_DATE_EPOCH to timestamp 1693670402 of file tinylabels/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+100 44243  100 44243    0     0   263k      0 --:--:-- --:--:-- --:--:--  265k
+building '/nix/store/rkmndfy5l8sql0f0h5xqism1cy7v3chd-r-rmdfiltr-0.1.5.drv'...
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tinylabels’ ...
+** package ‘tinylabels’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/qw6a9w8fqdacna0cdcj6dn0kf5f0xdwp-rmdfiltr_0.1.5.tar.gz
+source root is rmdfiltr
+setting SOURCE_DATE_EPOCH to timestamp 1729634402 of file rmdfiltr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+** help
+Running phase: buildPhase
+*** installing help indices
+** building package indices
+Running phase: checkPhase
+Running phase: installPhase
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+* installing *source* package ‘rmdfiltr’ ...
+** package ‘rmdfiltr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package can be loaded from final location
+** help
+*** installing help indices
+** building package indices
+** testing if installed package keeps a record of temporary installation path
+* DONE (tinylabels)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tinylabels-0.2.4.drv-0/ in /nix/store/dk9i60aa7a78jqb18lbnna3fky9a7z1s-r-tinylabels-0.2.4...
+patching script interpreter paths in /nix/store/dk9i60aa7a78jqb18lbnna3fky9a7z1s-r-tinylabels-0.2.4
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rmdfiltr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rmdfiltr-0.1.5.drv-0/ in /nix/store/4dgfhq4wqxrl7zy1vdnppk5d7mh60ak8-r-rmdfiltr-0.1.5...
+patching script interpreter paths in /nix/store/4dgfhq4wqxrl7zy1vdnppk5d7mh60ak8-r-rmdfiltr-0.1.5
+rewriting symlink /nix/store/4dgfhq4wqxrl7zy1vdnppk5d7mh60ak8-r-rmdfiltr-0.1.5/nix-support/propagated-user-env-packages to be relative to /nix/store/4dgfhq4wqxrl7zy1vdnppk5d7mh60ak8-r-rmdfiltr-0.1.5
+building '/nix/store/6v86an8s1crppq9ffyp5gpay1vlgwmpv-r-papaja-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mh31qvviplq2j3h4yrpxr3pkri65prrs-papaja_0.1.3.tar.gz
+source root is papaja
+setting SOURCE_DATE_EPOCH to timestamp 1729768202 of file papaja/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘papaja’ ...
+** package ‘papaja’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (papaja)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-papaja-0.1.3.drv-0/ in /nix/store/974c8axr99mvw9972hmck4xkq1m12yy7-r-papaja-0.1.3...
+patching script interpreter paths in /nix/store/974c8axr99mvw9972hmck4xkq1m12yy7-r-papaja-0.1.3
+rewriting symlink /nix/store/974c8axr99mvw9972hmck4xkq1m12yy7-r-papaja-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/974c8axr99mvw9972hmck4xkq1m12yy7-r-papaja-0.1.3

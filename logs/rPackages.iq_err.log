@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/gphv40wgz2v2dini2nmni3hzl2n53p6x-r-iq-1.9.12.drv
+this path will be fetched (0.25 MiB download, 0.25 MiB unpacked):
+  /nix/store/d74nzrgx72nxgs1gs8gi9v8prnw3nxby-iq_1.9.12.tar.gz
+copying path '/nix/store/d74nzrgx72nxgs1gs8gi9v8prnw3nxby-iq_1.9.12.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gphv40wgz2v2dini2nmni3hzl2n53p6x-r-iq-1.9.12.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d74nzrgx72nxgs1gs8gi9v8prnw3nxby-iq_1.9.12.tar.gz
+source root is iq
+setting SOURCE_DATE_EPOCH to timestamp 1701897602 of file iq/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘iq’ ...
+** package ‘iq’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DEIGEN_DONT_PARALLELIZE -fPIC  -g -O2   -c iq.cpp -o iq.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o iq.so iq.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/r6v17q1vh94l835nd6jgg12khllhc6gn-r-iq-1.9.12/library/00LOCK-iq/00new/iq/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (iq)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-iq-1.9.12.drv-0/ in /nix/store/r6v17q1vh94l835nd6jgg12khllhc6gn-r-iq-1.9.12...
+patching script interpreter paths in /nix/store/r6v17q1vh94l835nd6jgg12khllhc6gn-r-iq-1.9.12
+rewriting symlink /nix/store/r6v17q1vh94l835nd6jgg12khllhc6gn-r-iq-1.9.12/nix-support/propagated-user-env-packages to be relative to /nix/store/r6v17q1vh94l835nd6jgg12khllhc6gn-r-iq-1.9.12

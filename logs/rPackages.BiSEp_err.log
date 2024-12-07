@@ -1,0 +1,50 @@
+this derivation will be built:
+  /nix/store/s17ia34247vakcv9s2j2z9c1rd88p6nx-r-BiSEp-2.3.drv
+building '/nix/store/s17ia34247vakcv9s2j2z9c1rd88p6nx-r-BiSEp-2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lr5827gdpfcri2a5g2m6inpf343ni146-BiSEp_2.3.tar.gz
+source root is BiSEp
+setting SOURCE_DATE_EPOCH to timestamp 1714866602 of file BiSEp/inst/doc/BiSEp.pdf
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘BiSEp’ ...
+** package ‘BiSEp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+Erreur : l'objet ‘godata’ n'est pas exporté par 'namespace:GOSemSim'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘BiSEp’
+* removing ‘/nix/store/d26krg4f9gpkyqplhyiw54akdqqn7y8y-r-BiSEp-2.3/library/BiSEp’
+error: builder for '/nix/store/s17ia34247vakcv9s2j2z9c1rd88p6nx-r-BiSEp-2.3.drv' failed with exit code 1;
+       last 22 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/lr5827gdpfcri2a5g2m6inpf343ni146-BiSEp_2.3.tar.gz
+       > source root is BiSEp
+       > setting SOURCE_DATE_EPOCH to timestamp 1714866602 of file BiSEp/inst/doc/BiSEp.pdf
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘BiSEp’ ...
+       > ** package ‘BiSEp’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘AnnotationDbi’
+       > Erreur : l'objet ‘godata’ n'est pas exporté par 'namespace:GOSemSim'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘BiSEp’
+       > * removing ‘/nix/store/d26krg4f9gpkyqplhyiw54akdqqn7y8y-r-BiSEp-2.3/library/BiSEp’
+       For full logs, run 'nix log /nix/store/s17ia34247vakcv9s2j2z9c1rd88p6nx-r-BiSEp-2.3.drv'.

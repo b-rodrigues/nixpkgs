@@ -1,0 +1,81 @@
+these 3 derivations will be built:
+  /nix/store/a9y1inna8vrxfpj0ij38v0r62gknnz9d-thor_1.1.6.tar.gz.drv
+  /nix/store/8jpw8rbni4iadv7i3fak28mhsah56yba-r-thor-1.1.6.drv
+  /nix/store/2d1l3cp21mqd1jhdqfqy8g7rp1dq128d-r-neonstore-0.5.1.drv
+this path will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/gcy5ca10l4v1wl09m13m64vxy7laf3z3-neonstore_0.5.1.tar.gz
+copying path '/nix/store/gcy5ca10l4v1wl09m13m64vxy7laf3z3-neonstore_0.5.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/a9y1inna8vrxfpj0ij38v0r62gknnz9d-thor_1.1.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/thor_1.1.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  184k  100  184k    0     0  1135k      0 --:--:-- --:--:-- --:--:-- 1141k
+building '/nix/store/8jpw8rbni4iadv7i3fak28mhsah56yba-r-thor-1.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nklya5b2agr080ilk3z52yp81pxci5lq-thor_1.1.6.tar.gz
+source root is thor
+setting SOURCE_DATE_EPOCH to timestamp 1726507202 of file thor/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘thor’ ...
+** package ‘thor’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Ilmdb -fPIC  -g -O2  -c lmdb/mdb.c -o lmdb/mdb.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Ilmdb -fPIC  -g -O2  -c lmdb/midl.c -o lmdb/midl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Ilmdb -fPIC  -g -O2  -c registration.c -o registration.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Ilmdb -fPIC  -g -O2  -c thor.c -o thor.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Ilmdb -fPIC  -g -O2  -c util.c -o util.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o thor.so lmdb/mdb.o lmdb/midl.o registration.o thor.o util.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/vjmxqb01pn262idinfr6jnz557fqdhy1-r-thor-1.1.6/library/00LOCK-thor/00new/thor/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (thor)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-thor-1.1.6.drv-0/ in /nix/store/vjmxqb01pn262idinfr6jnz557fqdhy1-r-thor-1.1.6...
+patching script interpreter paths in /nix/store/vjmxqb01pn262idinfr6jnz557fqdhy1-r-thor-1.1.6
+rewriting symlink /nix/store/vjmxqb01pn262idinfr6jnz557fqdhy1-r-thor-1.1.6/nix-support/propagated-user-env-packages to be relative to /nix/store/vjmxqb01pn262idinfr6jnz557fqdhy1-r-thor-1.1.6
+building '/nix/store/2d1l3cp21mqd1jhdqfqy8g7rp1dq128d-r-neonstore-0.5.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gcy5ca10l4v1wl09m13m64vxy7laf3z3-neonstore_0.5.1.tar.gz
+source root is neonstore
+setting SOURCE_DATE_EPOCH to timestamp 1712560979 of file neonstore/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘neonstore’ ...
+** package ‘neonstore’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (neonstore)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-neonstore-0.5.1.drv-0/ in /nix/store/i3gk7h3cz5wg38j3zgr43akhkpg6g1ah-r-neonstore-0.5.1...
+patching script interpreter paths in /nix/store/i3gk7h3cz5wg38j3zgr43akhkpg6g1ah-r-neonstore-0.5.1
+rewriting symlink /nix/store/i3gk7h3cz5wg38j3zgr43akhkpg6g1ah-r-neonstore-0.5.1/nix-support/propagated-user-env-packages to be relative to /nix/store/i3gk7h3cz5wg38j3zgr43akhkpg6g1ah-r-neonstore-0.5.1

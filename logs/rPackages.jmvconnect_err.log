@@ -1,0 +1,50 @@
+this derivation will be built:
+  /nix/store/03bmbh17a4gfkd8mjl9hsglmr4r9ycnr-r-jmvconnect-2.5.7.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/rxl647yjnhcpnx5yp5pvjna3jb1i6cnv-jmvconnect_2.5.7.tar.gz
+copying path '/nix/store/rxl647yjnhcpnx5yp5pvjna3jb1i6cnv-jmvconnect_2.5.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/03bmbh17a4gfkd8mjl9hsglmr4r9ycnr-r-jmvconnect-2.5.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rxl647yjnhcpnx5yp5pvjna3jb1i6cnv-jmvconnect_2.5.7.tar.gz
+source root is jmvconnect
+setting SOURCE_DATE_EPOCH to timestamp 1720258202 of file jmvconnect/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘jmvconnect’ ...
+** package ‘jmvconnect’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c column.cpp -o column.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dataset.cpp -o dataset.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c memorymap.cpp -o memorymap.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c readdf.cpp -o readdf.o
+column.cpp:564:58: warning: implicit conversion from 'long long' to 'double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+        if (isnan(value) || value < INT64_MIN || value > INT64_MAX)
+                                                       ~ ^~~~~~~~~
+/nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdint.h:94:26: note: expanded from macro 'INT64_MAX'
+#define INT64_MAX        9223372036854775807LL
+                         ^~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o jmvconnect.so RcppExports.o column.o dataset.o memorymap.o readdf.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/2pp8h300nv1ql4jr4xvxmq5di10s2jk1-r-jmvconnect-2.5.7/library/00LOCK-jmvconnect/00new/jmvconnect/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (jmvconnect)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-jmvconnect-2.5.7.drv-0/ in /nix/store/2pp8h300nv1ql4jr4xvxmq5di10s2jk1-r-jmvconnect-2.5.7...
+patching script interpreter paths in /nix/store/2pp8h300nv1ql4jr4xvxmq5di10s2jk1-r-jmvconnect-2.5.7
+rewriting symlink /nix/store/2pp8h300nv1ql4jr4xvxmq5di10s2jk1-r-jmvconnect-2.5.7/nix-support/propagated-user-env-packages to be relative to /nix/store/2pp8h300nv1ql4jr4xvxmq5di10s2jk1-r-jmvconnect-2.5.7

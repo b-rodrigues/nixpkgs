@@ -1,0 +1,78 @@
+this derivation will be built:
+  /nix/store/cv1m4k4k5a8vs88n0qvl1hpwfrya4vgf-r-luajr-0.1.8.drv
+this path will be fetched (1.12 MiB download, 1.12 MiB unpacked):
+  /nix/store/0pg6l0k8x38hixv640mxjzyhhbj77kw8-luajr_0.1.8.tar.gz
+copying path '/nix/store/0pg6l0k8x38hixv640mxjzyhhbj77kw8-luajr_0.1.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/cv1m4k4k5a8vs88n0qvl1hpwfrya4vgf-r-luajr-0.1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/0pg6l0k8x38hixv640mxjzyhhbj77kw8-luajr_0.1.8.tar.gz
+source root is luajr
+setting SOURCE_DATE_EPOCH to timestamp 1719845402 of file luajr/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘luajr’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iluajit/src  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lua_api.cpp -o lua_api.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iluajit/src  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c parallel.cpp -o parallel.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iluajit/src  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c push_to.cpp -o push_to.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iluajit/src  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c registry_entry.cpp -o registry_entry.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iluajit/src  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c run_func.cpp -o run_func.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iluajit/src  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c setup.cpp -o setup.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Iluajit/src  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c state.cpp -o state.o
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-luajr-0.1.8.drv-0/luajr/src/luajit »
+==== Building LuaJIT 2.1 (amalgamation) ====
+make -C src amalg
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-luajr-0.1.8.drv-0/luajr/src/luajit/src »
+make all "LJCORE_O=ljamalg.o"
+make[3] : on entre dans le répertoire « /private/tmp/nix-build-r-luajr-0.1.8.drv-0/luajr/src/luajit/src »
+HOSTCC    host/minilua.o
+HOSTCC    host/buildvm_asm.o
+HOSTCC    host/buildvm_peobj.o
+HOSTCC    host/buildvm_lib.o
+HOSTCC    host/buildvm_fold.o
+HOSTLINK  host/minilua
+DYNASM    host/buildvm_arch.h
+VERSION   luajit.h
+HOSTCC    host/buildvm.o
+HOSTLINK  host/buildvm
+BUILDVM   lj_recdef.h
+BUILDVM   lj_libdef.h
+BUILDVM   lj_vm.S
+BUILDVM   lj_bcdef.h
+BUILDVM   lj_ffdef.h
+BUILDVM   lj_folddef.h
+ASM       lj_vm.o
+CC        ljamalg.o
+AR        libluajit.a
+make[3] : on quitte le répertoire « /private/tmp/nix-build-r-luajr-0.1.8.drv-0/luajr/src/luajit/src »
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-luajr-0.1.8.drv-0/luajr/src/luajit/src »
+==== Successfully built LuaJIT 2.1 (amalgamation) ====
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-luajr-0.1.8.drv-0/luajr/src/luajit »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o luajr.so lua_api.o parallel.o push_to.o registry_entry.o run_func.o setup.o state.o luajit/src/libluajit.a -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/n8iqwwddrpgkiyair3z0aa0lhd36kv8y-r-luajr-0.1.8/library/00LOCK-luajr/00new/luajr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (luajr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-luajr-0.1.8.drv-0/ in /nix/store/n8iqwwddrpgkiyair3z0aa0lhd36kv8y-r-luajr-0.1.8...
+patching script interpreter paths in /nix/store/n8iqwwddrpgkiyair3z0aa0lhd36kv8y-r-luajr-0.1.8

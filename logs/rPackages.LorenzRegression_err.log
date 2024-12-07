@@ -1,0 +1,85 @@
+these 3 derivations will be built:
+  /nix/store/bdfqw6zcs5iz7damyz4101zmsys2grl0-LorenzRegression_2.1.0.tar.gz.drv
+  /nix/store/w92avyakbw5sljsd0xil564b7n19ib9c-r-Rearrangement-2.1.drv
+  /nix/store/20k18iz9iyslyxhqvq115jrn5dbpzz23-r-LorenzRegression-2.1.0.drv
+this path will be fetched (0.15 MiB download, 0.15 MiB unpacked):
+  /nix/store/i2bj628yz4vsaf3933mmg435wjs941pv-Rearrangement_2.1.tar.gz
+copying path '/nix/store/i2bj628yz4vsaf3933mmg435wjs941pv-Rearrangement_2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/bdfqw6zcs5iz7damyz4101zmsys2grl0-LorenzRegression_2.1.0.tar.gz.drv'...
+building '/nix/store/w92avyakbw5sljsd0xil564b7n19ib9c-r-Rearrangement-2.1.drv'...
+
+trying https://cran.r-project.org/src/contrib/LorenzRegression_2.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 68861  100 68861    0     0   515k      0 --:--:-- --:--:-- --:--:--  517k
+Running phase: unpackPhase
+unpacking source archive /nix/store/i2bj628yz4vsaf3933mmg435wjs941pv-Rearrangement_2.1.tar.gz
+source root is Rearrangement
+setting SOURCE_DATE_EPOCH to timestamp 1456879710 of file Rearrangement/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rearrangement’ ...
+** package ‘Rearrangement’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rearrangement)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rearrangement-2.1.drv-0/ in /nix/store/b3a7ja496y8fncad87xkgx6vqmr5kfbi-r-Rearrangement-2.1...
+patching script interpreter paths in /nix/store/b3a7ja496y8fncad87xkgx6vqmr5kfbi-r-Rearrangement-2.1
+rewriting symlink /nix/store/b3a7ja496y8fncad87xkgx6vqmr5kfbi-r-Rearrangement-2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/b3a7ja496y8fncad87xkgx6vqmr5kfbi-r-Rearrangement-2.1
+building '/nix/store/20k18iz9iyslyxhqvq115jrn5dbpzz23-r-LorenzRegression-2.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9f2ldg45w9575g7dradb11wgyq59mwa1-LorenzRegression_2.1.0.tar.gz
+source root is LorenzRegression
+setting SOURCE_DATE_EPOCH to timestamp 1728665402 of file LorenzRegression/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LorenzRegression’ ...
+** package ‘LorenzRegression’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c GA_fitness.cpp -o GA_fitness.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c GA_meanrank.cpp -o GA_meanrank.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PLR_derivative.cpp -o PLR_derivative.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PLR_loss.cpp -o PLR_loss.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c SCAD_derivative.cpp -o SCAD_derivative.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LorenzRegression.so GA_fitness.o GA_meanrank.o PLR_derivative.o PLR_loss.o RcppExports.o SCAD_derivative.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/c9i70xvj01yfsidicmigcgbchmlkdhz5-r-LorenzRegression-2.1.0/library/00LOCK-LorenzRegression/00new/LorenzRegression/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LorenzRegression)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LorenzRegression-2.1.0.drv-0/ in /nix/store/c9i70xvj01yfsidicmigcgbchmlkdhz5-r-LorenzRegression-2.1.0...
+patching script interpreter paths in /nix/store/c9i70xvj01yfsidicmigcgbchmlkdhz5-r-LorenzRegression-2.1.0
+rewriting symlink /nix/store/c9i70xvj01yfsidicmigcgbchmlkdhz5-r-LorenzRegression-2.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/c9i70xvj01yfsidicmigcgbchmlkdhz5-r-LorenzRegression-2.1.0

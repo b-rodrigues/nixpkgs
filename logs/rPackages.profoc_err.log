@@ -1,0 +1,113 @@
+these 4 derivations will be built:
+  /nix/store/sda63f74wzxb70sf3r4hvhlxksz19m4l-rcpptimer_1.2.1.tar.gz.drv
+  /nix/store/45i64y733q01cqf4aikb6zsn5wls0pmn-r-rcpptimer-1.2.1.drv
+  /nix/store/x03dzb0ax1rbarxi3dykvqhxq1fp38dm-profoc_1.3.3.tar.gz.drv
+  /nix/store/8gyg5lkyjalzy04cv2kmh6ig2xwjf9a1-r-profoc-1.3.3.drv
+building '/nix/store/x03dzb0ax1rbarxi3dykvqhxq1fp38dm-profoc_1.3.3.tar.gz.drv'...
+building '/nix/store/sda63f74wzxb70sf3r4hvhlxksz19m4l-rcpptimer_1.2.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/profoc_1.3.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/rcpptimer_1.2.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1132k  100 1132k    0     0  3554k      0 --:--:-- --:--:-- --:--:-- 3550k
+100  273k  100  273k    0     0   565k      0 --:--:-- --:--:-- --:--:--  565k
+building '/nix/store/45i64y733q01cqf4aikb6zsn5wls0pmn-r-rcpptimer-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lpcrvqnfjxlzszzbvk5vvwg04dhds199-rcpptimer_1.2.1.tar.gz
+source root is rcpptimer
+setting SOURCE_DATE_EPOCH to timestamp 1727041202 of file rcpptimer/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rcpptimer’ ...
+** package ‘rcpptimer’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include   -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include   -fPIC  -g -O2   -c fibonacci.cpp -o fibonacci.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include   -fPIC  -g -O2   -c tests.cpp -o tests.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rcpptimer.so RcppExports.o fibonacci.o tests.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/00LOCK-rcpptimer/00new/rcpptimer/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rcpptimer)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rcpptimer-1.2.1.drv-0/ in /nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1...
+patching script interpreter paths in /nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1
+rewriting symlink /nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1
+building '/nix/store/8gyg5lkyjalzy04cv2kmh6ig2xwjf9a1-r-profoc-1.3.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/h3zb9a7a1fcnjq7dfwy0bi01lrpqnmk1-profoc_1.3.3.tar.gz
+source root is profoc
+setting SOURCE_DATE_EPOCH to timestamp 1726956602 of file profoc/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘profoc’ ...
+** package ‘profoc’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c batch.cpp -o batch.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c conline.cpp -o conline.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c conline_exports.cpp -o conline_exports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c loss.cpp -o loss.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c misc.cpp -o misc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c oracle.cpp -o oracle.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c profoc_types.cpp -o profoc_types.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/96gwmhalzqa01dkw9cnzczykzp39qx7v-r-splines2-0.5.3/library/splines2/include' -I'/nix/store/s87ka83zb70jj5538vwaw26bpkiljm53-r-rcpptimer-1.2.1/library/rcpptimer/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -I../inst/include -I../inst/include/optim  -DRCPP_ARMADILLO_FIX_Field -fPIC  -g -O2   -c splines.cpp -o splines.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o profoc.so RcppExports.o batch.o conline.o conline_exports.o loss.o misc.o oracle.o profoc_types.o splines.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/4az4wifzb4x3iyvpbjqrxrgvgzq3s3dx-r-profoc-1.3.3/library/00LOCK-profoc/00new/profoc/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_conline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_conline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_conline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_conline” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (profoc)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-profoc-1.3.3.drv-0/ in /nix/store/4az4wifzb4x3iyvpbjqrxrgvgzq3s3dx-r-profoc-1.3.3...
+patching script interpreter paths in /nix/store/4az4wifzb4x3iyvpbjqrxrgvgzq3s3dx-r-profoc-1.3.3
+rewriting symlink /nix/store/4az4wifzb4x3iyvpbjqrxrgvgzq3s3dx-r-profoc-1.3.3/nix-support/propagated-user-env-packages to be relative to /nix/store/4az4wifzb4x3iyvpbjqrxrgvgzq3s3dx-r-profoc-1.3.3

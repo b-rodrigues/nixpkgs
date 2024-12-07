@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/dk248ph82y1r6c2gmh5q4l7jxlyq1p2g-r-sdmTMB-0.6.0.drv
+this path will be fetched (1.75 MiB download, 1.75 MiB unpacked):
+  /nix/store/pxgkliyjyzyyffa75v0mk7kz7x977wsz-sdmTMB_0.6.0.tar.gz
+copying path '/nix/store/pxgkliyjyzyyffa75v0mk7kz7x977wsz-sdmTMB_0.6.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/dk248ph82y1r6c2gmh5q4l7jxlyq1p2g-r-sdmTMB-0.6.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pxgkliyjyzyyffa75v0mk7kz7x977wsz-sdmTMB_0.6.0.tar.gz
+source root is sdmTMB
+setting SOURCE_DATE_EPOCH to timestamp 1717027202 of file sdmTMB/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sdmTMB’ ...
+** package ‘sdmTMB’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMBAD_FRAMEWORK -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sdmTMB.cpp -o sdmTMB.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o sdmTMB.so sdmTMB.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/d91s6jfd0xa5wdrs8qgrw06s3msw00k4-r-sdmTMB-0.6.0/library/00LOCK-sdmTMB/00new/sdmTMB/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sdmTMB)
+installPhase completed in 56 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sdmTMB-0.6.0.drv-0/ in /nix/store/d91s6jfd0xa5wdrs8qgrw06s3msw00k4-r-sdmTMB-0.6.0...
+patching script interpreter paths in /nix/store/d91s6jfd0xa5wdrs8qgrw06s3msw00k4-r-sdmTMB-0.6.0
+rewriting symlink /nix/store/d91s6jfd0xa5wdrs8qgrw06s3msw00k4-r-sdmTMB-0.6.0/nix-support/propagated-user-env-packages to be relative to /nix/store/d91s6jfd0xa5wdrs8qgrw06s3msw00k4-r-sdmTMB-0.6.0

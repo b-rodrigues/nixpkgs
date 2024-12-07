@@ -1,0 +1,66 @@
+this derivation will be built:
+  /nix/store/4wyp9q5jin80sqj1g5v4b2hrp57z0w6n-r-TBRDist-1.0.2.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/hx9s8r6h9478qdgvhk3jxab3si0246z5-TBRDist_1.0.2.tar.gz
+copying path '/nix/store/hx9s8r6h9478qdgvhk3jxab3si0246z5-TBRDist_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4wyp9q5jin80sqj1g5v4b2hrp57z0w6n-r-TBRDist-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hx9s8r6h9478qdgvhk3jxab3si0246z5-TBRDist_1.0.2.tar.gz
+source root is TBRDist
+setting SOURCE_DATE_EPOCH to timestamp 1600337412 of file TBRDist/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TBRDist’ ...
+** package ‘TBRDist’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c uspr.cpp -o uspr.o
+In file included from uspr.cpp:18:
+In file included from ./uspr/tbr.h:44:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/scoped_ptr.hpp:13:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/smart_ptr/scoped_ptr.hpp:75:31: warning: 'auto_ptr<boost::no_property>' is deprecated [-Wdeprecated-declarations]
+    explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_SP_NOEXCEPT : px( p.release() )
+                              ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:408:18: note: in instantiation of template class 'boost::scoped_ptr<boost::no_property>' requested here
+    property_ptr m_property;
+                 ^
+./uspr/tbr.h:2352:19: note: in instantiation of template class 'boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS>' requested here
+        undirected_graph G(constraints.size());
+                         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/auto_ptr.h:30:28: note: 'auto_ptr<boost::no_property>' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:796:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#    define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TBRDist.so RcppExports.o uspr.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/mmh1bk8a7xkzlkk5rw9msxbq7yhyk528-r-TBRDist-1.0.2/library/00LOCK-TBRDist/00new/TBRDist/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TBRDist)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TBRDist-1.0.2.drv-0/ in /nix/store/mmh1bk8a7xkzlkk5rw9msxbq7yhyk528-r-TBRDist-1.0.2...
+patching script interpreter paths in /nix/store/mmh1bk8a7xkzlkk5rw9msxbq7yhyk528-r-TBRDist-1.0.2
+rewriting symlink /nix/store/mmh1bk8a7xkzlkk5rw9msxbq7yhyk528-r-TBRDist-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/mmh1bk8a7xkzlkk5rw9msxbq7yhyk528-r-TBRDist-1.0.2

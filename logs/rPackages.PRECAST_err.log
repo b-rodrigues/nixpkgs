@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv
+building '/nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nrnpra5ngihnjfs9cdlrgdy6lkqa7yb7-PRECAST_1.6.5.tar.gz
+source root is PRECAST
+setting SOURCE_DATE_EPOCH to timestamp 1710837002 of file PRECAST/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘scater’ is not available for package ‘PRECAST’
+* removing ‘/nix/store/i8r1m2w3lglh0ik6d054bjpdscg3xxgl-r-PRECAST-1.6.5/library/PRECAST’
+error: builder for '/nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/nrnpra5ngihnjfs9cdlrgdy6lkqa7yb7-PRECAST_1.6.5.tar.gz
+       > source root is PRECAST
+       > setting SOURCE_DATE_EPOCH to timestamp 1710837002 of file PRECAST/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘scater’ is not available for package ‘PRECAST’
+       > * removing ‘/nix/store/i8r1m2w3lglh0ik6d054bjpdscg3xxgl-r-PRECAST-1.6.5/library/PRECAST’
+       For full logs, run 'nix log /nix/store/63pp1p3mih1800r33zb9hpy9cww5fm32-r-PRECAST-1.6.5.drv'.

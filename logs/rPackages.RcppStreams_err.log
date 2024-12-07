@@ -1,0 +1,145 @@
+this derivation will be built:
+  /nix/store/70hygykkicnmpglxkdc5kkpm8brhhxkm-r-RcppStreams-0.1.3.drv
+this path will be fetched (0.45 MiB download, 0.45 MiB unpacked):
+  /nix/store/5zgxf8sr6h9xn9ynn2zjismq9xczym6q-RcppStreams_0.1.3.tar.gz
+copying path '/nix/store/5zgxf8sr6h9xn9ynn2zjismq9xczym6q-RcppStreams_0.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/70hygykkicnmpglxkdc5kkpm8brhhxkm-r-RcppStreams-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5zgxf8sr6h9xn9ynn2zjismq9xczym6q-RcppStreams_0.1.3.tar.gz
+source root is RcppStreams
+setting SOURCE_DATE_EPOCH to timestamp 1551099603 of file RcppStreams/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RcppStreams’ ...
+** package ‘RcppStreams’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c common.cpp -o common.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hello.cpp -o hello.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c movavg.cpp -o movavg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sliding.cpp -o sliding.o
+In file included from hello.cpp:47:
+In file included from ../inst/include/streamulus.h:30:
+In file included from ../inst/include/engine.h:24:
+In file included from ../inst/include/graph.h:24:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/scoped_ptr.hpp:13:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/smart_ptr/scoped_ptr.hpp:75:31: warning: 'auto_ptr<boost::no_property>' is deprecated [-Wdeprecated-declarations]
+    explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_SP_NOEXCEPT : px( p.release() )
+                              ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:408:18: note: in instantiation of template class 'boost::scoped_ptr<boost::no_property>' requested here
+    property_ptr m_property;
+                 ^
+../inst/include/graph.h:46:26: note: in instantiation of template class 'boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::property<streamulus::StropTag, boost::shared_ptr<streamulus::StropBase>>, boost::property<streamulus::StreamTag, boost::shared_ptr<streamulus::StreamBase>>>' requested here
+    class Graph : public BoostGraph 
+                         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/auto_ptr.h:30:28: note: 'auto_ptr<boost::no_property>' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:796:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#    define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+In file included from common.cpp:52:
+In file included from ../inst/include/streamulus.h:30#      define _LIBCPP_DEPRECATED __attribute__((deprecated)):
+
+In file included from ../inst/include/engine.h                                                ^:
+24:
+In file included from ../inst/include/graph.h:24:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/scoped_ptr.hpp:13:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/smart_ptr/scoped_ptr.hpp:75:31: warning: 'auto_ptr<boost::no_property>' is deprecated [-Wdeprecated-declarations]
+    explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_SP_NOEXCEPT : px( p.release() )
+                              ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:408:18: note: in instantiation of template class 'boost::scoped_ptr<boost::no_property>' requested here
+    property_ptr m_property;
+                 ^
+../inst/include/graph.h:46:26: note: in instantiation of template class 'boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::property<streamulus::StropTag, boost::shared_ptr<streamulus::StropBase>>, boost::property<streamulus::StreamTag, boost::shared_ptr<streamulus::StreamBase>>>' requested here
+    class Graph : public BoostGraph 
+                         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/auto_ptr.h:30:28: note: 'auto_ptr<boost::no_property>' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:796:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#    define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from movavg.cpp:28:
+In file included from ../inst/include/streamulus.h:30:
+In file included from ../inst/include/engine.h:24:
+In file included from ../inst/include/graph.h:24:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/scoped_ptr.hpp:13:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/smart_ptr/scoped_ptr.hpp:75:31: warning: 'auto_ptr<boost::no_property>' is deprecated [-Wdeprecated-declarations]
+    explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_SP_NOEXCEPT : px( p.release() )
+                              ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:408:18: note: in instantiation of template class 'boost::scoped_ptr<boost::no_property>' requested here
+    property_ptr m_property;
+                 ^
+../inst/include/graph.h:46:26: note: in instantiation of template class 'boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::property<streamulus::StropTag, boost::shared_ptr<streamulus::StropBase>>, boost::property<streamulus::StreamTag, boost::shared_ptr<streamulus::StreamBase>>>' requested here
+    class Graph : public BoostGraph 
+                         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/auto_ptr.h:30:28: note: 'auto_ptr<boost::no_property>' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:796:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#    define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+In file included from sliding.cpp:27:
+In file included from ../inst/include/streamulus.h:30:
+In file included from ../inst/include/engine.h:24:
+In file included from ../inst/include/graph.h:24:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:22:
+In file included from /nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/scoped_ptr.hpp:13:
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/smart_ptr/scoped_ptr.hpp:75:31: warning: 'auto_ptr<boost::no_property>' is deprecated [-Wdeprecated-declarations]
+    explicit scoped_ptr( std::auto_ptr<T> p ) BOOST_SP_NOEXCEPT : px( p.release() )
+                              ^
+/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include/boost/graph/adjacency_list.hpp:408:18: note: in instantiation of template class 'boost::scoped_ptr<boost::no_property>' requested here
+    property_ptr m_property;
+                 ^
+../inst/include/graph.h:46:26: note: in instantiation of template class 'boost::adjacency_list<boost::vecS, boost::vecS, boost::bidirectionalS, boost::property<streamulus::StropTag, boost::shared_ptr<streamulus::StropBase>>, boost::property<streamulus::StreamTag, boost::shared_ptr<streamulus::StreamBase>>>' requested here
+    class Graph : public BoostGraph 
+                         ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/auto_ptr.h:30:28: note: 'auto_ptr<boost::no_property>' has been explicitly marked deprecated here
+class _LIBCPP_TEMPLATE_VIS _LIBCPP_DEPRECATED_IN_CXX11 auto_ptr
+                           ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:796:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX11'
+#    define _LIBCPP_DEPRECATED_IN_CXX11 _LIBCPP_DEPRECATED
+                                        ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__config:781:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+#      define _LIBCPP_DEPRECATED __attribute__((deprecated))
+                                                ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppStreams.so RcppExports.o common.o hello.o movavg.o sliding.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/1q4l70d31hi3hds7vsq5h37wrkdf7amp-r-RcppStreams-0.1.3/library/00LOCK-RcppStreams/00new/RcppStreams/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppStreams)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppStreams-0.1.3.drv-0/ in /nix/store/1q4l70d31hi3hds7vsq5h37wrkdf7amp-r-RcppStreams-0.1.3...
+patching script interpreter paths in /nix/store/1q4l70d31hi3hds7vsq5h37wrkdf7amp-r-RcppStreams-0.1.3
+rewriting symlink /nix/store/1q4l70d31hi3hds7vsq5h37wrkdf7amp-r-RcppStreams-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/1q4l70d31hi3hds7vsq5h37wrkdf7amp-r-RcppStreams-0.1.3

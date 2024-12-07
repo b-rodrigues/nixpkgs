@@ -1,0 +1,69 @@
+these 2 derivations will be built:
+  /nix/store/1xvxnq8rpv088s0a97aqzhsq52g8zv08-heck_0.1.3.tar.gz.drv
+  /nix/store/ljr11szwls29d053nwk0mfwa028mnal3-r-heck-0.1.3.drv
+building '/nix/store/1xvxnq8rpv088s0a97aqzhsq52g8zv08-heck_0.1.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/heck_0.1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  508k  100  508k    0     0  2012k      0 --:--:-- --:--:-- --:--:-- 2019k
+building '/nix/store/ljr11szwls29d053nwk0mfwa028mnal3-r-heck-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xvmvfq5z46fihbk5rakma5jx7xy0frif-heck_0.1.3.tar.gz
+source root is heck
+setting SOURCE_DATE_EPOCH to timestamp 1726055402 of file heck/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘heck’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+sh: rustc: command not found
+Erreur dans value[[3L]](cond) : 
+  ----------------------- [RUST NOT FOUND]---------------------------
+The 'rustc' compiler was not found on the PATH. Please install
+rustc >= 1.56.0 or higher from:
+https://www.rust-lang.org/tools/install
+
+Alternatively, you may install Rust from your OS package manager:
+ - Debian/Ubuntu: apt-get install rustc
+ - Fedora/CentOS: dnf install rustc
+ - macOS: brew install rustc
+-------------------------------------------------------------------
+Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Exécution arrêtée
+ERROR: configuration failed for package ‘heck’
+* removing ‘/nix/store/87gq92z54nhyblyjghrxyd4y418ym652-r-heck-0.1.3/library/heck’
+error: builder for '/nix/store/ljr11szwls29d053nwk0mfwa028mnal3-r-heck-0.1.3.drv' failed with exit code 1;
+       last 25 log lines:
+       > configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘heck’ ...
+       > file ‘configure’ has the wrong MD5 checksum
+       > ** using staged installation
+       > sh: rustc: command not found
+       > Erreur dans value[[3L]](cond) :
+       >   ----------------------- [RUST NOT FOUND]---------------------------
+       > The 'rustc' compiler was not found on the PATH. Please install
+       > rustc >= 1.56.0 or higher from:
+       > https://www.rust-lang.org/tools/install
+       >
+       > Alternatively, you may install Rust from your OS package manager:
+       >  - Debian/Ubuntu: apt-get install rustc
+       >  - Fedora/CentOS: dnf install rustc
+       >  - macOS: brew install rustc
+       > -------------------------------------------------------------------
+       > Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+       > Exécution arrêtée
+       > ERROR: configuration failed for package ‘heck’
+       > * removing ‘/nix/store/87gq92z54nhyblyjghrxyd4y418ym652-r-heck-0.1.3/library/heck’
+       For full logs, run 'nix log /nix/store/ljr11szwls29d053nwk0mfwa028mnal3-r-heck-0.1.3.drv'.

@@ -1,0 +1,57 @@
+these 4 derivations will be built:
+  /nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv
+  /nix/store/3fvbrc51cgsdama53riglpbrp8zpl3m3-r-Rcmdr-2.9-5.drv
+  /nix/store/anciyipl8ja75sr800sj7l1nj3x56mqq-RcmdrPlugin.DoE_0.12-6.tar.gz.drv
+  /nix/store/hz136kdlmwpw4q5rp9qvj2ff7nm35f1v-r-RcmdrPlugin.DoE-0.12-6.drv
+building '/nix/store/anciyipl8ja75sr800sj7l1nj3x56mqq-RcmdrPlugin.DoE_0.12-6.tar.gz.drv'...
+building '/nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv'...
+
+trying https://cran.r-project.org/src/contrib/RcmdrPlugin.DoE_0.12-6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/18w0m6b7b8crk7kxilkj8dxixq6y4fdy-tcltk2_1.2-11.tar.gz
+source root is tcltk2
+setting SOURCE_DATE_EPOCH to timestamp 1419068106 of file tcltk2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100 1509k  100 1509k    0     0  3771k      0 --:--:-- --:--:-- --:--:-- 3764k
+* installing *source* package ‘tcltk2’ ...
+** package ‘tcltk2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 60988 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tcltk2-1.2-11.drv-0/RtmpEiLbVP/fileee05379d29d6'
+2024-11-27 06:26:23.944 R[60988:105637005] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+ERROR: lazy loading failed for package ‘tcltk2’
+* removing ‘/nix/store/b1sdns2c9cy9k3q3x58n3yjvwqbcazmx-r-tcltk2-1.2-11/library/tcltk2’
+error: builder for '/nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv' failed with exit code 1;
+       last 20 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/18w0m6b7b8crk7kxilkj8dxixq6y4fdy-tcltk2_1.2-11.tar.gz
+       > source root is tcltk2
+       > setting SOURCE_DATE_EPOCH to timestamp 1419068106 of file tcltk2/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘tcltk2’ ...
+       > ** package ‘tcltk2’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 60988 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tcltk2-1.2-11.drv-0/RtmpEiLbVP/fileee05379d29d6'
+       > 2024-11-27 06:26:23.944 R[60988:105637005] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+       > ERROR: lazy loading failed for package ‘tcltk2’
+       > * removing ‘/nix/store/b1sdns2c9cy9k3q3x58n3yjvwqbcazmx-r-tcltk2-1.2-11/library/tcltk2’
+       For full logs, run 'nix log /nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv'.
+error: 1 dependencies of derivation '/nix/store/3fvbrc51cgsdama53riglpbrp8zpl3m3-r-Rcmdr-2.9-5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/hz136kdlmwpw4q5rp9qvj2ff7nm35f1v-r-RcmdrPlugin.DoE-0.12-6.drv' failed to build

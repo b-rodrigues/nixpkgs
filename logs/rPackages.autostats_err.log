@@ -1,0 +1,143 @@
+these 4 derivations will be built:
+  /nix/store/ixdqnc3qzbmdwvc72m76z4500vnmpq9a-r-framecleaner-0.2.1.drv
+  /nix/store/hpk4dj4fjid1yda7hys7gb60dp4vm14h-r-presenter-0.1.2.drv
+  /nix/store/rvzk36snyr47kvwf593gc57ryifqw59g-r-recosystem-0.5.1.drv
+  /nix/store/cjcf6h5pyzrsq0gjp5304ss20v8vy8wy-r-autostats-0.4.1.drv
+building '/nix/store/ixdqnc3qzbmdwvc72m76z4500vnmpq9a-r-framecleaner-0.2.1.drv'...
+building '/nix/store/rvzk36snyr47kvwf593gc57ryifqw59g-r-recosystem-0.5.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mzbadyi4ddxnscj260jv1q8rfgjnmhq8-framecleaner_0.2.1.tar.gz
+source root is framecleaner
+Running phase: unpackPhase
+setting SOURCE_DATE_EPOCH to timestamp 1710487202 of file framecleaner/MD5
+unpacking source archive /nix/store/2ksml8vrppk9g0ycp9vy8fdlp4xrfx8x-recosystem_0.5.1.tar.gz
+Running phase: patchPhase
+source root is recosystem
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+setting SOURCE_DATE_EPOCH to timestamp 1683283202 of file recosystem/MD5
+Running phase: configurePhase
+Running phase: patchPhase
+Running phase: buildPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: checkPhase
+Running phase: configurePhase
+Running phase: installPhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘framecleaner’ ...
+** package ‘framecleaner’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+* installing *source* package ‘recosystem’ ...
+** package ‘recosystem’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c mf.cpp -o mf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c reco-output.cpp -o reco-output.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c reco-predict.cpp -o reco-predict.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c reco-read-data.cpp -o reco-read-data.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c reco-train.cpp -o reco-train.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c reco-tune.cpp -o reco-tune.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c register_routines.c -o register_routines.o
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (framecleaner)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-framecleaner-0.2.1.drv-0/ in /nix/store/73w54sdhvqjgh7rf6c3h35807qpq1yvp-r-framecleaner-0.2.1...
+patching script interpreter paths in /nix/store/73w54sdhvqjgh7rf6c3h35807qpq1yvp-r-framecleaner-0.2.1
+rewriting symlink /nix/store/73w54sdhvqjgh7rf6c3h35807qpq1yvp-r-framecleaner-0.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/73w54sdhvqjgh7rf6c3h35807qpq1yvp-r-framecleaner-0.2.1
+building '/nix/store/hpk4dj4fjid1yda7hys7gb60dp4vm14h-r-presenter-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/092p5gmf16ac6476z6k4hnkf7c2sa53y-presenter_0.1.2.tar.gz
+source root is presenter
+setting SOURCE_DATE_EPOCH to timestamp 1675350002 of file presenter/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘presenter’ ...
+** package ‘presenter’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (presenter)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-presenter-0.1.2.drv-0/ in /nix/store/6dxr372v4sycn6ga3q2blb4sbv01ns6a-r-presenter-0.1.2...
+patching script interpreter paths in /nix/store/6dxr372v4sycn6ga3q2blb4sbv01ns6a-r-presenter-0.1.2
+rewriting symlink /nix/store/6dxr372v4sycn6ga3q2blb4sbv01ns6a-r-presenter-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/6dxr372v4sycn6ga3q2blb4sbv01ns6a-r-presenter-0.1.2
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o recosystem.so mf.o reco-output.o reco-predict.o reco-read-data.o reco-train.o reco-tune.o register_routines.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/1vj1bn74lnvsmygqbz7fcqwcy98464ch-r-recosystem-0.5.1/library/00LOCK-recosystem/00new/recosystem/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “RecoModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RecoModel” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RecoSys” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RecoSys” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RecoSys” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RecoSys” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “RecoSys” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (recosystem)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-recosystem-0.5.1.drv-0/ in /nix/store/1vj1bn74lnvsmygqbz7fcqwcy98464ch-r-recosystem-0.5.1...
+patching script interpreter paths in /nix/store/1vj1bn74lnvsmygqbz7fcqwcy98464ch-r-recosystem-0.5.1
+rewriting symlink /nix/store/1vj1bn74lnvsmygqbz7fcqwcy98464ch-r-recosystem-0.5.1/nix-support/propagated-user-env-packages to be relative to /nix/store/1vj1bn74lnvsmygqbz7fcqwcy98464ch-r-recosystem-0.5.1
+building '/nix/store/cjcf6h5pyzrsq0gjp5304ss20v8vy8wy-r-autostats-0.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/my7539i5jq33yz2yag4bsg00xhn898ls-autostats_0.4.1.tar.gz
+source root is autostats
+setting SOURCE_DATE_EPOCH to timestamp 1717494284 of file autostats/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘autostats’ ...
+** package ‘autostats’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (autostats)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-autostats-0.4.1.drv-0/ in /nix/store/xzsddfw3jsxm8k8srjk28y0w4a5kqqac-r-autostats-0.4.1...
+patching script interpreter paths in /nix/store/xzsddfw3jsxm8k8srjk28y0w4a5kqqac-r-autostats-0.4.1
+rewriting symlink /nix/store/xzsddfw3jsxm8k8srjk28y0w4a5kqqac-r-autostats-0.4.1/nix-support/propagated-user-env-packages to be relative to /nix/store/xzsddfw3jsxm8k8srjk28y0w4a5kqqac-r-autostats-0.4.1

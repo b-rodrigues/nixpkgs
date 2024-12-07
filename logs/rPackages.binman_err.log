@@ -1,0 +1,73 @@
+these 2 derivations will be built:
+  /nix/store/74dyydsmbvad698cyicic1xr3gxgz91b-r-semver-0.2.0.drv
+  /nix/store/rwvsyl52ph57i7icp8a820xga2mp4gi5-r-binman-0.1.3.drv
+building '/nix/store/74dyydsmbvad698cyicic1xr3gxgz91b-r-semver-0.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ypdzzcdlw6x20cz4hhgakihpjn7y54w6-semver_0.2.0.tar.gz
+source root is semver
+setting SOURCE_DATE_EPOCH to timestamp 1483698765 of file semver/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘semver’ ...
+** package ‘semver’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Semver200_comparator.cpp -o Semver200_comparator.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Semver200_modifier.cpp -o Semver200_modifier.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Semver200_parser.cpp -o Semver200_parser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c semverR.cpp -o semverR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o semver.so RcppExports.o Semver200_comparator.o Semver200_modifier.o Semver200_parser.o semverR.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/l1ws5h7dnax91rkslaj14cpcy6kj7bk2-r-semver-0.2.0/library/00LOCK-semver/00new/semver/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (semver)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-semver-0.2.0.drv-0/ in /nix/store/l1ws5h7dnax91rkslaj14cpcy6kj7bk2-r-semver-0.2.0...
+patching script interpreter paths in /nix/store/l1ws5h7dnax91rkslaj14cpcy6kj7bk2-r-semver-0.2.0
+rewriting symlink /nix/store/l1ws5h7dnax91rkslaj14cpcy6kj7bk2-r-semver-0.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/l1ws5h7dnax91rkslaj14cpcy6kj7bk2-r-semver-0.2.0
+building '/nix/store/rwvsyl52ph57i7icp8a820xga2mp4gi5-r-binman-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/cb89nsjmrsvycndwqixs3pbpa4qxpb6n-binman_0.1.3.tar.gz
+source root is binman
+setting SOURCE_DATE_EPOCH to timestamp 1662006002 of file binman/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘binman’ ...
+** package ‘binman’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (binman)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-binman-0.1.3.drv-0/ in /nix/store/ix148p63s5lw3w81b596wrj6fl9vr9yy-r-binman-0.1.3...
+patching script interpreter paths in /nix/store/ix148p63s5lw3w81b596wrj6fl9vr9yy-r-binman-0.1.3
+rewriting symlink /nix/store/ix148p63s5lw3w81b596wrj6fl9vr9yy-r-binman-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/ix148p63s5lw3w81b596wrj6fl9vr9yy-r-binman-0.1.3

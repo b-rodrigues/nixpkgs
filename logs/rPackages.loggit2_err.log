@@ -1,0 +1,41 @@
+this derivation will be built:
+  /nix/store/05l18pfbhgkd6l8kvr0n18fb98iac0yz-r-loggit2-2.3.1.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/lw4pbfh2q1892pc52fjv7xklbmbi5f8y-loggit2_2.3.1.tar.gz
+copying path '/nix/store/lw4pbfh2q1892pc52fjv7xklbmbi5f8y-loggit2_2.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/05l18pfbhgkd6l8kvr0n18fb98iac0yz-r-loggit2-2.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lw4pbfh2q1892pc52fjv7xklbmbi5f8y-loggit2_2.3.1.tar.gz
+source root is loggit2
+setting SOURCE_DATE_EPOCH to timestamp 1721943606 of file loggit2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘loggit2’ ...
+** package ‘loggit2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c register.cpp -o register.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c split_json.cpp -o split_json.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o loggit2.so register.o split_json.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/rb86ha3gsbi0pcvvihd6a58zzvbq7cih-r-loggit2-2.3.1/library/00LOCK-loggit2/00new/loggit2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (loggit2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-loggit2-2.3.1.drv-0/ in /nix/store/rb86ha3gsbi0pcvvihd6a58zzvbq7cih-r-loggit2-2.3.1...
+patching script interpreter paths in /nix/store/rb86ha3gsbi0pcvvihd6a58zzvbq7cih-r-loggit2-2.3.1

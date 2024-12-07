@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/hcsnwiwjsfggwyxhhklj7hw1k2asl8ds-r-mixcat-1.0-4.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/2z5in5ym8bz1v943rnybffdagap6whg7-mixcat_1.0-4.tar.gz
+copying path '/nix/store/2z5in5ym8bz1v943rnybffdagap6whg7-mixcat_1.0-4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hcsnwiwjsfggwyxhhklj7hw1k2asl8ds-r-mixcat-1.0-4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2z5in5ym8bz1v943rnybffdagap6whg7-mixcat_1.0-4.tar.gz
+source root is mixcat
+setting SOURCE_DATE_EPOCH to timestamp 1576844402 of file mixcat/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mixcat’ ...
+** package ‘mixcat’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mixcat_init.c -o mixcat_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c npmltc.c -o npmltc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mixcat.so mixcat_init.o npmltc.o -lgsl -lgslcblas -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9khmdslqnygn21q62wnmm6mpgy8apllc-r-mixcat-1.0-4/library/00LOCK-mixcat/00new/mixcat/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mixcat)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mixcat-1.0-4.drv-0/ in /nix/store/9khmdslqnygn21q62wnmm6mpgy8apllc-r-mixcat-1.0-4...
+patching script interpreter paths in /nix/store/9khmdslqnygn21q62wnmm6mpgy8apllc-r-mixcat-1.0-4
+rewriting symlink /nix/store/9khmdslqnygn21q62wnmm6mpgy8apllc-r-mixcat-1.0-4/nix-support/propagated-user-env-packages to be relative to /nix/store/9khmdslqnygn21q62wnmm6mpgy8apllc-r-mixcat-1.0-4

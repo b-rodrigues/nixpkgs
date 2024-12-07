@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/p7kqapm0bw60k1bzjmmsfa51w6hrwak6-r-IBDsim-0.9-8.drv
+this path will be fetched (1.06 MiB download, 1.06 MiB unpacked):
+  /nix/store/8kgvb2c8lq0s1fj99k4w4wmh3lgxgdg4-IBDsim_0.9-8.tar.gz
+copying path '/nix/store/8kgvb2c8lq0s1fj99k4w4wmh3lgxgdg4-IBDsim_0.9-8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p7kqapm0bw60k1bzjmmsfa51w6hrwak6-r-IBDsim-0.9-8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8kgvb2c8lq0s1fj99k4w4wmh3lgxgdg4-IBDsim_0.9-8.tar.gz
+source root is IBDsim
+setting SOURCE_DATE_EPOCH to timestamp 1554550965 of file IBDsim/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IBDsim’ ...
+** package ‘IBDsim’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c IBDsim.c -o IBDsim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IBDsim.so IBDsim.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/nsr6fqpm6wlyhfl247qcnn2g2gb5l87d-r-IBDsim-0.9-8/library/00LOCK-IBDsim/00new/IBDsim/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IBDsim)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IBDsim-0.9-8.drv-0/ in /nix/store/nsr6fqpm6wlyhfl247qcnn2g2gb5l87d-r-IBDsim-0.9-8...
+patching script interpreter paths in /nix/store/nsr6fqpm6wlyhfl247qcnn2g2gb5l87d-r-IBDsim-0.9-8
+rewriting symlink /nix/store/nsr6fqpm6wlyhfl247qcnn2g2gb5l87d-r-IBDsim-0.9-8/nix-support/propagated-user-env-packages to be relative to /nix/store/nsr6fqpm6wlyhfl247qcnn2g2gb5l87d-r-IBDsim-0.9-8

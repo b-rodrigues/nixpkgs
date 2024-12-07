@@ -1,0 +1,86 @@
+these 7 derivations will be built:
+  /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv
+  /nix/store/zjir9w0f3v51nlw0xqgn1mqql64gf5y8-r-RBGL-1.46.0.drv
+  /nix/store/470fyvqn8qyyn7fbna07jimyaak8pbfv-r-biocViews-1.38.1.drv
+  /nix/store/5b4pa41qx94izynxjd9h77if205w1g27-rsconnect_1.3.3.tar.gz.drv
+  /nix/store/sl3lypkh7bd1lazxp28j2fj9g588idci-r-PKI-0.1-14.drv
+  /nix/store/nap9a5isymcbmp0pncvwdac5bdajsmc1-r-rsconnect-1.3.3.drv
+  /nix/store/wl3x2f3n8d34dhgq7cvz8nkvlc9qfvxa-r-genetic.algo.optimizeR-0.3.2.drv
+building '/nix/store/sl3lypkh7bd1lazxp28j2fj9g588idci-r-PKI-0.1-14.drv'...
+building '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'...
+building '/nix/store/5b4pa41qx94izynxjd9h77if205w1g27-rsconnect_1.3.3.tar.gz.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7j7x84gk54zcqfi0kv2260vk7r1s8nik-PKI_0.1-14.tar.gz
+source root is PKI
+setting SOURCE_DATE_EPOCH to timestamp 1718480402 of file PKI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/fac79mzcbdrkazwfsyzj2najqw8lik3r-graph_1.48.0.tar.gz
+source root is graph
+setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+Running phase: patchPhase
+* installing *source* package ‘PKI’ ...
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** package ‘PKI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+
+trying https://cran.r-project.org/src/contrib/rsconnect_1.3.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+* installing *source* package ‘graph’ ...
+** using staged installation
+** libs
+100  466k  100  466k    0     0  1878k      0 --:--:-- --:--:-- --:--:-- 1879k
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+mv graph.so BioC_graph.so
+installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘graph’
+* removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+error: builder for '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > source root is graph
+       > setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘graph’ ...
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > mv graph.so BioC_graph.so
+       > installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘graph’
+       > * removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+       For full logs, run 'nix log /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'.
+error: 1 dependencies of derivation '/nix/store/470fyvqn8qyyn7fbna07jimyaak8pbfv-r-biocViews-1.38.1.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/wl3x2f3n8d34dhgq7cvz8nkvlc9qfvxa-r-genetic.algo.optimizeR-0.3.2.drv' failed to build

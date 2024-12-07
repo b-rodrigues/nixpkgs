@@ -1,0 +1,113 @@
+these 4 derivations will be built:
+  /nix/store/49lsg8w1f7m7i964j1gq7b4l2drl32ga-WrightMap_1.4.tar.gz.drv
+  /nix/store/c10nac30829dblzzgk4cyywrmqfcg4rr-r-mirtCAT-1.14.drv
+  /nix/store/vjmgwkm23icak7d5rxlzjhcdmdf8r16h-r-WrightMap-1.4.drv
+  /nix/store/9cbw1ydb95lwwh5mvhwnk30z653jrfxj-r-irtawsi-0.4.1.drv
+these 2 paths will be fetched (1.78 MiB download, 1.78 MiB unpacked):
+  /nix/store/kknmg48a8v0prhmp39691j19nicz74df-irtawsi_0.4.1.tar.gz
+  /nix/store/mqlmmajk6yciidzq31kscdlnfaj2c9i9-mirtCAT_1.14.tar.gz
+copying path '/nix/store/kknmg48a8v0prhmp39691j19nicz74df-irtawsi_0.4.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/mqlmmajk6yciidzq31kscdlnfaj2c9i9-mirtCAT_1.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/49lsg8w1f7m7i964j1gq7b4l2drl32ga-WrightMap_1.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/WrightMap_1.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 93961  100 93961    0     0   686k      0 --:--:-- --:--:-- --:--:--  689k
+building '/nix/store/vjmgwkm23icak7d5rxlzjhcdmdf8r16h-r-WrightMap-1.4.drv'...
+building '/nix/store/c10nac30829dblzzgk4cyywrmqfcg4rr-r-mirtCAT-1.14.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/w24pih4ji4xislandmbd6bvgjkbg2li1-WrightMap_1.4.tar.gz
+source root is WrightMap
+setting SOURCE_DATE_EPOCH to timestamp 1727158802 of file WrightMap/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘WrightMap’ ...
+** package ‘WrightMap’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/mqlmmajk6yciidzq31kscdlnfaj2c9i9-mirtCAT_1.14.tar.gz
+source root is mirtCAT
+setting SOURCE_DATE_EPOCH to timestamp 1720813806 of file mirtCAT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mirtCAT’ ...
+** package ‘mirtCAT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CAT_functions.cpp -o CAT_functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c item_functions.cpp -o item_functions.o
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (WrightMap)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-WrightMap-1.4.drv-0/ in /nix/store/xll2x39zbxmcs3fpd37cvlpa4cq7bpya-r-WrightMap-1.4...
+patching script interpreter paths in /nix/store/xll2x39zbxmcs3fpd37cvlpa4cq7bpya-r-WrightMap-1.4
+rewriting symlink /nix/store/xll2x39zbxmcs3fpd37cvlpa4cq7bpya-r-WrightMap-1.4/nix-support/propagated-user-env-packages to be relative to /nix/store/xll2x39zbxmcs3fpd37cvlpa4cq7bpya-r-WrightMap-1.4
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mirtCAT.so CAT_functions.o item_functions.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/qx1misjm2vpv3gmqhdq1lk7r02s09ykc-r-mirtCAT-1.14/library/00LOCK-mirtCAT/00new/mirtCAT/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mirtCAT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mirtCAT-1.14.drv-0/ in /nix/store/qx1misjm2vpv3gmqhdq1lk7r02s09ykc-r-mirtCAT-1.14...
+patching script interpreter paths in /nix/store/qx1misjm2vpv3gmqhdq1lk7r02s09ykc-r-mirtCAT-1.14
+rewriting symlink /nix/store/qx1misjm2vpv3gmqhdq1lk7r02s09ykc-r-mirtCAT-1.14/nix-support/propagated-user-env-packages to be relative to /nix/store/qx1misjm2vpv3gmqhdq1lk7r02s09ykc-r-mirtCAT-1.14
+building '/nix/store/9cbw1ydb95lwwh5mvhwnk30z653jrfxj-r-irtawsi-0.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kknmg48a8v0prhmp39691j19nicz74df-irtawsi_0.4.1.tar.gz
+source root is irtawsi
+setting SOURCE_DATE_EPOCH to timestamp 1719425402 of file irtawsi/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘irtawsi’ ...
+** package ‘irtawsi’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (irtawsi)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-irtawsi-0.4.1.drv-0/ in /nix/store/f6vkcbgczywf8x13mnxz5mai9qxlw1jd-r-irtawsi-0.4.1...
+patching script interpreter paths in /nix/store/f6vkcbgczywf8x13mnxz5mai9qxlw1jd-r-irtawsi-0.4.1
+rewriting symlink /nix/store/f6vkcbgczywf8x13mnxz5mai9qxlw1jd-r-irtawsi-0.4.1/nix-support/propagated-user-env-packages to be relative to /nix/store/f6vkcbgczywf8x13mnxz5mai9qxlw1jd-r-irtawsi-0.4.1

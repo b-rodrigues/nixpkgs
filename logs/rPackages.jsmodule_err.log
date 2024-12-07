@@ -1,0 +1,121 @@
+these 5 derivations will be built:
+  /nix/store/jxsp5c27hc6sdc1mzyy2ci168kyp33jk-jsmodule_1.5.9.tar.gz.drv
+  /nix/store/mw40k92s3rph3x71xdzvx3vbj89bp81y-r-survIDINRI-1.1-2.drv
+  /nix/store/xw1qnan69i5c35llgjbx6s036jifzc5q-jstable_1.3.6.tar.gz.drv
+  /nix/store/x8ba5higp3y5wm4src4ps54knvpwnlkj-r-jstable-1.3.6.drv
+  /nix/store/nins9dm57crw7s2090mypv6sqz7qdk1i-r-jsmodule-1.5.9.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/xxrabh2cafy2nck7zajxpc58435j5kji-survIDINRI_1.1-2.tar.gz
+copying path '/nix/store/xxrabh2cafy2nck7zajxpc58435j5kji-survIDINRI_1.1-2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jxsp5c27hc6sdc1mzyy2ci168kyp33jk-jsmodule_1.5.9.tar.gz.drv'...
+building '/nix/store/xw1qnan69i5c35llgjbx6s036jifzc5q-jstable_1.3.6.tar.gz.drv'...
+building '/nix/store/mw40k92s3rph3x71xdzvx3vbj89bp81y-r-survIDINRI-1.1-2.drv'...
+
+trying https://cran.r-project.org/src/contrib/jsmodule_1.5.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/jstable_1.3.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/xxrabh2cafy2nck7zajxpc58435j5kji-survIDINRI_1.1-2.tar.gz
+source root is survIDINRI
+setting SOURCE_DATE_EPOCH to timestamp 1650697802 of file survIDINRI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘survIDINRI’ ...
+** package ‘survIDINRI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+100 4007k  100 4007k    0     0  4823k      0 --:--:-- --:--:-- --:--:-- 4822k
+100  397k  100  397k    0     0   590k      0 --:--:-- --:--:-- --:--:--  590k
+building '/nix/store/x8ba5higp3y5wm4src4ps54knvpwnlkj-r-jstable-1.3.6.drv'...
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c survIDINRI_init.c -o survIDINRI_init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c unoecdfv1.f -o unoecdfv1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o survIDINRI.so survIDINRI_init.o unoecdfv1.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/g3fc9cq9s18x0crpsnk2c6vkr3fwlnip-r-survIDINRI-1.1-2/library/00LOCK-survIDINRI/00new/survIDINRI/libs
+** R
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/pfw43p7krxlynbm6059ffa0cnq342zb0-jstable_1.3.6.tar.gz
+source root is jstable
+setting SOURCE_DATE_EPOCH to timestamp 1731667802 of file jstable/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘jstable’ ...
+** package ‘jstable’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survIDINRI)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-survIDINRI-1.1-2.drv-0/ in /nix/store/g3fc9cq9s18x0crpsnk2c6vkr3fwlnip-r-survIDINRI-1.1-2...
+patching script interpreter paths in /nix/store/g3fc9cq9s18x0crpsnk2c6vkr3fwlnip-r-survIDINRI-1.1-2
+rewriting symlink /nix/store/g3fc9cq9s18x0crpsnk2c6vkr3fwlnip-r-survIDINRI-1.1-2/nix-support/propagated-user-env-packages to be relative to /nix/store/g3fc9cq9s18x0crpsnk2c6vkr3fwlnip-r-survIDINRI-1.1-2
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (jstable)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-jstable-1.3.6.drv-0/ in /nix/store/6karznx279xhfqd9zkll2kgp7w900yxd-r-jstable-1.3.6...
+patching script interpreter paths in /nix/store/6karznx279xhfqd9zkll2kgp7w900yxd-r-jstable-1.3.6
+rewriting symlink /nix/store/6karznx279xhfqd9zkll2kgp7w900yxd-r-jstable-1.3.6/nix-support/propagated-user-env-packages to be relative to /nix/store/6karznx279xhfqd9zkll2kgp7w900yxd-r-jstable-1.3.6
+building '/nix/store/nins9dm57crw7s2090mypv6sqz7qdk1i-r-jsmodule-1.5.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2zvlxljy4b1ph820vfd1v348p4wdm2d4-jsmodule_1.5.9.tar.gz
+source root is jsmodule
+setting SOURCE_DATE_EPOCH to timestamp 1729144202 of file jsmodule/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘jsmodule’ ...
+** package ‘jsmodule’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (jsmodule)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-jsmodule-1.5.9.drv-0/ in /nix/store/373v1a5mf3grp4rgxvr61gmzamp036yb-r-jsmodule-1.5.9...
+patching script interpreter paths in /nix/store/373v1a5mf3grp4rgxvr61gmzamp036yb-r-jsmodule-1.5.9
+rewriting symlink /nix/store/373v1a5mf3grp4rgxvr61gmzamp036yb-r-jsmodule-1.5.9/nix-support/propagated-user-env-packages to be relative to /nix/store/373v1a5mf3grp4rgxvr61gmzamp036yb-r-jsmodule-1.5.9

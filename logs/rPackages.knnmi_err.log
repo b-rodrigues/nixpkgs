@@ -1,0 +1,83 @@
+this derivation will be built:
+  /nix/store/8d6d76g03bg4v5sizj18xknah042ik27-r-knnmi-1.0.drv
+this path will be fetched (0.59 MiB download, 0.59 MiB unpacked):
+  /nix/store/lzp4z8cfj3vbbawhsvi54qs0zn46d1z8-knnmi_1.0.tar.gz
+copying path '/nix/store/lzp4z8cfj3vbbawhsvi54qs0zn46d1z8-knnmi_1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8d6d76g03bg4v5sizj18xknah042ik27-r-knnmi-1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lzp4z8cfj3vbbawhsvi54qs0zn46d1z8-knnmi_1.0.tar.gz
+source root is knnmi
+setting SOURCE_DATE_EPOCH to timestamp 1712061126 of file knnmi/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘knnmi’ ...
+** package ‘knnmi’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Iinclude/ -Iinclude/eigen3/ -DNDEBUG -DEIGEN_NO_DEBUG -DEIGEN_NO_IO  -fPIC  -g -O2   -c CondMutualInformation.cpp -o CondMutualInformation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Iinclude/ -Iinclude/eigen3/ -DNDEBUG -DEIGEN_NO_DEBUG -DEIGEN_NO_IO  -fPIC  -g -O2   -c MI_Matrix.cpp -o MI_Matrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Iinclude/ -Iinclude/eigen3/ -DNDEBUG -DEIGEN_NO_DEBUG -DEIGEN_NO_IO  -fPIC  -g -O2   -c MutualInformation.cpp -o MutualInformation.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Iinclude/ -Iinclude/eigen3/ -DNDEBUG -DEIGEN_NO_DEBUG -DEIGEN_NO_IO  -fPIC  -g -O2   -c MutualInformationBase.cpp -o MutualInformationBase.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -Iinclude/ -Iinclude/eigen3/ -DNDEBUG -DEIGEN_NO_DEBUG -DEIGEN_NO_IO  -fPIC  -g -O2   -c MutualInformationDiscrete.cpp -o MutualInformationDiscrete.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c knn_mi_lib.c -o knn_mi_lib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+In file included from CondMutualInformation.cpp:22:
+In file included from include/CondMutualInformation.h:23:
+In file included from include/eigen3/Eigen/Core:382:
+include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:14:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from MutualInformationDiscrete.cpp:21:
+In file included from include/MutualInformationDiscrete.h:24:
+In file included from include/eigen3/Eigen/Core:382:
+include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:14:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from MutualInformationBase.cpp:22:
+In file included from include/MutualInformationBase.h:24:
+In file included from include/eigen3/Eigen/Core:382:
+include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:14:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from MutualInformation.cpp:21:
+In file included from include/MutualInformation.h:24:
+In file included from include/eigen3/Eigen/Core:382:
+include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:14:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from MI_Matrix.cpp:35:
+In file included from include/MutualInformation.h:24:
+In file included from include/eigen3/Eigen/Core:382:
+include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:14:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o knnmi.so CondMutualInformation.o MI_Matrix.o MutualInformation.o MutualInformationBase.o MutualInformationDiscrete.o knn_mi_lib.o registerDynamicSymbol.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pi3si1fabrj52ppkfv05p9vv4ad10xy6-r-knnmi-1.0/library/00LOCK-knnmi/00new/knnmi/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (knnmi)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-knnmi-1.0.drv-0/ in /nix/store/pi3si1fabrj52ppkfv05p9vv4ad10xy6-r-knnmi-1.0...
+patching script interpreter paths in /nix/store/pi3si1fabrj52ppkfv05p9vv4ad10xy6-r-knnmi-1.0

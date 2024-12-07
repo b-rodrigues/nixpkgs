@@ -1,0 +1,123 @@
+these 5 derivations will be built:
+  /nix/store/7dkf31cjnkx674p01xidpihlgq0rx6rw-secretbase_1.0.3.tar.gz.drv
+  /nix/store/v8l31qg974m4npab72nb4g7syx3b9v0x-r-secretbase-1.0.3.drv
+  /nix/store/wsln89ndrz39p579xjpibjsafnb6r6m8-targets_1.9.0.tar.gz.drv
+  /nix/store/vz20ad4a7jarpjgzrq6jfvqmj63vhi7m-r-targets-1.9.0.drv
+  /nix/store/bvi67vqb61mxw3gyv2l7gisxhshb53cy-r-gittargets-0.0.7.drv
+building '/nix/store/wsln89ndrz39p579xjpibjsafnb6r6m8-targets_1.9.0.tar.gz.drv'...
+building '/nix/store/7dkf31cjnkx674p01xidpihlgq0rx6rw-secretbase_1.0.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/targets_1.9.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/secretbase_1.0.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  723k  100  723k    0     0  2832k      0 --:--:-- --:--:-- --:--:-- 2839k
+100 25966  100 25966    0     0   155k      0 --:--:-- --:--:-- --:--:--  154k
+building '/nix/store/v8l31qg974m4npab72nb4g7syx3b9v0x-r-secretbase-1.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5qg7j76qvg3qlmvb8vk8cnd5g1xsk3yb-secretbase_1.0.3.tar.gz
+source root is secretbase
+setting SOURCE_DATE_EPOCH to timestamp 1727875802 of file secretbase/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘secretbase’ ...
+** package ‘secretbase’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c base.c -o base.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c secret.c -o secret.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c secret2.c -o secret2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c secret3.c -o secret3.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o secretbase.so base.o init.o secret.o secret2.o secret3.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/3gpwsxpnhkrlbwwj85fqwxhcbzwywqks-r-secretbase-1.0.3/library/00LOCK-secretbase/00new/secretbase/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (secretbase)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-secretbase-1.0.3.drv-0/ in /nix/store/3gpwsxpnhkrlbwwj85fqwxhcbzwywqks-r-secretbase-1.0.3...
+patching script interpreter paths in /nix/store/3gpwsxpnhkrlbwwj85fqwxhcbzwywqks-r-secretbase-1.0.3
+building '/nix/store/vz20ad4a7jarpjgzrq6jfvqmj63vhi7m-r-targets-1.9.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dl1s19ghqx6v8lzaqvbbs0n7iv0lfkaa-targets_1.9.0.tar.gz
+source root is targets
+setting SOURCE_DATE_EPOCH to timestamp 1732091403 of file targets/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘targets’ ...
+** package ‘targets’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (targets)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-targets-1.9.0.drv-0/ in /nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0...
+patching script interpreter paths in /nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0
+/nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/library/targets/run/run.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/library/targets/run/job/lsf.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/library/targets/run/job/torque.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/library/targets/run/job/pbs.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/library/targets/run/job/slurm.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/library/targets/run/job/sge.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/library/targets/run/run.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+rewriting symlink /nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0/nix-support/propagated-user-env-packages to be relative to /nix/store/nvnrj67gbs0q35hh9a8mq1vxlxjbj65v-r-targets-1.9.0
+building '/nix/store/bvi67vqb61mxw3gyv2l7gisxhshb53cy-r-gittargets-0.0.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/v9gg0qfmfvk7jyrl4f5y47csvlv349nd-gittargets_0.0.7.tar.gz
+source root is gittargets
+setting SOURCE_DATE_EPOCH to timestamp 1701726602 of file gittargets/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gittargets’ ...
+** package ‘gittargets’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gittargets)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gittargets-0.0.7.drv-0/ in /nix/store/zkm6r38jqzhay3m3mar62i2w386q0q3n-r-gittargets-0.0.7...
+patching script interpreter paths in /nix/store/zkm6r38jqzhay3m3mar62i2w386q0q3n-r-gittargets-0.0.7
+rewriting symlink /nix/store/zkm6r38jqzhay3m3mar62i2w386q0q3n-r-gittargets-0.0.7/nix-support/propagated-user-env-packages to be relative to /nix/store/zkm6r38jqzhay3m3mar62i2w386q0q3n-r-gittargets-0.0.7

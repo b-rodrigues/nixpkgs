@@ -1,0 +1,61 @@
+this derivation will be built:
+  /nix/store/449qpp60kw6430r9n9hjw3k3cdr43f0j-r-APIS-2.0.8.drv
+building '/nix/store/449qpp60kw6430r9n9hjw3k3cdr43f0j-r-APIS-2.0.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jc6001nrmm9s0s6bdzzsj978lx78l3xf-APIS_2.0.8.tar.gz
+source root is APIS
+setting SOURCE_DATE_EPOCH to timestamp 1730713202 of file APIS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘APIS’ ...
+** package ‘APIS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c APIS_init_Recom.c -o APIS_init_Recom.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c calculate_likelihood.c -o calculate_likelihood.o
+calculate_likelihood.c:503:25: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+          if ((allele_A == 0)) {
+               ~~~~~~~~~^~~~
+calculate_likelihood.c:503:25: note: remove extraneous parentheses around the comparison to silence this warning
+          if ((allele_A == 0)) {
+              ~         ^   ~
+calculate_likelihood.c:503:25: note: use '=' to turn this equality comparison into an assignment
+          if ((allele_A == 0)) {
+                        ^~
+                        =
+calculate_likelihood.c:607:25: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+          if ((allele_A == 0)) {
+               ~~~~~~~~~^~~~
+calculate_likelihood.c:607:25: note: remove extraneous parentheses around the comparison to silence this warning
+          if ((allele_A == 0)) {
+              ~         ^   ~
+calculate_likelihood.c:607:25: note: use '=' to turn this equality comparison into an assignment
+          if ((allele_A == 0)) {
+                        ^~
+                        =
+2 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o APIS.so APIS_init_Recom.o calculate_likelihood.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ny5zr2wpvcwsavi953g9l92c06sgw3kr-r-APIS-2.0.8/library/00LOCK-APIS/00new/APIS/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (APIS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-APIS-2.0.8.drv-0/ in /nix/store/ny5zr2wpvcwsavi953g9l92c06sgw3kr-r-APIS-2.0.8...
+patching script interpreter paths in /nix/store/ny5zr2wpvcwsavi953g9l92c06sgw3kr-r-APIS-2.0.8
+rewriting symlink /nix/store/ny5zr2wpvcwsavi953g9l92c06sgw3kr-r-APIS-2.0.8/nix-support/propagated-user-env-packages to be relative to /nix/store/ny5zr2wpvcwsavi953g9l92c06sgw3kr-r-APIS-2.0.8

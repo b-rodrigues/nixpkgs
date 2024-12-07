@@ -1,0 +1,75 @@
+these 2 derivations will be built:
+  /nix/store/p4rcvjkf06j5dqwsy8x8n0j0fffhnas9-r-sbl-0.1.0.drv
+  /nix/store/67j3md63m9xryh1lmiyks2llzy610cv4-r-mrMLM-5.0.1.drv
+these 2 paths will be fetched (0.87 MiB download, 0.87 MiB unpacked):
+  /nix/store/dahxgy3fyfa1sb7d3l3x0vcv9liplya1-mrMLM_5.0.1.tar.gz
+  /nix/store/9ghhfqdwhv61g89jka01hghq48ra1h92-sbl_0.1.0.tar.gz
+copying path '/nix/store/dahxgy3fyfa1sb7d3l3x0vcv9liplya1-mrMLM_5.0.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/9ghhfqdwhv61g89jka01hghq48ra1h92-sbl_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p4rcvjkf06j5dqwsy8x8n0j0fffhnas9-r-sbl-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9ghhfqdwhv61g89jka01hghq48ra1h92-sbl_0.1.0.tar.gz
+source root is sbl
+setting SOURCE_DATE_EPOCH to timestamp 1540569003 of file sbl/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sbl’ ...
+** package ‘sbl’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sbl)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sbl-0.1.0.drv-0/ in /nix/store/ycsspvbw0pfinly3insz4jm9lj0l8yv7-r-sbl-0.1.0...
+patching script interpreter paths in /nix/store/ycsspvbw0pfinly3insz4jm9lj0l8yv7-r-sbl-0.1.0
+building '/nix/store/67j3md63m9xryh1lmiyks2llzy610cv4-r-mrMLM-5.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dahxgy3fyfa1sb7d3l3x0vcv9liplya1-mrMLM_5.0.1.tar.gz
+source root is mrMLM
+setting SOURCE_DATE_EPOCH to timestamp 1648371002 of file mrMLM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mrMLM’ ...
+** package ‘mrMLM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c multiplication_speed.cpp -o multiplication_speed.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mrMLM.so RcppExports.o multiplication_speed.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zcckppqg8l7p3hz6j9fxjx9prvzamc3m-r-mrMLM-5.0.1/library/00LOCK-mrMLM/00new/mrMLM/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mrMLM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mrMLM-5.0.1.drv-0/ in /nix/store/zcckppqg8l7p3hz6j9fxjx9prvzamc3m-r-mrMLM-5.0.1...
+patching script interpreter paths in /nix/store/zcckppqg8l7p3hz6j9fxjx9prvzamc3m-r-mrMLM-5.0.1
+rewriting symlink /nix/store/zcckppqg8l7p3hz6j9fxjx9prvzamc3m-r-mrMLM-5.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/zcckppqg8l7p3hz6j9fxjx9prvzamc3m-r-mrMLM-5.0.1

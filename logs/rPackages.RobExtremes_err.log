@@ -1,0 +1,82 @@
+these 4 derivations will be built:
+  /nix/store/079q31mz5512d0qwzjd7knlzrgw5bhlz-ROptEst_1.3.4.tar.gz.drv
+  /nix/store/59wd0k0kzvgcw6695lnh36pl0yhapllb-r-ROptEst-1.3.4.drv
+  /nix/store/kavxpbpj204s9zlyr18c0mz14ymqni6z-RobExtremes_1.3.1.tar.gz.drv
+  /nix/store/vdhcrg3nqrn74p5wnffkkqpmnzcw0xa7-r-RobExtremes-1.3.1.drv
+building '/nix/store/kavxpbpj204s9zlyr18c0mz14ymqni6z-RobExtremes_1.3.1.tar.gz.drv'...
+building '/nix/store/079q31mz5512d0qwzjd7knlzrgw5bhlz-ROptEst_1.3.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/RobExtremes_1.3.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/ROptEst_1.3.4.tar.gz
+100  129k  100  129k    0     0   789k      0 --:--:-- --:--:-- --:--:--  790k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  160k  100  160k    0     0   998k      0 --:--:-- --:--:-- --:--:--  999k
+building '/nix/store/59wd0k0kzvgcw6695lnh36pl0yhapllb-r-ROptEst-1.3.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dy9imdi1iidkswmsa4zhgk8vpi6zmc5j-ROptEst_1.3.4.tar.gz
+source root is ROptEst
+setting SOURCE_DATE_EPOCH to timestamp 1725271202 of file ROptEst/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ROptEst’ ...
+** package ‘ROptEst’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ROptEst)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ROptEst-1.3.4.drv-0/ in /nix/store/ckqnsjckkcc4gqnvnn35n3f9x2hv0971-r-ROptEst-1.3.4...
+patching script interpreter paths in /nix/store/ckqnsjckkcc4gqnvnn35n3f9x2hv0971-r-ROptEst-1.3.4
+rewriting symlink /nix/store/ckqnsjckkcc4gqnvnn35n3f9x2hv0971-r-ROptEst-1.3.4/nix-support/propagated-user-env-packages to be relative to /nix/store/ckqnsjckkcc4gqnvnn35n3f9x2hv0971-r-ROptEst-1.3.4
+building '/nix/store/vdhcrg3nqrn74p5wnffkkqpmnzcw0xa7-r-RobExtremes-1.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/r388q3rgwfbmx7h3v64kfr8zybbw94s2-RobExtremes_1.3.1.tar.gz
+source root is RobExtremes
+setting SOURCE_DATE_EPOCH to timestamp 1725463202 of file RobExtremes/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RobExtremes’ ...
+** package ‘RobExtremes’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c kMad.c -o kMad.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RobExtremes.so kMad.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/szy9zp48yvjimvlp78sr75qpmzhg04kq-r-RobExtremes-1.3.1/library/00LOCK-RobExtremes/00new/RobExtremes/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘Qn’ dans package ‘RobExtremes’
+Une nouvelle fonction générique est créée pour ‘Sn’ dans package ‘RobExtremes’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RobExtremes)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RobExtremes-1.3.1.drv-0/ in /nix/store/szy9zp48yvjimvlp78sr75qpmzhg04kq-r-RobExtremes-1.3.1...
+patching script interpreter paths in /nix/store/szy9zp48yvjimvlp78sr75qpmzhg04kq-r-RobExtremes-1.3.1
+rewriting symlink /nix/store/szy9zp48yvjimvlp78sr75qpmzhg04kq-r-RobExtremes-1.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/szy9zp48yvjimvlp78sr75qpmzhg04kq-r-RobExtremes-1.3.1

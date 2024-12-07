@@ -1,0 +1,83 @@
+these 2 derivations will be built:
+  /nix/store/ymlsaw0dlrk6h6dxdmzsammmzan0rq4k-vol2birdR_1.0.5.tar.gz.drv
+  /nix/store/4f4a3fym50248sr8j0yabqia0lr9ilq7-r-vol2birdR-1.0.5.drv
+building '/nix/store/ymlsaw0dlrk6h6dxdmzsammmzan0rq4k-vol2birdR_1.0.5.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/vol2birdR_1.0.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2039k  100 2039k    0     0  6523k      0 --:--:-- --:--:-- --:--:-- 6536k
+building '/nix/store/4f4a3fym50248sr8j0yabqia0lr9ilq7-r-vol2birdR-1.0.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4kjyzfrjdar69gzji4glq2iiyd8fxn61-vol2birdR_1.0.5.tar.gz
+source root is vol2birdR
+setting SOURCE_DATE_EPOCH to timestamp 1727481602 of file vol2birdR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘vol2birdR’ ...
+** package ‘vol2birdR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for a sed that does not truncate output... /nix/store/9m372k9wy0f9aj54zhvsr65w2p9ndwnj-gnused-4.9/bin/sed
+checking for gawk... gawk
+checking for grep that handles long lines and -e... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether clang accepts -g... yes
+checking for clang option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for h5cc... no
+checking for h5pcc... no
+checking for HDF5 libraries... no
+configure: WARNING:
+Unable to locate HDF5 compilation helper scripts 'h5cc' or 'h5pcc'.
+Please specify --with-hdf5=<LOCATION> as the full path to h5cc or h5pcc.
+HDF5 support is being disabled (equivalent to --with-hdf5=no).
+
+configure: error: hdf5 does not seem to be installed on your platform.
+ERROR: configuration failed for package ‘vol2birdR’
+* removing ‘/nix/store/48a65b7sqsy7cpbk3a2i9dk9cflbm10l-r-vol2birdR-1.0.5/library/vol2birdR’
+error: builder for '/nix/store/4f4a3fym50248sr8j0yabqia0lr9ilq7-r-vol2birdR-1.0.5.drv' failed with exit code 1;
+       last 25 log lines:
+       > checking whether we are cross compiling... no
+       > checking for suffix of object files... o
+       > checking whether the compiler supports GNU C... yes
+       > checking whether clang accepts -g... yes
+       > checking for clang option to enable C11 features... none needed
+       > checking for stdio.h... yes
+       > checking for stdlib.h... yes
+       > checking for string.h... yes
+       > checking for inttypes.h... yes
+       > checking for stdint.h... yes
+       > checking for strings.h... yes
+       > checking for sys/stat.h... yes
+       > checking for sys/types.h... yes
+       > checking for unistd.h... yes
+       > checking for h5cc... no
+       > checking for h5pcc... no
+       > checking for HDF5 libraries... no
+       > configure: WARNING:
+       > Unable to locate HDF5 compilation helper scripts 'h5cc' or 'h5pcc'.
+       > Please specify --with-hdf5=<LOCATION> as the full path to h5cc or h5pcc.
+       > HDF5 support is being disabled (equivalent to --with-hdf5=no).
+       >
+       > configure: error: hdf5 does not seem to be installed on your platform.
+       > ERROR: configuration failed for package ‘vol2birdR’
+       > * removing ‘/nix/store/48a65b7sqsy7cpbk3a2i9dk9cflbm10l-r-vol2birdR-1.0.5/library/vol2birdR’
+       For full logs, run 'nix log /nix/store/4f4a3fym50248sr8j0yabqia0lr9ilq7-r-vol2birdR-1.0.5.drv'.

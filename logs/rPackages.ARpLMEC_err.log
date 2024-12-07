@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/s2z5n4pw9mraxz4fvdz6rs7m2hnhwvm6-r-ARpLMEC-2.4.1.drv
+building '/nix/store/s2z5n4pw9mraxz4fvdz6rs7m2hnhwvm6-r-ARpLMEC-2.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3lsc1q49rzvgrv359g18yd0gx86f1pbr-ARpLMEC_2.4.1.tar.gz
+source root is ARpLMEC
+setting SOURCE_DATE_EPOCH to timestamp 1656287402 of file ARpLMEC/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ARpLMEC’ ...
+** package ‘ARpLMEC’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+sh: line 1: 22839 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-ARpLMEC-2.4.1.drv-0/RtmpyeQGot/file5932538bea78'
+ERROR: lazy loading failed for package ‘ARpLMEC’
+* removing ‘/nix/store/wnlanrldhb359qyqg7vrlbr71dvbzds3-r-ARpLMEC-2.4.1/library/ARpLMEC’
+error: builder for '/nix/store/s2z5n4pw9mraxz4fvdz6rs7m2hnhwvm6-r-ARpLMEC-2.4.1.drv' failed with exit code 1;
+       last 18 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/3lsc1q49rzvgrv359g18yd0gx86f1pbr-ARpLMEC_2.4.1.tar.gz
+       > source root is ARpLMEC
+       > setting SOURCE_DATE_EPOCH to timestamp 1656287402 of file ARpLMEC/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘ARpLMEC’ ...
+       > ** package ‘ARpLMEC’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 22839 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-ARpLMEC-2.4.1.drv-0/RtmpyeQGot/file5932538bea78'
+       > ERROR: lazy loading failed for package ‘ARpLMEC’
+       > * removing ‘/nix/store/wnlanrldhb359qyqg7vrlbr71dvbzds3-r-ARpLMEC-2.4.1/library/ARpLMEC’
+       For full logs, run 'nix log /nix/store/s2z5n4pw9mraxz4fvdz6rs7m2hnhwvm6-r-ARpLMEC-2.4.1.drv'.

@@ -1,0 +1,49 @@
+these 2 derivations will be built:
+  /nix/store/wyy3zrhf0ryxcbafavpa3mq74dbxckkv-IBMPopSim_1.1.0.tar.gz.drv
+  /nix/store/klda9fq2yqzmp8gj358j28mabwk2s36n-r-IBMPopSim-1.1.0.drv
+building '/nix/store/wyy3zrhf0ryxcbafavpa3mq74dbxckkv-IBMPopSim_1.1.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/IBMPopSim_1.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 5158k  100 5158k    0     0  3826k      0  0:00:01  0:00:01 --:--:-- 3826k
+building '/nix/store/klda9fq2yqzmp8gj358j28mabwk2s36n-r-IBMPopSim-1.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b6ml1knx4lc0gl57amyil6xfpwqkv2a8-IBMPopSim_1.1.0.tar.gz
+source root is IBMPopSim
+setting SOURCE_DATE_EPOCH to timestamp 1729002007 of file IBMPopSim/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IBMPopSim’ ...
+** package ‘IBMPopSim’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_tables.cpp -o rcpp_tables.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IBMPopSim.so RcppExports.o rcpp_tables.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/glq268rj77r33h6kcwjsa6vv69yk3bqp-r-IBMPopSim-1.1.0/library/00LOCK-IBMPopSim/00new/IBMPopSim/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IBMPopSim)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IBMPopSim-1.1.0.drv-0/ in /nix/store/glq268rj77r33h6kcwjsa6vv69yk3bqp-r-IBMPopSim-1.1.0...
+patching script interpreter paths in /nix/store/glq268rj77r33h6kcwjsa6vv69yk3bqp-r-IBMPopSim-1.1.0
+rewriting symlink /nix/store/glq268rj77r33h6kcwjsa6vv69yk3bqp-r-IBMPopSim-1.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/glq268rj77r33h6kcwjsa6vv69yk3bqp-r-IBMPopSim-1.1.0

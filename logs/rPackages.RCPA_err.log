@@ -1,0 +1,190 @@
+these 8 derivations will be built:
+  /nix/store/0jiwxc1d7wpp2gr80s0m2hbmprdds8p9-r-geneplotter-1.48.0.drv
+  /nix/store/2z7a2b08700w7f0aw2165i3xc3120829-RCPA_0.2.5.tar.gz.drv
+  /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv
+  /nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv
+  /nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv
+  /nix/store/r8jrhgx178rd925csbrhwb98psw9zvq6-r-DESeq2-1.10.1.drv
+  /nix/store/rjy18swg9xv3xs1s81lagcn1lyihx7p4-r-RobustRankAggreg-1.2.1.drv
+  /nix/store/975nvwldqanwnxvhynasf3j9n47ghp3y-r-RCPA-0.2.5.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/w274ribl65arhq4j4dyncqiwbx647jq6-RobustRankAggreg_1.2.1.tar.gz
+copying path '/nix/store/w274ribl65arhq4j4dyncqiwbx647jq6-RobustRankAggreg_1.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2z7a2b08700w7f0aw2165i3xc3120829-RCPA_0.2.5.tar.gz.drv'...
+building '/nix/store/qnndi09llnng1dwz0f7bclg7ssvn0c24-r-edgeR-3.12.1.drv'...
+building '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'...
+building '/nix/store/jp7fkc7qlwjy3vxz8dx7g5swjqwss4r9-r-genefilter-1.52.1.drv'...
+building '/nix/store/0jiwxc1d7wpp2gr80s0m2hbmprdds8p9-r-geneplotter-1.48.0.drv'...
+
+trying https://cran.r-project.org/src/contrib/RCPA_0.2.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4883k  100 4883k    0     0  5246k      0 --:--:-- --:--:-- --:--:-- 5245k
+Running phase: unpackPhase
+unpacking source archive /nix/store/y5z7r0ff78f66gnmnkiyr9l7171wj8sw-edgeR_3.12.1.tar.gz
+source root is edgeR
+setting SOURCE_DATE_EPOCH to timestamp 1460076787 of file edgeR/src/utils.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘edgeR’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+Running phase: unpackPhase
+unpacking source archive /nix/store/fac79mzcbdrkazwfsyzj2najqw8lik3r-graph_1.48.0.tar.gz
+source root is graph
+setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘graph’ ...
+** using staged installation
+Running phase: unpackPhase
+unpacking source archive /nix/store/nasj7wpna8py8ck226zkspmk2br6niha-genefilter_1.52.1.tar.gz
+building '/nix/store/rjy18swg9xv3xs1s81lagcn1lyihx7p4-r-RobustRankAggreg-1.2.1.drv'...
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_compute_nbdev.cpp -o R_compute_nbdev.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_cr_adjust.cpp -o R_cr_adjust.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_exact_test_by_deviance.cpp -o R_exact_test_by_deviance.o
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+source root is genefilter
+setting SOURCE_DATE_EPOCH to timestamp 1453944267 of file genefilter/src/ttest.f
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_levenberg.cpp -o R_levenberg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_loess_by_col.cpp -o R_loess_by_col.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_maximize_interpolant.cpp -o R_maximize_interpolant.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_one_group.cpp -o R_one_group.o
+Running phase: unpackPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_process_hairpin_reads.c -o R_process_hairpin_reads.o
+unpacking source archive /nix/store/dcrhap7kqkri2fkf5sp6n1g41brc7a1z-geneplotter_1.48.0.tar.gz
+source root is geneplotter
+setting SOURCE_DATE_EPOCH to timestamp 1444782746 of file geneplotter/inst/doc/visualize.pdf
+R_process_hairpin_reads.c:464:52: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+      Rprintf(" -- Processing %d million reads\n", (num_read_thisfile / BLOCKSIZE + 1) * 10);
+                              ~~                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              %ld
+Running phase: patchPhase
+Running phase: unpackPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+unpacking source archive /nix/store/w274ribl65arhq4j4dyncqiwbx647jq6-RobustRankAggreg_1.2.1.tar.gz
+Running phase: configurePhase
+source root is RobustRankAggreg
+Running phase: buildPhase
+setting SOURCE_DATE_EPOCH to timestamp 1664795402 of file RobustRankAggreg/MD5
+Running phase: checkPhase
+Running phase: patchPhase
+Running phase: installPhase
+* installing *source* package ‘genefilter’ ...
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** using staged installation
+** libs
+Running phase: configurePhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c half_range_mode.cpp -o half_range_mode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c nd.c -o nd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pAUC.c -o pAUC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowPAUCs.c -o rowPAUCs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rowttests.c -o rowttests.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c ttest.f -o ttest.o
+nd.c:24:10: fatal error: 'S.h' file not found
+#include "S.h"
+         ^~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: nd.o] Error 1
+make: *** Attente des tâches non terminées....
+mv graph.so BioC_graph.so
+installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+rowttests.c:172:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:172:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+rowttests.c:181:14: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]
+              error(errmsg);
+                    ^~~~~~
+rowttests.c:181:14: note: treat the string as an argument to avoid this
+              error(errmsg);
+                    ^
+                    "%s", 
+2 errors generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:195: rowttests.o] Error 1
+* installing *source* package ‘geneplotter’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+* installing *source* package ‘RobustRankAggreg’ ...
+** package ‘RobustRankAggreg’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+1 warning generated.
+** data
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c R_simple_good_turing.cpp -o R_simple_good_turing.o
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c adj_coxreid.cpp -o adj_coxreid.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fmm_spline.c -o fmm_spline.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c glm_levenberg.cpp -o glm_levenberg.o
+Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘graph’
+* removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+error: builder for '/nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > source root is graph
+       > setting SOURCE_DATE_EPOCH to timestamp 1444782779 of file graph/src/graph.c
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘graph’ ...
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c graph.c -o graph.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o graph.so graph.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > mv graph.so BioC_graph.so
+       > installing to /nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/00LOCK-graph/00new/graph/libs
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur : l'objet ‘CRAN.packages’ n'est pas exporté par 'namespace:utils'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘graph’
+       > * removing ‘/nix/store/dn3q7vlas7hc9gw697b7941h9g5xa3md-r-graph-1.48.0/library/graph’
+       For full logs, run 'nix log /nix/store/h9abzvfc47avbwks5kv9l7pf7zg764v6-r-graph-1.48.0.drv'.
+error: 1 dependencies of derivation '/nix/store/975nvwldqanwnxvhynasf3j9n47ghp3y-r-RCPA-0.2.5.drv' failed to build

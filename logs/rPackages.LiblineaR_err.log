@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/p8k1pgq1d1a38w0mxsnl7w11c77i9f48-LiblineaR_2.10-24.tar.gz.drv
+  /nix/store/l12zljr1xh9nzwidnj9q39pg5v2c1xin-r-LiblineaR-2.10-24.drv
+building '/nix/store/p8k1pgq1d1a38w0mxsnl7w11c77i9f48-LiblineaR_2.10-24.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/LiblineaR_2.10-24.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 48172  100 48172    0     0   350k      0 --:--:-- --:--:-- --:--:--  351k
+building '/nix/store/l12zljr1xh9nzwidnj9q39pg5v2c1xin-r-LiblineaR-2.10-24.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nk6y0hv4fpwdv3jxgn0sqn5y00rgk6kh-LiblineaR_2.10-24.tar.gz
+source root is LiblineaR
+setting SOURCE_DATE_EPOCH to timestamp 1726229407 of file LiblineaR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LiblineaR’ ...
+** package ‘LiblineaR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c linear.cpp -o linear.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c predictLinear.c -o predictLinear.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c trainLinear.c -o trainLinear.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tron.cpp -o tron.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LiblineaR.so init.o linear.o predictLinear.o trainLinear.o tron.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ilafl37c5f9r05p78xglv39fh3q1c816-r-LiblineaR-2.10-24/library/00LOCK-LiblineaR/00new/LiblineaR/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LiblineaR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LiblineaR-2.10-24.drv-0/ in /nix/store/ilafl37c5f9r05p78xglv39fh3q1c816-r-LiblineaR-2.10-24...
+patching script interpreter paths in /nix/store/ilafl37c5f9r05p78xglv39fh3q1c816-r-LiblineaR-2.10-24

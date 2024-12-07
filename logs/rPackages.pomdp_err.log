@@ -1,0 +1,167 @@
+these 2 derivations will be built:
+  /nix/store/f6v43sb2xg378rcdp6gwcz3y3ds88fi2-r-pomdpSolve-1.0.4.drv
+  /nix/store/7h9f3jkcwil52nl2nl0k51z4frpkvgkk-r-pomdp-1.2.3.drv
+these 2 paths will be fetched (1.15 MiB download, 1.15 MiB unpacked):
+  /nix/store/bjjlpi448895jw9f89fs8wvlanygaly6-pomdpSolve_1.0.4.tar.gz
+  /nix/store/dc103slqysblblq6qxzjcy4kv2yxwpvg-pomdp_1.2.3.tar.gz
+copying path '/nix/store/dc103slqysblblq6qxzjcy4kv2yxwpvg-pomdp_1.2.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/bjjlpi448895jw9f89fs8wvlanygaly6-pomdpSolve_1.0.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/f6v43sb2xg378rcdp6gwcz3y3ds88fi2-r-pomdpSolve-1.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bjjlpi448895jw9f89fs8wvlanygaly6-pomdpSolve_1.0.4.tar.gz
+source root is pomdpSolve
+setting SOURCE_DATE_EPOCH to timestamp 1693509602 of file pomdpSolve/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pomdpSolve’ ...
+** package ‘pomdpSolve’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+(cd pomdp-solve && CXX="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17" CC="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc" CFLAGS="-g -O2  -fPIC" CXXFLAGS="-g -O2 " AR="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar" RANLIB="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib" make clean)
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/mdp »
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/mdp »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/lp-solve »
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/lp-solve »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/laspack »
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/laspack »
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve »
+(cd pomdp-solve && CXX="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17" CC="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc" CFLAGS="-g -O2  -fPIC" CXXFLAGS="-g -O2 " AR="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar" RANLIB="/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib" make)
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o alpha.o alpha.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o belief.o belief.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o cmd-line.o cmd-line.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o common.o common.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o cross-sum.o cross-sum.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o enumeration.o enumeration.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o finite-grid.o finite-grid.c
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/mdp »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o parser.o parser.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o scanner.o scanner.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o imm-reward.o imm-reward.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o global.o global.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o parse_err.o parse_err.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o sparse-matrix.o sparse-matrix.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o inc-prune.o inc-prune.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o mdp.o mdp.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o linear-support.o linear-support.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o parse_hash.o parse_hash.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o lp-interface.o lp-interface.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o neighbor.o neighbor.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o pomdp-solve-options.o pomdp-solve-options.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o params.o params.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o parsimonious.o parsimonious.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o pg.o pg.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar -rcs libmdp.a parser.o scanner.o imm-reward.o parse_err.o sparse-matrix.o mdp.o parse_hash.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o pomdp.o pomdp.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o pomdp-solve.o pomdp-solve.c
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/mdp »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/lp-solve »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o y.tab.o y.tab.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o projection.o projection.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o random.o random.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o lex.yy.o lex.yy.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o debug.o debug.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o region.o region.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o signal-handler.o signal-handler.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o hash.o hash.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o stats.o stats.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o timing.o timing.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o lpkit.o lpkit.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o two-pass.o two-pass.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o presolve.o presolve.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o read.o read.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o solve.o solve.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o vertex-enum.o vertex-enum.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o witness.o witness.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o xalloc.o xalloc.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o zlz_speedup.o zlz_speedup.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o sim.o sim.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o mcgs.o mcgs.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o associative-array.o associative-array.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o command-line.o command-line.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o config-file.o config-file.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o program-options.o program-options.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC   -c -o main.o main.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar -rcs ./liblp-solve.a y.tab.o lex.yy.o debug.o hash.o lpkit.o presolve.o read.o solve.o
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/lp-solve »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/laspack »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o eigenval.o eigenval.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o matrix.o matrix.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o qmatrix.o qmatrix.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o errhandl.o errhandl.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o mlsolv.o mlsolv.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o rtc.o rtc.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o factor.o factor.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o operats.o operats.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o vector.o vector.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o itersolv.o itersolv.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC    -c -o precond.o precond.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar -rcs ./liblaspack.a eigenval.o matrix.o qmatrix.o errhandl.o mlsolv.o rtc.o factor.o operats.o vector.o itersolv.o precond.o
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve/laspack »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2  -fPIC -L./mdp -L./lp-solve -L./laspack alpha.o belief.o cmd-line.o common.o cross-sum.o enumeration.o finite-grid.o global.o inc-prune.o linear-support.o lp-interface.o neighbor.o pomdp-solve-options.o params.o parsimonious.o pg.o pomdp.o pomdp-solve.o projection.o random.o region.o signal-handler.o stats.o timing.o two-pass.o vertex-enum.o witness.o xalloc.o zlz_speedup.o sim.o mcgs.o associative-array.o command-line.o config-file.o program-options.o main.o -o pomdp-solve -lm -lmdp -llp-solve -llaspack
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/pomdpSolve/src/pomdp-solve »
+installing via 'install.libs.R' to /nix/store/ci1hxdsafv9g7lgphamhq0qy9k5gzxw4-r-pomdpSolve-1.0.4/library/00LOCK-pomdpSolve/00new/pomdpSolve
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pomdpSolve)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pomdpSolve-1.0.4.drv-0/ in /nix/store/ci1hxdsafv9g7lgphamhq0qy9k5gzxw4-r-pomdpSolve-1.0.4...
+patching script interpreter paths in /nix/store/ci1hxdsafv9g7lgphamhq0qy9k5gzxw4-r-pomdpSolve-1.0.4
+building '/nix/store/7h9f3jkcwil52nl2nl0k51z4frpkvgkk-r-pomdp-1.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dc103slqysblblq6qxzjcy4kv2yxwpvg-pomdp_1.2.3.tar.gz
+source root is pomdp
+setting SOURCE_DATE_EPOCH to timestamp 1714943406 of file pomdp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pomdp’ ...
+** package ‘pomdp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c POMDP.cpp -o POMDP.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c math.cpp -o math.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c model.cpp -o model.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c sample_simplex.cpp -o sample_simplex.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c simulate_MDP.cpp -o simulate_MDP.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c simulate_POMDP.cpp -o simulate_POMDP.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pomdp.so POMDP.o RcppExports.o math.o model.o sample_simplex.o simulate_MDP.o simulate_POMDP.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/r8qwapijba4vm0mlf96573j1kcqldp06-r-pomdp-1.2.3/library/00LOCK-pomdp/00new/pomdp/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pomdp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pomdp-1.2.3.drv-0/ in /nix/store/r8qwapijba4vm0mlf96573j1kcqldp06-r-pomdp-1.2.3...
+patching script interpreter paths in /nix/store/r8qwapijba4vm0mlf96573j1kcqldp06-r-pomdp-1.2.3
+rewriting symlink /nix/store/r8qwapijba4vm0mlf96573j1kcqldp06-r-pomdp-1.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/r8qwapijba4vm0mlf96573j1kcqldp06-r-pomdp-1.2.3

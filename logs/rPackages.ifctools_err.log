@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/mx2yzps89pxhx2v3902l8vmjrkbkw13k-r-ifctools-0.3.6.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/bp6b8m78z2xd5xkiraip9fkjyha1pdxy-ifctools_0.3.6.tar.gz
+copying path '/nix/store/bp6b8m78z2xd5xkiraip9fkjyha1pdxy-ifctools_0.3.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mx2yzps89pxhx2v3902l8vmjrkbkw13k-r-ifctools-0.3.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bp6b8m78z2xd5xkiraip9fkjyha1pdxy-ifctools_0.3.6.tar.gz
+source root is ifctools
+setting SOURCE_DATE_EPOCH to timestamp 1693219805 of file ifctools/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ifctools’ ...
+** package ‘ifctools’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ifctools_init.c -o ifctools_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c reg_check_digit.c -o reg_check_digit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c reg_guess_fc.c -o reg_guess_fc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c reg_guess_fc_worker.c -o reg_guess_fc_worker.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c reg_wrong_fc.c -o reg_wrong_fc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tmp_check_digit.c -o tmp_check_digit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c tmp_wrong_fc.c -o tmp_wrong_fc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ifctools.so ifctools_init.o reg_check_digit.o reg_guess_fc.o reg_guess_fc_worker.o reg_wrong_fc.o tmp_check_digit.o tmp_wrong_fc.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/hnb3h53j6jml7ggqy9ba4fbvymaf6r04-r-ifctools-0.3.6/library/00LOCK-ifctools/00new/ifctools/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ifctools)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ifctools-0.3.6.drv-0/ in /nix/store/hnb3h53j6jml7ggqy9ba4fbvymaf6r04-r-ifctools-0.3.6...
+patching script interpreter paths in /nix/store/hnb3h53j6jml7ggqy9ba4fbvymaf6r04-r-ifctools-0.3.6

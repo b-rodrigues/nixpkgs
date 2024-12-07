@@ -1,0 +1,67 @@
+these 2 derivations will be built:
+  /nix/store/yan6a5r9ip7h60licscgqm7zl7hdmff2-r-HMMpa-1.0.1.drv
+  /nix/store/rlvdggi9k19w1yjz8k7rbq9qs7z101p2-r-coconots-1.1.3.drv
+building '/nix/store/yan6a5r9ip7h60licscgqm7zl7hdmff2-r-HMMpa-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7x81v3vplfpif7995riv77zlkb2rsiw4-HMMpa_1.0.1.tar.gz
+source root is HMMpa
+setting SOURCE_DATE_EPOCH to timestamp 1542272403 of file HMMpa/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘HMMpa’ ...
+** package ‘HMMpa’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (HMMpa)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-HMMpa-1.0.1.drv-0/ in /nix/store/q8m66b95vdvf23l56lhrapmzghk0adw5-r-HMMpa-1.0.1...
+patching script interpreter paths in /nix/store/q8m66b95vdvf23l56lhrapmzghk0adw5-r-HMMpa-1.0.1
+building '/nix/store/rlvdggi9k19w1yjz8k7rbq9qs7z101p2-r-coconots-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6ap5dj7xcvj6b1cnw4kfklsfpwl5h1vq-coconots_1.1.3.tar.gz
+source root is coconots
+setting SOURCE_DATE_EPOCH to timestamp 1696173002 of file coconots/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘coconots’ ...
+** package ‘coconots’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/b50zcqfh41vjv73m6w30ccs2zs05hgxy-r-StanHeaders-2.32.10/library/StanHeaders/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cfunctions.cpp -o cfunctions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o coconots.so RcppExports.o cfunctions.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/czaiix62nzf1qnfnawbc9rgxxq7c7n80-r-coconots-1.1.3/library/00LOCK-coconots/00new/coconots/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (coconots)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-coconots-1.1.3.drv-0/ in /nix/store/czaiix62nzf1qnfnawbc9rgxxq7c7n80-r-coconots-1.1.3...
+patching script interpreter paths in /nix/store/czaiix62nzf1qnfnawbc9rgxxq7c7n80-r-coconots-1.1.3
+rewriting symlink /nix/store/czaiix62nzf1qnfnawbc9rgxxq7c7n80-r-coconots-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/czaiix62nzf1qnfnawbc9rgxxq7c7n80-r-coconots-1.1.3

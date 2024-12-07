@@ -1,0 +1,116 @@
+these 4 derivations will be built:
+  /nix/store/0wfvxah7niisz2chmxwd9zxj650z3xng-r-scDIFtest-0.1.1.drv
+  /nix/store/248wy804slk2hp50p2ky71sm6zakhm2r-mstDIF_0.1.8.tar.gz.drv
+  /nix/store/cab5k9dalv61jifyacli343cbsf4vxv6-r-PP-0.6.3-11.drv
+  /nix/store/mimrji37dcizh3id7jnc53vdac3mgn5p-r-mstDIF-0.1.8.drv
+these 2 paths will be fetched (0.43 MiB download, 0.43 MiB unpacked):
+  /nix/store/vcb2fccskxrs4lwmqhbilyiy5nk93pb4-PP_0.6.3-11.tar.gz
+  /nix/store/2nxm98dcipmp68xr1ga1wv039m8dscva-scDIFtest_0.1.1.tar.gz
+copying path '/nix/store/vcb2fccskxrs4lwmqhbilyiy5nk93pb4-PP_0.6.3-11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/2nxm98dcipmp68xr1ga1wv039m8dscva-scDIFtest_0.1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/248wy804slk2hp50p2ky71sm6zakhm2r-mstDIF_0.1.8.tar.gz.drv'...
+building '/nix/store/0wfvxah7niisz2chmxwd9zxj650z3xng-r-scDIFtest-0.1.1.drv'...
+
+trying https://cran.r-project.org/src/contrib/mstDIF_0.1.8.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+building '/nix/store/cab5k9dalv61jifyacli343cbsf4vxv6-r-PP-0.6.3-11.drv'...
+100 84278  100 84278    0     0   621k      0 --:--:-- --:--:-- --:--:--  623k
+Running phase: unpackPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/2nxm98dcipmp68xr1ga1wv039m8dscva-scDIFtest_0.1.1.tar.gz
+unpacking source archive /nix/store/vcb2fccskxrs4lwmqhbilyiy5nk93pb4-PP_0.6.3-11.tar.gz
+source root is scDIFtest
+source root is PP
+setting SOURCE_DATE_EPOCH to timestamp 1593674403 of file scDIFtest/MD5
+setting SOURCE_DATE_EPOCH to timestamp 1622113802 of file PP/MD5
+Running phase: patchPhase
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: installPhase
+* installing *source* package ‘scDIFtest’ ...
+** package ‘scDIFtest’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+* installing *source* package ‘PP’ ...
+** package ‘PP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c GPCM4PL_stuff.cpp -o GPCM4PL_stuff.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c helper_func.cpp -o helper_func.o
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (scDIFtest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-scDIFtest-0.1.1.drv-0/ in /nix/store/wr37c2qvhn76f975s1qkhnhxbb55ll75-r-scDIFtest-0.1.1...
+patching script interpreter paths in /nix/store/wr37c2qvhn76f975s1qkhnhxbb55ll75-r-scDIFtest-0.1.1
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PP.so GPCM4PL_stuff.o RcppExports.o helper_func.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+rewriting symlink /nix/store/wr37c2qvhn76f975s1qkhnhxbb55ll75-r-scDIFtest-0.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/wr37c2qvhn76f975s1qkhnhxbb55ll75-r-scDIFtest-0.1.1
+installing to /nix/store/f44171avxsrr4ahvy71gaij67aa675ia-r-PP-0.6.3-11/library/00LOCK-PP/00new/PP/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PP-0.6.3-11.drv-0/ in /nix/store/f44171avxsrr4ahvy71gaij67aa675ia-r-PP-0.6.3-11...
+patching script interpreter paths in /nix/store/f44171avxsrr4ahvy71gaij67aa675ia-r-PP-0.6.3-11
+rewriting symlink /nix/store/f44171avxsrr4ahvy71gaij67aa675ia-r-PP-0.6.3-11/nix-support/propagated-user-env-packages to be relative to /nix/store/f44171avxsrr4ahvy71gaij67aa675ia-r-PP-0.6.3-11
+building '/nix/store/mimrji37dcizh3id7jnc53vdac3mgn5p-r-mstDIF-0.1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vm4ap5gh1181f8kx3wcg5fjwgmmkvqa8-mstDIF_0.1.8.tar.gz
+source root is mstDIF
+setting SOURCE_DATE_EPOCH to timestamp 1725016203 of file mstDIF/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mstDIF’ ...
+** package ‘mstDIF’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mstDIF)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mstDIF-0.1.8.drv-0/ in /nix/store/6z0rqf29qa31gjhvxyj50v85sh20bxij-r-mstDIF-0.1.8...
+patching script interpreter paths in /nix/store/6z0rqf29qa31gjhvxyj50v85sh20bxij-r-mstDIF-0.1.8
+rewriting symlink /nix/store/6z0rqf29qa31gjhvxyj50v85sh20bxij-r-mstDIF-0.1.8/nix-support/propagated-user-env-packages to be relative to /nix/store/6z0rqf29qa31gjhvxyj50v85sh20bxij-r-mstDIF-0.1.8

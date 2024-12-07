@@ -1,0 +1,41 @@
+this derivation will be built:
+  /nix/store/45aklx36j41brs65qr9rciw5njqwcni5-r-qGaussian-0.1.8.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/m241a0zwk3cw9zhmdaiymwsnfrhrj5lf-qGaussian_0.1.8.tar.gz
+copying path '/nix/store/m241a0zwk3cw9zhmdaiymwsnfrhrj5lf-qGaussian_0.1.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/45aklx36j41brs65qr9rciw5njqwcni5-r-qGaussian-0.1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/m241a0zwk3cw9zhmdaiymwsnfrhrj5lf-qGaussian_0.1.8.tar.gz
+source root is qGaussian
+setting SOURCE_DATE_EPOCH to timestamp 1531421406 of file qGaussian/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘qGaussian’ ...
+** package ‘qGaussian’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Sato.cpp -o Sato.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c registerDynamicSymbol.cpp -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o qGaussian.so RcppExports.o Sato.o registerDynamicSymbol.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/mny327yhg8pgvkyyc5plh95ip3nm4vcw-r-qGaussian-0.1.8/library/00LOCK-qGaussian/00new/qGaussian/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (qGaussian)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-qGaussian-0.1.8.drv-0/ in /nix/store/mny327yhg8pgvkyyc5plh95ip3nm4vcw-r-qGaussian-0.1.8...
+patching script interpreter paths in /nix/store/mny327yhg8pgvkyyc5plh95ip3nm4vcw-r-qGaussian-0.1.8
+rewriting symlink /nix/store/mny327yhg8pgvkyyc5plh95ip3nm4vcw-r-qGaussian-0.1.8/nix-support/propagated-user-env-packages to be relative to /nix/store/mny327yhg8pgvkyyc5plh95ip3nm4vcw-r-qGaussian-0.1.8

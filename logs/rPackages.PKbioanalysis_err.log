@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/hn4wbmi2grq3qlmlgdqmlzk2znp2z794-PKbioanalysis_0.2.0.tar.gz.drv
+  /nix/store/x9awadp163ranixllvyp3x2wkybdjd2x-r-PKbioanalysis-0.2.0.drv
+building '/nix/store/hn4wbmi2grq3qlmlgdqmlzk2znp2z794-PKbioanalysis_0.2.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/PKbioanalysis_0.2.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  577k  100  577k    0     0  2468k      0 --:--:-- --:--:-- --:--:-- 2468k
+building '/nix/store/x9awadp163ranixllvyp3x2wkybdjd2x-r-PKbioanalysis-0.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vv769hbfn4w3v2s93zg9ffax3yq5s2ar-PKbioanalysis_0.2.0.tar.gz
+source root is PKbioanalysis
+setting SOURCE_DATE_EPOCH to timestamp 1727902801 of file PKbioanalysis/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PKbioanalysis’ ...
+** package ‘PKbioanalysis’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis dans normalizePath("~") :
+  path[1]="/homeless-shelter": No such file or directory
+Avis dans dir.create(file.path(PKbioanalysis_env$data_dir, "plates_cache"),  :
+  impossible de créer le répertoire '/homeless-shelter/Library', à cause de 'No such file or directory'
+** testing if installed package can be loaded from final location
+Avis dans normalizePath("~") :
+  path[1]="/homeless-shelter": No such file or directory
+Avis dans dir.create(file.path(PKbioanalysis_env$data_dir, "plates_cache"),  :
+  impossible de créer le répertoire '/homeless-shelter/Library', à cause de 'No such file or directory'
+** testing if installed package keeps a record of temporary installation path
+* DONE (PKbioanalysis)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PKbioanalysis-0.2.0.drv-0/ in /nix/store/q61i8n9g46rrkqkfk7v8xzc2kksbxmkv-r-PKbioanalysis-0.2.0...
+patching script interpreter paths in /nix/store/q61i8n9g46rrkqkfk7v8xzc2kksbxmkv-r-PKbioanalysis-0.2.0
+rewriting symlink /nix/store/q61i8n9g46rrkqkfk7v8xzc2kksbxmkv-r-PKbioanalysis-0.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/q61i8n9g46rrkqkfk7v8xzc2kksbxmkv-r-PKbioanalysis-0.2.0

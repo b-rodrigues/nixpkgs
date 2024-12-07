@@ -1,0 +1,60 @@
+this derivation will be built:
+  /nix/store/pxcfinbzbrr7z4xvg7m17m8xj9hnvw8j-r-giacR-1.0.1.drv
+building '/nix/store/pxcfinbzbrr7z4xvg7m17m8xj9hnvw8j-r-giacR-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/acs6addgna0n4f1blybfyzpbw9v82jpk-giacR_1.0.1.tar.gz
+source root is giacR
+setting SOURCE_DATE_EPOCH to timestamp 1714335002 of file giacR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘giacR’ ...
+** package ‘giacR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Avis dans download.file(url = giac_url, destfile = temp_file, mode = "wb",  :
+  URL 'https://www-fourier.univ-grenoble-alpes.fr/~parisse/giacwasm.js': statut 'SSL connect error'
+Error: le chargement du package ou de l'espace de noms a échoué pour ‘giacR’ :
+.onLoad a échoué dans loadNamespace() pour 'giacR', détails :
+  appel : download.file(url = giac_url, destfile = temp_file, mode = "wb", 
+  erreur : impossible d'ouvrir l'URL 'https://www-fourier.univ-grenoble-alpes.fr/~parisse/giacwasm.js'
+Erreur : le chargement a échoué
+Exécution arrêtée
+ERROR: loading failed
+* removing ‘/nix/store/zp77idpp1c63n8zzwi63znccinnf5j9y-r-giacR-1.0.1/library/giacR’
+error: builder for '/nix/store/pxcfinbzbrr7z4xvg7m17m8xj9hnvw8j-r-giacR-1.0.1.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘giacR’ ...
+       > ** package ‘giacR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** byte-compile and prepare package for lazy loading
+       > ** help
+       > *** installing help indices
+       > ** building package indices
+       > ** testing if installed package can be loaded from temporary location
+       > Avis dans download.file(url = giac_url, destfile = temp_file, mode = "wb",  :
+       >   URL 'https://www-fourier.univ-grenoble-alpes.fr/~parisse/giacwasm.js': statut 'SSL connect error'
+       > Error: le chargement du package ou de l'espace de noms a échoué pour ‘giacR’ :
+       > .onLoad a échoué dans loadNamespace() pour 'giacR', détails :
+       >   appel : download.file(url = giac_url, destfile = temp_file, mode = "wb",
+       >   erreur : impossible d'ouvrir l'URL 'https://www-fourier.univ-grenoble-alpes.fr/~parisse/giacwasm.js'
+       > Erreur : le chargement a échoué
+       > Exécution arrêtée
+       > ERROR: loading failed
+       > * removing ‘/nix/store/zp77idpp1c63n8zzwi63znccinnf5j9y-r-giacR-1.0.1/library/giacR’
+       For full logs, run 'nix log /nix/store/pxcfinbzbrr7z4xvg7m17m8xj9hnvw8j-r-giacR-1.0.1.drv'.

@@ -1,0 +1,110 @@
+these 2 derivations will be built:
+  /nix/store/wv48j8anm6vspbvzldydmaycxmzip13s-repeated_1.1.10.tar.gz.drv
+  /nix/store/cpinqp6n9c24zbp1sk49q703wya8pl1s-r-repeated-1.1.10.drv
+building '/nix/store/wv48j8anm6vspbvzldydmaycxmzip13s-repeated_1.1.10.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/repeated_1.1.10.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  255k  100  255k    0     0  1293k      0 --:--:-- --:--:-- --:--:-- 1290k
+building '/nix/store/cpinqp6n9c24zbp1sk49q703wya8pl1s-r-repeated-1.1.10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/83n6w9sw5x70d26d85zhsfy93sl19vak-repeated_1.1.10.tar.gz
+source root is repeated
+setting SOURCE_DATE_EPOCH to timestamp 1727908811 of file repeated/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘repeated’ ...
+** package ‘repeated’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c binnest.f -o binnest.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c calcs.c -o calcs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c calcs1.c -o calcs1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c calcs2.c -o calcs2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c calcs3.c -o calcs3.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c calcs4.c -o calcs4.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c chidden.f -o chidden.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cphidden.f -o cphidden.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c cutil.c -o cutil.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dist.c -o dist.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c eigen.f -o eigen.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c gaps.c -o gaps.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c gar.c -o gar.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c gausscop.f -o gausscop.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c hidden.f -o hidden.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c kcountb.c -o kcountb.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c kserieb.c -o kserieb.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c logitord.f -o logitord.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c repeated_init.c -o repeated_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c romberg_sexp.c -o romberg_sexp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o repeated.so binnest.o calcs.o calcs1.o calcs2.o calcs3.o calcs4.o chidden.o cphidden.o cutil.o dist.o eigen.o gaps.o gar.o gausscop.o hidden.o kcountb.o kserieb.o logitord.o repeated_init.o romberg_sexp.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _calcbn2_: does not use standard frame
+ld: warning: could not create compact unwind for _calcbn_: does not use standard frame
+ld: warning: could not create compact unwind for _conminbn_: does not use standard frame
+ld: warning: could not create compact unwind for _binnest_f_: does not use standard frame
+ld: warning: could not create compact unwind for _cphidden_f_: does not use standard frame
+ld: warning: could not create compact unwind for _cmpcorr_: does not use standard frame
+ld: warning: could not create compact unwind for _gcopula_f_: does not use standard frame
+ld: warning: could not create compact unwind for _studpr_: does not use standard frame
+ld: warning: could not create compact unwind for _slaplpr_: does not use standard frame
+ld: warning: could not create compact unwind for _powexpr_: does not use standard frame
+ld: warning: could not create compact unwind for _ginvgpr_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _formul2_: does not use standard frame
+could not create compact unwind for _tred2_: does not use standard frame
+ld: warning: could not create compact unwind for _tred1_: does not use standard frame
+ld: warning: could not create compact unwind for _hqr2_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _hqr_: registers 27 and 28 not saved contiguously in framecould not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _ggampr_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _geigen_: does not use standard framecould not create compact unwind for _calcfg2_: does not use standard frame
+
+ld: warning: could not create compact unwind for _gammpr_: does not use standard frame
+ld: warning: could not create compact unwind for _nbinpr_: does not use standard frame
+ld: warning: could not create compact unwind for _bbinpr_: does not use standard frame
+ld: warning: could not create compact unwind for _binpr_: does not use standard frame
+ld: warning: could not create compact unwind for _proppr_: does not use standard frame
+ld: warning: could not create compact unwind for _contpr_: does not use standard frame
+ld: warning: could not create compact unwind for _cmultpr_: does not use standard frame
+ld: warning: could not create compact unwind for _multpr_: does not use standard frame
+ld: warning: 
+could not create compact unwind for _formul_: does not use standard frame
+ld: warning: could not create compact unwind for _calcfg_: does not use standard frame
+could not create compact unwind for _elmhes_: registers 21 and 22 not saved contiguously in frameld: warning: could not create compact unwind for _deltas_: does not use standard frame
+ld: warning: could not create compact unwind for _hidden_f_: does not use standard frame
+
+ld: warning: could not create compact unwind for _tql2_: does not use standard frame
+ld: warning: could not create compact unwind for _chidden_f_: does not use standard frame
+ld: warning: could not create compact unwind for _conmin_: does not use standard frame
+ld: warning: could not create compact unwind for _logitord_f_: does not use standard frame
+ld: warning: could not create compact unwind for _corth_: does not use standard frame
+ld: warning: could not create compact unwind for _tqlrat_: does not use standard frame
+ld: warning: could not create compact unwind for _comqr2_: does not use standard frame
+ld: warning: could not create compact unwind for _comqr_: does not use standard frame
+ld: warning: could not create compact unwind for _tql1_: does not use standard frame
+ld: warning: could not create compact unwind for _rg_: does not use standard frame
+ld: warning: could not create compact unwind for _cg_: does not use standard frame
+installing to /nix/store/wzgzixq0cc7ya3k30d9rshfshjgjk4i1-r-repeated-1.1.10/library/00LOCK-repeated/00new/repeated/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (repeated)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-repeated-1.1.10.drv-0/ in /nix/store/wzgzixq0cc7ya3k30d9rshfshjgjk4i1-r-repeated-1.1.10...
+patching script interpreter paths in /nix/store/wzgzixq0cc7ya3k30d9rshfshjgjk4i1-r-repeated-1.1.10
+rewriting symlink /nix/store/wzgzixq0cc7ya3k30d9rshfshjgjk4i1-r-repeated-1.1.10/nix-support/propagated-user-env-packages to be relative to /nix/store/wzgzixq0cc7ya3k30d9rshfshjgjk4i1-r-repeated-1.1.10

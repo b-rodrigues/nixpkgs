@@ -1,0 +1,168 @@
+these 4 derivations will be built:
+  /nix/store/r7sw26zvj3dn3pqv02hfvi8383gx95lf-LaMa_2.0.2.tar.gz.drv
+  /nix/store/ds0gvj1nv1jhqkkhvcbzlg60qgagcn2m-RTMB_1.6.tar.gz.drv
+  /nix/store/y6yh01fzkw1a8m2qs6wibw2j2wakq3va-r-RTMB-1.6.drv
+  /nix/store/30sby3j0jrsdz9zx3kxrv8vw13bf2rw2-r-LaMa-2.0.2.drv
+building '/nix/store/r7sw26zvj3dn3pqv02hfvi8383gx95lf-LaMa_2.0.2.tar.gz.drv'...
+building '/nix/store/ds0gvj1nv1jhqkkhvcbzlg60qgagcn2m-RTMB_1.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/LaMa_2.0.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/RTMB_1.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3143k  100 3143k    0     0  4527k      0 --:--:-- --:--:-- --:--:-- 4522k
+100  525k  100  525k    0     0   761k      0 --:--:-- --:--:-- --:--:--  761k
+building '/nix/store/y6yh01fzkw1a8m2qs6wibw2j2wakq3va-r-RTMB-1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/wphy858gpyh5q4fhwmypvr4m56yn8kxb-RTMB_1.6.tar.gz
+source root is RTMB
+setting SOURCE_DATE_EPOCH to timestamp 1726077602 of file RTMB/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RTMB’ ...
+** package ‘RTMB’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RTMB.cpp -o RTMB.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RTMB_tape.cpp -o RTMB_tape.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c TMB.cpp -o TMB.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions.cpp -o distributions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c interpol.cpp -o interpol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lapack.cpp -o lapack.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c math.cpp -o math.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c math_complex.cpp -o math_complex.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c misc.cpp -o misc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DTMB_EIGEN_DISABLE_WARNINGS -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c poshess.cpp -o poshess.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RTMB.so RTMB.o RTMB_tape.o RcppExports.o TMB.o distributions.o interpol.o lapack.o math.o math_complex.o misc.o poshess.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/qkn81brxl7yzazwm27x9fchqna38r4zz-r-RTMB-1.6/library/00LOCK-RTMB/00new/RTMB/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘fft’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘colSums’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘rowSums’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘diag’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dexp’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dweibull’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dbinom’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dbeta’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘df’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dlogis’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dt’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dnbinom’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dpois’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dgamma’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘pnorm’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘pgamma’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘ppois’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘pexp’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘pweibull’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘pbeta’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘qnorm’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘qgamma’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘qexp’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘qweibull’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘qbeta’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘besselK’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘besselI’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘besselJ’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘besselY’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘eigen’ du package ‘base’ dans package ‘RTMB’
+Création d'une fonction générique pour ‘svd’ à partir de ‘base’ dans package ‘RTMB’
+    (à partir de la définition implicite sauvegardée)
+Une nouvelle fonction générique est créée pour ‘svd’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘cov2cor’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dnorm’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dlnorm’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘plogis’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘qlogis’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘matrix’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘apply’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘sapply’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘ifelse’ du package ‘base’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘pbinom’ du package ‘stats’ dans package ‘RTMB’
+Une nouvelle fonction générique est créée pour ‘dmultinom’ du package ‘stats’ dans package ‘RTMB’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (RTMB)
+installPhase completed in 50 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RTMB-1.6.drv-0/ in /nix/store/qkn81brxl7yzazwm27x9fchqna38r4zz-r-RTMB-1.6...
+patching script interpreter paths in /nix/store/qkn81brxl7yzazwm27x9fchqna38r4zz-r-RTMB-1.6
+rewriting symlink /nix/store/qkn81brxl7yzazwm27x9fchqna38r4zz-r-RTMB-1.6/nix-support/propagated-user-env-packages to be relative to /nix/store/qkn81brxl7yzazwm27x9fchqna38r4zz-r-RTMB-1.6
+building '/nix/store/30sby3j0jrsdz9zx3kxrv8vw13bf2rw2-r-LaMa-2.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qfxrvmp03yssqdyayl6s3ig1945g1l2j-LaMa_2.0.2.tar.gz
+source root is LaMa
+setting SOURCE_DATE_EPOCH to timestamp 1732109403 of file LaMa/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LaMa’ ...
+** package ‘LaMa’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c forward_algorithms.cpp -o forward_algorithms.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c rep_times.cpp -o rep_times.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c tpm_functions.cpp -o tpm_functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LaMa.so RcppExports.o forward_algorithms.o rep_times.o tpm_functions.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/jvs0kn2lcx8rjqgiabr41cfrpysp712j-r-LaMa-2.0.2/library/00LOCK-LaMa/00new/LaMa/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_adfun” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (LaMa)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LaMa-2.0.2.drv-0/ in /nix/store/jvs0kn2lcx8rjqgiabr41cfrpysp712j-r-LaMa-2.0.2...
+patching script interpreter paths in /nix/store/jvs0kn2lcx8rjqgiabr41cfrpysp712j-r-LaMa-2.0.2
+rewriting symlink /nix/store/jvs0kn2lcx8rjqgiabr41cfrpysp712j-r-LaMa-2.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/jvs0kn2lcx8rjqgiabr41cfrpysp712j-r-LaMa-2.0.2

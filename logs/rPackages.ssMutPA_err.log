@@ -1,0 +1,37 @@
+these 2 derivations will be built:
+  /nix/store/6wdihfv5ppvpkzss4zl5ysq3188cqnyl-ssMutPA_0.1.2.tar.gz.drv
+  /nix/store/hlns001yk3k2m1rvf9fci4fqwcgz7jb6-r-ssMutPA-0.1.2.drv
+building '/nix/store/6wdihfv5ppvpkzss4zl5ysq3188cqnyl-ssMutPA_0.1.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/ssMutPA_0.1.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2094k  100 2094k    0     0  6299k      0 --:--:-- --:--:-- --:--:-- 6309k
+building '/nix/store/hlns001yk3k2m1rvf9fci4fqwcgz7jb6-r-ssMutPA-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kv30hfp5cmdiixdb80m7vfprrg5aq8cj-ssMutPA_0.1.2.tar.gz
+source root is ssMutPA
+setting SOURCE_DATE_EPOCH to timestamp 1729029602 of file ssMutPA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘maftools’ is not available for package ‘ssMutPA’
+* removing ‘/nix/store/dqcyqhwyg8prnnn92d8h0w8hqjnkb2qi-r-ssMutPA-0.1.2/library/ssMutPA’
+error: builder for '/nix/store/hlns001yk3k2m1rvf9fci4fqwcgz7jb6-r-ssMutPA-0.1.2.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/kv30hfp5cmdiixdb80m7vfprrg5aq8cj-ssMutPA_0.1.2.tar.gz
+       > source root is ssMutPA
+       > setting SOURCE_DATE_EPOCH to timestamp 1729029602 of file ssMutPA/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘maftools’ is not available for package ‘ssMutPA’
+       > * removing ‘/nix/store/dqcyqhwyg8prnnn92d8h0w8hqjnkb2qi-r-ssMutPA-0.1.2/library/ssMutPA’
+       For full logs, run 'nix log /nix/store/hlns001yk3k2m1rvf9fci4fqwcgz7jb6-r-ssMutPA-0.1.2.drv'.

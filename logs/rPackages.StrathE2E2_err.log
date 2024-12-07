@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/w8kkhsf690yzc6n6i4pzd5lga1xscarz-r-StrathE2E2-3.3.0.drv
+this path will be fetched (2.44 MiB download, 2.44 MiB unpacked):
+  /nix/store/mgp6hk16w2b56j09r0n6k8m5c78ysilv-StrathE2E2_3.3.0.tar.gz
+copying path '/nix/store/mgp6hk16w2b56j09r0n6k8m5c78ysilv-StrathE2E2_3.3.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/w8kkhsf690yzc6n6i4pzd5lga1xscarz-r-StrathE2E2-3.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mgp6hk16w2b56j09r0n6k8m5c78ysilv-StrathE2E2_3.3.0.tar.gz
+source root is StrathE2E2
+setting SOURCE_DATE_EPOCH to timestamp 1611355205 of file StrathE2E2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘StrathE2E2’ ...
+** package ‘StrathE2E2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c StrathE2E2_ecology_model_function.c -o StrathE2E2_ecology_model_function.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o StrathE2E2.so StrathE2E2_ecology_model_function.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/illx7pkjdy6gg8lhik353wnf08mnlkgd-r-StrathE2E2-3.3.0/library/00LOCK-StrathE2E2/00new/StrathE2E2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (StrathE2E2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-StrathE2E2-3.3.0.drv-0/ in /nix/store/illx7pkjdy6gg8lhik353wnf08mnlkgd-r-StrathE2E2-3.3.0...
+patching script interpreter paths in /nix/store/illx7pkjdy6gg8lhik353wnf08mnlkgd-r-StrathE2E2-3.3.0
+rewriting symlink /nix/store/illx7pkjdy6gg8lhik353wnf08mnlkgd-r-StrathE2E2-3.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/illx7pkjdy6gg8lhik353wnf08mnlkgd-r-StrathE2E2-3.3.0

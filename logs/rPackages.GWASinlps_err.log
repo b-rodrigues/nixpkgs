@@ -1,0 +1,42 @@
+these 3 derivations will be built:
+  /nix/store/5h95rxkrfwz9xxzpbkis4rpi20i8wrgl-r-mombf-3.5.4.drv
+  /nix/store/ba0jzkil37mfi23scicsz5bfxy7l9mv3-GWASinlps_2.3.tar.gz.drv
+  /nix/store/c4mqr9p3zzsf7zn95vf6szglhfzf764d-r-GWASinlps-2.3.drv
+this path will be fetched (0.70 MiB download, 0.70 MiB unpacked):
+  /nix/store/c08frdqpj1ss02gy10ncfnsxhs2vlaw5-mombf_3.5.4.tar.gz
+copying path '/nix/store/c08frdqpj1ss02gy10ncfnsxhs2vlaw5-mombf_3.5.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ba0jzkil37mfi23scicsz5bfxy7l9mv3-GWASinlps_2.3.tar.gz.drv'...
+building '/nix/store/5h95rxkrfwz9xxzpbkis4rpi20i8wrgl-r-mombf-3.5.4.drv'...
+
+trying https://cran.r-project.org/src/contrib/GWASinlps_2.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 46376  100 46376    0     0   333k      0 --:--:-- --:--:-- --:--:--  335k
+Running phase: unpackPhase
+unpacking source archive /nix/store/c08frdqpj1ss02gy10ncfnsxhs2vlaw5-mombf_3.5.4.tar.gz
+source root is mombf
+setting SOURCE_DATE_EPOCH to timestamp 1707261602 of file mombf/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘mombf’
+* removing ‘/nix/store/5pp8xn9w6miqqbqycpf8jaaaqagyyqs4-r-mombf-3.5.4/library/mombf’
+error: builder for '/nix/store/5h95rxkrfwz9xxzpbkis4rpi20i8wrgl-r-mombf-3.5.4.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/c08frdqpj1ss02gy10ncfnsxhs2vlaw5-mombf_3.5.4.tar.gz
+       > source root is mombf
+       > setting SOURCE_DATE_EPOCH to timestamp 1707261602 of file mombf/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘mombf’
+       > * removing ‘/nix/store/5pp8xn9w6miqqbqycpf8jaaaqagyyqs4-r-mombf-3.5.4/library/mombf’
+       For full logs, run 'nix log /nix/store/5h95rxkrfwz9xxzpbkis4rpi20i8wrgl-r-mombf-3.5.4.drv'.
+error: 1 dependencies of derivation '/nix/store/c4mqr9p3zzsf7zn95vf6szglhfzf764d-r-GWASinlps-2.3.drv' failed to build

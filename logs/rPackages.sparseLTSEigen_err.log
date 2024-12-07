@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/nhw6a16hr0dqp6wyjv2wr29qg14dm707-r-sparseLTSEigen-0.2.0.1.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/xhjfib29f71jbil4grmvs15hdmvl2xmb-sparseLTSEigen_0.2.0.1.tar.gz
+copying path '/nix/store/xhjfib29f71jbil4grmvs15hdmvl2xmb-sparseLTSEigen_0.2.0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/nhw6a16hr0dqp6wyjv2wr29qg14dm707-r-sparseLTSEigen-0.2.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xhjfib29f71jbil4grmvs15hdmvl2xmb-sparseLTSEigen_0.2.0.1.tar.gz
+source root is sparseLTSEigen
+setting SOURCE_DATE_EPOCH to timestamp 1602693291 of file sparseLTSEigen/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sparseLTSEigen’ ...
+** package ‘sparseLTSEigen’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c fastLasso.cpp -o fastLasso.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c fastSparseLTS.cpp -o fastSparseLTS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c initialSubsets.cpp -o initialSubsets.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DEIGEN_DONT_PARALLELIZE  -fPIC  -g -O2   -c utils.cpp -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o sparseLTSEigen.so fastLasso.o fastSparseLTS.o initialSubsets.o utils.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/n9flrgxc36mv26n177p0n1q1fvmqd3sf-r-sparseLTSEigen-0.2.0.1/library/00LOCK-sparseLTSEigen/00new/sparseLTSEigen/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sparseLTSEigen)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sparseLTSEigen-0.2.0.1.drv-0/ in /nix/store/n9flrgxc36mv26n177p0n1q1fvmqd3sf-r-sparseLTSEigen-0.2.0.1...
+patching script interpreter paths in /nix/store/n9flrgxc36mv26n177p0n1q1fvmqd3sf-r-sparseLTSEigen-0.2.0.1
+rewriting symlink /nix/store/n9flrgxc36mv26n177p0n1q1fvmqd3sf-r-sparseLTSEigen-0.2.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/n9flrgxc36mv26n177p0n1q1fvmqd3sf-r-sparseLTSEigen-0.2.0.1

@@ -1,0 +1,87 @@
+these 2 derivations will be built:
+  /nix/store/bh5n3mlsz3pib742280smr8i6d50mq4w-r-XBRL-0.99.19.1.drv
+  /nix/store/lpzgdyha3ag7zmqxczdm5flsn2x8lxf2-r-finreportr-1.0.4.drv
+building '/nix/store/bh5n3mlsz3pib742280smr8i6d50mq4w-r-XBRL-0.99.19.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/yf70lhd33s53jhi1v6gs90k18haaxr1a-XBRL_0.99.19.1.tar.gz
+source root is XBRL
+setting SOURCE_DATE_EPOCH to timestamp 1648487032 of file XBRL/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘XBRL’ ...
+** package ‘XBRL’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for xml2-config... /nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/bin/xml2-config
+xml2 version 2.13.4 found!
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlFree.cpp -o xbrlFree.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlGetImportNames.cpp -o xbrlGetImportNames.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlGetLinkbaseNames.cpp -o xbrlGetLinkbaseNames.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlGetSchemaName.cpp -o xbrlGetSchemaName.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlParse.cpp -o xbrlParse.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessArcs.cpp -o xbrlProcessArcs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessContexts.cpp -o xbrlProcessContexts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessElements.cpp -o xbrlProcessElements.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessFacts.cpp -o xbrlProcessFacts.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessFootnotes.cpp -o xbrlProcessFootnotes.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessLabels.cpp -o xbrlProcessLabels.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessRoles.cpp -o xbrlProcessRoles.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/yg3a4i28pcm93569i9cx6szg9b3c4bcn-libxml2-2.13.4-dev/include/libxml2 -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c xbrlProcessUnits.cpp -o xbrlProcessUnits.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o XBRL.so registerDynamicSymbol.o xbrlFree.o xbrlGetImportNames.o xbrlGetLinkbaseNames.o xbrlGetSchemaName.o xbrlParse.o xbrlProcessArcs.o xbrlProcessContexts.o xbrlProcessElements.o xbrlProcessFacts.o xbrlProcessFootnotes.o xbrlProcessLabels.o xbrlProcessRoles.o xbrlProcessUnits.o -L/nix/store/ix6qxrr8ka5r8d42kp36rb55y2y6yjmy-libxml2-2.13.4/lib -lxml2 -liconv -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/72lpjmz4004jn0lsr4s58nnakg8y8im0-r-XBRL-0.99.19.1/library/00LOCK-XBRL/00new/XBRL/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (XBRL)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-XBRL-0.99.19.1.drv-0/ in /nix/store/72lpjmz4004jn0lsr4s58nnakg8y8im0-r-XBRL-0.99.19.1...
+patching script interpreter paths in /nix/store/72lpjmz4004jn0lsr4s58nnakg8y8im0-r-XBRL-0.99.19.1
+rewriting symlink /nix/store/72lpjmz4004jn0lsr4s58nnakg8y8im0-r-XBRL-0.99.19.1/nix-support/propagated-user-env-packages to be relative to /nix/store/72lpjmz4004jn0lsr4s58nnakg8y8im0-r-XBRL-0.99.19.1
+building '/nix/store/lpzgdyha3ag7zmqxczdm5flsn2x8lxf2-r-finreportr-1.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/wxyfljpmckxh4n7mqnqmbcd0j4mmpy9w-finreportr_1.0.4.tar.gz
+source root is finreportr
+setting SOURCE_DATE_EPOCH to timestamp 1642405361 of file finreportr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘finreportr’ ...
+** package ‘finreportr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (finreportr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-finreportr-1.0.4.drv-0/ in /nix/store/bb03zwrccpnjj857qblqk4y1pg8iiz6c-r-finreportr-1.0.4...
+patching script interpreter paths in /nix/store/bb03zwrccpnjj857qblqk4y1pg8iiz6c-r-finreportr-1.0.4
+rewriting symlink /nix/store/bb03zwrccpnjj857qblqk4y1pg8iiz6c-r-finreportr-1.0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/bb03zwrccpnjj857qblqk4y1pg8iiz6c-r-finreportr-1.0.4

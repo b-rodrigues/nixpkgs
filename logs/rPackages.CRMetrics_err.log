@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/315isz5r89qjdnsm4dqb2sxdh958rknc-r-CRMetrics-0.3.2.drv
+building '/nix/store/315isz5r89qjdnsm4dqb2sxdh958rknc-r-CRMetrics-0.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4iydlnpprccck7l8422nsgncy92m01p8-CRMetrics_0.3.2.tar.gz
+source root is CRMetrics
+setting SOURCE_DATE_EPOCH to timestamp 1731025206 of file CRMetrics/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘CRMetrics’
+* removing ‘/nix/store/61n03gm369xyvqpy00iwgm633j9x2qc2-r-CRMetrics-0.3.2/library/CRMetrics’
+error: builder for '/nix/store/315isz5r89qjdnsm4dqb2sxdh958rknc-r-CRMetrics-0.3.2.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/4iydlnpprccck7l8422nsgncy92m01p8-CRMetrics_0.3.2.tar.gz
+       > source root is CRMetrics
+       > setting SOURCE_DATE_EPOCH to timestamp 1731025206 of file CRMetrics/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘CRMetrics’
+       > * removing ‘/nix/store/61n03gm369xyvqpy00iwgm633j9x2qc2-r-CRMetrics-0.3.2/library/CRMetrics’
+       For full logs, run 'nix log /nix/store/315isz5r89qjdnsm4dqb2sxdh958rknc-r-CRMetrics-0.3.2.drv'.

@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv
+building '/nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/h1qyci91jw3x682lrvkf91iwl0j8m01p-adjclust_0.6.10.tar.gz
+source root is adjclust
+setting SOURCE_DATE_EPOCH to timestamp 1728375002 of file adjclust/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘adjclust’
+* removing ‘/nix/store/wjrq3ff0jr4y9dn4vj9kr8qby6px4jkm-r-adjclust-0.6.10/library/adjclust’
+error: builder for '/nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/h1qyci91jw3x682lrvkf91iwl0j8m01p-adjclust_0.6.10.tar.gz
+       > source root is adjclust
+       > setting SOURCE_DATE_EPOCH to timestamp 1728375002 of file adjclust/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘adjclust’
+       > * removing ‘/nix/store/wjrq3ff0jr4y9dn4vj9kr8qby6px4jkm-r-adjclust-0.6.10/library/adjclust’
+       For full logs, run 'nix log /nix/store/gzb1d59f5z2qcb8n5ad1xyvvv84ivchy-r-adjclust-0.6.10.drv'.

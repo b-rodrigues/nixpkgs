@@ -1,0 +1,119 @@
+these 3 derivations will be built:
+  /nix/store/agi4zi3dfbqrbqhaz86z8aifniymia16-LMest_3.2.3.tar.gz.drv
+  /nix/store/dj43mqqqarxgbjzlxp3s2q3lri7j5w2n-r-MultiLCIRT-2.11.drv
+  /nix/store/q872vn9j68vd37cf20ksg9arm2cc79fp-r-LMest-3.2.3.drv
+this path will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/9d1j8aca9n2qqm1nhipw5394lhmkf1kj-MultiLCIRT_2.11.tar.gz
+copying path '/nix/store/9d1j8aca9n2qqm1nhipw5394lhmkf1kj-MultiLCIRT_2.11.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/agi4zi3dfbqrbqhaz86z8aifniymia16-LMest_3.2.3.tar.gz.drv'...
+building '/nix/store/dj43mqqqarxgbjzlxp3s2q3lri7j5w2n-r-MultiLCIRT-2.11.drv'...
+
+trying https://cran.r-project.org/src/contrib/LMest_3.2.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/9d1j8aca9n2qqm1nhipw5394lhmkf1kj-MultiLCIRT_2.11.tar.gz
+source root is MultiLCIRT
+setting SOURCE_DATE_EPOCH to timestamp 1496769033 of file MultiLCIRT/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+100  682k  100  682k    0     0  2994k      0 --:--:-- --:--:-- --:--:-- 3005k
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MultiLCIRT’ ...
+** package ‘MultiLCIRT’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c MultiLCIRT_init.c -o MultiLCIRT_init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c aggrdata.f -o aggrdata.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lk_obs.f -o lk_obs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MultiLCIRT.so MultiLCIRT_init.o aggrdata.o lk_obs.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _lk_obs_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/i0hma0ggm4vj485sr9sjarscjmw19j1j-r-MultiLCIRT-2.11/library/00LOCK-MultiLCIRT/00new/MultiLCIRT/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MultiLCIRT)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MultiLCIRT-2.11.drv-0/ in /nix/store/i0hma0ggm4vj485sr9sjarscjmw19j1j-r-MultiLCIRT-2.11...
+patching script interpreter paths in /nix/store/i0hma0ggm4vj485sr9sjarscjmw19j1j-r-MultiLCIRT-2.11
+rewriting symlink /nix/store/i0hma0ggm4vj485sr9sjarscjmw19j1j-r-MultiLCIRT-2.11/nix-support/propagated-user-env-packages to be relative to /nix/store/i0hma0ggm4vj485sr9sjarscjmw19j1j-r-MultiLCIRT-2.11
+building '/nix/store/q872vn9j68vd37cf20ksg9arm2cc79fp-r-LMest-3.2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/cg8bpcwwf8yrbgyzg7gw16gcklkzm9lm-LMest_3.2.3.tar.gz
+source root is LMest
+setting SOURCE_DATE_EPOCH to timestamp 1730843402 of file LMest/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LMest’ ...
+** package ‘LMest’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c BWforback.f -o BWforback.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c LMest_init.c -o LMest_init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c back.f -o back.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c for_mult.f -o for_mult.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c normmiss.f -o normmiss.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c normmiss2.f -o normmiss2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c nr_multilogit.f -o nr_multilogit.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c prob_multilogif.f -o prob_multilogif.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c prodnorm.f -o prodnorm.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c prodnormw.f -o prodnormw.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c sum_Y.f -o sum_Y.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c updatevar.f -o updatevar.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c updatevar2.f -o updatevar2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LMest.so BWforback.o LMest_init.o back.o for_mult.o normmiss.o normmiss2.o nr_multilogit.o prob_multilogif.o prodnorm.o prodnormw.o sum_Y.o updatevar.o updatevar2.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: ld: warning: could not create compact unwind for _normmiss2_: does not use standard frame
+ld: warning: could not create compact unwind for _bwforback_: does not use standard frame
+could not create compact unwind for _for_mult_: does not use standard frame
+ld: warning: could not create compact unwind for _normmiss_: does not use standard frameld: warning: could not create compact unwind for _back_: does not use standard frame
+ld: warning: could not create compact unwind for _updatevar_: does not use standard frame
+
+ld: warning: could not create compact unwind for _prodnormw_: does not use standard frame
+ld: warning: could not create compact unwind for _updatevar2_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _prodnorm_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/gwvg5zicfw0pr2jvhdnjc17w3lhyaqml-r-LMest-3.2.3/library/00LOCK-LMest/00new/LMest/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LMest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LMest-3.2.3.drv-0/ in /nix/store/gwvg5zicfw0pr2jvhdnjc17w3lhyaqml-r-LMest-3.2.3...
+patching script interpreter paths in /nix/store/gwvg5zicfw0pr2jvhdnjc17w3lhyaqml-r-LMest-3.2.3
+rewriting symlink /nix/store/gwvg5zicfw0pr2jvhdnjc17w3lhyaqml-r-LMest-3.2.3/nix-support/propagated-user-env-packages to be relative to /nix/store/gwvg5zicfw0pr2jvhdnjc17w3lhyaqml-r-LMest-3.2.3

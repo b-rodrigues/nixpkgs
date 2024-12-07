@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/8scpfljl1x2qqjlcq16f0k6da3aj72k4-PeakSegDisk_2024.10.1.tar.gz.drv
+  /nix/store/6jmdg7nb4nypjrk0zrwdbklb46hcrj9r-r-PeakSegDisk-2024.10.1.drv
+building '/nix/store/8scpfljl1x2qqjlcq16f0k6da3aj72k4-PeakSegDisk_2024.10.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/PeakSegDisk_2024.10.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  670k  100  670k    0     0  2954k      0 --:--:-- --:--:-- --:--:-- 2953k
+building '/nix/store/6jmdg7nb4nypjrk0zrwdbklb46hcrj9r-r-PeakSegDisk-2024.10.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1nmrrahvrid5jwwmwgdrj8vjw2nw5bbk-PeakSegDisk_2024.10.1.tar.gz
+source root is PeakSegDisk
+setting SOURCE_DATE_EPOCH to timestamp 1727843407 of file PeakSegDisk/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PeakSegDisk’ ...
+** package ‘PeakSegDisk’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PeakSegFPOPLog.cpp -o PeakSegFPOPLog.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c funPieceListLog.cpp -o funPieceListLog.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c interface.cpp -o interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PeakSegDisk.so PeakSegFPOPLog.o funPieceListLog.o interface.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/1z884r7363i9vh5mzk3m76fmch7pplps-r-PeakSegDisk-2024.10.1/library/00LOCK-PeakSegDisk/00new/PeakSegDisk/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PeakSegDisk)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PeakSegDisk-2024.10.1.drv-0/ in /nix/store/1z884r7363i9vh5mzk3m76fmch7pplps-r-PeakSegDisk-2024.10.1...
+patching script interpreter paths in /nix/store/1z884r7363i9vh5mzk3m76fmch7pplps-r-PeakSegDisk-2024.10.1
+rewriting symlink /nix/store/1z884r7363i9vh5mzk3m76fmch7pplps-r-PeakSegDisk-2024.10.1/nix-support/propagated-user-env-packages to be relative to /nix/store/1z884r7363i9vh5mzk3m76fmch7pplps-r-PeakSegDisk-2024.10.1

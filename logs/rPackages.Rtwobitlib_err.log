@@ -1,0 +1,63 @@
+this derivation will be built:
+  /nix/store/znjzx76p3gzkyzzix0mlqz7d6j3cy7f6-r-Rtwobitlib-0.3.6.drv
+this path will be fetched (3.13 MiB download, 3.13 MiB unpacked):
+  /nix/store/9yj78zsksh0fk6i6dd8rz7n4qdsk4z17-Rtwobitlib_0.3.6.tar.gz
+copying path '/nix/store/9yj78zsksh0fk6i6dd8rz7n4qdsk4z17-Rtwobitlib_0.3.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/znjzx76p3gzkyzzix0mlqz7d6j3cy7f6-r-Rtwobitlib-0.3.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9yj78zsksh0fk6i6dd8rz7n4qdsk4z17-Rtwobitlib_0.3.6.tar.gz
+source root is Rtwobitlib
+setting SOURCE_DATE_EPOCH to timestamp 1713976803 of file Rtwobitlib/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rtwobitlib’ ...
+** package ‘Rtwobitlib’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+cd "kent" && make -f "Makefile.Rtwobitlib"
+mkdir -p "/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/include/kent"
+mkdir -p "/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/usrlib"
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-Rtwobitlib-0.3.6.drv-0/Rtwobitlib/src/kent »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 common.c -o common.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 localmem.c -o localmem.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 errAbort.c -o errAbort.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 hash.c -o hash.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 bits.c -o bits.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 cheapcgi.c -o cheapcgi.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 linefile.c -o linefile.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 obscure.c -o obscure.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 dnautil.c -o dnautil.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 dnaseq.c -o dnaseq.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -c -g -O2 -fpic -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -I/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include -D_FILE_OFFSET_BITS=64 twoBit.c -o twoBit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar -rc libtwobit.a common.o localmem.o errAbort.o hash.o bits.o cheapcgi.o linefile.o obscure.o dnautil.o dnaseq.o twoBit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib libtwobit.a
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-Rtwobitlib-0.3.6.drv-0/Rtwobitlib/src/kent »
+cd "kent" && cp *.h "/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/include/kent"
+cd "kent" && cp libtwobit.a "/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/usrlib"
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I"/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/include"  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_init_Rtwobitlib.c -o R_init_Rtwobitlib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I"/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/include"  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rtwobitlib_utils.c -o Rtwobitlib_utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I"/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/include"  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c twobit_roundtrip.c -o twobit_roundtrip.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I"/nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/include"  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c twobit_seqstats.c -o twobit_seqstats.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rtwobitlib.so R_init_Rtwobitlib.o Rtwobitlib_utils.o twobit_roundtrip.o twobit_seqstats.o /nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/usrlib/libtwobit.a -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6/library/00LOCK-Rtwobitlib/00new/Rtwobitlib/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rtwobitlib)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rtwobitlib-0.3.6.drv-0/ in /nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6...
+patching script interpreter paths in /nix/store/1vbgfyh8b2rdp8ffjjzncn2p8l449fa2-r-Rtwobitlib-0.3.6

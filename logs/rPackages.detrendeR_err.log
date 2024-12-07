@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv
+  /nix/store/kfn95y6b7v3zvr8jbwnqhm1wyf2y7hya-r-detrendeR-1.0.5.drv
+building '/nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hq28qzidcz7grr40n9p8rmkmyfzra71v-tkRplotR_0.1.7.tar.gz
+source root is tkRplotR
+setting SOURCE_DATE_EPOCH to timestamp 1624786802 of file tkRplotR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tkRplotR’ ...
+** package ‘tkRplotR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+sh: line 1:  2486 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tkRplotR-0.1.7.drv-0/Rtmp7kZpf6/file9b139e91364'
+2024-11-26 12:18:34.784 R[2486:55915187] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+ERROR: lazy loading failed for package ‘tkRplotR’
+* removing ‘/nix/store/cs56qm3l88jbgmiya35vgaiir6rj1md5-r-tkRplotR-0.1.7/library/tkRplotR’
+error: builder for '/nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/hq28qzidcz7grr40n9p8rmkmyfzra71v-tkRplotR_0.1.7.tar.gz
+       > source root is tkRplotR
+       > setting SOURCE_DATE_EPOCH to timestamp 1624786802 of file tkRplotR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘tkRplotR’ ...
+       > ** package ‘tkRplotR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1:  2486 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tkRplotR-0.1.7.drv-0/Rtmp7kZpf6/file9b139e91364'
+       > 2024-11-26 12:18:34.784 R[2486:55915187] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+       > ERROR: lazy loading failed for package ‘tkRplotR’
+       > * removing ‘/nix/store/cs56qm3l88jbgmiya35vgaiir6rj1md5-r-tkRplotR-0.1.7/library/tkRplotR’
+       For full logs, run 'nix log /nix/store/p3wgk9kw166g7vjv9kyvxdfhms0wn9va-r-tkRplotR-0.1.7.drv'.
+error: 1 dependencies of derivation '/nix/store/kfn95y6b7v3zvr8jbwnqhm1wyf2y7hya-r-detrendeR-1.0.5.drv' failed to build

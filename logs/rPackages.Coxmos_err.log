@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/lnplr70qx1lrynymy446x5ib1v43c2zr-r-Coxmos-1.0.2.drv
+building '/nix/store/lnplr70qx1lrynymy446x5ib1v43c2zr-r-Coxmos-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ayb53al9alnaf407rxp5axpqf6nwl0kk-Coxmos_1.0.2.tar.gz
+source root is Coxmos
+setting SOURCE_DATE_EPOCH to timestamp 1711398758 of file Coxmos/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘mixOmics’ is not available for package ‘Coxmos’
+* removing ‘/nix/store/awk59zap3jk99xqy24rpnc9g6sggqrc4-r-Coxmos-1.0.2/library/Coxmos’
+error: builder for '/nix/store/lnplr70qx1lrynymy446x5ib1v43c2zr-r-Coxmos-1.0.2.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/ayb53al9alnaf407rxp5axpqf6nwl0kk-Coxmos_1.0.2.tar.gz
+       > source root is Coxmos
+       > setting SOURCE_DATE_EPOCH to timestamp 1711398758 of file Coxmos/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘mixOmics’ is not available for package ‘Coxmos’
+       > * removing ‘/nix/store/awk59zap3jk99xqy24rpnc9g6sggqrc4-r-Coxmos-1.0.2/library/Coxmos’
+       For full logs, run 'nix log /nix/store/lnplr70qx1lrynymy446x5ib1v43c2zr-r-Coxmos-1.0.2.drv'.

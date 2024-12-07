@@ -1,0 +1,43 @@
+these 2 derivations will be built:
+  /nix/store/6sambw9mb14m9cpkiq9ky24gfnql99ky-VIGoR_1.1.5.tar.gz.drv
+  /nix/store/y5vgxij3fv97j808s4r3c334n7qnn86a-r-VIGoR-1.1.5.drv
+building '/nix/store/6sambw9mb14m9cpkiq9ky24gfnql99ky-VIGoR_1.1.5.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/VIGoR_1.1.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  194k  100  194k    0     0  1125k      0 --:--:-- --:--:-- --:--:-- 1126k
+building '/nix/store/y5vgxij3fv97j808s4r3c334n7qnn86a-r-VIGoR-1.1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mf07x6l3cbm1410m78h8ba7fgvbdspqj-VIGoR_1.1.5.tar.gz
+source root is VIGoR
+setting SOURCE_DATE_EPOCH to timestamp 1726027802 of file VIGoR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘VIGoR’ ...
+** package ‘VIGoR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c main.c -o main.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o VIGoR.so main.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/d0bafjxwqpk4g30b55m96pm80fnmks03-r-VIGoR-1.1.5/library/00LOCK-VIGoR/00new/VIGoR/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (VIGoR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-VIGoR-1.1.5.drv-0/ in /nix/store/d0bafjxwqpk4g30b55m96pm80fnmks03-r-VIGoR-1.1.5...
+patching script interpreter paths in /nix/store/d0bafjxwqpk4g30b55m96pm80fnmks03-r-VIGoR-1.1.5

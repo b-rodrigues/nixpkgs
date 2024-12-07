@@ -1,0 +1,58 @@
+these 2 derivations will be built:
+  /nix/store/qpgb2c7qdwhqi6syp37cs1did8fvmj56-mvord_1.2.5.tar.gz.drv
+  /nix/store/cx64pqm7wfml29df4haqdcrksv1nbhbd-r-mvord-1.2.5.drv
+building '/nix/store/qpgb2c7qdwhqi6syp37cs1did8fvmj56-mvord_1.2.5.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/mvord_1.2.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2830k  100 2830k    0     0  6902k      0 --:--:-- --:--:-- --:--:-- 6887k
+building '/nix/store/cx64pqm7wfml29df4haqdcrksv1nbhbd-r-mvord-1.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kf0ghkmq600542g6zn3c0w3wswhw13ip-mvord_1.2.5.tar.gz
+source root is mvord
+setting SOURCE_DATE_EPOCH to timestamp 1725016702 of file mvord/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mvord’ ...
+** package ‘mvord’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c biv-nt.f -o biv-nt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mvord_init.c -o mvord_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mvord.so biv-nt.o mvord_init.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _mvbvtl_: does not use standard frame
+ld: warning: could not create compact unwind for _mvbvt_.part.0: does not use standard frame
+ld: warning: could not create compact unwind for _mvbvu_: does not use standard frame
+ld: warning: could not create compact unwind for _mvbvn_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _mvstdt_: does not use standard frame
+ld: warning: could not create compact unwind for _mvbvtc_: does not use standard frame
+could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/6qil5wawvlglmqr4f3q1slc2px5a6q81-r-mvord-1.2.5/library/00LOCK-mvord/00new/mvord/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mvord)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mvord-1.2.5.drv-0/ in /nix/store/6qil5wawvlglmqr4f3q1slc2px5a6q81-r-mvord-1.2.5...
+patching script interpreter paths in /nix/store/6qil5wawvlglmqr4f3q1slc2px5a6q81-r-mvord-1.2.5
+rewriting symlink /nix/store/6qil5wawvlglmqr4f3q1slc2px5a6q81-r-mvord-1.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/6qil5wawvlglmqr4f3q1slc2px5a6q81-r-mvord-1.2.5

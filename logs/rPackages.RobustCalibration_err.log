@@ -1,0 +1,87 @@
+these 2 derivations will be built:
+  /nix/store/3gh7rwk547dvmcg7gc1q8a7msf3vp54l-r-RobustGaSP-0.6.6.drv
+  /nix/store/ldyn9ikq7zgqzwk6m66fg3lrzj2dflv8-r-RobustCalibration-0.5.5.drv
+these 2 paths will be fetched (0.42 MiB download, 0.42 MiB unpacked):
+  /nix/store/940jw2fc3fwhm6y66h79pja758gf0hkn-RobustCalibration_0.5.5.tar.gz
+  /nix/store/ng3r6gdm92ig6xg0yhij2c8wqbzr1fjz-RobustGaSP_0.6.6.tar.gz
+copying path '/nix/store/940jw2fc3fwhm6y66h79pja758gf0hkn-RobustCalibration_0.5.5.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ng3r6gdm92ig6xg0yhij2c8wqbzr1fjz-RobustGaSP_0.6.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3gh7rwk547dvmcg7gc1q8a7msf3vp54l-r-RobustGaSP-0.6.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ng3r6gdm92ig6xg0yhij2c8wqbzr1fjz-RobustGaSP_0.6.6.tar.gz
+source root is RobustGaSP
+setting SOURCE_DATE_EPOCH to timestamp 1707438622 of file RobustGaSP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RobustGaSP’ ...
+** package ‘RobustGaSP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions.cpp -o functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RobustGaSP.so RcppExports.o functions.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/fqgv4s0f0jr9kwxk4pzbizh1ir7w72r6-r-RobustGaSP-0.6.6/library/00LOCK-RobustGaSP/00new/RobustGaSP/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘simulate’ dans package ‘RobustGaSP’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RobustGaSP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RobustGaSP-0.6.6.drv-0/ in /nix/store/fqgv4s0f0jr9kwxk4pzbizh1ir7w72r6-r-RobustGaSP-0.6.6...
+patching script interpreter paths in /nix/store/fqgv4s0f0jr9kwxk4pzbizh1ir7w72r6-r-RobustGaSP-0.6.6
+rewriting symlink /nix/store/fqgv4s0f0jr9kwxk4pzbizh1ir7w72r6-r-RobustGaSP-0.6.6/nix-support/propagated-user-env-packages to be relative to /nix/store/fqgv4s0f0jr9kwxk4pzbizh1ir7w72r6-r-RobustGaSP-0.6.6
+building '/nix/store/ldyn9ikq7zgqzwk6m66fg3lrzj2dflv8-r-RobustCalibration-0.5.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/940jw2fc3fwhm6y66h79pja758gf0hkn-RobustCalibration_0.5.5.tar.gz
+source root is RobustCalibration
+setting SOURCE_DATE_EPOCH to timestamp 1717053012 of file RobustCalibration/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RobustCalibration’ ...
+** package ‘RobustCalibration’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions.cpp -o functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RobustCalibration.so RcppExports.o functions.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yvsmzsmyxznsl863qiwyvjdjcf6myjqm-r-RobustCalibration-0.5.5/library/00LOCK-RobustCalibration/00new/RobustCalibration/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RobustCalibration)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RobustCalibration-0.5.5.drv-0/ in /nix/store/yvsmzsmyxznsl863qiwyvjdjcf6myjqm-r-RobustCalibration-0.5.5...
+patching script interpreter paths in /nix/store/yvsmzsmyxznsl863qiwyvjdjcf6myjqm-r-RobustCalibration-0.5.5
+rewriting symlink /nix/store/yvsmzsmyxznsl863qiwyvjdjcf6myjqm-r-RobustCalibration-0.5.5/nix-support/propagated-user-env-packages to be relative to /nix/store/yvsmzsmyxznsl863qiwyvjdjcf6myjqm-r-RobustCalibration-0.5.5

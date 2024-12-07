@@ -1,0 +1,51 @@
+these 2 derivations will be built:
+  /nix/store/y5ni32yf0llq63z5xq2kgf7125l7qdhc-randomLCA_1.1-4.tar.gz.drv
+  /nix/store/7f4hzzg9xdnii59iwgy9r9dg1403z6sj-r-randomLCA-1.1-4.drv
+building '/nix/store/y5ni32yf0llq63z5xq2kgf7125l7qdhc-randomLCA_1.1-4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/randomLCA_1.1-4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  315k  100  315k    0     0  1673k      0 --:--:-- --:--:-- --:--:-- 1680k
+building '/nix/store/7f4hzzg9xdnii59iwgy9r9dg1403z6sj-r-randomLCA-1.1-4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z4v6rm9bd5piwvgwr34sgsjd0kday5lz-randomLCA_1.1-4.tar.gz
+source root is randomLCA
+setting SOURCE_DATE_EPOCH to timestamp 1727131202 of file randomLCA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘randomLCA’ ...
+** package ‘randomLCA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bernoulliprob.c -o bernoulliprob.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bernoulliprobrandom.c -o bernoulliprobrandom.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bernoulliprobrandom2.c -o bernoulliprobrandom2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lcemalgorith.c -o lcemalgorith.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o randomLCA.so bernoulliprob.o bernoulliprobrandom.o bernoulliprobrandom2.o init.o lcemalgorith.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/s090qdl9cndmdc3kh94f3f62fbvicb55-r-randomLCA-1.1-4/library/00LOCK-randomLCA/00new/randomLCA/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (randomLCA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-randomLCA-1.1-4.drv-0/ in /nix/store/s090qdl9cndmdc3kh94f3f62fbvicb55-r-randomLCA-1.1-4...
+patching script interpreter paths in /nix/store/s090qdl9cndmdc3kh94f3f62fbvicb55-r-randomLCA-1.1-4
+rewriting symlink /nix/store/s090qdl9cndmdc3kh94f3f62fbvicb55-r-randomLCA-1.1-4/nix-support/propagated-user-env-packages to be relative to /nix/store/s090qdl9cndmdc3kh94f3f62fbvicb55-r-randomLCA-1.1-4

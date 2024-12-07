@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/b1xssz58zmwdnk31lzad4dhzq6afpd5p-RHRV_5.0.0.tar.gz.drv
+  /nix/store/4g3a0l73nbvbzka8p6k7v9viydyx3g1d-r-RHRV-5.0.0.drv
+building '/nix/store/b1xssz58zmwdnk31lzad4dhzq6afpd5p-RHRV_5.0.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/RHRV_5.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  772k  100  772k    0     0  2808k      0 --:--:-- --:--:-- --:--:-- 2799k
+building '/nix/store/4g3a0l73nbvbzka8p6k7v9viydyx3g1d-r-RHRV-5.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lnh89n69gcmd3vqqjfmdpna4ln8fd318-RHRV_5.0.0.tar.gz
+source root is RHRV
+setting SOURCE_DATE_EPOCH to timestamp 1727724602 of file RHRV/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RHRV’ ...
+** package ‘RHRV’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c filterhr.c -o filterhr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pmodwpt.c -o pmodwpt.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rhrv_init.c -o rhrv_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RHRV.so filterhr.o pmodwpt.o rhrv_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/idb7n6rw09hjv7lsdiihjj5j3aabldhc-r-RHRV-5.0.0/library/00LOCK-RHRV/00new/RHRV/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RHRV)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RHRV-5.0.0.drv-0/ in /nix/store/idb7n6rw09hjv7lsdiihjj5j3aabldhc-r-RHRV-5.0.0...
+patching script interpreter paths in /nix/store/idb7n6rw09hjv7lsdiihjj5j3aabldhc-r-RHRV-5.0.0
+rewriting symlink /nix/store/idb7n6rw09hjv7lsdiihjj5j3aabldhc-r-RHRV-5.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/idb7n6rw09hjv7lsdiihjj5j3aabldhc-r-RHRV-5.0.0

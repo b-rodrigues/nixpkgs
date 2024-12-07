@@ -1,0 +1,106 @@
+this derivation will be built:
+  /nix/store/jvydnhj6n9c0ynydhaw287bxwykykfvd-r-RoBMA-3.1.0.drv
+this path will be fetched (1.00 MiB download, 1.00 MiB unpacked):
+  /nix/store/xdnmr10bhfv0pyi7lsfahjlqdxz0qmi6-RoBMA_3.1.0.tar.gz
+copying path '/nix/store/xdnmr10bhfv0pyi7lsfahjlqdxz0qmi6-RoBMA_3.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jvydnhj6n9c0ynydhaw287bxwykykfvd-r-RoBMA-3.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xdnmr10bhfv0pyi7lsfahjlqdxz0qmi6-RoBMA_3.1.0.tar.gz
+source root is RoBMA
+setting SOURCE_DATE_EPOCH to timestamp 1689716402 of file RoBMA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RoBMA’ ...
+** package ‘RoBMA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for pkg-config... no
+configure: Attempting legacy configuration of rjags
+checking for jags... /nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/bin/jags
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 option to enable C++11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for Console.h... yes
+configure: Compile flags are -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS
+configure: Link flags are -L/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/lib -ljags
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the compiler supports GNU C... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to enable C11 features... none needed
+checking for jags_version in -ljags... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DMN.cc -o distributions/DMN.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWMN1.cc -o distributions/DWMN1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWMN2.cc -o distributions/DWMN2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DMNv.cc -o distributions/DMNv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWMN1v.cc -o distributions/DWMN1v.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWMN2v.cc -o distributions/DWMN2v.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWN1.cc -o distributions/DWN1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWN2.cc -o distributions/DWN2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWT1.cc -o distributions/DWT1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWT2.cc -o distributions/DWT2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWN.cc -o distributions/DWN.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWWN1.cc -o distributions/DWWN1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWWN2.cc -o distributions/DWWN2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DWB.cc -o distributions/DWB.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c transformations/z.cc -o transformations/z.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c transformations/r.cc -o transformations/r.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c transformations/d.cc -o transformations/d.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c transformations/logOR.cc -o transformations/logOR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions/wmnorm.cc -o functions/wmnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions/mnorm.cc -o functions/mnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c matrix/matrix.cc -o matrix/matrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c source/tools.cc -o source/tools.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c source/mnorm.cc -o source/mnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c source/wmnorm.cc -o source/wmnorm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c source/transformations.cc -o source/transformations.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RoBMA.cc -o RoBMA.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0 -DR_NO_REMAP -I'/nix/store/7xysfxfdnhpr6b97yxdcpkmglin48jy3-r-mvtnorm-1.3-2/library/mvtnorm/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c testRoBMA.cc -o testRoBMA.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RoBMA.so distributions/DMN.o distributions/DWMN1.o distributions/DWMN2.o distributions/DMNv.o distributions/DWMN1v.o distributions/DWMN2v.o distributions/DWN1.o distributions/DWN2.o distributions/DWT1.o distributions/DWT2.o distributions/DWN.o distributions/DWWN1.o distributions/DWWN2.o distributions/DWB.o transformations/z.o transformations/r.o transformations/d.o transformations/logOR.o functions/wmnorm.o functions/mnorm.o matrix/matrix.o source/tools.o source/mnorm.o source/wmnorm.o source/transformations.o init.o RoBMA.o testRoBMA.o -L/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/lib -ljags -ljrmath -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/2981g69zkz4mk31zz7p01zzkm2pbighy-r-RoBMA-3.1.0/library/00LOCK-RoBMA/00new/RoBMA/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RoBMA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RoBMA-3.1.0.drv-0/ in /nix/store/2981g69zkz4mk31zz7p01zzkm2pbighy-r-RoBMA-3.1.0...
+patching script interpreter paths in /nix/store/2981g69zkz4mk31zz7p01zzkm2pbighy-r-RoBMA-3.1.0
+rewriting symlink /nix/store/2981g69zkz4mk31zz7p01zzkm2pbighy-r-RoBMA-3.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/2981g69zkz4mk31zz7p01zzkm2pbighy-r-RoBMA-3.1.0

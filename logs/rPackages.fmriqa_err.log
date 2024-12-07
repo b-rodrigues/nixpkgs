@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/mphrpqwc2jjg0nl5sazx8k8hw2lm32sb-r-fmriqa-0.3.0.drv
+building '/nix/store/mphrpqwc2jjg0nl5sazx8k8hw2lm32sb-r-fmriqa-0.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/l7lqi4q7nk1z7ddj9ks7jaa638kiqwb3-fmriqa_0.3.0.tar.gz
+source root is fmriqa
+setting SOURCE_DATE_EPOCH to timestamp 1519055941 of file fmriqa/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘fmriqa’ ...
+** package ‘fmriqa’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 42263 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-fmriqa-0.3.0.drv-0/RtmpB65xAM/filea512506bd4f'
+ERROR: lazy loading failed for package ‘fmriqa’
+* removing ‘/nix/store/5n4z35yjnpq0yhcxa2g48172p57k1kr1-r-fmriqa-0.3.0/library/fmriqa’
+error: builder for '/nix/store/mphrpqwc2jjg0nl5sazx8k8hw2lm32sb-r-fmriqa-0.3.0.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/l7lqi4q7nk1z7ddj9ks7jaa638kiqwb3-fmriqa_0.3.0.tar.gz
+       > source root is fmriqa
+       > setting SOURCE_DATE_EPOCH to timestamp 1519055941 of file fmriqa/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘fmriqa’ ...
+       > ** package ‘fmriqa’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 42263 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-fmriqa-0.3.0.drv-0/RtmpB65xAM/filea512506bd4f'
+       > ERROR: lazy loading failed for package ‘fmriqa’
+       > * removing ‘/nix/store/5n4z35yjnpq0yhcxa2g48172p57k1kr1-r-fmriqa-0.3.0/library/fmriqa’
+       For full logs, run 'nix log /nix/store/mphrpqwc2jjg0nl5sazx8k8hw2lm32sb-r-fmriqa-0.3.0.drv'.

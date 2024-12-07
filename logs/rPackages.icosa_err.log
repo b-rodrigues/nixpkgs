@@ -1,0 +1,59 @@
+this derivation will be built:
+  /nix/store/hiv6clwr7iiw3k2nb372s7i911ck376i-r-icosa-0.11.1.drv
+this path will be fetched (0.66 MiB download, 0.66 MiB unpacked):
+  /nix/store/kswiml3m9ck0sbkl7j60k42dv84j0m0a-icosa_0.11.1.tar.gz
+copying path '/nix/store/kswiml3m9ck0sbkl7j60k42dv84j0m0a-icosa_0.11.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/hiv6clwr7iiw3k2nb372s7i911ck376i-r-icosa-0.11.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kswiml3m9ck0sbkl7j60k42dv84j0m0a-icosa_0.11.1.tar.gz
+source root is icosa
+setting SOURCE_DATE_EPOCH to timestamp 1723830006 of file icosa/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘icosa’ ...
+** package ‘icosa’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PointInTetra.cpp -o PointInTetra.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RccpSource_.cpp -o RccpSource_.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Rccp_coordinateFlattening.cpp -o Rccp_coordinateFlattening.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c plottingMatrices.cpp -o plottingMatrices.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o icosa.so PointInTetra.o RccpSource_.o Rccp_coordinateFlattening.o RcppExports.o init.o plottingMatrices.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/vrrmlf2bz0fa34mdfnvs89nvdlijjxf6-r-icosa-0.11.1/library/00LOCK-icosa/00new/icosa/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+dans la méthode pour ‘OccupiedFaces’ avec la signature ‘"trigrid","SpatRaster"’ : aucune définition de la classe “SpatRaster” n'est trouvée
+dans la méthode pour ‘vertices’ avec la signature ‘"facelayer"’ : aucune définition de la classe “facelayer” n'est trouvée
+dans la méthode pour ‘faces’ avec la signature ‘"gridlayer"’ : aucune définition de la classe “gridlayer” n'est trouvée
+dans la méthode pour ‘edges’ avec la signature ‘"facelayer"’ : aucune définition de la classe “facelayer” n'est trouvée
+dans la méthode pour ‘centers’ avec la signature ‘"facelayer"’ : aucune définition de la classe “facelayer” n'est trouvée
+dans la méthode pour ‘resample’ avec la signature ‘"SpatRaster","trigrid"’ : aucune définition de la classe “SpatRaster” n'est trouvée
+Une nouvelle fonction générique est créée pour ‘sd’ du package ‘stats’ dans package ‘icosa’
+dans la méthode pour ‘[’ avec la signature ‘"gridlayer","SpatExtent","missing"’ : aucune définition de la classe “SpatExtent” n'est trouvée
+dans la méthode pour ‘resample’ avec la signature ‘"facelayer","SpatRaster"’ : aucune définition de la classe “SpatRaster” n'est trouvée
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (icosa)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-icosa-0.11.1.drv-0/ in /nix/store/vrrmlf2bz0fa34mdfnvs89nvdlijjxf6-r-icosa-0.11.1...
+patching script interpreter paths in /nix/store/vrrmlf2bz0fa34mdfnvs89nvdlijjxf6-r-icosa-0.11.1
+rewriting symlink /nix/store/vrrmlf2bz0fa34mdfnvs89nvdlijjxf6-r-icosa-0.11.1/nix-support/propagated-user-env-packages to be relative to /nix/store/vrrmlf2bz0fa34mdfnvs89nvdlijjxf6-r-icosa-0.11.1

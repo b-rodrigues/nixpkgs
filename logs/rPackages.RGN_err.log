@@ -1,0 +1,63 @@
+this derivation will be built:
+  /nix/store/kyrq7azaf4llm62kywcfdkirzikblsa5-r-RGN-1.0.0.drv
+building '/nix/store/kyrq7azaf4llm62kywcfdkirzikblsa5-r-RGN-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/hy96k4q4cbc2f4n1vvwa8rq0a3cdm92d-RGN_1.0.0.tar.gz
+source root is RGN
+setting SOURCE_DATE_EPOCH to timestamp 1695651747 of file RGN/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RGN’ ...
+** package ‘RGN’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RGN_init.c -o RGN_init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  constantsMod.f90 -o constantsMod.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  hymod.f90 -o hymod.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  qr.f90 -o qr.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c test.f -o test.o
+qr.f90:4:8:
+
+    4 |    use constantsMod, only: rk
+      |        1
+Fatal Error: Cannot open module file 'constantsmod.mod' for reading at (1): No such file or directory
+compilation terminated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:223: qr.o] Error 1
+make: *** Attente des tâches non terminées....
+ERROR: compilation failed for package ‘RGN’
+* removing ‘/nix/store/1c6l2damdbx8x9shxz3k4f2x5y50z4yy-r-RGN-1.0.0/library/RGN’
+error: builder for '/nix/store/kyrq7azaf4llm62kywcfdkirzikblsa5-r-RGN-1.0.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘RGN’ ...
+       > ** package ‘RGN’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RGN_init.c -o RGN_init.o
+       > /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  constantsMod.f90 -o constantsMod.o
+       > /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  hymod.f90 -o hymod.o
+       > /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  qr.f90 -o qr.o
+       > /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c test.f -o test.o
+       > qr.f90:4:8:
+       >
+       >     4 |    use constantsMod, only: rk
+       >       |        1
+       > Fatal Error: Cannot open module file 'constantsmod.mod' for reading at (1): No such file or directory
+       > compilation terminated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:223: qr.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > ERROR: compilation failed for package ‘RGN’
+       > * removing ‘/nix/store/1c6l2damdbx8x9shxz3k4f2x5y50z4yy-r-RGN-1.0.0/library/RGN’
+       For full logs, run 'nix log /nix/store/kyrq7azaf4llm62kywcfdkirzikblsa5-r-RGN-1.0.0.drv'.

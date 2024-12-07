@@ -1,0 +1,135 @@
+these 4 derivations will be built:
+  /nix/store/28l716500jj8wjdh7113dpxsri6bvhlr-r-MazamaRollUtils-0.1.3.drv
+  /nix/store/7c7kaziqj091mnhq67m2lchjh9z74jmb-r-MazamaCoreUtils-0.5.2.drv
+  /nix/store/83c2p9cw44wfy6qnnqckqxwswn1z0v4y-r-MazamaTimeSeries-0.3.0.drv
+  /nix/store/lsf4jkxg39cqh7shmcq8ksgvwizcqw7g-r-AirMonitor-0.4.2.drv
+building '/nix/store/7c7kaziqj091mnhq67m2lchjh9z74jmb-r-MazamaCoreUtils-0.5.2.drv'...
+building '/nix/store/28l716500jj8wjdh7113dpxsri6bvhlr-r-MazamaRollUtils-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/f8j0klf8pzj13phi0658yg4spl3q0kvv-MazamaRollUtils_0.1.3.tar.gz
+source root is MazamaRollUtils
+setting SOURCE_DATE_EPOCH to timestamp 1632388202 of file MazamaRollUtils/MD5
+Running phase: unpackPhase
+unpacking source archive /nix/store/70pwd3xjnb4r07kmxn3v2qqivhyl4dq4-MazamaCoreUtils_0.5.2.tar.gz
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+source root is MazamaCoreUtils
+setting SOURCE_DATE_EPOCH to timestamp 1707375602 of file MazamaCoreUtils/MD5
+Running phase: configurePhase
+Running phase: patchPhase
+Running phase: buildPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MazamaRollUtils’ ...
+** package ‘MazamaRollUtils’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+* installing *source* package ‘MazamaCoreUtils’ ...
+** package ‘MazamaCoreUtils’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+using SDK: ‘’
+** inst
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MazamaRollUtils.cpp -o MazamaRollUtils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MazamaCoreUtils)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MazamaCoreUtils-0.5.2.drv-0/ in /nix/store/kpdjip6cf3238vnwy7cszz8rvjzan03d-r-MazamaCoreUtils-0.5.2...
+patching script interpreter paths in /nix/store/kpdjip6cf3238vnwy7cszz8rvjzan03d-r-MazamaCoreUtils-0.5.2
+rewriting symlink /nix/store/kpdjip6cf3238vnwy7cszz8rvjzan03d-r-MazamaCoreUtils-0.5.2/nix-support/propagated-user-env-packages to be relative to /nix/store/kpdjip6cf3238vnwy7cszz8rvjzan03d-r-MazamaCoreUtils-0.5.2
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MazamaRollUtils.so MazamaRollUtils.o RcppExports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/f5xpkdnmqhxrlas00bkim16zqhj2j87a-r-MazamaRollUtils-0.1.3/library/00LOCK-MazamaRollUtils/00new/MazamaRollUtils/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MazamaRollUtils)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MazamaRollUtils-0.1.3.drv-0/ in /nix/store/f5xpkdnmqhxrlas00bkim16zqhj2j87a-r-MazamaRollUtils-0.1.3...
+patching script interpreter paths in /nix/store/f5xpkdnmqhxrlas00bkim16zqhj2j87a-r-MazamaRollUtils-0.1.3
+rewriting symlink /nix/store/f5xpkdnmqhxrlas00bkim16zqhj2j87a-r-MazamaRollUtils-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/f5xpkdnmqhxrlas00bkim16zqhj2j87a-r-MazamaRollUtils-0.1.3
+building '/nix/store/83c2p9cw44wfy6qnnqckqxwswn1z0v4y-r-MazamaTimeSeries-0.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/20gy7p9gqhw3daykd0rwc2wgwq8mripg-MazamaTimeSeries_0.3.0.tar.gz
+source root is MazamaTimeSeries
+setting SOURCE_DATE_EPOCH to timestamp 1709941802 of file MazamaTimeSeries/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MazamaTimeSeries’ ...
+** package ‘MazamaTimeSeries’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MazamaTimeSeries)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MazamaTimeSeries-0.3.0.drv-0/ in /nix/store/d7j3s3w1j60vkn5kb6k0y1jqcivq7miy-r-MazamaTimeSeries-0.3.0...
+patching script interpreter paths in /nix/store/d7j3s3w1j60vkn5kb6k0y1jqcivq7miy-r-MazamaTimeSeries-0.3.0
+rewriting symlink /nix/store/d7j3s3w1j60vkn5kb6k0y1jqcivq7miy-r-MazamaTimeSeries-0.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/d7j3s3w1j60vkn5kb6k0y1jqcivq7miy-r-MazamaTimeSeries-0.3.0
+building '/nix/store/lsf4jkxg39cqh7shmcq8ksgvwizcqw7g-r-AirMonitor-0.4.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mjm170w3r8dxja8yc5zik7q3q1wvipvc-AirMonitor_0.4.2.tar.gz
+source root is AirMonitor
+setting SOURCE_DATE_EPOCH to timestamp 1727402402 of file AirMonitor/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘AirMonitor’ ...
+** package ‘AirMonitor’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (AirMonitor)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-AirMonitor-0.4.2.drv-0/ in /nix/store/zi8g5p7bl020y1lin45p2lf9rwmwsfkn-r-AirMonitor-0.4.2...
+patching script interpreter paths in /nix/store/zi8g5p7bl020y1lin45p2lf9rwmwsfkn-r-AirMonitor-0.4.2
+rewriting symlink /nix/store/zi8g5p7bl020y1lin45p2lf9rwmwsfkn-r-AirMonitor-0.4.2/nix-support/propagated-user-env-packages to be relative to /nix/store/zi8g5p7bl020y1lin45p2lf9rwmwsfkn-r-AirMonitor-0.4.2

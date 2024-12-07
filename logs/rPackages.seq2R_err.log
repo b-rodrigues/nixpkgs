@@ -1,0 +1,72 @@
+these 2 derivations will be built:
+  /nix/store/h68z9waaalc9zan1c2g59rv2x88l94px-seq2R_2.0.1.tar.gz.drv
+  /nix/store/4l7l1r71521gqi826yp9cbisjz8piz37-r-seq2R-2.0.1.drv
+building '/nix/store/h68z9waaalc9zan1c2g59rv2x88l94px-seq2R_2.0.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/seq2R_2.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 36866  100 36866    0     0   309k      0 --:--:-- --:--:-- --:--:--  310k
+building '/nix/store/4l7l1r71521gqi826yp9cbisjz8piz37-r-seq2R-2.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dq9j9blwwfkiswwasy3adbacxnck6bkb-seq2R_2.0.1.tar.gz
+source root is seq2R
+setting SOURCE_DATE_EPOCH to timestamp 1727707802 of file seq2R/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘seq2R’ ...
+** package ‘seq2R’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ChangePoints.f90 -o ChangePoints.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c seq2R_init.c -o seq2R_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o seq2R.so ChangePoints.o seq2R_init.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+could not create compact unwind for ___lsq_MOD_varprd: does not use standard frame
+ld: warning: could not create compact unwind for ___lsq_MOD_partial_corr: does not use standard frame
+ld: warning: could not create compact unwind for ___lsq_MOD_reordr: does not use standard frame
+ld: warning: could not create compact unwind for ___lsq_MOD_cov: does not use standard frame
+ld: warning: could not create compact unwind for ___lsq_MOD_tolset: does not use standard frame
+ld: warning: could not create compact unwind for ___lsq_MOD_regcf: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for ___lsq_MOD_sing: does not use standard frame
+ld: warning: could not create compact unwind for ___lsq_MOD_startup: does not use standard frame
+ld: warning: could not create compact unwind for _interpola_: does not use standard frame
+ld: warning: could not create compact unwind for _quantile_: does not use standard frame
+ld: warning: could not create compact unwind for _ic_: does not use standard frame
+ld: warning: could not create compact unwind for _wregresion_: does not use standard frame
+ld: warning: could not create compact unwind for _reglineal_: does not use standard frame
+ld: warning: could not create compact unwind for _wregresion_javier_: does not use standard frame
+ld: warning: could not create compact unwind for _reg1d_: does not use standard frame
+ld: warning: could not create compact unwind for _ventana1d_: does not use standard frame
+ld: warning: could not create compact unwind for _binning_: does not use standard frame
+ld: warning: could not create compact unwind for _rfast_h_: does not use standard frame
+ld: warning: could not create compact unwind for _changepoints__: does not use standard frame
+ld: warning: could not create compact unwind for _cuant_: does not use standard frame
+installing to /nix/store/swg2p3v2189zmygdz97zxqj1nrvxbd02-r-seq2R-2.0.1/library/00LOCK-seq2R/00new/seq2R/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (seq2R)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-seq2R-2.0.1.drv-0/ in /nix/store/swg2p3v2189zmygdz97zxqj1nrvxbd02-r-seq2R-2.0.1...
+patching script interpreter paths in /nix/store/swg2p3v2189zmygdz97zxqj1nrvxbd02-r-seq2R-2.0.1
+rewriting symlink /nix/store/swg2p3v2189zmygdz97zxqj1nrvxbd02-r-seq2R-2.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/swg2p3v2189zmygdz97zxqj1nrvxbd02-r-seq2R-2.0.1

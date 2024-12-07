@@ -1,0 +1,168 @@
+these 5 derivations will be built:
+  /nix/store/8iwb2m11fh6an2cm54rpj432411spg0n-r-MAPA-2.0.7.drv
+  /nix/store/ksgvmrklpj2bgpq7s9gfkli70d2y75yc-r-tsutils-0.9.4.drv
+  /nix/store/r86ad8rz82ig7w2zs59g7cnbif64fcp2-r-TSdeeplearning-0.1.0.drv
+  /nix/store/rbiwv6wscklvdpq3bgfvknk4xxmbdmck-r-VMDecomp-1.0.1.drv
+  /nix/store/f313jns0sgw6rhdpaznvja37h3bpbbyk-r-decompDL-0.1.0.drv
+building '/nix/store/rbiwv6wscklvdpq3bgfvknk4xxmbdmck-r-VMDecomp-1.0.1.drv'...
+building '/nix/store/8iwb2m11fh6an2cm54rpj432411spg0n-r-MAPA-2.0.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fhrh1p7j3zgnx92615x4pb5gz92p2dbn-VMDecomp_1.0.1.tar.gz
+source root is VMDecomp
+setting SOURCE_DATE_EPOCH to timestamp 1656949202 of file VMDecomp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘VMDecomp’ ...
+** package ‘VMDecomp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+Running phase: unpackPhase
+unpacking source archive /nix/store/zjra2kq40njgyggkgq9v6dqvp7wbhz3w-MAPA_2.0.7.tar.gz
+source root is MAPA
+setting SOURCE_DATE_EPOCH to timestamp 1709655005 of file MAPA/MD5
+using C compiler: ‘clang version 16.0.6’
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+Running phase: buildPhase
+Running phase: checkPhase
+using SDK: ‘’
+Running phase: installPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include/ -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c vmd.cpp -o vmd.o
+* installing *source* package ‘MAPA’ ...
+** package ‘MAPA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MAPA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MAPA-2.0.7.drv-0/ in /nix/store/kz145srxvnlsajwji65nkmfm8jwc7dgg-r-MAPA-2.0.7...
+patching script interpreter paths in /nix/store/kz145srxvnlsajwji65nkmfm8jwc7dgg-r-MAPA-2.0.7
+rewriting symlink /nix/store/kz145srxvnlsajwji65nkmfm8jwc7dgg-r-MAPA-2.0.7/nix-support/propagated-user-env-packages to be relative to /nix/store/kz145srxvnlsajwji65nkmfm8jwc7dgg-r-MAPA-2.0.7
+building '/nix/store/ksgvmrklpj2bgpq7s9gfkli70d2y75yc-r-tsutils-0.9.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/87xmkkj5mki401ngpmxk19q01a3nnll7-tsutils_0.9.4.tar.gz
+source root is tsutils
+setting SOURCE_DATE_EPOCH to timestamp 1700007602 of file tsutils/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tsutils’ ...
+** package ‘tsutils’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o VMDecomp.so RcppExports.o init.o vmd.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+** testing if installed package can be loaded from temporary location
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/yxh55aifac1cfbm5ifiyh053g71k7m2c-r-VMDecomp-1.0.1/library/00LOCK-VMDecomp/00new/VMDecomp/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (VMDecomp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-VMDecomp-1.0.1.drv-0/ in /nix/store/yxh55aifac1cfbm5ifiyh053g71k7m2c-r-VMDecomp-1.0.1...
+patching script interpreter paths in /nix/store/yxh55aifac1cfbm5ifiyh053g71k7m2c-r-VMDecomp-1.0.1
+rewriting symlink /nix/store/yxh55aifac1cfbm5ifiyh053g71k7m2c-r-VMDecomp-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/yxh55aifac1cfbm5ifiyh053g71k7m2c-r-VMDecomp-1.0.1
+** testing if installed package keeps a record of temporary installation path
+* DONE (tsutils)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tsutils-0.9.4.drv-0/ in /nix/store/vcr96asd31g6mjpcj7h9a5jhr8v7i1my-r-tsutils-0.9.4...
+patching script interpreter paths in /nix/store/vcr96asd31g6mjpcj7h9a5jhr8v7i1my-r-tsutils-0.9.4
+rewriting symlink /nix/store/vcr96asd31g6mjpcj7h9a5jhr8v7i1my-r-tsutils-0.9.4/nix-support/propagated-user-env-packages to be relative to /nix/store/vcr96asd31g6mjpcj7h9a5jhr8v7i1my-r-tsutils-0.9.4
+building '/nix/store/r86ad8rz82ig7w2zs59g7cnbif64fcp2-r-TSdeeplearning-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/c1rasrjm5xmkmpdgqn2a6kc4gsysdp6x-TSdeeplearning_0.1.0.tar.gz
+source root is TSdeeplearning
+setting SOURCE_DATE_EPOCH to timestamp 1662708780 of file TSdeeplearning/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TSdeeplearning’ ...
+** package ‘TSdeeplearning’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TSdeeplearning)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TSdeeplearning-0.1.0.drv-0/ in /nix/store/pr54mz1qrcg0xp0y8a8y9j0jfa1fssqg-r-TSdeeplearning-0.1.0...
+patching script interpreter paths in /nix/store/pr54mz1qrcg0xp0y8a8y9j0jfa1fssqg-r-TSdeeplearning-0.1.0
+rewriting symlink /nix/store/pr54mz1qrcg0xp0y8a8y9j0jfa1fssqg-r-TSdeeplearning-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/pr54mz1qrcg0xp0y8a8y9j0jfa1fssqg-r-TSdeeplearning-0.1.0
+building '/nix/store/f313jns0sgw6rhdpaznvja37h3bpbbyk-r-decompDL-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z9qdahyjdg74nkvn5lb8vnj3ldz1j54k-decompDL_0.1.0.tar.gz
+source root is decompDL
+setting SOURCE_DATE_EPOCH to timestamp 1701708602 of file decompDL/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘decompDL’ ...
+** package ‘decompDL’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (decompDL)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-decompDL-0.1.0.drv-0/ in /nix/store/xrray2piijbp9kzp02j8qqm3wyv4cr2g-r-decompDL-0.1.0...
+patching script interpreter paths in /nix/store/xrray2piijbp9kzp02j8qqm3wyv4cr2g-r-decompDL-0.1.0
+rewriting symlink /nix/store/xrray2piijbp9kzp02j8qqm3wyv4cr2g-r-decompDL-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/xrray2piijbp9kzp02j8qqm3wyv4cr2g-r-decompDL-0.1.0

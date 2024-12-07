@@ -1,0 +1,217 @@
+these 5 derivations will be built:
+  /nix/store/8k9sysrxgf7qfmnz7kr3w2cs86spnv1r-r-prefmod-0.8-36.drv
+  /nix/store/8vhshbp3v9x6mdb3yjpsxf31dw05mvax-r-radarchart-0.3.1.drv
+  /nix/store/b96abnrimax5hqq1qjkm863hqmrc4zgv-r-pmr-1.2.5.1.drv
+  /nix/store/i8mq8bszz0jrfd3yirb17rr1gvzx3hrm-r-rankdist-1.1.4.drv
+  /nix/store/g5p8iywsci47bycjcv7xz43xdsb4mzwy-r-PLMIX-2.1.1.drv
+these 5 paths will be fetched (0.84 MiB download, 0.84 MiB unpacked):
+  /nix/store/18iamlg0ydaw8w3as3y2lwll7c9fcxiw-PLMIX_2.1.1.tar.gz
+  /nix/store/ha8wb5b95p2q99z40l58mfimq4bb4kax-pmr_1.2.5.1.tar.gz
+  /nix/store/sxlk94rc9mfpcpxfqf9886payf7b3wij-prefmod_0.8-36.tar.gz
+  /nix/store/4gm4h3ddf9d0q8129lgz7307cyanxz3c-radarchart_0.3.1.tar.gz
+  /nix/store/a3c7rg0kraymrmj6vfs2ij9knaapcglx-rankdist_1.1.4.tar.gz
+copying path '/nix/store/18iamlg0ydaw8w3as3y2lwll7c9fcxiw-PLMIX_2.1.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/sxlk94rc9mfpcpxfqf9886payf7b3wij-prefmod_0.8-36.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ha8wb5b95p2q99z40l58mfimq4bb4kax-pmr_1.2.5.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/4gm4h3ddf9d0q8129lgz7307cyanxz3c-radarchart_0.3.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/a3c7rg0kraymrmj6vfs2ij9knaapcglx-rankdist_1.1.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/b96abnrimax5hqq1qjkm863hqmrc4zgv-r-pmr-1.2.5.1.drv'...
+building '/nix/store/8k9sysrxgf7qfmnz7kr3w2cs86spnv1r-r-prefmod-0.8-36.drv'...
+building '/nix/store/8vhshbp3v9x6mdb3yjpsxf31dw05mvax-r-radarchart-0.3.1.drv'...
+building '/nix/store/i8mq8bszz0jrfd3yirb17rr1gvzx3hrm-r-rankdist-1.1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ha8wb5b95p2q99z40l58mfimq4bb4kax-pmr_1.2.5.1.tar.gz
+source root is pmr
+setting SOURCE_DATE_EPOCH to timestamp 1656070910 of file pmr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pmr’ ...
+** package ‘pmr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/sxlk94rc9mfpcpxfqf9886payf7b3wij-prefmod_0.8-36.tar.gz
+source root is prefmod
+setting SOURCE_DATE_EPOCH to timestamp 1696092602 of file prefmod/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘prefmod’ ...
+** package ‘prefmod’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: unpackPhase
+** libs
+unpacking source archive /nix/store/4gm4h3ddf9d0q8129lgz7307cyanxz3c-radarchart_0.3.1.tar.gz
+source root is radarchart
+setting SOURCE_DATE_EPOCH to timestamp 1482230832 of file radarchart/MD5
+Running phase: unpackPhase
+using C compiler: ‘clang version 16.0.6’
+unpacking source archive /nix/store/a3c7rg0kraymrmj6vfs2ij9knaapcglx-rankdist_1.1.4.tar.gz
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+source root is rankdist
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+setting SOURCE_DATE_EPOCH to timestamp 1564263608 of file rankdist/MD5
+Running phase: configurePhase
+Running phase: patchPhase
+Running phase: buildPhase
+using SDK: ‘’
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: checkPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  prefmod.f95 -o prefmod.o
+Running phase: installPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o prefmod.so init.o prefmod.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+* installing *source* package ‘radarchart’ ...
+** package ‘radarchart’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _calcs3_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _pattp_: does not use standard frame
+* installing *source* package ‘rankdist’ ...
+** package ‘rankdist’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+installing to /nix/store/y4zkir7s97la3iz0a8aihxmajkjsnsn5-r-prefmod-0.8-36/library/00LOCK-prefmod/00new/prefmod/libs
+** R
+** data
+*** moving datasets to lazyload DB
+using C++ compiler: ‘clang version 16.0.6’
+** inst
+** byte-compile and prepare package for lazy loading
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c utils.cpp -o utils.o
+** help
+** help
+*** installing help indices
+*** installing help indices
+** building package indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pmr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pmr-1.2.5.1.drv-0/ in /nix/store/q928g1i6bkyhgxkzh67zprddpam185l9-r-pmr-1.2.5.1...
+patching script interpreter paths in /nix/store/q928g1i6bkyhgxkzh67zprddpam185l9-r-pmr-1.2.5.1
+** testing if installed package keeps a record of temporary installation path
+* DONE (radarchart)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-radarchart-0.3.1.drv-0/ in /nix/store/96r9damlkd00a1029bagywn9j8ynvv8n-r-radarchart-0.3.1...
+patching script interpreter paths in /nix/store/96r9damlkd00a1029bagywn9j8ynvv8n-r-radarchart-0.3.1
+rewriting symlink /nix/store/96r9damlkd00a1029bagywn9j8ynvv8n-r-radarchart-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/96r9damlkd00a1029bagywn9j8ynvv8n-r-radarchart-0.3.1
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rankdist.so RcppExports.o utils.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+** help
+installing to /nix/store/xxncwj6ax49zpw1wfdb5vxzjrdpd9v8m-r-rankdist-1.1.4/library/00LOCK-rankdist/00new/rankdist/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (prefmod)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-prefmod-0.8-36.drv-0/ in /nix/store/y4zkir7s97la3iz0a8aihxmajkjsnsn5-r-prefmod-0.8-36...
+patching script interpreter paths in /nix/store/y4zkir7s97la3iz0a8aihxmajkjsnsn5-r-prefmod-0.8-36
+rewriting symlink /nix/store/y4zkir7s97la3iz0a8aihxmajkjsnsn5-r-prefmod-0.8-36/nix-support/propagated-user-env-packages to be relative to /nix/store/y4zkir7s97la3iz0a8aihxmajkjsnsn5-r-prefmod-0.8-36
+** testing if installed package keeps a record of temporary installation path
+* DONE (rankdist)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rankdist-1.1.4.drv-0/ in /nix/store/xxncwj6ax49zpw1wfdb5vxzjrdpd9v8m-r-rankdist-1.1.4...
+patching script interpreter paths in /nix/store/xxncwj6ax49zpw1wfdb5vxzjrdpd9v8m-r-rankdist-1.1.4
+rewriting symlink /nix/store/xxncwj6ax49zpw1wfdb5vxzjrdpd9v8m-r-rankdist-1.1.4/nix-support/propagated-user-env-packages to be relative to /nix/store/xxncwj6ax49zpw1wfdb5vxzjrdpd9v8m-r-rankdist-1.1.4
+building '/nix/store/g5p8iywsci47bycjcv7xz43xdsb4mzwy-r-PLMIX-2.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/18iamlg0ydaw8w3as3y2lwll7c9fcxiw-PLMIX_2.1.1.tar.gz
+source root is PLMIX
+setting SOURCE_DATE_EPOCH to timestamp 1567597802 of file PLMIX/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PLMIX’ ...
+** package ‘PLMIX’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CompProbZpartial.cpp -o CompProbZpartial.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CompRateP.cpp -o CompRateP.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CompRateYpartial.cpp -o CompRateYpartial.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Estep.cpp -o Estep.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PLMIXsim.cpp -o PLMIXsim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c SimYpsilon.cpp -o SimYpsilon.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c UpPhetpartial.cpp -o UpPhetpartial.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c UpWhet.cpp -o UpWhet.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasureobs.cpp -o chisqmeasureobs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasureobs1dim.cpp -o chisqmeasureobs1dim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasureobscond.cpp -o chisqmeasureobscond.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasureobsmatrix1dim.cpp -o chisqmeasureobsmatrix1dim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasuretheo.cpp -o chisqmeasuretheo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasuretheo1dim.cpp -o chisqmeasuretheo1dim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasuretheocond.cpp -o chisqmeasuretheocond.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chisqmeasuretheomatrix1dim.cpp -o chisqmeasuretheomatrix1dim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c howmanyranked.cpp -o howmanyranked.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c loglikPLMIX.cpp -o loglikPLMIX.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c quickintsample.cpp -o quickintsample.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tau.cpp -o tau.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c top1freq1dim.cpp -o top1freq1dim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c umat.cpp -o umat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PLMIX.so CompProbZpartial.o CompRateP.o CompRateYpartial.o Estep.o PLMIXsim.o RcppExports.o SimYpsilon.o UpPhetpartial.o UpWhet.o chisqmeasureobs.o chisqmeasureobs1dim.o chisqmeasureobscond.o chisqmeasureobsmatrix1dim.o chisqmeasuretheo.o chisqmeasuretheo1dim.o chisqmeasuretheocond.o chisqmeasuretheomatrix1dim.o howmanyranked.o loglikPLMIX.o quickintsample.o tau.o top1freq1dim.o umat.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/wz61kfjg3h8d8lz0hr28irh0d8n6mdcm-r-PLMIX-2.1.1/library/00LOCK-PLMIX/00new/PLMIX/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PLMIX)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PLMIX-2.1.1.drv-0/ in /nix/store/wz61kfjg3h8d8lz0hr28irh0d8n6mdcm-r-PLMIX-2.1.1...
+patching script interpreter paths in /nix/store/wz61kfjg3h8d8lz0hr28irh0d8n6mdcm-r-PLMIX-2.1.1
+rewriting symlink /nix/store/wz61kfjg3h8d8lz0hr28irh0d8n6mdcm-r-PLMIX-2.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/wz61kfjg3h8d8lz0hr28irh0d8n6mdcm-r-PLMIX-2.1.1

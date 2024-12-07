@@ -1,0 +1,229 @@
+this derivation will be built:
+  /nix/store/s53kafxvp9yqhv1q9y6m2irl3rmi7gml-r-scorematchingad-0.0.67.drv
+this path will be fetched (1.56 MiB download, 1.56 MiB unpacked):
+  /nix/store/kx4a2lbdyqx0gkv5gvb1a43ky6p86q2z-scorematchingad_0.0.67.tar.gz
+copying path '/nix/store/kx4a2lbdyqx0gkv5gvb1a43ky6p86q2z-scorematchingad_0.0.67.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/s53kafxvp9yqhv1q9y6m2irl3rmi7gml-r-scorematchingad-0.0.67.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kx4a2lbdyqx0gkv5gvb1a43ky6p86q2z-scorematchingad_0.0.67.tar.gz
+source root is scorematchingad
+setting SOURCE_DATE_EPOCH to timestamp 1721874602 of file scorematchingad/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘scorematchingad’ ...
+** package ‘scorematchingad’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for cmake... /nix/store/aw70f6alsbf7cgn5qwqbpgd1w208i3v9-cmake-3.30.5/bin/cmake
+configure: Running CMake...
+-- The C compiler identification is Clang 16.0.6
+-- The CXX compiler identification is Clang 16.0.6
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- cmake_install_datadir = share
+-- cmake_install_docdir = NOTFOUND
+-- cmake_install_includedirs = include
+-- cmake_install_libdirs = lib
+-- cmake_defined_ok = TRUE
+-- cppad_prefix = /var/empty/local
+-- cppad_postfix = NOTFOUND
+-- cppad_cxx_flags = 
+-- cppad_profile_flag = NOTFOUND
+-- cppad_testvector = cppad
+-- cppad_max_num_threads = 48
+-- cppad_tape_id_type = unsigned int
+-- cppad_tape_addr_type = unsigned int
+-- cppad_static_lib = FALSE
+-- cppad_debug_and_release = TRUE
+-- Performing Test minimal_cplusplus
+-- Performing Test minimal_cplusplus - Success
+-- minimal_cplusplus = 1
+-- Performing Test use_cplusplus_2017_ok
+-- Performing Test use_cplusplus_2017_ok - Success
+-- use_cplusplus_2017_ok = 1
+-- CMAKE_SYSTEM_NAME = Darwin
+-- cppad_debug_which = debug_none
+-- CMAKE_BUILD_TYPE = minsizerel
+-- make check: avialable
+-- include_adolc = FALSE
+-- include_ipopt = FALSE
+-- CMAKE_CXX_FLAGS_RELEASE = -O3 -DNDEBUG
+-- Skipping OpenMP on Darwin (Mac) systems. 2DO: fix this
+CMake Warning (dev) at CMakeLists.txt:418 (FIND_PACKAGE):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR thread) 
+-- is_cppad_lib_dynamic = 1
+-- cppad_c_compiler_cmd = cc
+-- c_compiler_msvc_clang = 0
+-- cppad_c_compiler_msvc_flags = 0
+-- cppad_c_compiler_gnu_flags = 1
+-- Performing Test compiler_has_conversion_warn
+-- Performing Test compiler_has_conversion_warn - Success
+-- compiler_has_conversion_warn = 1
+-- cppad_boostvector = 0
+-- cppad_cppadvector = 1
+-- cppad_eigenvector = 0
+-- cppad_stdvector = 0
+-- Performing Test cppad_has_gettimeofday
+-- Performing Test cppad_has_gettimeofday - Success
+-- cppad_has_gettimeofday = 1
+-- Performing Test cppad_tape_id_type_is_unsigned
+-- Performing Test cppad_tape_id_type_is_unsigned - Success
+-- cppad_tape_id_type_is_unsigned = 1
+-- Performing Test cppad_tape_addr_type_is_unsigned
+-- Performing Test cppad_tape_addr_type_is_unsigned - Success
+-- cppad_tape_addr_type_is_unsigned = 1
+-- Performing Test cppad_has_mkstemp
+-- Performing Test cppad_has_mkstemp - Success
+-- cppad_has_mkstemp = 1
+-- Performing Test cppad_has_tmpnam_s
+-- Performing Test cppad_has_tmpnam_s - Failed
+-- cppad_has_tmpnam_s = 0
+-- Performing Test cppad_is_same_unsigned_int_size_t
+-- Performing Test cppad_is_same_unsigned_int_size_t - Failed
+-- cppad_is_same_unsigned_int_size_t = 0
+-- Performing Test cppad_is_same_tape_addr_type_size_t
+-- Performing Test cppad_is_same_tape_addr_type_size_t - Failed
+-- cppad_is_same_tape_addr_type_size_t = 0
+-- Performing Test first_block_t_mod_double_zero
+-- Performing Test first_block_t_mod_double_zero - Success
+-- first_block_t_mod_double_zero = 1
+-- Performing Test second_block_t_mod_double_zero
+-- Performing Test second_block_t_mod_double_zero - Success
+-- second_block_t_mod_double_zero = 1
+-- soversion = 1828.5
+-- Not Windows system so building shared cppad_lib
+-- make check_val_graph: available
+-- make check_example_abs_normal: available
+-- make check_example_atomic_four_lin_ode: available
+-- make check_example_atomic_four_mat_mul: available
+-- make check_example_atomic_four_vector: available
+-- make check_example_atomic_four: available
+-- make check_example_atomic_three: available
+-- make check_example_atomic_two: available
+-- make check_example_chkpoint_two: available
+-- make check_example_compare_change: available
+-- make check_example_general: available
+-- make check_example_get_started: available
+-- make check_example_graph: available
+-- make check_example_jit: available
+-- make check_example_json: available
+-- pthread library path = /nix/store/amdympl4rz7kj93j82cva60v8007n4nv-apple-sdk-11.3/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libpthread.tbd
+-- Looking for pthread_barrier_wait in pthread
+-- Looking for pthread_barrier_wait in pthread - not found
+-- make check_example_optimize: available
+-- make check_example_print_for: available
+-- make check_example_sparse: available
+-- make check_example_utility: available
+-- make check_example: available
+-- make check_introduction: available
+-- make check_test_more_deprecated_atomic_two: available
+-- make check_test_more_deprecated_chkpoint_one: available
+-- make check_test_more_deprecated: available
+-- make check_test_more_compare_c_c: available
+-- make check_test_more_compare_c_cpp: available
+-- make check_test_more_compare_c: available
+-- make check_test_more_debug_rel: available
+-- make check_test_more_general: available
+-- make check_test_more: available
+-- make check_speed_cppad: available
+-- make check_speed_cppad_jit: available
+-- make check_speed_double: available
+-- make check_speed_example: available
+-- make check_speed_program: available
+-- make check_speed_xpackage: available
+-- make check_speed: available
+-- Configuring done (6.6s)
+-- Generating done (0.3s)
+-- Build files have been written to: /tmp/nix-build-r-scorematchingad-0.0.67.drv-0/scorematchingad/inst/cppad/build
+/private/tmp/nix-build-r-scorematchingad-0.0.67.drv-0/scorematchingad
+[1] TRUE
+[1] TRUE
+configure: creating ./config.status
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c approxwrap.cpp -o approxwrap.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cppad_interface.cpp -o cppad_interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c exposemanifold.cpp -o exposemanifold.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tapebdryweight.cpp -o tapebdryweight.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tapell.cpp -o tapell.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tapesmd.cpp -o tapesmd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c temp_file.cpp -o temp_file.o
+In file included from tapebdryweight.cpp:1:
+In file included from ./tapebdryweight.h:4:
+In file included from ../inst/include/scorematchingad_forward.h:6:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:130:
+/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/exceptions.h:60:21: warning: inline function 'Rcpp::exception::record_stack_trace' is not defined [-Wundefined-inline]
+        inline void record_stack_trace();
+                    ^
+/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/exceptions.h:41:13: note: used here
+            record_stack_trace();
+            ^
+/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/exceptions.h:55:21: warning: inline function 'Rcpp::exception::copy_stack_trace_to_r' is not defined [-Wundefined-inline]
+        inline void copy_stack_trace_to_r() const;
+                    ^
+/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/exceptions.h:348:8: note: used here
+    ex.copy_stack_trace_to_r();
+       ^
+In file included from tapebdryweight.cpp:1:
+In file included from ./tapebdryweight.h:4:
+In file included from ../inst/include/scorematchingad_forward.h:6:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/RcppCommon.h:128:
+In file included from /nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/protection/protection.h:23:
+/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/protection/Armor.h:38:23: warning: inline function 'Rcpp::Armor<SEXPREC *>::operator=<SEXPREC *>' is not defined [-Wundefined-inline]
+        inline Armor& operator=( const U& x ) ;
+                      ^
+/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include/Rcpp/r_cast.h:35:21: note: used here
+                res = Rcpp_fast_eval(call, R_GlobalEnv);
+                    ^
+3 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o scorematchingad.so RcppExports.o approxwrap.o cppad_interface.o exposemanifold.o tapebdryweight.o tapell.o tapesmd.o temp_file.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/00LOCK-scorematchingad/00new/scorematchingad/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (scorematchingad)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-scorematchingad-0.0.67.drv-0/ in /nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67...
+patching script interpreter paths in /nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/cppad_ipopt/test/test.sh.in: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/cppad_ipopt/speed/test.sh.in: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/cppad_ipopt/example/test.sh.in: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/bin/test_one.sh: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/bin/test_one.sh.in: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/speed/add_test.sh: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/speed/adolc/adolc_usrparms.sh: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/example/ipopt_solve/test.sh.in: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/example/print_for/test.sh: interpreter directive changed from "#! /bin/bash -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash -e"
+/nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/library/scorematchingad/cppad/example/multi_thread/test.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh -e"
+rewriting symlink /nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67/nix-support/propagated-user-env-packages to be relative to /nix/store/fy5nf8kg29isgxsx720dwrkq1zw02mzp-r-scorematchingad-0.0.67

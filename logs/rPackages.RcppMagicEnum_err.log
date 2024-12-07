@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/nbp9hc750cq4v34sabbwa6m5z84n7528-RcppMagicEnum_0.0.1.tar.gz.drv
+  /nix/store/mdmjbf7dhmsb9r4m1d2sr4vclsfk7i35-r-RcppMagicEnum-0.0.1.drv
+building '/nix/store/nbp9hc750cq4v34sabbwa6m5z84n7528-RcppMagicEnum_0.0.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/RcppMagicEnum_0.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 36116  100 36116    0     0   312k      0 --:--:-- --:--:-- --:--:--  314k
+building '/nix/store/mdmjbf7dhmsb9r4m1d2sr4vclsfk7i35-r-RcppMagicEnum-0.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/l4qqklhr6miqkj5bq56l2gl3xr007966-RcppMagicEnum_0.0.1.tar.gz
+source root is RcppMagicEnum
+setting SOURCE_DATE_EPOCH to timestamp 1724056202 of file RcppMagicEnum/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RcppMagicEnum’ ...
+** package ‘RcppMagicEnum’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c example.cpp -o example.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RcppMagicEnum.so RcppExports.o example.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/945b4h667cid59av6bxgjhl0j4fpd0ci-r-RcppMagicEnum-0.0.1/library/00LOCK-RcppMagicEnum/00new/RcppMagicEnum/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RcppMagicEnum)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RcppMagicEnum-0.0.1.drv-0/ in /nix/store/945b4h667cid59av6bxgjhl0j4fpd0ci-r-RcppMagicEnum-0.0.1...
+patching script interpreter paths in /nix/store/945b4h667cid59av6bxgjhl0j4fpd0ci-r-RcppMagicEnum-0.0.1
+rewriting symlink /nix/store/945b4h667cid59av6bxgjhl0j4fpd0ci-r-RcppMagicEnum-0.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/945b4h667cid59av6bxgjhl0j4fpd0ci-r-RcppMagicEnum-0.0.1

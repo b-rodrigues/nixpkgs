@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/m8cf02wjkswd4yvhqnnzhwna9rd4zk81-r-mclm-0.2.7.drv
+this path will be fetched (0.30 MiB download, 0.30 MiB unpacked):
+  /nix/store/5vhn6jywlydwkq2lb96lil7kx9zxinc8-mclm_0.2.7.tar.gz
+copying path '/nix/store/5vhn6jywlydwkq2lb96lil7kx9zxinc8-mclm_0.2.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m8cf02wjkswd4yvhqnnzhwna9rd4zk81-r-mclm-0.2.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5vhn6jywlydwkq2lb96lil7kx9zxinc8-mclm_0.2.7.tar.gz
+source root is mclm
+setting SOURCE_DATE_EPOCH to timestamp 1664783402 of file mclm/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mclm’ ...
+** package ‘mclm’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c tokenizer.cpp -o tokenizer.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mclm.so RcppExports.o tokenizer.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xw54xlyp7qjz842jpnda59vjabiq7w7s-r-mclm-0.2.7/library/00LOCK-mclm/00new/mclm/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mclm)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mclm-0.2.7.drv-0/ in /nix/store/xw54xlyp7qjz842jpnda59vjabiq7w7s-r-mclm-0.2.7...
+patching script interpreter paths in /nix/store/xw54xlyp7qjz842jpnda59vjabiq7w7s-r-mclm-0.2.7
+rewriting symlink /nix/store/xw54xlyp7qjz842jpnda59vjabiq7w7s-r-mclm-0.2.7/nix-support/propagated-user-env-packages to be relative to /nix/store/xw54xlyp7qjz842jpnda59vjabiq7w7s-r-mclm-0.2.7

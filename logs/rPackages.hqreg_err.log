@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/gcfjx8qyw1fjx66bz2piq1gp9pl8a5wh-hqreg_1.4-1.tar.gz.drv
+  /nix/store/0jz2qpbzw2k9qa8k4rqqmmfgbcq6c7jp-r-hqreg-1.4-1.drv
+building '/nix/store/gcfjx8qyw1fjx66bz2piq1gp9pl8a5wh-hqreg_1.4-1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/hqreg_1.4-1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 52908  100 52908    0     0   374k      0 --:--:-- --:--:-- --:--:--  371k
+building '/nix/store/0jz2qpbzw2k9qa8k4rqqmmfgbcq6c7jp-r-hqreg-1.4-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1sl8171h18aj8wn5q4l7wpb87zpclw3v-hqreg_1.4-1.tar.gz
+source root is hqreg
+setting SOURCE_DATE_EPOCH to timestamp 1727386202 of file hqreg/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hqreg’ ...
+** package ‘hqreg’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c data_process.c -o data_process.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c hqreg.c -o hqreg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ksav.c -o ksav.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c util.c -o util.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o hqreg.so data_process.o hqreg.o init.o ksav.o util.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4qlcq7smw16hldpfpas20czwmfyfjhf7-r-hqreg-1.4-1/library/00LOCK-hqreg/00new/hqreg/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hqreg)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hqreg-1.4-1.drv-0/ in /nix/store/4qlcq7smw16hldpfpas20czwmfyfjhf7-r-hqreg-1.4-1...
+patching script interpreter paths in /nix/store/4qlcq7smw16hldpfpas20czwmfyfjhf7-r-hqreg-1.4-1

@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/za298haxcx9v0dp7i9zbwvxbn95fbbar-r-pRSR-3.1.1.drv
+this path will be fetched (0.52 MiB download, 0.52 MiB unpacked):
+  /nix/store/vpvka4xwb02ymmjz711ahi16ri50qgsv-pRSR_3.1.1.tar.gz
+copying path '/nix/store/vpvka4xwb02ymmjz711ahi16ri50qgsv-pRSR_3.1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/za298haxcx9v0dp7i9zbwvxbn95fbbar-r-pRSR-3.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vpvka4xwb02ymmjz711ahi16ri50qgsv-pRSR_3.1.1.tar.gz
+source root is pRSR
+setting SOURCE_DATE_EPOCH to timestamp 1463419904 of file pRSR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pRSR’ ...
+** package ‘pRSR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c GetHReg.c -o GetHReg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c RegSS.c -o RegSS.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c SolveHReg.c -o SolveHReg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c nrutil.c -o nrutil.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pRSR.so GetHReg.o RegSS.o SolveHReg.o nrutil.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/1h5zs2aqp3pgsz1x2n7wah928scdkirk-r-pRSR-3.1.1/library/00LOCK-pRSR/00new/pRSR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pRSR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pRSR-3.1.1.drv-0/ in /nix/store/1h5zs2aqp3pgsz1x2n7wah928scdkirk-r-pRSR-3.1.1...
+patching script interpreter paths in /nix/store/1h5zs2aqp3pgsz1x2n7wah928scdkirk-r-pRSR-3.1.1

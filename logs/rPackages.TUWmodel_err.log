@@ -1,0 +1,50 @@
+this derivation will be built:
+  /nix/store/jk4n9c73qxc8wfsbp419kk25h2v179w6-r-TUWmodel-1.1-1.drv
+this path will be fetched (0.83 MiB download, 0.83 MiB unpacked):
+  /nix/store/mfb9hmdv8x7z1sxdxwkbw4w0ykdmhq6z-TUWmodel_1.1-1.tar.gz
+copying path '/nix/store/mfb9hmdv8x7z1sxdxwkbw4w0ykdmhq6z-TUWmodel_1.1-1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/jk4n9c73qxc8wfsbp419kk25h2v179w6-r-TUWmodel-1.1-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mfb9hmdv8x7z1sxdxwkbw4w0ykdmhq6z-TUWmodel_1.1-1.tar.gz
+source root is TUWmodel
+setting SOURCE_DATE_EPOCH to timestamp 1582718410 of file TUWmodel/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TUWmodel’ ...
+** package ‘TUWmodel’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c hbvmodel.f -o hbvmodel.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c hbvmodel_dual.f -o hbvmodel_dual.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rinit.c -o rinit.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TUWmodel.so hbvmodel.o hbvmodel_dual.o rinit.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _respfunc_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _soilmoisture_: does not use standard frame
+ld: warning: could not create compact unwind for _hbvmodel_: does not use standard frame
+ld: warning: could not create compact unwind for _hbvmodel_dual_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/61y1l257dg4qzagcfvwnjcjm31p7y97x-r-TUWmodel-1.1-1/library/00LOCK-TUWmodel/00new/TUWmodel/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TUWmodel)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TUWmodel-1.1-1.drv-0/ in /nix/store/61y1l257dg4qzagcfvwnjcjm31p7y97x-r-TUWmodel-1.1-1...
+patching script interpreter paths in /nix/store/61y1l257dg4qzagcfvwnjcjm31p7y97x-r-TUWmodel-1.1-1

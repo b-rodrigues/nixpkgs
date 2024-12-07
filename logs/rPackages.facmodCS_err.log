@@ -1,0 +1,177 @@
+these 4 derivations will be built:
+  /nix/store/8l01y4sp5jdy18c8w7fn3a2mpahq6c4a-r-pyinit-1.1.3.drv
+  /nix/store/navay755qrk4chf6v54jxhkk2phq5z89-RobStatTM_1.0.11.tar.gz.drv
+  /nix/store/l1772qv4k288nhb4zcxa8zrca237k25p-r-RobStatTM-1.0.11.drv
+  /nix/store/hzyafsg8lc0nys2mckqm0pdh275qz17x-r-facmodCS-1.0.drv
+building '/nix/store/navay755qrk4chf6v54jxhkk2phq5z89-RobStatTM_1.0.11.tar.gz.drv'...
+building '/nix/store/8l01y4sp5jdy18c8w7fn3a2mpahq6c4a-r-pyinit-1.1.3.drv'...
+
+trying https://cran.r-project.org/src/contrib/RobStatTM_1.0.11.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/x4628mjqpamir18a1mmm3gydh9avhk7m-pyinit_1.1.3.tar.gz
+source root is pyinit
+setting SOURCE_DATE_EPOCH to timestamp 1651006208 of file pyinit/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100  808k  100  808k    0     0  3281k      0 --:--:-- --:--:-- --:--:-- 3275k
+* installing *source* package ‘pyinit’ ...
+** package ‘pyinit’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c AuxMemory.c -o AuxMemory.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PartialSort.c -o PartialSort.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c evd.c -o evd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fastPY.c -o fastPY.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mscale.c -o mscale.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c olsreg.c -o olsreg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c psc.c -o psc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D__STDC_LIMIT_MACROS  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rinterface.c -o rinterface.o
+In file included from olsreg.c:9:
+In file included from ./BLAS.h:19:
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/BLAS.h:57:10: warning: 'BLAS_INT' macro redefined [-Wmacro-redefined]
+# define BLAS_INT int
+         ^
+./BLAS.h:13:9: note: previous definition is here
+#define BLAS_INT const int
+        ^
+In file included from PartialSort.c:10:
+In file included from ./BLAS.h:19:
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/BLAS.h:57:10: warning: 'BLAS_INT' macro redefined [-Wmacro-redefined]
+# define BLAS_INT int
+         ^
+./BLAS.h:13:9: note: previous definition is here
+#define BLAS_INT const int
+        ^
+In file included from evd.c:9:
+In file included from ./BLAS.h:19:
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/BLAS.h:57:10: warning: 'BLAS_INT' macro redefined [-Wmacro-redefined]
+# define BLAS_INT int
+         ^
+./BLAS.h:13:9: note: previous definition is here
+#define BLAS_INT const int
+        ^
+In file included from psc.c:9:
+In file included from ./BLAS.h:19:
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/BLAS.h:57:10: warning: 'BLAS_INT' macro redefined [-Wmacro-redefined]
+# define BLAS_INT int
+         ^
+./BLAS.h:13:9: note: previous definition is here
+#define BLAS_INT const int
+        ^
+In file included from fastPY.c:9:
+In file included from ./BLAS.h:19:
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include/R_ext/BLAS.h:57:10: warning: 'BLAS_INT' macro redefined [-Wmacro-redefined]
+# define BLAS_INT int
+         ^
+./BLAS.h:13:9: note: previous definition is here
+#define BLAS_INT const int
+        ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pyinit.so AuxMemory.o PartialSort.o evd.o fastPY.o mscale.o olsreg.o psc.o rinterface.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/jfrvrs1yzspimwi1bh698w0ji53aln7z-r-pyinit-1.1.3/library/00LOCK-pyinit/00new/pyinit/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pyinit)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pyinit-1.1.3.drv-0/ in /nix/store/jfrvrs1yzspimwi1bh698w0ji53aln7z-r-pyinit-1.1.3...
+patching script interpreter paths in /nix/store/jfrvrs1yzspimwi1bh698w0ji53aln7z-r-pyinit-1.1.3
+rewriting symlink /nix/store/jfrvrs1yzspimwi1bh698w0ji53aln7z-r-pyinit-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/jfrvrs1yzspimwi1bh698w0ji53aln7z-r-pyinit-1.1.3
+building '/nix/store/l1772qv4k288nhb4zcxa8zrca237k25p-r-RobStatTM-1.0.11.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g3qf92b8r7rq7cn4riydbcvlqwwhgaz4-RobStatTM_1.0.11.tar.gz
+source root is RobStatTM
+setting SOURCE_DATE_EPOCH to timestamp 1729182608 of file RobStatTM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RobStatTM’ ...
+** package ‘RobStatTM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c erfz.c -o erfz.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fastmve.c -o fastmve.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lmrob.c -o lmrob.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c rllarsbi.f -o rllarsbi.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RobStatTM.so erfz.o fastmve.o init.o lmrob.o rllarsbi.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _rllarsbi_: does not use standard frame
+installing to /nix/store/85lmh6n288ijjnbmn8s4dr98hd4qi708-r-RobStatTM-1.0.11/library/00LOCK-RobStatTM/00new/RobStatTM/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RobStatTM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RobStatTM-1.0.11.drv-0/ in /nix/store/85lmh6n288ijjnbmn8s4dr98hd4qi708-r-RobStatTM-1.0.11...
+patching script interpreter paths in /nix/store/85lmh6n288ijjnbmn8s4dr98hd4qi708-r-RobStatTM-1.0.11
+rewriting symlink /nix/store/85lmh6n288ijjnbmn8s4dr98hd4qi708-r-RobStatTM-1.0.11/nix-support/propagated-user-env-packages to be relative to /nix/store/85lmh6n288ijjnbmn8s4dr98hd4qi708-r-RobStatTM-1.0.11
+building '/nix/store/hzyafsg8lc0nys2mckqm0pdh275qz17x-r-facmodCS-1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z0lgackmjr2faf4rw95cp4zqr9qkr4s5-facmodCS_1.0.tar.gz
+source root is facmodCS
+setting SOURCE_DATE_EPOCH to timestamp 1686849608 of file facmodCS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘facmodCS’ ...
+** package ‘facmodCS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (facmodCS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-facmodCS-1.0.drv-0/ in /nix/store/g9dxzqllwi194kdsfl72q3y23iifrfja-r-facmodCS-1.0...
+patching script interpreter paths in /nix/store/g9dxzqllwi194kdsfl72q3y23iifrfja-r-facmodCS-1.0
+rewriting symlink /nix/store/g9dxzqllwi194kdsfl72q3y23iifrfja-r-facmodCS-1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/g9dxzqllwi194kdsfl72q3y23iifrfja-r-facmodCS-1.0

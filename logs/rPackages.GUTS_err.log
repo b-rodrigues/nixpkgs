@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/4vg75dszryccj36pwrx2vhnp3lh8ggcw-r-GUTS-1.2.5.drv
+this path will be fetched (2.73 MiB download, 2.73 MiB unpacked):
+  /nix/store/aq94gyxvp6fjk0yj6l0f2yfm2xqphmjf-GUTS_1.2.5.tar.gz
+copying path '/nix/store/aq94gyxvp6fjk0yj6l0f2yfm2xqphmjf-GUTS_1.2.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4vg75dszryccj36pwrx2vhnp3lh8ggcw-r-GUTS-1.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/aq94gyxvp6fjk0yj6l0f2yfm2xqphmjf-GUTS_1.2.5.tar.gz
+source root is GUTS
+setting SOURCE_DATE_EPOCH to timestamp 1697789402 of file GUTS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘GUTS’ ...
+** package ‘GUTS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Rcpp_GUTS_RED_interface.cpp -o Rcpp_GUTS_RED_interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c samplers.cpp -o samplers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o GUTS.so RcppExports.o Rcpp_GUTS_RED_interface.o samplers.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/252p07h5jkpwlbghccfk131gs79fpmh9-r-GUTS-1.2.5/library/00LOCK-GUTS/00new/GUTS/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (GUTS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-GUTS-1.2.5.drv-0/ in /nix/store/252p07h5jkpwlbghccfk131gs79fpmh9-r-GUTS-1.2.5...
+patching script interpreter paths in /nix/store/252p07h5jkpwlbghccfk131gs79fpmh9-r-GUTS-1.2.5
+rewriting symlink /nix/store/252p07h5jkpwlbghccfk131gs79fpmh9-r-GUTS-1.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/252p07h5jkpwlbghccfk131gs79fpmh9-r-GUTS-1.2.5

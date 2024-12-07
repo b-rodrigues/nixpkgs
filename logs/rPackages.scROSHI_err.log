@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/l4kr7xs8wfrkd3dib3zgd6zyjd1i6na5-r-scROSHI-1.0.0.0.drv
+this path will be fetched (0.67 MiB download, 0.67 MiB unpacked):
+  /nix/store/v670r61ls1kvp028s2j34fmvk2h8pnab-scROSHI_1.0.0.0.tar.gz
+copying path '/nix/store/v670r61ls1kvp028s2j34fmvk2h8pnab-scROSHI_1.0.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/l4kr7xs8wfrkd3dib3zgd6zyjd1i6na5-r-scROSHI-1.0.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/v670r61ls1kvp028s2j34fmvk2h8pnab-scROSHI_1.0.0.0.tar.gz
+source root is scROSHI
+setting SOURCE_DATE_EPOCH to timestamp 1673358602 of file scROSHI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘SingleCellExperiment’ is not available for package ‘scROSHI’
+* removing ‘/nix/store/437mqmp020j6m2iicjrkyq4ipyiwm2xf-r-scROSHI-1.0.0.0/library/scROSHI’
+error: builder for '/nix/store/l4kr7xs8wfrkd3dib3zgd6zyjd1i6na5-r-scROSHI-1.0.0.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/v670r61ls1kvp028s2j34fmvk2h8pnab-scROSHI_1.0.0.0.tar.gz
+       > source root is scROSHI
+       > setting SOURCE_DATE_EPOCH to timestamp 1673358602 of file scROSHI/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘SingleCellExperiment’ is not available for package ‘scROSHI’
+       > * removing ‘/nix/store/437mqmp020j6m2iicjrkyq4ipyiwm2xf-r-scROSHI-1.0.0.0/library/scROSHI’
+       For full logs, run 'nix log /nix/store/l4kr7xs8wfrkd3dib3zgd6zyjd1i6na5-r-scROSHI-1.0.0.0.drv'.

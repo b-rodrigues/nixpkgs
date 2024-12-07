@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/9769313m1w1373lw4w4n0i0m60sdqwkz-r-image.LineSegmentDetector-0.1.0.drv
+this path will be fetched (0.97 MiB download, 0.97 MiB unpacked):
+  /nix/store/56dq8m3fpn96b45qprnvgmd2f8p7m1sl-image.LineSegmentDetector_0.1.0.tar.gz
+copying path '/nix/store/56dq8m3fpn96b45qprnvgmd2f8p7m1sl-image.LineSegmentDetector_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/9769313m1w1373lw4w4n0i0m60sdqwkz-r-image.LineSegmentDetector-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/56dq8m3fpn96b45qprnvgmd2f8p7m1sl-image.LineSegmentDetector_0.1.0.tar.gz
+source root is image.LineSegmentDetector
+setting SOURCE_DATE_EPOCH to timestamp 1595853013 of file image.LineSegmentDetector/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘image.LineSegmentDetector’ ...
+** package ‘image.LineSegmentDetector’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c line_segment_detector.cpp -o line_segment_detector.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lsd.c -o lsd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o image.LineSegmentDetector.so RcppExports.o line_segment_detector.o lsd.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xr8pxvyndjfzg2bhy7qdkx9ydh2mv1sy-r-image.LineSegmentDetector-0.1.0/library/00LOCK-image.LineSegmentDetector/00new/image.LineSegmentDetector/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (image.LineSegmentDetector)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-image.LineSegmentDetector-0.1.0.drv-0/ in /nix/store/xr8pxvyndjfzg2bhy7qdkx9ydh2mv1sy-r-image.LineSegmentDetector-0.1.0...
+patching script interpreter paths in /nix/store/xr8pxvyndjfzg2bhy7qdkx9ydh2mv1sy-r-image.LineSegmentDetector-0.1.0
+rewriting symlink /nix/store/xr8pxvyndjfzg2bhy7qdkx9ydh2mv1sy-r-image.LineSegmentDetector-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/xr8pxvyndjfzg2bhy7qdkx9ydh2mv1sy-r-image.LineSegmentDetector-0.1.0

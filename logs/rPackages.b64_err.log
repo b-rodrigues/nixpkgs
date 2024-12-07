@@ -1,0 +1,62 @@
+this derivation will be built:
+  /nix/store/cviw482kgvz8dbi2lnp76mianzna5a8h-r-b64-0.1.3.drv
+building '/nix/store/cviw482kgvz8dbi2lnp76mianzna5a8h-r-b64-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/02gr6z5gjvsxs8aazbs1l6g7gzf2n4yi-b64_0.1.3.tar.gz
+source root is b64
+setting SOURCE_DATE_EPOCH to timestamp 1727369405 of file b64/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘b64’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+sh: rustc: command not found
+Erreur dans value[[3L]](cond) : 
+  ----------------------- [RUST NOT FOUND]---------------------------
+The 'rustc' compiler was not found on the PATH. Please install
+rustc or higher from:
+https://www.rust-lang.org/tools/install
+
+Alternatively, you may install Rust from your OS package manager:
+ - Debian/Ubuntu: apt-get install rustc
+ - Fedora/CentOS: dnf install rustc
+ - macOS: brew install rustc
+-------------------------------------------------------------------
+Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Exécution arrêtée
+ERROR: configuration failed for package ‘b64’
+* removing ‘/nix/store/vyh2ywav1lpa78m49b38w587hdslbgf6-r-b64-0.1.3/library/b64’
+error: builder for '/nix/store/cviw482kgvz8dbi2lnp76mianzna5a8h-r-b64-0.1.3.drv' failed with exit code 1;
+       last 25 log lines:
+       > configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘b64’ ...
+       > file ‘configure’ has the wrong MD5 checksum
+       > ** using staged installation
+       > sh: rustc: command not found
+       > Erreur dans value[[3L]](cond) :
+       >   ----------------------- [RUST NOT FOUND]---------------------------
+       > The 'rustc' compiler was not found on the PATH. Please install
+       > rustc or higher from:
+       > https://www.rust-lang.org/tools/install
+       >
+       > Alternatively, you may install Rust from your OS package manager:
+       >  - Debian/Ubuntu: apt-get install rustc
+       >  - Fedora/CentOS: dnf install rustc
+       >  - macOS: brew install rustc
+       > -------------------------------------------------------------------
+       > Appels : tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+       > Exécution arrêtée
+       > ERROR: configuration failed for package ‘b64’
+       > * removing ‘/nix/store/vyh2ywav1lpa78m49b38w587hdslbgf6-r-b64-0.1.3/library/b64’
+       For full logs, run 'nix log /nix/store/cviw482kgvz8dbi2lnp76mianzna5a8h-r-b64-0.1.3.drv'.

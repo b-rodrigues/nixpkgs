@@ -1,0 +1,64 @@
+these 2 derivations will be built:
+  /nix/store/2zk5rfp1972r4cn7k6z5s9abivgsjkdr-r-geoR-1.9-4.drv
+  /nix/store/359nsc1f3ayynbmpm7hlfn5hzyl160if-r-NTSS-0.1.3.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/vz98g1h38n30rhlfdxyqr5y815v9lzz0-NTSS_0.1.3.tar.gz
+copying path '/nix/store/vz98g1h38n30rhlfdxyqr5y815v9lzz0-NTSS_0.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/2zk5rfp1972r4cn7k6z5s9abivgsjkdr-r-geoR-1.9-4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8264hv838n008f030v9kdyxrkj97w2xq-geoR_1.9-4.tar.gz
+source root is geoR
+setting SOURCE_DATE_EPOCH to timestamp 1707975002 of file geoR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘geoR’ ...
+** package ‘geoR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c geoR.c -o geoR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o geoR.so geoR.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/b8s2py707c8qid2zh2izzvwryll2agcn-r-geoR-1.9-4/library/00LOCK-geoR/00new/geoR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 74217 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-geoR-1.9-4.drv-0/RtmpCV5j2E/file121a35d121694'
+ERROR: lazy loading failed for package ‘geoR’
+* removing ‘/nix/store/b8s2py707c8qid2zh2izzvwryll2agcn-r-geoR-1.9-4/library/geoR’
+error: builder for '/nix/store/2zk5rfp1972r4cn7k6z5s9abivgsjkdr-r-geoR-1.9-4.drv' failed with exit code 1;
+       last 25 log lines:
+       > setting SOURCE_DATE_EPOCH to timestamp 1707975002 of file geoR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘geoR’ ...
+       > ** package ‘geoR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c geoR.c -o geoR.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o geoR.so geoR.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > installing to /nix/store/b8s2py707c8qid2zh2izzvwryll2agcn-r-geoR-1.9-4/library/00LOCK-geoR/00new/geoR/libs
+       > ** R
+       > ** data
+       > *** moving datasets to lazyload DB
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 74217 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-geoR-1.9-4.drv-0/RtmpCV5j2E/file121a35d121694'
+       > ERROR: lazy loading failed for package ‘geoR’
+       > * removing ‘/nix/store/b8s2py707c8qid2zh2izzvwryll2agcn-r-geoR-1.9-4/library/geoR’
+       For full logs, run 'nix log /nix/store/2zk5rfp1972r4cn7k6z5s9abivgsjkdr-r-geoR-1.9-4.drv'.
+error: 1 dependencies of derivation '/nix/store/359nsc1f3ayynbmpm7hlfn5hzyl160if-r-NTSS-0.1.3.drv' failed to build

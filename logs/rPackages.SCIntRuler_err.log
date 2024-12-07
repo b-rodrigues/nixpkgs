@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/6w0y0dm984d8zx56vi88va2jynxib3zk-r-SCIntRuler-0.99.6.drv
+this path will be fetched (2.51 MiB download, 2.51 MiB unpacked):
+  /nix/store/kh0br8d05xiv2lbnz14mvyyxjmywvr5y-SCIntRuler_0.99.6.tar.gz
+copying path '/nix/store/kh0br8d05xiv2lbnz14mvyyxjmywvr5y-SCIntRuler_0.99.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6w0y0dm984d8zx56vi88va2jynxib3zk-r-SCIntRuler-0.99.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kh0br8d05xiv2lbnz14mvyyxjmywvr5y-SCIntRuler_0.99.6.tar.gz
+source root is SCIntRuler
+setting SOURCE_DATE_EPOCH to timestamp 1720797608 of file SCIntRuler/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependencies ‘batchelor’, ‘MatrixGenerics’, ‘SingleCellExperiment’ are not available for package ‘SCIntRuler’
+* removing ‘/nix/store/kjkb0x4k88b87gvam08c7h6h696lcf62-r-SCIntRuler-0.99.6/library/SCIntRuler’
+error: builder for '/nix/store/6w0y0dm984d8zx56vi88va2jynxib3zk-r-SCIntRuler-0.99.6.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/kh0br8d05xiv2lbnz14mvyyxjmywvr5y-SCIntRuler_0.99.6.tar.gz
+       > source root is SCIntRuler
+       > setting SOURCE_DATE_EPOCH to timestamp 1720797608 of file SCIntRuler/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependencies ‘batchelor’, ‘MatrixGenerics’, ‘SingleCellExperiment’ are not available for package ‘SCIntRuler’
+       > * removing ‘/nix/store/kjkb0x4k88b87gvam08c7h6h696lcf62-r-SCIntRuler-0.99.6/library/SCIntRuler’
+       For full logs, run 'nix log /nix/store/6w0y0dm984d8zx56vi88va2jynxib3zk-r-SCIntRuler-0.99.6.drv'.

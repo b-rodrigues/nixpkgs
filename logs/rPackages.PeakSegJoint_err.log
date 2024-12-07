@@ -1,0 +1,98 @@
+these 4 derivations will be built:
+  /nix/store/5y43n34q08as27vzps8fr367fhgdr9a4-penaltyLearning_2024.9.3.tar.gz.drv
+  /nix/store/6jnbx8z5zn5a8gqb0n9lhqb7mjlchb55-PeakSegJoint_2024.10.1.tar.gz.drv
+  /nix/store/fwgy2jyk6rki5s09gw0s27xrlal8lvc8-r-penaltyLearning-2024.9.3.drv
+  /nix/store/v95q5hcyqxnmhr5vvqwg9na9cfhik4vj-r-PeakSegJoint-2024.10.1.drv
+building '/nix/store/6jnbx8z5zn5a8gqb0n9lhqb7mjlchb55-PeakSegJoint_2024.10.1.tar.gz.drv'...
+building '/nix/store/5y43n34q08as27vzps8fr367fhgdr9a4-penaltyLearning_2024.9.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/PeakSegJoint_2024.10.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/penaltyLearning_2024.9.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  759k  100  759k    0     0  3118k      0 --:--:-- --:--:-- --:--:-- 3125k
+100 2784k  100 2784k    0     0  6436k      0 --:--:-- --:--:-- --:--:-- 6445k
+building '/nix/store/fwgy2jyk6rki5s09gw0s27xrlal8lvc8-r-penaltyLearning-2024.9.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1ccz50xfcrffwabgims4qxc70782kdsw-penaltyLearning_2024.9.3.tar.gz
+source root is penaltyLearning
+setting SOURCE_DATE_EPOCH to timestamp 1727843402 of file penaltyLearning/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘penaltyLearning’ ...
+** package ‘penaltyLearning’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c interface.cpp -o interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c largestContinuousMinimum.cpp -o largestContinuousMinimum.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c modelSelection.cpp -o modelSelection.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c modelSelectionFwd.cpp -o modelSelectionFwd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c modelSelectionQuadratic.cpp -o modelSelectionQuadratic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o penaltyLearning.so interface.o largestContinuousMinimum.o modelSelection.o modelSelectionFwd.o modelSelectionQuadratic.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/4yar2pqw6fmn2qxqy6fnjyvk5ay0c2ay-r-penaltyLearning-2024.9.3/library/00LOCK-penaltyLearning/00new/penaltyLearning/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (penaltyLearning)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-penaltyLearning-2024.9.3.drv-0/ in /nix/store/4yar2pqw6fmn2qxqy6fnjyvk5ay0c2ay-r-penaltyLearning-2024.9.3...
+patching script interpreter paths in /nix/store/4yar2pqw6fmn2qxqy6fnjyvk5ay0c2ay-r-penaltyLearning-2024.9.3
+rewriting symlink /nix/store/4yar2pqw6fmn2qxqy6fnjyvk5ay0c2ay-r-penaltyLearning-2024.9.3/nix-support/propagated-user-env-packages to be relative to /nix/store/4yar2pqw6fmn2qxqy6fnjyvk5ay0c2ay-r-penaltyLearning-2024.9.3
+building '/nix/store/v95q5hcyqxnmhr5vvqwg9na9cfhik4vj-r-PeakSegJoint-2024.10.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5pdfq8rfj1h32f3g8x1kfh2wryj80lf9-PeakSegJoint_2024.10.1.tar.gz
+source root is PeakSegJoint
+setting SOURCE_DATE_EPOCH to timestamp 1727844005 of file PeakSegJoint/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PeakSegJoint’ ...
+** package ‘PeakSegJoint’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c OptimalPoissonLoss.c -o OptimalPoissonLoss.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PeakSegJoint.c -o PeakSegJoint.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PeakSegJointFaster.c -o PeakSegJointFaster.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PeakSegJoint_interface.c -o PeakSegJoint_interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c binSum.c -o binSum.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c clusterPeaks.c -o clusterPeaks.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c multiClusterPeaks.c -o multiClusterPeaks.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c profile.c -o profile.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PeakSegJoint.so OptimalPoissonLoss.o PeakSegJoint.o PeakSegJointFaster.o PeakSegJoint_interface.o binSum.o clusterPeaks.o multiClusterPeaks.o profile.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8f148aj9fy4xl3k6b0gwq02whdxb1h8r-r-PeakSegJoint-2024.10.1/library/00LOCK-PeakSegJoint/00new/PeakSegJoint/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PeakSegJoint)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PeakSegJoint-2024.10.1.drv-0/ in /nix/store/8f148aj9fy4xl3k6b0gwq02whdxb1h8r-r-PeakSegJoint-2024.10.1...
+patching script interpreter paths in /nix/store/8f148aj9fy4xl3k6b0gwq02whdxb1h8r-r-PeakSegJoint-2024.10.1
+rewriting symlink /nix/store/8f148aj9fy4xl3k6b0gwq02whdxb1h8r-r-PeakSegJoint-2024.10.1/nix-support/propagated-user-env-packages to be relative to /nix/store/8f148aj9fy4xl3k6b0gwq02whdxb1h8r-r-PeakSegJoint-2024.10.1

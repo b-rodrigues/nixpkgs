@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/p803ly0sg8w4wp78vi9kyklqy6k6s0ir-NSM3_1.19.tar.gz.drv
+  /nix/store/8d1k8nbpp3xy5v24p3s00kjgn2jw31c0-r-NSM3-1.19.drv
+building '/nix/store/p803ly0sg8w4wp78vi9kyklqy6k6s0ir-NSM3_1.19.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/NSM3_1.19.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  241k  100  241k    0     0  1235k      0 --:--:-- --:--:-- --:--:-- 1242k
+building '/nix/store/8d1k8nbpp3xy5v24p3s00kjgn2jw31c0-r-NSM3-1.19.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nc7wba74w3b7g2xifm4va33plnapfim1-NSM3_1.19.tar.gz
+source root is NSM3
+setting SOURCE_DATE_EPOCH to timestamp 1730738406 of file NSM3/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘NSM3’ ...
+** package ‘NSM3’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ansari.c -o ansari.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ks.c -o ks.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o NSM3.so ansari.o ks.o registerDynamicSymbol.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/hvg7xf893fsxqjpxfk73q2adnhzyqb9i-r-NSM3-1.19/library/00LOCK-NSM3/00new/NSM3/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (NSM3)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-NSM3-1.19.drv-0/ in /nix/store/hvg7xf893fsxqjpxfk73q2adnhzyqb9i-r-NSM3-1.19...
+patching script interpreter paths in /nix/store/hvg7xf893fsxqjpxfk73q2adnhzyqb9i-r-NSM3-1.19
+rewriting symlink /nix/store/hvg7xf893fsxqjpxfk73q2adnhzyqb9i-r-NSM3-1.19/nix-support/propagated-user-env-packages to be relative to /nix/store/hvg7xf893fsxqjpxfk73q2adnhzyqb9i-r-NSM3-1.19

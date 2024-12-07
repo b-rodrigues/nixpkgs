@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/caki0wm34g6ry0ljdps8bwgy7nxgi6yj-mgee2_0.6.tar.gz.drv
+  /nix/store/7yvkr5hr6v3wli8j6pavfkj5cws3bkdh-r-mgee2-0.6.drv
+building '/nix/store/caki0wm34g6ry0ljdps8bwgy7nxgi6yj-mgee2_0.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/mgee2_0.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  111k  100  111k    0     0   689k      0 --:--:-- --:--:-- --:--:--  691k
+building '/nix/store/7yvkr5hr6v3wli8j6pavfkj5cws3bkdh-r-mgee2-0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d6jsh6jwjsbkxgragh00kx0kqs6vr2h5-mgee2_0.6.tar.gz
+source root is mgee2
+setting SOURCE_DATE_EPOCH to timestamp 1730789402 of file mgee2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mgee2’ ...
+** package ‘mgee2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c mgee2.c -o mgee2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c packagename_init.c -o packagename_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mgee2.so mgee2.o packagename_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/8hc3vrjc1jdwzn7dm46nxwr9vaggl12w-r-mgee2-0.6/library/00LOCK-mgee2/00new/mgee2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mgee2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mgee2-0.6.drv-0/ in /nix/store/8hc3vrjc1jdwzn7dm46nxwr9vaggl12w-r-mgee2-0.6...
+patching script interpreter paths in /nix/store/8hc3vrjc1jdwzn7dm46nxwr9vaggl12w-r-mgee2-0.6
+rewriting symlink /nix/store/8hc3vrjc1jdwzn7dm46nxwr9vaggl12w-r-mgee2-0.6/nix-support/propagated-user-env-packages to be relative to /nix/store/8hc3vrjc1jdwzn7dm46nxwr9vaggl12w-r-mgee2-0.6

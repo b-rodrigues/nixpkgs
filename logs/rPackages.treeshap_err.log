@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/h58vcn4p0a5ca8wpkkrrlyj0mdqb6r3x-r-treeshap-0.3.1.drv
+this path will be fetched (0.78 MiB download, 0.78 MiB unpacked):
+  /nix/store/jzz7gghxf12y4m1llr6my5vxz77y8iqb-treeshap_0.3.1.tar.gz
+copying path '/nix/store/jzz7gghxf12y4m1llr6my5vxz77y8iqb-treeshap_0.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/h58vcn4p0a5ca8wpkkrrlyj0mdqb6r3x-r-treeshap-0.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jzz7gghxf12y4m1llr6my5vxz77y8iqb-treeshap_0.3.1.tar.gz
+source root is treeshap
+setting SOURCE_DATE_EPOCH to timestamp 1705936806 of file treeshap/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘treeshap’ ...
+** package ‘treeshap’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c predict.cpp -o predict.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c set_reference_dataset.cpp -o set_reference_dataset.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c treeshap.cpp -o treeshap.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o treeshap.so RcppExports.o predict.o set_reference_dataset.o treeshap.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/48id65v9sx10kf8l09snrh9f50ncwrf3-r-treeshap-0.3.1/library/00LOCK-treeshap/00new/treeshap/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (treeshap)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-treeshap-0.3.1.drv-0/ in /nix/store/48id65v9sx10kf8l09snrh9f50ncwrf3-r-treeshap-0.3.1...
+patching script interpreter paths in /nix/store/48id65v9sx10kf8l09snrh9f50ncwrf3-r-treeshap-0.3.1
+rewriting symlink /nix/store/48id65v9sx10kf8l09snrh9f50ncwrf3-r-treeshap-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/48id65v9sx10kf8l09snrh9f50ncwrf3-r-treeshap-0.3.1

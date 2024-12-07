@@ -1,0 +1,63 @@
+these 2 derivations will be built:
+  /nix/store/cf108n8pkibz815rf4ka73p0p8pfvr5s-spant_2.24.0.tar.gz.drv
+  /nix/store/8ay4bkzmg37w6r63vpa0wqj46pvrmab6-r-spant-2.24.0.drv
+building '/nix/store/cf108n8pkibz815rf4ka73p0p8pfvr5s-spant_2.24.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/spant_2.24.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4830k  100 4830k    0     0  3241k      0  0:00:01  0:00:01 --:--:-- 3239k
+building '/nix/store/8ay4bkzmg37w6r63vpa0wqj46pvrmab6-r-spant-2.24.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ddcm6b816wk5fi0k798qw8i7ygyaklg1-spant_2.24.0.tar.gz
+source root is spant
+setting SOURCE_DATE_EPOCH to timestamp 1731600002 of file spant/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spant’ ...
+** package ‘spant’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lsei.f -o lsei.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c pnnls.f -o pnnls.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spant.so init.o lsei.o pnnls.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _qrbd_: does not use standard frame
+ld: warning: could not create compact unwind for _svdrs_: does not use standard frame
+ld: warning: could not create compact unwind for _nnls_: does not use standard frame
+ld: warning: could not create compact unwind for _bndacc_: does not use standard frame
+ld: warning: could not create compact unwind for _hfti_: does not use standard frame
+ld: warning: could not create compact unwind for _ldp_: does not use standard frame
+ld: warning: could not create compact unwind for _sva_: does not use standard frame
+ld: warning: could not create compact unwind for _pnnls_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/ncfgll12l1nvfna5ii4dqzfxxyvaxayn-r-spant-2.24.0/library/00LOCK-spant/00new/spant/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spant)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spant-2.24.0.drv-0/ in /nix/store/ncfgll12l1nvfna5ii4dqzfxxyvaxayn-r-spant-2.24.0...
+patching script interpreter paths in /nix/store/ncfgll12l1nvfna5ii4dqzfxxyvaxayn-r-spant-2.24.0
+rewriting symlink /nix/store/ncfgll12l1nvfna5ii4dqzfxxyvaxayn-r-spant-2.24.0/nix-support/propagated-user-env-packages to be relative to /nix/store/ncfgll12l1nvfna5ii4dqzfxxyvaxayn-r-spant-2.24.0

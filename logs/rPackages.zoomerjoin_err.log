@@ -1,0 +1,114 @@
+these 2 derivations will be built:
+  /nix/store/jn0lzrd8jbxjn68b0iwj5p99gxqajz6n-zoomerjoin_0.2.0.tar.gz.drv
+  /nix/store/8lk86gkk2ywglr6v4k83z1p11iirhgxa-r-zoomerjoin-0.2.0.drv
+building '/nix/store/jn0lzrd8jbxjn68b0iwj5p99gxqajz6n-zoomerjoin_0.2.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/zoomerjoin_0.2.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 4038k  100 4038k    0     0  8730k      0 --:--:-- --:--:-- --:--:-- 8740k
+building '/nix/store/8lk86gkk2ywglr6v4k83z1p11iirhgxa-r-zoomerjoin-0.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pgns4hp8j1dj51w3pzwrwhvz5y0gbvfk-zoomerjoin_0.2.0.tar.gz
+source root is zoomerjoin
+setting SOURCE_DATE_EPOCH to timestamp 1727151003 of file zoomerjoin/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘zoomerjoin’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+rm -Rf zoomerjoin.so ./rust/target/release/libzoomerjoin.a entrypoint.o /private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/.cargo /private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/vendor
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c entrypoint.c -o entrypoint.o
+if [ -f ./rust/vendor.tar.xz ]; then \
+        tar xf rust/vendor.tar.xz && \
+        mkdir -p /private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/.cargo && \
+        cp rust/vendor-config.toml /private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/.cargo/config.toml; \
+fi
+# In some environments, ~/.cargo/bin might not be included in PATH, so we need
+# to set it here to ensure cargo can be invoked. It is appended to PATH and
+# therefore is only used if cargo is absent from the user's PATH.
+if [ "" != "true" ]; then \
+        export CARGO_HOME=/private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/.cargo; \
+fi && \
+        export PATH="/nix/store/arsxsvbjmappgjrxviayspqnjm1nhrma-cargo-1.82.0/bin:/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin:/nix/store/44hqr4414m3jldixkm4cq47q5pnpy83d-clang-16.0.6/bin:/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin:/nix/store/jqy6x4li0s729q6q97qmzrqwjfi567bv-cctools-binutils-darwin-wrapper-1010.6/bin:/nix/store/c02f0lj5xqjaw1c6hg9a9sv1b024mi8q-cctools-binutils-darwin-1010.6/bin:/nix/store/3a99nvsn1jh7h3vklnd8py5jplls9q41-xcbuild-0.1.1-unstable-2019-11-20-xcrun/bin:/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin:/nix/store/dr75b3kr4mdgqw0wwllp0nc04wqrg1w5-gettext-0.21.1/bin:/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin:/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin:/nix/store/iwbpxcjz1s816d80sqg0mxg5p8m0dqak-libiconv-107/bin:/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin:/nix/store/zxz2b4dlg9zz8dcrwa2my1bpyxpfcchj-findutils-4.10.0/bin:/nix/store/xnm74pr7sl0jvn2q8fcr4jy3vrdgyqrn-diffutils-3.10/bin:/nix/store/9m372k9wy0f9aj54zhvsr65w2p9ndwnj-gnused-4.9/bin:/nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin:/nix/store/5q48fvg6grf5zsk106cm0k0hbfc1dfp2-gawk-5.3.1/bin:/nix/store/41dh2jr0d4ixcbjvkw72hqvrj0kv3mfh-gnutar-1.35/bin:/nix/store/jnnmwj5nsh4y8avg72q23nshq5z74pck-gzip-1.13/bin:/nix/store/5vs5hn675fwynba3didxxyvk8v0ji2bl-bzip2-1.0.8-bin/bin:/nix/store/0gqbh56qwj0cxmvl7dajic9mkbc26ilc-gnumake-4.4.1/bin:/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin:/nix/store/i8yd551zdvdx0gg9mxg5ky6znqaflnkd-patch-2.7.6/bin:/nix/store/kv4wl884saw5jjch5kg4zvcrpff6dlh9-xz-5.6.3-bin/bin:/nix/store/92imkakl854dfvqjl1z8jmsxjrg1mh6f-file-5.45/bin:/homeless-shelter/.cargo/bin" && \
+                echo `cargo --version` && echo `rustc --version` && \
+                cargo build -j 2 --offline --lib --release --manifest-path=./rust/Cargo.toml --target-dir ./rust/target;
+cargo 1.82.0 (8f40fc59f 2024-08-21)
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash: line 5: rustc: command not found
+
+warning: a `-j` argument was passed to Cargo but Cargo is also configured with an external jobserver in its environment, ignoring the `-j` parameter
+   Compiling autocfg v1.1.0
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.151
+   Compiling crossbeam-utils v0.8.16
+   Compiling scopeguard v1.2.0
+   Compiling libm v0.2.8
+   Compiling proc-macro2 v1.0.70
+   Compiling rayon-core v1.12.0
+   Compiling either v1.9.0
+   Compiling unicode-ident v1.0.12
+   Compiling rawpointer v0.2.1
+   Compiling ppv-lite86 v0.2.17
+   Compiling libR-sys v0.7.0
+   Compiling memoffset v0.9.0
+   Compiling num-traits v0.2.17
+   Compiling crossbeam-epoch v0.9.15
+   Compiling num-integer v0.1.45
+   Compiling matrixmultiply v0.3.8
+   Compiling getrandom v0.2.11
+   Compiling rand_core v0.6.4
+   Compiling rand_chacha v0.3.1
+   Compiling quote v1.0.33
+   Compiling lock_api v0.4.11
+   Compiling paste v1.0.14
+   Compiling crossbeam-deque v0.8.3
+   Compiling parking_lot_core v0.9.9
+   Compiling syn v2.0.41
+   Compiling rayon v1.8.0
+   Compiling rand v0.8.5
+   Compiling smallvec v1.11.2
+   Compiling num-complex v0.4.4
+   Compiling extendr-api v0.7.0
+   Compiling once_cell v1.19.0
+   Compiling rand_distr v0.4.3
+   Compiling hashbrown v0.14.3
+   Compiling itertools v0.10.5
+   Compiling rustc-hash v1.1.0
+   Compiling nohash-hasher v0.2.0
+   Compiling ndarray v0.15.6
+   Compiling dashmap v5.5.3
+   Compiling extendr-macros v0.7.0
+   Compiling ndarray-rand v0.14.0
+   Compiling zoomerjoin v0.1.0 (/private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/rust)
+    Finished `release` profile [optimized] target(s) in 11.27s
+rm -Rf /private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/.cargo /private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/zoomerjoin/src/vendor ./rust/target/release/build; \
+
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o zoomerjoin.so entrypoint.o -L./rust/target/release -lzoomerjoin -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/bxr4klqzwhmdiaj4hp63a0217dw39p3c-r-zoomerjoin-0.2.0/library/00LOCK-zoomerjoin/00new/zoomerjoin/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (zoomerjoin)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-zoomerjoin-0.2.0.drv-0/ in /nix/store/bxr4klqzwhmdiaj4hp63a0217dw39p3c-r-zoomerjoin-0.2.0...
+patching script interpreter paths in /nix/store/bxr4klqzwhmdiaj4hp63a0217dw39p3c-r-zoomerjoin-0.2.0
+rewriting symlink /nix/store/bxr4klqzwhmdiaj4hp63a0217dw39p3c-r-zoomerjoin-0.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/bxr4klqzwhmdiaj4hp63a0217dw39p3c-r-zoomerjoin-0.2.0

@@ -1,0 +1,58 @@
+these 2 derivations will be built:
+  /nix/store/s3fxysmb9iqwcdv63nn2aabwing4izid-starvz_0.8.2.tar.gz.drv
+  /nix/store/z02c3mrhz3wbqz1zgh498ihpyb6jzcls-r-starvz-0.8.2.drv
+building '/nix/store/s3fxysmb9iqwcdv63nn2aabwing4izid-starvz_0.8.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/starvz_0.8.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  291k  100  291k    0     0  1474k      0 --:--:-- --:--:-- --:--:-- 1471k
+building '/nix/store/z02c3mrhz3wbqz1zgh498ihpyb6jzcls-r-starvz-0.8.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/w7mrnphnk11srf69yi1a0wksfq9wxz02-starvz_0.8.2.tar.gz
+source root is starvz
+setting SOURCE_DATE_EPOCH to timestamp 1725822002 of file starvz/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘starvz’ ...
+** package ‘starvz’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c integrate_step.cpp -o integrate_step.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c last.cpp -o last.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c separate_res.cpp -o separate_res.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c shortest_path.cpp -o shortest_path.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o starvz.so RcppExports.o integrate_step.o last.o separate_res.o shortest_path.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/00LOCK-starvz/00new/starvz/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (starvz)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-starvz-0.8.2.drv-0/ in /nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2...
+patching script interpreter paths in /nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/phase2-workflow.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/paje_sort.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/phase2-memsnaps.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/2d_map.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/phase1-workflow.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/phase1-workflow.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/fxt2paje.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+/nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/library/starvz/tools/starvz: interpreter directive changed from "#!/bin/bash" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash"
+rewriting symlink /nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2/nix-support/propagated-user-env-packages to be relative to /nix/store/lpkzri61q8f0qxz287ky0lwpyy1ihj7b-r-starvz-0.8.2

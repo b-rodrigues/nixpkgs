@@ -1,0 +1,50 @@
+this derivation will be built:
+  /nix/store/z7j741knpm36m0fsrnf5lwykpxh73spn-r-mpmi-0.43.2.1.drv
+this path will be fetched (0.19 MiB download, 0.19 MiB unpacked):
+  /nix/store/yvilgdw8v676wcnq42ijv1xynysjn4db-mpmi_0.43.2.1.tar.gz
+copying path '/nix/store/yvilgdw8v676wcnq42ijv1xynysjn4db-mpmi_0.43.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/z7j741knpm36m0fsrnf5lwykpxh73spn-r-mpmi-0.43.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/yvilgdw8v676wcnq42ijv1xynysjn4db-mpmi_0.43.2.1.tar.gz
+source root is mpmi
+setting SOURCE_DATE_EPOCH to timestamp 1688549858 of file mpmi/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mpmi’ ...
+** package ‘mpmi’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  10iface.f95 -o 10iface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c nawrap.c -o nawrap.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  cmi.f95 -o cmi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  cminjk.f95 -o cminjk.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  dmi.f95 -o dmi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  mmi.f95 -o mmi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  mminjk.f95 -o mminjk.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o mpmi.so 10iface.o cmi.o cminjk.o dmi.o mmi.o mminjk.o nawrap.o
+installing to /nix/store/z40mv5di3xb0c2rjip9zs23fxssh2817-r-mpmi-0.43.2.1/library/00LOCK-mpmi/00new/mpmi/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mpmi)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mpmi-0.43.2.1.drv-0/ in /nix/store/z40mv5di3xb0c2rjip9zs23fxssh2817-r-mpmi-0.43.2.1...
+patching script interpreter paths in /nix/store/z40mv5di3xb0c2rjip9zs23fxssh2817-r-mpmi-0.43.2.1
+rewriting symlink /nix/store/z40mv5di3xb0c2rjip9zs23fxssh2817-r-mpmi-0.43.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/z40mv5di3xb0c2rjip9zs23fxssh2817-r-mpmi-0.43.2.1

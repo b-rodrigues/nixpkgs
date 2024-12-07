@@ -1,0 +1,57 @@
+these 2 derivations will be built:
+  /nix/store/i925zv6v08kaa12xfjgqz6sdqj7dxdws-SlaPMEG_1.0.2.tar.gz.drv
+  /nix/store/dl06hi99q3hgv5yw6v4imr9i0irm57am-r-SlaPMEG-1.0.2.drv
+building '/nix/store/i925zv6v08kaa12xfjgqz6sdqj7dxdws-SlaPMEG_1.0.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/SlaPMEG_1.0.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18447  100 18447    0     0   160k      0 --:--:-- --:--:-- --:--:--  162k
+building '/nix/store/dl06hi99q3hgv5yw6v4imr9i0irm57am-r-SlaPMEG-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q8pzai5w7hzc93pjj8wagzadw13q4f6r-SlaPMEG_1.0.2.tar.gz
+source root is SlaPMEG
+setting SOURCE_DATE_EPOCH to timestamp 1730800802 of file SlaPMEG/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SlaPMEG’ ...
+** package ‘SlaPMEG’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur dans loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  l'espace de noms ‘globaltest’ 5.24.0 est en train de charger, mais >= 5.36.0 est requis
+Appels : <Anonymous> ... namespaceImportFrom -> asNamespace -> loadNamespace
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘SlaPMEG’
+* removing ‘/nix/store/9ifznnscbdr8wkcf9w5j6zhq99qxswx6-r-SlaPMEG-1.0.2/library/SlaPMEG’
+error: builder for '/nix/store/dl06hi99q3hgv5yw6v4imr9i0irm57am-r-SlaPMEG-1.0.2.drv' failed with exit code 1;
+       last 22 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/q8pzai5w7hzc93pjj8wagzadw13q4f6r-SlaPMEG_1.0.2.tar.gz
+       > source root is SlaPMEG
+       > setting SOURCE_DATE_EPOCH to timestamp 1730800802 of file SlaPMEG/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘SlaPMEG’ ...
+       > ** package ‘SlaPMEG’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur dans loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) :
+       >   l'espace de noms ‘globaltest’ 5.24.0 est en train de charger, mais >= 5.36.0 est requis
+       > Appels : <Anonymous> ... namespaceImportFrom -> asNamespace -> loadNamespace
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘SlaPMEG’
+       > * removing ‘/nix/store/9ifznnscbdr8wkcf9w5j6zhq99qxswx6-r-SlaPMEG-1.0.2/library/SlaPMEG’
+       For full logs, run 'nix log /nix/store/dl06hi99q3hgv5yw6v4imr9i0irm57am-r-SlaPMEG-1.0.2.drv'.

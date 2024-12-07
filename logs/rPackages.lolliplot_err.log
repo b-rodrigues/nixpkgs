@@ -1,0 +1,48 @@
+this derivation will be built:
+  /nix/store/7prqrafc041k3797jzywn5gq4znv3gp0-r-lolliplot-0.2.2.drv
+building '/nix/store/7prqrafc041k3797jzywn5gq4znv3gp0-r-lolliplot-0.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2y2l7zk67m8cmfxg65pamxb1bsa3vnmf-lolliplot_0.2.2.tar.gz
+source root is lolliplot
+setting SOURCE_DATE_EPOCH to timestamp 1674759005 of file lolliplot/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lolliplot’ ...
+** package ‘lolliplot’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘GenomicRanges’
+Erreur : l'objet ‘elementNROWS’ n'est pas exporté par 'namespace:IRanges'
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘lolliplot’
+* removing ‘/nix/store/kssinwbjf784gb3mnjy3mq3jdvppqc3g-r-lolliplot-0.2.2/library/lolliplot’
+error: builder for '/nix/store/7prqrafc041k3797jzywn5gq4znv3gp0-r-lolliplot-0.2.2.drv' failed with exit code 1;
+       last 21 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/2y2l7zk67m8cmfxg65pamxb1bsa3vnmf-lolliplot_0.2.2.tar.gz
+       > source root is lolliplot
+       > setting SOURCE_DATE_EPOCH to timestamp 1674759005 of file lolliplot/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘lolliplot’ ...
+       > ** package ‘lolliplot’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Avis : remplacement de l'importation précédente ‘utils::findMatches’ par ‘S4Vectors::findMatches’ lors du chargement de ‘GenomicRanges’
+       > Erreur : l'objet ‘elementNROWS’ n'est pas exporté par 'namespace:IRanges'
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘lolliplot’
+       > * removing ‘/nix/store/kssinwbjf784gb3mnjy3mq3jdvppqc3g-r-lolliplot-0.2.2/library/lolliplot’
+       For full logs, run 'nix log /nix/store/7prqrafc041k3797jzywn5gq4znv3gp0-r-lolliplot-0.2.2.drv'.

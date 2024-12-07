@@ -1,0 +1,61 @@
+these 3 derivations will be built:
+  /nix/store/4h982b7cfkj397y7x10cqqvzcbc68xk9-huito_0.2.5.tar.gz.drv
+  /nix/store/v80f6qikkdjd4jn6lfjqpl66w4jhm1fr-r-pdftools-3.4.1.drv
+  /nix/store/4l1myhg1zi1v7257xmsg2b2qqgmani85-r-huito-0.2.5.drv
+building '/nix/store/4h982b7cfkj397y7x10cqqvzcbc68xk9-huito_0.2.5.tar.gz.drv'...
+building '/nix/store/v80f6qikkdjd4jn6lfjqpl66w4jhm1fr-r-pdftools-3.4.1.drv'...
+
+trying https://cran.r-project.org/src/contrib/huito_0.2.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/asay0ihqi1nd7qf6g9787ydj1v7gx8v8-pdftools_3.4.1.tar.gz
+source root is pdftools
+setting SOURCE_DATE_EPOCH to timestamp 1726821602 of file pdftools/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: glibPreInstallPhase
+Running phase: installPhase
+100 3691k  100 3691k    0     0  6063k      0 --:--:-- --:--:-- --:--:-- 6061k
+* installing *source* package ‘pdftools’ ...
+** package ‘pdftools’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/nix/store/czxybss90yhbsrai630ry5cmz5syhkqf-poppler-glib-24.02.0-dev/include/poppler/cpp
+Using PKG_LIBS=-L/nix/store/9ixww70y9rby0jch465iiwbqz1j9zcvf-poppler-glib-24.02.0/lib -lpoppler-cpp
+Package poppler-data was not found in the pkg-config search path.
+Perhaps you should add the directory containing `poppler-data.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'poppler-data' found
+ERROR: configuration failed for package ‘pdftools’
+* removing ‘/nix/store/iypffqzwq4nr7vhci0y08bybj28vvgrl-r-pdftools-3.4.1/library/pdftools’
+error: builder for '/nix/store/v80f6qikkdjd4jn6lfjqpl66w4jhm1fr-r-pdftools-3.4.1.drv' failed with exit code 1;
+       last 23 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/asay0ihqi1nd7qf6g9787ydj1v7gx8v8-pdftools_3.4.1.tar.gz
+       > source root is pdftools
+       > setting SOURCE_DATE_EPOCH to timestamp 1726821602 of file pdftools/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: glibPreInstallPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘pdftools’ ...
+       > ** package ‘pdftools’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > Found pkg-config cflags and libs!
+       > Using PKG_CFLAGS=-I/nix/store/czxybss90yhbsrai630ry5cmz5syhkqf-poppler-glib-24.02.0-dev/include/poppler/cpp
+       > Using PKG_LIBS=-L/nix/store/9ixww70y9rby0jch465iiwbqz1j9zcvf-poppler-glib-24.02.0/lib -lpoppler-cpp
+       > Package poppler-data was not found in the pkg-config search path.
+       > Perhaps you should add the directory containing `poppler-data.pc'
+       > to the PKG_CONFIG_PATH environment variable
+       > No package 'poppler-data' found
+       > ERROR: configuration failed for package ‘pdftools’
+       > * removing ‘/nix/store/iypffqzwq4nr7vhci0y08bybj28vvgrl-r-pdftools-3.4.1/library/pdftools’
+       For full logs, run 'nix log /nix/store/v80f6qikkdjd4jn6lfjqpl66w4jhm1fr-r-pdftools-3.4.1.drv'.
+error: 1 dependencies of derivation '/nix/store/4l1myhg1zi1v7257xmsg2b2qqgmani85-r-huito-0.2.5.drv' failed to build

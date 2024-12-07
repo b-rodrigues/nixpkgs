@@ -1,0 +1,40 @@
+this derivation will be built:
+  /nix/store/283i8kpzd90r2w840mr4p7s8x4abnp9w-r-isa2-0.3.6.drv
+this path will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/rd5sgj9hj503x166bp2ffyycjq27a7cj-isa2_0.3.6.tar.gz
+copying path '/nix/store/rd5sgj9hj503x166bp2ffyycjq27a7cj-isa2_0.3.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/283i8kpzd90r2w840mr4p7s8x4abnp9w-r-isa2-0.3.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rd5sgj9hj503x166bp2ffyycjq27a7cj-isa2_0.3.6.tar.gz
+source root is isa2
+setting SOURCE_DATE_EPOCH to timestamp 1677015002 of file isa2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘isa2’ ...
+** package ‘isa2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c isa.c -o isa.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o isa2.so isa.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/3899wj14v1s83gyajsvrk1jnpj77rjr8-r-isa2-0.3.6/library/00LOCK-isa2/00new/isa2/libs
+** R
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘isa’ dans package ‘isa2’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (isa2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-isa2-0.3.6.drv-0/ in /nix/store/3899wj14v1s83gyajsvrk1jnpj77rjr8-r-isa2-0.3.6...
+patching script interpreter paths in /nix/store/3899wj14v1s83gyajsvrk1jnpj77rjr8-r-isa2-0.3.6
+rewriting symlink /nix/store/3899wj14v1s83gyajsvrk1jnpj77rjr8-r-isa2-0.3.6/nix-support/propagated-user-env-packages to be relative to /nix/store/3899wj14v1s83gyajsvrk1jnpj77rjr8-r-isa2-0.3.6

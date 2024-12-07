@@ -1,0 +1,85 @@
+this derivation will be built:
+  /nix/store/j6nxf1wyam2a1bz86a1q8mh63b4s7srd-r-surtvep-1.0.0.drv
+this path will be fetched (0.36 MiB download, 0.36 MiB unpacked):
+  /nix/store/g2zffd6s1yqdb82v1a4inq8jjcz796ig-surtvep_1.0.0.tar.gz
+copying path '/nix/store/g2zffd6s1yqdb82v1a4inq8jjcz796ig-surtvep_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/j6nxf1wyam2a1bz86a1q8mh63b4s7srd-r-surtvep-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/g2zffd6s1yqdb82v1a4inq8jjcz796ig-surtvep_1.0.0.tar.gz
+source root is surtvep
+setting SOURCE_DATE_EPOCH to timestamp 1697536802 of file surtvep/MD5
+Running phase: patchPhase
+patching script interpreter paths in configure
+configure: interpreter directive changed from "#!/usr/bin/env sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘surtvep’ ...
+file ‘configure’ has the wrong MD5 checksum
+** using staged installation
+./configure: line 7: inst/cc: No such file or directory
+./configure: line 8: inst/cc: No such file or directory
+*** pkg-config is not installed.
+*** Compilation will now be attempted and if it works you can ignore this message. In
+*** particular, this should be the case on Mac where zlib is built in or pkg-config
+*** is not installed. However, if compilation fails, try 'locate zlib.h zconf.h' and
+*** ensure the zlib development library is installed :
+***   deb: zlib1g-dev (Debian, Ubuntu, ...)
+***   rpm: zlib-devel (Fedora, EPEL, ...)
+***   There is a zlib in brew for OSX but the built in zlib should work.
+*** Note that zlib is required to compile R itself so you may find the advice in the R-admin
+*** guide helpful regarding zlib. On Debian/Ubuntu, zlib1g-dev is a dependency of r-base as
+*** shown by 'apt-cache showsrc r-base | grep ^Build-Depends | grep zlib', and therefore
+*** 'sudo apt-get build-dep r-base' should be sufficient too.
+*** To silence this message, please ensure that :
+***   1) 'pkg-config --exists zlib' succeeds (i.e. $? -eq 0)
+***   2) 'pkg-config --libs zlib' contains -lz
+*** Compilation will now be attempted ...
+clang-16: error: unknown argument: '-g -O2'
+*** OpenMP not supported! data.table uses OpenMP to automatically
+***   parallelize operations like sorting, grouping, file reading, etc.
+*** For details on how to install the necessary toolchains on your OS see:
+***   https://github.com/Rdatatable/data.table/wiki/Installation
+*** Continuing installation without OpenMP support...
+*** Compilation without compression support in fwrite
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c PenalizeStopCpp.cpp -o PenalizeStopCpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1     -fPIC  -g -O2   -c header.cpp -o header.o
+In file included from PenalizeStopCpp.cpp:5:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo.h:29:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:27:
+In file included from /nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfig.h:110:
+/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include/RcppArmadillo/config/RcppArmadilloConfigGenerated.h:31:9: warning: 'ARMA_DONT_USE_OPENMP' macro redefined [-Wmacro-redefined]
+#define ARMA_DONT_USE_OPENMP 1
+        ^
+PenalizeStopCpp.cpp:3:9: note: previous definition is here
+#define ARMA_DONT_USE_OPENMP
+        ^
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o surtvep.so PenalizeStopCpp.o RcppExports.o header.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/crwglk3d7xg34lsg7kv967my15yl3gh6-r-surtvep-1.0.0/library/00LOCK-surtvep/00new/surtvep/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (surtvep)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-surtvep-1.0.0.drv-0/ in /nix/store/crwglk3d7xg34lsg7kv967my15yl3gh6-r-surtvep-1.0.0...
+patching script interpreter paths in /nix/store/crwglk3d7xg34lsg7kv967my15yl3gh6-r-surtvep-1.0.0
+rewriting symlink /nix/store/crwglk3d7xg34lsg7kv967my15yl3gh6-r-surtvep-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/crwglk3d7xg34lsg7kv967my15yl3gh6-r-surtvep-1.0.0

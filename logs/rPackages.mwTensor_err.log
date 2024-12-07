@@ -1,0 +1,49 @@
+these 5 derivations will be built:
+  /nix/store/yw7cqaj7nmv1nyyghxblyp0lwd53413q-r-iTensor-1.0.2.drv
+  /nix/store/frk97y2ry1nhircbsw2q9sfbznb7szlv-r-misc3d-0.9-1.drv
+  /nix/store/sh1wls71pxj667knyrair888d1zml469-r-plot3D-1.4.1.drv
+  /nix/store/zib37kv5s2rsysn641m2g0sz3pq5q1ri-r-nnTensor-1.3.0.drv
+  /nix/store/1j737dnawmsi9hwld533km63sffrra4r-r-mwTensor-1.1.0.drv
+this path will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/lm756gix3hvl5ywgm3r1ajj77qc2p76m-mwTensor_1.1.0.tar.gz
+copying path '/nix/store/lm756gix3hvl5ywgm3r1ajj77qc2p76m-mwTensor_1.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yw7cqaj7nmv1nyyghxblyp0lwd53413q-r-iTensor-1.0.2.drv'...
+building '/nix/store/frk97y2ry1nhircbsw2q9sfbznb7szlv-r-misc3d-0.9-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gsazp1nvvhg2gh68zp8d3jpgd02w3sk6-iTensor_1.0.2.tar.gz
+source root is iTensor
+setting SOURCE_DATE_EPOCH to timestamp 1682668802 of file iTensor/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/fqcq41d0bbh7v1hn4kkfw3vmcc9himhq-misc3d_0.9-1.tar.gz
+source root is misc3d
+setting SOURCE_DATE_EPOCH to timestamp 1633637402 of file misc3d/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+ERROR: dependency ‘mixOmics’ is not available for package ‘iTensor’
+* removing ‘/nix/store/lq9f6vm7bk2rrdcl91v5wf8vag4is8wb-r-iTensor-1.0.2/library/iTensor’
+Running phase: installPhase
+error: builder for '/nix/store/yw7cqaj7nmv1nyyghxblyp0lwd53413q-r-iTensor-1.0.2.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/gsazp1nvvhg2gh68zp8d3jpgd02w3sk6-iTensor_1.0.2.tar.gz
+       > source root is iTensor
+       > setting SOURCE_DATE_EPOCH to timestamp 1682668802 of file iTensor/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘mixOmics’ is not available for package ‘iTensor’
+       > * removing ‘/nix/store/lq9f6vm7bk2rrdcl91v5wf8vag4is8wb-r-iTensor-1.0.2/library/iTensor’
+       For full logs, run 'nix log /nix/store/yw7cqaj7nmv1nyyghxblyp0lwd53413q-r-iTensor-1.0.2.drv'.
+error: 1 dependencies of derivation '/nix/store/1j737dnawmsi9hwld533km63sffrra4r-r-mwTensor-1.1.0.drv' failed to build

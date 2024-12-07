@@ -1,0 +1,87 @@
+these 3 derivations will be built:
+  /nix/store/c3klixdxfw08c24nck7k2xp9qp21w35k-mycaas_0.0.1.tar.gz.drv
+  /nix/store/k3205nrxv7y9milysxh5g49asv2bn8sr-r-rPref-1.4.0.drv
+  /nix/store/qr3gli5garwasp6zll0fknpngacxpi50-r-mycaas-0.0.1.drv
+this path will be fetched (0.13 MiB download, 0.13 MiB unpacked):
+  /nix/store/pa1zfbxbgg1h6cp4m9ilv9i30kiz1gvy-rPref_1.4.0.tar.gz
+copying path '/nix/store/pa1zfbxbgg1h6cp4m9ilv9i30kiz1gvy-rPref_1.4.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/c3klixdxfw08c24nck7k2xp9qp21w35k-mycaas_0.0.1.tar.gz.drv'...
+building '/nix/store/k3205nrxv7y9milysxh5g49asv2bn8sr-r-rPref-1.4.0.drv'...
+
+trying https://cran.r-project.org/src/contrib/mycaas_0.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 25594  100 25594    0     0   235k      0 --:--:-- --:--:-- --:--:--  238k
+Running phase: unpackPhase
+unpacking source archive /nix/store/pa1zfbxbgg1h6cp4m9ilv9i30kiz1gvy-rPref_1.4.0.tar.gz
+source root is rPref
+setting SOURCE_DATE_EPOCH to timestamp 1675108202 of file rPref/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rPref’ ...
+** package ‘rPref’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c bnl.cpp -o bnl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hasse.cpp -o hasse.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pref-classes.cpp -o pref-classes.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c psel-par-top.cpp -o psel-par-top.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c psel-par.cpp -o psel-par.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c scalagon.cpp -o scalagon.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c topk-setting.cpp -o topk-setting.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rPref.so RcppExports.o bnl.o hasse.o pref-classes.o psel-par-top.o psel-par.o scalagon.o topk-setting.o -L/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/lib -ltbb -ltbbmalloc -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/lnyxbf1an7ngvxz7nlhqaw10d6pkwk7n-r-rPref-1.4.0/library/00LOCK-rPref/00new/rPref/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rPref)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rPref-1.4.0.drv-0/ in /nix/store/lnyxbf1an7ngvxz7nlhqaw10d6pkwk7n-r-rPref-1.4.0...
+patching script interpreter paths in /nix/store/lnyxbf1an7ngvxz7nlhqaw10d6pkwk7n-r-rPref-1.4.0
+rewriting symlink /nix/store/lnyxbf1an7ngvxz7nlhqaw10d6pkwk7n-r-rPref-1.4.0/nix-support/propagated-user-env-packages to be relative to /nix/store/lnyxbf1an7ngvxz7nlhqaw10d6pkwk7n-r-rPref-1.4.0
+building '/nix/store/qr3gli5garwasp6zll0fknpngacxpi50-r-mycaas-0.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5347slkz1b65xjhxppasn402vkih13z3-mycaas_0.0.1.tar.gz
+source root is mycaas
+setting SOURCE_DATE_EPOCH to timestamp 1728634202 of file mycaas/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mycaas’ ...
+** package ‘mycaas’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mycaas)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-mycaas-0.0.1.drv-0/ in /nix/store/l1qrqz394x0qrmi3z6fc4y17nfs9rp4m-r-mycaas-0.0.1...
+patching script interpreter paths in /nix/store/l1qrqz394x0qrmi3z6fc4y17nfs9rp4m-r-mycaas-0.0.1
+rewriting symlink /nix/store/l1qrqz394x0qrmi3z6fc4y17nfs9rp4m-r-mycaas-0.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/l1qrqz394x0qrmi3z6fc4y17nfs9rp4m-r-mycaas-0.0.1

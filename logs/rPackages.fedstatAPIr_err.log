@@ -1,0 +1,68 @@
+these 2 derivations will be built:
+  /nix/store/mmdzxkk2bf45mppxiwyka529pamv7sr4-r-readsdmx-0.3.1.drv
+  /nix/store/phbrjhpyl2ch471lby7j96rbr06cajqi-r-fedstatAPIr-1.0.3.drv
+building '/nix/store/mmdzxkk2bf45mppxiwyka529pamv7sr4-r-readsdmx-0.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gp764qifazv11ijmmg88vxwmiv38c5w1-readsdmx_0.3.1.tar.gz
+source root is readsdmx
+setting SOURCE_DATE_EPOCH to timestamp 1693631423 of file readsdmx/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘readsdmx’ ...
+** package ‘readsdmx’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c readsdmx.cpp -o readsdmx.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o readsdmx.so RcppExports.o readsdmx.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/h9g5fa0rkb6hdrwwwplv2nm44h01gak5-r-readsdmx-0.3.1/library/00LOCK-readsdmx/00new/readsdmx/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (readsdmx)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-readsdmx-0.3.1.drv-0/ in /nix/store/h9g5fa0rkb6hdrwwwplv2nm44h01gak5-r-readsdmx-0.3.1...
+patching script interpreter paths in /nix/store/h9g5fa0rkb6hdrwwwplv2nm44h01gak5-r-readsdmx-0.3.1
+rewriting symlink /nix/store/h9g5fa0rkb6hdrwwwplv2nm44h01gak5-r-readsdmx-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/h9g5fa0rkb6hdrwwwplv2nm44h01gak5-r-readsdmx-0.3.1
+building '/nix/store/phbrjhpyl2ch471lby7j96rbr06cajqi-r-fedstatAPIr-1.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q6a4cbij7n2fz9m7zgs3wifl8k3y59f3-fedstatAPIr_1.0.3.tar.gz
+source root is fedstatAPIr
+setting SOURCE_DATE_EPOCH to timestamp 1680165002 of file fedstatAPIr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘fedstatAPIr’ ...
+** package ‘fedstatAPIr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (fedstatAPIr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-fedstatAPIr-1.0.3.drv-0/ in /nix/store/dw0gzhjn6f92dr9ddhdkc8s5117kabpn-r-fedstatAPIr-1.0.3...
+patching script interpreter paths in /nix/store/dw0gzhjn6f92dr9ddhdkc8s5117kabpn-r-fedstatAPIr-1.0.3
+rewriting symlink /nix/store/dw0gzhjn6f92dr9ddhdkc8s5117kabpn-r-fedstatAPIr-1.0.3/nix-support/propagated-user-env-packages to be relative to /nix/store/dw0gzhjn6f92dr9ddhdkc8s5117kabpn-r-fedstatAPIr-1.0.3

@@ -1,0 +1,187 @@
+these 3 derivations will be built:
+  /nix/store/7siqkf1s69fc6ajamkd0ndl82pfqblln-r-picasso-1.3.1.drv
+  /nix/store/jaw8wr7rw5zkmh22m7f1w5a0ylbr5w8q-r-sparsevar-0.1.0.drv
+  /nix/store/8vkr6jyzcw56ji6j51p8h4qfadypw0p7-r-MissCP-0.1.0.drv
+these 3 paths will be fetched (3.48 MiB download, 3.55 MiB unpacked):
+  /nix/store/narls3ad7mhr71b6zvcavl3mk24szv0v-MissCP_0.1.0.tar.gz
+  /nix/store/2n5ap8z2bziyxcdmhrl3a0dvmlq1q081-picasso_1.3.1.tar.gz
+  /nix/store/v76v3bp1sa07avhrm04d1g26pzhcqx05-sparsevar_0.1.0.tar.gz
+copying path '/nix/store/narls3ad7mhr71b6zvcavl3mk24szv0v-MissCP_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/v76v3bp1sa07avhrm04d1g26pzhcqx05-sparsevar_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/2n5ap8z2bziyxcdmhrl3a0dvmlq1q081-picasso_1.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7siqkf1s69fc6ajamkd0ndl82pfqblln-r-picasso-1.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2n5ap8z2bziyxcdmhrl3a0dvmlq1q081-picasso_1.3.1.tar.gz
+source root is picasso
+setting SOURCE_DATE_EPOCH to timestamp 1550784018 of file picasso/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘picasso’ ...
+** package ‘picasso’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./include  -I.   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c picasso_R.cpp -o picasso_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./include  -I.   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c picasso-all0.cpp -o picasso-all0.o
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:1:
+In file included from ./include/eigen3/Eigen/Core:535:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:2:
+In file included from ./include/eigen3/Eigen/LU:47:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:3:
+In file included from ./include/eigen3/Eigen/Cholesky:12:
+In file included from ./include/eigen3/Eigen/Jacobi:29:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:3:
+In file included from ./include/eigen3/Eigen/Cholesky:43:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:4:
+In file included from ./include/eigen3/Eigen/QR:17:
+In file included from ./include/eigen3/Eigen/Householder:27:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:5:
+In file included from ./include/eigen3/Eigen/SVD:48:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:6:
+In file included from ./include/eigen3/Eigen/Geometry:58:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+In file included from picasso-all0.cpp:2:
+In file included from ./include/../src/objective/gaussian_naive_update.cpp:2:
+In file included from ./include/picasso/objective.hpp:5:
+In file included from ./include/eigen3/Eigen/Dense:7:
+In file included from ./include/eigen3/Eigen/Eigenvalues:58:
+./include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:10:30: warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+    #pragma clang diagnostic pop
+                             ^
+8 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o picasso.so ./picasso_R.o ./picasso-all0.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/spi5mdrii22rh259zmqrqnp62ssyf7m2-r-picasso-1.3.1/library/00LOCK-picasso/00new/picasso/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (picasso)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-picasso-1.3.1.drv-0/ in /nix/store/spi5mdrii22rh259zmqrqnp62ssyf7m2-r-picasso-1.3.1...
+patching script interpreter paths in /nix/store/spi5mdrii22rh259zmqrqnp62ssyf7m2-r-picasso-1.3.1
+rewriting symlink /nix/store/spi5mdrii22rh259zmqrqnp62ssyf7m2-r-picasso-1.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/spi5mdrii22rh259zmqrqnp62ssyf7m2-r-picasso-1.3.1
+building '/nix/store/jaw8wr7rw5zkmh22m7f1w5a0ylbr5w8q-r-sparsevar-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/v76v3bp1sa07avhrm04d1g26pzhcqx05-sparsevar_0.1.0.tar.gz
+source root is sparsevar
+setting SOURCE_DATE_EPOCH to timestamp 1618721402 of file sparsevar/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sparsevar’ ...
+** package ‘sparsevar’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sparsevar)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sparsevar-0.1.0.drv-0/ in /nix/store/rxnwi8kmk1ywisij94wg2vhk1p8kq8qn-r-sparsevar-0.1.0...
+patching script interpreter paths in /nix/store/rxnwi8kmk1ywisij94wg2vhk1p8kq8qn-r-sparsevar-0.1.0
+rewriting symlink /nix/store/rxnwi8kmk1ywisij94wg2vhk1p8kq8qn-r-sparsevar-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/rxnwi8kmk1ywisij94wg2vhk1p8kq8qn-r-sparsevar-0.1.0
+building '/nix/store/8vkr6jyzcw56ji6j51p8h4qfadypw0p7-r-MissCP-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/narls3ad7mhr71b6zvcavl3mk24szv0v-MissCP_0.1.0.tar.gz
+source root is MissCP
+setting SOURCE_DATE_EPOCH to timestamp 1688669420 of file MissCP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MissCP’ ...
+** package ‘MissCP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Rcpp.cpp -o Rcpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MissCP.so Rcpp.o RcppExports.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/kzqj096dk7fmvx390qz0lsdhfw6vwfx2-r-MissCP-0.1.0/library/00LOCK-MissCP/00new/MissCP/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MissCP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MissCP-0.1.0.drv-0/ in /nix/store/kzqj096dk7fmvx390qz0lsdhfw6vwfx2-r-MissCP-0.1.0...
+patching script interpreter paths in /nix/store/kzqj096dk7fmvx390qz0lsdhfw6vwfx2-r-MissCP-0.1.0
+rewriting symlink /nix/store/kzqj096dk7fmvx390qz0lsdhfw6vwfx2-r-MissCP-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/kzqj096dk7fmvx390qz0lsdhfw6vwfx2-r-MissCP-0.1.0

@@ -1,0 +1,85 @@
+this derivation will be built:
+  /nix/store/yri9hjml029iw9qp8l1s6svl75fwvx3w-r-gdalcubes-0.7.0.drv
+building '/nix/store/yri9hjml029iw9qp8l1s6svl75fwvx3w-r-gdalcubes-0.7.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ng8zggrryy3xrr3z7h5c6zyqjzfnwa2b-gdalcubes_0.7.0.tar.gz
+source root is gdalcubes
+setting SOURCE_DATE_EPOCH to timestamp 1709769602 of file gdalcubes/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gdalcubes’ ...
+** package ‘gdalcubes’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+configure: CC: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+configure: CXX: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11
+checking for gdal-config... /nix/store/abbzq4qhccjll10gy62vmxwnrvjlw8f9-gdal-3.9.3/bin/gdal-config
+checking gdal-config usability... yes
+configure: GDAL: 3.9.3
+checking GDAL version >= 2.0.1... yes
+checking GDAL version != 3.6.0... yes
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 option to enable C++11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for gdal.h... yes
+checking GDAL: linking with --libs only... yes
+checking GDAL: /nix/store/abbzq4qhccjll10gy62vmxwnrvjlw8f9-gdal-3.9.3/share/gdal/pcs.csv readable... no
+checking GDAL: checking whether PROJ is available for linking:... yes
+checking GDAL: checking whether PROJ is available fur running:... yes
+configure: GDAL: 3.9.3
+configure: pkg-config proj exists, will use it
+configure: using proj.h.
+Package libtiff-4 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libtiff-4.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libtiff-4', required by 'proj', not found
+configure: PROJ: 9.5.0
+checking PROJ: checking whether PROJ and sqlite3 are available for linking:... no
+configure: error: libproj or sqlite3 not found in standard or given locations.
+ERROR: configuration failed for package ‘gdalcubes’
+* removing ‘/nix/store/9xqswg7x03ns7p922gcl6sxzh6yq8997-r-gdalcubes-0.7.0/library/gdalcubes’
+error: builder for '/nix/store/yri9hjml029iw9qp8l1s6svl75fwvx3w-r-gdalcubes-0.7.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > checking for stdlib.h... yes
+       > checking for string.h... yes
+       > checking for inttypes.h... yes
+       > checking for stdint.h... yes
+       > checking for strings.h... yes
+       > checking for sys/stat.h... yes
+       > checking for sys/types.h... yes
+       > checking for unistd.h... yes
+       > checking for gdal.h... yes
+       > checking GDAL: linking with --libs only... yes
+       > checking GDAL: /nix/store/abbzq4qhccjll10gy62vmxwnrvjlw8f9-gdal-3.9.3/share/gdal/pcs.csv readable... no
+       > checking GDAL: checking whether PROJ is available for linking:... yes
+       > checking GDAL: checking whether PROJ is available fur running:... yes
+       > configure: GDAL: 3.9.3
+       > configure: pkg-config proj exists, will use it
+       > configure: using proj.h.
+       > Package libtiff-4 was not found in the pkg-config search path.
+       > Perhaps you should add the directory containing `libtiff-4.pc'
+       > to the PKG_CONFIG_PATH environment variable
+       > Package 'libtiff-4', required by 'proj', not found
+       > configure: PROJ: 9.5.0
+       > checking PROJ: checking whether PROJ and sqlite3 are available for linking:... no
+       > configure: error: libproj or sqlite3 not found in standard or given locations.
+       > ERROR: configuration failed for package ‘gdalcubes’
+       > * removing ‘/nix/store/9xqswg7x03ns7p922gcl6sxzh6yq8997-r-gdalcubes-0.7.0/library/gdalcubes’
+       For full logs, run 'nix log /nix/store/yri9hjml029iw9qp8l1s6svl75fwvx3w-r-gdalcubes-0.7.0.drv'.

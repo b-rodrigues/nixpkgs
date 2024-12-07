@@ -1,0 +1,74 @@
+these 2 derivations will be built:
+  /nix/store/krq576kczf19rcwdx0ywyb81v0m9p78r-r-irtoys-0.2.2.drv
+  /nix/store/n8jadgwx5ag2yn196kayxfhxkvgywgw2-r-irtGUI-0.2.drv
+these 2 paths will be fetched (0.61 MiB download, 0.61 MiB unpacked):
+  /nix/store/0cz3k8ax57x01nxm1xms1ph2518pjza6-irtGUI_0.2.tar.gz
+  /nix/store/rmbxm4gjxvzb321f7zlscg1v2qq0ahxv-irtoys_0.2.2.tar.gz
+copying path '/nix/store/0cz3k8ax57x01nxm1xms1ph2518pjza6-irtGUI_0.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/rmbxm4gjxvzb321f7zlscg1v2qq0ahxv-irtoys_0.2.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/krq576kczf19rcwdx0ywyb81v0m9p78r-r-irtoys-0.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rmbxm4gjxvzb321f7zlscg1v2qq0ahxv-irtoys_0.2.2.tar.gz
+source root is irtoys
+setting SOURCE_DATE_EPOCH to timestamp 1652349002 of file irtoys/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘irtoys’ ...
+** package ‘irtoys’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c interaction.c -o interaction.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c packagename_init.c -o packagename_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o irtoys.so interaction.o packagename_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/s5xl40y1jyn4n2pvf17m9zdd8inyvhdq-r-irtoys-0.2.2/library/00LOCK-irtoys/00new/irtoys/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (irtoys)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-irtoys-0.2.2.drv-0/ in /nix/store/s5xl40y1jyn4n2pvf17m9zdd8inyvhdq-r-irtoys-0.2.2...
+patching script interpreter paths in /nix/store/s5xl40y1jyn4n2pvf17m9zdd8inyvhdq-r-irtoys-0.2.2
+rewriting symlink /nix/store/s5xl40y1jyn4n2pvf17m9zdd8inyvhdq-r-irtoys-0.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/s5xl40y1jyn4n2pvf17m9zdd8inyvhdq-r-irtoys-0.2.2
+building '/nix/store/n8jadgwx5ag2yn196kayxfhxkvgywgw2-r-irtGUI-0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/0cz3k8ax57x01nxm1xms1ph2518pjza6-irtGUI_0.2.tar.gz
+source root is irtGUI
+setting SOURCE_DATE_EPOCH to timestamp 1616073002 of file irtGUI/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘irtGUI’ ...
+** package ‘irtGUI’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (irtGUI)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-irtGUI-0.2.drv-0/ in /nix/store/1bdk6y2g7agw6nswrz5f2d1mr96dff1n-r-irtGUI-0.2...
+patching script interpreter paths in /nix/store/1bdk6y2g7agw6nswrz5f2d1mr96dff1n-r-irtGUI-0.2
+rewriting symlink /nix/store/1bdk6y2g7agw6nswrz5f2d1mr96dff1n-r-irtGUI-0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/1bdk6y2g7agw6nswrz5f2d1mr96dff1n-r-irtGUI-0.2

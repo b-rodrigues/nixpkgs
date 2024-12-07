@@ -1,0 +1,90 @@
+these 3 derivations will be built:
+  /nix/store/07cdi7wwzr7arr3js7zzvspxh8gdwlq0-r-MaxPro-4.1-2.drv
+  /nix/store/afli4r93cqhn1w1kvcnvasjg8mdj2i8y-HiGarrote_1.0.tar.gz.drv
+  /nix/store/ggmgj65pyhmspnlx4pf7mmyw8y0r6ch6-r-HiGarrote-1.0.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/qx7yyfgcs58b1450rcyx6f1m730kq9l6-MaxPro_4.1-2.tar.gz
+copying path '/nix/store/qx7yyfgcs58b1450rcyx6f1m730kq9l6-MaxPro_4.1-2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/afli4r93cqhn1w1kvcnvasjg8mdj2i8y-HiGarrote_1.0.tar.gz.drv'...
+building '/nix/store/07cdi7wwzr7arr3js7zzvspxh8gdwlq0-r-MaxPro-4.1-2.drv'...
+
+trying https://cran.r-project.org/src/contrib/HiGarrote_1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+100 20051  100 20051    0     0   179k      0 --:--:-- --:--:-- --:--:--  179k
+unpacking source archive /nix/store/qx7yyfgcs58b1450rcyx6f1m730kq9l6-MaxPro_4.1-2.tar.gz
+source root is MaxPro
+setting SOURCE_DATE_EPOCH to timestamp 1538109603 of file MaxPro/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MaxPro’ ...
+** package ‘MaxPro’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MaxPro.cpp -o MaxPro.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MaxPro.so MaxPro.o registerDynamicSymbol.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/z77c4zqcrzwsklkl43n7nrm6sbglhmra-r-MaxPro-4.1-2/library/00LOCK-MaxPro/00new/MaxPro/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MaxPro)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MaxPro-4.1-2.drv-0/ in /nix/store/z77c4zqcrzwsklkl43n7nrm6sbglhmra-r-MaxPro-4.1-2...
+patching script interpreter paths in /nix/store/z77c4zqcrzwsklkl43n7nrm6sbglhmra-r-MaxPro-4.1-2
+rewriting symlink /nix/store/z77c4zqcrzwsklkl43n7nrm6sbglhmra-r-MaxPro-4.1-2/nix-support/propagated-user-env-packages to be relative to /nix/store/z77c4zqcrzwsklkl43n7nrm6sbglhmra-r-MaxPro-4.1-2
+building '/nix/store/ggmgj65pyhmspnlx4pf7mmyw8y0r6ch6-r-HiGarrote-1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jjsi8kqbwb0fp11x23snnvh7jw8k6n4a-HiGarrote_1.0.tar.gz
+source root is HiGarrote
+setting SOURCE_DATE_EPOCH to timestamp 1731591037 of file HiGarrote/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘HiGarrote’ ...
+** package ‘HiGarrote’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lib.cpp -o lib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o HiGarrote.so RcppExports.o lib.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/y9ry0n8j7a1yc0xxzrqk9pi6mn5d7ih3-r-HiGarrote-1.0/library/00LOCK-HiGarrote/00new/HiGarrote/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (HiGarrote)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-HiGarrote-1.0.drv-0/ in /nix/store/y9ry0n8j7a1yc0xxzrqk9pi6mn5d7ih3-r-HiGarrote-1.0...
+patching script interpreter paths in /nix/store/y9ry0n8j7a1yc0xxzrqk9pi6mn5d7ih3-r-HiGarrote-1.0
+rewriting symlink /nix/store/y9ry0n8j7a1yc0xxzrqk9pi6mn5d7ih3-r-HiGarrote-1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/y9ry0n8j7a1yc0xxzrqk9pi6mn5d7ih3-r-HiGarrote-1.0

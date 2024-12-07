@@ -1,0 +1,60 @@
+this derivation will be built:
+  /nix/store/x1qqfyp4ad37f00n1mnw5ghxwa50vaj3-r-sylcount-0.2-6.drv
+this path will be fetched (0.15 MiB download, 0.16 MiB unpacked):
+  /nix/store/kmvm1mdaasb393fhrc1z47z7b1wxw676-sylcount_0.2-6.tar.gz
+copying path '/nix/store/kmvm1mdaasb393fhrc1z47z7b1wxw676-sylcount_0.2-6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x1qqfyp4ad37f00n1mnw5ghxwa50vaj3-r-sylcount-0.2-6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kmvm1mdaasb393fhrc1z47z7b1wxw676-sylcount_0.2-6.tar.gz
+source root is sylcount
+setting SOURCE_DATE_EPOCH to timestamp 1702235403 of file sylcount/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sylcount’ ...
+** package ‘sylcount’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... none needed
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to support OpenMP... unsupported
+ 
+***************** Results of sylcount package configure *****************
+ 
+* OpenMP Report
+*   >> Compiler support: no
+*   >> CFLAGS = 
+**************************************************************************
+ 
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sylcount.c -o sylcount.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sylcount_native.c -o sylcount_native.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sylcount_nthreads.c -o sylcount_nthreads.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o sylcount.so sylcount.o sylcount_native.o sylcount_nthreads.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/irg146ajr4g82hjrbdpjn5l6gzggh3gr-r-sylcount-0.2-6/library/00LOCK-sylcount/00new/sylcount/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sylcount)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sylcount-0.2-6.drv-0/ in /nix/store/irg146ajr4g82hjrbdpjn5l6gzggh3gr-r-sylcount-0.2-6...
+patching script interpreter paths in /nix/store/irg146ajr4g82hjrbdpjn5l6gzggh3gr-r-sylcount-0.2-6

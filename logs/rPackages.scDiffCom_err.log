@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/p3czy9j175kr5f4gk8fz28bndichdfy7-r-scDiffCom-1.0.0.drv
+this path will be fetched (2.17 MiB download, 2.17 MiB unpacked):
+  /nix/store/2dkhjn4ryjr0xmmygm6c6ff3i7zn65xy-scDiffCom_1.0.0.tar.gz
+copying path '/nix/store/2dkhjn4ryjr0xmmygm6c6ff3i7zn65xy-scDiffCom_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p3czy9j175kr5f4gk8fz28bndichdfy7-r-scDiffCom-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2dkhjn4ryjr0xmmygm6c6ff3i7zn65xy-scDiffCom_1.0.0.tar.gz
+source root is scDiffCom
+setting SOURCE_DATE_EPOCH to timestamp 1699036802 of file scDiffCom/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘DelayedArray’ is not available for package ‘scDiffCom’
+* removing ‘/nix/store/mglx6if8c697zq85xb71ynjckvw4fx9n-r-scDiffCom-1.0.0/library/scDiffCom’
+error: builder for '/nix/store/p3czy9j175kr5f4gk8fz28bndichdfy7-r-scDiffCom-1.0.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/2dkhjn4ryjr0xmmygm6c6ff3i7zn65xy-scDiffCom_1.0.0.tar.gz
+       > source root is scDiffCom
+       > setting SOURCE_DATE_EPOCH to timestamp 1699036802 of file scDiffCom/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘DelayedArray’ is not available for package ‘scDiffCom’
+       > * removing ‘/nix/store/mglx6if8c697zq85xb71ynjckvw4fx9n-r-scDiffCom-1.0.0/library/scDiffCom’
+       For full logs, run 'nix log /nix/store/p3czy9j175kr5f4gk8fz28bndichdfy7-r-scDiffCom-1.0.0.drv'.

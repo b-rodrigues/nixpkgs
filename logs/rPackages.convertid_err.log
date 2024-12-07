@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/3c6mdrcq5w7bq8c1yrrnlv807946yi7q-r-convertid-0.1.8.drv
+building '/nix/store/3c6mdrcq5w7bq8c1yrrnlv807946yi7q-r-convertid-0.1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7qdr80c2zv89h6zy9ikgd1a5giagl1q9-convertid_0.1.8.tar.gz
+source root is convertid
+setting SOURCE_DATE_EPOCH to timestamp 1701265202 of file convertid/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘BiocFileCache’ is not available for package ‘convertid’
+* removing ‘/nix/store/hhx27w52jvr896gd3z0ridcbrfvpvmh0-r-convertid-0.1.8/library/convertid’
+error: builder for '/nix/store/3c6mdrcq5w7bq8c1yrrnlv807946yi7q-r-convertid-0.1.8.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/7qdr80c2zv89h6zy9ikgd1a5giagl1q9-convertid_0.1.8.tar.gz
+       > source root is convertid
+       > setting SOURCE_DATE_EPOCH to timestamp 1701265202 of file convertid/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘BiocFileCache’ is not available for package ‘convertid’
+       > * removing ‘/nix/store/hhx27w52jvr896gd3z0ridcbrfvpvmh0-r-convertid-0.1.8/library/convertid’
+       For full logs, run 'nix log /nix/store/3c6mdrcq5w7bq8c1yrrnlv807946yi7q-r-convertid-0.1.8.drv'.

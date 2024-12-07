@@ -1,0 +1,136 @@
+these 6 derivations will be built:
+  /nix/store/zapmpx8z24mfzrhhv3jmnxwx2na13k73-gtfsio_1.2.0.tar.gz.drv
+  /nix/store/4014vsbllpz04z20960ccqp7j64nrvg2-r-gtfsio-1.2.0.drv
+  /nix/store/sg1931y2bmm72l4xvc0l96w2wl714i4i-gtfstools_1.3.0.tar.gz.drv
+  /nix/store/hk217as9kpq45z37x6pfmrdsf4p30m1d-r-gtfstools-1.3.0.drv
+  /nix/store/lyrxfpmxrvhwn7j2lw9f2h2v72fyb4jk-gtfs2gps_2.1-2.tar.gz.drv
+  /nix/store/ky62j1dl8imx498y6j9527vd8nxh2wbs-r-gtfs2gps-2.1-2.drv
+building '/nix/store/lyrxfpmxrvhwn7j2lw9f2h2v72fyb4jk-gtfs2gps_2.1-2.tar.gz.drv'...
+building '/nix/store/sg1931y2bmm72l4xvc0l96w2wl714i4i-gtfstools_1.3.0.tar.gz.drv'...
+building '/nix/store/zapmpx8z24mfzrhhv3jmnxwx2na13k73-gtfsio_1.2.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/gtfs2gps_2.1-2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/gtfstools_1.3.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2022k  100 2022k    0     0  4534k      0 --:--:-- --:--:-- --:--:-- 4544k
+
+trying https://cran.r-project.org/src/contrib/gtfsio_1.2.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1131k  100 1131k    0     0  2482k      0 --:--:-- --:--:-- --:--:-- 2487k
+100  276k  100  276k    0     0  1321k      0 --:--:-- --:--:-- --:--:-- 1328k
+building '/nix/store/4014vsbllpz04z20960ccqp7j64nrvg2-r-gtfsio-1.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ggzp0mdf8iykdr5ir14xlz58vx686i94-gtfsio_1.2.0.tar.gz
+source root is gtfsio
+setting SOURCE_DATE_EPOCH to timestamp 1728689402 of file gtfsio/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gtfsio’ ...
+** package ‘gtfsio’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gtfsio)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gtfsio-1.2.0.drv-0/ in /nix/store/jhkx3wggxhd39jj9c5rr6sbcb0s3f7qa-r-gtfsio-1.2.0...
+patching script interpreter paths in /nix/store/jhkx3wggxhd39jj9c5rr6sbcb0s3f7qa-r-gtfsio-1.2.0
+rewriting symlink /nix/store/jhkx3wggxhd39jj9c5rr6sbcb0s3f7qa-r-gtfsio-1.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/jhkx3wggxhd39jj9c5rr6sbcb0s3f7qa-r-gtfsio-1.2.0
+building '/nix/store/hk217as9kpq45z37x6pfmrdsf4p30m1d-r-gtfstools-1.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/18v3nyarb58mgckg6b6d24iw9w9smhqh-gtfstools_1.3.0.tar.gz
+source root is gtfstools
+setting SOURCE_DATE_EPOCH to timestamp 1728326402 of file gtfstools/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gtfstools’ ...
+** package ‘gtfstools’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c convert-time.cpp -o convert-time.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cpp11.cpp -o cpp11.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I../inst/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c seconds_to_string.cpp -o seconds_to_string.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o gtfstools.so convert-time.o cpp11.o seconds_to_string.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/kr9mrvik7yz2fbnkk7xk9bpxcawwrl72-r-gtfstools-1.3.0/library/00LOCK-gtfstools/00new/gtfstools/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gtfstools)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gtfstools-1.3.0.drv-0/ in /nix/store/kr9mrvik7yz2fbnkk7xk9bpxcawwrl72-r-gtfstools-1.3.0...
+patching script interpreter paths in /nix/store/kr9mrvik7yz2fbnkk7xk9bpxcawwrl72-r-gtfstools-1.3.0
+rewriting symlink /nix/store/kr9mrvik7yz2fbnkk7xk9bpxcawwrl72-r-gtfstools-1.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/kr9mrvik7yz2fbnkk7xk9bpxcawwrl72-r-gtfstools-1.3.0
+building '/nix/store/ky62j1dl8imx498y6j9527vd8nxh2wbs-r-gtfs2gps-2.1-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/apni0x4i3nl3hnhnnxrmkl3zibkwx6sb-gtfs2gps_2.1-2.tar.gz
+source root is gtfs2gps
+setting SOURCE_DATE_EPOCH to timestamp 1728370806 of file gtfs2gps/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘gtfs2gps’ ...
+** package ‘gtfs2gps’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distance_calcs.cpp -o distance_calcs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c snap_points.cpp -o snap_points.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o gtfs2gps.so RcppExports.o distance_calcs.o snap_points.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/l2lmjb4g3h86nvk1zapv9vgn042vqfb2-r-gtfs2gps-2.1-2/library/00LOCK-gtfs2gps/00new/gtfs2gps/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gtfs2gps)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-gtfs2gps-2.1-2.drv-0/ in /nix/store/l2lmjb4g3h86nvk1zapv9vgn042vqfb2-r-gtfs2gps-2.1-2...
+patching script interpreter paths in /nix/store/l2lmjb4g3h86nvk1zapv9vgn042vqfb2-r-gtfs2gps-2.1-2
+rewriting symlink /nix/store/l2lmjb4g3h86nvk1zapv9vgn042vqfb2-r-gtfs2gps-2.1-2/nix-support/propagated-user-env-packages to be relative to /nix/store/l2lmjb4g3h86nvk1zapv9vgn042vqfb2-r-gtfs2gps-2.1-2

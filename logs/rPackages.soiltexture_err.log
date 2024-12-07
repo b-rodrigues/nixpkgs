@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/p7pxpxzk35iqygrnd2l18qw0gha2cy3i-r-soiltexture-1.5.3.drv
+this path will be fetched (0.61 MiB download, 0.61 MiB unpacked):
+  /nix/store/k2xlpgingvyzgshqn3bcrb5v1fz7vqvf-soiltexture_1.5.3.tar.gz
+copying path '/nix/store/k2xlpgingvyzgshqn3bcrb5v1fz7vqvf-soiltexture_1.5.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/p7pxpxzk35iqygrnd2l18qw0gha2cy3i-r-soiltexture-1.5.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/k2xlpgingvyzgshqn3bcrb5v1fz7vqvf-soiltexture_1.5.3.tar.gz
+source root is soiltexture
+setting SOURCE_DATE_EPOCH to timestamp 1708074602 of file soiltexture/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘soiltexture’ ...
+** package ‘soiltexture’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 30223 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-soiltexture-1.5.3.drv-0/RtmpVBHPhB/file760a33f039df'
+ERROR: lazy loading failed for package ‘soiltexture’
+* removing ‘/nix/store/4gq1xz4xg8v542lm1cjchd9ijxfbf2bn-r-soiltexture-1.5.3/library/soiltexture’
+error: builder for '/nix/store/p7pxpxzk35iqygrnd2l18qw0gha2cy3i-r-soiltexture-1.5.3.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/k2xlpgingvyzgshqn3bcrb5v1fz7vqvf-soiltexture_1.5.3.tar.gz
+       > source root is soiltexture
+       > setting SOURCE_DATE_EPOCH to timestamp 1708074602 of file soiltexture/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘soiltexture’ ...
+       > ** package ‘soiltexture’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 30223 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-soiltexture-1.5.3.drv-0/RtmpVBHPhB/file760a33f039df'
+       > ERROR: lazy loading failed for package ‘soiltexture’
+       > * removing ‘/nix/store/4gq1xz4xg8v542lm1cjchd9ijxfbf2bn-r-soiltexture-1.5.3/library/soiltexture’
+       For full logs, run 'nix log /nix/store/p7pxpxzk35iqygrnd2l18qw0gha2cy3i-r-soiltexture-1.5.3.drv'.

@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/4rqp9dlb35fhnc61jakxxijmzww017iy-r-psbcGroup-1.7.drv
+this path will be fetched (0.12 MiB download, 0.12 MiB unpacked):
+  /nix/store/6a453xrvdzha8n35n24h4ma53jvnlf5c-psbcGroup_1.7.tar.gz
+copying path '/nix/store/6a453xrvdzha8n35n24h4ma53jvnlf5c-psbcGroup_1.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4rqp9dlb35fhnc61jakxxijmzww017iy-r-psbcGroup-1.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6a453xrvdzha8n35n24h4ma53jvnlf5c-psbcGroup_1.7.tar.gz
+source root is psbcGroup
+setting SOURCE_DATE_EPOCH to timestamp 1704839411 of file psbcGroup/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘psbcGroup’ ...
+** package ‘psbcGroup’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BAFTgpLT.c -o BAFTgpLT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c BAFTgpLT_Updates.c -o BAFTgpLT_Updates.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Utilities.c -o Utilities.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c aftGL.c -o aftGL.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o psbcGroup.so BAFTgpLT.o BAFTgpLT_Updates.o Utilities.o aftGL.o registerDynamicSymbol.o -L/usr/local/lib -lgsl -lgslcblas -lm -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ndxrgk1rnn65ags1fflmvqyljmxfcnk4-r-psbcGroup-1.7/library/00LOCK-psbcGroup/00new/psbcGroup/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (psbcGroup)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-psbcGroup-1.7.drv-0/ in /nix/store/ndxrgk1rnn65ags1fflmvqyljmxfcnk4-r-psbcGroup-1.7...
+patching script interpreter paths in /nix/store/ndxrgk1rnn65ags1fflmvqyljmxfcnk4-r-psbcGroup-1.7
+rewriting symlink /nix/store/ndxrgk1rnn65ags1fflmvqyljmxfcnk4-r-psbcGroup-1.7/nix-support/propagated-user-env-packages to be relative to /nix/store/ndxrgk1rnn65ags1fflmvqyljmxfcnk4-r-psbcGroup-1.7

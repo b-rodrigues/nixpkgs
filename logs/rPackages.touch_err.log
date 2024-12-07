@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/mhw50j7cs23pivy7fihm228g0napl6hd-r-touch-0.1-6.drv
+this path will be fetched (0.26 MiB download, 0.27 MiB unpacked):
+  /nix/store/gpbs7ms4w4is6795c2vxl792332daizx-touch_0.1-6.tar.gz
+copying path '/nix/store/gpbs7ms4w4is6795c2vxl792332daizx-touch_0.1-6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mhw50j7cs23pivy7fihm228g0napl6hd-r-touch-0.1-6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gpbs7ms4w4is6795c2vxl792332daizx-touch_0.1-6.tar.gz
+source root is touch
+setting SOURCE_DATE_EPOCH to timestamp 1657270202 of file touch/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘touch’ ...
+** package ‘touch’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c apply_gems.cpp -o apply_gems.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c initialize_gems.cpp -o initialize_gems.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o touch.so RcppExports.o apply_gems.o initialize_gems.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/d36zfdj539i9zpcl4wp10jrm0vr8p7l9-r-touch-0.1-6/library/00LOCK-touch/00new/touch/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (touch)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-touch-0.1-6.drv-0/ in /nix/store/d36zfdj539i9zpcl4wp10jrm0vr8p7l9-r-touch-0.1-6...
+patching script interpreter paths in /nix/store/d36zfdj539i9zpcl4wp10jrm0vr8p7l9-r-touch-0.1-6
+/nix/store/d36zfdj539i9zpcl4wp10jrm0vr8p7l9-r-touch-0.1-6/library/touch/ahrq/get_ahrq_gem.R: interpreter directive changed from "#!/usr/bin/Rscript --vanilla" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript --vanilla"
+/nix/store/d36zfdj539i9zpcl4wp10jrm0vr8p7l9-r-touch-0.1-6/library/touch/ahrq/gen_maps.R: interpreter directive changed from "#!/usr/bin/Rscript --vanilla" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript --vanilla"
+rewriting symlink /nix/store/d36zfdj539i9zpcl4wp10jrm0vr8p7l9-r-touch-0.1-6/nix-support/propagated-user-env-packages to be relative to /nix/store/d36zfdj539i9zpcl4wp10jrm0vr8p7l9-r-touch-0.1-6

@@ -1,0 +1,130 @@
+these 4 derivations will be built:
+  /nix/store/7pv9s1n469y67zch8c9jkhcq064iyvz9-r-ROSE-0.0-4.drv
+  /nix/store/w7iwg5gqmz5dqal4p845lxia6xfdy425-r-themis-1.0.2.drv
+  /nix/store/yb200ndcw471fylm693hn5s3pbvfjmhg-r-rpartScore-1.0-2.drv
+  /nix/store/7dk6c201mv48rwvbq80f42bwbz4wz492-r-pheble-0.1.0.drv
+these 4 paths will be fetched (0.79 MiB download, 0.79 MiB unpacked):
+  /nix/store/5f0fzk2wr0siw7a2ilc7c7yc0xyqignl-ROSE_0.0-4.tar.gz
+  /nix/store/ajxwirdgj15xyikkm1gpgzvg0k98kcca-pheble_0.1.0.tar.gz
+  /nix/store/329b2y1z3mka2mbx044yn9xizribc354-rpartScore_1.0-2.tar.gz
+  /nix/store/a040qm75dpxd67b12sq9rf9rd9zzdw4w-themis_1.0.2.tar.gz
+copying path '/nix/store/ajxwirdgj15xyikkm1gpgzvg0k98kcca-pheble_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/329b2y1z3mka2mbx044yn9xizribc354-rpartScore_1.0-2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/a040qm75dpxd67b12sq9rf9rd9zzdw4w-themis_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/5f0fzk2wr0siw7a2ilc7c7yc0xyqignl-ROSE_0.0-4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7pv9s1n469y67zch8c9jkhcq064iyvz9-r-ROSE-0.0-4.drv'...
+building '/nix/store/yb200ndcw471fylm693hn5s3pbvfjmhg-r-rpartScore-1.0-2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5f0fzk2wr0siw7a2ilc7c7yc0xyqignl-ROSE_0.0-4.tar.gz
+source root is ROSE
+setting SOURCE_DATE_EPOCH to timestamp 1623658209 of file ROSE/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/329b2y1z3mka2mbx044yn9xizribc354-rpartScore_1.0-2.tar.gz
+source root is rpartScore
+setting SOURCE_DATE_EPOCH to timestamp 1653518402 of file rpartScore/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+* installing *source* package ‘ROSE’ ...
+** package ‘ROSE’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+Running phase: configurePhase
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rpartScore’ ...
+** package ‘rpartScore’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ROSE)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ROSE-0.0-4.drv-0/ in /nix/store/254jgci5kqkc6iggzw3ssz4jzznb5gkx-r-ROSE-0.0-4...
+patching script interpreter paths in /nix/store/254jgci5kqkc6iggzw3ssz4jzznb5gkx-r-ROSE-0.0-4
+** testing if installed package keeps a record of temporary installation path
+* DONE (rpartScore)
+building '/nix/store/w7iwg5gqmz5dqal4p845lxia6xfdy425-r-themis-1.0.2.drv'...
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rpartScore-1.0-2.drv-0/ in /nix/store/5f6qscndhy049m0094isisbya59fwa2w-r-rpartScore-1.0-2...
+patching script interpreter paths in /nix/store/5f6qscndhy049m0094isisbya59fwa2w-r-rpartScore-1.0-2
+rewriting symlink /nix/store/5f6qscndhy049m0094isisbya59fwa2w-r-rpartScore-1.0-2/nix-support/propagated-user-env-packages to be relative to /nix/store/5f6qscndhy049m0094isisbya59fwa2w-r-rpartScore-1.0-2
+Running phase: unpackPhase
+unpacking source archive /nix/store/a040qm75dpxd67b12sq9rf9rd9zzdw4w-themis_1.0.2.tar.gz
+source root is themis
+setting SOURCE_DATE_EPOCH to timestamp 1692049202 of file themis/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘themis’ ...
+** package ‘themis’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (themis)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-themis-1.0.2.drv-0/ in /nix/store/647vspd78axb68idkb7hyqjfwwsajsa1-r-themis-1.0.2...
+patching script interpreter paths in /nix/store/647vspd78axb68idkb7hyqjfwwsajsa1-r-themis-1.0.2
+rewriting symlink /nix/store/647vspd78axb68idkb7hyqjfwwsajsa1-r-themis-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/647vspd78axb68idkb7hyqjfwwsajsa1-r-themis-1.0.2
+building '/nix/store/7dk6c201mv48rwvbq80f42bwbz4wz492-r-pheble-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ajxwirdgj15xyikkm1gpgzvg0k98kcca-pheble_0.1.0.tar.gz
+source root is pheble
+setting SOURCE_DATE_EPOCH to timestamp 1684313411 of file pheble/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pheble’ ...
+** package ‘pheble’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pheble)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pheble-0.1.0.drv-0/ in /nix/store/xvnmi2y9lbs6bwi65lwjgigg6csjq2pd-r-pheble-0.1.0...
+patching script interpreter paths in /nix/store/xvnmi2y9lbs6bwi65lwjgigg6csjq2pd-r-pheble-0.1.0
+rewriting symlink /nix/store/xvnmi2y9lbs6bwi65lwjgigg6csjq2pd-r-pheble-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/xvnmi2y9lbs6bwi65lwjgigg6csjq2pd-r-pheble-0.1.0

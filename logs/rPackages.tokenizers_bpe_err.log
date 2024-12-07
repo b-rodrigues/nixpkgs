@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/3r354y45jzh404nszy20zbzmscj2hiz0-r-tokenizers.bpe-0.1.3.drv
+this path will be fetched (0.77 MiB download, 0.77 MiB unpacked):
+  /nix/store/gfx1dv9simhih5vnzcdv8230nkkhl8ml-tokenizers.bpe_0.1.3.tar.gz
+copying path '/nix/store/gfx1dv9simhih5vnzcdv8230nkkhl8ml-tokenizers.bpe_0.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3r354y45jzh404nszy20zbzmscj2hiz0-r-tokenizers.bpe-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gfx1dv9simhih5vnzcdv8230nkkhl8ml-tokenizers.bpe_0.1.3.tar.gz
+source root is tokenizers.bpe
+setting SOURCE_DATE_EPOCH to timestamp 1694815925 of file tokenizers.bpe/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tokenizers.bpe’ ...
+** package ‘tokenizers.bpe’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -pthread -DSTRICT_R_HEADERS -I./youtokentome/cpp -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c youtokentome/cpp/utils.cpp -o youtokentome/cpp/utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -pthread -DSTRICT_R_HEADERS -I./youtokentome/cpp -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c youtokentome/cpp/bpe.cpp -o youtokentome/cpp/bpe.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -pthread -DSTRICT_R_HEADERS -I./youtokentome/cpp -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c youtokentome/cpp/utf8.cpp -o youtokentome/cpp/utf8.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -pthread -DSTRICT_R_HEADERS -I./youtokentome/cpp -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_youtokentome.cpp -o rcpp_youtokentome.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -pthread -DSTRICT_R_HEADERS -I./youtokentome/cpp -I. -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tokenizers.bpe.so youtokentome/cpp/utils.o youtokentome/cpp/bpe.o youtokentome/cpp/utf8.o rcpp_youtokentome.o RcppExports.o -pthread -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+rm -f youtokentome/cpp/utils.o youtokentome/cpp/bpe.o youtokentome/cpp/utf8.o rcpp_youtokentome.o RcppExports.o
+installing to /nix/store/9cgs8p0svl4561wxxp4cj1f2dbpzmi9q-r-tokenizers.bpe-0.1.3/library/00LOCK-tokenizers.bpe/00new/tokenizers.bpe/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tokenizers.bpe)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tokenizers.bpe-0.1.3.drv-0/ in /nix/store/9cgs8p0svl4561wxxp4cj1f2dbpzmi9q-r-tokenizers.bpe-0.1.3...
+patching script interpreter paths in /nix/store/9cgs8p0svl4561wxxp4cj1f2dbpzmi9q-r-tokenizers.bpe-0.1.3
+rewriting symlink /nix/store/9cgs8p0svl4561wxxp4cj1f2dbpzmi9q-r-tokenizers.bpe-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/9cgs8p0svl4561wxxp4cj1f2dbpzmi9q-r-tokenizers.bpe-0.1.3

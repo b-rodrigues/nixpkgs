@@ -1,0 +1,62 @@
+this derivation will be built:
+  /nix/store/mpn1vx43ixdjpy6qjmj6wbh5v65i8b4y-r-rAverage-0.5-8.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/7s2w9xa68rvvcjifisaw35hmib3qbcsq-rAverage_0.5-8.tar.gz
+copying path '/nix/store/7s2w9xa68rvvcjifisaw35hmib3qbcsq-rAverage_0.5-8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mpn1vx43ixdjpy6qjmj6wbh5v65i8b4y-r-rAverage-0.5-8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7s2w9xa68rvvcjifisaw35hmib3qbcsq-rAverage_0.5-8.tar.gz
+source root is rAverage
+setting SOURCE_DATE_EPOCH to timestamp 1501342109 of file rAverage/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rAverage’ ...
+** package ‘rAverage’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c averaging.c -o averaging.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c combinations.c -o combinations.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rAverage_init.c -o rAverage_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c residual.c -o residual.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rAverage.so averaging.o combinations.o rAverage_init.o residual.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/mjafkg7wnd8kpwmxjkxcxpmw3j4iaxdp-r-rAverage-0.5-8/library/00LOCK-rAverage/00new/rAverage/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+sh: line 1: 23068 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-rAverage-0.5-8.drv-0/RtmpLfk2zY/file59ec2b9a6627'
+ERROR: lazy loading failed for package ‘rAverage’
+* removing ‘/nix/store/mjafkg7wnd8kpwmxjkxcxpmw3j4iaxdp-r-rAverage-0.5-8/library/rAverage’
+error: builder for '/nix/store/mpn1vx43ixdjpy6qjmj6wbh5v65i8b4y-r-rAverage-0.5-8.drv' failed with exit code 1;
+       last 25 log lines:
+       > setting SOURCE_DATE_EPOCH to timestamp 1501342109 of file rAverage/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘rAverage’ ...
+       > ** package ‘rAverage’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** libs
+       > using C compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c averaging.c -o averaging.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c combinations.c -o combinations.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c rAverage_init.c -o rAverage_init.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c residual.c -o residual.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rAverage.so averaging.o combinations.o rAverage_init.o residual.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > installing to /nix/store/mjafkg7wnd8kpwmxjkxcxpmw3j4iaxdp-r-rAverage-0.5-8/library/00LOCK-rAverage/00new/rAverage/libs
+       > ** R
+       > ** data
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 23068 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-rAverage-0.5-8.drv-0/RtmpLfk2zY/file59ec2b9a6627'
+       > ERROR: lazy loading failed for package ‘rAverage’
+       > * removing ‘/nix/store/mjafkg7wnd8kpwmxjkxcxpmw3j4iaxdp-r-rAverage-0.5-8/library/rAverage’
+       For full logs, run 'nix log /nix/store/mpn1vx43ixdjpy6qjmj6wbh5v65i8b4y-r-rAverage-0.5-8.drv'.

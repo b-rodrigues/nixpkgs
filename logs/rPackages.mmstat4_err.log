@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/n1l30xkhc83ifm538pa22bqy0j561ssg-r-mmstat4-0.2.1.drv
+this path will be fetched (1.02 MiB download, 1.02 MiB unpacked):
+  /nix/store/15y2w3mlvkrg34w1wcgkglhzxqjrbznj-mmstat4_0.2.1.tar.gz
+copying path '/nix/store/15y2w3mlvkrg34w1wcgkglhzxqjrbznj-mmstat4_0.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/n1l30xkhc83ifm538pa22bqy0j561ssg-r-mmstat4-0.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/15y2w3mlvkrg34w1wcgkglhzxqjrbznj-mmstat4_0.2.1.tar.gz
+source root is mmstat4
+setting SOURCE_DATE_EPOCH to timestamp 1714392602 of file mmstat4/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘mmstat4’ ...
+** package ‘mmstat4’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 76944 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-mmstat4-0.2.1.drv-0/Rtmpg1oDao/file12c8b77b5d913'
+ERROR: lazy loading failed for package ‘mmstat4’
+* removing ‘/nix/store/akhir14nzhk2xz8hp4h18hd7nv53798k-r-mmstat4-0.2.1/library/mmstat4’
+error: builder for '/nix/store/n1l30xkhc83ifm538pa22bqy0j561ssg-r-mmstat4-0.2.1.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/15y2w3mlvkrg34w1wcgkglhzxqjrbznj-mmstat4_0.2.1.tar.gz
+       > source root is mmstat4
+       > setting SOURCE_DATE_EPOCH to timestamp 1714392602 of file mmstat4/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘mmstat4’ ...
+       > ** package ‘mmstat4’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 76944 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-mmstat4-0.2.1.drv-0/Rtmpg1oDao/file12c8b77b5d913'
+       > ERROR: lazy loading failed for package ‘mmstat4’
+       > * removing ‘/nix/store/akhir14nzhk2xz8hp4h18hd7nv53798k-r-mmstat4-0.2.1/library/mmstat4’
+       For full logs, run 'nix log /nix/store/n1l30xkhc83ifm538pa22bqy0j561ssg-r-mmstat4-0.2.1.drv'.

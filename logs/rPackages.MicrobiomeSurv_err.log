@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/aiahwal9jz6ahbzayg0n2gb1favbdwqm-r-MicrobiomeSurv-0.1.0.drv
+this path will be fetched (0.40 MiB download, 0.40 MiB unpacked):
+  /nix/store/dc7hidy5qs18alcgj0ah7jffag2gpsrh-MicrobiomeSurv_0.1.0.tar.gz
+copying path '/nix/store/dc7hidy5qs18alcgj0ah7jffag2gpsrh-MicrobiomeSurv_0.1.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/aiahwal9jz6ahbzayg0n2gb1favbdwqm-r-MicrobiomeSurv-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dc7hidy5qs18alcgj0ah7jffag2gpsrh-MicrobiomeSurv_0.1.0.tar.gz
+source root is MicrobiomeSurv
+setting SOURCE_DATE_EPOCH to timestamp 1697091602 of file MicrobiomeSurv/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘microbiome’ is not available for package ‘MicrobiomeSurv’
+* removing ‘/nix/store/y3kbyjx3l3axql60iagb221q10gsd0cb-r-MicrobiomeSurv-0.1.0/library/MicrobiomeSurv’
+error: builder for '/nix/store/aiahwal9jz6ahbzayg0n2gb1favbdwqm-r-MicrobiomeSurv-0.1.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/dc7hidy5qs18alcgj0ah7jffag2gpsrh-MicrobiomeSurv_0.1.0.tar.gz
+       > source root is MicrobiomeSurv
+       > setting SOURCE_DATE_EPOCH to timestamp 1697091602 of file MicrobiomeSurv/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘microbiome’ is not available for package ‘MicrobiomeSurv’
+       > * removing ‘/nix/store/y3kbyjx3l3axql60iagb221q10gsd0cb-r-MicrobiomeSurv-0.1.0/library/MicrobiomeSurv’
+       For full logs, run 'nix log /nix/store/aiahwal9jz6ahbzayg0n2gb1favbdwqm-r-MicrobiomeSurv-0.1.0.drv'.

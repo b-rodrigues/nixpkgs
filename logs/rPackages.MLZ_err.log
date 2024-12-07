@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/ba3m9fww15nnjc97a2fbpgcrdc1sy9hi-MLZ_0.1.5.tar.gz.drv
+  /nix/store/p517zvv1jm573xyh1i1rysrv54xcnb4b-r-MLZ-0.1.5.drv
+building '/nix/store/ba3m9fww15nnjc97a2fbpgcrdc1sy9hi-MLZ_0.1.5.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/MLZ_0.1.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  127k  100  127k    0     0   788k      0 --:--:-- --:--:-- --:--:--  791k
+building '/nix/store/p517zvv1jm573xyh1i1rysrv54xcnb4b-r-MLZ-0.1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d4r8zcw9s9xr6ydkqfrjbnzj375blwwk-MLZ_0.1.5.tar.gz
+source root is MLZ
+setting SOURCE_DATE_EPOCH to timestamp 1727303410 of file MLZ/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MLZ’ ...
+** package ‘MLZ’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MLZ.cpp -o MLZ.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MLZ.so MLZ.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/s7g58241a40qhvmvk9n7yyyai1lddf2v-r-MLZ-0.1.5/library/00LOCK-MLZ/00new/MLZ/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MLZ)
+installPhase completed in 36 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MLZ-0.1.5.drv-0/ in /nix/store/s7g58241a40qhvmvk9n7yyyai1lddf2v-r-MLZ-0.1.5...
+patching script interpreter paths in /nix/store/s7g58241a40qhvmvk9n7yyyai1lddf2v-r-MLZ-0.1.5
+rewriting symlink /nix/store/s7g58241a40qhvmvk9n7yyyai1lddf2v-r-MLZ-0.1.5/nix-support/propagated-user-env-packages to be relative to /nix/store/s7g58241a40qhvmvk9n7yyyai1lddf2v-r-MLZ-0.1.5

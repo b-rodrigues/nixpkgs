@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/wiz0adc1kr19sx6pfbn9dm4p5cvkgcrz-r-SC.MEB-1.1.drv
+this path will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/ia8s8g452nvnd4wvwivwjzab9m4klx7b-SC.MEB_1.1.tar.gz
+copying path '/nix/store/ia8s8g452nvnd4wvwivwjzab9m4klx7b-SC.MEB_1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wiz0adc1kr19sx6pfbn9dm4p5cvkgcrz-r-SC.MEB-1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ia8s8g452nvnd4wvwivwjzab9m4klx7b-SC.MEB_1.1.tar.gz
+source root is SC.MEB
+setting SOURCE_DATE_EPOCH to timestamp 1633682421 of file SC.MEB/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependencies ‘SingleCellExperiment’, ‘BiocSingular’, ‘scater’, ‘scran’ are not available for package ‘SC.MEB’
+* removing ‘/nix/store/bw2ql52gyi6jb50irzbznnhrglyi6wkw-r-SC.MEB-1.1/library/SC.MEB’
+error: builder for '/nix/store/wiz0adc1kr19sx6pfbn9dm4p5cvkgcrz-r-SC.MEB-1.1.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/ia8s8g452nvnd4wvwivwjzab9m4klx7b-SC.MEB_1.1.tar.gz
+       > source root is SC.MEB
+       > setting SOURCE_DATE_EPOCH to timestamp 1633682421 of file SC.MEB/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependencies ‘SingleCellExperiment’, ‘BiocSingular’, ‘scater’, ‘scran’ are not available for package ‘SC.MEB’
+       > * removing ‘/nix/store/bw2ql52gyi6jb50irzbznnhrglyi6wkw-r-SC.MEB-1.1/library/SC.MEB’
+       For full logs, run 'nix log /nix/store/wiz0adc1kr19sx6pfbn9dm4p5cvkgcrz-r-SC.MEB-1.1.drv'.

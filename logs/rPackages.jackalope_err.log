@@ -1,0 +1,1367 @@
+these 2 derivations will be built:
+  /nix/store/15hh2av8gqxw3m9s425f1rc6bqjsg6zx-r-Rhtslib-1.2.1.drv
+  /nix/store/540pk4xib8k6jd70hzsqp3ah835mi39d-r-jackalope-1.1.5.drv
+this path will be fetched (1.66 MiB download, 1.66 MiB unpacked):
+  /nix/store/paxmhd5wgs43wnch42cm9mdbk6a9w32f-jackalope_1.1.5.tar.gz
+copying path '/nix/store/paxmhd5wgs43wnch42cm9mdbk6a9w32f-jackalope_1.1.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/15hh2av8gqxw3m9s425f1rc6bqjsg6zx-r-Rhtslib-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/114z7ymmmxsag1v9nvkami7190kqmgih-Rhtslib_1.2.1.tar.gz
+source root is Rhtslib
+setting SOURCE_DATE_EPOCH to timestamp 1446177766 of file Rhtslib/src/htslib/version.h
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Updating Autotools / GNU config script to a newer upstream version: ./tools/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./src/htslib/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./tools/config.guess
+Updating Autotools / GNU config script to a newer upstream version: ./src/htslib/config.guess
+Running phase: configurePhase
+substituteStream() in derivation r-Rhtslib-1.2.1: WARNING: '--replace' is deprecated, use --replace-{fail,warn,quiet}. (file 'R/zzz.R')
+substituteStream() in derivation r-Rhtslib-1.2.1: WARNING: pattern -lcurl doesn't match anything in file 'R/zzz.R'
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rhtslib’ ...
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+running configuration...
+cd ./htslib/ && ./configure --disable-dependency-tracking \
+--prefix="/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/00LOCK-Rhtslib/00new/Rhtslib" \
+CC="`"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R" CMD config CC`" CFLAGS="`"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R" CMD config CFLAGS` `"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R" CMD config CPICFLAGS`" \
+LDFLAGS="`"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R" CMD config LDFLAGS`" CPPFLAGS="`"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R" CMD config CPPFLAGS`" CPP="`"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R" CMD config CPP`"
+'config' variable 'CPP' is defunct
+checking for a BSD-compatible install... /nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for style of include used by make... GNU
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... none needed
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc understands -c and -o together... rm: cannot remove 'conftest.dSYM': Is a directory
+yes
+checking dependency style of /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc... none
+checking how to run the C preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -E
+checking for grep that handles long lines and -e... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep
+checking for egrep... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep -E
+checking for ANSI C header files... rm: cannot remove 'conftest.dSYM': Is a directory
+rm: cannot remove 'conftest.dSYM': Is a directory
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... aarch64-apple-darwin24.1.0
+checking host system type... aarch64-apple-darwin24.1.0
+checking how to print strings... printf
+checking for a sed that does not truncate output... /nix/store/9m372k9wy0f9aj54zhvsr65w2p9ndwnj-gnused-4.9/bin/sed
+checking for fgrep... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep -F
+checking for ld used by /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc... ld
+checking if the linker (ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 786432
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert aarch64-apple-darwin24.1.0 file names to aarch64-apple-darwin24.1.0 format... func_convert_file_noop
+checking how to convert aarch64-apple-darwin24.1.0 file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib
+checking command to parse nm output from /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... no
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc supports -fno-rtti -fno-exceptions... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to produce PIC... -fno-common -DPIC
+checking if /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc PIC flag -fno-common -DPIC works... yes
+checking if /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc static flag -static works... no
+checking if /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc supports -c -o file.o... yes
+checking if /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc supports -c -o file.o... (cached) yes
+checking whether the /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.1.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... (cached) yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... (cached) none needed
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc understands -c and -o together... (cached) yes
+checking dependency style of /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc... (cached) none
+checking for Minix Amsterdam compiler... no
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for arpa/inet.h... yes
+checking for features.h... no
+checking for sys/socket.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/time.h... yes
+checking for wchar.h... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for netdb.h... yes
+checking for sys/select.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/uio.h... yes
+checking whether the preprocessor supports include_next... yes
+checking whether system header files limit the line length... no
+checking for _set_invalid_parameter_handler... no
+checking for fcntl... yes
+checking for symlink... yes
+checking for fsync... yes
+checking for getdtablesize... yes
+checking for gettimeofday... yes
+checking for complete errno.h... yes
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether fdatasync is declared... no
+checking whether getdtablesize is declared... yes
+checking for C/C++ restrict keyword... __restrict
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking whether gettimeofday is declared without a macro... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking whether stdint.h conforms to C99... yes
+checking whether imaxabs is declared without a macro... yes
+checking whether imaxdiv is declared without a macro... yes
+checking whether strtoimax is declared without a macro... yes
+checking whether strtoumax is declared without a macro... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking whether <sys/socket.h> is self-contained... yes
+checking for shutdown... yes
+checking whether <sys/socket.h> defines the SHUT_* macros... yes
+checking for struct sockaddr_storage... yes
+checking for sa_family_t... yes
+checking for struct sockaddr_storage.ss_family... yes
+checking whether socket is declared without a macro... yes
+checking whether connect is declared without a macro... yes
+checking whether accept is declared without a macro... yes
+checking whether bind is declared without a macro... yes
+checking whether getpeername is declared without a macro... yes
+checking whether getsockname is declared without a macro... yes
+checking whether getsockopt is declared without a macro... yes
+checking whether listen is declared without a macro... yes
+checking whether recv is declared without a macro... yes
+checking whether send is declared without a macro... yes
+checking whether recvfrom is declared without a macro... yes
+checking whether sendto is declared without a macro... yes
+checking whether setsockopt is declared without a macro... yes
+checking whether shutdown is declared without a macro... yes
+checking whether accept4 is declared without a macro... no
+checking for sigset_t... yes
+checking for uid_t in sys/types.h... yes
+checking for library containing setsockopt... none needed
+checking for wchar_t... yes
+checking whether ffsl is declared without a macro... yes
+checking whether ffsll is declared without a macro... yes
+checking whether memmem is declared without a macro... yes
+checking whether mempcpy is declared without a macro... no
+checking whether memrchr is declared without a macro... no
+checking whether rawmemchr is declared without a macro... no
+checking whether stpcpy is declared without a macro... yes
+checking whether stpncpy is declared without a macro... yes
+checking whether strchrnul is declared without a macro... no
+checking whether strdup is declared without a macro... yes
+checking whether strncat is declared without a macro... yes
+checking whether strndup is declared without a macro... yes
+checking whether strnlen is declared without a macro... yes
+checking whether strpbrk is declared without a macro... yes
+checking whether strsep is declared without a macro... yes
+checking whether strcasestr is declared without a macro... yes
+checking whether strtok_r is declared without a macro... yes
+checking whether strerror_r is declared without a macro... yes
+checking whether strsignal is declared without a macro... yes
+checking whether strverscmp is declared without a macro... no
+checking whether stat file-mode macros are broken... no
+checking for struct timespec in <time.h>... yes
+checking for alloca as a compiler built-in... yes
+checking whether inet_ntop is declared without a macro... yes
+checking whether inet_pton is declared without a macro... yes
+checking whether dup2 works... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... yes
+checking whether fcntl is declared without a macro... yes
+checking whether openat is declared without a macro... yes
+checking for fdatasync... yes
+checking whether getdtablesize works... yes
+checking for getpagesize... yes
+checking whether getpagesize is declared... yes
+checking whether gettimeofday clobbers localtime buffer... no
+checking for gettimeofday with POSIX signature... yes
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... yes
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... yes
+checking whether getaddrinfo is declared without a macro... yes
+checking whether freeaddrinfo is declared without a macro... yes
+checking whether gai_strerror is declared without a macro... yes
+checking whether getnameinfo is declared without a macro... yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... no
+checking whether pthread_sigmask is declared without a macro... yes
+checking whether sigaction is declared without a macro... yes
+checking whether sigaddset is declared without a macro... yes
+checking whether sigdelset is declared without a macro... yes
+checking whether sigemptyset is declared without a macro... yes
+checking whether sigfillset is declared without a macro... yes
+checking whether sigismember is declared without a macro... yes
+checking whether sigpending is declared without a macro... yes
+checking whether sigprocmask is declared without a macro... yes
+checking for socklen_t... yes
+checking for ssize_t... yes
+checking for working stdalign.h... yes
+checking for max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking whether _Exit is declared without a macro... yes
+checking whether atoll is declared without a macro... yes
+checking whether canonicalize_file_name is declared without a macro... no
+checking whether getloadavg is declared without a macro... yes
+checking whether getsubopt is declared without a macro... yes
+checking whether grantpt is declared without a macro... yes
+checking whether initstate is declared without a macro... yes
+checking whether initstate_r is declared without a macro... no
+checking whether mkdtemp is declared without a macro... no
+checking whether mkostemp is declared without a macro... no
+checking whether mkostemps is declared without a macro... no
+checking whether mkstemp is declared without a macro... yes
+checking whether mkstemps is declared without a macro... no
+checking whether posix_openpt is declared without a macro... yes
+checking whether ptsname is declared without a macro... yes
+checking whether ptsname_r is declared without a macro... yes
+checking whether random is declared without a macro... yes
+checking whether random_r is declared without a macro... no
+checking whether realpath is declared without a macro... yes
+checking whether rpmatch is declared without a macro... yes
+checking whether secure_getenv is declared without a macro... no
+checking whether setenv is declared without a macro... yes
+checking whether setstate is declared without a macro... yes
+checking whether setstate_r is declared without a macro... no
+checking whether srandom is declared without a macro... yes
+checking whether srandom_r is declared without a macro... no
+checking whether strtod is declared without a macro... yes
+checking whether strtoll is declared without a macro... yes
+checking whether strtoull is declared without a macro... yes
+checking whether unlockpt is declared without a macro... yes
+checking whether unsetenv is declared without a macro... yes
+checking whether <sys/select.h> is self-contained... yes
+checking whether pselect is declared without a macro... yes
+checking whether select is declared without a macro... yes
+checking for nlink_t... yes
+checking whether fchmodat is declared without a macro... yes
+checking whether fstat is declared without a macro... yes
+checking whether fstatat is declared without a macro... yes
+checking whether futimens is declared without a macro... yes
+checking whether lchmod is declared without a macro... yes
+checking whether lstat is declared without a macro... yes
+checking whether mkdirat is declared without a macro... yes
+checking whether mkfifo is declared without a macro... yes
+checking whether mkfifoat is declared without a macro... no
+checking whether mknod is declared without a macro... yes
+checking whether mknodat is declared without a macro... no
+checking whether stat is declared without a macro... yes
+checking whether utimensat is declared without a macro... yes
+checking whether chdir is declared without a macro... yes
+checking whether chown is declared without a macro... yes
+checking whether dup is declared without a macro... yes
+checking whether dup2 is declared without a macro... yes
+checking whether dup3 is declared without a macro... no
+checking whether environ is declared without a macro... no
+checking whether euidaccess is declared without a macro... no
+checking whether faccessat is declared without a macro... yes
+checking whether fchdir is declared without a macro... yes
+checking whether fchownat is declared without a macro... yes
+checking whether fdatasync is declared without a macro... no
+checking whether fsync is declared without a macro... yes
+checking whether ftruncate is declared without a macro... yes
+checking whether getcwd is declared without a macro... yes
+checking whether getdomainname is declared without a macro... yes
+checking whether getdtablesize is declared without a macro... yes
+checking whether getgroups is declared without a macro... yes
+checking whether gethostname is declared without a macro... yes
+checking whether getlogin is declared without a macro... yes
+checking whether getlogin_r is declared without a macro... yes
+checking whether getpagesize is declared without a macro... yes
+checking whether getusershell is declared without a macro... yes
+checking whether setusershell is declared without a macro... yes
+checking whether endusershell is declared without a macro... yes
+checking whether group_member is declared without a macro... no
+checking whether isatty is declared without a macro... yes
+checking whether lchown is declared without a macro... yes
+checking whether link is declared without a macro... yes
+checking whether linkat is declared without a macro... yes
+checking whether lseek is declared without a macro... yes
+checking whether pipe is declared without a macro... yes
+checking whether pipe2 is declared without a macro... no
+checking whether pread is declared without a macro... yes
+checking whether pwrite is declared without a macro... yes
+checking whether readlink is declared without a macro... yes
+checking whether readlinkat is declared without a macro... yes
+checking whether rmdir is declared without a macro... yes
+checking whether sethostname is declared without a macro... yes
+checking whether sleep is declared without a macro... yes
+checking whether symlink is declared without a macro... yes
+checking whether symlinkat is declared without a macro... yes
+checking whether ttyname_r is declared without a macro... yes
+checking whether unlink is declared without a macro... yes
+checking whether unlinkat is declared without a macro... yes
+checking whether usleep is declared without a macro... yes
+checking whether ln -s works... yes
+checking for library containing pthread_create... none required
+checking for cos in -lm... yes
+checking for zlibVersion in -lz... yes
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking for arpa/inet.h... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for netdb.h... (cached) yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/select.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for inline... inline
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for int8_t... yes
+checking for off_t... yes
+checking for size_t... (cached) yes
+checking for ssize_t... yes
+checking for struct stat.st_blksize... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) yes
+checking for error_at_line... no
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for working strtod... yes
+checking for atexit... yes
+checking for fdatasync... (cached) yes
+checking for floor... yes
+checking for ftruncate... yes
+checking for getcwd... yes
+checking for gethostbyaddr... yes
+checking for gethostbyname... yes
+checking for getpagesize... (cached) yes
+checking for gettimeofday... (cached) yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for select... yes
+checking for socket... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating test/Makefile
+config.status: creating lib/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+buildling library...
+cd ./htslib/ && make
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib »
+make  all-recursive
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib »
+Making all in lib
+make[3] : on entre dans le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/lib »
+rm -f alloca.h-t alloca.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./alloca.in.h; \
+} > alloca.h-t && \
+mv -f alloca.h-t alloca.h
+rm -f c++defs.h-t c++defs.h && \
+sed -n -e '/_GL_CXXDEFS/,$p' \
+  < .././snippet/c++defs.h \
+  > c++defs.h-t && \
+mv c++defs.h-t c++defs.h
+rm -f warn-on-use.h-t warn-on-use.h && \
+sed -n -e '/^.ifndef/,$p' \
+  < .././snippet/warn-on-use.h \
+  > warn-on-use.h-t && \
+mv warn-on-use.h-t warn-on-use.h
+rm -f arg-nonnull.h-t arg-nonnull.h && \
+sed -n -e '/GL_ARG_NONNULL/,$p' \
+  < .././snippet/arg-nonnull.h \
+  > arg-nonnull.h-t && \
+mv arg-nonnull.h-t arg-nonnull.h
+/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p sys
+/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p sys
+rm -f sys/types.h-t sys/types.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      < ./sys_types.in.h; \
+} > sys/types.h-t && \
+mv sys/types.h-t sys/types.h
+rm -f sys/uio.h-t sys/uio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_UIO_H''@|<sys/uio.h>|g' \
+      -e 's|@''HAVE_SYS_UIO_H''@|1|g' \
+      < ./sys_uio.in.h; \
+} > sys/uio.h-t && \
+mv -f sys/uio.h-t sys/uio.h
+/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p sys
+/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p arpa
+rm -f fcntl.h-t fcntl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_FCNTL_H''@|<fcntl.h>|g' \
+      -e 's/@''GNULIB_FCNTL''@/1/g' \
+      -e 's/@''GNULIB_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_OPEN''@/0/g' \
+      -e 's/@''GNULIB_OPENAT''@/0/g' \
+      -e 's|@''HAVE_FCNTL''@|1|g' \
+      -e 's|@''HAVE_OPENAT''@|1|g' \
+      -e 's|@''REPLACE_FCNTL''@|0|g' \
+      -e 's|@''REPLACE_OPEN''@|0|g' \
+      -e 's|@''REPLACE_OPENAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./fcntl.in.h; \
+} > fcntl.h-t && \
+mv fcntl.h-t fcntl.h
+rm -f inttypes.h-t inttypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's/@''HAVE_INTTYPES_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_INTTYPES_H''@|<inttypes.h>|g' \
+      -e 's/@''PRI_MACROS_BROKEN''@/0/g' \
+      -e 's/@''APPLE_UNIVERSAL_BUILD''@/0/g' \
+      -e 's/@''HAVE_LONG_LONG_INT''@/1/g' \
+      -e 's/@''HAVE_UNSIGNED_LONG_LONG_INT''@/1/g' \
+      -e 's/@''PRIPTR_PREFIX''@/"l"/g' \
+      -e 's/@''GNULIB_IMAXABS''@/0/g' \
+      -e 's/@''GNULIB_IMAXDIV''@/0/g' \
+      -e 's/@''GNULIB_STRTOIMAX''@/0/g' \
+      -e 's/@''GNULIB_STRTOUMAX''@/0/g' \
+      -e 's/@''HAVE_DECL_IMAXABS''@/1/g' \
+      -e 's/@''HAVE_DECL_IMAXDIV''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOIMAX''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOUMAX''@/1/g' \
+      -e 's/@''REPLACE_STRTOIMAX''@/0/g' \
+      -e 's/@''REPLACE_STRTOUMAX''@/0/g' \
+      -e 's/@''INT32_MAX_LT_INTMAX_MAX''@/1/g' \
+      -e 's/@''INT64_MAX_EQ_LONG_MAX''@/1/g' \
+      -e 's/@''UINT32_MAX_LT_UINTMAX_MAX''@/1/g' \
+      -e 's/@''UINT64_MAX_EQ_ULONG_MAX''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./inttypes.in.h; \
+} > inttypes.h-t && \
+mv inttypes.h-t inttypes.h
+rm -f netdb.h-t netdb.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_NETDB_H''@|<netdb.h>|g' \
+      -e 's|@''HAVE_NETDB_H''@|1|g' \
+      -e 's/@''GNULIB_GETADDRINFO''@/0/g' \
+      -e 's|@''HAVE_STRUCT_ADDRINFO''@|1|g' \
+      -e 's|@''HAVE_DECL_FREEADDRINFO''@|1|g' \
+      -e 's|@''HAVE_DECL_GAI_STRERROR''@|1|g' \
+      -e 's|@''HAVE_DECL_GETADDRINFO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETNAMEINFO''@|1|g' \
+      -e 's|@''REPLACE_GAI_STRERROR''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./netdb.in.h; \
+} > netdb.h-t && \
+mv netdb.h-t netdb.h
+rm -f signal.h-t signal.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SIGNAL_H''@|<signal.h>|g' \
+      -e 's|@''GNULIB_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''GNULIB_RAISE''@|0|g' \
+      -e 's/@''GNULIB_SIGNAL_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_SIGPROCMASK''@/0/g' \
+      -e 's/@''GNULIB_SIGACTION''@/0/g' \
+      -e 's|@''HAVE_POSIX_SIGNALBLOCKING''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''HAVE_RAISE''@|1|g' \
+      -e 's|@''HAVE_SIGSET_T''@|1|g' \
+      -e 's|@''HAVE_SIGINFO_T''@|1|g' \
+      -e 's|@''HAVE_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SIGACTION_SA_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_TYPE_VOLATILE_SIG_ATOMIC_T''@|1|g' \
+      -e 's|@''HAVE_SIGHANDLER_T''@|0|g' \
+      -e 's|@''REPLACE_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''REPLACE_RAISE''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./signal.in.h; \
+} > signal.h-t && \
+mv signal.h-t signal.h
+rm -f sys/select.h-t sys/select.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_SELECT_H''@|<sys/select.h>|g' \
+      -e 's|@''HAVE_SYS_SELECT_H''@|1|g' \
+      -e 's/@''GNULIB_PSELECT''@/0/g' \
+      -e 's/@''GNULIB_SELECT''@/0/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''HAVE_PSELECT''@|1|g' \
+      -e 's|@''REPLACE_PSELECT''@|0|g' \
+      -e 's|@''REPLACE_SELECT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_select.in.h; \
+} > sys/select.h-t && \
+mv sys/select.h-t sys/select.h
+rm -f stdlib.h-t stdlib.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's/@''GNULIB__EXIT''@/0/g' \
+      -e 's/@''GNULIB_ATOLL''@/0/g' \
+      -e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+      -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+      -e 's/@''GNULIB_GRANTPT''@/0/g' \
+      -e 's/@''GNULIB_MALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_MBTOWC''@/0/g' \
+      -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+      -e 's/@''GNULIB_PUTENV''@/0/g' \
+      -e 's/@''GNULIB_QSORT_R''@/0/g' \
+      -e 's/@''GNULIB_RANDOM''@/0/g' \
+      -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+      -e 's/@''GNULIB_REALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_REALPATH''@/0/g' \
+      -e 's/@''GNULIB_RPMATCH''@/0/g' \
+      -e 's/@''GNULIB_SECURE_GETENV''@/0/g' \
+      -e 's/@''GNULIB_SETENV''@/0/g' \
+      -e 's/@''GNULIB_STRTOD''@/0/g' \
+      -e 's/@''GNULIB_STRTOLL''@/0/g' \
+      -e 's/@''GNULIB_STRTOULL''@/0/g' \
+      -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+      -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+      -e 's/@''GNULIB_UNSETENV''@/0/g' \
+      -e 's/@''GNULIB_WCTOMB''@/0/g' \
+      < ./stdlib.in.h | \
+  sed -e 's|@''HAVE__EXIT''@|1|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_GRANTPT''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+      -e 's|@''HAVE_MKSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+      -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+      -e 's|@''HAVE_PTSNAME''@|1|g' \
+      -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+      -e 's|@''HAVE_RANDOM''@|1|g' \
+      -e 's|@''HAVE_RANDOM_H''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_REALPATH''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+      -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+      -e 's|@''REPLACE_CALLOC''@|0|g' \
+      -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+      -e 's|@''REPLACE_MALLOC''@|0|g' \
+      -e 's|@''REPLACE_MBTOWC''@|0|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_QSORT_R''@|0|g' \
+      -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+      -e 's|@''REPLACE_REALLOC''@|0|g' \
+      -e 's|@''REPLACE_REALPATH''@|0|g' \
+      -e 's|@''REPLACE_SETENV''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''REPLACE_UNSETENV''@|0|g' \
+      -e 's|@''REPLACE_WCTOMB''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _Noreturn/r .././snippet/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > stdlib.h-t && \
+mv stdlib.h-t stdlib.h
+rm -f arpa/inet.h-t arpa/inet.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|0|g' \
+      -e 's|@''NEXT_ARPA_INET_H''@|<arpa/inet.h>|g' \
+      -e 's|@''HAVE_ARPA_INET_H''@|1|g' \
+      -e 's/@''GNULIB_INET_NTOP''@/0/g' \
+      -e 's/@''GNULIB_INET_PTON''@/0/g' \
+      -e 's|@''HAVE_DECL_INET_NTOP''@|1|g' \
+      -e 's|@''HAVE_DECL_INET_PTON''@|1|g' \
+      -e 's|@''REPLACE_INET_NTOP''@|0|g' \
+      -e 's|@''REPLACE_INET_PTON''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./arpa_inet.in.h; \
+} > arpa/inet.h-t && \
+mv arpa/inet.h-t arpa/inet.h
+rm -f string.h-t string.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's/@''GNULIB_FFSL''@/0/g' \
+      -e 's/@''GNULIB_FFSLL''@/0/g' \
+      -e 's/@''GNULIB_MBSLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSSTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+      -e 's/@''GNULIB_MBSSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSSEP''@/0/g' \
+      -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+      -e 's/@''GNULIB_MEMCHR''@/0/g' \
+      -e 's/@''GNULIB_MEMMEM''@/0/g' \
+      -e 's/@''GNULIB_MEMPCPY''@/0/g' \
+      -e 's/@''GNULIB_MEMRCHR''@/0/g' \
+      -e 's/@''GNULIB_RAWMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_STPCPY''@/0/g' \
+      -e 's/@''GNULIB_STPNCPY''@/0/g' \
+      -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+      -e 's/@''GNULIB_STRDUP''@/0/g' \
+      -e 's/@''GNULIB_STRNCAT''@/0/g' \
+      -e 's/@''GNULIB_STRNDUP''@/0/g' \
+      -e 's/@''GNULIB_STRNLEN''@/0/g' \
+      -e 's/@''GNULIB_STRPBRK''@/0/g' \
+      -e 's/@''GNULIB_STRSEP''@/0/g' \
+      -e 's/@''GNULIB_STRSTR''@/0/g' \
+      -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+      -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+      -e 's/@''GNULIB_STRERROR''@/0/g' \
+      -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+      -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+      -e 's/@''GNULIB_STRVERSCMP''@/0/g' \
+      < ./string.in.h | \
+  sed -e 's|@''HAVE_FFSL''@|1|g' \
+      -e 's|@''HAVE_FFSLL''@|1|g' \
+      -e 's|@''HAVE_MBSLEN''@|0|g' \
+      -e 's|@''HAVE_MEMCHR''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_STPNCPY''@|0|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+      -e 's|@''REPLACE_STRNCAT''@|0|g' \
+      -e 's|@''REPLACE_STRNDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNLEN''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+      -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+      < ./string.in.h; \
+} > string.h-t && \
+mv string.h-t string.h
+/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p sys
+/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p sys
+/nix/store/5g6np23z9q7vwwp1s5pxkgn8f8wrmihh-coreutils-9.5/bin/mkdir -p sys
+rm -f time.h-t time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''GNULIB_MKTIME''@/0/g' \
+      -e 's/@''GNULIB_NANOSLEEP''@/0/g' \
+      -e 's/@''GNULIB_STRPTIME''@/0/g' \
+      -e 's/@''GNULIB_TIMEGM''@/0/g' \
+      -e 's/@''GNULIB_TIME_R''@/0/g' \
+      -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+      -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+      -e 's|@''HAVE_STRPTIME''@|1|g' \
+      -e 's|@''HAVE_TIMEGM''@|1|g' \
+      -e 's|@''REPLACE_GMTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME_R''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_MKTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_NANOSLEEP''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TIMEGM''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+      -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./time.in.h; \
+} > time.h-t && \
+mv time.h-t time.h
+rm -f unistd.h-t unistd.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_CHDIR''@/0/g' \
+      -e 's/@''GNULIB_CHOWN''@/0/g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_DUP''@/0/g' \
+      -e 's/@''GNULIB_DUP2''@/1/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/0/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+      -e 's/@''GNULIB_FCHDIR''@/0/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/1/g' \
+      -e 's/@''GNULIB_FSYNC''@/1/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_GETCWD''@/0/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/1/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/1/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/0/g' \
+      -e 's/@''GNULIB_LINK''@/0/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/0/g' \
+      -e 's/@''GNULIB_PIPE''@/0/g' \
+      -e 's/@''GNULIB_PIPE2''@/0/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/0/g' \
+      -e 's/@''GNULIB_READLINK''@/0/g' \
+      -e 's/@''GNULIB_READLINKAT''@/0/g' \
+      -e 's/@''GNULIB_RMDIR''@/0/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_SLEEP''@/0/g' \
+      -e 's/@''GNULIB_SYMLINK''@/0/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_UNLINK''@/0/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/0/g' \
+      < ./unistd.in.h | \
+  sed -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_DUP2''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|0|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+  | \
+  sed -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > unistd.h-t && \
+mv unistd.h-t unistd.h
+rm -f sys/time.h-t sys/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_TIME_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIME_H''@|<sys/time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's/@''HAVE_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''HAVE_STRUCT_TIMEVAL''@/1/g' \
+      -e 's/@''REPLACE_GETTIMEOFDAY''@/0/g' \
+      -e 's/@''REPLACE_STRUCT_TIMEVAL''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_time.in.h; \
+} > sys/time.h-t && \
+mv sys/time.h-t sys/time.h
+rm -f sys/socket.h-t sys/socket.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_SOCKET_H''@|<sys/socket.h>|g' \
+      -e 's|@''HAVE_SYS_SOCKET_H''@|1|g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_SOCKET''@/0/g' \
+      -e 's/@''GNULIB_CONNECT''@/0/g' \
+      -e 's/@''GNULIB_ACCEPT''@/0/g' \
+      -e 's/@''GNULIB_BIND''@/0/g' \
+      -e 's/@''GNULIB_GETPEERNAME''@/0/g' \
+      -e 's/@''GNULIB_GETSOCKNAME''@/0/g' \
+      -e 's/@''GNULIB_GETSOCKOPT''@/0/g' \
+      -e 's/@''GNULIB_LISTEN''@/0/g' \
+      -e 's/@''GNULIB_RECV''@/1/g' \
+      -e 's/@''GNULIB_SEND''@/1/g' \
+      -e 's/@''GNULIB_RECVFROM''@/0/g' \
+      -e 's/@''GNULIB_SENDTO''@/0/g' \
+      -e 's/@''GNULIB_SETSOCKOPT''@/0/g' \
+      -e 's/@''GNULIB_SHUTDOWN''@/0/g' \
+      -e 's/@''GNULIB_ACCEPT4''@/0/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''HAVE_WS2TCPIP_H''@|0|g' \
+      -e 's|@''HAVE_STRUCT_SOCKADDR_STORAGE''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY''@|1|g' \
+      -e 's|@''HAVE_SA_FAMILY_T''@|1|g' \
+      -e 's|@''HAVE_ACCEPT4''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_socket.in.h; \
+} > sys/socket.h-t && \
+mv -f sys/socket.h-t sys/socket.h
+rm -f sys/stat.h-t sys/stat.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_ST_SIZE''@|0|g' \
+      -e 's/@''GNULIB_FCHMODAT''@/0/g' \
+      -e 's/@''GNULIB_FSTAT''@/0/g' \
+      -e 's/@''GNULIB_FSTATAT''@/0/g' \
+      -e 's/@''GNULIB_FUTIMENS''@/0/g' \
+      -e 's/@''GNULIB_LCHMOD''@/0/g' \
+      -e 's/@''GNULIB_LSTAT''@/0/g' \
+      -e 's/@''GNULIB_MKDIRAT''@/0/g' \
+      -e 's/@''GNULIB_MKFIFO''@/0/g' \
+      -e 's/@''GNULIB_MKFIFOAT''@/0/g' \
+      -e 's/@''GNULIB_MKNOD''@/0/g' \
+      -e 's/@''GNULIB_MKNODAT''@/0/g' \
+      -e 's/@''GNULIB_STAT''@/0/g' \
+      -e 's/@''GNULIB_UTIMENSAT''@/0/g' \
+      -e 's|@''HAVE_FCHMODAT''@|1|g' \
+      -e 's|@''HAVE_FSTATAT''@|1|g' \
+      -e 's|@''HAVE_FUTIMENS''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''HAVE_MKDIRAT''@|1|g' \
+      -e 's|@''HAVE_MKFIFO''@|1|g' \
+      -e 's|@''HAVE_MKFIFOAT''@|1|g' \
+      -e 's|@''HAVE_MKNOD''@|1|g' \
+      -e 's|@''HAVE_MKNODAT''@|1|g' \
+      -e 's|@''HAVE_UTIMENSAT''@|1|g' \
+      -e 's|@''REPLACE_FSTAT''@|0|g' \
+      -e 's|@''REPLACE_FSTATAT''@|0|g' \
+      -e 's|@''REPLACE_FUTIMENS''@|0|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e 's|@''REPLACE_MKFIFO''@|0|g' \
+      -e 's|@''REPLACE_MKNOD''@|0|g' \
+      -e 's|@''REPLACE_STAT''@|0|g' \
+      -e 's|@''REPLACE_UTIMENSAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_stat.in.h; \
+} > sys/stat.h-t && \
+mv sys/stat.h-t sys/stat.h
+make  all-recursive
+make[4] : on entre dans le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/lib »
+make[5] : on entre dans le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/lib »
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ../libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I..   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o fd-hook.lo fd-hook.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ../libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I..   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o sys_socket.lo sys_socket.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ../libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I..   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o unistd.lo unistd.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I.. -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c sys_socket.c  -fno-common -DPIC -o .libs/sys_socket.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I.. -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c fd-hook.c  -fno-common -DPIC -o .libs/fd-hook.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I.. -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c unistd.c  -fno-common -DPIC -o .libs/unistd.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I.. -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c fd-hook.c -o fd-hook.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I.. -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c sys_socket.c -o sys_socket.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -I.. -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c unistd.c -o unistd.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ../libtool  --tag=CC   --mode=link /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc  -g -O2 -fPIC  -no-undefined   -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o libgnu.la  fd-hook.lo sys_socket.lo unistd.lo   -lz -lm 
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cru .libs/libgnu.a .libs/fd-hook.o .libs/sys_socket.o .libs/unistd.o 
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib .libs/libgnu.a
+warning: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib: archive library: .libs/libgnu.a the table of contents is empty (no object file members in the library define global symbols)
+libtool: link: ( cd ".libs" && rm -f "libgnu.la" && ln -s "../libgnu.la" "libgnu.la" )
+make[5] : on quitte le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/lib »
+make[4] : on quitte le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/lib »
+make[3] : on quitte le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/lib »
+Making all in test
+make[3] : on entre dans le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/test »
+make[3]: Rien à faire pour « all ».
+make[3] : on quitte le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/test »
+make[3] : on entre dans le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib »
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-kfunc.lo `test -f 'kfunc.c' || echo './'`kfunc.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-knetfile.lo `test -f 'knetfile.c' || echo './'`knetfile.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-kstring.lo `test -f 'kstring.c' || echo './'`kstring.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-bgzf.lo `test -f 'bgzf.c' || echo './'`bgzf.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-faidx.lo `test -f 'faidx.c' || echo './'`faidx.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-hfile.lo `test -f 'hfile.c' || echo './'`hfile.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-hfile_net.lo `test -f 'hfile_net.c' || echo './'`hfile_net.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-hts.lo `test -f 'hts.c' || echo './'`hts.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c hts.c  -fno-common -DPIC -o .libs/libhts_la-hts.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c faidx.c  -fno-common -DPIC -o .libs/libhts_la-faidx.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c hfile_net.c  -fno-common -DPIC -o .libs/libhts_la-hfile_net.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c kfunc.c  -fno-common -DPIC -o .libs/libhts_la-kfunc.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c hfile.c  -fno-common -DPIC -o .libs/libhts_la-hfile.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c kstring.c  -fno-common -DPIC -o .libs/libhts_la-kstring.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c bgzf.c  -fno-common -DPIC -o .libs/libhts_la-bgzf.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c knetfile.c  -fno-common -DPIC -o .libs/libhts_la-knetfile.o
+hfile.c:124:37: warning: implicit truncation from 'int' to a one-bit wide bit-field changes value from 1 to -1 [-Wsingle-bit-bitfield-constant-conversion]
+        else if (n == 0) fp->at_eof = 1;
+                                    ^ ~
+hfile.c:164:37: warning: implicit truncation from 'int' to a one-bit wide bit-field changes value from 1 to -1 [-Wsingle-bit-bitfield-constant-conversion]
+        else if (n == 0) fp->at_eof = 1;
+                                    ^ ~
+bgzf.c:160:21: warning: implicit truncation from 'int' to a one-bit wide bit-field changes value from 1 to -1 [-Wsingle-bit-bitfield-constant-conversion]
+        fp->is_gzip = 1;
+                    ^ ~
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c hfile_net.c -o libhts_la-hfile_net.o >/dev/null 2>&1
+bgzf.c:502:21: warning: implicit truncation from 'int' to a one-bit wide bit-field changes value from 1 to -1 [-Wsingle-bit-bitfield-constant-conversion]
+        fp->is_gzip = 1;
+                    ^ ~
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c kfunc.c -o libhts_la-kfunc.o >/dev/null 2>&1
+2 warnings generated.
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c hfile.c -o libhts_la-hfile.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c kstring.c -o libhts_la-kstring.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c knetfile.c -o libhts_la-knetfile.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-regidx.lo `test -f 'regidx.c' || echo './'`regidx.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c faidx.c -o libhts_la-faidx.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-sam.lo `test -f 'sam.c' || echo './'`sam.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c regidx.c  -fno-common -DPIC -o .libs/libhts_la-regidx.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c sam.c  -fno-common -DPIC -o .libs/libhts_la-sam.o
+2 warnings generated.
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c bgzf.c -o libhts_la-bgzf.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-synced_bcf_reader.lo `test -f 'synced_bcf_reader.c' || echo './'`synced_bcf_reader.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-vcf_sweep.lo `test -f 'vcf_sweep.c' || echo './'`vcf_sweep.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-tbx.lo `test -f 'tbx.c' || echo './'`tbx.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c synced_bcf_reader.c  -fno-common -DPIC -o .libs/libhts_la-synced_bcf_reader.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c vcf_sweep.c  -fno-common -DPIC -o .libs/libhts_la-vcf_sweep.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c tbx.c  -fno-common -DPIC -o .libs/libhts_la-tbx.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-vcf.lo `test -f 'vcf.c' || echo './'`vcf.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c regidx.c -o libhts_la-regidx.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c vcf_sweep.c -o libhts_la-vcf_sweep.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c vcf.c  -fno-common -DPIC -o .libs/libhts_la-vcf.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c tbx.c -o libhts_la-tbx.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c hts.c -o libhts_la-hts.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o libhts_la-vcfutils.lo `test -f 'vcfutils.c' || echo './'`vcfutils.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c vcfutils.c  -fno-common -DPIC -o .libs/libhts_la-vcfutils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o bgzip.o bgzip.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o htsfile.o htsfile.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o tabix.o tabix.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c synced_bcf_reader.c -o libhts_la-synced_bcf_reader.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-cram_codecs.lo `test -f 'cram/cram_codecs.c' || echo './'`cram/cram_codecs.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-cram_decode.lo `test -f 'cram/cram_decode.c' || echo './'`cram/cram_decode.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_codecs.c  -fno-common -DPIC -o cram/.libs/libhts_la-cram_codecs.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_decode.c  -fno-common -DPIC -o cram/.libs/libhts_la-cram_decode.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-cram_encode.lo `test -f 'cram/cram_encode.c' || echo './'`cram/cram_encode.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_encode.c  -fno-common -DPIC -o cram/.libs/libhts_la-cram_encode.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c vcfutils.c -o libhts_la-vcfutils.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c sam.c -o libhts_la-sam.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-cram_index.lo `test -f 'cram/cram_index.c' || echo './'`cram/cram_index.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_index.c  -fno-common -DPIC -o cram/.libs/libhts_la-cram_index.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-cram_io.lo `test -f 'cram/cram_io.c' || echo './'`cram/cram_io.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_io.c  -fno-common -DPIC -o cram/.libs/libhts_la-cram_io.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_codecs.c -o cram/libhts_la-cram_codecs.o >/dev/null 2>&1
+cram/cram_io.c:2728:8: warning: implicit conversion from 'int' to 'char' changes value from 255 to -1 [-Wconstant-conversion]
+        cp += itf8_put(cp, -2);
+              ^~~~~~~~~~~~~~~~
+cram/cram_io.h:97:388: note: expanded from macro 'itf8_put'
+#define itf8_put(c,v) ((!((v)&~0x7f))?((c)[0]=(v),1):(!((v)&~0x3fff))?((c)[0]=((v)>>8)|0x80,(c)[1]=(v)&0xff,2):(!((v)&~0x1fffff))?((c)[0]=((v)>>16)|0xc0,(c)[1]=((v)>>8)&0xff,(c)[2]=(v)&0xff,3):(!((v)&~0xfffffff))?((c)[0]=((v)>>24)|0xe0,(c)[1]=((v)>>16)&0xff,(c)[2]=((v)>>8)&0xff,(c)[3]=(v)&0xff,4):((c)[0]=0xf0|(((v)>>28)&0xff),(c)[1]=((v)>>20)&0xff,(c)[2]=((v)>>12)&0xff,(c)[3]=((v)>>4)&0xff,(c)[4]=(v)&0xf,5))
+                                                                                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~^~~~~
+cram/cram_io.c:2728:8: warning: implicit conversion from 'int' to 'char' changes value from 255 to -1 [-Wconstant-conversion]
+        cp += itf8_put(cp, -2);
+              ^~~~~~~~~~~~~~~~
+cram/cram_io.h:97:367: note: expanded from macro 'itf8_put'
+#define itf8_put(c,v) ((!((v)&~0x7f))?((c)[0]=(v),1):(!((v)&~0x3fff))?((c)[0]=((v)>>8)|0x80,(c)[1]=(v)&0xff,2):(!((v)&~0x1fffff))?((c)[0]=((v)>>16)|0xc0,(c)[1]=((v)>>8)&0xff,(c)[2]=(v)&0xff,3):(!((v)&~0xfffffff))?((c)[0]=((v)>>24)|0xe0,(c)[1]=((v)>>16)&0xff,(c)[2]=((v)>>8)&0xff,(c)[3]=(v)&0xff,4):((c)[0]=0xf0|(((v)>>28)&0xff),(c)[1]=((v)>>20)&0xff,(c)[2]=((v)>>12)&0xff,(c)[3]=((v)>>4)&0xff,(c)[4]=(v)&0xf,5))
+                                                                                                                                                                                                                                                                                                                                                                    ~~~~~~~~~~^~~~~
+cram/cram_io.c:2728:8: warning: implicit conversion from 'int' to 'char' changes value from 255 to -1 [-Wconstant-conversion]
+        cp += itf8_put(cp, -2);
+              ^~~~~~~~~~~~~~~~
+cram/cram_io.h:97:345: note: expanded from macro 'itf8_put'
+#define itf8_put(c,v) ((!((v)&~0x7f))?((c)[0]=(v),1):(!((v)&~0x3fff))?((c)[0]=((v)>>8)|0x80,(c)[1]=(v)&0xff,2):(!((v)&~0x1fffff))?((c)[0]=((v)>>16)|0xc0,(c)[1]=((v)>>8)&0xff,(c)[2]=(v)&0xff,3):(!((v)&~0xfffffff))?((c)[0]=((v)>>24)|0xe0,(c)[1]=((v)>>16)&0xff,(c)[2]=((v)>>8)&0xff,(c)[3]=(v)&0xff,4):((c)[0]=0xf0|(((v)>>28)&0xff),(c)[1]=((v)>>20)&0xff,(c)[2]=((v)>>12)&0xff,(c)[3]=((v)>>4)&0xff,(c)[4]=(v)&0xf,5))
+                                                                                                                                                                                                                                                                                                                                              ~~~~~~~~~~^~~~~
+cram/cram_io.c:2728:8: warning: implicit conversion from 'int' to 'char' changes value from 255 to -1 [-Wconstant-conversion]
+        cp += itf8_put(cp, -2);
+              ^~~~~~~~~~~~~~~~
+cram/cram_io.h:97:311: note: expanded from macro 'itf8_put'
+#define itf8_put(c,v) ((!((v)&~0x7f))?((c)[0]=(v),1):(!((v)&~0x3fff))?((c)[0]=((v)>>8)|0x80,(c)[1]=(v)&0xff,2):(!((v)&~0x1fffff))?((c)[0]=((v)>>16)|0xc0,(c)[1]=((v)>>8)&0xff,(c)[2]=(v)&0xff,3):(!((v)&~0xfffffff))?((c)[0]=((v)>>24)|0xe0,(c)[1]=((v)>>16)&0xff,(c)[2]=((v)>>8)&0xff,(c)[3]=(v)&0xff,4):((c)[0]=0xf0|(((v)>>28)&0xff),(c)[1]=((v)>>20)&0xff,(c)[2]=((v)>>12)&0xff,(c)[3]=((v)>>4)&0xff,(c)[4]=(v)&0xf,5))
+                                                                                                                                                                                                                                                                                                                 ~~~~~^~~~~~~~~~~~~~~~~
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_index.c -o cram/libhts_la-cram_index.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-cram_samtools.lo `test -f 'cram/cram_samtools.c' || echo './'`cram/cram_samtools.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_samtools.c  -fno-common -DPIC -o cram/.libs/libhts_la-cram_samtools.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_decode.c -o cram/libhts_la-cram_decode.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-cram_stats.lo `test -f 'cram/cram_stats.c' || echo './'`cram/cram_stats.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_stats.c  -fno-common -DPIC -o cram/.libs/libhts_la-cram_stats.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_samtools.c -o cram/libhts_la-cram_samtools.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_encode.c -o cram/libhts_la-cram_encode.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-files.lo `test -f 'cram/files.c' || echo './'`cram/files.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/files.c  -fno-common -DPIC -o cram/.libs/libhts_la-files.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-mFILE.lo `test -f 'cram/mFILE.c' || echo './'`cram/mFILE.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_stats.c -o cram/libhts_la-cram_stats.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/mFILE.c  -fno-common -DPIC -o cram/.libs/libhts_la-mFILE.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/files.c -o cram/libhts_la-files.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c vcf.c -o libhts_la-vcf.o >/dev/null 2>&1
+4 warnings generated.
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/cram_io.c -o cram/libhts_la-cram_io.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-md5.lo `test -f 'cram/md5.c' || echo './'`cram/md5.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-open_trace_file.lo `test -f 'cram/open_trace_file.c' || echo './'`cram/open_trace_file.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/mFILE.c -o cram/libhts_la-mFILE.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/md5.c  -fno-common -DPIC -o cram/.libs/libhts_la-md5.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-pooled_alloc.lo `test -f 'cram/pooled_alloc.c' || echo './'`cram/pooled_alloc.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/open_trace_file.c  -fno-common -DPIC -o cram/.libs/libhts_la-open_trace_file.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/pooled_alloc.c  -fno-common -DPIC -o cram/.libs/libhts_la-pooled_alloc.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/pooled_alloc.c -o cram/libhts_la-pooled_alloc.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/open_trace_file.c -o cram/libhts_la-open_trace_file.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-rANS_static.lo `test -f 'cram/rANS_static.c' || echo './'`cram/rANS_static.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/md5.c -o cram/libhts_la-md5.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/rANS_static.c  -fno-common -DPIC -o cram/.libs/libhts_la-rANS_static.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-sam_header.lo `test -f 'cram/sam_header.c' || echo './'`cram/sam_header.c
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-string_alloc.lo `test -f 'cram/string_alloc.c' || echo './'`cram/string_alloc.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/sam_header.c  -fno-common -DPIC -o cram/.libs/libhts_la-sam_header.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-thread_pool.lo `test -f 'cram/thread_pool.c' || echo './'`cram/thread_pool.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/string_alloc.c  -fno-common -DPIC -o cram/.libs/libhts_la-string_alloc.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/thread_pool.c  -fno-common -DPIC -o cram/.libs/libhts_la-thread_pool.o
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-vlen.lo `test -f 'cram/vlen.c' || echo './'`cram/vlen.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/vlen.c  -fno-common -DPIC -o cram/.libs/libhts_la-vlen.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/string_alloc.c -o cram/libhts_la-string_alloc.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/rANS_static.c -o cram/libhts_la-rANS_static.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/thread_pool.c -o cram/libhts_la-thread_pool.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/vlen.c -o cram/libhts_la-vlen.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=compile /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I.  -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1  -g -O2 -fPIC -c -o cram/libhts_la-zfio.lo `test -f 'cram/zfio.c' || echo './'`cram/zfio.c
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/zfio.c  -fno-common -DPIC -o cram/.libs/libhts_la-zfio.o
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/sam_header.c -o cram/libhts_la-sam_header.o >/dev/null 2>&1
+libtool: compile:  /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -DHAVE_CONFIG_H -I. -Ihtslib -Icram -I./lib -I./htslib -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1 -g -O2 -fPIC -c cram/zfio.c -o cram/libhts_la-zfio.o >/dev/null 2>&1
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=link /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc  -g -O2 -fPIC   -no-undefined -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o libhts.la -rpath /nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/00LOCK-Rhtslib/00new/Rhtslib/lib libhts_la-kfunc.lo libhts_la-knetfile.lo libhts_la-kstring.lo libhts_la-bgzf.lo libhts_la-faidx.lo libhts_la-hfile.lo libhts_la-hfile_net.lo libhts_la-hts.lo libhts_la-regidx.lo libhts_la-sam.lo libhts_la-synced_bcf_reader.lo libhts_la-vcf_sweep.lo libhts_la-tbx.lo libhts_la-vcf.lo libhts_la-vcfutils.lo cram/libhts_la-cram_codecs.lo cram/libhts_la-cram_decode.lo cram/libhts_la-cram_encode.lo cram/libhts_la-cram_index.lo cram/libhts_la-cram_io.lo cram/libhts_la-cram_samtools.lo cram/libhts_la-cram_stats.lo cram/libhts_la-files.lo cram/libhts_la-mFILE.lo cram/libhts_la-md5.lo cram/libhts_la-open_trace_file.lo cram/libhts_la-pooled_alloc.lo cram/libhts_la-rANS_static.lo cram/libhts_la-sam_header.lo cram/libhts_la-string_alloc.lo cram/libhts_la-thread_pool.lo cram/libhts_la-vlen.lo cram/libhts_la-zfio.lo lib/libgnu.la -lz -lm 
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib  -o .libs/libhts.0.dylib  .libs/libhts_la-kfunc.o .libs/libhts_la-knetfile.o .libs/libhts_la-kstring.o .libs/libhts_la-bgzf.o .libs/libhts_la-faidx.o .libs/libhts_la-hfile.o .libs/libhts_la-hfile_net.o .libs/libhts_la-hts.o .libs/libhts_la-regidx.o .libs/libhts_la-sam.o .libs/libhts_la-synced_bcf_reader.o .libs/libhts_la-vcf_sweep.o .libs/libhts_la-tbx.o .libs/libhts_la-vcf.o .libs/libhts_la-vcfutils.o cram/.libs/libhts_la-cram_codecs.o cram/.libs/libhts_la-cram_decode.o cram/.libs/libhts_la-cram_encode.o cram/.libs/libhts_la-cram_index.o cram/.libs/libhts_la-cram_io.o cram/.libs/libhts_la-cram_samtools.o cram/.libs/libhts_la-cram_stats.o cram/.libs/libhts_la-files.o cram/.libs/libhts_la-mFILE.o cram/.libs/libhts_la-md5.o cram/.libs/libhts_la-open_trace_file.o cram/.libs/libhts_la-pooled_alloc.o cram/.libs/libhts_la-rANS_static.o cram/.libs/libhts_la-sam_header.o cram/.libs/libhts_la-string_alloc.o cram/.libs/libhts_la-thread_pool.o cram/.libs/libhts_la-vlen.o cram/.libs/libhts_la-zfio.o   -Wl,-force_load,lib/.libs/libgnu.a  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -lz -lm  -O2   -install_name  /nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/00LOCK-Rhtslib/00new/Rhtslib/lib/libhts.0.dylib -compatibility_version 1 -current_version 1.0 -Wl,-single_module
+libtool: link: (cd ".libs" && rm -f "libhts.dylib" && ln -s "libhts.0.dylib" "libhts.dylib")
+libtool: link: (cd .libs/libhts.lax/libgnu.a && /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar x "/private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib/lib/.libs/libgnu.a")
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cru .libs/libhts.a  libhts_la-kfunc.o libhts_la-knetfile.o libhts_la-kstring.o libhts_la-bgzf.o libhts_la-faidx.o libhts_la-hfile.o libhts_la-hfile_net.o libhts_la-hts.o libhts_la-regidx.o libhts_la-sam.o libhts_la-synced_bcf_reader.o libhts_la-vcf_sweep.o libhts_la-tbx.o libhts_la-vcf.o libhts_la-vcfutils.o cram/libhts_la-cram_codecs.o cram/libhts_la-cram_decode.o cram/libhts_la-cram_encode.o cram/libhts_la-cram_index.o cram/libhts_la-cram_io.o cram/libhts_la-cram_samtools.o cram/libhts_la-cram_stats.o cram/libhts_la-files.o cram/libhts_la-mFILE.o cram/libhts_la-md5.o cram/libhts_la-open_trace_file.o cram/libhts_la-pooled_alloc.o cram/libhts_la-rANS_static.o cram/libhts_la-sam_header.o cram/libhts_la-string_alloc.o cram/libhts_la-thread_pool.o cram/libhts_la-vlen.o cram/libhts_la-zfio.o  .libs/libhts.lax/libgnu.a/fd-hook.o .libs/libhts.lax/libgnu.a/sys_socket.o .libs/libhts.lax/libgnu.a/unistd.o 
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib .libs/libhts.a
+libtool: link: rm -fr .libs/libhts.lax
+libtool: link: ( cd ".libs" && rm -f "libhts.la" && ln -s "../libhts.la" "libhts.la" )
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=link /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc  -g -O2 -fPIC  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o htsfile htsfile.o ./libhts.la ./lib/libgnu.la   -lz -lm 
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=link /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc  -g -O2 -fPIC  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o bgzip bgzip.o ./libhts.la ./lib/libgnu.la   -lz -lm 
+/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/bash ./libtool  --tag=CC   --mode=link /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc  -g -O2 -fPIC  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tabix tabix.o ./libhts.la ./lib/libgnu.la   -lz -lm 
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2 -fPIC -o .libs/tabix tabix.o  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib ./.libs/libhts.dylib ./lib/.libs/libgnu.a -lz -lm
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2 -fPIC -o .libs/bgzip bgzip.o  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib ./.libs/libhts.dylib ./lib/.libs/libgnu.a -lz -lm
+libtool: link: /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -g -O2 -fPIC -o .libs/htsfile htsfile.o  -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib ./.libs/libhts.dylib ./lib/.libs/libgnu.a -lz -lm
+make[3] : on quitte le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib »
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib »
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/Rhtslib/src/htslib »
+installing libraries and headers...
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Rhtslib.c -o Rhtslib.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rhtslib.so Rhtslib.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/00LOCK-Rhtslib/00new/Rhtslib/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+install_name_tool -id '/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/lib/libhts.0.dylib' '/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/00LOCK-Rhtslib/00new/Rhtslib/lib/libhts.0.dylib'
+NOTE : nom d’identification de bibliothèque fixé ‘/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/00LOCK-Rhtslib/00new/Rhtslib/lib/libhts.0.dylib’
+AVIS : objets partagés/librairies dynamiques ayant des répertoires d’installation codés en dur
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rhtslib)
+installPhase completed in 54 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rhtslib-1.2.1.drv-0/ in /nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1...
+patching script interpreter paths in /nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1
+rewriting symlink /nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1
+building '/nix/store/540pk4xib8k6jd70hzsqp3ah835mi39d-r-jackalope-1.1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/paxmhd5wgs43wnch42cm9mdbk6a9w32f-jackalope_1.1.5.tar.gz
+source root is jackalope
+setting SOURCE_DATE_EPOCH to timestamp 1701205202 of file jackalope/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘jackalope’ ...
+** package ‘jackalope’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c alter_reference.cpp -o alter_reference.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c create_sequences.cpp -o create_sequences.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hap_classes.cpp -o hap_classes.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c haps_ssites.cpp -o haps_ssites.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hts_illumina.cpp -o hts_illumina.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hts_pacbio.cpp -o hts_pacbio.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c io_fasta.cpp -o io_fasta.o
+In file included from hts_illumina.cpp:19:
+./hts.h:20:10: fatal error: 'htslib/bgzf.h' file not found
+#include "htslib/bgzf.h"
+         ^~~~~~~~~~~~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: hts_illumina.o] Error 1
+make: *** Attente des tâches non terminées....
+In file included from hts_pacbio.cpp:20:
+./hts.h:20:10: fatal error: 'htslib/bgzf.h' file not found
+#include "htslib/bgzf.h"
+         ^~~~~~~~~~~~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: hts_pacbio.o] Error 1
+In file included from io_fasta.cpp:26:
+./io.h:18:10: fatal error: 'htslib/bgzf.h' file not found
+#include "htslib/bgzf.h"  // BGZF
+         ^~~~~~~~~~~~~~~
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: io_fasta.o] Error 1
+ERROR: compilation failed for package ‘jackalope’
+* removing ‘/nix/store/g8p1r42axlgrsd22h60wc3s4fgv58pv4-r-jackalope-1.1.5/library/jackalope’
+error: builder for '/nix/store/540pk4xib8k6jd70hzsqp3ah835mi39d-r-jackalope-1.1.5.drv' failed with exit code 1;
+       last 25 log lines:
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c haps_ssites.cpp -o haps_ssites.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hts_illumina.cpp -o hts_illumina.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hts_pacbio.cpp -o hts_pacbio.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I../inst/include/ -I"/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include" -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -I'/nix/store/p6kwj3cnx8qkvr3lrmyx79bcx7a6m2ig-r-Rhtslib-1.2.1/library/Rhtslib/include' -I'/nix/store/l5qgyiz03hyqi59m4x0sf4689q4v2sjw-r-zlibbioc-1.16.0/library/zlibbioc/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c io_fasta.cpp -o io_fasta.o
+       > In file included from hts_illumina.cpp:19:
+       > ./hts.h:20:10: fatal error: 'htslib/bgzf.h' file not found
+       > #include "htslib/bgzf.h"
+       >          ^~~~~~~~~~~~~~~
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: hts_illumina.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > In file included from hts_pacbio.cpp:20:
+       > ./hts.h:20:10: fatal error: 'htslib/bgzf.h' file not found
+       > #include "htslib/bgzf.h"
+       >          ^~~~~~~~~~~~~~~
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: hts_pacbio.o] Error 1
+       > In file included from io_fasta.cpp:26:
+       > ./io.h:18:10: fatal error: 'htslib/bgzf.h' file not found
+       > #include "htslib/bgzf.h"  // BGZF
+       >          ^~~~~~~~~~~~~~~
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: io_fasta.o] Error 1
+       > ERROR: compilation failed for package ‘jackalope’
+       > * removing ‘/nix/store/g8p1r42axlgrsd22h60wc3s4fgv58pv4-r-jackalope-1.1.5/library/jackalope’
+       For full logs, run 'nix log /nix/store/540pk4xib8k6jd70hzsqp3ah835mi39d-r-jackalope-1.1.5.drv'.

@@ -1,0 +1,47 @@
+these 2 derivations will be built:
+  /nix/store/54843js56gb9p7k9r9ri8f0wb7zqqrl7-r-Rcplex-0.3-6.drv
+  /nix/store/8xmrqw33r6x2ywbbhcm6427pfb5h9n1p-r-ROI.plugin.cplex-0.3-0.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/xpqk5nd0d7y7712pmp1aiqn7q9vcg2ag-ROI.plugin.cplex_0.3-0.tar.gz
+copying path '/nix/store/xpqk5nd0d7y7712pmp1aiqn7q9vcg2ag-ROI.plugin.cplex_0.3-0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/54843js56gb9p7k9r9ri8f0wb7zqqrl7-r-Rcplex-0.3-6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/n6gpg8hil9882rk814qpm7g23s1wb2rr-Rcplex_0.3-6.tar.gz
+source root is Rcplex
+setting SOURCE_DATE_EPOCH to timestamp 1680781211 of file Rcplex/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rcplex’ ...
+** package ‘Rcplex’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for cplex... no
+Trying to use . as CPLEX installation location
+configure: error: CPLEX include directory ./include does not exist
+ERROR: configuration failed for package ‘Rcplex’
+* removing ‘/nix/store/96pk6hf47fywmz717n8r1xgpk5g8h6y3-r-Rcplex-0.3-6/library/Rcplex’
+error: builder for '/nix/store/54843js56gb9p7k9r9ri8f0wb7zqqrl7-r-Rcplex-0.3-6.drv' failed with exit code 1;
+       last 18 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/n6gpg8hil9882rk814qpm7g23s1wb2rr-Rcplex_0.3-6.tar.gz
+       > source root is Rcplex
+       > setting SOURCE_DATE_EPOCH to timestamp 1680781211 of file Rcplex/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘Rcplex’ ...
+       > ** package ‘Rcplex’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > checking for cplex... no
+       > Trying to use . as CPLEX installation location
+       > configure: error: CPLEX include directory ./include does not exist
+       > ERROR: configuration failed for package ‘Rcplex’
+       > * removing ‘/nix/store/96pk6hf47fywmz717n8r1xgpk5g8h6y3-r-Rcplex-0.3-6/library/Rcplex’
+       For full logs, run 'nix log /nix/store/54843js56gb9p7k9r9ri8f0wb7zqqrl7-r-Rcplex-0.3-6.drv'.
+error: 1 dependencies of derivation '/nix/store/8xmrqw33r6x2ywbbhcm6427pfb5h9n1p-r-ROI.plugin.cplex-0.3-0.drv' failed to build

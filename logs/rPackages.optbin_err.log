@@ -1,0 +1,42 @@
+these 2 derivations will be built:
+  /nix/store/3w4x01973iblb7i6dj133vhy105191pg-optbin_1.4.tar.gz.drv
+  /nix/store/195skdcjxcmn5pgx8fgc9ij116gl3b39-r-optbin-1.4.drv
+building '/nix/store/3w4x01973iblb7i6dj133vhy105191pg-optbin_1.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/optbin_1.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18507  100 18507    0     0   166k      0 --:--:-- --:--:-- --:--:--  167k
+building '/nix/store/195skdcjxcmn5pgx8fgc9ij116gl3b39-r-optbin-1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/l75qszjr2icg2sqfpzry1bsk1g81qs0k-optbin_1.4.tar.gz
+source root is optbin
+setting SOURCE_DATE_EPOCH to timestamp 1730398207 of file optbin/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘optbin’ ...
+** package ‘optbin’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c optbin.c -o optbin.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o optbin.so optbin.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/dbdcm66rwjsdgaxhzwrsvb88rdd0nr88-r-optbin-1.4/library/00LOCK-optbin/00new/optbin/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (optbin)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-optbin-1.4.drv-0/ in /nix/store/dbdcm66rwjsdgaxhzwrsvb88rdd0nr88-r-optbin-1.4...
+patching script interpreter paths in /nix/store/dbdcm66rwjsdgaxhzwrsvb88rdd0nr88-r-optbin-1.4

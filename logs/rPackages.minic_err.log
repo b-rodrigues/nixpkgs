@@ -1,0 +1,44 @@
+these 2 derivations will be built:
+  /nix/store/3cc850yp0qr9z7134r9abrnh2q3p42nd-minic_1.0.1.tar.gz.drv
+  /nix/store/61jl4b4mqlrxwgdp9w9cmv07linfhlpf-r-minic-1.0.1.drv
+building '/nix/store/3cc850yp0qr9z7134r9abrnh2q3p42nd-minic_1.0.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/minic_1.0.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13531  100 13531    0     0   125k      0 --:--:-- --:--:-- --:--:--  125k
+building '/nix/store/61jl4b4mqlrxwgdp9w9cmv07linfhlpf-r-minic-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xd2790p7wbxgn9lp48p84ya836fkbfma-minic_1.0.1.tar.gz
+source root is minic
+setting SOURCE_DATE_EPOCH to timestamp 1726427402 of file minic/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘minic’ ...
+** package ‘minic’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c minic.cpp -o minic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o minic.so RcppExports.o minic.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ngyka4wd0cd13fxywp0m249bcpiaswfc-r-minic-1.0.1/library/00LOCK-minic/00new/minic/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (minic)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-minic-1.0.1.drv-0/ in /nix/store/ngyka4wd0cd13fxywp0m249bcpiaswfc-r-minic-1.0.1...
+patching script interpreter paths in /nix/store/ngyka4wd0cd13fxywp0m249bcpiaswfc-r-minic-1.0.1
+rewriting symlink /nix/store/ngyka4wd0cd13fxywp0m249bcpiaswfc-r-minic-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/ngyka4wd0cd13fxywp0m249bcpiaswfc-r-minic-1.0.1

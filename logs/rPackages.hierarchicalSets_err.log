@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/azybq75977z5r8bvr5dazmf9h4hidnq3-r-hierarchicalSets-1.0.4.drv
+this path will be fetched (0.44 MiB download, 0.44 MiB unpacked):
+  /nix/store/x2pcs2b1fxih5a50gwpzs2szvlgs56vd-hierarchicalSets_1.0.4.tar.gz
+copying path '/nix/store/x2pcs2b1fxih5a50gwpzs2szvlgs56vd-hierarchicalSets_1.0.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/azybq75977z5r8bvr5dazmf9h4hidnq3-r-hierarchicalSets-1.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/x2pcs2b1fxih5a50gwpzs2szvlgs56vd-hierarchicalSets_1.0.4.tar.gz
+source root is hierarchicalSets
+setting SOURCE_DATE_EPOCH to timestamp 1682340602 of file hierarchicalSets/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hierarchicalSets’ ...
+** package ‘hierarchicalSets’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c bSpline.cpp -o bSpline.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c deBoor.cpp -o deBoor.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c setClustering.cpp -o setClustering.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o hierarchicalSets.so RcppExports.o bSpline.o deBoor.o setClustering.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/wpbhd0s31shvmz5afpcgvbbya5fj0cs6-r-hierarchicalSets-1.0.4/library/00LOCK-hierarchicalSets/00new/hierarchicalSets/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hierarchicalSets)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hierarchicalSets-1.0.4.drv-0/ in /nix/store/wpbhd0s31shvmz5afpcgvbbya5fj0cs6-r-hierarchicalSets-1.0.4...
+patching script interpreter paths in /nix/store/wpbhd0s31shvmz5afpcgvbbya5fj0cs6-r-hierarchicalSets-1.0.4
+rewriting symlink /nix/store/wpbhd0s31shvmz5afpcgvbbya5fj0cs6-r-hierarchicalSets-1.0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/wpbhd0s31shvmz5afpcgvbbya5fj0cs6-r-hierarchicalSets-1.0.4

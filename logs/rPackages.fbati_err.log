@@ -1,0 +1,62 @@
+these 3 derivations will be built:
+  /nix/store/hffgczmscksnwh98q3hd8pamyrz58k1r-r-fgui-1.0-8.drv
+  /nix/store/ia191mhi45n8rs0pynvbi9ahdr41y96g-r-pbatR-2.2-17.drv
+  /nix/store/fvsvq9wn1lz85as3md531pi5xjczi88r-r-fbati-1.0-9.drv
+building '/nix/store/hffgczmscksnwh98q3hd8pamyrz58k1r-r-fgui-1.0-8.drv'...
+building '/nix/store/ia191mhi45n8rs0pynvbi9ahdr41y96g-r-pbatR-2.2-17.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kzkxjh30rnfgyqxjgzxk9n3h20b3p2jg-fgui_1.0-8.tar.gz
+source root is fgui
+setting SOURCE_DATE_EPOCH to timestamp 1524318189 of file fgui/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/vl40ayv1szypiskwzbaj3izdxsvly6az-pbatR_2.2-17.tar.gz
+source root is pbatR
+setting SOURCE_DATE_EPOCH to timestamp 1706523603 of file pbatR/MD5
+Running phase: patchPhase
+* installing *source* package ‘fgui’ ...
+** package ‘fgui’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pbatR’ ...
+** package ‘pbatR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+sh: line 1: 96971 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-fgui-1.0-8.drv-0/RtmpLOcI92/file17ab06f777a9e'
+ERROR: lazy loading failed for package ‘fgui’
+* removing ‘/nix/store/30wg6panp3jxj92qc38xayb36033zl1s-r-fgui-1.0-8/library/fgui’
+error: builder for '/nix/store/hffgczmscksnwh98q3hd8pamyrz58k1r-r-fgui-1.0-8.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/kzkxjh30rnfgyqxjgzxk9n3h20b3p2jg-fgui_1.0-8.tar.gz
+       > source root is fgui
+       > setting SOURCE_DATE_EPOCH to timestamp 1524318189 of file fgui/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘fgui’ ...
+       > ** package ‘fgui’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 96971 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-fgui-1.0-8.drv-0/RtmpLOcI92/file17ab06f777a9e'
+       > ERROR: lazy loading failed for package ‘fgui’
+       > * removing ‘/nix/store/30wg6panp3jxj92qc38xayb36033zl1s-r-fgui-1.0-8/library/fgui’
+       For full logs, run 'nix log /nix/store/hffgczmscksnwh98q3hd8pamyrz58k1r-r-fgui-1.0-8.drv'.
+error: 1 dependencies of derivation '/nix/store/fvsvq9wn1lz85as3md531pi5xjczi88r-r-fbati-1.0-9.drv' failed to build

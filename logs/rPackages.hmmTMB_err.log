@@ -1,0 +1,166 @@
+this derivation will be built:
+  /nix/store/w1nq5fg1yrj5rpm9ipg7g6rl6k9rfhd5-r-hmmTMB-1.0.2.drv
+this path will be fetched (0.21 MiB download, 0.21 MiB unpacked):
+  /nix/store/kfzv11d7ycvad271jib6228hfd9xh4mm-hmmTMB_1.0.2.tar.gz
+copying path '/nix/store/kfzv11d7ycvad271jib6228hfd9xh4mm-hmmTMB_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/w1nq5fg1yrj5rpm9ipg7g6rl6k9rfhd5-r-hmmTMB-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kfzv11d7ycvad271jib6228hfd9xh4mm-hmmTMB_1.0.2.tar.gz
+source root is hmmTMB
+setting SOURCE_DATE_EPOCH to timestamp 1698180002 of file hmmTMB/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hmmTMB’ ...
+** package ‘hmmTMB’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript --vanilla -e "invisible(TMB::compile('hmmTMB.cpp', safebounds = FALSE, safeunload = FALSE))"
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-hmmTMB-1.0.2.drv-0/hmmTMB/src »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include" -I"/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_hmmTMB  -DCPPAD_FRAMEWORK -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c hmmTMB.cpp -o hmmTMB.o
+In file included from hmmTMB.cpp:2:
+In file included from ./hmmTMB.hpp:4:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/TMB.hpp:46:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/Rstream.hpp:10:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/iostream:43:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/ios:221:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__locale:18:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/mutex:191:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/shared_ptr.h:31:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'Dist<CppAD::AD<double>>' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<Dist<CppAD::AD<double>>>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<Dist<CppAD::AD<double>>>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+./hmmTMB.hpp:154:43: note: in instantiation of member function 'std::unique_ptr<Dist<CppAD::AD<double>>>::~unique_ptr' requested here
+    std::unique_ptr<Dist<Type>> obsdist = dist_generator<Type>(distcode(var));
+                                          ^
+/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/tmb_core.hpp:1308:6: note: in instantiation of member function 'objective_function<CppAD::AD<double>>::operator()' requested here
+    F(); // Run through user template (modifies reportvector)
+     ^
+In file included from hmmTMB.cpp:2:
+In file included from ./hmmTMB.hpp:4:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/TMB.hpp:46:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/Rstream.hpp:10:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/iostream:43:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/ios:221:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__locale:18:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/mutex:191:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/shared_ptr.h:31:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'Dist<double>' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<Dist<double>>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<Dist<double>>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+./hmmTMB.hpp:154:43: note: in instantiation of member function 'std::unique_ptr<Dist<double>>::~unique_ptr' requested here
+    std::unique_ptr<Dist<Type>> obsdist = dist_generator<Type>(distcode(var));
+                                          ^
+/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/tmb_core.hpp:2031:34: note: in instantiation of member function 'objective_function<double>::operator()' requested here
+      PROTECT( res = asSEXP( pf->operator()() ) );
+                                 ^
+In file included from hmmTMB.cpp:2:
+In file included from ./hmmTMB.hpp:4:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/TMB.hpp:46:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/Rstream.hpp:10:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/iostream:43:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/ios:221:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__locale:18:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/mutex:191:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/shared_ptr.h:31:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'Dist<CppAD::AD<CppAD::AD<double>>>' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<Dist<CppAD::AD<CppAD::AD<double>>>>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<Dist<CppAD::AD<CppAD::AD<double>>>>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+./hmmTMB.hpp:154:43: note: in instantiation of member function 'std::unique_ptr<Dist<CppAD::AD<CppAD::AD<double>>>>::~unique_ptr' requested here
+    std::unique_ptr<Dist<Type>> obsdist = dist_generator<Type>(distcode(var));
+                                          ^
+/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/tmb_core.hpp:913:20: note: in instantiation of member function 'objective_function<CppAD::AD<CppAD::AD<double>>>::operator()' requested here
+    Type ans=this->operator()();
+                   ^
+/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/tmb_core.hpp:2112:10: note: in instantiation of member function 'objective_function<CppAD::AD<CppAD::AD<double>>>::evalUserTemplate' requested here
+  y[0]=F.evalUserTemplate();
+         ^
+In file included from hmmTMB.cpp:2:
+In file included from ./hmmTMB.hpp:4:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/TMB.hpp:46:
+In file included from /nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/Rstream.hpp:10:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/iostream:43:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/ios:221:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__locale:18:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/mutex:191:
+In file included from /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/shared_ptr.h:31:
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:65:5: warning: delete called on 'Dist<CppAD::AD<CppAD::AD<CppAD::AD<double>>>>' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:297:7: note: in instantiation of member function 'std::default_delete<Dist<CppAD::AD<CppAD::AD<CppAD::AD<double>>>>>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1/__memory/unique_ptr.h:263:75: note: in instantiation of member function 'std::unique_ptr<Dist<CppAD::AD<CppAD::AD<CppAD::AD<double>>>>>::reset' requested here
+  _LIBCPP_INLINE_VISIBILITY _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+                                                                          ^
+./hmmTMB.hpp:154:43: note: in instantiation of member function 'std::unique_ptr<Dist<CppAD::AD<CppAD::AD<CppAD::AD<double>>>>>::~unique_ptr' requested here
+    std::unique_ptr<Dist<Type>> obsdist = dist_generator<Type>(distcode(var));
+                                          ^
+/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/tmb_core.hpp:913:20: note: in instantiation of member function 'objective_function<CppAD::AD<CppAD::AD<CppAD::AD<double>>>>::operator()' requested here
+    Type ans=this->operator()();
+                   ^
+/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include/tmb_core.hpp:2361:12: note: in instantiation of member function 'objective_function<CppAD::AD<CppAD::AD<CppAD::AD<double>>>>::evalUserTemplate' requested here
+  y[0] = F.evalUserTemplate();
+           ^
+4 warnings generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o hmmTMB.so hmmTMB.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-hmmTMB-1.0.2.drv-0/hmmTMB/src »
+installing to /nix/store/68dp9cphya4dpkisqr8862lgkz1jk021-r-hmmTMB-1.0.2/library/00LOCK-hmmTMB/00new/hmmTMB/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit4model_tmb” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit4model_tmb” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit4model_tmb” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit4model_tmb” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_model_base” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit4model_tmb” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+le code des méthodes de la classe “Rcpp_stan_fit4model_tmb” n'a pas été vérifié pour les affectations de champs suspectes (package recommandé ‘codetools’ indisponible ?)
+** testing if installed package keeps a record of temporary installation path
+* DONE (hmmTMB)
+installPhase completed in 51 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hmmTMB-1.0.2.drv-0/ in /nix/store/68dp9cphya4dpkisqr8862lgkz1jk021-r-hmmTMB-1.0.2...
+patching script interpreter paths in /nix/store/68dp9cphya4dpkisqr8862lgkz1jk021-r-hmmTMB-1.0.2
+rewriting symlink /nix/store/68dp9cphya4dpkisqr8862lgkz1jk021-r-hmmTMB-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/68dp9cphya4dpkisqr8862lgkz1jk021-r-hmmTMB-1.0.2

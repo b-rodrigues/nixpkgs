@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/7p3sb5dz1vaf90y0x050dicq2flh34wr-r-jrSiCKLSNMF-1.2.1.drv
+this path will be fetched (0.41 MiB download, 0.41 MiB unpacked):
+  /nix/store/qzlk44yan03gmw15xf8rkdhd45z9cq2m-jrSiCKLSNMF_1.2.1.tar.gz
+copying path '/nix/store/qzlk44yan03gmw15xf8rkdhd45z9cq2m-jrSiCKLSNMF_1.2.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/7p3sb5dz1vaf90y0x050dicq2flh34wr-r-jrSiCKLSNMF-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qzlk44yan03gmw15xf8rkdhd45z9cq2m-jrSiCKLSNMF_1.2.1.tar.gz
+source root is jrSiCKLSNMF
+setting SOURCE_DATE_EPOCH to timestamp 1688668804 of file jrSiCKLSNMF/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘scran’ is not available for package ‘jrSiCKLSNMF’
+* removing ‘/nix/store/wzj2d1vyhfhsl462wbccxbb1qjc7dmhw-r-jrSiCKLSNMF-1.2.1/library/jrSiCKLSNMF’
+error: builder for '/nix/store/7p3sb5dz1vaf90y0x050dicq2flh34wr-r-jrSiCKLSNMF-1.2.1.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/qzlk44yan03gmw15xf8rkdhd45z9cq2m-jrSiCKLSNMF_1.2.1.tar.gz
+       > source root is jrSiCKLSNMF
+       > setting SOURCE_DATE_EPOCH to timestamp 1688668804 of file jrSiCKLSNMF/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘scran’ is not available for package ‘jrSiCKLSNMF’
+       > * removing ‘/nix/store/wzj2d1vyhfhsl462wbccxbb1qjc7dmhw-r-jrSiCKLSNMF-1.2.1/library/jrSiCKLSNMF’
+       For full logs, run 'nix log /nix/store/7p3sb5dz1vaf90y0x050dicq2flh34wr-r-jrSiCKLSNMF-1.2.1.drv'.

@@ -1,0 +1,91 @@
+these 3 derivations will be built:
+  /nix/store/g7jv8irjaicyap4smgrhf2lk1ij9r1wa-optmatch_0.10.8.tar.gz.drv
+  /nix/store/jic4fihb12jxqpan187hnvwhyrbkivc0-r-optmatch-0.10.8.drv
+  /nix/store/zb0r9hg5bs06xc18vyls29qn4z5r2p9x-r-MultiObjMatch-1.0.0.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/7h93llhrm3jla01a496xzprqvw9lbya2-MultiObjMatch_1.0.0.tar.gz
+copying path '/nix/store/7h93llhrm3jla01a496xzprqvw9lbya2-MultiObjMatch_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g7jv8irjaicyap4smgrhf2lk1ij9r1wa-optmatch_0.10.8.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/optmatch_0.10.8.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1033k  100 1033k    0     0  3808k      0 --:--:-- --:--:-- --:--:-- 3812k
+building '/nix/store/jic4fihb12jxqpan187hnvwhyrbkivc0-r-optmatch-0.10.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vr020v6smlvpkds5wy3b7pf8p2njnlax-optmatch_0.10.8.tar.gz
+source root is optmatch
+setting SOURCE_DATE_EPOCH to timestamp 1726726802 of file optmatch/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘optmatch’ ...
+** package ‘optmatch’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c cuseful.cc -o cuseful.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distances.cc -o distances.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ism.cc -o ism.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c optmatch_init.c -o optmatch_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c r_smahal.cc -o r_smahal.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c smahal.cc -o smahal.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -DUSE_FC_LEN_T -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c subsetInfSparseMatrix.cc -o subsetInfSparseMatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o optmatch.so RcppExports.o cuseful.o distances.o ism.o optmatch_init.o r_smahal.o smahal.o subsetInfSparseMatrix.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/rjga12c37zq4161l2fbam5angfnvgfax-r-optmatch-0.10.8/library/00LOCK-optmatch/00new/optmatch/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (optmatch)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-optmatch-0.10.8.drv-0/ in /nix/store/rjga12c37zq4161l2fbam5angfnvgfax-r-optmatch-0.10.8...
+patching script interpreter paths in /nix/store/rjga12c37zq4161l2fbam5angfnvgfax-r-optmatch-0.10.8
+rewriting symlink /nix/store/rjga12c37zq4161l2fbam5angfnvgfax-r-optmatch-0.10.8/nix-support/propagated-user-env-packages to be relative to /nix/store/rjga12c37zq4161l2fbam5angfnvgfax-r-optmatch-0.10.8
+building '/nix/store/zb0r9hg5bs06xc18vyls29qn4z5r2p9x-r-MultiObjMatch-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/7h93llhrm3jla01a496xzprqvw9lbya2-MultiObjMatch_1.0.0.tar.gz
+source root is MultiObjMatch
+setting SOURCE_DATE_EPOCH to timestamp 1720134605 of file MultiObjMatch/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MultiObjMatch’ ...
+** package ‘MultiObjMatch’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MultiObjMatch)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MultiObjMatch-1.0.0.drv-0/ in /nix/store/cyib8a6bd4qssladphk54jfpg9i4ild1-r-MultiObjMatch-1.0.0...
+patching script interpreter paths in /nix/store/cyib8a6bd4qssladphk54jfpg9i4ild1-r-MultiObjMatch-1.0.0
+rewriting symlink /nix/store/cyib8a6bd4qssladphk54jfpg9i4ild1-r-MultiObjMatch-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/cyib8a6bd4qssladphk54jfpg9i4ild1-r-MultiObjMatch-1.0.0

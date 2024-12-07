@@ -1,0 +1,79 @@
+this derivation will be built:
+  /nix/store/0sfvavkiw3dwap2q4whvimilamf2nlyk-r-rexpokit-0.26.6.14.drv
+this path will be fetched (0.34 MiB download, 0.34 MiB unpacked):
+  /nix/store/z4b1b35kfjj640k1b1gp4zrldkb47sd9-rexpokit_0.26.6.14.tar.gz
+copying path '/nix/store/z4b1b35kfjj640k1b1gp4zrldkb47sd9-rexpokit_0.26.6.14.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0sfvavkiw3dwap2q4whvimilamf2nlyk-r-rexpokit-0.26.6.14.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z4b1b35kfjj640k1b1gp4zrldkb47sd9-rexpokit_0.26.6.14.tar.gz
+source root is rexpokit
+setting SOURCE_DATE_EPOCH to timestamp 1700644805 of file rexpokit/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rexpokit’ ...
+** package ‘rexpokit’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lapack/blas_mod.f -o lapack/blas_mod.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lapack/lapack.f -o lapack/lapack.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lapack/mataid.f -o lapack/mataid.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c lapack/my_expokit.f -o lapack/my_expokit.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c my_matexp.f -o my_matexp.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c itscale5.f -o itscale5.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c coo.cpp -o coo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c wrappers.cpp -o wrappers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rexpokit.so lapack/blas_mod.o lapack/lapack.o lapack/mataid.o lapack/my_expokit.o my_matexp.o itscale5.o coo.o wrappers.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _zsisl_: does not use standard frame
+ld: warning: could not create compact unwind for _zsifa_: does not use standard frame
+ld: warning: could not create compact unwind for _zhisl_: does not use standard frame
+ld: warning: could not create compact unwind for _zhifa_: does not use standard frame
+ld: warning: could not create compact unwind for _zgesl_: does not use standard frame
+ld: warning: could not create compact unwind for _dgpadm_: does not use standard frame
+ld: warning: could not create compact unwind for _zgefa_: does not use standard frame
+ld: warning: could not create compact unwind for _dcopyx_: does not use standard frame
+ld: warning: could not create compact unwind for _dnchbv_: does not use standard frame
+ld: warning: could not create compact unwind for _mydmexpv_: does not use standard frame
+ld: warning: could not create compact unwind for _izsrt2_: does not use standard frame
+ld: warning: could not create compact unwind for _dspadm_: does not use standard frame
+ld: warning: could not create compact unwind for _dgchbv_: does not use standard frame
+ld: warning: could not create compact unwind for _dschbv_: does not use standard frame
+ld: warning: could not create compact unwind for _mydgexpv_: does not use standard frame
+ld: warning: could not create compact unwind for _wrapalldmexpv_: does not use standard frame
+ld: warning: could not create compact unwind for _wrapsingledmexpv_: does not use standard frame
+ld: warning: could not create compact unwind for _idsrt2_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _dcmpac_: does not use standard frame
+ld: warning: could not create compact unwind for _zcmpac_: does not use standard frame
+could not create compact unwind for _itscale5_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _dsexpv_: does not use standard frame
+ld: warning: could not create compact unwind for _wrapalldgexpv_: does not use standard frame
+ld: warning: could not create compact unwind for _dgphiv_: does not use standard frame
+ld: warning: could not create compact unwind for _dsphiv_: does not use standard frame
+ld: warning: could not create compact unwind for _wrapsingledgexpv_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/rjzl3fn6blaagpixqqkjn6l07jdh71g6-r-rexpokit-0.26.6.14/library/00LOCK-rexpokit/00new/rexpokit/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rexpokit)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rexpokit-0.26.6.14.drv-0/ in /nix/store/rjzl3fn6blaagpixqqkjn6l07jdh71g6-r-rexpokit-0.26.6.14...
+patching script interpreter paths in /nix/store/rjzl3fn6blaagpixqqkjn6l07jdh71g6-r-rexpokit-0.26.6.14
+rewriting symlink /nix/store/rjzl3fn6blaagpixqqkjn6l07jdh71g6-r-rexpokit-0.26.6.14/nix-support/propagated-user-env-packages to be relative to /nix/store/rjzl3fn6blaagpixqqkjn6l07jdh71g6-r-rexpokit-0.26.6.14

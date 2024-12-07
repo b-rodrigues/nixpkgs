@@ -1,0 +1,81 @@
+this derivation will be built:
+  /nix/store/g5x14zhk1mqindg8ddn24dj556mygyrh-r-pexm-1.1.3.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/i66l31rhwid99qxhx5y1zp9bxgqd2ril-pexm_1.1.3.tar.gz
+copying path '/nix/store/i66l31rhwid99qxhx5y1zp9bxgqd2ril-pexm_1.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/g5x14zhk1mqindg8ddn24dj556mygyrh-r-pexm-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/i66l31rhwid99qxhx5y1zp9bxgqd2ril-pexm_1.1.3.tar.gz
+source root is pexm
+setting SOURCE_DATE_EPOCH to timestamp 1701283802 of file pexm/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pexm’ ...
+** package ‘pexm’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for prefix by checking for jags... /nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/bin/jags
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... yes
+checking how to run the C++ preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -E
+checking for grep that handles long lines and -e... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep
+checking for egrep... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep -E
+checking for ANSI C header files... rm: cannot remove 'conftest.dSYM': Is a directory
+rm: cannot remove 'conftest.dSYM': Is a directory
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking Console.h usability... yes
+checking Console.h presence... yes
+checking for Console.h... yes
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether we are using the GNU C compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to accept ISO C89... none needed
+checking for jags_version in -ljags... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions/DPexFun.cc -o functions/DPexFun.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions/HCPexFun.cc -o functions/HCPexFun.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions/HPexFun.cc -o functions/HPexFun.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions/PPexFun.cc -o functions/PPexFun.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c functions/QPexFun.cc -o functions/QPexFun.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distributions/DPex.cc -o distributions/DPex.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/include/JAGS" -D JAGS_MAJOR_FORCED=0 -D JAGS_MAJOR_ASSUMED=0  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c pexm.cc -o pexm.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pexm.so functions/DPexFun.o functions/HCPexFun.o functions/HPexFun.o functions/PPexFun.o functions/QPexFun.o distributions/DPex.o init.o pexm.o -L/nix/store/5nswv9x7z4xa3lqhnk8grhfmgicagz7g-JAGS-4.3.2/lib -ljags -ljrmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/xfj6lqrva4i9s2b3zz4s57zkxyk69li4-r-pexm-1.1.3/library/00LOCK-pexm/00new/pexm/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pexm)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pexm-1.1.3.drv-0/ in /nix/store/xfj6lqrva4i9s2b3zz4s57zkxyk69li4-r-pexm-1.1.3...
+patching script interpreter paths in /nix/store/xfj6lqrva4i9s2b3zz4s57zkxyk69li4-r-pexm-1.1.3
+rewriting symlink /nix/store/xfj6lqrva4i9s2b3zz4s57zkxyk69li4-r-pexm-1.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/xfj6lqrva4i9s2b3zz4s57zkxyk69li4-r-pexm-1.1.3

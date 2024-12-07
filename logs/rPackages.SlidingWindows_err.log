@@ -1,0 +1,72 @@
+these 2 derivations will be built:
+  /nix/store/934ay6lyapys4m3ksaldk8f0vs2c7xd8-r-TSEntropies-0.9.drv
+  /nix/store/q73nsgzvi7dqsacw0idc3n04rspy9i03-r-SlidingWindows-0.2.0.drv
+these 2 paths will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/q1y070mvjl0b9fb7jxd6by8mcnlnpjk7-SlidingWindows_0.2.0.tar.gz
+  /nix/store/am5r7rms402r95340czx8cjymaiqq1q1-TSEntropies_0.9.tar.gz
+copying path '/nix/store/q1y070mvjl0b9fb7jxd6by8mcnlnpjk7-SlidingWindows_0.2.0.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/am5r7rms402r95340czx8cjymaiqq1q1-TSEntropies_0.9.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/934ay6lyapys4m3ksaldk8f0vs2c7xd8-r-TSEntropies-0.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/am5r7rms402r95340czx8cjymaiqq1q1-TSEntropies_0.9.tar.gz
+source root is TSEntropies
+setting SOURCE_DATE_EPOCH to timestamp 1538996407 of file TSEntropies/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TSEntropies’ ...
+** package ‘TSEntropies’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c ApEn.c -o ApEn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c FastApEn.c -o FastApEn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c FastSampEn.c -o FastSampEn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c SampEn.c -o SampEn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c TSEntropies_init.c -o TSEntropies_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o TSEntropies.so ApEn.o FastApEn.o FastSampEn.o SampEn.o TSEntropies_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/l0wd8x9qlm293vra4fd2xkhsyjcwakwq-r-TSEntropies-0.9/library/00LOCK-TSEntropies/00new/TSEntropies/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TSEntropies)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TSEntropies-0.9.drv-0/ in /nix/store/l0wd8x9qlm293vra4fd2xkhsyjcwakwq-r-TSEntropies-0.9...
+patching script interpreter paths in /nix/store/l0wd8x9qlm293vra4fd2xkhsyjcwakwq-r-TSEntropies-0.9
+building '/nix/store/q73nsgzvi7dqsacw0idc3n04rspy9i03-r-SlidingWindows-0.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/q1y070mvjl0b9fb7jxd6by8mcnlnpjk7-SlidingWindows_0.2.0.tar.gz
+source root is SlidingWindows
+setting SOURCE_DATE_EPOCH to timestamp 1618114802 of file SlidingWindows/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SlidingWindows’ ...
+** package ‘SlidingWindows’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SlidingWindows)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SlidingWindows-0.2.0.drv-0/ in /nix/store/rlbbx5as8iz203rr4jzbfsxpizvfmbdy-r-SlidingWindows-0.2.0...
+patching script interpreter paths in /nix/store/rlbbx5as8iz203rr4jzbfsxpizvfmbdy-r-SlidingWindows-0.2.0
+rewriting symlink /nix/store/rlbbx5as8iz203rr4jzbfsxpizvfmbdy-r-SlidingWindows-0.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/rlbbx5as8iz203rr4jzbfsxpizvfmbdy-r-SlidingWindows-0.2.0

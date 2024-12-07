@@ -1,0 +1,90 @@
+these 2 derivations will be built:
+  /nix/store/z4k0gghf4d2mzsl12chdbnd0kzk1j2j9-tseriesTARMA_0.5-1.tar.gz.drv
+  /nix/store/lmg4j9vifs912md37nz0f11fnjlyxl17-r-tseriesTARMA-0.5-1.drv
+building '/nix/store/z4k0gghf4d2mzsl12chdbnd0kzk1j2j9-tseriesTARMA_0.5-1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/tseriesTARMA_0.5-1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  192k  100  192k    0     0  1139k      0 --:--:-- --:--:-- --:--:-- 1146k
+building '/nix/store/lmg4j9vifs912md37nz0f11fnjlyxl17-r-tseriesTARMA-0.5-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/i0pmqv5m80px2026cb0yklb2p41hvqby-tseriesTARMA_0.5-1.tar.gz
+source root is tseriesTARMA
+setting SOURCE_DATE_EPOCH to timestamp 1728400802 of file tseriesTARMA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tseriesTARMA’ ...
+** package ‘tseriesTARMA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  TARMA_MOD.f90 -o TARMA_MOD.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  mrgrnk.f90 -o mrgrnk.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  TARMAfit.f90 -o TARMAfit.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  TARMAtest.f90 -o TARMAtest.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  TARMAurtest.f90 -o TARMAurtest.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  TARtest.f90 -o TARtest.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tseriesTARMA.so TARMA_MOD.o TARMAfit.o TARMAtest.o TARMAurtest.o TARtest.o mrgrnk.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _tarmals_: does not use standard frame
+ld: warning: could not create compact unwind for _tarmalsw_: does not use standard frame
+ld: warning: could not create compact unwind for _tarmadls_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _tarmagarch_: does not use standard frame
+ld: warning: could not create compact unwind for _arvstar_: does not use standard frame
+ld: warning: could not create compact unwind for _tarmadlsw_: does not use standard frame
+could not create compact unwind for _arvstarh_: does not use standard frame
+ld: warning: could not create compact unwind for _arvstarboot_: does not use standard frame
+ld: warning: could not create compact unwind for _armavstarma_: does not use standard frame
+ld: warning: could not create compact unwind for _armavstarmaboot_: does not use standard frame
+ld: warning: could not create compact unwind for _armavstarmag_: does not use standard frame
+ld: warning: could not create compact unwind for _arvstar_hb_: does not use standard frame
+ld: warning: could not create compact unwind for _imavstarma_: does not use standard frame
+ld: warning: could not create compact unwind for ___m_mrgrnk_MOD_i_mrgrnk: does not use standard frame
+ld: warning: could not create compact unwind for ___m_mrgrnk_MOD_r_mrgrnk: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for ___m_mrgrnk_MOD_d_mrgrnk: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_lsfit: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_rfilter: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_rfilterm: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_inverse: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_kgauss: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_which: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_bootr: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_samplenr: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_perm: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_permute: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_col_logi: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for ___tarma_mod_MOD_col_real: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_row_real: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_row_logi: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_whichm: does not use standard frame
+ld: warning: could not create compact unwind for ___tarma_mod_MOD_embed: does not use standard frame
+could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-tseriesTARMA-0.5-1.drv-0/tseriesTARMA/src »
+make[1]: Rien à faire pour « tseriesTARMA.so ».
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-tseriesTARMA-0.5-1.drv-0/tseriesTARMA/src »
+installing to /nix/store/5561m67zcpqk679aw9dbin5il8qnv97n-r-tseriesTARMA-0.5-1/library/00LOCK-tseriesTARMA/00new/tseriesTARMA/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tseriesTARMA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tseriesTARMA-0.5-1.drv-0/ in /nix/store/5561m67zcpqk679aw9dbin5il8qnv97n-r-tseriesTARMA-0.5-1...
+patching script interpreter paths in /nix/store/5561m67zcpqk679aw9dbin5il8qnv97n-r-tseriesTARMA-0.5-1
+rewriting symlink /nix/store/5561m67zcpqk679aw9dbin5il8qnv97n-r-tseriesTARMA-0.5-1/nix-support/propagated-user-env-packages to be relative to /nix/store/5561m67zcpqk679aw9dbin5il8qnv97n-r-tseriesTARMA-0.5-1

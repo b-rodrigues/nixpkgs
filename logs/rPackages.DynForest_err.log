@@ -1,0 +1,221 @@
+these 3 derivations will be built:
+  /nix/store/4xfv0mk4f5vqriz0jj6zskvv8pydynbb-r-marqLevAlg-2.0.8.drv
+  /nix/store/l5n368qdzx6p12jkcaq5dqam6fwrcl40-r-lcmm-2.1.0.drv
+  /nix/store/8y7cgk1ckcq5dqwhixnqhl8p003scl1g-r-DynForest-1.2.0.drv
+building '/nix/store/4xfv0mk4f5vqriz0jj6zskvv8pydynbb-r-marqLevAlg-2.0.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gw2bdyrsfcyk5srk2hq817krh3chfld9-marqLevAlg_2.0.8.tar.gz
+source root is marqLevAlg
+setting SOURCE_DATE_EPOCH to timestamp 1679493605 of file marqLevAlg/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘marqLevAlg’ ...
+** package ‘marqLevAlg’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  dmfsd.f90 -o dmfsd.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  dchole.f90 -o dchole.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  dsinv.f90 -o dsinv.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o marqLevAlg.so init.o dsinv.o dchole.o dmfsd.o -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _dsinv_: does not use standard frame
+ld: warning: could not create compact unwind for _dchole_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/9kqpwzd269kcglgrnnx6rjlfn1hqv29p-r-marqLevAlg-2.0.8/library/00LOCK-marqLevAlg/00new/marqLevAlg/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (marqLevAlg)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-marqLevAlg-2.0.8.drv-0/ in /nix/store/9kqpwzd269kcglgrnnx6rjlfn1hqv29p-r-marqLevAlg-2.0.8...
+patching script interpreter paths in /nix/store/9kqpwzd269kcglgrnnx6rjlfn1hqv29p-r-marqLevAlg-2.0.8
+rewriting symlink /nix/store/9kqpwzd269kcglgrnnx6rjlfn1hqv29p-r-marqLevAlg-2.0.8/nix-support/propagated-user-env-packages to be relative to /nix/store/9kqpwzd269kcglgrnnx6rjlfn1hqv29p-r-marqLevAlg-2.0.8
+building '/nix/store/l5n368qdzx6p12jkcaq5dqam6fwrcl40-r-lcmm-2.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d4xiiblzk3gz7lza5wl2iywkz3w2krmn-lcmm_2.1.0.tar.gz
+source root is lcmm
+setting SOURCE_DATE_EPOCH to timestamp 1696612201 of file lcmm/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lcmm’ ...
+** package ‘lcmm’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c runiran.c -o runiran.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  compute.f90 -o compute.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  hetmixOrd.f90 -o hetmixOrd.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  hetmixlin.f90 -o hetmixlin.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  hetmixCont.f90 -o hetmixCont.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  Jointhet.f90 -o Jointhet.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  calculusTransfo.f90 -o calculusTransfo.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  predictCont.f90 -o predictCont.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  predictMult.f90 -o predictMult.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  predictYcond.f90 -o predictYcond.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  mpjhet.f90 -o mpjhet.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  hetmixMult.f90 -o hetmixMult.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  iteminfo.f90 -o iteminfo.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  postprob2.f90 -o postprob2.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  cvpl.f90 -o cvpl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o lcmm.so init.o runiran.o compute.o hetmixOrd.o hetmixlin.o hetmixCont.o Jointhet.o calculusTransfo.o predictCont.o predictMult.o postprob2.o cvpl.o predictYcond.o mpjhet.o hetmixMult.o iteminfo.o -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _residuals_: does not use standard frame
+ld: warning: could not create compact unwind for _predictcont_: does not use standard frame
+ld: warning: could not create compact unwind for _transfo_estimee_comp_: does not use standard frame
+ld: warning: could not create compact unwind for _postprob_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _vraistotc_: does not use standard frame
+could not create compact unwind for _funcpa_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _loglikhlme_: does not use standard frame
+ld: warning: could not create compact unwind for _eval_splines_: does not use standard frameld: warning: could not create compact unwind for _calculustransfo_: does not use standard frame
+ld: warning: could not create compact unwind for _postprob2_: does not use standard frame
+ld: warning: could not create compact unwind for _fct_risq_estime_comp_: does not use standard frame
+ld: warning: could not create compact unwind for _betain_: does not use standard frame
+ld: warning: could not create compact unwind for _splines_estime_comp_: registers 78 and 79 not saved contiguously in framecould not create compact unwind for _vraistot_: does not use standard frameld: warning: 
+could not create compact unwind for _residualsc_: does not use standard frame
+ld: warning: could not create compact unwind for _postprobc_: does not use standard frame
+ld: warning: could not create compact unwind for _fulsmh_: does not use standard frame
+ld: warning: could not create compact unwind for _funcpac_: does not use standard frame
+ld: warning: 
+ld: warning: ld: warning: could not create compact unwind for _predictcondmult_: does not use standard framecould not create compact unwind for _transfo_estimee_ord_: does not use standard frame
+
+ld: warning: could not create compact unwind for _vraisobs_: does not use standard frame
+ld: warning: could not create compact unwind for _postprobo_: does not use standard frame
+ld: warning: could not create compact unwind for _funcpao_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _hrmtrl_: does not use standard frame
+could not create compact unwind for _predictmult_: does not use standard frame
+ld: warning: could not create compact unwind for _fct_risq_it_: does not use standard frame
+ld: warning: could not create compact unwind for _funcpio_: does not use standard frame
+could not create compact unwind for _vrais_cont_i_: does not use standard frameld: warning: 
+could not create compact unwind for _computuacvo_: does not use standard frame
+ld: warning: could not create compact unwind for _logliklcmmord_: does not use standard frame
+
+ld: warning: could not create compact unwind for _mltrul_: does not use standard frame
+ld: warning: could not create compact unwind for _vraisobsc_: does not use standard frame
+ld: warning: could not create compact unwind for _splines_seuils_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _residuals_comp_: does not use standard frame
+ld: warning: could not create compact unwind for _hermit_: does not use standard frame
+ld: warning: could not create compact unwind for _funcpi_condt_: does not use standard frame
+ld: warning: could not create compact unwind for _iteminfo_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _residualsmo_: does not use standard framecould not create compact unwind for _dsinv_: does not use standard frame
+ld: warning: could not create compact unwind for _vrais_discret_i_: does not use standard frame
+ld: warning: ld: warning: ld: warning: could not create compact unwind for _splines_: registers 78 and 79 not saved contiguously in framecould not create compact unwind for ___emutls_get_address: does not use standard frame
+
+ld: warning: ld: warning: 
+could not create compact unwind for _alnorm_: does not use standard frameld: warning: ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for _fct_risq_comp_i_: does not use standard frame
+
+could not create compact unwind for _postprobmo_: does not use standard frame
+could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _hrmsym_: does not use standard frame
+could not create compact unwind for _transfo_estimee_mpj_: does not use standard frame
+could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _beta_densite_: does not use standard frame
+ld: warning: could not create compact unwind for _betai_: does not use standard frame
+ld: warning: could not create compact unwind for _beta_ln_: does not use standard frame
+ld: warning: could not create compact unwind for _xinbta_: does not use standard frame
+ld: warning: could not create compact unwind for _inv_isplines_: does not use standard framecould not create compact unwind for _derivc_condt_: does not use standard frameld: warning: could not create compact unwind for _fct_risq_estime_mpj_: does not use standard frame
+
+ld: warning: could not create compact unwind for _transfos_estimees_2_: does not use standard frame
+
+ld: warning: could not create compact unwind for _bgos_: does not use standard frameld: warning: could not create compact unwind for _splines_cvpl_: registers 78 and 79 not saved contiguously in frame
+
+ld: warning: could not create compact unwind for _vrais_multo_i_: does not use standard frame
+ld: warning: ld: warning: ld: warning: ld: warning: ld: warning: could not create compact unwind for _computuacv_: does not use standard framecould not create compact unwind for _cvpl_: does not use standard frame
+ld: warning: could not create compact unwind for _vrais_discret_: does not use standard framecould not create compact unwind for _vrais_multo_: does not use standard frame
+
+ld: warning: could not create compact unwind for _splines_estime_mpj_: registers 78 and 79 not saved contiguously in frame
+could not create compact unwind for _loglikmultlcmm_: does not use standard frameld: warning: could not create compact unwind for _residuals_mpj_: does not use standard frame
+
+
+ld: warning: could not create compact unwind for _splines_mpj_: registers 78 and 79 not saved contiguously in frame
+ld: warning: ld: warning: could not create compact unwind for _fct_risq_mpj_i_: does not use standard framecould not create compact unwind for _scoretest_comp_: does not use standard frame
+could not create compact unwind for _estim_splines_ssstd_: does not use standard frame
+ld: warning: could not create compact unwind for _postprob_comp_: does not use standard frame
+
+ld: warning: could not create compact unwind for _vrais_comp_i_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _funcpa_condt_: does not use standard frameld: warning: could not create compact unwind for _transfo_estimee_: does not use standard frame
+ld: warning: could not create compact unwind for _vrais_cont_: does not use standard frame
+ld: warning: could not create compact unwind for _logliklcmmcont_: does not use standard frame
+could not create compact unwind for _vrais_comp_: does not use standard frame
+
+ld: warning: could not create compact unwind for _loglikjointlcmm_: does not use standard frame
+ld: warning: could not create compact unwind for _postprob_mpj_: does not use standard frame
+ld: warning: could not create compact unwind for _vrais_mpj_i_: does not use standard frame
+ld: warning: could not create compact unwind for _vrais_mpj_: does not use standard frame
+ld: warning: could not create compact unwind for _loglikmpjlcmm_: does not use standard frame
+installing to /nix/store/021bc9vidd0p277p45f1rifqsqrniq43-r-lcmm-2.1.0/library/00LOCK-lcmm/00new/lcmm/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (lcmm)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lcmm-2.1.0.drv-0/ in /nix/store/021bc9vidd0p277p45f1rifqsqrniq43-r-lcmm-2.1.0...
+patching script interpreter paths in /nix/store/021bc9vidd0p277p45f1rifqsqrniq43-r-lcmm-2.1.0
+rewriting symlink /nix/store/021bc9vidd0p277p45f1rifqsqrniq43-r-lcmm-2.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/021bc9vidd0p277p45f1rifqsqrniq43-r-lcmm-2.1.0
+building '/nix/store/8y7cgk1ckcq5dqwhixnqhl8p003scl1g-r-DynForest-1.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/j7dc65x947i2mac8fimb63fnml5ksbs4-DynForest_1.2.0.tar.gz
+source root is DynForest
+setting SOURCE_DATE_EPOCH to timestamp 1729680602 of file DynForest/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘DynForest’ ...
+** package ‘DynForest’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (DynForest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-DynForest-1.2.0.drv-0/ in /nix/store/p6w5jlzpy53lsjwr6qnfaga63larcxhi-r-DynForest-1.2.0...
+patching script interpreter paths in /nix/store/p6w5jlzpy53lsjwr6qnfaga63larcxhi-r-DynForest-1.2.0
+rewriting symlink /nix/store/p6w5jlzpy53lsjwr6qnfaga63larcxhi-r-DynForest-1.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/p6w5jlzpy53lsjwr6qnfaga63larcxhi-r-DynForest-1.2.0

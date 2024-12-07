@@ -1,0 +1,68 @@
+these 2 derivations will be built:
+  /nix/store/rxqng48q81k2xmc25z6baq36qq04saqa-OBsMD_12.0.tar.gz.drv
+  /nix/store/g19fizaal3xlyxk7f5lh3dcybgq1y641-r-OBsMD-12.0.drv
+building '/nix/store/rxqng48q81k2xmc25z6baq36qq04saqa-OBsMD_12.0.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/OBsMD_12.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 55625  100 55625    0     0   404k      0 --:--:-- --:--:-- --:--:--  405k
+building '/nix/store/g19fizaal3xlyxk7f5lh3dcybgq1y641-r-OBsMD-12.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/m33kyy2dvsacakw20nhlcfkcmgcn7yb0-OBsMD_12.0.tar.gz
+source root is OBsMD
+setting SOURCE_DATE_EPOCH to timestamp 1724092814 of file OBsMD/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘OBsMD’ ...
+** package ‘OBsMD’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c obsmd.f -o obsmd.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o OBsMD.so init.o obsmd.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _ranst_: does not use standard frame
+ld: warning: could not create compact unwind for _hyper_: does not use standard frame
+ld: warning: could not create compact unwind for _gamm_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _fix6_: does not use standard frame
+ld: warning: could not create compact unwind for _fix5b_: does not use standard frame
+ld: warning: could not create compact unwind for _fix5a_: does not use standard frame
+ld: warning: could not create compact unwind for _fix4b_: does not use standard frame
+ld: warning: could not create compact unwind for _fix4a_: does not use standard frame
+ld: warning: could not create compact unwind for _fix1_: does not use standard frame
+ld: warning: could not create compact unwind for _hyp_: does not use standard frame
+ld: warning: could not create compact unwind for _dposl_: does not use standard frame
+ld: warning: could not create compact unwind for _dpodi_: does not use standard frame
+ld: warning: could not create compact unwind for _dpofa_: does not use standard frame
+ld: warning: could not create compact unwind for _dpoco_: does not use standard frame
+ld: warning: could not create compact unwind for _eval_: does not use standard frame
+ld: warning: could not create compact unwind for _obm_: does not use standard frame
+ld: warning: could not create compact unwind for _omd_: does not use standard frame
+installing to /nix/store/sdl1iinr5kfym12ci4zdy6q6i53ikp3q-r-OBsMD-12.0/library/00LOCK-OBsMD/00new/OBsMD/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (OBsMD)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-OBsMD-12.0.drv-0/ in /nix/store/sdl1iinr5kfym12ci4zdy6q6i53ikp3q-r-OBsMD-12.0...
+patching script interpreter paths in /nix/store/sdl1iinr5kfym12ci4zdy6q6i53ikp3q-r-OBsMD-12.0

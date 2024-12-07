@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/06x6jbxg570ccxc1s6cy65ipx74qv7yc-r-poolVIM-1.0.0.drv
+this path will be fetched (0.00 MiB download, 0.00 MiB unpacked):
+  /nix/store/0nqviwwfpnv1mkyiad4g1ms6w02xhqlk-poolVIM_1.0.0.tar.gz
+copying path '/nix/store/0nqviwwfpnv1mkyiad4g1ms6w02xhqlk-poolVIM_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/06x6jbxg570ccxc1s6cy65ipx74qv7yc-r-poolVIM-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/0nqviwwfpnv1mkyiad4g1ms6w02xhqlk-poolVIM_1.0.0.tar.gz
+source root is poolVIM
+setting SOURCE_DATE_EPOCH to timestamp 1532971808 of file poolVIM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘EmpiricalBrownsMethod’ is not available for package ‘poolVIM’
+* removing ‘/nix/store/qj2g7ipllzl2d7siwkvrlcq3js7xgc1j-r-poolVIM-1.0.0/library/poolVIM’
+error: builder for '/nix/store/06x6jbxg570ccxc1s6cy65ipx74qv7yc-r-poolVIM-1.0.0.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/0nqviwwfpnv1mkyiad4g1ms6w02xhqlk-poolVIM_1.0.0.tar.gz
+       > source root is poolVIM
+       > setting SOURCE_DATE_EPOCH to timestamp 1532971808 of file poolVIM/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘EmpiricalBrownsMethod’ is not available for package ‘poolVIM’
+       > * removing ‘/nix/store/qj2g7ipllzl2d7siwkvrlcq3js7xgc1j-r-poolVIM-1.0.0/library/poolVIM’
+       For full logs, run 'nix log /nix/store/06x6jbxg570ccxc1s6cy65ipx74qv7yc-r-poolVIM-1.0.0.drv'.

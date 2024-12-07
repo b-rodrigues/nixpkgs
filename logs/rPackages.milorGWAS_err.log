@@ -1,0 +1,83 @@
+this derivation will be built:
+  /nix/store/gqvpivc11n388yi83r218f652k38qch2-r-milorGWAS-0.7.drv
+this path will be fetched (0.46 MiB download, 0.46 MiB unpacked):
+  /nix/store/76pd5qz5i0x3qqx8ri28ji37c95n6d8g-milorGWAS_0.7.tar.gz
+copying path '/nix/store/76pd5qz5i0x3qqx8ri28ji37c95n6d8g-milorGWAS_0.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gqvpivc11n388yi83r218f652k38qch2-r-milorGWAS-0.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/76pd5qz5i0x3qqx8ri28ji37c95n6d8g-milorGWAS_0.7.tar.gz
+source root is milorGWAS
+setting SOURCE_DATE_EPOCH to timestamp 1718957402 of file milorGWAS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘milorGWAS’ ...
+** package ‘milorGWAS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c chr_convert.cpp -o chr_convert.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dosage_files.cpp -o dosage_files.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c genotype_probas.cpp -o genotype_probas.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gwas_approx_pql_bed.cpp -o gwas_approx_pql_bed.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gwas_approx_pql_dosages.cpp -o gwas_approx_pql_dosages.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gwas_logit_offset_bed.cpp -o gwas_logit_offset_bed.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c gwas_logit_offset_dosages.cpp -o gwas_logit_offset_dosages.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c manhattan_thinning.cpp -o manhattan_thinning.o
+In file included from gwas_approx_pql_dosages.cpp:2:
+In file included from ../inst/include/milorGWAS/snp_filler_dosages.h:2:
+/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include/gaston/gzstream.h:36:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+In file included from dosage_files.cpp:6:
+In file included from ../inst/include/milorGWAS/dosage_files.h:4:
+/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include/gaston/gzstream.h:36:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+1 error generated.
+In file included from gwas_logit_offset_dosages.cpp:2:
+In file included from ../inst/include/milorGWAS/snp_filler_dosages.h:2:
+/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include/gaston/gzstream.h:36:10: fatal error: 'zlib.h' file not found
+#include <zlib.h>
+         ^~~~~~~~
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: dosage_files.o] Error 1
+make: *** Attente des tâches non terminées....
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: gwas_approx_pql_dosages.o] Error 1
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: gwas_logit_offset_dosages.o] Error 1
+ERROR: compilation failed for package ‘milorGWAS’
+* removing ‘/nix/store/2l610ca730dgvxw1y3b1ipkwrfcv4yml-r-milorGWAS-0.7/library/milorGWAS’
+error: builder for '/nix/store/gqvpivc11n388yi83r218f652k38qch2-r-milorGWAS-0.7.drv' failed with exit code 1;
+       last 25 log lines:
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I ../inst/include/milorGWAS/  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c manhattan_thinning.cpp -o manhattan_thinning.o
+       > In file included from gwas_approx_pql_dosages.cpp:2:
+       > In file included from ../inst/include/milorGWAS/snp_filler_dosages.h:2:
+       > /nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include/gaston/gzstream.h:36:10: fatal error: 'zlib.h' file not found
+       > #include <zlib.h>
+       >          ^~~~~~~~
+       > In file included from dosage_files.cpp:6:
+       > In file included from ../inst/include/milorGWAS/dosage_files.h:4:
+       > /nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include/gaston/gzstream.h:36:10: fatal error: 'zlib.h' file not found
+       > #include <zlib.h>
+       >          ^~~~~~~~
+       > 1 error generated.
+       > In file included from gwas_logit_offset_dosages.cpp:2:
+       > In file included from ../inst/include/milorGWAS/snp_filler_dosages.h:2:
+       > /nix/store/dagwil51da1mqm0nkhc619g6gk76v456-r-gaston-1.6/library/gaston/include/gaston/gzstream.h:36:10: fatal error: 'zlib.h' file not found
+       > #include <zlib.h>
+       >          ^~~~~~~~
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: dosage_files.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: gwas_approx_pql_dosages.o] Error 1
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: gwas_logit_offset_dosages.o] Error 1
+       > ERROR: compilation failed for package ‘milorGWAS’
+       > * removing ‘/nix/store/2l610ca730dgvxw1y3b1ipkwrfcv4yml-r-milorGWAS-0.7/library/milorGWAS’
+       For full logs, run 'nix log /nix/store/gqvpivc11n388yi83r218f652k38qch2-r-milorGWAS-0.7.drv'.

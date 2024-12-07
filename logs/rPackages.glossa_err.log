@@ -1,0 +1,73 @@
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:34:12:
+           33|
+           34|   strict = derivationStrict drvAttrs;
+             |            ^
+           35|
+
+       … while evaluating derivation 'r-glossa-1.0.0'
+         whose name attribute is located at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:336:7
+
+       … while evaluating attribute 'nativeBuildInputs' of derivation 'r-glossa-1.0.0'
+         at /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/stdenv/generic/make-derivation.nix:380:7:
+          379|       depsBuildBuild              = elemAt (elemAt dependencies 0) 0;
+          380|       nativeBuildInputs           = elemAt (elemAt dependencies 0) 1;
+             |       ^
+          381|       depsBuildTarget             = elemAt (elemAt dependencies 0) 2;
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Package ‘r-dbarts-0.9-28’ in /Users/macbruno/Documents/github_repos/nixpkgs/pkgs/development/r-modules/generic-builder.nix:56 is not available on the requested hostPlatform:
+         hostPlatform.config = "aarch64-apple-darwin"
+         package.meta.platforms = [
+           "x86_64-cygwin"
+           "x86_64-darwin"
+           "x86_64-freebsd"
+           "x86_64-genode"
+           "x86_64-solaris"
+           "x86_64-linux"
+           "x86_64-netbsd"
+           "x86_64-none"
+           "x86_64-openbsd"
+           "x86_64-redox"
+           "x86_64-windows"
+           "i686-cygwin"
+           "x86_64-cygwin"
+           "x86_64-darwin"
+           "i686-darwin"
+           "i686-freebsd"
+           "x86_64-freebsd"
+           "i686-genode"
+           "x86_64-genode"
+           "x86_64-solaris"
+           "i686-linux"
+           "x86_64-linux"
+           "i686-netbsd"
+           "x86_64-netbsd"
+           "i686-none"
+           "x86_64-none"
+           "i686-openbsd"
+           "x86_64-openbsd"
+           "x86_64-redox"
+           "x86_64-windows"
+           "i686-windows"
+         ]
+         package.meta.badPlatforms = [ ]
+       , refusing to evaluate.
+
+       a) To temporarily allow packages that are unsupported for this system, you can use an environment variable
+          for a single invocation of the nix tools.
+
+            $ export NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1
+
+          Note: When using `nix shell`, `nix build`, `nix develop`, etc with a flake,
+                then pass `--impure` in order to allow use of environment variables.
+
+       b) For `nixos-rebuild` you can set
+         { nixpkgs.config.allowUnsupportedSystem = true; }
+       in configuration.nix to override this.
+
+       c) For `nix-env`, `nix-build`, `nix-shell` or any other Nix command you can add
+         { allowUnsupportedSystem = true; }
+       to ~/.config/nixpkgs/config.nix.

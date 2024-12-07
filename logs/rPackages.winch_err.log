@@ -1,0 +1,55 @@
+this derivation will be built:
+  /nix/store/6y3wygc1xnsvidqqqww8isiskfvp8hl4-r-winch-0.1.1.drv
+this path will be fetched (0.65 MiB download, 0.65 MiB unpacked):
+  /nix/store/0m24nj1rjcvdw0xazi501b432azjxni5-winch_0.1.1.tar.gz
+copying path '/nix/store/0m24nj1rjcvdw0xazi501b432azjxni5-winch_0.1.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/6y3wygc1xnsvidqqqww8isiskfvp8hl4-r-winch-0.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/0m24nj1rjcvdw0xazi501b432azjxni5-winch_0.1.1.tar.gz
+source root is winch
+setting SOURCE_DATE_EPOCH to timestamp 1708338602 of file winch/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Updating Autotools / GNU config script to a newer upstream version: ./src/vendor/libbacktrace/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./src/vendor/libbacktrace/config.guess
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘winch’ ...
+files ‘src/vendor/libbacktrace/config.guess’, ‘src/vendor/libbacktrace/config.sub’ have the wrong MD5 checksums
+** using staged installation
+Contents of Makevars
+# Generated from Makevars.in, do not edit by hand
+PKG_CPPFLAGS = -Ilocal/include
+PKG_CFLAGS =  -DHAVE_LIBUNWIND 
+WINCH_LOCAL_LIBS = 
+PKG_LIBS = -lSystem ${WINCH_LOCAL_LIBS}
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilocal/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DHAVE_LIBUNWIND  -fPIC  -g -O2  -c call.c -o call.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilocal/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DHAVE_LIBUNWIND  -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilocal/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DHAVE_LIBUNWIND  -fPIC  -g -O2  -c stop.c -o stop.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilocal/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DHAVE_LIBUNWIND  -fPIC  -g -O2  -c trace_back.c -o trace_back.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilocal/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DHAVE_LIBUNWIND  -fPIC  -g -O2  -c trace_back_backtrace.c -o trace_back_backtrace.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -Ilocal/include  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DHAVE_LIBUNWIND  -fPIC  -g -O2  -c trace_back_unwind.c -o trace_back_unwind.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o winch.so call.o init.o stop.o trace_back.o trace_back_backtrace.o trace_back_unwind.o -lSystem -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pynnn4r50483ifc3k0qg5m87170c2ynv-r-winch-0.1.1/library/00LOCK-winch/00new/winch/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (winch)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-winch-0.1.1.drv-0/ in /nix/store/pynnn4r50483ifc3k0qg5m87170c2ynv-r-winch-0.1.1...
+patching script interpreter paths in /nix/store/pynnn4r50483ifc3k0qg5m87170c2ynv-r-winch-0.1.1
+rewriting symlink /nix/store/pynnn4r50483ifc3k0qg5m87170c2ynv-r-winch-0.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/pynnn4r50483ifc3k0qg5m87170c2ynv-r-winch-0.1.1

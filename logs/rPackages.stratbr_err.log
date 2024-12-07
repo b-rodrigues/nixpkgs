@@ -1,0 +1,73 @@
+these 2 derivations will be built:
+  /nix/store/ciclhlr7s3p053ay8rfwgbch5chzg6bf-r-stratification-2.2-7.drv
+  /nix/store/0g182990mqr38k88kbxfl6japalb8ish-r-stratbr-1.2.drv
+these 2 paths will be fetched (0.46 MiB download, 0.46 MiB unpacked):
+  /nix/store/4jdc46n8gqbcbdp3grw175zl4n0hkcns-stratbr_1.2.tar.gz
+  /nix/store/ds3dcifrvgmw63y7m3kyr2vb3n1a9wkc-stratification_2.2-7.tar.gz
+copying path '/nix/store/4jdc46n8gqbcbdp3grw175zl4n0hkcns-stratbr_1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ds3dcifrvgmw63y7m3kyr2vb3n1a9wkc-stratification_2.2-7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ciclhlr7s3p053ay8rfwgbch5chzg6bf-r-stratification-2.2-7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ds3dcifrvgmw63y7m3kyr2vb3n1a9wkc-stratification_2.2-7.tar.gz
+source root is stratification
+setting SOURCE_DATE_EPOCH to timestamp 1649278802 of file stratification/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘stratification’ ...
+** package ‘stratification’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Ccode.c -o Ccode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o stratification.so Ccode.o init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/cqi9hknpiqjya8jcissq9g0bi203ikv6-r-stratification-2.2-7/library/00LOCK-stratification/00new/stratification/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (stratification)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-stratification-2.2-7.drv-0/ in /nix/store/cqi9hknpiqjya8jcissq9g0bi203ikv6-r-stratification-2.2-7...
+patching script interpreter paths in /nix/store/cqi9hknpiqjya8jcissq9g0bi203ikv6-r-stratification-2.2-7
+building '/nix/store/0g182990mqr38k88kbxfl6japalb8ish-r-stratbr-1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/4jdc46n8gqbcbdp3grw175zl4n0hkcns-stratbr_1.2.tar.gz
+source root is stratbr
+setting SOURCE_DATE_EPOCH to timestamp 1495835099 of file stratbr/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘stratbr’ ...
+** package ‘stratbr’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (stratbr)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-stratbr-1.2.drv-0/ in /nix/store/3b8qnnfs7l7dyd6s5wibg1y403b4p25g-r-stratbr-1.2...
+patching script interpreter paths in /nix/store/3b8qnnfs7l7dyd6s5wibg1y403b4p25g-r-stratbr-1.2
+rewriting symlink /nix/store/3b8qnnfs7l7dyd6s5wibg1y403b4p25g-r-stratbr-1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/3b8qnnfs7l7dyd6s5wibg1y403b4p25g-r-stratbr-1.2

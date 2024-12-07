@@ -1,0 +1,90 @@
+these 4 derivations will be built:
+  /nix/store/31wi70ccxp4dhagb8xmsvnngp1fs6g2h-IsoCor_0.2.8.tar.gz.drv
+  /nix/store/wp28ma4s75a94qwfl9wwi20dw8ibxpxd-MALDIquant_1.22.3.tar.gz.drv
+  /nix/store/g9jk2jdykjr9rjq11mw5669db23djyyq-r-MALDIquant-1.22.3.drv
+  /nix/store/d04fxd0gyksdd1fgb3g3fxxdcvrk77gb-r-IsoCor-0.2.8.drv
+building '/nix/store/31wi70ccxp4dhagb8xmsvnngp1fs6g2h-IsoCor_0.2.8.tar.gz.drv'...
+building '/nix/store/wp28ma4s75a94qwfl9wwi20dw8ibxpxd-MALDIquant_1.22.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/IsoCor_0.2.8.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+trying https://cran.r-project.org/src/contrib/MALDIquant_1.22.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3578k  100 3578k    0     0  6202k      0 --:--:-- --:--:-- --:--:-- 6212k
+100 2440k  100 2440k    0     0  3691k      0 --:--:-- --:--:-- --:--:-- 3687k
+building '/nix/store/g9jk2jdykjr9rjq11mw5669db23djyyq-r-MALDIquant-1.22.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vmrk1mij2m53dlc0xjprqjyiwasgyb3d-MALDIquant_1.22.3.tar.gz
+source root is MALDIquant
+setting SOURCE_DATE_EPOCH to timestamp 1724108403 of file MALDIquant/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MALDIquant’ ...
+** package ‘MALDIquant’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c colMedians.c -o colMedians.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c localMaxima.c -o localMaxima.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lowerConvexHull.c -o lowerConvexHull.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c morphologicalFilters.c -o morphologicalFilters.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c snip.c -o snip.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MALDIquant.so colMedians.o init.o localMaxima.o lowerConvexHull.o morphologicalFilters.o snip.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yamd8fn1idsl3l1bgsswr8lsag0k3a3z-r-MALDIquant-1.22.3/library/00LOCK-MALDIquant/00new/MALDIquant/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Une nouvelle fonction générique est créée pour ‘approxfun’ du package ‘stats’ dans package ‘MALDIquant’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MALDIquant)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MALDIquant-1.22.3.drv-0/ in /nix/store/yamd8fn1idsl3l1bgsswr8lsag0k3a3z-r-MALDIquant-1.22.3...
+patching script interpreter paths in /nix/store/yamd8fn1idsl3l1bgsswr8lsag0k3a3z-r-MALDIquant-1.22.3
+building '/nix/store/d04fxd0gyksdd1fgb3g3fxxdcvrk77gb-r-IsoCor-0.2.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8qypvf60yc2ahrw0mhg7mdlkwl01gg7k-IsoCor_0.2.8.tar.gz
+source root is IsoCor
+setting SOURCE_DATE_EPOCH to timestamp 1725970203 of file IsoCor/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IsoCor’ ...
+** package ‘IsoCor’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IsoCor)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IsoCor-0.2.8.drv-0/ in /nix/store/mjl684hy4ifjzdw0bx5rs7h4c2b96672-r-IsoCor-0.2.8...
+patching script interpreter paths in /nix/store/mjl684hy4ifjzdw0bx5rs7h4c2b96672-r-IsoCor-0.2.8
+rewriting symlink /nix/store/mjl684hy4ifjzdw0bx5rs7h4c2b96672-r-IsoCor-0.2.8/nix-support/propagated-user-env-packages to be relative to /nix/store/mjl684hy4ifjzdw0bx5rs7h4c2b96672-r-IsoCor-0.2.8

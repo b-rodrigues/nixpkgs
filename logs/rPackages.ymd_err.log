@@ -1,0 +1,38 @@
+this derivation will be built:
+  /nix/store/7cl75bm5hx4g2bgqchk11jadhfnmdrb4-r-ymd-0.1.3.drv
+building '/nix/store/7cl75bm5hx4g2bgqchk11jadhfnmdrb4-r-ymd-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bw04k269rz4zldnhavcgy99v7q7siy13-ymd_0.1.3.tar.gz
+source root is ymd
+setting SOURCE_DATE_EPOCH to timestamp 1730871002 of file ymd/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ymd’ ...
+** package ‘ymd’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Error: rustc not found. Please install Rust using your system's package manager or from https://rustup.rs/
+ERROR: configuration failed for package ‘ymd’
+* removing ‘/nix/store/0kg1ak6h8bkfszwwk42wir4wn5k9nhnr-r-ymd-0.1.3/library/ymd’
+error: builder for '/nix/store/7cl75bm5hx4g2bgqchk11jadhfnmdrb4-r-ymd-0.1.3.drv' failed with exit code 1;
+       last 16 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/bw04k269rz4zldnhavcgy99v7q7siy13-ymd_0.1.3.tar.gz
+       > source root is ymd
+       > setting SOURCE_DATE_EPOCH to timestamp 1730871002 of file ymd/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘ymd’ ...
+       > ** package ‘ymd’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > Error: rustc not found. Please install Rust using your system's package manager or from https://rustup.rs/
+       > ERROR: configuration failed for package ‘ymd’
+       > * removing ‘/nix/store/0kg1ak6h8bkfszwwk42wir4wn5k9nhnr-r-ymd-0.1.3/library/ymd’
+       For full logs, run 'nix log /nix/store/7cl75bm5hx4g2bgqchk11jadhfnmdrb4-r-ymd-0.1.3.drv'.

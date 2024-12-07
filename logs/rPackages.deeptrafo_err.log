@@ -1,0 +1,54 @@
+this derivation will be built:
+  /nix/store/qrm2afdzhiqf23733yi0p30mwnf2divs-r-deeptrafo-0.1-1.drv
+building '/nix/store/qrm2afdzhiqf23733yi0p30mwnf2divs-r-deeptrafo-0.1-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/6law159c7vwhz1z3hjysr8080hwr9v1n-deeptrafo_0.1-1.tar.gz
+source root is deeptrafo
+setting SOURCE_DATE_EPOCH to timestamp 1669110602 of file deeptrafo/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘deeptrafo’ ...
+** package ‘deeptrafo’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Error in value[[3L]](cond) : 
+  The R function's signature must not contains esoteric Python-incompatible constructs. Detailed traceback: 
+Installation of Python not found, Python bindings not loaded.
+Please create a default virtual environment with `reticulate::virtualenv_create('r-reticulate')`.
+Erreur : impossible de charger le code R depuis le package ‘deeptrafo’
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘deeptrafo’
+* removing ‘/nix/store/qaysrbb6ml0scsidjn209lcwnwj1v37j-r-deeptrafo-0.1-1/library/deeptrafo’
+error: builder for '/nix/store/qrm2afdzhiqf23733yi0p30mwnf2divs-r-deeptrafo-0.1-1.drv' failed with exit code 1;
+       last 24 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/6law159c7vwhz1z3hjysr8080hwr9v1n-deeptrafo_0.1-1.tar.gz
+       > source root is deeptrafo
+       > setting SOURCE_DATE_EPOCH to timestamp 1669110602 of file deeptrafo/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘deeptrafo’ ...
+       > ** package ‘deeptrafo’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Error in value[[3L]](cond) :
+       >   The R function's signature must not contains esoteric Python-incompatible constructs. Detailed traceback:
+       > Installation of Python not found, Python bindings not loaded.
+       > Please create a default virtual environment with `reticulate::virtualenv_create('r-reticulate')`.
+       > Erreur : impossible de charger le code R depuis le package ‘deeptrafo’
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘deeptrafo’
+       > * removing ‘/nix/store/qaysrbb6ml0scsidjn209lcwnwj1v37j-r-deeptrafo-0.1-1/library/deeptrafo’
+       For full logs, run 'nix log /nix/store/qrm2afdzhiqf23733yi0p30mwnf2divs-r-deeptrafo-0.1-1.drv'.

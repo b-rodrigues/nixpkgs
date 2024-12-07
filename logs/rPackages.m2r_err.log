@@ -1,0 +1,43 @@
+this derivation will be built:
+  /nix/store/m7aarfi7xsjkcqr01gfh4fv03wv9qypb-r-m2r-1.0.2.drv
+this path will be fetched (0.39 MiB download, 0.39 MiB unpacked):
+  /nix/store/v4ysm0c846cv4nrvhxak0c7klc0yl8yh-m2r_1.0.2.tar.gz
+copying path '/nix/store/v4ysm0c846cv4nrvhxak0c7klc0yl8yh-m2r_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m7aarfi7xsjkcqr01gfh4fv03wv9qypb-r-m2r-1.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/v4ysm0c846cv4nrvhxak0c7klc0yl8yh-m2r_1.0.2.tar.gz
+source root is m2r
+setting SOURCE_DATE_EPOCH to timestamp 1590653407 of file m2r/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘m2r’ ...
+** package ‘m2r’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c algstat_parser.cpp -o algstat_parser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c m2_parser.cpp -o m2_parser.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o m2r.so RcppExports.o algstat_parser.o m2_parser.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/93xjp4s9lx93gzy8nhnwcfqxkscy5yl6-r-m2r-1.0.2/library/00LOCK-m2r/00new/m2r/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (m2r)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-m2r-1.0.2.drv-0/ in /nix/store/93xjp4s9lx93gzy8nhnwcfqxkscy5yl6-r-m2r-1.0.2...
+patching script interpreter paths in /nix/store/93xjp4s9lx93gzy8nhnwcfqxkscy5yl6-r-m2r-1.0.2
+rewriting symlink /nix/store/93xjp4s9lx93gzy8nhnwcfqxkscy5yl6-r-m2r-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/93xjp4s9lx93gzy8nhnwcfqxkscy5yl6-r-m2r-1.0.2

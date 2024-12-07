@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/x5zwpk8bhlnnfr9xbkp3sy19hrhhwvs6-r-RoughSets-1.3-8.drv
+this path will be fetched (0.22 MiB download, 0.22 MiB unpacked):
+  /nix/store/bdhwm7r0jcp3r40d6yk1bnbfhscvpji7-RoughSets_1.3-8.tar.gz
+copying path '/nix/store/bdhwm7r0jcp3r40d6yk1bnbfhscvpji7-RoughSets_1.3-8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/x5zwpk8bhlnnfr9xbkp3sy19hrhhwvs6-r-RoughSets-1.3-8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bdhwm7r0jcp3r40d6yk1bnbfhscvpji7-RoughSets_1.3-8.tar.gz
+source root is RoughSets
+setting SOURCE_DATE_EPOCH to timestamp 1706004767 of file RoughSets/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RoughSets’ ...
+** package ‘RoughSets’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RoughSets_init.cpp -o RoughSets_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c discretization.cc -o discretization.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c indiscernibility.cpp -o indiscernibility.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RoughSets.so RcppExports.o RoughSets_init.o discretization.o indiscernibility.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/kj4m234cxpi1q824zzzf8ndw6k03ygmp-r-RoughSets-1.3-8/library/00LOCK-RoughSets/00new/RoughSets/libs
+** R
+** data
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RoughSets)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RoughSets-1.3-8.drv-0/ in /nix/store/kj4m234cxpi1q824zzzf8ndw6k03ygmp-r-RoughSets-1.3-8...
+patching script interpreter paths in /nix/store/kj4m234cxpi1q824zzzf8ndw6k03ygmp-r-RoughSets-1.3-8
+rewriting symlink /nix/store/kj4m234cxpi1q824zzzf8ndw6k03ygmp-r-RoughSets-1.3-8/nix-support/propagated-user-env-packages to be relative to /nix/store/kj4m234cxpi1q824zzzf8ndw6k03ygmp-r-RoughSets-1.3-8

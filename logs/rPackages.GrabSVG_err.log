@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/h28jarpv23dc51kyip2wn5xs9zqa8kdq-r-GrabSVG-0.0.2.drv
+building '/nix/store/h28jarpv23dc51kyip2wn5xs9zqa8kdq-r-GrabSVG-0.0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/s25fl4v0xc1s7kdjfs72rrgg6257cnyn-GrabSVG_0.0.2.tar.gz
+source root is GrabSVG
+setting SOURCE_DATE_EPOCH to timestamp 1701856814 of file GrabSVG/inst/doc/manual.pdf
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘GrabSVG’
+* removing ‘/nix/store/94sqyi8ghwax5shh2y13dxspcz311ab0-r-GrabSVG-0.0.2/library/GrabSVG’
+error: builder for '/nix/store/h28jarpv23dc51kyip2wn5xs9zqa8kdq-r-GrabSVG-0.0.2.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/s25fl4v0xc1s7kdjfs72rrgg6257cnyn-GrabSVG_0.0.2.tar.gz
+       > source root is GrabSVG
+       > setting SOURCE_DATE_EPOCH to timestamp 1701856814 of file GrabSVG/inst/doc/manual.pdf
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘sparseMatrixStats’ is not available for package ‘GrabSVG’
+       > * removing ‘/nix/store/94sqyi8ghwax5shh2y13dxspcz311ab0-r-GrabSVG-0.0.2/library/GrabSVG’
+       For full logs, run 'nix log /nix/store/h28jarpv23dc51kyip2wn5xs9zqa8kdq-r-GrabSVG-0.0.2.drv'.

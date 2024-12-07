@@ -1,0 +1,94 @@
+these 3 derivations will be built:
+  /nix/store/0zn59jnrgkbm7b32yln1l8160d4rj1sy-r-RRNA-1.2.drv
+  /nix/store/fg2ysg0ywnvpc4wbmfd56d3z8kvh8ixf-r-TopDom-0.10.1.drv
+  /nix/store/7dnhdizybxwswcldjix1x2b3hf5qf4mi-r-rnaCrosslinkOO-0.1.4.drv
+these 3 paths will be fetched (5.79 MiB download, 5.79 MiB unpacked):
+  /nix/store/rkcqmmjxkxmlamay9n6c0mqsksr1hp9n-RRNA_1.2.tar.gz
+  /nix/store/si1fwknjj6nk7xc71qmpk7mmjhzvd5jq-TopDom_0.10.1.tar.gz
+  /nix/store/bcd7i253gihsik2ixmz0y3fa1jxq588g-rnaCrosslinkOO_0.1.4.tar.gz
+copying path '/nix/store/bcd7i253gihsik2ixmz0y3fa1jxq588g-rnaCrosslinkOO_0.1.4.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/rkcqmmjxkxmlamay9n6c0mqsksr1hp9n-RRNA_1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/si1fwknjj6nk7xc71qmpk7mmjhzvd5jq-TopDom_0.10.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0zn59jnrgkbm7b32yln1l8160d4rj1sy-r-RRNA-1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rkcqmmjxkxmlamay9n6c0mqsksr1hp9n-RRNA_1.2.tar.gz
+source root is RRNA
+setting SOURCE_DATE_EPOCH to timestamp 1720606802 of file RRNA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RRNA’ ...
+** package ‘RRNA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+building '/nix/store/fg2ysg0ywnvpc4wbmfd56d3z8kvh8ixf-r-TopDom-0.10.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/si1fwknjj6nk7xc71qmpk7mmjhzvd5jq-TopDom_0.10.1.tar.gz
+source root is TopDom
+setting SOURCE_DATE_EPOCH to timestamp 1620286803 of file TopDom/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+** help
+Running phase: buildPhase
+Running phase: checkPhase
+*** installing help indices
+Running phase: installPhase
+** building package indices
+** testing if installed package can be loaded from temporary location
+* installing *source* package ‘TopDom’ ...
+** package ‘TopDom’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RRNA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RRNA-1.2.drv-0/ in /nix/store/fv1zqd7ph0kiavbr40rxlaym71a6nbw1-r-RRNA-1.2...
+patching script interpreter paths in /nix/store/fv1zqd7ph0kiavbr40rxlaym71a6nbw1-r-RRNA-1.2
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TopDom)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TopDom-0.10.1.drv-0/ in /nix/store/qr4fcazgwsv3hb7jy06i10cwjg5r5dqm-r-TopDom-0.10.1...
+patching script interpreter paths in /nix/store/qr4fcazgwsv3hb7jy06i10cwjg5r5dqm-r-TopDom-0.10.1
+rewriting symlink /nix/store/qr4fcazgwsv3hb7jy06i10cwjg5r5dqm-r-TopDom-0.10.1/nix-support/propagated-user-env-packages to be relative to /nix/store/qr4fcazgwsv3hb7jy06i10cwjg5r5dqm-r-TopDom-0.10.1
+building '/nix/store/7dnhdizybxwswcldjix1x2b3hf5qf4mi-r-rnaCrosslinkOO-0.1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bcd7i253gihsik2ixmz0y3fa1jxq588g-rnaCrosslinkOO_0.1.4.tar.gz
+source root is rnaCrosslinkOO
+setting SOURCE_DATE_EPOCH to timestamp 1720654802 of file rnaCrosslinkOO/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘R4RNA’ is not available for package ‘rnaCrosslinkOO’
+* removing ‘/nix/store/pckghyyvcsdzidjblbhqr401p8939krn-r-rnaCrosslinkOO-0.1.4/library/rnaCrosslinkOO’
+error: builder for '/nix/store/7dnhdizybxwswcldjix1x2b3hf5qf4mi-r-rnaCrosslinkOO-0.1.4.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/bcd7i253gihsik2ixmz0y3fa1jxq588g-rnaCrosslinkOO_0.1.4.tar.gz
+       > source root is rnaCrosslinkOO
+       > setting SOURCE_DATE_EPOCH to timestamp 1720654802 of file rnaCrosslinkOO/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘R4RNA’ is not available for package ‘rnaCrosslinkOO’
+       > * removing ‘/nix/store/pckghyyvcsdzidjblbhqr401p8939krn-r-rnaCrosslinkOO-0.1.4/library/rnaCrosslinkOO’
+       For full logs, run 'nix log /nix/store/7dnhdizybxwswcldjix1x2b3hf5qf4mi-r-rnaCrosslinkOO-0.1.4.drv'.

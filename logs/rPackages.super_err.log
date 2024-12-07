@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/ixhrfk74ha3h07whqzwmdsgh4qn8zzd9-super_0.0.3.tar.gz.drv
+  /nix/store/1qw3d1fz3685kyfhrdkkxp4df0qqzd1z-r-super-0.0.3.drv
+building '/nix/store/ixhrfk74ha3h07whqzwmdsgh4qn8zzd9-super_0.0.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/super_0.0.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 20973  100 20973    0     0   174k      0 --:--:-- --:--:-- --:--:--  176k
+building '/nix/store/1qw3d1fz3685kyfhrdkkxp4df0qqzd1z-r-super-0.0.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lrdb19wz4wn5272pzni3d445bji4ly73-super_0.0.3.tar.gz
+source root is super
+setting SOURCE_DATE_EPOCH to timestamp 1732266006 of file super/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘super’ ...
+** package ‘super’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c glue.c -o glue.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c trim.c -o trim.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o super.so glue.o init.o trim.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/87sj1y4qqn8xvzqb2s906h836j41r24q-r-super-0.0.3/library/00LOCK-super/00new/super/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (super)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-super-0.0.3.drv-0/ in /nix/store/87sj1y4qqn8xvzqb2s906h836j41r24q-r-super-0.0.3...
+patching script interpreter paths in /nix/store/87sj1y4qqn8xvzqb2s906h836j41r24q-r-super-0.0.3

@@ -1,0 +1,55 @@
+this derivation will be built:
+  /nix/store/pz192p8vrrwj9213147dyhkjp0cfxqj1-r-RARtrials-0.0.1.drv
+this path will be fetched (0.40 MiB download, 0.40 MiB unpacked):
+  /nix/store/bf2mfcx9p22af87jnpvx7rkvqr2mdph0-RARtrials_0.0.1.tar.gz
+copying path '/nix/store/bf2mfcx9p22af87jnpvx7rkvqr2mdph0-RARtrials_0.0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/pz192p8vrrwj9213147dyhkjp0cfxqj1-r-RARtrials-0.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/bf2mfcx9p22af87jnpvx7rkvqr2mdph0-RARtrials_0.0.1.tar.gz
+source root is RARtrials
+setting SOURCE_DATE_EPOCH to timestamp 1717494297 of file RARtrials/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RARtrials’ ...
+** package ‘RARtrials’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Erreur : le chargement du package ou de l'espace de noms a échoué pour ‘pins’ :
+.onLoad a échoué dans loadNamespace() pour 'pins', détails :
+  appel : NULL
+  erreur : [EROFS] Failed to make directory '/homeless-shelter': read-only file system
+Exécution arrêtée
+ERROR: lazy loading failed for package ‘RARtrials’
+* removing ‘/nix/store/vl2s6jckbwfs58dlk2zrr82l2b4877js-r-RARtrials-0.0.1/library/RARtrials’
+error: builder for '/nix/store/pz192p8vrrwj9213147dyhkjp0cfxqj1-r-RARtrials-0.0.1.drv' failed with exit code 1;
+       last 23 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/bf2mfcx9p22af87jnpvx7rkvqr2mdph0-RARtrials_0.0.1.tar.gz
+       > source root is RARtrials
+       > setting SOURCE_DATE_EPOCH to timestamp 1717494297 of file RARtrials/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘RARtrials’ ...
+       > ** package ‘RARtrials’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > Erreur : le chargement du package ou de l'espace de noms a échoué pour ‘pins’ :
+       > .onLoad a échoué dans loadNamespace() pour 'pins', détails :
+       >   appel : NULL
+       >   erreur : [EROFS] Failed to make directory '/homeless-shelter': read-only file system
+       > Exécution arrêtée
+       > ERROR: lazy loading failed for package ‘RARtrials’
+       > * removing ‘/nix/store/vl2s6jckbwfs58dlk2zrr82l2b4877js-r-RARtrials-0.0.1/library/RARtrials’
+       For full logs, run 'nix log /nix/store/pz192p8vrrwj9213147dyhkjp0cfxqj1-r-RARtrials-0.0.1.drv'.

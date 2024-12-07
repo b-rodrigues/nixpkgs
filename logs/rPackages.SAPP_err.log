@@ -1,0 +1,108 @@
+this derivation will be built:
+  /nix/store/8f47nj11l9bl1kg1wswqm9lga8pnkc10-r-SAPP-1.0.9-1.drv
+this path will be fetched (0.27 MiB download, 0.27 MiB unpacked):
+  /nix/store/yqv7zlkhpr8wb0x9d8ssyds9p9b5l70p-SAPP_1.0.9-1.tar.gz
+copying path '/nix/store/yqv7zlkhpr8wb0x9d8ssyds9p9b5l70p-SAPP_1.0.9-1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/8f47nj11l9bl1kg1wswqm9lga8pnkc10-r-SAPP-1.0.9-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/yqv7zlkhpr8wb0x9d8ssyds9p9b5l70p-SAPP_1.0.9-1.tar.gz
+source root is SAPP
+setting SOURCE_DATE_EPOCH to timestamp 1685677802 of file SAPP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SAPP’ ...
+** package ‘SAPP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c aftpoi.f -o aftpoi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c comsub.f -o comsub.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c eptrenf.f -o eptrenf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c etas.f -o etas.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c etasimf.f -o etasimf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c linlinf.f -o linlinf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c linsimf.f -o linsimf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c pgraphf.f -o pgraphf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c ptspecf.f -o ptspecf.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c raftpoi.f -o raftpoi.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c retas.f -o retas.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c simbvhf.f -o simbvhf.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SAPP.so aftpoi.o comsub.o eptrenf.o etas.o etasimf.o init.o linlinf.o linsimf.o pgraphf.o ptspecf.o raftpoi.o retas.o simbvhf.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _func5_: does not use standard frame
+ld: warning: could not create compact unwind for _func9_: does not use standard frame
+ld: warning: could not create compact unwind for _cycle_: does not use standard frame
+ld: warning: could not create compact unwind for _func6_: does not use standard frame
+ld: warning: could not create compact unwind for _func10_: does not use standard frame
+ld: warning: could not create compact unwind for _sizes_: does not use standard frame
+ld: warning: could not create compact unwind for _func4_: does not use standard frame
+ld: warning: could not create compact unwind for _vtc_: does not use standard frame
+ld: warning: could not create compact unwind for _fisher_: does not use standard frame
+ld: warning: could not create compact unwind for _linear6_: does not use standard frame
+ld: warning: could not create compact unwind for _fx_: does not use standard frameld: warning: 
+could not create compact unwind for _cyclfn_: does not use standard frameld: warning: 
+ld: warning: could not create compact unwind for _printr_: does not use standard frameld: warning: could not create compact unwind for _duf_: does not use standard frame
+could not create compact unwind for _errbr2_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _func91_: does not use standard frame
+ld: warning: could not create compact unwind for _linear9_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _davidn6_: does not use standard framecould not create compact unwind for _pseudo_: does not use standard frameld: warning: 
+
+ld: warning: ld: warning: 
+ld: warning: could not create compact unwind for _dav6_: does not use standard frame
+could not create compact unwind for _funct_: does not use standard frameld: warning: could not create compact unwind for _simxx_: does not use standard frame
+could not create compact unwind for _etasimf_: does not use standard frame
+ld: warning: could not create compact unwind for _momorif_: does not use standard framecould not create compact unwind for _davidn9_: does not use standard frame
+
+ld: warning: could not create compact unwind for _finout_: does not use standard frame
+could not create compact unwind for _surviv_: does not use standard frameld: warning: could not create compact unwind for _funct2_: does not use standard frame
+ld: warning: could not create compact unwind for _funct1_: does not use standard frame
+ld: warning: could not create compact unwind for _presidual_: does not use standard frame
+
+ld: warning: could not create compact unwind for _respoif_: does not use standard frameld: warning: 
+could not create compact unwind for _fxs_: does not use standard frame
+
+ld: warning: could not create compact unwind for _linsimf_: does not use standard frame
+ld: warning: could not create compact unwind for _linear1_: does not use standard frame
+ld: warning: could not create compact unwind for _count1_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _pgraphf_: does not use standard frame
+could not create compact unwind for _period_: does not use standard frame
+ld: warning: could not create compact unwind for _ptspecf_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _davidn1_: does not use standard framecould not create compact unwind for _dufs_: does not use standard frame
+ld: warning: could not create compact unwind for _eresidual_: does not use standard frame
+
+ld: warning: ld: warning: could not create compact unwind for _linear_: does not use standard frame
+ld: warning: could not create compact unwind for _davidn_: does not use standard frame
+ld: warning: could not create compact unwind for _dav_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _linlinf_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _reduc2_: does not use standard framecould not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+could not create compact unwind for _simda_: does not use standard frame
+ld: warning: could not create compact unwind for _simbvhf_: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _reduc1_: does not use standard frame
+ld: warning: could not create compact unwind for _eptrenf_: does not use standard frame
+installing to /nix/store/3rkis08r8537l0ks6jx1ij0n357hsc3w-r-SAPP-1.0.9-1/library/00LOCK-SAPP/00new/SAPP/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SAPP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SAPP-1.0.9-1.drv-0/ in /nix/store/3rkis08r8537l0ks6jx1ij0n357hsc3w-r-SAPP-1.0.9-1...
+patching script interpreter paths in /nix/store/3rkis08r8537l0ks6jx1ij0n357hsc3w-r-SAPP-1.0.9-1

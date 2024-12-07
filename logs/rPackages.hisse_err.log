@@ -1,0 +1,121 @@
+these 3 derivations will be built:
+  /nix/store/2gsxh2y4v265c36xv5y9jfl50hm44z7l-r-paleotree-3.4.7.drv
+  /nix/store/4cwd2bz77nyjmxq9sxpgrsxmg58yb7vy-r-TreeSim-2.4.drv
+  /nix/store/hpgj2z8q7i2xzfb7gl8ir8bcy8p5pcki-r-hisse-2.1.11.drv
+these 2 paths will be fetched (3.13 MiB download, 3.15 MiB unpacked):
+  /nix/store/qj3ahn7fx7ihzarx598rskdb6fn4ddy8-hisse_2.1.11.tar.gz
+  /nix/store/dh3r78nncq87872zalqp5kzbb92brii4-paleotree_3.4.7.tar.gz
+copying path '/nix/store/qj3ahn7fx7ihzarx598rskdb6fn4ddy8-hisse_2.1.11.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/dh3r78nncq87872zalqp5kzbb92brii4-paleotree_3.4.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/4cwd2bz77nyjmxq9sxpgrsxmg58yb7vy-r-TreeSim-2.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9cw1xf6p23q8y333990yhixc5m5x2n6s-TreeSim_2.4.tar.gz
+source root is TreeSim
+setting SOURCE_DATE_EPOCH to timestamp 1554742376 of file TreeSim/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+building '/nix/store/2gsxh2y4v265c36xv5y9jfl50hm44z7l-r-paleotree-3.4.7.drv'...
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TreeSim’ ...
+** package ‘TreeSim’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+Running phase: unpackPhase
+unpacking source archive /nix/store/dh3r78nncq87872zalqp5kzbb92brii4-paleotree_3.4.7.tar.gz
+source root is paleotree
+setting SOURCE_DATE_EPOCH to timestamp 1720297202 of file paleotree/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘paleotree’ ...
+** package ‘paleotree’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TreeSim)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-TreeSim-2.4.drv-0/ in /nix/store/vc191m5zy4nlnwcjwmv4cdb4mygzs9kg-r-TreeSim-2.4...
+patching script interpreter paths in /nix/store/vc191m5zy4nlnwcjwmv4cdb4mygzs9kg-r-TreeSim-2.4
+rewriting symlink /nix/store/vc191m5zy4nlnwcjwmv4cdb4mygzs9kg-r-TreeSim-2.4/nix-support/propagated-user-env-packages to be relative to /nix/store/vc191m5zy4nlnwcjwmv4cdb4mygzs9kg-r-TreeSim-2.4
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (paleotree)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-paleotree-3.4.7.drv-0/ in /nix/store/jarmsx304y6ci9fl3v6b2m8zspmgwqlp-r-paleotree-3.4.7...
+patching script interpreter paths in /nix/store/jarmsx304y6ci9fl3v6b2m8zspmgwqlp-r-paleotree-3.4.7
+rewriting symlink /nix/store/jarmsx304y6ci9fl3v6b2m8zspmgwqlp-r-paleotree-3.4.7/nix-support/propagated-user-env-packages to be relative to /nix/store/jarmsx304y6ci9fl3v6b2m8zspmgwqlp-r-paleotree-3.4.7
+building '/nix/store/hpgj2z8q7i2xzfb7gl8ir8bcy8p5pcki-r-hisse-2.1.11.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qj3ahn7fx7ihzarx598rskdb6fn4ddy8-hisse_2.1.11.tar.gz
+source root is hisse
+setting SOURCE_DATE_EPOCH to timestamp 1676110215 of file hisse/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hisse’ ...
+** package ‘hisse’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c bisse-ext-derivs.c -o bisse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c canonical-musse-ext-derivs.c -o canonical-musse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c canonical_geosse-ext-derivs.c -o canonical_geosse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fbisse-ext-derivs.c -o fbisse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fcanonical_geosse-ext-derivs.c -o fcanonical_geosse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fgeohisse-ext-derivs.c -o fgeohisse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fhisse-ext-derivs.c -o fhisse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fnotclasse-ext-derivs.c -o fnotclasse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fnotclasse-more-ext-derivs.c -o fnotclasse-more-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c geohisse-ext-derivs.c -o geohisse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c hisse-ext-derivs.c -o hisse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c hissenull-ext-derivs.c -o hissenull-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c misse-ext-derivs.c -o misse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c muhisse-ext-derivs.c -o muhisse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c notclasse-ext-derivs.c -o notclasse-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c notclasse-more-ext-derivs.c -o notclasse-more-ext-derivs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o hisse.so bisse-ext-derivs.o canonical-musse-ext-derivs.o canonical_geosse-ext-derivs.o fbisse-ext-derivs.o fcanonical_geosse-ext-derivs.o fgeohisse-ext-derivs.o fhisse-ext-derivs.o fnotclasse-ext-derivs.o fnotclasse-more-ext-derivs.o geohisse-ext-derivs.o hisse-ext-derivs.o hissenull-ext-derivs.o misse-ext-derivs.o muhisse-ext-derivs.o notclasse-ext-derivs.o notclasse-more-ext-derivs.o registerDynamicSymbol.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/f5rzrsclqr0hlwcl2fxfph38q7idrm8q-r-hisse-2.1.11/library/00LOCK-hisse/00new/hisse/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hisse)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hisse-2.1.11.drv-0/ in /nix/store/f5rzrsclqr0hlwcl2fxfph38q7idrm8q-r-hisse-2.1.11...
+patching script interpreter paths in /nix/store/f5rzrsclqr0hlwcl2fxfph38q7idrm8q-r-hisse-2.1.11
+rewriting symlink /nix/store/f5rzrsclqr0hlwcl2fxfph38q7idrm8q-r-hisse-2.1.11/nix-support/propagated-user-env-packages to be relative to /nix/store/f5rzrsclqr0hlwcl2fxfph38q7idrm8q-r-hisse-2.1.11

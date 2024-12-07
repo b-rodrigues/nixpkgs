@@ -1,0 +1,74 @@
+these 2 derivations will be built:
+  /nix/store/16x97rqkrb42qn8z560a4ksvwr9055az-r-ShiftConvolvePoibin-1.0.0.drv
+  /nix/store/kb3zrbvlaxpyd7w2xrv5s3gmsv98lj4k-r-Rediscover-0.3.2.drv
+these 2 paths will be fetched (3.18 MiB download, 3.18 MiB unpacked):
+  /nix/store/v8fwzp7vdi0jzy034nmx1kyayps6w7na-Rediscover_0.3.2.tar.gz
+  /nix/store/3lxr4wpw6q2zmy113wmgn3234v4nd4bk-ShiftConvolvePoibin_1.0.0.tar.gz
+copying path '/nix/store/v8fwzp7vdi0jzy034nmx1kyayps6w7na-Rediscover_0.3.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/3lxr4wpw6q2zmy113wmgn3234v4nd4bk-ShiftConvolvePoibin_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/16x97rqkrb42qn8z560a4ksvwr9055az-r-ShiftConvolvePoibin-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3lxr4wpw6q2zmy113wmgn3234v4nd4bk-ShiftConvolvePoibin_1.0.0.tar.gz
+source root is ShiftConvolvePoibin
+setting SOURCE_DATE_EPOCH to timestamp 1588600802 of file ShiftConvolvePoibin/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘ShiftConvolvePoibin’ ...
+** package ‘ShiftConvolvePoibin’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dcpaired.c -o dcpaired.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dcpaired_log.c -o dcpaired_log.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c fftconv_min.c -o fftconv_min.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c logsum.c -o logsum.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c minfft.c -o minfft.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ShiftConvolvePoibin.so dcpaired.o dcpaired_log.o fftconv_min.o init.o logsum.o minfft.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9m7c9svb0wwj6pgsdzprknshfai34lx9-r-ShiftConvolvePoibin-1.0.0/library/00LOCK-ShiftConvolvePoibin/00new/ShiftConvolvePoibin/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ShiftConvolvePoibin)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ShiftConvolvePoibin-1.0.0.drv-0/ in /nix/store/9m7c9svb0wwj6pgsdzprknshfai34lx9-r-ShiftConvolvePoibin-1.0.0...
+patching script interpreter paths in /nix/store/9m7c9svb0wwj6pgsdzprknshfai34lx9-r-ShiftConvolvePoibin-1.0.0
+building '/nix/store/kb3zrbvlaxpyd7w2xrv5s3gmsv98lj4k-r-Rediscover-0.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/v8fwzp7vdi0jzy034nmx1kyayps6w7na-Rediscover_0.3.2.tar.gz
+source root is Rediscover
+setting SOURCE_DATE_EPOCH to timestamp 1681474206 of file Rediscover/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘maftools’ is not available for package ‘Rediscover’
+* removing ‘/nix/store/n18wyc2cxmcqkisv6k974wx307q104np-r-Rediscover-0.3.2/library/Rediscover’
+error: builder for '/nix/store/kb3zrbvlaxpyd7w2xrv5s3gmsv98lj4k-r-Rediscover-0.3.2.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/v8fwzp7vdi0jzy034nmx1kyayps6w7na-Rediscover_0.3.2.tar.gz
+       > source root is Rediscover
+       > setting SOURCE_DATE_EPOCH to timestamp 1681474206 of file Rediscover/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘maftools’ is not available for package ‘Rediscover’
+       > * removing ‘/nix/store/n18wyc2cxmcqkisv6k974wx307q104np-r-Rediscover-0.3.2/library/Rediscover’
+       For full logs, run 'nix log /nix/store/kb3zrbvlaxpyd7w2xrv5s3gmsv98lj4k-r-Rediscover-0.3.2.drv'.

@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/0cd0bs536ja33p72n0zgnxd6r5igs85b-r-missSOM-1.0.1.drv
+this path will be fetched (0.24 MiB download, 0.24 MiB unpacked):
+  /nix/store/8zf1lmdb7x0yk1dwl14p67jahzv7789y-missSOM_1.0.1.tar.gz
+copying path '/nix/store/8zf1lmdb7x0yk1dwl14p67jahzv7789y-missSOM_1.0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0cd0bs536ja33p72n0zgnxd6r5igs85b-r-missSOM-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8zf1lmdb7x0yk1dwl14p67jahzv7789y-missSOM_1.0.1.tar.gz
+source root is missSOM
+setting SOURCE_DATE_EPOCH to timestamp 1651731606 of file missSOM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘missSOM’ ...
+** package ‘missSOM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c distance-functions.cpp -o distance-functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c imputeSOM.cpp -o imputeSOM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c map.cpp -o map.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c neighbourhood-functions.cpp -o neighbourhood-functions.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o missSOM.so RcppExports.o distance-functions.o imputeSOM.o map.o neighbourhood-functions.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/y7yashaw4gz6zyaim6z8ljcrp4x4bcvp-r-missSOM-1.0.1/library/00LOCK-missSOM/00new/missSOM/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (missSOM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-missSOM-1.0.1.drv-0/ in /nix/store/y7yashaw4gz6zyaim6z8ljcrp4x4bcvp-r-missSOM-1.0.1...
+patching script interpreter paths in /nix/store/y7yashaw4gz6zyaim6z8ljcrp4x4bcvp-r-missSOM-1.0.1
+rewriting symlink /nix/store/y7yashaw4gz6zyaim6z8ljcrp4x4bcvp-r-missSOM-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/y7yashaw4gz6zyaim6z8ljcrp4x4bcvp-r-missSOM-1.0.1

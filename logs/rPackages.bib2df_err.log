@@ -1,0 +1,72 @@
+these 2 derivations will be built:
+  /nix/store/kg9q2y8x9h5zyrc5s35mdmc5gmhg9pp0-r-humaniformat-0.6.0.drv
+  /nix/store/4qh6n9v01gwf3lffykiwm2j27ahwr0mr-r-bib2df-1.1.2.0.drv
+building '/nix/store/kg9q2y8x9h5zyrc5s35mdmc5gmhg9pp0-r-humaniformat-0.6.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/z3lyhgm61wi2m07y70lbvzzdgdwj980z-humaniformat_0.6.0.tar.gz
+source root is humaniformat
+setting SOURCE_DATE_EPOCH to timestamp 1461532503 of file humaniformat/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘humaniformat’ ...
+** package ‘humaniformat’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c human_format.cpp -o human_format.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c human_getset.cpp -o human_getset.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c human_parse.cpp -o human_parse.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c humaniformat.cpp -o humaniformat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o humaniformat.so RcppExports.o human_format.o human_getset.o human_parse.o humaniformat.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zfcrwfhfrbagsxkmx7p88qxnsb671bg5-r-humaniformat-0.6.0/library/00LOCK-humaniformat/00new/humaniformat/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (humaniformat)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-humaniformat-0.6.0.drv-0/ in /nix/store/zfcrwfhfrbagsxkmx7p88qxnsb671bg5-r-humaniformat-0.6.0...
+patching script interpreter paths in /nix/store/zfcrwfhfrbagsxkmx7p88qxnsb671bg5-r-humaniformat-0.6.0
+rewriting symlink /nix/store/zfcrwfhfrbagsxkmx7p88qxnsb671bg5-r-humaniformat-0.6.0/nix-support/propagated-user-env-packages to be relative to /nix/store/zfcrwfhfrbagsxkmx7p88qxnsb671bg5-r-humaniformat-0.6.0
+building '/nix/store/4qh6n9v01gwf3lffykiwm2j27ahwr0mr-r-bib2df-1.1.2.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qnx1r8cd80hgxbpr4zvyf3ym3mim7s9k-bib2df_1.1.2.0.tar.gz
+source root is bib2df
+setting SOURCE_DATE_EPOCH to timestamp 1715900411 of file bib2df/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘bib2df’ ...
+** package ‘bib2df’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bib2df)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-bib2df-1.1.2.0.drv-0/ in /nix/store/b2bg7yh0sq47v2majkbqp3d3wndgkrn5-r-bib2df-1.1.2.0...
+patching script interpreter paths in /nix/store/b2bg7yh0sq47v2majkbqp3d3wndgkrn5-r-bib2df-1.1.2.0
+rewriting symlink /nix/store/b2bg7yh0sq47v2majkbqp3d3wndgkrn5-r-bib2df-1.1.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/b2bg7yh0sq47v2majkbqp3d3wndgkrn5-r-bib2df-1.1.2.0

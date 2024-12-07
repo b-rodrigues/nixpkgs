@@ -1,0 +1,117 @@
+these 4 derivations will be built:
+  /nix/store/ga4jszkph0qx6m7fpw576aqz4l4ma9pz-robotstxt_0.7.15.tar.gz.drv
+  /nix/store/rsh3bsnijawk3xamb5ml9vlrx595y2mf-r-spiderbar-0.2.5.drv
+  /nix/store/lmml5fj8sab1jxpvrpdw0nkpqrqkphsy-r-robotstxt-0.7.15.drv
+  /nix/store/vmi0hzvb6a1als6qivd18hrjd8isbgz3-r-polite-0.1.3.drv
+these 2 paths will be fetched (0.08 MiB download, 0.08 MiB unpacked):
+  /nix/store/issizbn5057p85bi6lnc478386wlwrfh-polite_0.1.3.tar.gz
+  /nix/store/hwglanrpfy9fh8vd5mck9krbkj48wlv0-spiderbar_0.2.5.tar.gz
+copying path '/nix/store/issizbn5057p85bi6lnc478386wlwrfh-polite_0.1.3.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/hwglanrpfy9fh8vd5mck9krbkj48wlv0-spiderbar_0.2.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/ga4jszkph0qx6m7fpw576aqz4l4ma9pz-robotstxt_0.7.15.tar.gz.drv'...
+building '/nix/store/rsh3bsnijawk3xamb5ml9vlrx595y2mf-r-spiderbar-0.2.5.drv'...
+
+trying https://cran.r-project.org/src/contrib/robotstxt_0.7.15.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/hwglanrpfy9fh8vd5mck9krbkj48wlv0-spiderbar_0.2.5.tar.gz
+source root is spiderbar
+setting SOURCE_DATE_EPOCH to timestamp 1676110802 of file spiderbar/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+100  130k  100  130k    0     0   802k      0 --:--:-- --:--:-- --:--:--  806k
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spiderbar’ ...
+** package ‘spiderbar’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c agent.cpp -o agent.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c directive.cpp -o directive.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c psl.cpp -o psl.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c punycode.cpp -o punycode.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c repmain.cpp -o repmain.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c robots.cpp -o robots.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c url.cpp -o url.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c utf8.cpp -o utf8.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spiderbar.so RcppExports.o agent.o directive.o psl.o punycode.o repmain.o robots.o url.o utf8.o -L. -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/w3dbrw95fvhq7s80jkvwk741q5yfk9wk-r-spiderbar-0.2.5/library/00LOCK-spiderbar/00new/spiderbar/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spiderbar)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spiderbar-0.2.5.drv-0/ in /nix/store/w3dbrw95fvhq7s80jkvwk741q5yfk9wk-r-spiderbar-0.2.5...
+patching script interpreter paths in /nix/store/w3dbrw95fvhq7s80jkvwk741q5yfk9wk-r-spiderbar-0.2.5
+rewriting symlink /nix/store/w3dbrw95fvhq7s80jkvwk741q5yfk9wk-r-spiderbar-0.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/w3dbrw95fvhq7s80jkvwk741q5yfk9wk-r-spiderbar-0.2.5
+building '/nix/store/lmml5fj8sab1jxpvrpdw0nkpqrqkphsy-r-robotstxt-0.7.15.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/anhnz3qq4kg4sadklmnq3h8wy95dyxlj-robotstxt_0.7.15.tar.gz
+source root is robotstxt
+setting SOURCE_DATE_EPOCH to timestamp 1724950801 of file robotstxt/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘robotstxt’ ...
+** package ‘robotstxt’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (robotstxt)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-robotstxt-0.7.15.drv-0/ in /nix/store/6r3i37yxrjz7mxca4l3dpdrg8dzvysip-r-robotstxt-0.7.15...
+patching script interpreter paths in /nix/store/6r3i37yxrjz7mxca4l3dpdrg8dzvysip-r-robotstxt-0.7.15
+rewriting symlink /nix/store/6r3i37yxrjz7mxca4l3dpdrg8dzvysip-r-robotstxt-0.7.15/nix-support/propagated-user-env-packages to be relative to /nix/store/6r3i37yxrjz7mxca4l3dpdrg8dzvysip-r-robotstxt-0.7.15
+building '/nix/store/vmi0hzvb6a1als6qivd18hrjd8isbgz3-r-polite-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/issizbn5057p85bi6lnc478386wlwrfh-polite_0.1.3.tar.gz
+source root is polite
+setting SOURCE_DATE_EPOCH to timestamp 1688113802 of file polite/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘polite’ ...
+** package ‘polite’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (polite)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-polite-0.1.3.drv-0/ in /nix/store/ri2dapkda3wzpg5fchmgq6prns9gkzn7-r-polite-0.1.3...
+patching script interpreter paths in /nix/store/ri2dapkda3wzpg5fchmgq6prns9gkzn7-r-polite-0.1.3
+rewriting symlink /nix/store/ri2dapkda3wzpg5fchmgq6prns9gkzn7-r-polite-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/ri2dapkda3wzpg5fchmgq6prns9gkzn7-r-polite-0.1.3

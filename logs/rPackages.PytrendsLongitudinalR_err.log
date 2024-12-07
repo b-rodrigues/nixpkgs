@@ -1,0 +1,69 @@
+these 2 derivations will be built:
+  /nix/store/kgn59y0ila6ny4qna0rpvg4jykpvhsca-PytrendsLongitudinalR_0.1.4.tar.gz.drv
+  /nix/store/gjbgwgc6wn39iynyg4qx8669jihb0kw5-r-PytrendsLongitudinalR-0.1.4.drv
+building '/nix/store/kgn59y0ila6ny4qna0rpvg4jykpvhsca-PytrendsLongitudinalR_0.1.4.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/PytrendsLongitudinalR_0.1.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 41363  100 41363    0     0   282k      0 --:--:-- --:--:-- --:--:--  284k
+building '/nix/store/gjbgwgc6wn39iynyg4qx8669jihb0kw5-r-PytrendsLongitudinalR-0.1.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jnqqmf1x57985zzsakqxj48cmc0qspf1-PytrendsLongitudinalR_0.1.4.tar.gz
+source root is PytrendsLongitudinalR
+setting SOURCE_DATE_EPOCH to timestamp 1726565411 of file PytrendsLongitudinalR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PytrendsLongitudinalR’ ...
+** package ‘PytrendsLongitudinalR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: le chargement du package ou de l'espace de noms a échoué pour ‘PytrendsLongitudinalR’ :
+.onLoad a échoué dans loadNamespace() pour 'PytrendsLongitudinalR', détails :
+  appel : NULL
+  erreur : Installation of Python not found, Python bindings not loaded.
+Please create a default virtual environment with `reticulate::virtualenv_create('r-reticulate')`.
+Erreur : le chargement a échoué
+Exécution arrêtée
+ERROR: loading failed
+* removing ‘/nix/store/59x6jlb4l9vmwfp0w3q87fb6pg8wkd0q-r-PytrendsLongitudinalR-0.1.4/library/PytrendsLongitudinalR’
+error: builder for '/nix/store/gjbgwgc6wn39iynyg4qx8669jihb0kw5-r-PytrendsLongitudinalR-0.1.4.drv' failed with exit code 1;
+       last 25 log lines:
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘PytrendsLongitudinalR’ ...
+       > ** package ‘PytrendsLongitudinalR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > ** help
+       > *** installing help indices
+       > *** copying figures
+       > ** building package indices
+       > ** installing vignettes
+       > ** testing if installed package can be loaded from temporary location
+       > Error: le chargement du package ou de l'espace de noms a échoué pour ‘PytrendsLongitudinalR’ :
+       > .onLoad a échoué dans loadNamespace() pour 'PytrendsLongitudinalR', détails :
+       >   appel : NULL
+       >   erreur : Installation of Python not found, Python bindings not loaded.
+       > Please create a default virtual environment with `reticulate::virtualenv_create('r-reticulate')`.
+       > Erreur : le chargement a échoué
+       > Exécution arrêtée
+       > ERROR: loading failed
+       > * removing ‘/nix/store/59x6jlb4l9vmwfp0w3q87fb6pg8wkd0q-r-PytrendsLongitudinalR-0.1.4/library/PytrendsLongitudinalR’
+       For full logs, run 'nix log /nix/store/gjbgwgc6wn39iynyg4qx8669jihb0kw5-r-PytrendsLongitudinalR-0.1.4.drv'.

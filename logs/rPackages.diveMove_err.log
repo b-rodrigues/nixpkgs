@@ -1,0 +1,111 @@
+these 4 derivations will be built:
+  /nix/store/8dz0qkfnx6dmr9q7zgjxcwwgs86m1rrb-diveMove_1.6.4.tar.gz.drv
+  /nix/store/d877h3y3jdb83yijjpaj1p4825n7ph8g-r-SEL-1.0-4.drv
+  /nix/store/lirvvf6qhspy3vi3yiqp6ibg1br5phx6-r-uniReg-1.1.drv
+  /nix/store/rmw56n475pyaall75j0vc6pk4h2fla1k-r-diveMove-1.6.4.drv
+building '/nix/store/8dz0qkfnx6dmr9q7zgjxcwwgs86m1rrb-diveMove_1.6.4.tar.gz.drv'...
+building '/nix/store/d877h3y3jdb83yijjpaj1p4825n7ph8g-r-SEL-1.0-4.drv'...
+
+trying https://cran.r-project.org/src/contrib/diveMove_1.6.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/h1wg5s17a8h0rispnp7a0c1yd0x9y9cv-SEL_1.0-4.tar.gz
+source root is SEL
+setting SOURCE_DATE_EPOCH to timestamp 1700927402 of file SEL/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+100 1065k  100 1065k    0     0  3757k      0 --:--:-- --:--:-- --:--:-- 3751k
+* installing *source* package ‘SEL’ ...
+** package ‘SEL’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c SEL-init.c -o SEL-init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c knotave.c -o knotave.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o SEL.so SEL-init.o knotave.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/sxi3ys4iwnbnk9i0w2m0zw2nx5jzi1q6-r-SEL-1.0-4/library/00LOCK-SEL/00new/SEL/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SEL)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SEL-1.0-4.drv-0/ in /nix/store/sxi3ys4iwnbnk9i0w2m0zw2nx5jzi1q6-r-SEL-1.0-4...
+patching script interpreter paths in /nix/store/sxi3ys4iwnbnk9i0w2m0zw2nx5jzi1q6-r-SEL-1.0-4
+rewriting symlink /nix/store/sxi3ys4iwnbnk9i0w2m0zw2nx5jzi1q6-r-SEL-1.0-4/nix-support/propagated-user-env-packages to be relative to /nix/store/sxi3ys4iwnbnk9i0w2m0zw2nx5jzi1q6-r-SEL-1.0-4
+building '/nix/store/lirvvf6qhspy3vi3yiqp6ibg1br5phx6-r-uniReg-1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d9yksp9vag3ma0588xqgyzrap99qly9y-uniReg_1.1.tar.gz
+source root is uniReg
+setting SOURCE_DATE_EPOCH to timestamp 1465187999 of file uniReg/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘uniReg’ ...
+** package ‘uniReg’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (uniReg)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-uniReg-1.1.drv-0/ in /nix/store/v8gj56h7pac1yzyvbczwndgxpx6y0j2c-r-uniReg-1.1...
+patching script interpreter paths in /nix/store/v8gj56h7pac1yzyvbczwndgxpx6y0j2c-r-uniReg-1.1
+rewriting symlink /nix/store/v8gj56h7pac1yzyvbczwndgxpx6y0j2c-r-uniReg-1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/v8gj56h7pac1yzyvbczwndgxpx6y0j2c-r-uniReg-1.1
+building '/nix/store/rmw56n475pyaall75j0vc6pk4h2fla1k-r-diveMove-1.6.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5ia5xdj8g4mnn5i898rcgggj3n399sgd-diveMove_1.6.4.tar.gz
+source root is diveMove
+setting SOURCE_DATE_EPOCH to timestamp 1728807602 of file diveMove/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘diveMove’ ...
+** package ‘diveMove’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c diveMove_init.c -o diveMove_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c run_quantile.c -o run_quantile.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o diveMove.so diveMove_init.o run_quantile.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/5gi5x5pisihvg824rqcw57nmz8i80h59-r-diveMove-1.6.4/library/00LOCK-diveMove/00new/diveMove/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (diveMove)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-diveMove-1.6.4.drv-0/ in /nix/store/5gi5x5pisihvg824rqcw57nmz8i80h59-r-diveMove-1.6.4...
+patching script interpreter paths in /nix/store/5gi5x5pisihvg824rqcw57nmz8i80h59-r-diveMove-1.6.4
+rewriting symlink /nix/store/5gi5x5pisihvg824rqcw57nmz8i80h59-r-diveMove-1.6.4/nix-support/propagated-user-env-packages to be relative to /nix/store/5gi5x5pisihvg824rqcw57nmz8i80h59-r-diveMove-1.6.4

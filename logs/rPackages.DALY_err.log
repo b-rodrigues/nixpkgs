@@ -1,0 +1,58 @@
+this derivation will be built:
+  /nix/store/r1nl89n4iw204vxjbccqig9ykf7j50y4-r-DALY-1.5.0.drv
+building '/nix/store/r1nl89n4iw204vxjbccqig9ykf7j50y4-r-DALY-1.5.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/cdq4ndgqvjq9qndjbv7knb9zy22k73mc-DALY_1.5.0.tar.gz
+source root is DALY
+setting SOURCE_DATE_EPOCH to timestamp 1480124386 of file DALY/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘DALY’ ...
+** package ‘DALY’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c DALY.cpp -o DALY.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o DALY.so DALY.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/2d4dgyn7k9k2pay6snk22cyamnyxvr8a-r-DALY-1.5.0/library/00LOCK-DALY/00new/DALY/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 51805 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-DALY-1.5.0.drv-0/RtmpHVxPn4/fileca08725b308a'
+2024-11-26 11:56:30.108 R[51805:54298323] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+ERROR: lazy loading failed for package ‘DALY’
+* removing ‘/nix/store/2d4dgyn7k9k2pay6snk22cyamnyxvr8a-r-DALY-1.5.0/library/DALY’
+error: builder for '/nix/store/r1nl89n4iw204vxjbccqig9ykf7j50y4-r-DALY-1.5.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > source root is DALY
+       > setting SOURCE_DATE_EPOCH to timestamp 1480124386 of file DALY/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘DALY’ ...
+       > ** package ‘DALY’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** libs
+       > using C++ compiler: ‘clang version 16.0.6’
+       > using SDK: ‘’
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c DALY.cpp -o DALY.o
+       > /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o DALY.so DALY.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+       > installing to /nix/store/2d4dgyn7k9k2pay6snk22cyamnyxvr8a-r-DALY-1.5.0/library/00LOCK-DALY/00new/DALY/libs
+       > ** R
+       > ** data
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 51805 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-DALY-1.5.0.drv-0/RtmpHVxPn4/fileca08725b308a'
+       > 2024-11-26 11:56:30.108 R[51805:54298323] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+       > ERROR: lazy loading failed for package ‘DALY’
+       > * removing ‘/nix/store/2d4dgyn7k9k2pay6snk22cyamnyxvr8a-r-DALY-1.5.0/library/DALY’
+       For full logs, run 'nix log /nix/store/r1nl89n4iw204vxjbccqig9ykf7j50y4-r-DALY-1.5.0.drv'.

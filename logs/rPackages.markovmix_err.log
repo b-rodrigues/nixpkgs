@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/3sn0y4l8vcx87xrzdl33k1yrbg5g6npx-r-markovmix-0.1.3.drv
+this path will be fetched (0.03 MiB download, 0.03 MiB unpacked):
+  /nix/store/d7rh5lz9nfqkypdbhf2kl5jydaj0ww81-markovmix_0.1.3.tar.gz
+copying path '/nix/store/d7rh5lz9nfqkypdbhf2kl5jydaj0ww81-markovmix_0.1.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/3sn0y4l8vcx87xrzdl33k1yrbg5g6npx-r-markovmix-0.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/d7rh5lz9nfqkypdbhf2kl5jydaj0ww81-markovmix_0.1.3.tar.gz
+source root is markovmix
+setting SOURCE_DATE_EPOCH to timestamp 1701514805 of file markovmix/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘markovmix’ ...
+** package ‘markovmix’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c fit_markov.cpp -o fit_markov.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o markovmix.so RcppExports.o fit_markov.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/qmmr7d8n63bpz6fi4cmzr4v1psb3g70v-r-markovmix-0.1.3/library/00LOCK-markovmix/00new/markovmix/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (markovmix)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-markovmix-0.1.3.drv-0/ in /nix/store/qmmr7d8n63bpz6fi4cmzr4v1psb3g70v-r-markovmix-0.1.3...
+patching script interpreter paths in /nix/store/qmmr7d8n63bpz6fi4cmzr4v1psb3g70v-r-markovmix-0.1.3
+rewriting symlink /nix/store/qmmr7d8n63bpz6fi4cmzr4v1psb3g70v-r-markovmix-0.1.3/nix-support/propagated-user-env-packages to be relative to /nix/store/qmmr7d8n63bpz6fi4cmzr4v1psb3g70v-r-markovmix-0.1.3

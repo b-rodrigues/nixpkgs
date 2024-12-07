@@ -1,0 +1,336 @@
+these 8 derivations will be built:
+  /nix/store/2jvjgnclxa500k0bgvgl8zrr9j6ilhf5-r-redistmetrics-1.0.7.drv
+  /nix/store/9y5hzdbyxkkl905lj74vcprpbccyyfjz-r-tinytiger-0.0.9.drv
+  /nix/store/fhbv638ai6v3y81mq5kj0c5ian1f2b3p-r-redist-4.2.0.drv
+  /nix/store/k5lqhm1fqg1qx5q1gq9r4v0p94b8ihgd-r-dataverse-0.3.14.drv
+  /nix/store/jrb9nldrxncw3zvckbv6bf187plgg7f9-r-censusapi-0.8.0.drv
+  /nix/store/ycd5jqxmjz1jfji5kvn879jdnin3gvqf-r-censable-0.0.5.drv
+  /nix/store/wvd5jw5pyd490kbvrngrnbykzhbr61hb-r-geomander-2.3.0.drv
+  /nix/store/7cy3pvp98nz8sji5ph822ippsvqckm9n-r-alarmdata-0.2.1.drv
+building '/nix/store/k5lqhm1fqg1qx5q1gq9r4v0p94b8ihgd-r-dataverse-0.3.14.drv'...
+building '/nix/store/2jvjgnclxa500k0bgvgl8zrr9j6ilhf5-r-redistmetrics-1.0.7.drv'...
+building '/nix/store/9y5hzdbyxkkl905lj74vcprpbccyyfjz-r-tinytiger-0.0.9.drv'...
+building '/nix/store/jrb9nldrxncw3zvckbv6bf187plgg7f9-r-censusapi-0.8.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rslwk4di74fw8hsf2gmw5fjbbpcjnqj1-dataverse_0.3.14.tar.gz
+source root is dataverse
+setting SOURCE_DATE_EPOCH to timestamp 1715604184 of file dataverse/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘dataverse’ ...
+** package ‘dataverse’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+Running phase: unpackPhase
+unpacking source archive /nix/store/6wvcmm6yv2n8w6gkiqnvxw4iryz4h7da-redistmetrics_1.0.7.tar.gz
+source root is redistmetrics
+setting SOURCE_DATE_EPOCH to timestamp 1702409402 of file redistmetrics/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/7il7vjmzkw8rba5snxp0jzxdnw181bg7-tinytiger_0.0.9.tar.gz
+source root is tinytiger
+** byte-compile and prepare package for lazy loading
+setting SOURCE_DATE_EPOCH to timestamp 1717512002 of file tinytiger/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘redistmetrics’ ...
+** package ‘redistmetrics’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+Running phase: unpackPhase
+unpacking source archive /nix/store/y53bgmw7mhn6mj0sm2pjnsmz3117l0md-censusapi_0.8.0.tar.gz
+source root is censusapi
+setting SOURCE_DATE_EPOCH to timestamp 1660059016 of file censusapi/MD5
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+using SDK: ‘’
+* installing *source* package ‘tinytiger’ ...
+** package ‘tinytiger’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c compactness.cpp -o compactness.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c competitiveness.cpp -o competitiveness.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c contiguity.cpp -o contiguity.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c distances.cpp -o distances.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c kirchhoff.cpp -o kirchhoff.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c partisan.cpp -o partisan.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c reindex.cpp -o reindex.o
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+* installing *source* package ‘censusapi’ ...
+** package ‘censusapi’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+** help
+*** installing help indices
+** help
+** building package indices
+*** installing help indices
+*** installing help indices
+** building package indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from final location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (censusapi)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-censusapi-0.8.0.drv-0/ in /nix/store/vgxsdbv8wil3l30z8vjd6gz7yzi54my2-r-censusapi-0.8.0...
+patching script interpreter paths in /nix/store/vgxsdbv8wil3l30z8vjd6gz7yzi54my2-r-censusapi-0.8.0
+rewriting symlink /nix/store/vgxsdbv8wil3l30z8vjd6gz7yzi54my2-r-censusapi-0.8.0/nix-support/propagated-user-env-packages to be relative to /nix/store/vgxsdbv8wil3l30z8vjd6gz7yzi54my2-r-censusapi-0.8.0
+** testing if installed package keeps a record of temporary installation path
+* DONE (tinytiger)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tinytiger-0.0.9.drv-0/ in /nix/store/yygpxwc5n8xqzglh3rwa4q6lv7mrx2jn-r-tinytiger-0.0.9...
+patching script interpreter paths in /nix/store/yygpxwc5n8xqzglh3rwa4q6lv7mrx2jn-r-tinytiger-0.0.9
+** testing if installed package keeps a record of temporary installation path
+* DONE (dataverse)
+Running phase: fixupPhase
+rewriting symlink /nix/store/yygpxwc5n8xqzglh3rwa4q6lv7mrx2jn-r-tinytiger-0.0.9/nix-support/propagated-user-env-packages to be relative to /nix/store/yygpxwc5n8xqzglh3rwa4q6lv7mrx2jn-r-tinytiger-0.0.9
+building '/nix/store/ycd5jqxmjz1jfji5kvn879jdnin3gvqf-r-censable-0.0.5.drv'...
+checking for references to /private/tmp/nix-build-r-dataverse-0.3.14.drv-0/ in /nix/store/n5fkdm6rqdixn9b86dfqkmn8zx386csv-r-dataverse-0.3.14...
+patching script interpreter paths in /nix/store/n5fkdm6rqdixn9b86dfqkmn8zx386csv-r-dataverse-0.3.14
+rewriting symlink /nix/store/n5fkdm6rqdixn9b86dfqkmn8zx386csv-r-dataverse-0.3.14/nix-support/propagated-user-env-packages to be relative to /nix/store/n5fkdm6rqdixn9b86dfqkmn8zx386csv-r-dataverse-0.3.14
+Running phase: unpackPhase
+unpacking source archive /nix/store/ba1v3i37xj907dnh0b4dz5cl9vz38f36-censable_0.0.5.tar.gz
+source root is censable
+setting SOURCE_DATE_EPOCH to timestamp 1668892802 of file censable/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c segregation.cpp -o segregation.o
+* installing *source* package ‘censable’ ...
+** package ‘censable’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c splits.cpp -o splits.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c tally.cpp -o tally.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c varinfo.cpp -o varinfo.o
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (censable)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-censable-0.0.5.drv-0/ in /nix/store/s4naq00m2pa94ndaydbjh9pi0zzjq15r-r-censable-0.0.5...
+patching script interpreter paths in /nix/store/s4naq00m2pa94ndaydbjh9pi0zzjq15r-r-censable-0.0.5
+rewriting symlink /nix/store/s4naq00m2pa94ndaydbjh9pi0zzjq15r-r-censable-0.0.5/nix-support/propagated-user-env-packages to be relative to /nix/store/s4naq00m2pa94ndaydbjh9pi0zzjq15r-r-censable-0.0.5
+building '/nix/store/wvd5jw5pyd490kbvrngrnbykzhbr61hb-r-geomander-2.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zxgbplbbr9p96a1azilaqbqqg625i1rf-geomander_2.3.0.tar.gz
+source root is geomander
+setting SOURCE_DATE_EPOCH to timestamp 1708032002 of file geomander/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘geomander’ ...
+** package ‘geomander’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c adjlist2matrix.cpp -o adjlist2matrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c code.c -o code.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c contiguity.cpp -o contiguity.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c countconnections.cpp -o countconnections.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c geary.cpp -o geary.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c getisord.cpp -o getisord.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c moran.cpp -o moran.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o geomander.so RcppExports.o adjlist2matrix.o code.o contiguity.o countconnections.o geary.o getisord.o moran.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/64xq1a10i38wd1mdgmkl43jznpbf862x-r-geomander-2.3.0/library/00LOCK-geomander/00new/geomander/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o redistmetrics.so RcppExports.o compactness.o competitiveness.o contiguity.o distances.o kirchhoff.o partisan.o reindex.o segregation.o splits.o tally.o varinfo.o -lpthread -lpthread -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+installing to /nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/00LOCK-redistmetrics/00new/redistmetrics/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** checking absolute paths in shared objects and dynamic libraries
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (redistmetrics)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-redistmetrics-1.0.7.drv-0/ in /nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7...
+patching script interpreter paths in /nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7
+rewriting symlink /nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/nix-support/propagated-user-env-packages to be relative to /nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7
+building '/nix/store/fhbv638ai6v3y81mq5kj0c5ian1f2b3p-r-redist-4.2.0.drv'...
+** testing if installed package keeps a record of temporary installation path
+* DONE (geomander)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-geomander-2.3.0.drv-0/ in /nix/store/64xq1a10i38wd1mdgmkl43jznpbf862x-r-geomander-2.3.0...
+patching script interpreter paths in /nix/store/64xq1a10i38wd1mdgmkl43jznpbf862x-r-geomander-2.3.0
+rewriting symlink /nix/store/64xq1a10i38wd1mdgmkl43jznpbf862x-r-geomander-2.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/64xq1a10i38wd1mdgmkl43jznpbf862x-r-geomander-2.3.0
+Running phase: unpackPhase
+unpacking source archive /nix/store/l48kgpz9938ips0jzh5kw444i117ab5x-redist_4.2.0.tar.gz
+source root is redist
+setting SOURCE_DATE_EPOCH to timestamp 1705152002 of file redist/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘redist’ ...
+** package ‘redist’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c adj_reduce.cpp -o adj_reduce.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c check_contiguity.cpp -o check_contiguity.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c coarsen.cpp -o coarsen.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c coloring.cpp -o coloring.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c compact_vectorized.cpp -o compact_vectorized.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c constraint_calc_helper.cpp -o constraint_calc_helper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c contiguity.cpp -o contiguity.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c cores.cpp -o cores.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c crsg.cpp -o crsg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c distance_helpers.cpp -o distance_helpers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c kirchhoff.cpp -o kirchhoff.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c labeling.cpp -o labeling.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c make_swaps_helper.cpp -o make_swaps_helper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c map_calc.cpp -o map_calc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c mcmc_gibbs.cpp -o mcmc_gibbs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c merge_split.cpp -o merge_split.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c pareto.cpp -o pareto.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c pop_helpers.cpp -o pop_helpers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c random.cpp -o random.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c renumber.cpp -o renumber.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c rsg.cpp -o rsg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c scorer_helpers.cpp -o scorer_helpers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c shatter_search.cpp -o shatter_search.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c smc.cpp -o smc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c smc_base.cpp -o smc_base.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c splits.cpp -o splits.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c sw_mh_alg.cpp -o sw_mh_alg.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c sw_mh_helper.cpp -o sw_mh_helper.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c tree_op.cpp -o tree_op.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c varinfo.cpp -o varinfo.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -I'/nix/store/g56135l04x22cjwqszh48j566wsj9iz6-r-cli-3.6.3/library/cli/include' -I'/nix/store/lfmwkvrs80mqjaw1sj40xpx9xks1vpbl-r-redistmetrics-1.0.7/library/redistmetrics/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DARMA_64BIT_WORD=1 -g0 -fPIC  -g -O2   -c wilson.cpp -o wilson.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o redist.so RcppExports.o adj_reduce.o check_contiguity.o coarsen.o coloring.o compact_vectorized.o constraint_calc_helper.o contiguity.o cores.o crsg.o distance_helpers.o kirchhoff.o labeling.o make_swaps_helper.o map_calc.o mcmc_gibbs.o merge_split.o pareto.o pop_helpers.o random.o renumber.o rsg.o scorer_helpers.o shatter_search.o smc.o smc_base.o splits.o sw_mh_alg.o sw_mh_helper.o tree_op.o varinfo.o wilson.o -lpthread -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/4k8dym43yi2bljrsskbi5dg8q5gwrgd3-r-redist-4.2.0/library/00LOCK-redist/00new/redist/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (redist)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-redist-4.2.0.drv-0/ in /nix/store/4k8dym43yi2bljrsskbi5dg8q5gwrgd3-r-redist-4.2.0...
+patching script interpreter paths in /nix/store/4k8dym43yi2bljrsskbi5dg8q5gwrgd3-r-redist-4.2.0
+rewriting symlink /nix/store/4k8dym43yi2bljrsskbi5dg8q5gwrgd3-r-redist-4.2.0/nix-support/propagated-user-env-packages to be relative to /nix/store/4k8dym43yi2bljrsskbi5dg8q5gwrgd3-r-redist-4.2.0
+building '/nix/store/7cy3pvp98nz8sji5ph822ippsvqckm9n-r-alarmdata-0.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/70v07r91ia9i0blpnna539w2gqlg3yx2-alarmdata_0.2.1.tar.gz
+source root is alarmdata
+setting SOURCE_DATE_EPOCH to timestamp 1709145008 of file alarmdata/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘alarmdata’ ...
+** package ‘alarmdata’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (alarmdata)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-alarmdata-0.2.1.drv-0/ in /nix/store/r32ph8fky99hig9m9qpnaxq8pdfw3yig-r-alarmdata-0.2.1...
+patching script interpreter paths in /nix/store/r32ph8fky99hig9m9qpnaxq8pdfw3yig-r-alarmdata-0.2.1
+rewriting symlink /nix/store/r32ph8fky99hig9m9qpnaxq8pdfw3yig-r-alarmdata-0.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/r32ph8fky99hig9m9qpnaxq8pdfw3yig-r-alarmdata-0.2.1

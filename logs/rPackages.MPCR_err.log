@@ -1,0 +1,64 @@
+these 2 derivations will be built:
+  /nix/store/5aidz6mchv6sb3561fs8riwpjfykw8d4-MPCR_1.1.3.tar.gz.drv
+  /nix/store/0721prnkv34j0cb90gljf258f4cqqp4w-r-MPCR-1.1.3.drv
+building '/nix/store/5aidz6mchv6sb3561fs8riwpjfykw8d4-MPCR_1.1.3.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/MPCR_1.1.3.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  664k  100  664k    0     0  2788k      0 --:--:-- --:--:-- --:--:-- 2791k
+building '/nix/store/0721prnkv34j0cb90gljf258f4cqqp4w-r-MPCR-1.1.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zhck9yf76xp5n25l3c9rs7fsr2wgrk1g-MPCR_1.1.3.tar.gz
+source root is MPCR
+setting SOURCE_DATE_EPOCH to timestamp 1728420602 of file MPCR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MPCR’ ...
+** package ‘MPCR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Darwin
+------------------------------------------------------------
+/private/tmp/nix-build-r-MPCR-1.1.3.drv-0/MPCR/
+Installing CMake from source
+CMake not found. Installing CMake from source...
+./configure: line 18: wget: command not found
+tar (child): cmake-3.28.1.tar.gz : open impossible: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+./configure: line 24: cd: cmake-3.28.1: No such file or directory
+ERROR: configuration failed for package ‘MPCR’
+* removing ‘/nix/store/8ixksd2n2an0mx0g4ix92wqhjzybrasd-r-MPCR-1.1.3/library/MPCR’
+error: builder for '/nix/store/0721prnkv34j0cb90gljf258f4cqqp4w-r-MPCR-1.1.3.drv' failed with exit code 1;
+       last 25 log lines:
+       > unpacking source archive /nix/store/zhck9yf76xp5n25l3c9rs7fsr2wgrk1g-MPCR_1.1.3.tar.gz
+       > source root is MPCR
+       > setting SOURCE_DATE_EPOCH to timestamp 1728420602 of file MPCR/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘MPCR’ ...
+       > ** package ‘MPCR’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > Darwin
+       > ------------------------------------------------------------
+       > /private/tmp/nix-build-r-MPCR-1.1.3.drv-0/MPCR/
+       > Installing CMake from source
+       > CMake not found. Installing CMake from source...
+       > ./configure: line 18: wget: command not found
+       > tar (child): cmake-3.28.1.tar.gz : open impossible: No such file or directory
+       > tar (child): Error is not recoverable: exiting now
+       > tar: Child returned status 2
+       > tar: Error is not recoverable: exiting now
+       > ./configure: line 24: cd: cmake-3.28.1: No such file or directory
+       > ERROR: configuration failed for package ‘MPCR’
+       > * removing ‘/nix/store/8ixksd2n2an0mx0g4ix92wqhjzybrasd-r-MPCR-1.1.3/library/MPCR’
+       For full logs, run 'nix log /nix/store/0721prnkv34j0cb90gljf258f4cqqp4w-r-MPCR-1.1.3.drv'.

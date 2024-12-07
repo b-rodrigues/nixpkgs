@@ -1,0 +1,38 @@
+this derivation will be built:
+  /nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv
+building '/nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/av9scqd700zh7nvbf0h014nbk8zkmz2c-Rcereal_1.3.2.tar.gz
+source root is Rcereal
+setting SOURCE_DATE_EPOCH to timestamp 1726840216 of file Rcereal/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rcereal’ ...
+** package ‘Rcereal’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+sed: can't read : No such file or directory
+ERROR: configuration failed for package ‘Rcereal’
+* removing ‘/nix/store/iciws3y1i4bhvjip71bm6qn147n57iy0-r-Rcereal-1.3.2/library/Rcereal’
+error: builder for '/nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv' failed with exit code 1;
+       last 16 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/av9scqd700zh7nvbf0h014nbk8zkmz2c-Rcereal_1.3.2.tar.gz
+       > source root is Rcereal
+       > setting SOURCE_DATE_EPOCH to timestamp 1726840216 of file Rcereal/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘Rcereal’ ...
+       > ** package ‘Rcereal’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > sed: can't read : No such file or directory
+       > ERROR: configuration failed for package ‘Rcereal’
+       > * removing ‘/nix/store/iciws3y1i4bhvjip71bm6qn147n57iy0-r-Rcereal-1.3.2/library/Rcereal’
+       For full logs, run 'nix log /nix/store/byy444x306f96gf34yn345j5v2rmj22z-r-Rcereal-1.3.2.drv'.

@@ -1,0 +1,63 @@
+these 2 derivations will be built:
+  /nix/store/is2zsv7apcpy2p1hdy4f9v4g0n26cslw-QFASA_1.2.1.tar.gz.drv
+  /nix/store/gn9id3gmdb8p025h0l803ygxb4wfb8cj-r-QFASA-1.2.1.drv
+building '/nix/store/is2zsv7apcpy2p1hdy4f9v4g0n26cslw-QFASA_1.2.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/QFASA_1.2.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  180k  100  180k    0     0  1033k      0 --:--:-- --:--:-- --:--:-- 1038k
+building '/nix/store/gn9id3gmdb8p025h0l803ygxb4wfb8cj-r-QFASA-1.2.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dk2hw1i6dpg3na0ibgd1330h0pmrvmyf-QFASA_1.2.1.tar.gz
+source root is QFASA
+setting SOURCE_DATE_EPOCH to timestamp 1724787602 of file QFASA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘QFASA’ ...
+** package ‘QFASA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+#/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript --vanilla -e "TMB::compile('ErrorModelSimpleEquant.cpp','-O0 -g', safebounds=FALSE,safeunload=FALSE)"
+#/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript --vanilla -e "TMB::compile('CommonDiet.cpp','-O0 -g',safebounds=FALSE,safeunload=FALSE)"
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript --vanilla -e "TMB::compile('CommonDiet.cpp',safebounds=FALSE,safeunload=FALSE)"
+/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript --vanilla -e "TMB::compile('ErrorModelSimpleEquant.cpp',safebounds=FALSE,safeunload=FALSE)"
+using C++ compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+using SDK: ‘’
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-QFASA-1.2.1.drv-0/QFASA/src »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include" -I"/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_ErrorModelSimpleEquant  -DCPPAD_FRAMEWORK -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c ErrorModelSimpleEquant.cpp -o ErrorModelSimpleEquant.o
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-QFASA-1.2.1.drv-0/QFASA/src »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I"/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include" -I"/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_CommonDiet  -DCPPAD_FRAMEWORK -I'/nix/store/19h00ypiw8g9i23djilfxkdl95b8y47v-r-TMB-1.9.15/library/TMB/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CommonDiet.cpp -o CommonDiet.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o CommonDiet.so CommonDiet.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-QFASA-1.2.1.drv-0/QFASA/src »
+[1] 0
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o ErrorModelSimpleEquant.so ErrorModelSimpleEquant.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-QFASA-1.2.1.drv-0/QFASA/src »
+[1] 0
+# Comment here preserves the prior tab
+installing to /nix/store/y13va6112gssvricbjacl4wv8gkspyjm-r-QFASA-1.2.1/library/00LOCK-QFASA/00new/QFASA/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (QFASA)
+installPhase completed in 32 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-QFASA-1.2.1.drv-0/ in /nix/store/y13va6112gssvricbjacl4wv8gkspyjm-r-QFASA-1.2.1...
+patching script interpreter paths in /nix/store/y13va6112gssvricbjacl4wv8gkspyjm-r-QFASA-1.2.1
+rewriting symlink /nix/store/y13va6112gssvricbjacl4wv8gkspyjm-r-QFASA-1.2.1/nix-support/propagated-user-env-packages to be relative to /nix/store/y13va6112gssvricbjacl4wv8gkspyjm-r-QFASA-1.2.1

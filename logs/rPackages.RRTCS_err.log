@@ -1,0 +1,101 @@
+these 2 derivations will be built:
+  /nix/store/irk6ikfx9qspcc6j3qid1ldmm6m347s3-r-samplingVarEst-1.5.drv
+  /nix/store/22sdf57mcmix8id402xczr2bql5nf0gc-r-RRTCS-0.0.4.drv
+these 2 paths will be fetched (0.49 MiB download, 0.49 MiB unpacked):
+  /nix/store/9ixv8wjjg5laxc981ykryk6bnd29yr37-RRTCS_0.0.4.tar.gz
+  /nix/store/vvyzm9l5v2kl5l3czjv739sgz12j2ywx-samplingVarEst_1.5.tar.gz
+copying path '/nix/store/9ixv8wjjg5laxc981ykryk6bnd29yr37-RRTCS_0.0.4.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/vvyzm9l5v2kl5l3czjv739sgz12j2ywx-samplingVarEst_1.5.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/irk6ikfx9qspcc6j3qid1ldmm6m347s3-r-samplingVarEst-1.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vvyzm9l5v2kl5l3czjv739sgz12j2ywx-samplingVarEst_1.5.tar.gz
+source root is samplingVarEst
+setting SOURCE_DATE_EPOCH to timestamp 1673688606 of file samplingVarEst/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘samplingVarEst’ ...
+** package ‘samplingVarEst’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Corr_Hajek.c -o Est_Corr_Hajek.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Corr_Hajek_Excluding_All_Elements.c -o Est_Corr_Hajek_Excluding_All_Elements.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Corr_NHT.c -o Est_Corr_NHT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Corr_NHT_Excluding_All_Elements.c -o Est_Corr_NHT_Excluding_All_Elements.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_EmpDistFunc_Hajek.c -o Est_EmpDistFunc_Hajek.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_EmpDistFunc_NHT.c -o Est_EmpDistFunc_NHT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Mean_Hajek.c -o Est_Mean_Hajek.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Ratio.c -o Est_Ratio.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Ratio_Excluding_All_Elements.c -o Est_Ratio_Excluding_All_Elements.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Ratio_Excluding_All_ElementsByRho.c -o Est_Ratio_Excluding_All_ElementsByRho.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_RegCoI_Hajek.c -o Est_RegCoI_Hajek.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_RegCoI_Hajek_Excluding_All_Elements.c -o Est_RegCoI_Hajek_Excluding_All_Elements.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_RegCo_Hajek.c -o Est_RegCo_Hajek.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_RegCo_Hajek_Excluding_All_Elements.c -o Est_RegCo_Hajek_Excluding_All_Elements.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Est_Total_NHT.c -o Est_Total_NHT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Pk_PropNorm_U.c -o Pk_PropNorm_U.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Pkl_Hajek_U.c -o Pkl_Hajek_U.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Pkl_Hajek_s.c -o Pkl_Hajek_s.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_HT_Total_NHT.c -o VE_HT_Total_NHT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_HT_form.c -o VE_HT_form.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_Hajek_Total_NHT.c -o VE_Hajek_Total_NHT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_Hajek_form.c -o VE_Hajek_form.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_Jk_EB_SW2_Corr_Hajek_Clu.c -o VE_Jk_EB_SW2_Corr_Hajek_Clu.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_Jk_EB_SW2_Ratio_Clu.c -o VE_Jk_EB_SW2_Ratio_Clu.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_Jk_EB_SW2_RegCoI_Hajek_Clu.c -o VE_Jk_EB_SW2_RegCoI_Hajek_Clu.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_Jk_EB_SW2_RegCo_Hajek_Clu.c -o VE_Jk_EB_SW2_RegCo_Hajek_Clu.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_SYG_Total_NHT.c -o VE_SYG_Total_NHT.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c VE_SYG_form.c -o VE_SYG_form.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c samplingVarEst_init.c -o samplingVarEst_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o samplingVarEst.so Est_Corr_Hajek.o Est_Corr_Hajek_Excluding_All_Elements.o Est_Corr_NHT.o Est_Corr_NHT_Excluding_All_Elements.o Est_EmpDistFunc_Hajek.o Est_EmpDistFunc_NHT.o Est_Mean_Hajek.o Est_Ratio.o Est_Ratio_Excluding_All_Elements.o Est_Ratio_Excluding_All_ElementsByRho.o Est_RegCoI_Hajek.o Est_RegCoI_Hajek_Excluding_All_Elements.o Est_RegCo_Hajek.o Est_RegCo_Hajek_Excluding_All_Elements.o Est_Total_NHT.o Pk_PropNorm_U.o Pkl_Hajek_U.o Pkl_Hajek_s.o VE_HT_Total_NHT.o VE_HT_form.o VE_Hajek_Total_NHT.o VE_Hajek_form.o VE_Jk_EB_SW2_Corr_Hajek_Clu.o VE_Jk_EB_SW2_Ratio_Clu.o VE_Jk_EB_SW2_RegCoI_Hajek_Clu.o VE_Jk_EB_SW2_RegCo_Hajek_Clu.o VE_SYG_Total_NHT.o VE_SYG_form.o samplingVarEst_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/s4ahzz5pvbb0ic27whi3dks5sj6vi4aa-r-samplingVarEst-1.5/library/00LOCK-samplingVarEst/00new/samplingVarEst/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (samplingVarEst)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-samplingVarEst-1.5.drv-0/ in /nix/store/s4ahzz5pvbb0ic27whi3dks5sj6vi4aa-r-samplingVarEst-1.5...
+patching script interpreter paths in /nix/store/s4ahzz5pvbb0ic27whi3dks5sj6vi4aa-r-samplingVarEst-1.5
+building '/nix/store/22sdf57mcmix8id402xczr2bql5nf0gc-r-RRTCS-0.0.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/9ixv8wjjg5laxc981ykryk6bnd29yr37-RRTCS_0.0.4.tar.gz
+source root is RRTCS
+setting SOURCE_DATE_EPOCH to timestamp 1618992603 of file RRTCS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RRTCS’ ...
+** package ‘RRTCS’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RRTCS)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RRTCS-0.0.4.drv-0/ in /nix/store/p2v4fx28kmywp8vc6fi3p4404pxhngp4-r-RRTCS-0.0.4...
+patching script interpreter paths in /nix/store/p2v4fx28kmywp8vc6fi3p4404pxhngp4-r-RRTCS-0.0.4
+rewriting symlink /nix/store/p2v4fx28kmywp8vc6fi3p4404pxhngp4-r-RRTCS-0.0.4/nix-support/propagated-user-env-packages to be relative to /nix/store/p2v4fx28kmywp8vc6fi3p4404pxhngp4-r-RRTCS-0.0.4

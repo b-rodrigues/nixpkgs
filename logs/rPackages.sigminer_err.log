@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/97ic1irjkaw9nfzcfz2ydvmmdzs639w1-r-sigminer-2.3.1.drv
+this path will be fetched (3.96 MiB download, 3.96 MiB unpacked):
+  /nix/store/p6mhavfbvm958azbdwlgnl2prvzjrv1p-sigminer_2.3.1.tar.gz
+copying path '/nix/store/p6mhavfbvm958azbdwlgnl2prvzjrv1p-sigminer_2.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/97ic1irjkaw9nfzcfz2ydvmmdzs639w1-r-sigminer-2.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/p6mhavfbvm958azbdwlgnl2prvzjrv1p-sigminer_2.3.1.tar.gz
+source root is sigminer
+setting SOURCE_DATE_EPOCH to timestamp 1715417402 of file sigminer/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘maftools’ is not available for package ‘sigminer’
+* removing ‘/nix/store/6lj1kj7249d9lwx61yrjn7ykzpm8wgvy-r-sigminer-2.3.1/library/sigminer’
+error: builder for '/nix/store/97ic1irjkaw9nfzcfz2ydvmmdzs639w1-r-sigminer-2.3.1.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/p6mhavfbvm958azbdwlgnl2prvzjrv1p-sigminer_2.3.1.tar.gz
+       > source root is sigminer
+       > setting SOURCE_DATE_EPOCH to timestamp 1715417402 of file sigminer/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘maftools’ is not available for package ‘sigminer’
+       > * removing ‘/nix/store/6lj1kj7249d9lwx61yrjn7ykzpm8wgvy-r-sigminer-2.3.1/library/sigminer’
+       For full logs, run 'nix log /nix/store/97ic1irjkaw9nfzcfz2ydvmmdzs639w1-r-sigminer-2.3.1.drv'.

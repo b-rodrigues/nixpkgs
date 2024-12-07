@@ -1,0 +1,996 @@
+these 2 derivations will be built:
+  /nix/store/5831f54im7iv8a6kpsrxdj2xm1xvf2k3-pbdSLAP_0.3-7.tar.gz.drv
+  /nix/store/w92k1aw9m0fdhnw6z2jmgf30dygxxvqp-r-pbdSLAP-0.3-7.drv
+building '/nix/store/5831f54im7iv8a6kpsrxdj2xm1xvf2k3-pbdSLAP_0.3-7.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/pbdSLAP_0.3-7.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1435k  100 1435k    0     0  4954k      0 --:--:-- --:--:-- --:--:-- 4968k
+building '/nix/store/w92k1aw9m0fdhnw6z2jmgf30dygxxvqp-r-pbdSLAP-0.3-7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mzgngpxvgpmldz8a8i4ci8c1xa2h8yr7-pbdSLAP_0.3-7.tar.gz
+source root is pbdSLAP
+setting SOURCE_DATE_EPOCH to timestamp 1731488402 of file pbdSLAP/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pbdSLAP’ ...
+** package ‘pbdSLAP’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ 
+****************** Results of pbdSLAP package configure *****************
+ 
+>> CC = clang
+>> F77 = /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran
+>> FC = /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran
+>> EXT_LDFLAGS = $(LAPACK_LIBS) $(BLAS_LIBS)
+>> EXT_OBJS = $(R_SLAP)
+>> EXT_LIBS = userLibrary
+>> CDEFS = -DAdd_
+>> CDEFS_CHECK = TRUE
+>> SPMD_CPPFLAGS = -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI
+>> SPMD_LDFLAGS = -L/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib -lmpi  -lutil -lpthread
+ 
+*************************************************************************
+ 
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+echo "CC = clang" > Makeconf
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2 -c -o slap_blacs.o slap_blacs.f
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c zzz.c -o zzz.o
+echo "F77 = /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran" >> Makeconf
+echo "### Added by Makevars" > SLmake.inc
+echo "FC = /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran" >> Makeconf
+echo "SPMD_CPPFLAGS = -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI " >> Makeconf
+echo "include /nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf" >> SLmake.inc
+echo "CC = clang" >> SLmake.inc         # overwrite MkInclude
+echo "SPMD_LDFLAGS = -L/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib -lmpi  -lutil -lpthread" >> Makeconf
+echo "EXT_LDFLAGS = -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas" >> Makeconf
+echo "F77 = /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran" >> SLmake.inc             # overwrite MkInclude
+echo "FC = /nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran" >> SLmake.inc              # overwrite MkInclude
+echo "CDEFS = -DAdd_" >> Makeconf
+echo "CDEFS_CHECK = TRUE" >> Makeconf
+echo "CDEFS = -DAdd_" >> SLmake.inc
+echo "PKG_CPPFLAGS = -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T" >> SLmake.inc
+echo "PKG_CPPFLAGS = -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T" >> Makeconf
+echo "PKG_CFLAGS = " >> Makeconf
+echo "PKG_CFLAGS = " >> SLmake.inc
+echo "PKG_FFLAGS = " >> SLmake.inc
+echo "PKG_FFLAGS = " >> Makeconf
+echo "PKG_LIBS = -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib -lmpi  -lutil -lpthread" >> Makeconf
+echo "R_SLAP = libslap.a" >> SLmake.inc
+echo "" >> SLmake.inc
+echo "SLAP_FFLAGS =  -fPIC  -g -O2" >> Makeconf
+echo "R_SLAP = lib/libslap.a" >> Makeconf
+cat SLmake.inc.org >> SLmake.inc
+cd BLACS; make && cd ../; \
+cd TOOLS; make && cd ../; \
+cd PBLAS; make && cd ../; \
+cd REDIST; make && cd ../; \
+cd ScaLAPACK; make && cd ../
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/BLACS »
+clang -o BI_HypBS.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_HypBS.c
+clang -o BI_HypBR.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_HypBR.c
+clang -o BI_IdringBS.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_IdringBS.c
+clang -o BI_IdringBR.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_IdringBR.c
+clang -o BI_MpathBS.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_MpathBS.c
+clang -o BI_MpathBR.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_MpathBR.c
+clang -o BI_SringBS.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_SringBS.c
+clang -o BI_SringBR.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_SringBR.c
+clang -o BI_TreeBS.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_TreeBS.c
+clang -o BI_TreeBR.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_TreeBR.c
+clang -o BI_Ssend.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_Ssend.c
+clang -o BI_Rsend.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_Rsend.c
+clang -o BI_Srecv.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_Srecv.c
+clang -o BI_Asend.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_Asend.c
+clang -o BI_Arecv.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_Arecv.c
+clang -o BI_TreeComb.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_TreeComb.c
+clang -o BI_BeComb.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_BeComb.c
+clang -o BI_MringComb.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_MringComb.c
+clang -o BI_ArgCheck.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ArgCheck.c
+clang -o BI_TransDist.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_TransDist.c
+clang -o BI_GetBuff.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_GetBuff.c
+clang -o BI_UpdateBuffs.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_UpdateBuffs.c
+clang -o BI_EmergencyBuff.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_EmergencyBuff.c
+clang -o BI_BlacsErr.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_BlacsErr.c
+clang -o BI_BlacsWarn.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_BlacsWarn.c
+clang -o BI_BlacsAbort.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_BlacsAbort.c
+clang -o BI_BuffIsFree.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_BuffIsFree.c
+clang -o BI_imvcopy.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_imvcopy.c
+clang -o BI_dmvcopy.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dmvcopy.c
+clang -o BI_ivmcopy.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ivmcopy.c
+clang -o BI_dvmcopy.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dvmcopy.c
+clang -o BI_Pack.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_Pack.c
+clang -o BI_Unpack.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_Unpack.c
+clang -o BI_GetMpiGeType.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_GetMpiGeType.c
+clang -o BI_GetMpiTrType.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_GetMpiTrType.c
+clang -o BI_ivvsum.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ivvsum.c
+clang -o BI_dvvsum.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dvvsum.c
+clang -o BI_ivvamx.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ivvamx.c
+clang -o BI_dvvamx.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dvvamx.c
+clang -o BI_ivvamx2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ivvamx2.c
+clang -o BI_dvvamx2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dvvamx2.c
+clang -o BI_ivvamn.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ivvamn.c
+clang -o BI_dvvamn.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dvvamn.c
+clang -o BI_ivvamn2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ivvamn2.c
+clang -o BI_dvvamn2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dvvamn2.c
+clang -o BI_iMPI_amx.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_iMPI_amx.c
+clang -o BI_dMPI_amx.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dMPI_amx.c
+clang -o BI_iMPI_amx2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_iMPI_amx2.c
+clang -o BI_dMPI_amx2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dMPI_amx2.c
+clang -o BI_iMPI_amn.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_iMPI_amn.c
+clang -o BI_dMPI_amn.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dMPI_amn.c
+clang -o BI_iMPI_amn2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_iMPI_amn2.c
+clang -o BI_dMPI_amn2.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_dMPI_amn2.c
+clang -o BI_ContxtNum.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_ContxtNum.c
+clang -o BI_GlobalVars.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_GlobalVars.c
+clang -o BI_TransUserComm.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 BI_TransUserComm.c
+clang -o igesd2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 igesd2d_.c
+clang -o dgesd2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dgesd2d_.c
+clang -o itrsd2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 itrsd2d_.c
+clang -o dtrsd2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dtrsd2d_.c
+clang -o igerv2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 igerv2d_.c
+clang -o dgerv2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dgerv2d_.c
+clang -o itrrv2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 itrrv2d_.c
+clang -o dtrrv2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dtrrv2d_.c
+clang -o igebs2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 igebs2d_.c
+clang -o dgebs2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dgebs2d_.c
+clang -o igebr2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 igebr2d_.c
+clang -o dgebr2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dgebr2d_.c
+clang -o itrbs2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 itrbs2d_.c
+clang -o dtrbs2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dtrbs2d_.c
+clang -o itrbr2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 itrbr2d_.c
+clang -o dtrbr2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dtrbr2d_.c
+clang -o igsum2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 igsum2d_.c
+clang -o dgsum2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dgsum2d_.c
+clang -o igamx2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 igamx2d_.c
+clang -o dgamx2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dgamx2d_.c
+clang -o igamn2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 igamn2d_.c
+clang -o dgamn2d_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dgamn2d_.c
+clang -o blacs_setup_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_setup_.c
+clang -o blacs_set_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_set_.c
+clang -o blacs_get_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_get_.c
+clang -o blacs_abort_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_abort_.c
+clang -o blacs_exit_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_exit_.c
+clang -o blacs_pnum_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_pnum_.c
+clang -o blacs_pcoord_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_pcoord_.c
+clang -o ksendid_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 ksendid_.c
+clang -o krecvid_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 krecvid_.c
+clang -o kbsid_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 kbsid_.c
+clang -o kbrid_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 kbrid_.c
+clang -o dcputime00_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dcputime00_.c
+clang -o dwalltime00_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dwalltime00_.c
+clang -o blacs_pinfo_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_pinfo_.c
+clang -o blacs_init_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_init_.c
+clang -o blacs_map_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_map_.c
+clang -o blacs_free_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_free_.c
+clang -o blacs_grid_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_grid_.c
+clang -o blacs_info_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_info_.c
+clang -o blacs_barr_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs_barr_.c
+clang -o sys2blacs_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 sys2blacs_.c
+clang -o blacs2sys_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 blacs2sys_.c
+clang -o free_handle_.fo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 free_handle_.c
+clang -o igesd2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC igesd2d_.c
+clang -o dgesd2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dgesd2d_.c
+clang -o itrsd2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC itrsd2d_.c
+clang -o dtrsd2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dtrsd2d_.c
+clang -o igerv2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC igerv2d_.c
+clang -o dgerv2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dgerv2d_.c
+clang -o itrrv2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC itrrv2d_.c
+clang -o dtrrv2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dtrrv2d_.c
+clang -o igebs2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC igebs2d_.c
+clang -o dgebs2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dgebs2d_.c
+clang -o igebr2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC igebr2d_.c
+clang -o dgebr2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dgebr2d_.c
+clang -o itrbs2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC itrbs2d_.c
+clang -o dtrbs2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dtrbs2d_.c
+clang -o itrbr2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC itrbr2d_.c
+clang -o dtrbr2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dtrbr2d_.c
+clang -o igsum2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC igsum2d_.c
+clang -o dgsum2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dgsum2d_.c
+clang -o igamx2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC igamx2d_.c
+clang -o dgamx2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dgamx2d_.c
+clang -o igamn2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC igamn2d_.c
+clang -o dgamn2d_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dgamn2d_.c
+clang -o blacs_setup_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_setup_.c
+clang -o blacs_set_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_set_.c
+clang -o blacs_get_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_get_.c
+clang -o blacs_abort_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_abort_.c
+clang -o blacs_exit_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_exit_.c
+clang -o blacs_pnum_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_pnum_.c
+clang -o blacs_pcoord_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_pcoord_.c
+clang -o ksendid_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC ksendid_.c
+clang -o krecvid_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC krecvid_.c
+clang -o kbsid_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC kbsid_.c
+clang -o kbrid_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC kbrid_.c
+clang -o dcputime00_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dcputime00_.c
+clang -o dwalltime00_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC dwalltime00_.c
+clang -o blacs_pinfo_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_pinfo_.c
+clang -o blacs_init_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_init_.c
+clang -o blacs_map_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_map_.c
+clang -o blacs_free_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_free_.c
+clang -o blacs_grid_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_grid_.c
+clang -o blacs_info_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_info_.c
+clang -o blacs_barr_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs_barr_.c
+clang -o sys2blacs_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC sys2blacs_.c
+clang -o blacs2sys_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC blacs2sys_.c
+clang -o free_handle_.oo -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 -DCallFromC free_handle_.c
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        BI_HypBS.fo BI_HypBR.fo BI_IdringBS.fo BI_IdringBR.fo BI_MpathBS.fo BI_MpathBR.fo BI_SringBS.fo BI_SringBR.fo BI_TreeBS.fo BI_TreeBR.fo BI_Ssend.fo BI_Rsend.fo BI_Srecv.fo BI_Asend.fo BI_Arecv.fo BI_TreeComb.fo BI_BeComb.fo BI_MringComb.fo BI_ArgCheck.fo BI_TransDist.fo BI_GetBuff.fo BI_UpdateBuffs.fo BI_EmergencyBuff.fo BI_BlacsErr.fo BI_BlacsWarn.fo BI_BlacsAbort.fo BI_BuffIsFree.fo BI_imvcopy.fo BI_dmvcopy.fo BI_ivmcopy.fo BI_dvmcopy.fo BI_Pack.fo BI_Unpack.fo BI_GetMpiGeType.fo BI_GetMpiTrType.fo BI_ivvsum.fo BI_dvvsum.fo BI_ivvamx.fo BI_dvvamx.fo BI_ivvamx2.fo BI_dvvamx2.fo BI_ivvamn.fo BI_dvvamn.fo BI_ivvamn2.fo BI_dvvamn2.fo BI_iMPI_amx.fo BI_dMPI_amx.fo BI_iMPI_amx2.fo BI_dMPI_amx2.fo BI_iMPI_amn.fo BI_dMPI_amn.fo BI_iMPI_amn2.fo BI_dMPI_amn2.fo BI_ContxtNum.fo BI_GlobalVars.fo BI_TransUserComm.fo igesd2d_.fo dgesd2d_.fo itrsd2d_.fo dtrsd2d_.fo igerv2d_.fo dgerv2d_.fo itrrv2d_.fo dtrrv2d_.fo igebs2d_.fo dgebs2d_.fo igebr2d_.fo dgebr2d_.fo itrbs2d_.fo dtrbs2d_.fo itrbr2d_.fo dtrbr2d_.fo igsum2d_.fo dgsum2d_.fo igamx2d_.fo dgamx2d_.fo igamn2d_.fo dgamn2d_.fo blacs_setup_.fo blacs_set_.fo blacs_get_.fo blacs_abort_.fo blacs_exit_.fo blacs_pnum_.fo blacs_pcoord_.fo ksendid_.fo krecvid_.fo kbsid_.fo kbrid_.fo dcputime00_.fo dwalltime00_.fo blacs_pinfo_.fo blacs_init_.fo blacs_map_.fo blacs_free_.fo blacs_grid_.fo blacs_info_.fo blacs_barr_.fo sys2blacs_.fo blacs2sys_.fo free_handle_.fo igesd2d_.oo dgesd2d_.oo itrsd2d_.oo dtrsd2d_.oo igerv2d_.oo dgerv2d_.oo itrrv2d_.oo dtrrv2d_.oo igebs2d_.oo dgebs2d_.oo igebr2d_.oo dgebr2d_.oo itrbs2d_.oo dtrbs2d_.oo itrbr2d_.oo dtrbr2d_.oo igsum2d_.oo dgsum2d_.oo igamx2d_.oo dgamx2d_.oo igamn2d_.oo dgamn2d_.oo blacs_setup_.oo blacs_set_.oo blacs_get_.oo blacs_abort_.oo blacs_exit_.oo blacs_pnum_.oo blacs_pcoord_.oo ksendid_.oo krecvid_.oo kbsid_.oo kbrid_.oo dcputime00_.oo dwalltime00_.oo blacs_pinfo_.oo blacs_init_.oo blacs_map_.oo blacs_free_.oo blacs_grid_.oo blacs_info_.oo blacs_barr_.oo sys2blacs_.oo blacs2sys_.oo free_handle_.oo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../libslap.a 
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/BLACS »
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/TOOLS »
+cd LAPACK; make double && cd ../
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o iceil.fo -c  -fPIC  -g -O2  -g -O2 -O3 iceil.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o ilacpy.fo -c  -fPIC  -g -O2  -g -O2 -O3 ilacpy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o ilcm.fo -c  -fPIC  -g -O2  -g -O2 -O3 ilcm.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o indxg2p.fo -c  -fPIC  -g -O2  -g -O2 -O3 indxg2p.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o indxg2l.fo -c  -fPIC  -g -O2  -g -O2 -O3 indxg2l.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o indxl2g.fo -c  -fPIC  -g -O2  -g -O2 -O3 indxl2g.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o infog1l.fo -c  -fPIC  -g -O2  -g -O2 -O3 infog1l.f
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/TOOLS/LAPACK »
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o icopy.fo -c  -fPIC  -g -O2  -g -O2 -O3 icopy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o infog2l.fo -c  -fPIC  -g -O2  -g -O2 -O3 infog2l.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o npreroc.fo -c  -fPIC  -g -O2  -g -O2 -O3 npreroc.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o numroc.fo -c  -fPIC  -g -O2  -g -O2 -O3 numroc.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o chk1mat.fo -c  -fPIC  -g -O2  -g -O2 -O3 chk1mat.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlatms.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlatms.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pchkxmat.fo -c  -fPIC  -g -O2  -g -O2 -O3 pchkxmat.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o sltimer.fo -c  -fPIC  -g -O2  -g -O2 -O3 sltimer.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o desc_convert.fo -c  -fPIC  -g -O2  -g -O2 -O3 desc_convert.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o descinit.fo -c  -fPIC  -g -O2  -g -O2 -O3 descinit.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o descset.fo -c  -fPIC  -g -O2  -g -O2 -O3 descset.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlagge.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlagge.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o SL_init.fo -c  -fPIC  -g -O2  -g -O2 -O3 SL_init.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlagsy.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlagsy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarot.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarot.f
+clang -o reshape.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 reshape.c
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlatm1.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlatm1.f
+clang -o SL_gridreshape.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 SL_gridreshape.c
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlaran.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlaran.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarnd.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarnd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o picol2row.fo -c  -fPIC  -g -O2  -g -O2 -O3 picol2row.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pirow2col.fo -c  -fPIC  -g -O2  -g -O2 -O3 pirow2col.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pilaprnt.fo -c  -fPIC  -g -O2  -g -O2 -O3 pilaprnt.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pitreecomb.fo -c  -fPIC  -g -O2  -g -O2 -O3 pitreecomb.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pifillpad.fo -c  -fPIC  -g -O2  -g -O2 -O3 pifillpad.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pichekpad.fo -c  -fPIC  -g -O2  -g -O2 -O3 pichekpad.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pielset.fo -c  -fPIC  -g -O2  -g -O2 -O3 pielset.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pielset2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pielset2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pielget.fo -c  -fPIC  -g -O2  -g -O2 -O3 pielget.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dddot.fo -c  -fPIC  -g -O2  -g -O2 -O3 dddot.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlatcpy.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlatcpy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmatadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmatadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdmatadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdmatadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdcol2row.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdcol2row.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdrow2col.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdrow2col.f
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../../libslap.a  \
+        #         icopy.fo dlatms.fo dlagge.fo dlagsy.fo dlarot.fo dlatm1.fo dlaran.fo dlarnd.fo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../../libslap.a 
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/TOOLS/LAPACK »
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaprnt.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaprnt.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtreecomb.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtreecomb.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdfillpad.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdfillpad.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdchekpad.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdchekpad.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdelset.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdelset.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdelset2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdelset2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdelget.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdelget.f
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        #         iceil.fo ilacpy.fo ilcm.fo indxg2p.fo indxg2l.fo indxl2g.fo infog1l.fo infog2l.fo npreroc.fo numroc.fo chk1mat.fo pchkxmat.fo sltimer.fo desc_convert.fo descinit.fo descset.fo SL_init.fo reshape.co SL_gridreshape.co picol2row.fo pirow2col.fo pilaprnt.fo pitreecomb.fo pifillpad.fo pichekpad.fo pielset.fo pielset2.fo pielget.fo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../libslap.a 
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  dddot.fo dlatcpy.fo dmatadd.fo pdmatadd.fo pdcol2row.fo pdrow2col.fo pdlaprnt.fo pdtreecomb.fo pdfillpad.fo pdchekpad.fo pdelset.fo pdelset2.fo pdelget.fo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../libslap.a 
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        iceil.fo ilacpy.fo ilcm.fo indxg2p.fo indxg2l.fo indxl2g.fo infog1l.fo infog2l.fo npreroc.fo numroc.fo chk1mat.fo pchkxmat.fo sltimer.fo desc_convert.fo descinit.fo descset.fo SL_init.fo reshape.co SL_gridreshape.co picol2row.fo pirow2col.fo pilaprnt.fo pitreecomb.fo pifillpad.fo pichekpad.fo pielset.fo pielset2.fo pielget.fo
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        dddot.fo dlatcpy.fo dmatadd.fo pdmatadd.fo pdcol2row.fo pdrow2col.fo pdlaprnt.fo pdtreecomb.fo pdfillpad.fo pdchekpad.fo pdelset.fo pdelset2.fo pdelget.fo
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/TOOLS »
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS »
+clang -o picopy_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 picopy_.c
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pilaenv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pilaenv.f
+clang -o pdswap_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdswap_.c
+clang -o pdscal_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdscal_.c
+clang -o pdcopy_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdcopy_.c
+clang -o pdaxpy_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdaxpy_.c
+clang -o pddot_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pddot_.c
+clang -o pdnrm2_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdnrm2_.c
+pddot_.c:529:25: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+         if( ( YmyprocR == YprocR ) )
+               ~~~~~~~~~^~~~~~~~~
+pddot_.c:529:25: note: remove extraneous parentheses around the comparison to silence this warning
+         if( ( YmyprocR == YprocR ) )
+             ~~         ^         ~~
+pddot_.c:529:25: note: use '=' to turn this equality comparison into an assignment
+         if( ( YmyprocR == YprocR ) )
+                        ^~
+                        =
+clang -o pdasum_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdasum_.c
+clang -o pdamax_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdamax_.c
+clang -o pdgemv_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdgemv_.c
+clang -o pdger_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdger_.c
+clang -o pdsymv_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdsymv_.c
+clang -o pdsyr_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdsyr_.c
+1 warning generated.
+clang -o pdsyr2_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdsyr2_.c
+clang -o pdtrmv_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtrmv_.c
+clang -o pdtrsv_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtrsv_.c
+clang -o pdagemv_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdagemv_.c
+clang -o pdasymv_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdasymv_.c
+clang -o pdatrmv_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdatrmv_.c
+clang -o pdgeadd_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdgeadd_.c
+clang -o pdgemm_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdgemm_.c
+clang -o pdsymm_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdsymm_.c
+clang -o pdsyr2k_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdsyr2k_.c
+clang -o pdsyrk_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdsyrk_.c
+clang -o pdtradd_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtradd_.c
+clang -o pdtran_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtran_.c
+clang -o pdtrmm_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtrmm_.c
+clang -o pdtrsm_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtrsm_.c
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  picopy_.co pilaenv.fo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../libslap.a 
+cd PBBLAS;  CDEFS='-DAdd_' PKG_CPPFLAGS='-I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T' PKG_CFLAGS='' MkInclude='' make && cd ../ ; \
+cd PTZBLAS; CDEFS='-DAdd_' PKG_CPPFLAGS='-I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T' PKG_CFLAGS='' MkInclude='' make && cd ../ ; \
+cd PTOOLS;  CDEFS='-DAdd_' PKG_CPPFLAGS='-I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T' PKG_CFLAGS='' MkInclude='' make && cd ../
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS/PBBLAS »
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pbdtran.fo -c  -fPIC  -g -O2  -g -O2 -O3 pbdtran.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pbdmatadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pbdmatadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pbdtrsrt.fo -c  -fPIC  -g -O2  -g -O2 -O3 pbdtrsrt.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pbdtrget.fo -c  -fPIC  -g -O2  -g -O2 -O3 pbdtrget.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pbdtrnv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pbdtrnv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pbdvecadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pbdvecadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pbdtrst1.fo -c  -fPIC  -g -O2  -g -O2 -O3 pbdtrst1.f
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../../libslap.a  pbdtran.fo pbdmatadd.fo pbdtrsrt.fo pbdtrget.fo pbdtrnv.fo pbdvecadd.fo pbdtrst1.fo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../../libslap.a 
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../../libslap.a  \
+        pbdtran.fo pbdmatadd.fo pbdtrsrt.fo pbdtrget.fo pbdtrnv.fo pbdvecadd.fo pbdtrst1.fo
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS/PBBLAS »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS/PTZBLAS »
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pxerbla.fo -c  -fPIC  -g -O2  -g -O2 -O3 pxerbla.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o immadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 immadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o immdda.fo -c  -fPIC  -g -O2  -g -O2 -O3 immdda.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o immtadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 immtadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o immddat.fo -c  -fPIC  -g -O2  -g -O2 -O3 immddat.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dvasum.fo -c  -fPIC  -g -O2  -g -O2 -O3 dvasum.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dset.fo -c  -fPIC  -g -O2  -g -O2 -O3 dset.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dcshft.fo -c  -fPIC  -g -O2  -g -O2 -O3 dcshft.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o drshft.fo -c  -fPIC  -g -O2  -g -O2 -O3 drshft.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dvvdot.fo -c  -fPIC  -g -O2  -g -O2 -O3 dvvdot.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmcadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmcadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmtadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmtadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmtcadd.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmtcadd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmdda.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmdda.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmddac.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmddac.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmddat.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmddat.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dmmddact.fo -c  -fPIC  -g -O2  -g -O2 -O3 dmmddact.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dtzpad.fo -c  -fPIC  -g -O2  -g -O2 -O3 dtzpad.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dtzpadcpy.fo -c  -fPIC  -g -O2  -g -O2 -O3 dtzpadcpy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dtzscal.fo -c  -fPIC  -g -O2  -g -O2 -O3 dtzscal.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dagemv.fo -c  -fPIC  -g -O2  -g -O2 -O3 dagemv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dasymv.fo -c  -fPIC  -g -O2  -g -O2 -O3 dasymv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o datrmv.fo -c  -fPIC  -g -O2  -g -O2 -O3 datrmv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dasqrtb.fo -c  -fPIC  -g -O2  -g -O2 -O3 dasqrtb.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dascal.fo -c  -fPIC  -g -O2  -g -O2 -O3 dascal.f
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../../libslap.a  \
+        #         pxerbla.fo immadd.fo immdda.fo immtadd.fo immddat.fo dvasum.fo dset.fo dcshft.fo drshft.fo dvvdot.fo dmmadd.fo dmmcadd.fo dmmtadd.fo dmmtcadd.fo dmmdda.fo dmmddac.fo dmmddat.fo dmmddact.fo dtzpad.fo dtzpadcpy.fo dtzscal.fo dagemv.fo dasymv.fo datrmv.fo dasqrtb.fo dascal.fo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../../libslap.a 
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../../libslap.a  \
+        pxerbla.fo immadd.fo immdda.fo immtadd.fo immddat.fo dvasum.fo dset.fo dcshft.fo drshft.fo dvvdot.fo dmmadd.fo dmmcadd.fo dmmtadd.fo dmmtcadd.fo dmmdda.fo dmmddac.fo dmmddat.fo dmmddact.fo dtzpad.fo dtzpadcpy.fo dtzscal.fo dagemv.fo dasymv.fo datrmv.fo dasqrtb.fo dascal.fo
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS/PTZBLAS »
+make[2] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS/PTOOLS »
+clang -o PB_CGatherV.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CGatherV.c
+clang -o PB_CInV.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CInV.c
+clang -o PB_CInV2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CInV2.c
+clang -o PB_CInOutV.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CInOutV.c
+clang -o PB_CInOutV2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CInOutV2.c
+clang -o PB_COutV.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_COutV.c
+clang -o PB_CScatterV.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CScatterV.c
+clang -o PB_CVMinit.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CVMinit.c
+clang -o PB_CVMloc.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CVMloc.c
+clang -o PB_CVMnpq.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CVMnpq.c
+clang -o PB_CVMpack.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CVMpack.c
+clang -o PB_CVMswp.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CVMswp.c
+clang -o PB_CVMupdate.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CVMupdate.c
+clang -o PB_CVMcontig.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CVMcontig.c
+clang -o PB_Cabort.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cabort.c
+clang -o PB_Cainfog2l.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cainfog2l.c
+clang -o PB_Cbinfo.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cbinfo.c
+clang -o PB_Cchkmat.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cchkmat.c
+clang -o PB_Cchkvec.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cchkvec.c
+clang -o PB_Cconjg.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cconjg.c
+clang -o PB_Cgetbuf.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cgetbuf.c
+clang -o PB_Cinfog2l.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cinfog2l.c
+clang -o PB_Citypeset.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Citypeset.c
+clang -o PB_Cgcd.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cgcd.c
+clang -o PB_Clcm.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Clcm.c
+clang -o PB_Cmalloc.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cmalloc.c
+clang -o PB_Cnumroc.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cnumroc.c
+clang -o PB_Cg2lrem.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cg2lrem.c
+clang -o PB_Cindxg2p.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cindxg2p.c
+clang -o PB_Cnnxtroc.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cnnxtroc.c
+clang -o PB_Cnpreroc.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cnpreroc.c
+clang -o PB_CpswapNN.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpswapNN.c
+clang -o PB_CpswapND.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpswapND.c
+clang -o PB_Cpdot11.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpdot11.c
+clang -o PB_CpdotNN.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpdotNN.c
+clang -o PB_CpdotND.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpdotND.c
+clang -o PB_CpaxpbyNN.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpaxpbyNN.c
+clang -o PB_CpaxpbyND.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpaxpbyND.c
+clang -o PB_CpaxpbyDN.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpaxpbyDN.c
+clang -o PB_Cpaxpby.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpaxpby.c
+clang -o PB_CpgemmBC.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpgemmBC.c
+clang -o PB_CpgemmAC.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpgemmAC.c
+clang -o PB_CpgemmAB.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpgemmAB.c
+clang -o PB_Cplaprnt.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cplaprnt.c
+clang -o PB_Cplapad.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cplapad.c
+clang -o PB_Cplapd2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cplapd2.c
+clang -o PB_Cplascal.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cplascal.c
+clang -o PB_Cplasca2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cplasca2.c
+clang -o PB_Cplacnjg.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cplacnjg.c
+clang -o PB_Cpsym.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpsym.c
+clang -o PB_CpsymmAB.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpsymmAB.c
+clang -o PB_CpsymmBC.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpsymmBC.c
+clang -o PB_Cpsyr.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpsyr.c
+clang -o PB_CpsyrkA.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpsyrkA.c
+clang -o PB_CpsyrkAC.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CpsyrkAC.c
+clang -o PB_Cpsyr2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpsyr2.c
+clang -o PB_Cpsyr2kA.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpsyr2kA.c
+clang -o PB_Cpsyr2kAC.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpsyr2kAC.c
+clang -o PB_Cptrm.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cptrm.c
+clang -o PB_Cpgeadd.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cpgeadd.c
+clang -o PB_Cptradd.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cptradd.c
+clang -o PB_Cptran.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cptran.c
+clang -o PB_CptrmmAB.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CptrmmAB.c
+clang -o PB_CptrmmB.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CptrmmB.c
+clang -o PB_Cptrsm.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cptrsm.c
+clang -o PB_CptrsmAB.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CptrsmAB.c
+clang -o PB_CptrsmAB0.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CptrsmAB0.c
+clang -o PB_CptrsmAB1.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CptrsmAB1.c
+clang -o PB_CptrsmB.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CptrsmB.c
+clang -o PB_Cptrsv.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cptrsv.c
+clang -o PB_Ctop.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctop.c
+clang -o PB_Ctzahemv.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzahemv.c
+clang -o PB_Ctzasymv.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzasymv.c
+clang -o PB_Ctzatrmv.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzatrmv.c
+clang -o PB_Ctzhemm.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzhemm.c
+clang -o PB_Ctzhemv.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzhemv.c
+clang -o PB_Ctzher.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzher.c
+clang -o PB_Ctzherk.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzherk.c
+clang -o PB_Ctzher2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzher2.c
+clang -o PB_Ctzher2k.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzher2k.c
+clang -o PB_Ctzsymm.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzsymm.c
+clang -o PB_Ctzsymv.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzsymv.c
+clang -o PB_Ctzsyr.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzsyr.c
+clang -o PB_Ctzsyrk.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzsyrk.c
+clang -o PB_Ctzsyr2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzsyr2.c
+clang -o PB_Ctzsyr2k.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctzsyr2k.c
+clang -o PB_Ctztrmm.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctztrmm.c
+clang -o PB_Ctztrmv.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Ctztrmv.c
+clang -o PB_Cwarn.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cwarn.c
+clang -o PB_freebuf_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_freebuf_.c
+clang -o PB_topget_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_topget_.c
+clang -o PB_topset_.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_topset_.c
+clang -o PB_Cdescset.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cdescset.c
+clang -o PB_Cdescribe.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cdescribe.c
+clang -o PB_CargFtoC.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_CargFtoC.c
+clang -o PB_Cfirstnb.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cfirstnb.c
+clang -o PB_Clastnb.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Clastnb.c
+clang -o PB_Cspan.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cspan.c
+clang -o wcc_PB_Citypeset.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 wcc_PB_Citypeset.c
+clang -o PB_Cdtypeset.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 PB_Cdtypeset.c
+clang -o wcc_PB_Cdtypeset.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 wcc_PB_Cdtypeset.c
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../../libslap.a  PB_CGatherV.co PB_CInV.co PB_CInV2.co PB_CInOutV.co PB_CInOutV2.co PB_COutV.co PB_CScatterV.co PB_CVMinit.co PB_CVMloc.co PB_CVMnpq.co PB_CVMpack.co PB_CVMswp.co PB_CVMupdate.co PB_CVMcontig.co PB_Cabort.co PB_Cainfog2l.co PB_Cbinfo.co PB_Cchkmat.co PB_Cchkvec.co PB_Cconjg.co PB_Cgetbuf.co PB_Cinfog2l.co PB_Citypeset.co PB_Cgcd.co PB_Clcm.co PB_Cmalloc.co PB_Cnumroc.co PB_Cg2lrem.co PB_Cindxg2p.co PB_Cnnxtroc.co PB_Cnpreroc.co PB_CpswapNN.co PB_CpswapND.co PB_Cpdot11.co PB_CpdotNN.co PB_CpdotND.co PB_CpaxpbyNN.co PB_CpaxpbyND.co PB_CpaxpbyDN.co PB_Cpaxpby.co PB_CpgemmBC.co PB_CpgemmAC.co PB_CpgemmAB.co PB_Cplaprnt.co PB_Cplapad.co PB_Cplapd2.co PB_Cplascal.co PB_Cplasca2.co PB_Cplacnjg.co PB_Cpsym.co PB_CpsymmAB.co PB_CpsymmBC.co PB_Cpsyr.co PB_CpsyrkA.co PB_CpsyrkAC.co PB_Cpsyr2.co PB_Cpsyr2kA.co PB_Cpsyr2kAC.co PB_Cptrm.co PB_Cpgeadd.co PB_Cptradd.co PB_Cptran.co PB_CptrmmAB.co PB_CptrmmB.co PB_Cptrsm.co PB_CptrsmAB.co PB_CptrsmAB0.co PB_CptrsmAB1.co PB_CptrsmB.co PB_Cptrsv.co PB_Ctop.co PB_Ctzahemv.co PB_Ctzasymv.co PB_Ctzatrmv.co PB_Ctzhemm.co PB_Ctzhemv.co PB_Ctzher.co PB_Ctzherk.co PB_Ctzher2.co PB_Ctzher2k.co PB_Ctzsymm.co PB_Ctzsymv.co PB_Ctzsyr.co PB_Ctzsyrk.co PB_Ctzsyr2.co PB_Ctzsyr2k.co PB_Ctztrmm.co PB_Ctztrmv.co PB_Cwarn.co PB_freebuf_.co PB_topget_.co PB_topset_.co PB_Cdescset.co PB_Cdescribe.co PB_CargFtoC.co PB_Cfirstnb.co PB_Clastnb.co PB_Cspan.co wcc_PB_Citypeset.co PB_Cdtypeset.co wcc_PB_Cdtypeset.co
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../../libslap.a 
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../../libslap.a  \
+        PB_CGatherV.co PB_CInV.co PB_CInV2.co PB_CInOutV.co PB_CInOutV2.co PB_COutV.co PB_CScatterV.co PB_CVMinit.co PB_CVMloc.co PB_CVMnpq.co PB_CVMpack.co PB_CVMswp.co PB_CVMupdate.co PB_CVMcontig.co PB_Cabort.co PB_Cainfog2l.co PB_Cbinfo.co PB_Cchkmat.co PB_Cchkvec.co PB_Cconjg.co PB_Cgetbuf.co PB_Cinfog2l.co PB_Citypeset.co PB_Cgcd.co PB_Clcm.co PB_Cmalloc.co PB_Cnumroc.co PB_Cg2lrem.co PB_Cindxg2p.co PB_Cnnxtroc.co PB_Cnpreroc.co PB_CpswapNN.co PB_CpswapND.co PB_Cpdot11.co PB_CpdotNN.co PB_CpdotND.co PB_CpaxpbyNN.co PB_CpaxpbyND.co PB_CpaxpbyDN.co PB_Cpaxpby.co PB_CpgemmBC.co PB_CpgemmAC.co PB_CpgemmAB.co PB_Cplaprnt.co PB_Cplapad.co PB_Cplapd2.co PB_Cplascal.co PB_Cplasca2.co PB_Cplacnjg.co PB_Cpsym.co PB_CpsymmAB.co PB_CpsymmBC.co PB_Cpsyr.co PB_CpsyrkA.co PB_CpsyrkAC.co PB_Cpsyr2.co PB_Cpsyr2kA.co PB_Cpsyr2kAC.co PB_Cptrm.co PB_Cpgeadd.co PB_Cptradd.co PB_Cptran.co PB_CptrmmAB.co PB_CptrmmB.co PB_Cptrsm.co PB_CptrsmAB.co PB_CptrsmAB0.co PB_CptrsmAB1.co PB_CptrsmB.co PB_Cptrsv.co PB_Ctop.co PB_Ctzahemv.co PB_Ctzasymv.co PB_Ctzatrmv.co PB_Ctzhemm.co PB_Ctzhemv.co PB_Ctzher.co PB_Ctzherk.co PB_Ctzher2.co PB_Ctzher2k.co PB_Ctzsymm.co PB_Ctzsymv.co PB_Ctzsyr.co PB_Ctzsyrk.co PB_Ctzsyr2.co PB_Ctzsyr2k.co PB_Ctztrmm.co PB_Ctztrmv.co PB_Cwarn.co PB_freebuf_.co PB_topget_.co PB_topset_.co PB_Cdescset.co PB_Cdescribe.co PB_CargFtoC.co PB_Cfirstnb.co PB_Clastnb.co PB_Cspan.co wcc_PB_Citypeset.co PB_Cdtypeset.co wcc_PB_Cdtypeset.co
+make[2] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS/PTOOLS »
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  pdswap_.co pdscal_.co pdcopy_.co pdaxpy_.co pddot_.co pdnrm2_.co pdasum_.co pdamax_.co pdgemv_.co pdger_.co pdsymv_.co pdsyr_.co pdsyr2_.co pdtrmv_.co pdtrsv_.co pdagemv_.co pdasymv_.co pdatrmv_.co pdgeadd_.co pdgemm_.co pdsymm_.co pdsyr2k_.co pdsyrk_.co pdtradd_.co pdtran_.co pdtrmm_.co pdtrsm_.co pilaenv.fo
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../libslap.a 
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        picopy_.co pilaenv.fo
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        pdswap_.co pdscal_.co pdcopy_.co pdaxpy_.co pddot_.co pdnrm2_.co pdasum_.co pdamax_.co pdgemv_.co pdger_.co pdsymv_.co pdsyr_.co pdsyr2_.co pdtrmv_.co pdtrsv_.co pdagemv_.co pdasymv_.co pdatrmv_.co pdgeadd_.co pdgemm_.co pdsymm_.co pdsyr2k_.co pdsyrk_.co pdtradd_.co pdtran_.co pdtrmm_.co pdtrsm_.co pilaenv.fo
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/PBLAS »
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/REDIST »
+clang -o pdgemr.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdgemr.c
+clang -o pdgemr2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdgemr2.c
+clang -o pdtrmr.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtrmr.c
+clang -o pdtrmr2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdtrmr2.c
+clang -o pigemr.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pigemr.c
+clang -o pigemr2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pigemr2.c
+clang -o pitrmr.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pitrmr.c
+clang -o pitrmr2.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pitrmr2.c
+clang -o pgemraux.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pgemraux.c
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  pdgemr.co pdgemr2.co pdtrmr.co pdtrmr2.co pigemr.co pigemr2.co pitrmr.co pitrmr2.co pgemraux.co
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../libslap.a 
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        pdgemr.co pdgemr2.co pdtrmr.co pdtrmr2.co pigemr.co pigemr2.co pitrmr.co pitrmr2.co pgemraux.co
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/REDIST »
+make[1] : on entre dans le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/ScaLAPACK »
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddbsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddbsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddbtrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddbtrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddbtrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddbtrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddbtrsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddbtrsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddtsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddtsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddttrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddttrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddttrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddttrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pddttrsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pddttrsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgbsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgbsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgbtrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgbtrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgbtrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgbtrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgebd2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgebd2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgebrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgebrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgecon.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgecon.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgeequ.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgeequ.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgehd2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgehd2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgehrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgehrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgelq2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgelq2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgelqf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgelqf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgels.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgels.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgeql2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgeql2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgeqlf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgeqlf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgeqpf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgeqpf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgeqr2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgeqr2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgeqrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgeqrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgerfs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgerfs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgerq2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgerq2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgerqf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgerqf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgesv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgesv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgesvd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgesvd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgesvx.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgesvx.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgetf2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgetf2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgetrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgetrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgetri.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgetri.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgetrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgetrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdggqrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdggqrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdggrqf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdggrqf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlabrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlabrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlacon.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlacon.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlacp2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlacp2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlacpy.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlacpy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlahrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlahrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlange.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlange.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlanhs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlanhs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlansy.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlansy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlantr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlantr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlapiv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlapiv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlapv2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlapv2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqge.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqge.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqsy.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqsy.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlarf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlarf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlarfb.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlarfb.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlarfg.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlarfg.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlarft.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlarft.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlase2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlase2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaset.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaset.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlascl.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlascl.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlassq.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlassq.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaswp.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaswp.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlatra.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlatra.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlatrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlatrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlatrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlatrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlauu2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlauu2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlauum.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlauum.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorg2l.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorg2l.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorg2r.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorg2r.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorgl2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorgl2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorglq.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorglq.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorgql.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorgql.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorgqr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorgqr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorgr2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorgr2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorgrq.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorgrq.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorm2l.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorm2l.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorm2r.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorm2r.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormbr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormbr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormhr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormhr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdorml2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdorml2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormlq.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormlq.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormql.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormql.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormqr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormqr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormr2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormr2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormrq.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormrq.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormtr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormtr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpocon.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpocon.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpbsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpbsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpbtrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpbtrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpbtrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpbtrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpbtrsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpbtrsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdptsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdptsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpttrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpttrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpttrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpttrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpttrsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpttrsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpoequ.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpoequ.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdporfs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdporfs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdposv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdposv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdposvx.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdposvx.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpotf2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpotf2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpotrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpotrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpotri.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpotri.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdpotrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdpotrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdrscl.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdrscl.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdstein.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdstein.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsyev.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsyev.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsyevd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsyevd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsyevx.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsyevx.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsygs2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsygs2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsygst.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsygst.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsygvx.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsygvx.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsyngst.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsyngst.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsyntrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsyntrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsyttrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsyttrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsytd2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsytd2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsytrd.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsytrd.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtrti2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtrti2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtrtri.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtrtri.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtrtrs.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtrtrs.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaevswp.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaevswp.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlarzb.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlarzb.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlarzt.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlarzt.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlarz.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlarz.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlatrz.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlatrz.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtzrzf.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtzrzf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormr3.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormr3.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdormrz.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdormrz.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlahqr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlahqr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaconsb.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaconsb.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlacp3.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlacp3.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlawil.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlawil.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlasmsub.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlasmsub.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlared2d.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlared2d.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlamr1d.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlamr1d.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlaref.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlaref.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlamsh.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlamsh.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlasorte.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlasorte.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dsteqr2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dsteqr2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o ddbtf2.fo -c  -fPIC  -g -O2  -g -O2 -O3 ddbtf2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o ddbtrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 ddbtrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o ddttrf.fo -c  -fPIC  -g -O2  -g -O2 -O3 ddttrf.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o ddttrsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 ddttrsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dpttrsv.fo -c  -fPIC  -g -O2  -g -O2 -O3 dpttrsv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dtrmvt.fo -c  -fPIC  -g -O2  -g -O2 -O3 dtrmvt.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdsyevr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdsyevr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o bdlaapp.fo -c  -fPIC  -g -O2  -g -O2 -O3 bdlaapp.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o bdlaexc.fo -c  -fPIC  -g -O2  -g -O2 -O3 bdlaexc.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o bdtrexc.fo -c  -fPIC  -g -O2  -g -O2 -O3 bdtrexc.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlaqr6.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlaqr6.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtrord.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtrord.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtrsen.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtrsen.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdgebal.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdgebal.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdhseqr.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdhseqr.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlamve.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlamve.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqr0.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqr0.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqr1.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqr1.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqr2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqr2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqr3.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqr3.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqr4.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqr4.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaqr5.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaqr5.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdrot.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdrot.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdtrcon.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdtrcon.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlabad.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlabad.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaed0.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaed0.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaed1.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaed1.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaed2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaed2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaed3.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaed3.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlaedz.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlaedz.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlamch.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlamch.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlared1d.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlared1d.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdlasrt.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdlasrt.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdstebz.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdstebz.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pdstedc.fo -c  -fPIC  -g -O2  -g -O2 -O3 pdstedc.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlapst.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlapst.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlasrt2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlasrt2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dstein2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dstein2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlar1va.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlar1va.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarrb2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarrb2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarrd2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarrd2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarre2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarre2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarre2a.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarre2a.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarrf2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarrf2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dlarrv2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dlarrv2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dstegr2.fo -c  -fPIC  -g -O2  -g -O2 -O3 dstegr2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dstegr2a.fo -c  -fPIC  -g -O2  -g -O2 -O3 dstegr2a.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o dstegr2b.fo -c  -fPIC  -g -O2  -g -O2 -O3 dstegr2b.f
+clang -o pdlaiect.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pdlaiect.c
+clang -o dlamov.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 dlamov.c
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pjlaenv.fo -c  -fPIC  -g -O2  -g -O2 -O3 pjlaenv.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pilaenvx.fo -c  -fPIC  -g -O2  -g -O2 -O3 pilaenvx.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o piparmq.fo -c  -fPIC  -g -O2  -g -O2 -O3 piparmq.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pilaver.fo -c  -fPIC  -g -O2  -g -O2 -O3 pilaver.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pmpim2.fo -c  -fPIC  -g -O2  -g -O2 -O3 pmpim2.f
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran -o pmpcol.fo -c  -fPIC  -g -O2  -g -O2 -O3 pmpcol.f
+clang -o pbchkvect.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 pbchkvect.c
+clang -o getpbbuf.co -c -DAdd_ -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/include  -DMPI2 -DOPENMPI  -DUSE_FC_LEN_T  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -O3 getpbbuf.c
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  pddbsv.fo pddbtrf.fo pddbtrs.fo pddbtrsv.fo pddtsv.fo pddttrf.fo pddttrs.fo pddttrsv.fo pdgbsv.fo pdgbtrf.fo pdgbtrs.fo pdgebd2.fo pdgebrd.fo pdgecon.fo pdgeequ.fo pdgehd2.fo pdgehrd.fo pdgelq2.fo pdgelqf.fo pdgels.fo pdgeql2.fo pdgeqlf.fo pdgeqpf.fo pdgeqr2.fo pdgeqrf.fo pdgerfs.fo pdgerq2.fo pdgerqf.fo pdgesv.fo pdgesvd.fo pdgesvx.fo pdgetf2.fo pdgetrf.fo pdgetri.fo pdgetrs.fo pdggqrf.fo pdggrqf.fo pdlabrd.fo pdlacon.fo pdlacp2.fo pdlacpy.fo pdlahrd.fo pdlange.fo pdlanhs.fo pdlansy.fo pdlantr.fo pdlapiv.fo pdlapv2.fo pdlaqge.fo pdlaqsy.fo pdlarf.fo pdlarfb.fo pdlarfg.fo pdlarft.fo pdlase2.fo pdlaset.fo pdlascl.fo pdlassq.fo pdlaswp.fo pdlatra.fo pdlatrd.fo pdlatrs.fo pdlauu2.fo pdlauum.fo pdorg2l.fo pdorg2r.fo pdorgl2.fo pdorglq.fo pdorgql.fo pdorgqr.fo pdorgr2.fo pdorgrq.fo pdorm2l.fo pdorm2r.fo pdormbr.fo pdormhr.fo pdorml2.fo pdormlq.fo pdormql.fo pdormqr.fo pdormr2.fo pdormrq.fo pdormtr.fo pdpocon.fo pdpbsv.fo pdpbtrf.fo pdpbtrs.fo pdpbtrsv.fo pdptsv.fo pdpttrf.fo pdpttrs.fo pdpttrsv.fo pdpoequ.fo pdporfs.fo pdposv.fo pdposvx.fo pdpotf2.fo pdpotrf.fo pdpotri.fo pdpotrs.fo pdrscl.fo pdstein.fo pdsyev.fo pdsyevd.fo pdsyevx.fo pdsygs2.fo pdsygst.fo pdsygvx.fo pdsyngst.fo pdsyntrd.fo pdsyttrd.fo pdsytd2.fo pdsytrd.fo pdtrti2.fo pdtrtri.fo pdtrtrs.fo pdlaevswp.fo pdlarzb.fo pdlarzt.fo pdlarz.fo pdlatrz.fo pdtzrzf.fo pdormr3.fo pdormrz.fo pdlahqr.fo pdlaconsb.fo pdlacp3.fo pdlawil.fo pdlasmsub.fo pdlared2d.fo pdlamr1d.fo dlaref.fo dlamsh.fo dlasorte.fo dsteqr2.fo ddbtf2.fo ddbtrf.fo ddttrf.fo ddttrsv.fo dpttrsv.fo dtrmvt.fo pdsyevr.fo bdlaapp.fo bdlaexc.fo bdtrexc.fo dlaqr6.fo pdtrord.fo pdtrsen.fo pdgebal.fo pdhseqr.fo pdlamve.fo pdlaqr0.fo pdlaqr1.fo pdlaqr2.fo pdlaqr3.fo pdlaqr4.fo pdlaqr5.fo pdrot.fo pdtrcon.fo pdlabad.fo pdlaed0.fo pdlaed1.fo pdlaed2.fo pdlaed3.fo pdlaedz.fo pdlamch.fo pdlared1d.fo pdlasrt.fo pdstebz.fo pdstedc.fo dlapst.fo dlasrt2.fo dstein2.fo dlar1va.fo dlarrb2.fo dlarrd2.fo dlarre2.fo dlarre2a.fo dlarrf2.fo dlarrv2.fo dstegr2.fo dstegr2a.fo dstegr2b.fo \
+#         pdlaiect.co dlamov.co pjlaenv.fo pilaenvx.fo piparmq.fo pilaver.fo pmpim2.fo pmpcol.fo pbchkvect.co getpbbuf.co
+# /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib ../libslap.a 
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ar cr ../libslap.a  \
+        pddbsv.fo pddbtrf.fo pddbtrs.fo pddbtrsv.fo pddtsv.fo pddttrf.fo pddttrs.fo pddttrsv.fo pdgbsv.fo pdgbtrf.fo pdgbtrs.fo pdgebd2.fo pdgebrd.fo pdgecon.fo pdgeequ.fo pdgehd2.fo pdgehrd.fo pdgelq2.fo pdgelqf.fo pdgels.fo pdgeql2.fo pdgeqlf.fo pdgeqpf.fo pdgeqr2.fo pdgeqrf.fo pdgerfs.fo pdgerq2.fo pdgerqf.fo pdgesv.fo pdgesvd.fo pdgesvx.fo pdgetf2.fo pdgetrf.fo pdgetri.fo pdgetrs.fo pdggqrf.fo pdggrqf.fo pdlabrd.fo pdlacon.fo pdlacp2.fo pdlacpy.fo pdlahrd.fo pdlange.fo pdlanhs.fo pdlansy.fo pdlantr.fo pdlapiv.fo pdlapv2.fo pdlaqge.fo pdlaqsy.fo pdlarf.fo pdlarfb.fo pdlarfg.fo pdlarft.fo pdlase2.fo pdlaset.fo pdlascl.fo pdlassq.fo pdlaswp.fo pdlatra.fo pdlatrd.fo pdlatrs.fo pdlauu2.fo pdlauum.fo pdorg2l.fo pdorg2r.fo pdorgl2.fo pdorglq.fo pdorgql.fo pdorgqr.fo pdorgr2.fo pdorgrq.fo pdorm2l.fo pdorm2r.fo pdormbr.fo pdormhr.fo pdorml2.fo pdormlq.fo pdormql.fo pdormqr.fo pdormr2.fo pdormrq.fo pdormtr.fo pdpocon.fo pdpbsv.fo pdpbtrf.fo pdpbtrs.fo pdpbtrsv.fo pdptsv.fo pdpttrf.fo pdpttrs.fo pdpttrsv.fo pdpoequ.fo pdporfs.fo pdposv.fo pdposvx.fo pdpotf2.fo pdpotrf.fo pdpotri.fo pdpotrs.fo pdrscl.fo pdstein.fo pdsyev.fo pdsyevd.fo pdsyevx.fo pdsygs2.fo pdsygst.fo pdsygvx.fo pdsyngst.fo pdsyntrd.fo pdsyttrd.fo pdsytd2.fo pdsytrd.fo pdtrti2.fo pdtrtri.fo pdtrtrs.fo pdlaevswp.fo pdlarzb.fo pdlarzt.fo pdlarz.fo pdlatrz.fo pdtzrzf.fo pdormr3.fo pdormrz.fo pdlahqr.fo pdlaconsb.fo pdlacp3.fo pdlawil.fo pdlasmsub.fo pdlared2d.fo pdlamr1d.fo dlaref.fo dlamsh.fo dlasorte.fo dsteqr2.fo ddbtf2.fo ddbtrf.fo ddttrf.fo ddttrsv.fo dpttrsv.fo dtrmvt.fo pdsyevr.fo bdlaapp.fo bdlaexc.fo bdtrexc.fo dlaqr6.fo pdtrord.fo pdtrsen.fo pdgebal.fo pdhseqr.fo pdlamve.fo pdlaqr0.fo pdlaqr1.fo pdlaqr2.fo pdlaqr3.fo pdlaqr4.fo pdlaqr5.fo pdrot.fo pdtrcon.fo pdlabad.fo pdlaed0.fo pdlaed1.fo pdlaed2.fo pdlaed3.fo pdlaedz.fo pdlamch.fo pdlared1d.fo pdlasrt.fo pdstebz.fo pdstedc.fo dlapst.fo dlasrt2.fo dstein2.fo dlar1va.fo dlarrb2.fo dlarrd2.fo dlarre2.fo dlarre2a.fo dlarrf2.fo dlarrv2.fo dstegr2.fo dstegr2a.fo dstegr2b.fo \
+        pdlaiect.co dlamov.co pjlaenv.fo pilaenvx.fo piparmq.fo pilaver.fo pmpim2.fo pmpcol.fo pbchkvect.co getpbbuf.co
+make[1] : on quitte le répertoire « /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/pbdSLAP/src/ScaLAPACK »
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/ranlib libslap.a
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pbdSLAP.so slap_blacs.o zzz.o libslap.a -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/adkj73hazdkc4gkr1d29bby4c8xanfnj-openmpi-5.0.6/lib -lmpi -lutil -lpthread -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _slap_blacs_gridinit_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _ilacpy_: does not use standard frame
+ld: warning: could not create compact unwind for _chk1mat_: does not use standard frame
+ld: warning: could not create compact unwind for _globchk_: does not use standard frame
+ld: warning: could not create compact unwind for _pchk1mat_: does not use standard frame
+ld: warning: could not create compact unwind for _pchk2mat_: does not use standard frame
+ld: warning: could not create compact unwind for _slcombine_: does not use standard frame
+ld: warning: could not create compact unwind for _desc_convert_: does not use standard frame
+ld: warning: could not create compact unwind for _descinit_: does not use standard frame
+ld: warning: could not create compact unwind for _sl_init_: does not use standard frame
+ld: warning: could not create compact unwind for _picol2row_: does not use standard frame
+ld: warning: could not create compact unwind for _pirow2col_: does not use standard frame
+ld: warning: could not create compact unwind for _pilaprnt_: does not use standard frame
+ld: warning: could not create compact unwind for _pitreecomb_: does not use standard frame
+ld: warning: could not create compact unwind for _pichekpad_: does not use standard frame
+ld: warning: could not create compact unwind for _pielset_: does not use standard frame
+ld: warning: could not create compact unwind for _pielset2_: does not use standard frame
+ld: warning: could not create compact unwind for _pielget_: does not use standard frame
+ld: warning: could not create compact unwind for _pdmatadd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdcol2row_: does not use standard frame
+ld: warning: could not create compact unwind for _pdrow2col_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaprnt_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtreecomb_: does not use standard frame
+ld: warning: could not create compact unwind for _pdchekpad_: does not use standard frame
+ld: warning: could not create compact unwind for _pdelset_: does not use standard frame
+ld: warning: could not create compact unwind for _pdelset2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdelget_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtr2bt_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtr2af_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtr2at_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtran_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdmatadd_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtrsrt_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtrget_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtr2b1_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtr2a1_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtrnv_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdvecadd_: does not use standard frame
+ld: warning: could not create compact unwind for _pbdtrst1_: does not use standard frame
+ld: warning: could not create compact unwind for _immadd_: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _immdda_: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _immtadd_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _immddat_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmadd_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmcadd_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmtadd_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmtcadd_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmdda_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmddac_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmddat_: does not use standard frame
+ld: warning: could not create compact unwind for _dmmddact_: does not use standard frame
+ld: warning: could not create compact unwind for _dtzpad_: does not use standard frame
+ld: warning: could not create compact unwind for _dtzpadcpy_: does not use standard frame
+ld: warning: could not create compact unwind for _dtzscal_: does not use standard frame
+ld: warning: could not create compact unwind for _dagemv_: does not use standard frame
+ld: warning: could not create compact unwind for _dasymv_: does not use standard frame
+ld: warning: could not create compact unwind for _datrmv_: does not use standard frame
+ld: warning: could not create compact unwind for _dascal_: does not use standard frame
+ld: warning: could not create compact unwind for _pilaenv_: does not use standard frame
+ld: warning: could not create compact unwind for _pddbsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pddbtrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pddbtrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pddbtrsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pddtsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pddttrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pddttrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pddttrsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgbsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgbtrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgbtrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgebd2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgebrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgecon_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgeequ_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgehd2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgehrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgelq2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgelqf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgels_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgeql2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgeqlf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgeqpf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgeqr2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgeqrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgerfs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgerq2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgerqf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgesv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgesvd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgesvx_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgetf2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgetrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgetri_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgetrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdggqrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdggrqf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlabrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlacon_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlacp2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlacpy_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlahrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlange_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlanhs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlansy_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlantr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlapiv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlapv2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqge_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqsy_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlarf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlarfb_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlarfg_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlarft_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlase2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaset_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlascl_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlassq_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaswp_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlatra_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlatrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlatrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlauu2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlauum_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorg2l_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorg2r_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorgl2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorglq_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorgql_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorgqr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorgr2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorgrq_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorm2l_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorm2r_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormbr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormhr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdorml2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormlq_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormql_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormqr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormr2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormrq_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormtr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpocon_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpbsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpbtrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpbtrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpbtrsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdptsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpttrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpttrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpttrsv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpoequ_: does not use standard frame
+ld: warning: could not create compact unwind for _pdporfs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdposv_: does not use standard frame
+ld: warning: could not create compact unwind for _pdposvx_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpotf2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpotrf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpotri_: does not use standard frame
+ld: warning: could not create compact unwind for _pdpotrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdrscl_: does not use standard frame
+ld: warning: could not create compact unwind for _pdstein_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsyev_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsyevd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsyevx_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsygs2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsygst_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsygvx_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsyngst_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsyntrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsyttrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsytd2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsytrd_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtrti2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtrtri_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtrtrs_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaevswp_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlarzb_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlarzt_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlarz_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlatrz_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtzrzf_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormr3_: does not use standard frame
+ld: warning: could not create compact unwind for _pdormrz_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlahqr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaconsb_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlacp3_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlawil_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlasmsub_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlared2d_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlamr1d_: does not use standard frame
+ld: warning: could not create compact unwind for _dlaref_: does not use standard frame
+ld: warning: could not create compact unwind for _dlamsh_: does not use standard frame
+ld: warning: could not create compact unwind for _dsteqr2_: does not use standard frame
+ld: warning: could not create compact unwind for _ddbtf2_: does not use standard frame
+ld: warning: could not create compact unwind for _ddbtrf_: does not use standard frame
+ld: warning: could not create compact unwind for _ddttrsv_: does not use standard frame
+ld: warning: could not create compact unwind for _dpttrsv_: does not use standard frame
+ld: warning: could not create compact unwind for _dtrmvt_: does not use standard frame
+ld: warning: could not create compact unwind for _pdsyevr_: does not use standard frame
+ld: warning: could not create compact unwind for _bdlaapp_: does not use standard frame
+ld: warning: could not create compact unwind for _bdlaexc_: does not use standard frame
+ld: warning: could not create compact unwind for _bdtrexc_: does not use standard frame
+ld: warning: could not create compact unwind for _dlaqr6_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtrord_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtrsen_: does not use standard frame
+ld: warning: could not create compact unwind for _pdgebal_: does not use standard frame
+ld: warning: could not create compact unwind for _pdhseqr_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlamve_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqr0_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqr1_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqr2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqr3_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqr4_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaqr5_: does not use standard frame
+ld: warning: could not create compact unwind for _pdrot_: does not use standard frame
+ld: warning: could not create compact unwind for _pdtrcon_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlabad_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaed0_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaed1_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaed2_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaed3_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaedz_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlamch_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlared1d_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlasrt_: does not use standard frame
+ld: warning: could not create compact unwind for _pdlaebz_: does not use standard frame
+ld: warning: could not create compact unwind for _pdstebz_: does not use standard frame
+ld: warning: could not create compact unwind for _pdstedc_: does not use standard frame
+ld: warning: could not create compact unwind for _dlapst_: does not use standard frame
+ld: warning: could not create compact unwind for _dlasrt2_: does not use standard frame
+ld: warning: could not create compact unwind for _dstein2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlar1va_: does not use standard frame
+ld: warning: could not create compact unwind for _dlaneg2a_: does not use standard frame
+ld: warning: could not create compact unwind for _dlarrb2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlaneg2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlarrd2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlarre2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlarre2a_: does not use standard frame
+ld: warning: could not create compact unwind for _dlarrf2_: does not use standard frame
+ld: warning: could not create compact unwind for _dlarrv2_: does not use standard frame
+ld: warning: could not create compact unwind for _dstegr2_: does not use standard frame
+ld: warning: could not create compact unwind for _dstegr2a_: does not use standard frame
+ld: warning: could not create compact unwind for _dstegr2b_: does not use standard frame
+ld: warning: could not create compact unwind for _pjlaenv_: does not use standard frame
+ld: warning: could not create compact unwind for _pilaenvx_: does not use standard frame
+ld: warning: could not create compact unwind for _piparmq_: does not use standard frame
+installing via 'install.libs.R' to /nix/store/6c7zlaszfirr4vbkhwddjlc9n5ih2g8c-r-pbdSLAP-0.3-7/library/00LOCK-pbdSLAP/00new/pbdSLAP
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+[MacBookAir.fritz.box:36873] shmem: mmap: an error occurred while determining whether or not /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/Rtmp1VaSk2/ompi.MacBookAir.351/jf.0/2639593472/sm_segment.MacBookAir.351.9d550000.0 could be created.
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+[MacBookAir.fritz.box:36885] shmem: mmap: an error occurred while determining whether or not /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/RtmpOcuNPM/ompi.MacBookAir.351/jf.0/2091581440/sm_segment.MacBookAir.351.7cab0000.0 could be created.
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+[MacBookAir.fritz.box:36969] shmem: mmap: an error occurred while determining whether or not /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/Rtmpr29JTk/ompi.MacBookAir.351/jf.0/4046913536/sm_segment.MacBookAir.351.f1370000.0 could be created.
+** testing if installed package keeps a record of temporary installation path
+* DONE (pbdSLAP)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pbdSLAP-0.3-7.drv-0/ in /nix/store/6c7zlaszfirr4vbkhwddjlc9n5ih2g8c-r-pbdSLAP-0.3-7...
+patching script interpreter paths in /nix/store/6c7zlaszfirr4vbkhwddjlc9n5ih2g8c-r-pbdSLAP-0.3-7
+/nix/store/6c7zlaszfirr4vbkhwddjlc9n5ih2g8c-r-pbdSLAP-0.3-7/library/pbdSLAP/test_intface/00_make.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+/nix/store/6c7zlaszfirr4vbkhwddjlc9n5ih2g8c-r-pbdSLAP-0.3-7/library/pbdSLAP/test_intface/00_make.win: interpreter directive changed from "#!/bin/sh" to "/nix/store/sk8z3kdy6iaky6sg972k6fkh3iw2rn3d-bash-5.2p37/bin/sh"
+rewriting symlink /nix/store/6c7zlaszfirr4vbkhwddjlc9n5ih2g8c-r-pbdSLAP-0.3-7/nix-support/propagated-user-env-packages to be relative to /nix/store/6c7zlaszfirr4vbkhwddjlc9n5ih2g8c-r-pbdSLAP-0.3-7

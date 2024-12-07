@@ -1,0 +1,46 @@
+this derivation will be built:
+  /nix/store/13bzqmyys3hixivf425yj6201lpp9hg5-r-lineup2-0.6.drv
+this path will be fetched (0.81 MiB download, 0.81 MiB unpacked):
+  /nix/store/il2n21ka3r67l5x62x18fjhfql26d4q2-lineup2_0.6.tar.gz
+copying path '/nix/store/il2n21ka3r67l5x62x18fjhfql26d4q2-lineup2_0.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/13bzqmyys3hixivf425yj6201lpp9hg5-r-lineup2-0.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/il2n21ka3r67l5x62x18fjhfql26d4q2-lineup2_0.6.tar.gz
+source root is lineup2
+setting SOURCE_DATE_EPOCH to timestamp 1623733803 of file lineup2/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lineup2’ ...
+** package ‘lineup2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c corr_betw_matrices.cpp -o corr_betw_matrices.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dist_betw_matrices.cpp -o dist_betw_matrices.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c fscale.cpp -o fscale.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o lineup2.so RcppExports.o corr_betw_matrices.o dist_betw_matrices.o fscale.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pnn24rl762zafbm4345lxdjfbmqvja3w-r-lineup2-0.6/library/00LOCK-lineup2/00new/lineup2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (lineup2)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lineup2-0.6.drv-0/ in /nix/store/pnn24rl762zafbm4345lxdjfbmqvja3w-r-lineup2-0.6...
+patching script interpreter paths in /nix/store/pnn24rl762zafbm4345lxdjfbmqvja3w-r-lineup2-0.6
+rewriting symlink /nix/store/pnn24rl762zafbm4345lxdjfbmqvja3w-r-lineup2-0.6/nix-support/propagated-user-env-packages to be relative to /nix/store/pnn24rl762zafbm4345lxdjfbmqvja3w-r-lineup2-0.6

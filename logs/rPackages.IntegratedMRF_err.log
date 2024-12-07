@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/r18qjh67bxxy2dn29n8l5880cnic23d7-r-IntegratedMRF-1.1.9.drv
+this path will be fetched (0.71 MiB download, 0.71 MiB unpacked):
+  /nix/store/kmrghvjfdd4nsgcl8m2ikhlspfz1mqhp-IntegratedMRF_1.1.9.tar.gz
+copying path '/nix/store/kmrghvjfdd4nsgcl8m2ikhlspfz1mqhp-IntegratedMRF_1.1.9.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/r18qjh67bxxy2dn29n8l5880cnic23d7-r-IntegratedMRF-1.1.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kmrghvjfdd4nsgcl8m2ikhlspfz1mqhp-IntegratedMRF_1.1.9.tar.gz
+source root is IntegratedMRF
+setting SOURCE_DATE_EPOCH to timestamp 1530822603 of file IntegratedMRF/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘IntegratedMRF’ ...
+** package ‘IntegratedMRF’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rcpp_hello.cpp -o rcpp_hello.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c registerDynamicSymbol.cpp -o registerDynamicSymbol.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o IntegratedMRF.so RcppExports.o rcpp_hello.o registerDynamicSymbol.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/9n9a644s0mza32hwngmkl6ndlyk2i7hq-r-IntegratedMRF-1.1.9/library/00LOCK-IntegratedMRF/00new/IntegratedMRF/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (IntegratedMRF)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-IntegratedMRF-1.1.9.drv-0/ in /nix/store/9n9a644s0mza32hwngmkl6ndlyk2i7hq-r-IntegratedMRF-1.1.9...
+patching script interpreter paths in /nix/store/9n9a644s0mza32hwngmkl6ndlyk2i7hq-r-IntegratedMRF-1.1.9
+rewriting symlink /nix/store/9n9a644s0mza32hwngmkl6ndlyk2i7hq-r-IntegratedMRF-1.1.9/nix-support/propagated-user-env-packages to be relative to /nix/store/9n9a644s0mza32hwngmkl6ndlyk2i7hq-r-IntegratedMRF-1.1.9

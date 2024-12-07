@@ -1,0 +1,52 @@
+this derivation will be built:
+  /nix/store/mrh4d0jcbw9b2gmbvnx1hi3izasrf08w-r-RMSNumpress-1.0.1.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/gigjqal1sq72mvncgp83k52r90inzzq7-RMSNumpress_1.0.1.tar.gz
+copying path '/nix/store/gigjqal1sq72mvncgp83k52r90inzzq7-RMSNumpress_1.0.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/mrh4d0jcbw9b2gmbvnx1hi3izasrf08w-r-RMSNumpress-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gigjqal1sq72mvncgp83k52r90inzzq7-RMSNumpress_1.0.1.tar.gz
+source root is RMSNumpress
+setting SOURCE_DATE_EPOCH to timestamp 1612459209 of file RMSNumpress/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RMSNumpress’ ...
+** package ‘RMSNumpress’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MSNumpress.cpp -o MSNumpress.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RMSNumpress.cpp -o RMSNumpress.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+MSNumpress.cpp:314:34: warning: implicit conversion from 'long long' to 'double' changes value from 9223372036854775807 to 9223372036854775808 [-Wimplicit-const-int-float-conversion]
+                                data[i] * fixedPoint + 0.5 > LLONG_MAX  ) {
+                                                           ~ ^~~~~~~~~
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/resource-root/include/limits.h:103:20: note: expanded from macro 'LLONG_MAX'
+#define LLONG_MAX  __LONG_LONG_MAX__
+                   ^~~~~~~~~~~~~~~~~
+<built-in>:107:27: note: expanded from macro '__LONG_LONG_MAX__'
+#define __LONG_LONG_MAX__ 9223372036854775807LL
+                          ^~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RMSNumpress.so MSNumpress.o RMSNumpress.o RcppExports.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/n1pgm2sgfhnzc4kablidqv6gs7q7lbln-r-RMSNumpress-1.0.1/library/00LOCK-RMSNumpress/00new/RMSNumpress/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RMSNumpress)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RMSNumpress-1.0.1.drv-0/ in /nix/store/n1pgm2sgfhnzc4kablidqv6gs7q7lbln-r-RMSNumpress-1.0.1...
+patching script interpreter paths in /nix/store/n1pgm2sgfhnzc4kablidqv6gs7q7lbln-r-RMSNumpress-1.0.1
+rewriting symlink /nix/store/n1pgm2sgfhnzc4kablidqv6gs7q7lbln-r-RMSNumpress-1.0.1/nix-support/propagated-user-env-packages to be relative to /nix/store/n1pgm2sgfhnzc4kablidqv6gs7q7lbln-r-RMSNumpress-1.0.1

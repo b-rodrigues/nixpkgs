@@ -1,0 +1,40 @@
+these 2 derivations will be built:
+  /nix/store/zqfa3nmli2vbpnvxq5qbwc2dpclx2icr-rhino_1.10.1.tar.gz.drv
+  /nix/store/1dlzcl3shrlkbs2vmn586i7k9saylnyh-r-rhino-1.10.1.drv
+building '/nix/store/zqfa3nmli2vbpnvxq5qbwc2dpclx2icr-rhino_1.10.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/rhino_1.10.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  258k  100  258k    0     0  1313k      0 --:--:-- --:--:-- --:--:-- 1317k
+building '/nix/store/1dlzcl3shrlkbs2vmn586i7k9saylnyh-r-rhino-1.10.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/jh0aq6wll2xn0bfhhi5gw30zxvqw9md3-rhino_1.10.1.tar.gz
+source root is rhino
+setting SOURCE_DATE_EPOCH to timestamp 1726833006 of file rhino/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rhino’ ...
+** package ‘rhino’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rhino)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rhino-1.10.1.drv-0/ in /nix/store/v2w6z34lqdh4gi5jww9554hqicydiyxp-r-rhino-1.10.1...
+patching script interpreter paths in /nix/store/v2w6z34lqdh4gi5jww9554hqicydiyxp-r-rhino-1.10.1
+rewriting symlink /nix/store/v2w6z34lqdh4gi5jww9554hqicydiyxp-r-rhino-1.10.1/nix-support/propagated-user-env-packages to be relative to /nix/store/v2w6z34lqdh4gi5jww9554hqicydiyxp-r-rhino-1.10.1

@@ -1,0 +1,86 @@
+these 3 derivations will be built:
+  /nix/store/fqr3a2hm2xxys1cinsqpgg4vyxkbgr55-pdp_0.8.2.tar.gz.drv
+  /nix/store/jvnvvwpvg2j9nllhqhjk5qr2cy1l9b6d-r-pdp-0.8.2.drv
+  /nix/store/bqr9mls38y8p1b3d33la2ij6mj852pm2-r-hpiR-0.3.2.drv
+this path will be fetched (1.82 MiB download, 1.82 MiB unpacked):
+  /nix/store/8vh8wh3iyp41k52hbkyv95kywbkxr2x5-hpiR_0.3.2.tar.gz
+copying path '/nix/store/8vh8wh3iyp41k52hbkyv95kywbkxr2x5-hpiR_0.3.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/fqr3a2hm2xxys1cinsqpgg4vyxkbgr55-pdp_0.8.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/pdp_0.8.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3693k  100 3693k    0     0  6743k      0 --:--:-- --:--:-- --:--:-- 6740k
+building '/nix/store/jvnvvwpvg2j9nllhqhjk5qr2cy1l9b6d-r-pdp-0.8.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/2ncv28lfp2dg5pxvrxk5b9ij87n3h2yk-pdp_0.8.2.tar.gz
+source root is pdp
+setting SOURCE_DATE_EPOCH to timestamp 1730137802 of file pdp/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pdp’ ...
+** package ‘pdp’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c PartialGBM.cpp -o PartialGBM.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c in_out.c -o in_out.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pdp-init.c -o pdp-init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pdp.so PartialGBM.o in_out.o pdp-init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/v6xcd5hqzr0wdfxy7mh0vgqvw78ihggw-r-pdp-0.8.2/library/00LOCK-pdp/00new/pdp/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pdp)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pdp-0.8.2.drv-0/ in /nix/store/v6xcd5hqzr0wdfxy7mh0vgqvw78ihggw-r-pdp-0.8.2...
+patching script interpreter paths in /nix/store/v6xcd5hqzr0wdfxy7mh0vgqvw78ihggw-r-pdp-0.8.2
+rewriting symlink /nix/store/v6xcd5hqzr0wdfxy7mh0vgqvw78ihggw-r-pdp-0.8.2/nix-support/propagated-user-env-packages to be relative to /nix/store/v6xcd5hqzr0wdfxy7mh0vgqvw78ihggw-r-pdp-0.8.2
+building '/nix/store/bqr9mls38y8p1b3d33la2ij6mj852pm2-r-hpiR-0.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/8vh8wh3iyp41k52hbkyv95kywbkxr2x5-hpiR_0.3.2.tar.gz
+source root is hpiR
+setting SOURCE_DATE_EPOCH to timestamp 1585756802 of file hpiR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘hpiR’ ...
+** package ‘hpiR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (hpiR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-hpiR-0.3.2.drv-0/ in /nix/store/84n76xpvap3ndd2m8hlgivqf9a478r9n-r-hpiR-0.3.2...
+patching script interpreter paths in /nix/store/84n76xpvap3ndd2m8hlgivqf9a478r9n-r-hpiR-0.3.2
+rewriting symlink /nix/store/84n76xpvap3ndd2m8hlgivqf9a478r9n-r-hpiR-0.3.2/nix-support/propagated-user-env-packages to be relative to /nix/store/84n76xpvap3ndd2m8hlgivqf9a478r9n-r-hpiR-0.3.2

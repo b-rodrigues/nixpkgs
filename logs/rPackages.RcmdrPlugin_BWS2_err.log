@@ -1,0 +1,94 @@
+these 5 derivations will be built:
+  /nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv
+  /nix/store/3fvbrc51cgsdama53riglpbrp8zpl3m3-r-Rcmdr-2.9-5.drv
+  /nix/store/w64dp3kyd5nnvxy07a95jwrlfb20495g-r-support.BWS2-0.4-0.drv
+  /nix/store/yfwax50sgywyna4md3p8da0l96y20dsy-r-support.CEs-0.7-0.drv
+  /nix/store/8m0jr421j211msalpnlk49xlpfdxwg08-r-RcmdrPlugin.BWS2-0.2-2.drv
+these 2 paths will be fetched (0.04 MiB download, 0.04 MiB unpacked):
+  /nix/store/x5ab3jbyw7c92iza2sgfibk1nhkgbfsi-RcmdrPlugin.BWS2_0.2-2.tar.gz
+  /nix/store/iv700j3nn6rdslq2p7rzfyv1gkh22ydr-support.BWS2_0.4-0.tar.gz
+copying path '/nix/store/x5ab3jbyw7c92iza2sgfibk1nhkgbfsi-RcmdrPlugin.BWS2_0.2-2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/iv700j3nn6rdslq2p7rzfyv1gkh22ydr-support.BWS2_0.4-0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/yfwax50sgywyna4md3p8da0l96y20dsy-r-support.CEs-0.7-0.drv'...
+building '/nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/adkwi4dl0ic3b4cq2dgar9m3hx463wx1-support.CEs_0.7-0.tar.gz
+source root is support.CEs
+setting SOURCE_DATE_EPOCH to timestamp 1698995402 of file support.CEs/MD5
+building '/nix/store/w64dp3kyd5nnvxy07a95jwrlfb20495g-r-support.BWS2-0.4-0.drv'...
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/18w0m6b7b8crk7kxilkj8dxixq6y4fdy-tcltk2_1.2-11.tar.gz
+* installing *source* package ‘support.CEs’ ...
+** package ‘support.CEs’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+source root is tcltk2
+setting SOURCE_DATE_EPOCH to timestamp 1419068106 of file tcltk2/MD5
+Running phase: patchPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/iv700j3nn6rdslq2p7rzfyv1gkh22ydr-support.BWS2_0.4-0.tar.gz
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+source root is support.BWS2
+Running phase: buildPhase
+setting SOURCE_DATE_EPOCH to timestamp 1653363602 of file support.BWS2/MD5
+Running phase: patchPhase
+Running phase: checkPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: installPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tcltk2’ ...
+* installing *source* package ‘support.BWS2’ ...
+** package ‘tcltk2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** package ‘support.BWS2’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+sh: line 1: 59030 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tcltk2-1.2-11.drv-0/RtmpG8VA70/filee646283af444'
+ERROR: lazy loading failed for package ‘tcltk2’
+* removing ‘/nix/store/b1sdns2c9cy9k3q3x58n3yjvwqbcazmx-r-tcltk2-1.2-11/library/tcltk2’
+error: builder for '/nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/18w0m6b7b8crk7kxilkj8dxixq6y4fdy-tcltk2_1.2-11.tar.gz
+       > source root is tcltk2
+       > setting SOURCE_DATE_EPOCH to timestamp 1419068106 of file tcltk2/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘tcltk2’ ...
+       > ** package ‘tcltk2’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 59030 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-tcltk2-1.2-11.drv-0/RtmpG8VA70/filee646283af444'
+       > ERROR: lazy loading failed for package ‘tcltk2’
+       > * removing ‘/nix/store/b1sdns2c9cy9k3q3x58n3yjvwqbcazmx-r-tcltk2-1.2-11/library/tcltk2’
+       For full logs, run 'nix log /nix/store/jsb61z64c52f2iij1v73sgcil54v24nq-r-tcltk2-1.2-11.drv'.
+error: 1 dependencies of derivation '/nix/store/3fvbrc51cgsdama53riglpbrp8zpl3m3-r-Rcmdr-2.9-5.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/8m0jr421j211msalpnlk49xlpfdxwg08-r-RcmdrPlugin.BWS2-0.2-2.drv' failed to build

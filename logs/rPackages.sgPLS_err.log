@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/gr7m2cs03riz3fz9g61gn9ksncp1a474-r-sgPLS-1.8.drv
+this path will be fetched (0.38 MiB download, 0.38 MiB unpacked):
+  /nix/store/zakrlddpkxbys9rl81487n43wjsrz6n6-sgPLS_1.8.tar.gz
+copying path '/nix/store/zakrlddpkxbys9rl81487n43wjsrz6n6-sgPLS_1.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/gr7m2cs03riz3fz9g61gn9ksncp1a474-r-sgPLS-1.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/zakrlddpkxbys9rl81487n43wjsrz6n6-sgPLS_1.8.tar.gz
+source root is sgPLS
+setting SOURCE_DATE_EPOCH to timestamp 1696485002 of file sgPLS/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘mixOmics’ is not available for package ‘sgPLS’
+* removing ‘/nix/store/hzv1b7b6hg2yc6kidb28ng88b4picr86-r-sgPLS-1.8/library/sgPLS’
+error: builder for '/nix/store/gr7m2cs03riz3fz9g61gn9ksncp1a474-r-sgPLS-1.8.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/zakrlddpkxbys9rl81487n43wjsrz6n6-sgPLS_1.8.tar.gz
+       > source root is sgPLS
+       > setting SOURCE_DATE_EPOCH to timestamp 1696485002 of file sgPLS/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘mixOmics’ is not available for package ‘sgPLS’
+       > * removing ‘/nix/store/hzv1b7b6hg2yc6kidb28ng88b4picr86-r-sgPLS-1.8/library/sgPLS’
+       For full logs, run 'nix log /nix/store/gr7m2cs03riz3fz9g61gn9ksncp1a474-r-sgPLS-1.8.drv'.

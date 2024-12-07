@@ -1,0 +1,122 @@
+these 5 derivations will be built:
+  /nix/store/nhc8mk10himfcl1n255f9w5bhx17814f-kstMatrix_1.0-1.tar.gz.drv
+  /nix/store/zwxsza84lnbbn160vfbmvj7y6rayxzqz-pks_0.6-1.tar.gz.drv
+  /nix/store/xp1brqb1h97vs7k77kjnq1plbmbw2119-r-pks-0.6-1.drv
+  /nix/store/7l2ryckdhnb3w6r7qqxcxg60f0gyi775-r-kstMatrix-1.0-1.drv
+  /nix/store/3c4p3nl64q60wwc5ww6m460yzbiln8jj-r-kstIO-0.4-0.drv
+this path will be fetched (0.37 MiB download, 0.37 MiB unpacked):
+  /nix/store/a987gb5c8dv93l9iwhl6j4ri9qw8hk71-kstIO_0.4-0.tar.gz
+copying path '/nix/store/a987gb5c8dv93l9iwhl6j4ri9qw8hk71-kstIO_0.4-0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/nhc8mk10himfcl1n255f9w5bhx17814f-kstMatrix_1.0-1.tar.gz.drv'...
+building '/nix/store/zwxsza84lnbbn160vfbmvj7y6rayxzqz-pks_0.6-1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/kstMatrix_1.0-1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 67148  100 67148    0     0   454k      0 --:--:-- --:--:-- --:--:--  452k
+
+trying https://cran.r-project.org/src/contrib/pks_0.6-1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  324k  100  324k    0     0  1472k      0 --:--:-- --:--:-- --:--:-- 1476k
+building '/nix/store/xp1brqb1h97vs7k77kjnq1plbmbw2119-r-pks-0.6-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vnmx5i39c0py4iawibflnh03p5c3flx9-pks_0.6-1.tar.gz
+source root is pks
+setting SOURCE_DATE_EPOCH to timestamp 1726504802 of file pks/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pks’ ...
+** package ‘pks’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pks)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pks-0.6-1.drv-0/ in /nix/store/ds4142wrcjicrsmpgwp6550881nm81dp-r-pks-0.6-1...
+patching script interpreter paths in /nix/store/ds4142wrcjicrsmpgwp6550881nm81dp-r-pks-0.6-1
+rewriting symlink /nix/store/ds4142wrcjicrsmpgwp6550881nm81dp-r-pks-0.6-1/nix-support/propagated-user-env-packages to be relative to /nix/store/ds4142wrcjicrsmpgwp6550881nm81dp-r-pks-0.6-1
+building '/nix/store/7l2ryckdhnb3w6r7qqxcxg60f0gyi775-r-kstMatrix-1.0-1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/kr2cq1yjpghhscfcy4vb3kkw88zwi8pn-kstMatrix_1.0-1.tar.gz
+source root is kstMatrix
+setting SOURCE_DATE_EPOCH to timestamp 1727996435 of file kstMatrix/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘kstMatrix’ ...
+** package ‘kstMatrix’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c basis.c -o basis.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c constr.c -o constr.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dist.c -o dist.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c helpers.c -o helpers.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c kstMatrix_init.c -o kstMatrix_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o kstMatrix.so basis.o constr.o dist.o helpers.o kstMatrix_init.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/5ghf4567kg9wr1a4xqsm756if3zwwcq4-r-kstMatrix-1.0-1/library/00LOCK-kstMatrix/00new/kstMatrix/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (kstMatrix)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-kstMatrix-1.0-1.drv-0/ in /nix/store/5ghf4567kg9wr1a4xqsm756if3zwwcq4-r-kstMatrix-1.0-1...
+patching script interpreter paths in /nix/store/5ghf4567kg9wr1a4xqsm756if3zwwcq4-r-kstMatrix-1.0-1
+rewriting symlink /nix/store/5ghf4567kg9wr1a4xqsm756if3zwwcq4-r-kstMatrix-1.0-1/nix-support/propagated-user-env-packages to be relative to /nix/store/5ghf4567kg9wr1a4xqsm756if3zwwcq4-r-kstMatrix-1.0-1
+building '/nix/store/3c4p3nl64q60wwc5ww6m460yzbiln8jj-r-kstIO-0.4-0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/a987gb5c8dv93l9iwhl6j4ri9qw8hk71-kstIO_0.4-0.tar.gz
+source root is kstIO
+setting SOURCE_DATE_EPOCH to timestamp 1674750003 of file kstIO/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘kstIO’ ...
+** package ‘kstIO’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (kstIO)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-kstIO-0.4-0.drv-0/ in /nix/store/54iddfcyqxckxrl1mj84pn9yfi1b6irx-r-kstIO-0.4-0...
+patching script interpreter paths in /nix/store/54iddfcyqxckxrl1mj84pn9yfi1b6irx-r-kstIO-0.4-0
+rewriting symlink /nix/store/54iddfcyqxckxrl1mj84pn9yfi1b6irx-r-kstIO-0.4-0/nix-support/propagated-user-env-packages to be relative to /nix/store/54iddfcyqxckxrl1mj84pn9yfi1b6irx-r-kstIO-0.4-0

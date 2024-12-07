@@ -1,0 +1,73 @@
+this derivation will be built:
+  /nix/store/kqrri8hyq4d9x0c38bb0j3zlfbj8lnfd-r-marked-1.2.8.drv
+this path will be fetched (0.34 MiB download, 0.34 MiB unpacked):
+  /nix/store/lvpvs9f4b8w0fb38byv9fqszjg8yph8x-marked_1.2.8.tar.gz
+copying path '/nix/store/lvpvs9f4b8w0fb38byv9fqszjg8yph8x-marked_1.2.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/kqrri8hyq4d9x0c38bb0j3zlfbj8lnfd-r-marked-1.2.8.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lvpvs9f4b8w0fb38byv9fqszjg8yph8x-marked_1.2.8.tar.gz
+source root is marked
+setting SOURCE_DATE_EPOCH to timestamp 1697734802 of file marked/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘marked’ ...
+** package ‘marked’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c bayesCR.cpp -o bayesCR.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cjs.f -o cjs.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cjs1tldmat.f -o cjs1tldmat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cjs1tlgam.f -o cjs1tlgam.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cjs2tldmat.f -o cjs2tldmat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cjs2tlgam.f -o cjs2tlgam.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cjsdmat.f -o cjsdmat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c cjsgamma.f -o cjsgamma.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c hmm_like.f -o hmm_like.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c ms2gamma.f -o ms2gamma.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c msdmat.f -o msdmat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c msgamma.f -o msgamma.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c mvmsdmat.f -o mvmsdmat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c ums2dmat.f -o ums2dmat.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c umsdmat.f -o umsdmat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o marked.so bayesCR.o cjs.o cjs1tldmat.o cjs1tlgam.o cjs2tldmat.o cjs2tlgam.o cjsdmat.o cjsgamma.o hmm_like.o init.o ms2gamma.o msdmat.o msgamma.o mvmsdmat.o ums2dmat.o umsdmat.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _cjs_: does not use standard frame
+ld: warning: could not create compact unwind for _cjs2tlgam_: does not use standard frame
+ld: warning: could not create compact unwind for _hmmlike_: does not use standard frame
+ld: warning: could not create compact unwind for _msgam_: does not use standard frame
+ld: warning: could not create compact unwind for _mvmsp_: does not use standard frame
+ld: warning: could not create compact unwind for _ums2p_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _umsp_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _cjs1tlp_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _msp_: registers 23 and 24 not saved contiguously in frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/ziy6rz5b4s08zwb116cj7mz53gp7v7sj-r-marked-1.2.8/library/00LOCK-marked/00new/marked/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (marked)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-marked-1.2.8.drv-0/ in /nix/store/ziy6rz5b4s08zwb116cj7mz53gp7v7sj-r-marked-1.2.8...
+patching script interpreter paths in /nix/store/ziy6rz5b4s08zwb116cj7mz53gp7v7sj-r-marked-1.2.8
+rewriting symlink /nix/store/ziy6rz5b4s08zwb116cj7mz53gp7v7sj-r-marked-1.2.8/nix-support/propagated-user-env-packages to be relative to /nix/store/ziy6rz5b4s08zwb116cj7mz53gp7v7sj-r-marked-1.2.8

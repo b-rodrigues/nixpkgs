@@ -1,0 +1,149 @@
+these 5 derivations will be built:
+  /nix/store/dnydsxsy97w47vf3vsqmzv6wypmy2kqn-tidyquant_1.0.9.tar.gz.drv
+  /nix/store/z3jh5dd7vdmwsya8qn7x9z7nv21dw90n-r-tidyquant-1.0.9.drv
+  /nix/store/8pzzzqpf9hw7j9xjfhd45m580i5xw006-r-sweep-0.2.5.drv
+  /nix/store/rvpnk56jq52v1miphizc893hmim9azqj-r-tibbletime-0.1.8.drv
+  /nix/store/nm06blyxhgsq0p86qy2l8amxdphadzqg-r-anomalize-0.3.0.drv
+building '/nix/store/rvpnk56jq52v1miphizc893hmim9azqj-r-tibbletime-0.1.8.drv'...
+building '/nix/store/dnydsxsy97w47vf3vsqmzv6wypmy2kqn-tidyquant_1.0.9.tar.gz.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/cn5zg8bznp35cn43g0scf4v025kyxwr5-tibbletime_0.1.8.tar.gz
+source root is tibbletime
+setting SOURCE_DATE_EPOCH to timestamp 1674587402 of file tibbletime/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+
+trying https://cran.r-project.org/src/contrib/tidyquant_1.0.9.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+* installing *source* package ‘tibbletime’ ...
+** package ‘tibbletime’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c is_ordered.cpp -o is_ordered.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -fPIC  -g -O2   -c sorted_range_search.cpp -o sorted_range_search.o
+100 4497k  100 4497k    0     0  7213k      0 --:--:-- --:--:-- --:--:-- 7206k
+building '/nix/store/z3jh5dd7vdmwsya8qn7x9z7nv21dw90n-r-tidyquant-1.0.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ws7zlwr750minwly3k6bvrc073via6xg-tidyquant_1.0.9.tar.gz
+source root is tidyquant
+setting SOURCE_DATE_EPOCH to timestamp 1725294602 of file tidyquant/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tibbletime.so RcppExports.o is_ordered.o sorted_range_search.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/2wjl4lfjjj06a2y1h3gmjr77dvfawirj-r-tibbletime-0.1.8/library/00LOCK-tibbletime/00new/tibbletime/libs
+** R
+** data
+*** moving datasets to lazyload DB
+* installing *source* package ‘tidyquant’ ...
+** inst
+** byte-compile and prepare package for lazy loading
+** package ‘tidyquant’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from final location
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tibbletime)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tibbletime-0.1.8.drv-0/ in /nix/store/2wjl4lfjjj06a2y1h3gmjr77dvfawirj-r-tibbletime-0.1.8...
+patching script interpreter paths in /nix/store/2wjl4lfjjj06a2y1h3gmjr77dvfawirj-r-tibbletime-0.1.8
+rewriting symlink /nix/store/2wjl4lfjjj06a2y1h3gmjr77dvfawirj-r-tibbletime-0.1.8/nix-support/propagated-user-env-packages to be relative to /nix/store/2wjl4lfjjj06a2y1h3gmjr77dvfawirj-r-tibbletime-0.1.8
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tidyquant)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tidyquant-1.0.9.drv-0/ in /nix/store/z4fsw3848l88v017n2krxiz40avlzpch-r-tidyquant-1.0.9...
+patching script interpreter paths in /nix/store/z4fsw3848l88v017n2krxiz40avlzpch-r-tidyquant-1.0.9
+rewriting symlink /nix/store/z4fsw3848l88v017n2krxiz40avlzpch-r-tidyquant-1.0.9/nix-support/propagated-user-env-packages to be relative to /nix/store/z4fsw3848l88v017n2krxiz40avlzpch-r-tidyquant-1.0.9
+building '/nix/store/8pzzzqpf9hw7j9xjfhd45m580i5xw006-r-sweep-0.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/3cks6cf6and234js50q0skgvn3fb2mrs-sweep_0.2.5.tar.gz
+source root is sweep
+setting SOURCE_DATE_EPOCH to timestamp 1688647202 of file sweep/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘sweep’ ...
+** package ‘sweep’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sweep)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-sweep-0.2.5.drv-0/ in /nix/store/dqx1y7jszszwasl0c2m9g97wj7x74hha-r-sweep-0.2.5...
+patching script interpreter paths in /nix/store/dqx1y7jszszwasl0c2m9g97wj7x74hha-r-sweep-0.2.5
+rewriting symlink /nix/store/dqx1y7jszszwasl0c2m9g97wj7x74hha-r-sweep-0.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/dqx1y7jszszwasl0c2m9g97wj7x74hha-r-sweep-0.2.5
+building '/nix/store/nm06blyxhgsq0p86qy2l8amxdphadzqg-r-anomalize-0.3.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xy4psz65kw7ibinrwi2xnq7d1fym8w74-anomalize_0.3.0.tar.gz
+source root is anomalize
+setting SOURCE_DATE_EPOCH to timestamp 1698789002 of file anomalize/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘anomalize’ ...
+** package ‘anomalize’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (anomalize)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-anomalize-0.3.0.drv-0/ in /nix/store/4gdzxwjhhakdnfhqf3d7b5rpcfahv0w0-r-anomalize-0.3.0...
+patching script interpreter paths in /nix/store/4gdzxwjhhakdnfhqf3d7b5rpcfahv0w0-r-anomalize-0.3.0
+rewriting symlink /nix/store/4gdzxwjhhakdnfhqf3d7b5rpcfahv0w0-r-anomalize-0.3.0/nix-support/propagated-user-env-packages to be relative to /nix/store/4gdzxwjhhakdnfhqf3d7b5rpcfahv0w0-r-anomalize-0.3.0

@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/qg4fi597846db7vlvlp702a1i7agc7qq-r-resultant-1.0.0.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/5pip7s05qqn0drgx7dcfh4ygq59d84h4-resultant_1.0.0.tar.gz
+copying path '/nix/store/5pip7s05qqn0drgx7dcfh4ygq59d84h4-resultant_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/qg4fi597846db7vlvlp702a1i7agc7qq-r-resultant-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5pip7s05qqn0drgx7dcfh4ygq59d84h4-resultant_1.0.0.tar.gz
+source root is resultant
+setting SOURCE_DATE_EPOCH to timestamp 1722423002 of file resultant/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘resultant’ ...
+** package ‘resultant’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/067r1hv8bs04ypskvsksi6ly6wz4igy2-r-RcppCGAL-5.6.4/library/RcppCGAL/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DCGAL_HEADER_ONLY=1 -I/nix/store/cp9amq2rlcn9i4siga62ldwq7l7dk7fc-gmp-with-cxx-6.3.0-dev/include -I/nix/store/5wrnphl02qg8qk2ksrck8mf47hqn4l08-mpfr-4.2.1-dev/include -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/k3y4927612y2lxd8d04hhvx801x9zc8y-r-BH-1.84.0-0/library/BH/include' -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/067r1hv8bs04ypskvsksi6ly6wz4igy2-r-RcppCGAL-5.6.4/library/RcppCGAL/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -DCGAL_HEADER_ONLY=1 -I/nix/store/cp9amq2rlcn9i4siga62ldwq7l7dk7fc-gmp-with-cxx-6.3.0-dev/include -I/nix/store/5wrnphl02qg8qk2ksrck8mf47hqn4l08-mpfr-4.2.1-dev/include -fPIC  -g -O2   -c resultant.cpp -o resultant.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o resultant.so RcppExports.o resultant.o -L/nix/store/lm1rva8c2649y4lys3d406s9ldicv8qv-gmp-with-cxx-6.3.0/lib -L/nix/store/s96y6ck8yn8wkiijvh3qfrjr230fzgf6-mpfr-4.2.1/lib -lgmp -lmpfr -lgmp -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/yn8d0hvhkfqp2zppz1gvr9lb866klg3n-r-resultant-1.0.0/library/00LOCK-resultant/00new/resultant/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (resultant)
+installPhase completed in 32 seconds
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-resultant-1.0.0.drv-0/ in /nix/store/yn8d0hvhkfqp2zppz1gvr9lb866klg3n-r-resultant-1.0.0...
+patching script interpreter paths in /nix/store/yn8d0hvhkfqp2zppz1gvr9lb866klg3n-r-resultant-1.0.0
+rewriting symlink /nix/store/yn8d0hvhkfqp2zppz1gvr9lb866klg3n-r-resultant-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/yn8d0hvhkfqp2zppz1gvr9lb866klg3n-r-resultant-1.0.0

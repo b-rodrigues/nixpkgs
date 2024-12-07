@@ -1,0 +1,47 @@
+these 2 derivations will be built:
+  /nix/store/vy14jmyxi2gbfqvhn4iyy1ngq2hb9qmc-Haplin_7.3.2.tar.gz.drv
+  /nix/store/4i45dx58lgg3balbwzv3m4d8b4rnmy26-r-Haplin-7.3.2.drv
+building '/nix/store/vy14jmyxi2gbfqvhn4iyy1ngq2hb9qmc-Haplin_7.3.2.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/Haplin_7.3.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 2008k  100 2008k    0     0  4108k      0 --:--:-- --:--:-- --:--:-- 4106k
+building '/nix/store/4i45dx58lgg3balbwzv3m4d8b4rnmy26-r-Haplin-7.3.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gjm5aljim5flqn3q1scnsbwgw2r0l60d-Haplin_7.3.2.tar.gz
+source root is Haplin
+setting SOURCE_DATE_EPOCH to timestamp 1724164214 of file Haplin/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Haplin’ ...
+** package ‘Haplin’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c Haplin_init.c -o Haplin_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c dists.cc -o dists.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Haplin.so Haplin_init.o dists.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/pvhfz99yad6pzvgv4ba01mf2y4b2wna6-r-Haplin-7.3.2/library/00LOCK-Haplin/00new/Haplin/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Haplin)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Haplin-7.3.2.drv-0/ in /nix/store/pvhfz99yad6pzvgv4ba01mf2y4b2wna6-r-Haplin-7.3.2...
+patching script interpreter paths in /nix/store/pvhfz99yad6pzvgv4ba01mf2y4b2wna6-r-Haplin-7.3.2
+rewriting symlink /nix/store/pvhfz99yad6pzvgv4ba01mf2y4b2wna6-r-Haplin-7.3.2/nix-support/propagated-user-env-packages to be relative to /nix/store/pvhfz99yad6pzvgv4ba01mf2y4b2wna6-r-Haplin-7.3.2

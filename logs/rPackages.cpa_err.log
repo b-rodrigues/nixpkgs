@@ -1,0 +1,44 @@
+this derivation will be built:
+  /nix/store/mrc7v9vi949v8vax1kh8j5d2jb790a74-r-cpa-1.0.1.drv
+building '/nix/store/mrc7v9vi949v8vax1kh8j5d2jb790a74-r-cpa-1.0.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1jy3771ggbww5ffzcm29m2w43i7wxyib-cpa_1.0.1.tar.gz
+source root is cpa
+setting SOURCE_DATE_EPOCH to timestamp 1654364402 of file cpa/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘cpa’ ...
+** package ‘cpa’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1: 10377 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-cpa-1.0.1.drv-0/RtmpUW8uox/file28843d3e4ea6'
+ERROR: lazy loading failed for package ‘cpa’
+* removing ‘/nix/store/badjy028n6m2ckc006ind54dmz1rj250-r-cpa-1.0.1/library/cpa’
+error: builder for '/nix/store/mrc7v9vi949v8vax1kh8j5d2jb790a74-r-cpa-1.0.1.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/1jy3771ggbww5ffzcm29m2w43i7wxyib-cpa_1.0.1.tar.gz
+       > source root is cpa
+       > setting SOURCE_DATE_EPOCH to timestamp 1654364402 of file cpa/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘cpa’ ...
+       > ** package ‘cpa’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 10377 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-cpa-1.0.1.drv-0/RtmpUW8uox/file28843d3e4ea6'
+       > ERROR: lazy loading failed for package ‘cpa’
+       > * removing ‘/nix/store/badjy028n6m2ckc006ind54dmz1rj250-r-cpa-1.0.1/library/cpa’
+       For full logs, run 'nix log /nix/store/mrc7v9vi949v8vax1kh8j5d2jb790a74-r-cpa-1.0.1.drv'.

@@ -1,0 +1,67 @@
+these 2 derivations will be built:
+  /nix/store/hkbapj16y58asgs7nh4vfnff8laaymiw-r-wavelets-0.3-0.2.drv
+  /nix/store/qziwgjcj1sv77ycq9w9a83x5wwr8kpha-r-epicasting-0.1.0.drv
+building '/nix/store/hkbapj16y58asgs7nh4vfnff8laaymiw-r-wavelets-0.3-0.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pf1hg55nmcii278hsaswhcmw1vxgsach-wavelets_0.3-0.2.tar.gz
+source root is wavelets
+setting SOURCE_DATE_EPOCH to timestamp 1581968402 of file wavelets/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘wavelets’ ...
+** package ‘wavelets’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dwt_backward.c -o dwt_backward.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c dwt_forward.c -o dwt_forward.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c modwt_backward.c -o modwt_backward.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c modwt_forward.c -o modwt_forward.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o wavelets.so dwt_backward.o dwt_forward.o modwt_backward.o modwt_forward.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zhzaya1hv4l10wjz514prqpw421qghxy-r-wavelets-0.3-0.2/library/00LOCK-wavelets/00new/wavelets/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (wavelets)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-wavelets-0.3-0.2.drv-0/ in /nix/store/zhzaya1hv4l10wjz514prqpw421qghxy-r-wavelets-0.3-0.2...
+patching script interpreter paths in /nix/store/zhzaya1hv4l10wjz514prqpw421qghxy-r-wavelets-0.3-0.2
+building '/nix/store/qziwgjcj1sv77ycq9w9a83x5wwr8kpha-r-epicasting-0.1.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gkv4sh69a0395yr4l4qzbpic64y8hssa-epicasting_0.1.0.tar.gz
+source root is epicasting
+setting SOURCE_DATE_EPOCH to timestamp 1679478002 of file epicasting/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘epicasting’ ...
+** package ‘epicasting’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (epicasting)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-epicasting-0.1.0.drv-0/ in /nix/store/2wfiqhg1pj7l6kx3fik8jw9pxpgmhc1v-r-epicasting-0.1.0...
+patching script interpreter paths in /nix/store/2wfiqhg1pj7l6kx3fik8jw9pxpgmhc1v-r-epicasting-0.1.0
+rewriting symlink /nix/store/2wfiqhg1pj7l6kx3fik8jw9pxpgmhc1v-r-epicasting-0.1.0/nix-support/propagated-user-env-packages to be relative to /nix/store/2wfiqhg1pj7l6kx3fik8jw9pxpgmhc1v-r-epicasting-0.1.0

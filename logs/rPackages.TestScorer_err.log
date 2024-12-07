@@ -1,0 +1,49 @@
+this derivation will be built:
+  /nix/store/d9q8w4qz28y0jkk27xhv0b9s89xb0zai-r-TestScorer-1.7.2.drv
+this path will be fetched (0.38 MiB download, 0.38 MiB unpacked):
+  /nix/store/sq5pf3n9qw4q680fyk8l6nmgqvb2hf8h-TestScorer_1.7.2.tar.gz
+copying path '/nix/store/sq5pf3n9qw4q680fyk8l6nmgqvb2hf8h-TestScorer_1.7.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/d9q8w4qz28y0jkk27xhv0b9s89xb0zai-r-TestScorer-1.7.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/sq5pf3n9qw4q680fyk8l6nmgqvb2hf8h-TestScorer_1.7.2.tar.gz
+source root is TestScorer
+setting SOURCE_DATE_EPOCH to timestamp 1456649955 of file TestScorer/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘TestScorer’ ...
+** package ‘TestScorer’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+sh: line 1:  7936 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-TestScorer-1.7.2.drv-0/Rtmp93Tlb8/file1efb753fb410'
+2024-11-27 14:14:56.106 R[7936:125462179] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+ERROR: lazy loading failed for package ‘TestScorer’
+* removing ‘/nix/store/7n3y3cw65ia2525fqc8fc9grb7nky2dz-r-TestScorer-1.7.2/library/TestScorer’
+error: builder for '/nix/store/d9q8w4qz28y0jkk27xhv0b9s89xb0zai-r-TestScorer-1.7.2.drv' failed with exit code 1;
+       last 20 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/sq5pf3n9qw4q680fyk8l6nmgqvb2hf8h-TestScorer_1.7.2.tar.gz
+       > source root is TestScorer
+       > setting SOURCE_DATE_EPOCH to timestamp 1456649955 of file TestScorer/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘TestScorer’ ...
+       > ** package ‘TestScorer’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** inst
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1:  7936 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-TestScorer-1.7.2.drv-0/Rtmp93Tlb8/file1efb753fb410'
+       > 2024-11-27 14:14:56.106 R[7936:125462179] +[NSXPCSharedListener endpointForReply:withListenerName:replyErrorCode:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection interrupted
+       > ERROR: lazy loading failed for package ‘TestScorer’
+       > * removing ‘/nix/store/7n3y3cw65ia2525fqc8fc9grb7nky2dz-r-TestScorer-1.7.2/library/TestScorer’
+       For full logs, run 'nix log /nix/store/d9q8w4qz28y0jkk27xhv0b9s89xb0zai-r-TestScorer-1.7.2.drv'.

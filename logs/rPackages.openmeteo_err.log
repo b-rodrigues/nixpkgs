@@ -1,0 +1,90 @@
+these 2 derivations will be built:
+  /nix/store/rd54mm9haiq103cn8hah5mq1awnk76zj-r-tibblify-0.3.1.drv
+  /nix/store/qw6589g72z0hrgsj0yrilxkw7686yn06-r-openmeteo-0.2.4.drv
+these 2 paths will be fetched (0.32 MiB download, 0.32 MiB unpacked):
+  /nix/store/k5zrrl12qa0ayx9y6vx5254ghcm9ix38-openmeteo_0.2.4.tar.gz
+  /nix/store/qjl30jmq0q6ajbl8wxgxq0qj3fppg966-tibblify_0.3.1.tar.gz
+copying path '/nix/store/k5zrrl12qa0ayx9y6vx5254ghcm9ix38-openmeteo_0.2.4.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/qjl30jmq0q6ajbl8wxgxq0qj3fppg966-tibblify_0.3.1.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/rd54mm9haiq103cn8hah5mq1awnk76zj-r-tibblify-0.3.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/qjl30jmq0q6ajbl8wxgxq0qj3fppg966-tibblify_0.3.1.tar.gz
+source root is tibblify
+setting SOURCE_DATE_EPOCH to timestamp 1704958202 of file tibblify/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘tibblify’ ...
+** package ‘tibblify’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c add-value.c -o add-value.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c collector.c -o collector.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c finalize.c -o finalize.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c globals.c -o globals.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c guess-utils.c -o guess-utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c parse-spec.c -o parse-spec.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c rlang-rcc.cpp -o rlang-rcc.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c rlang.c -o rlang.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c tibblify-vctrs-private.c -o tibblify-vctrs-private.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c tibblify-vctrs-public.c -o tibblify-vctrs-public.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c tibblify2.c -o tibblify2.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c utils.c -o utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c vctrs-type-info.c -o vctrs-type-info.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c vctrs-unspecified.c -o vctrs-unspecified.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c vctrs-utils-dispatch.c -o vctrs-utils-dispatch.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I./rlang -I'/nix/store/j2bcnh7r37p0frbqhsqnygna0g4s254h-r-vctrs-0.6.5/library/vctrs/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -DHAVE_VISIBILITY_ATTRIBUTE -fPIC  -g -O2  -c vctrs-utils.c -o vctrs-utils.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o tibblify.so add-value.o collector.o finalize.o globals.o guess-utils.o init.o parse-spec.o rlang-rcc.o rlang.o tibblify-vctrs-private.o tibblify-vctrs-public.o tibblify2.o utils.o vctrs-type-info.o vctrs-unspecified.o vctrs-utils-dispatch.o vctrs-utils.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/ww1wfm8b003jvjzpj9b6himwfkkdwh99-r-tibblify-0.3.1/library/00LOCK-tibblify/00new/tibblify/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tibblify)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-tibblify-0.3.1.drv-0/ in /nix/store/ww1wfm8b003jvjzpj9b6himwfkkdwh99-r-tibblify-0.3.1...
+patching script interpreter paths in /nix/store/ww1wfm8b003jvjzpj9b6himwfkkdwh99-r-tibblify-0.3.1
+rewriting symlink /nix/store/ww1wfm8b003jvjzpj9b6himwfkkdwh99-r-tibblify-0.3.1/nix-support/propagated-user-env-packages to be relative to /nix/store/ww1wfm8b003jvjzpj9b6himwfkkdwh99-r-tibblify-0.3.1
+building '/nix/store/qw6589g72z0hrgsj0yrilxkw7686yn06-r-openmeteo-0.2.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/k5zrrl12qa0ayx9y6vx5254ghcm9ix38-openmeteo_0.2.4.tar.gz
+source root is openmeteo
+setting SOURCE_DATE_EPOCH to timestamp 1698235202 of file openmeteo/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘openmeteo’ ...
+** package ‘openmeteo’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (openmeteo)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-openmeteo-0.2.4.drv-0/ in /nix/store/jidx15c411l56lmzvl6mb0d9j965b03w-r-openmeteo-0.2.4...
+patching script interpreter paths in /nix/store/jidx15c411l56lmzvl6mb0d9j965b03w-r-openmeteo-0.2.4
+rewriting symlink /nix/store/jidx15c411l56lmzvl6mb0d9j965b03w-r-openmeteo-0.2.4/nix-support/propagated-user-env-packages to be relative to /nix/store/jidx15c411l56lmzvl6mb0d9j965b03w-r-openmeteo-0.2.4

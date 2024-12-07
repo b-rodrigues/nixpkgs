@@ -1,0 +1,112 @@
+these 3 derivations will be built:
+  /nix/store/hsfiayj102hh7ih3q2p9kbh79n89v8rh-r-zcurve-2.4.2.drv
+  /nix/store/qy918q0jsq89arrv9ia6m7abkgyydfgw-r-scholar-0.2.4.drv
+  /nix/store/1vq78n7y45nwnjly59s56m7y2pybxfmj-r-CoTiMA-0.8.0.drv
+building '/nix/store/qy918q0jsq89arrv9ia6m7abkgyydfgw-r-scholar-0.2.4.drv'...
+building '/nix/store/hsfiayj102hh7ih3q2p9kbh79n89v8rh-r-zcurve-2.4.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/mhd30prpgdcqzzwh1kma0v3mhq2rvjpl-scholar_0.2.4.tar.gz
+source root is scholar
+setting SOURCE_DATE_EPOCH to timestamp 1660033202 of file scholar/MD5
+Running phase: patchPhase
+Running phase: unpackPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+unpacking source archive /nix/store/xrqwdar06fk2lxbzlrzk75q4b6zwxz6r-zcurve_2.4.2.tar.gz
+Running phase: configurePhase
+source root is zcurve
+Running phase: buildPhase
+setting SOURCE_DATE_EPOCH to timestamp 1716894003 of file zcurve/MD5
+Running phase: checkPhase
+Running phase: patchPhase
+Running phase: installPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘scholar’ ...
+** package ‘scholar’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+* installing *source* package ‘zcurve’ ...
+** package ‘zcurve’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c zcurveEM.cpp -o zcurveEM.o
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (scholar)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-scholar-0.2.4.drv-0/ in /nix/store/r2d5r4a26159pfnla950ys631x40yb3l-r-scholar-0.2.4...
+patching script interpreter paths in /nix/store/r2d5r4a26159pfnla950ys631x40yb3l-r-scholar-0.2.4
+rewriting symlink /nix/store/r2d5r4a26159pfnla950ys631x40yb3l-r-scholar-0.2.4/nix-support/propagated-user-env-packages to be relative to /nix/store/r2d5r4a26159pfnla950ys631x40yb3l-r-scholar-0.2.4
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o zcurve.so RcppExports.o zcurveEM.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/3lbfw950rafi78p1m0pcqbiwkfbzixa5-r-zcurve-2.4.2/library/00LOCK-zcurve/00new/zcurve/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (zcurve)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-zcurve-2.4.2.drv-0/ in /nix/store/3lbfw950rafi78p1m0pcqbiwkfbzixa5-r-zcurve-2.4.2...
+patching script interpreter paths in /nix/store/3lbfw950rafi78p1m0pcqbiwkfbzixa5-r-zcurve-2.4.2
+rewriting symlink /nix/store/3lbfw950rafi78p1m0pcqbiwkfbzixa5-r-zcurve-2.4.2/nix-support/propagated-user-env-packages to be relative to /nix/store/3lbfw950rafi78p1m0pcqbiwkfbzixa5-r-zcurve-2.4.2
+building '/nix/store/1vq78n7y45nwnjly59s56m7y2pybxfmj-r-CoTiMA-0.8.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/ijj69zg74f7v43xypcwxn3yybkvxy3q6-CoTiMA_0.8.0.tar.gz
+source root is CoTiMA
+setting SOURCE_DATE_EPOCH to timestamp 1714048802 of file CoTiMA/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘CoTiMA’ ...
+** package ‘CoTiMA’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Avis : impossible d'accéder à l'index de l'entrepôt https://cloud.r-project.org/src/contrib:
+  impossible d'ouvrir l'URL 'https://cloud.r-project.org/src/contrib/PACKAGES'
+Error in if (is.na(a)) return(-1L) : l'argument est de longueur nulle
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Avis : impossible d'accéder à l'index de l'entrepôt https://cloud.r-project.org/src/contrib:
+  impossible d'ouvrir l'URL 'https://cloud.r-project.org/src/contrib/PACKAGES'
+Error in if (is.na(a)) return(-1L) : l'argument est de longueur nulle
+** testing if installed package can be loaded from final location
+Avis : impossible d'accéder à l'index de l'entrepôt https://cloud.r-project.org/src/contrib:
+  impossible d'ouvrir l'URL 'https://cloud.r-project.org/src/contrib/PACKAGES'
+Error in if (is.na(a)) return(-1L) : l'argument est de longueur nulle
+** testing if installed package keeps a record of temporary installation path
+* DONE (CoTiMA)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-CoTiMA-0.8.0.drv-0/ in /nix/store/lb2kfn6cd2sb10i2x5w3w3c8v3jipsyh-r-CoTiMA-0.8.0...
+patching script interpreter paths in /nix/store/lb2kfn6cd2sb10i2x5w3w3c8v3jipsyh-r-CoTiMA-0.8.0
+rewriting symlink /nix/store/lb2kfn6cd2sb10i2x5w3w3c8v3jipsyh-r-CoTiMA-0.8.0/nix-support/propagated-user-env-packages to be relative to /nix/store/lb2kfn6cd2sb10i2x5w3w3c8v3jipsyh-r-CoTiMA-0.8.0

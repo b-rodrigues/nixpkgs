@@ -1,0 +1,83 @@
+these 3 derivations will be built:
+  /nix/store/xgdm31xibh47lyavywrh1264bvg4al5f-spikeSlabGAM_1.1-20.tar.gz.drv
+  /nix/store/my13vivk5x4pjp8cyhdcdnpis77plsml-r-spikeSlabGAM-1.1-20.drv
+  /nix/store/lx951amlwm9p1yx2sajzqqyv6k8xq8f6-r-SeBR-1.0.0.drv
+this path will be fetched (0.41 MiB download, 0.41 MiB unpacked):
+  /nix/store/rrdsx8xbya33frzmsv9ikd8lxvc6s2fz-SeBR_1.0.0.tar.gz
+copying path '/nix/store/rrdsx8xbya33frzmsv9ikd8lxvc6s2fz-SeBR_1.0.0.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/xgdm31xibh47lyavywrh1264bvg4al5f-spikeSlabGAM_1.1-20.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/spikeSlabGAM_1.1-20.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  707k  100  707k    0     0  2770k      0 --:--:-- --:--:-- --:--:-- 2773k
+building '/nix/store/my13vivk5x4pjp8cyhdcdnpis77plsml-r-spikeSlabGAM-1.1-20.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/gjsvxx7w83mwb9i3d4g91iqf0qnj08vf-spikeSlabGAM_1.1-20.tar.gz
+source root is spikeSlabGAM
+setting SOURCE_DATE_EPOCH to timestamp 1729618202 of file spikeSlabGAM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘spikeSlabGAM’ ...
+** package ‘spikeSlabGAM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sampler.c -o sampler.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c spikeSlabGAM_init.c -o spikeSlabGAM_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o spikeSlabGAM.so sampler.o spikeSlabGAM_init.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/n2phq6z65zvdzgpgakvy2crscc23adwi-r-spikeSlabGAM-1.1-20/library/00LOCK-spikeSlabGAM/00new/spikeSlabGAM/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (spikeSlabGAM)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-spikeSlabGAM-1.1-20.drv-0/ in /nix/store/n2phq6z65zvdzgpgakvy2crscc23adwi-r-spikeSlabGAM-1.1-20...
+patching script interpreter paths in /nix/store/n2phq6z65zvdzgpgakvy2crscc23adwi-r-spikeSlabGAM-1.1-20
+rewriting symlink /nix/store/n2phq6z65zvdzgpgakvy2crscc23adwi-r-spikeSlabGAM-1.1-20/nix-support/propagated-user-env-packages to be relative to /nix/store/n2phq6z65zvdzgpgakvy2crscc23adwi-r-spikeSlabGAM-1.1-20
+building '/nix/store/lx951amlwm9p1yx2sajzqqyv6k8xq8f6-r-SeBR-1.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rrdsx8xbya33frzmsv9ikd8lxvc6s2fz-SeBR_1.0.0.tar.gz
+source root is SeBR
+setting SOURCE_DATE_EPOCH to timestamp 1688401810 of file SeBR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘SeBR’ ...
+** package ‘SeBR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SeBR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-SeBR-1.0.0.drv-0/ in /nix/store/qfng9rz76z712f1njq9380qczgzgmpg0-r-SeBR-1.0.0...
+patching script interpreter paths in /nix/store/qfng9rz76z712f1njq9380qczgzgmpg0-r-SeBR-1.0.0
+rewriting symlink /nix/store/qfng9rz76z712f1njq9380qczgzgmpg0-r-SeBR-1.0.0/nix-support/propagated-user-env-packages to be relative to /nix/store/qfng9rz76z712f1njq9380qczgzgmpg0-r-SeBR-1.0.0

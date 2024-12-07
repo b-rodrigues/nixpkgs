@@ -1,0 +1,96 @@
+this derivation will be built:
+  /nix/store/482c8r0by5dxdx0ppaid77zjzas3q8m8-r-pcaL1-1.5.7.drv
+these 4 paths will be fetched (1.57 MiB download, 5.99 MiB unpacked):
+  /nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10
+  /nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10
+  /nix/store/2izj8s5j0r0aw99kvgap686njcrx8c6j-osi-0.108.11
+  /nix/store/c6s92xx5xaa6i5b04hmksr1zhy81cbbk-pcaL1_1.5.7.tar.gz
+copying path '/nix/store/c6s92xx5xaa6i5b04hmksr1zhy81cbbk-pcaL1_1.5.7.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10' from 'https://cache.nixos.org'...
+copying path '/nix/store/2izj8s5j0r0aw99kvgap686njcrx8c6j-osi-0.108.11' from 'https://cache.nixos.org'...
+copying path '/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10' from 'https://cache.nixos.org'...
+building '/nix/store/482c8r0by5dxdx0ppaid77zjzas3q8m8-r-pcaL1-1.5.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/c6s92xx5xaa6i5b04hmksr1zhy81cbbk-pcaL1_1.5.7.tar.gz
+source root is pcaL1
+setting SOURCE_DATE_EPOCH to timestamp 1674064802 of file pcaL1/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘pcaL1’ ...
+** package ‘pcaL1’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking for gcc... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc accepts -g... yes
+checking for /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc option to enable C11 features... none needed
+checking how to run the C preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -E
+checking for pkg-config... /nix/store/c6v2ngygy55zamyz17z94brbz2vrsi1z-pkg-config-wrapper-0.29.2/bin/pkg-config
+configure: set compile and link flags according to pkg-config
+configure: compile flags are -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin
+configure: link flags are -L/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/lib -L/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/lib -lClpSolver -lClp -lCoinUtils -lm
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for stdbool.h... yes
+checking for Clp_C_Interface.h... yes
+checking for library containing Clp_newModel... none required
+checking for library containing Clp_setRowName... none required
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1pca.c -o l1pca.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1pca_R.c -o l1pca_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1pcahp.c -o l1pcahp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1pcahp_R.c -o l1pcahp_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1pcastar.c -o l1pcastar.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1pcastar_R.c -o l1pcastar_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1projection.c -o l1projection.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c l1projection_R.c -o l1projection_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pcal1.c -o pcal1.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pcal1_R.c -o pcal1_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pcalp.c -o pcalp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c pcalp_R.c -o pcalp_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sharpel1pca.c -o sharpel1pca.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sharpel1pca_R.c -o sharpel1pca_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sharpel1rs.c -o sharpel1rs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sharpel1rs_R.c -o sharpel1rs_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sparsel1pca.c -o sparsel1pca.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG -I/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/include/coin -I/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/include/coin  -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c sparsel1pca_R.c -o sparsel1pca_R.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o pcaL1.so init.o l1pca.o l1pca_R.o l1pcahp.o l1pcahp_R.o l1pcastar.o l1pcastar_R.o l1projection.o l1projection_R.o pcal1.o pcal1_R.o pcalp.o pcalp_R.o sharpel1pca.o sharpel1pca_R.o sharpel1rs.o sharpel1rs_R.o sparsel1pca.o sparsel1pca_R.o -L/nix/store/pwivrx789qh4svl296ha4bqd3bnb4f1c-clp-1.17.10/lib -L/nix/store/gpfingyl70cdlsw9azcsxsxrcnkyga9w-coinutils-2.11.10/lib -lClpSolver -lClp -lCoinUtils -lm -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+installing to /nix/store/dnanx5k410a0y9k2f27gnkbng1gpzqld-r-pcaL1-1.5.7/library/00LOCK-pcaL1/00new/pcaL1/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pcaL1)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-pcaL1-1.5.7.drv-0/ in /nix/store/dnanx5k410a0y9k2f27gnkbng1gpzqld-r-pcaL1-1.5.7...
+patching script interpreter paths in /nix/store/dnanx5k410a0y9k2f27gnkbng1gpzqld-r-pcaL1-1.5.7

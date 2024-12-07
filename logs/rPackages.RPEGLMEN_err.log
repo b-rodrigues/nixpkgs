@@ -1,0 +1,122 @@
+these 2 derivations will be built:
+  /nix/store/d8ar60hq89v2w5cx23lk11z6b5bq6f2j-r-RPEIF-1.2.4.drv
+  /nix/store/j17l3ifmrvv6xj5maaxdzssdz6yzn19q-r-RPEGLMEN-1.1.2.drv
+these 2 paths will be fetched (0.61 MiB download, 0.61 MiB unpacked):
+  /nix/store/33sfb24vjwarwq612rmyyi1lclnk339n-RPEGLMEN_1.1.2.tar.gz
+  /nix/store/pcmpafwcjb05vsq6d80f51v2dnd3j6y4-RPEIF_1.2.4.tar.gz
+copying path '/nix/store/33sfb24vjwarwq612rmyyi1lclnk339n-RPEGLMEN_1.1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/pcmpafwcjb05vsq6d80f51v2dnd3j6y4-RPEIF_1.2.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/d8ar60hq89v2w5cx23lk11z6b5bq6f2j-r-RPEIF-1.2.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/pcmpafwcjb05vsq6d80f51v2dnd3j6y4-RPEIF_1.2.4.tar.gz
+source root is RPEIF
+setting SOURCE_DATE_EPOCH to timestamp 1634209811 of file RPEIF/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RPEIF’ ...
+** package ‘RPEIF’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RPEIF)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RPEIF-1.2.4.drv-0/ in /nix/store/l48zfgkyyxblh613ivdvfg562jjjgch3-r-RPEIF-1.2.4...
+patching script interpreter paths in /nix/store/l48zfgkyyxblh613ivdvfg562jjjgch3-r-RPEIF-1.2.4
+rewriting symlink /nix/store/l48zfgkyyxblh613ivdvfg562jjjgch3-r-RPEIF-1.2.4/nix-support/propagated-user-env-packages to be relative to /nix/store/l48zfgkyyxblh613ivdvfg562jjjgch3-r-RPEIF-1.2.4
+building '/nix/store/j17l3ifmrvv6xj5maaxdzssdz6yzn19q-r-RPEGLMEN-1.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/33sfb24vjwarwq612rmyyi1lclnk339n-RPEGLMEN_1.1.2.tar.gz
+source root is RPEGLMEN
+setting SOURCE_DATE_EPOCH to timestamp 1674961802 of file RPEGLMEN/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘RPEGLMEN’ ...
+** package ‘RPEGLMEN’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 accepts -g... yes
+checking how to run the C++ preprocessor... /nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -E
+checking for grep that handles long lines and -e... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep
+checking for egrep... /nix/store/ay0r3wrwbv5rq3mg3vhla045yjr49gka-gnugrep-3.11/bin/grep -E
+checking for ANSI C header files... rm: cannot remove 'conftest.dSYM': Is a directory
+rm: cannot remove 'conftest.dSYM': Is a directory
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking climits usability... yes
+checking climits presence... yes
+checking for climits... yes
+Type unsigned long long is supported
+uint16_t and unit8_t are available in stdint.h
+uint16_t and unit8_t are available in inttypes.h
+Found builtin CTZ method (for unsigned long)
+Found builtin CTZ method (for unsigned long long)
+checking for ffsl... yes
+checking for ffsll... yes
+Found builtin popcount method (for unsigned long)
+Found builtin popcount method (for unsigned long long)
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/autoconfig.h
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c GlmNetCpp.cpp -o GlmNetCpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c GlmNetCvCpp.cpp -o GlmNetCvCpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c MyClass.cpp -o MyClass.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c glmnetRcppInterface.cpp -o glmnetRcppInterface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o RPEGLMEN.so GlmNetCpp.o GlmNetCvCpp.o MyClass.o RcppExports.o glmnetRcppInterface.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/gd8m2b8wpvcxdzbga4l17bfqjk6r6xmr-r-RPEGLMEN-1.1.2/library/00LOCK-RPEGLMEN/00new/RPEGLMEN/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RPEGLMEN)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-RPEGLMEN-1.1.2.drv-0/ in /nix/store/gd8m2b8wpvcxdzbga4l17bfqjk6r6xmr-r-RPEGLMEN-1.1.2...
+patching script interpreter paths in /nix/store/gd8m2b8wpvcxdzbga4l17bfqjk6r6xmr-r-RPEGLMEN-1.1.2
+rewriting symlink /nix/store/gd8m2b8wpvcxdzbga4l17bfqjk6r6xmr-r-RPEGLMEN-1.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/gd8m2b8wpvcxdzbga4l17bfqjk6r6xmr-r-RPEGLMEN-1.1.2

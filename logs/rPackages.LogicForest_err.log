@@ -1,0 +1,160 @@
+these 2 derivations will be built:
+  /nix/store/iz3zadsvik141psg4vmixd0vyfsqhk9d-r-LogicReg-1.6.6.drv
+  /nix/store/fm5v4n44azhkglk5k4czyxk9fs7c63b9-r-LogicForest-2.1.1.drv
+these 2 paths will be fetched (0.16 MiB download, 0.16 MiB unpacked):
+  /nix/store/b2hh8xyalxjy0bfhdb3xxdacbgn9vrv1-LogicForest_2.1.1.tar.gz
+  /nix/store/174fimkyqwl8fnn25f467v2r8rasilbb-LogicReg_1.6.6.tar.gz
+copying path '/nix/store/b2hh8xyalxjy0bfhdb3xxdacbgn9vrv1-LogicForest_2.1.1.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/174fimkyqwl8fnn25f467v2r8rasilbb-LogicReg_1.6.6.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/iz3zadsvik141psg4vmixd0vyfsqhk9d-r-LogicReg-1.6.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/174fimkyqwl8fnn25f467v2r8rasilbb-LogicReg_1.6.6.tar.gz
+source root is LogicReg
+setting SOURCE_DATE_EPOCH to timestamp 1691536210 of file LogicReg/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LogicReg’ ...
+** package ‘LogicReg’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c Myownscoring.f -o Myownscoring.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c clogic.c -o clogic.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c external.f -o external.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c sextra.f -o sextra.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c slogic.f -o slogic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c swrite.c -o swrite.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c trioLR.f -o trioLR.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o LogicReg.so Myownscoring.o clogic.o external.o registerDynamicSymbol.o sextra.o slogic.o swrite.o trioLR.o -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _mygradphz_: does not use standard frame
+ld: warning: could not create compact unwind for _mypllxxz_: does not use standard frame
+ld: warning: could not create compact unwind for _myphxxz_: does not use standard frame
+ld: warning: could not create compact unwind for _triofitting_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _dgefa_: does not use standard frame
+ld: warning: could not create compact unwind for _mketap_: does not use standard frame
+ld: warning: could not create compact unwind for _lgtderiv_: does not use standard frame
+ld: warning: could not create compact unwind for _dgeco_: does not use standard frame
+ld: warning: could not create compact unwind for _dgedi_: does not use standard frame
+ld: warning: could not create compact unwind for _ludcmp_: does not use standard frame
+ld: warning: could not create compact unwind for _dgesl_: does not use standard frame
+ld: warning: could not create compact unwind for _rand_prdcl_: does not use standard frame
+ld: warning: could not create compact unwind for _dprintmodel_: does not use standard frame
+ld: warning: could not create compact unwind for _iprintmodel_: does not use standard frame
+ld: warning: could not create compact unwind for _rprintmodel_: does not use standard frame
+ld: warning: could not create compact unwind for _betaprint_: does not use standard frame
+ld: warning: could not create compact unwind for _prtrprint_: does not use standard frame
+ld: warning: could not create compact unwind for _storprint_: does not use standard frame
+ld: warning: could not create compact unwind for _emprint_: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+ld: warning: could not create compact unwind for _evaluate_first_: does not use standard frame
+ld: warning: could not create compact unwind for _copytree_: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _firstknot_: does not use standard frame
+ld: warning: could not create compact unwind for _xsplit_: does not use standard frame
+ld: warning: could not create compact unwind for _altlf_: does not use standard frame
+ld: warning: could not create compact unwind for _selprob_: does not use standard frame
+ld: warning: could not create compact unwind for _exposcore_: does not use standard frame
+ld: warning: could not create compact unwind for _mypllxx_: does not use standard frame
+ld: warning: could not create compact unwind for _scorepll_: does not use standard frame
+ld: warning: could not create compact unwind for _scoredev_: does not use standard frame
+ld: warning: could not create compact unwind for _storing_: registers 27 and 28 not saved contiguously in frame
+ld: warning: could not create compact unwind for _testset_: does not use standard frame
+ld: warning: could not create compact unwind for _testsetx_: does not use standard frame
+ld: warning: could not create compact unwind for _storeone_: does not use standard frame
+ld: warning: could not create compact unwind for _recording_: does not use standard frame
+ld: warning: could not create compact unwind for _deciding_: does not use standard frame
+ld: warning: could not create compact unwind for _evaluate_prune_: register 20 saved somewhere other than in frame
+ld: warning: could not create compact unwind for _evaluate_branch_: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _evaluate_split_: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _evaluating_: does not use standard frame
+ld: warning: could not create compact unwind for _decision_: does not use standard frame
+ld: warning: could not create compact unwind for _moving_: does not use standard frame
+ld: warning: could not create compact unwind for _clearly_: registers 19 and 20 not saved contiguously in frame
+ld: warning: could not create compact unwind for _makeiistring_: does not use standard frame
+ld: warning: could not create compact unwind for _makeistring_: does not use standard frame
+ld: warning: could not create compact unwind for _makerstring_: does not use standard frame
+ld: warning: could not create compact unwind for _makeistring_.constprop.0.isra.0: does not use standard frame
+ld: warning: could not create compact unwind for _xstopper_: does not use standard frame
+ld: warning: could not create compact unwind for _writeinfo_: does not use standard frame
+ld: warning: could not create compact unwind for _getv1_: does not use standard frame
+ld: warning: could not create compact unwind for _getv2_: does not use standard frame
+ld: warning: could not create compact unwind for _getv3_: does not use standard frame
+ld: warning: could not create compact unwind for _getv4_: does not use standard frame
+ld: warning: could not create compact unwind for _getv5_: does not use standard frame
+ld: warning: could not create compact unwind for _smackonprior_: does not use standard frame
+ld: warning: could not create compact unwind for _mygradph_: does not use standard frame
+ld: warning: could not create compact unwind for _lusolveph_: does not use standard frame
+ld: warning: could not create compact unwind for _myphxx_: does not use standard frame
+ld: warning: could not create compact unwind for _calcplcph_: does not use standard frame
+ld: warning: could not create compact unwind for _redater_: does not use standard frame
+ld: warning: could not create compact unwind for _calcdev_: does not use standard frame
+ld: warning: could not create compact unwind for _calcbetarss_: does not use standard frame
+ld: warning: could not create compact unwind for _expofit_: does not use standard frame
+ld: warning: could not create compact unwind for _scoring_: does not use standard frame
+ld: warning: could not create compact unwind for _evalgreed_: does not use standard frame
+ld: warning: could not create compact unwind for _greedyonestep_: does not use standard frame
+ld: warning: could not create compact unwind for _annealing_step_: does not use standard frame
+ld: warning: could not create compact unwind for _annealing_init_: does not use standard frame
+ld: warning: could not create compact unwind for _annealing_: does not use standard frame
+ld: warning: could not create compact unwind for _randomization_: does not use standard frame
+ld: warning: could not create compact unwind for _nullmodel_: does not use standard frame
+ld: warning: could not create compact unwind for _crossval_: does not use standard frame
+ld: warning: could not create compact unwind for _logreg_: does not use standard frame
+ld: warning: could not create compact unwind for _slogreg_: does not use standard frame
+ld: warning: could not create compact unwind for _stringcom_: does not use standard frame
+installing to /nix/store/nx7vhmjbwvcz11via3hgmv2gcvrb7bq9-r-LogicReg-1.6.6/library/00LOCK-LogicReg/00new/LogicReg/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LogicReg)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LogicReg-1.6.6.drv-0/ in /nix/store/nx7vhmjbwvcz11via3hgmv2gcvrb7bq9-r-LogicReg-1.6.6...
+patching script interpreter paths in /nix/store/nx7vhmjbwvcz11via3hgmv2gcvrb7bq9-r-LogicReg-1.6.6
+rewriting symlink /nix/store/nx7vhmjbwvcz11via3hgmv2gcvrb7bq9-r-LogicReg-1.6.6/nix-support/propagated-user-env-packages to be relative to /nix/store/nx7vhmjbwvcz11via3hgmv2gcvrb7bq9-r-LogicReg-1.6.6
+building '/nix/store/fm5v4n44azhkglk5k4czyxk9fs7c63b9-r-LogicForest-2.1.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/b2hh8xyalxjy0bfhdb3xxdacbgn9vrv1-LogicForest_2.1.1.tar.gz
+source root is LogicForest
+setting SOURCE_DATE_EPOCH to timestamp 1710328808 of file LogicForest/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LogicForest’ ...
+** package ‘LogicForest’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LogicForest)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LogicForest-2.1.1.drv-0/ in /nix/store/a4641gvnra0rnnlx5vklr356s0xh48yg-r-LogicForest-2.1.1...
+patching script interpreter paths in /nix/store/a4641gvnra0rnnlx5vklr356s0xh48yg-r-LogicForest-2.1.1
+rewriting symlink /nix/store/a4641gvnra0rnnlx5vklr356s0xh48yg-r-LogicForest-2.1.1/nix-support/propagated-user-env-packages to be relative to /nix/store/a4641gvnra0rnnlx5vklr356s0xh48yg-r-LogicForest-2.1.1

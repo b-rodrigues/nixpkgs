@@ -1,0 +1,48 @@
+these 2 derivations will be built:
+  /nix/store/0q3pgp1xh8m7mz1gj4kfmfljrvfcvks4-rethnicity_0.2.6.tar.gz.drv
+  /nix/store/4q790j3v9plj6p77a705zwvak9nq6hjx-r-rethnicity-0.2.6.drv
+building '/nix/store/0q3pgp1xh8m7mz1gj4kfmfljrvfcvks4-rethnicity_0.2.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/rethnicity_0.2.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1573k  100 1573k    0     0  4767k      0 --:--:-- --:--:-- --:--:-- 4767k
+building '/nix/store/4q790j3v9plj6p77a705zwvak9nq6hjx-r-rethnicity-0.2.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fmndn1jhhwrlzcfpfapzkm6dvnpdhzrh-rethnicity_0.2.6.tar.gz
+source root is rethnicity
+setting SOURCE_DATE_EPOCH to timestamp 1729257602 of file rethnicity/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘rethnicity’ ...
+** package ‘rethnicity’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -pthread  -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/rnnw6rgkd98vplpryvk019w9yxx64gnw-r-RcppEigen-0.3.4.0.2/library/RcppEigen/include' -I'/nix/store/31f7fci0nib22vvn0alhq83ypwx0rn33-r-RcppThread-2.1.7/library/RcppThread/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   -I../inst/include -pthread  -fPIC  -g -O2   -c predict_ethnicity.cpp -o predict_ethnicity.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o rethnicity.so RcppExports.o predict_ethnicity.o -lpthread -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/n5arcs264zf00p0jnw5y5m6z8xn3vc6q-r-rethnicity-0.2.6/library/00LOCK-rethnicity/00new/rethnicity/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rethnicity)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-rethnicity-0.2.6.drv-0/ in /nix/store/n5arcs264zf00p0jnw5y5m6z8xn3vc6q-r-rethnicity-0.2.6...
+patching script interpreter paths in /nix/store/n5arcs264zf00p0jnw5y5m6z8xn3vc6q-r-rethnicity-0.2.6
+rewriting symlink /nix/store/n5arcs264zf00p0jnw5y5m6z8xn3vc6q-r-rethnicity-0.2.6/nix-support/propagated-user-env-packages to be relative to /nix/store/n5arcs264zf00p0jnw5y5m6z8xn3vc6q-r-rethnicity-0.2.6

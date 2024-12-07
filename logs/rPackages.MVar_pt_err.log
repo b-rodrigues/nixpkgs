@@ -1,0 +1,46 @@
+these 2 derivations will be built:
+  /nix/store/bqzbxxq81vbc7191pvgwvwpgc5d9cl7r-MVar.pt_2.2.5.tar.gz.drv
+  /nix/store/kj2xkdh56npc8a1aq17d3n1y2712p39v-r-MVar.pt-2.2.5.drv
+building '/nix/store/bqzbxxq81vbc7191pvgwvwpgc5d9cl7r-MVar.pt_2.2.5.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/MVar.pt_2.2.5.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 97385  100 97385    0     0   691k      0 --:--:-- --:--:-- --:--:--  694k
+building '/nix/store/kj2xkdh56npc8a1aq17d3n1y2712p39v-r-MVar.pt-2.2.5.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/865xy93ggdcfr8gp3aflip5wcfj5kqkr-MVar.pt_2.2.5.tar.gz
+source root is MVar.pt
+setting SOURCE_DATE_EPOCH to timestamp 1732282822 of file MVar.pt/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MVar.pt’ ...
+** package ‘MVar.pt’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c MVarRegister.c -o MVarRegister.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PP_IndexC.c -o PP_IndexC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MVar.pt.so MVarRegister.o PP_IndexC.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/3gmp1p5abf04g7jlb6pv21dby5zrrid4-r-MVar.pt-2.2.5/library/00LOCK-MVar.pt/00new/MVar.pt/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MVar.pt)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MVar.pt-2.2.5.drv-0/ in /nix/store/3gmp1p5abf04g7jlb6pv21dby5zrrid4-r-MVar.pt-2.2.5...
+patching script interpreter paths in /nix/store/3gmp1p5abf04g7jlb6pv21dby5zrrid4-r-MVar.pt-2.2.5
+rewriting symlink /nix/store/3gmp1p5abf04g7jlb6pv21dby5zrrid4-r-MVar.pt-2.2.5/nix-support/propagated-user-env-packages to be relative to /nix/store/3gmp1p5abf04g7jlb6pv21dby5zrrid4-r-MVar.pt-2.2.5

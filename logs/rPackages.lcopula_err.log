@@ -1,0 +1,45 @@
+this derivation will be built:
+  /nix/store/v8yk7wd9g989gvnxxplhpkq799q37yhd-r-lcopula-1.0.7.drv
+this path will be fetched (0.06 MiB download, 0.06 MiB unpacked):
+  /nix/store/vpyv4x1fqszmclfmigmb7ryxg00201ji-lcopula_1.0.7.tar.gz
+copying path '/nix/store/vpyv4x1fqszmclfmigmb7ryxg00201ji-lcopula_1.0.7.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/v8yk7wd9g989gvnxxplhpkq799q37yhd-r-lcopula-1.0.7.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/vpyv4x1fqszmclfmigmb7ryxg00201ji-lcopula_1.0.7.tar.gz
+source root is lcopula
+setting SOURCE_DATE_EPOCH to timestamp 1701808202 of file lcopula/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lcopula’ ...
+** package ‘lcopula’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c generic.cpp -o generic.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c lcopula-init.c -o lcopula-init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c spectral_densities.cpp -o spectral_densities.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o lcopula.so RcppExports.o generic.o lcopula-init.o spectral_densities.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/2s8faw65p0zwczzvi6v4yaazmsm2f4q2-r-lcopula-1.0.7/library/00LOCK-lcopula/00new/lcopula/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (lcopula)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-lcopula-1.0.7.drv-0/ in /nix/store/2s8faw65p0zwczzvi6v4yaazmsm2f4q2-r-lcopula-1.0.7...
+patching script interpreter paths in /nix/store/2s8faw65p0zwczzvi6v4yaazmsm2f4q2-r-lcopula-1.0.7
+rewriting symlink /nix/store/2s8faw65p0zwczzvi6v4yaazmsm2f4q2-r-lcopula-1.0.7/nix-support/propagated-user-env-packages to be relative to /nix/store/2s8faw65p0zwczzvi6v4yaazmsm2f4q2-r-lcopula-1.0.7

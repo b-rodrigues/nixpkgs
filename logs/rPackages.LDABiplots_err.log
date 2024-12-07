@@ -1,0 +1,153 @@
+these 4 derivations will be built:
+  /nix/store/wvc3ixanpvl9gfcbz0wa3zxp36hx8fgc-r-ldatuning-1.0.2.drv
+  /nix/store/x51ng49s15i2l29cacrylgcl4r3p11k1-r-textmineR-3.0.5.drv
+  /nix/store/z9msvgs8chmkvswpy2kc3l6py21fikgz-r-textplot-0.2.2.drv
+  /nix/store/xb1xwjl86ap8blg4c6w0q31py553yr4k-r-LDABiplots-0.1.2.drv
+these 4 paths will be fetched (4.54 MiB download, 4.55 MiB unpacked):
+  /nix/store/fidlrm46hf51gsyprah9r2hydszjmpsg-LDABiplots_0.1.2.tar.gz
+  /nix/store/a50sbghxnmls8rl8zvr0rzdqjl6vzc8s-ldatuning_1.0.2.tar.gz
+  /nix/store/cxmzwysf480dxnhzmq0xkyiqvgmgwzls-textmineR_3.0.5.tar.gz
+  /nix/store/ssd7z8vkvlaij6hg567dmqdmkpm73iqx-textplot_0.2.2.tar.gz
+copying path '/nix/store/fidlrm46hf51gsyprah9r2hydszjmpsg-LDABiplots_0.1.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/a50sbghxnmls8rl8zvr0rzdqjl6vzc8s-ldatuning_1.0.2.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/cxmzwysf480dxnhzmq0xkyiqvgmgwzls-textmineR_3.0.5.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/ssd7z8vkvlaij6hg567dmqdmkpm73iqx-textplot_0.2.2.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/wvc3ixanpvl9gfcbz0wa3zxp36hx8fgc-r-ldatuning-1.0.2.drv'...
+building '/nix/store/x51ng49s15i2l29cacrylgcl4r3p11k1-r-textmineR-3.0.5.drv'...
+building '/nix/store/z9msvgs8chmkvswpy2kc3l6py21fikgz-r-textplot-0.2.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/a50sbghxnmls8rl8zvr0rzdqjl6vzc8s-ldatuning_1.0.2.tar.gz
+source root is ldatuning
+setting SOURCE_DATE_EPOCH to timestamp 1587446403 of file ldatuning/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/cxmzwysf480dxnhzmq0xkyiqvgmgwzls-textmineR_3.0.5.tar.gz
+source root is textmineR
+setting SOURCE_DATE_EPOCH to timestamp 1624856402 of file textmineR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: unpackPhase
+Running phase: configurePhase
+unpacking source archive /nix/store/ssd7z8vkvlaij6hg567dmqdmkpm73iqx-textplot_0.2.2.tar.gz
+Running phase: buildPhase
+Running phase: checkPhase
+source root is textplot
+setting SOURCE_DATE_EPOCH to timestamp 1658088602 of file textplot/MD5
+Running phase: installPhase
+Running phase: patchPhase
+* installing *source* package ‘ldatuning’ ...
+** package ‘ldatuning’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+** R
+Running phase: configurePhase
+** demo
+Running phase: buildPhase
+** inst
+** byte-compile and prepare package for lazy loading
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘textmineR’ ...
+** package ‘textmineR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+* installing *source* package ‘textplot’ ...
+** package ‘textplot’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+using C++ compiler: ‘clang version 16.0.6’
+using C++11
+** R
+** data
+*** moving datasets to lazyload DB
+using SDK: ‘’
+** inst
+** byte-compile and prepare package for lazy loading
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CalcLikelihoodC.cpp -o CalcLikelihoodC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c CalcSumSquares.cpp -o CalcSumSquares.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Dtm2DocsC.cpp -o Dtm2DocsC.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c HellingerMat.cpp -o HellingerMat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c Hellinger_cpp.cpp -o Hellinger_cpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c JSD_cpp.cpp -o JSD_cpp.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c JSDmat.cpp -o JSDmat.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+dans la méthode pour ‘lines’ avec la signature ‘"AgEdge"’ : aucune définition de la classe “AgEdge” n'est trouvée
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/8d7a1k9j9kxyc1wbssvfj8jwxmhz2na6-r-RcppProgress-0.4.2/library/RcppProgress/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c lda_c_functions.cpp -o lda_c_functions.o
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ldatuning)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-ldatuning-1.0.2.drv-0/ in /nix/store/zbgx8l0fbgzwv4i0436a4qbswsm3daxx-r-ldatuning-1.0.2...
+patching script interpreter paths in /nix/store/zbgx8l0fbgzwv4i0436a4qbswsm3daxx-r-ldatuning-1.0.2
+rewriting symlink /nix/store/zbgx8l0fbgzwv4i0436a4qbswsm3daxx-r-ldatuning-1.0.2/nix-support/propagated-user-env-packages to be relative to /nix/store/zbgx8l0fbgzwv4i0436a4qbswsm3daxx-r-ldatuning-1.0.2
+** testing if installed package keeps a record of temporary installation path
+* DONE (textplot)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-textplot-0.2.2.drv-0/ in /nix/store/xgqsivbrk6qx9f5q2dkyy00x5ya580g5-r-textplot-0.2.2...
+patching script interpreter paths in /nix/store/xgqsivbrk6qx9f5q2dkyy00x5ya580g5-r-textplot-0.2.2
+rewriting symlink /nix/store/xgqsivbrk6qx9f5q2dkyy00x5ya580g5-r-textplot-0.2.2/nix-support/propagated-user-env-packages to be relative to /nix/store/xgqsivbrk6qx9f5q2dkyy00x5ya580g5-r-textplot-0.2.2
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o textmineR.so CalcLikelihoodC.o CalcSumSquares.o Dtm2DocsC.o HellingerMat.o Hellinger_cpp.o JSD_cpp.o JSDmat.o RcppExports.o lda_c_functions.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/kl9l486vvikg08cw6qjp0lirwwkzij0p-r-textmineR-3.0.5/library/00LOCK-textmineR/00new/textmineR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (textmineR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-textmineR-3.0.5.drv-0/ in /nix/store/kl9l486vvikg08cw6qjp0lirwwkzij0p-r-textmineR-3.0.5...
+patching script interpreter paths in /nix/store/kl9l486vvikg08cw6qjp0lirwwkzij0p-r-textmineR-3.0.5
+rewriting symlink /nix/store/kl9l486vvikg08cw6qjp0lirwwkzij0p-r-textmineR-3.0.5/nix-support/propagated-user-env-packages to be relative to /nix/store/kl9l486vvikg08cw6qjp0lirwwkzij0p-r-textmineR-3.0.5
+building '/nix/store/xb1xwjl86ap8blg4c6w0q31py553yr4k-r-LDABiplots-0.1.2.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/fidlrm46hf51gsyprah9r2hydszjmpsg-LDABiplots_0.1.2.tar.gz
+source root is LDABiplots
+setting SOURCE_DATE_EPOCH to timestamp 1658145608 of file LDABiplots/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘LDABiplots’ ...
+** package ‘LDABiplots’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (LDABiplots)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-LDABiplots-0.1.2.drv-0/ in /nix/store/06w783hg7s6j5gmbh0iflzlsfmkkxkyp-r-LDABiplots-0.1.2...
+patching script interpreter paths in /nix/store/06w783hg7s6j5gmbh0iflzlsfmkkxkyp-r-LDABiplots-0.1.2
+rewriting symlink /nix/store/06w783hg7s6j5gmbh0iflzlsfmkkxkyp-r-LDABiplots-0.1.2/nix-support/propagated-user-env-packages to be relative to /nix/store/06w783hg7s6j5gmbh0iflzlsfmkkxkyp-r-LDABiplots-0.1.2

@@ -1,0 +1,42 @@
+this derivation will be built:
+  /nix/store/lmsqwa1c7m9w48d6v5z1g7gd1fyjz759-r-PeakError-2023.9.4.drv
+this path will be fetched (0.01 MiB download, 0.01 MiB unpacked):
+  /nix/store/xbpm2jh0mfbf96cmlbmkbyliba71zgcm-PeakError_2023.9.4.tar.gz
+copying path '/nix/store/xbpm2jh0mfbf96cmlbmkbyliba71zgcm-PeakError_2023.9.4.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/lmsqwa1c7m9w48d6v5z1g7gd1fyjz759-r-PeakError-2023.9.4.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/xbpm2jh0mfbf96cmlbmkbyliba71zgcm-PeakError_2023.9.4.tar.gz
+source root is PeakError
+setting SOURCE_DATE_EPOCH to timestamp 1693977602 of file PeakError/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘PeakError’ ...
+** package ‘PeakError’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c PeakError.c -o PeakError.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c interface.c -o interface.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o PeakError.so PeakError.o interface.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/zrhcc6h8k721xfsrm3y51khwn2z39p9c-r-PeakError-2023.9.4/library/00LOCK-PeakError/00new/PeakError/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (PeakError)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-PeakError-2023.9.4.drv-0/ in /nix/store/zrhcc6h8k721xfsrm3y51khwn2z39p9c-r-PeakError-2023.9.4...
+patching script interpreter paths in /nix/store/zrhcc6h8k721xfsrm3y51khwn2z39p9c-r-PeakError-2023.9.4
+/nix/store/zrhcc6h8k721xfsrm3y51khwn2z39p9c-r-PeakError-2023.9.4/library/PeakError/exampleData/PeakError_compute.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"
+/nix/store/zrhcc6h8k721xfsrm3y51khwn2z39p9c-r-PeakError-2023.9.4/library/PeakError/exampleData/PeakError_summarize.R: interpreter directive changed from "#!/usr/bin/env Rscript" to "/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/bin/Rscript"

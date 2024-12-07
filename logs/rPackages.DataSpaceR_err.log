@@ -1,0 +1,77 @@
+these 3 derivations will be built:
+  /nix/store/q4kmw72mv0pnqlw8hvgxcqzp9kvdwfxh-Rlabkey_3.4.1.tar.gz.drv
+  /nix/store/d5784v2zh610xyckpgrw6mwxffc5hb7q-r-Rlabkey-3.4.1.drv
+  /nix/store/1sr6p4zcj9wffilqksj585b23d7m1157-r-DataSpaceR-0.7.6.drv
+building '/nix/store/q4kmw72mv0pnqlw8hvgxcqzp9kvdwfxh-Rlabkey_3.4.1.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/Rlabkey_3.4.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 89933  100 89933    0     0   628k      0 --:--:-- --:--:-- --:--:--  631k
+building '/nix/store/d5784v2zh610xyckpgrw6mwxffc5hb7q-r-Rlabkey-3.4.1.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/1yyf1z18yai2k898614kfd2ni62ifk80-Rlabkey_3.4.1.tar.gz
+source root is Rlabkey
+setting SOURCE_DATE_EPOCH to timestamp 1731340207 of file Rlabkey/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘Rlabkey’ ...
+** package ‘Rlabkey’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using C++ compiler: ‘clang version 16.0.6’
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c R_init.c -o R_init.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2   -c listToMatrix.cpp -o listToMatrix.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o Rlabkey.so R_init.o RcppExports.o listToMatrix.o -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+installing to /nix/store/7f3fi1j2xhp9lgy750c9d9x67b8xql5q-r-Rlabkey-3.4.1/library/00LOCK-Rlabkey/00new/Rlabkey/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Rlabkey)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-Rlabkey-3.4.1.drv-0/ in /nix/store/7f3fi1j2xhp9lgy750c9d9x67b8xql5q-r-Rlabkey-3.4.1...
+patching script interpreter paths in /nix/store/7f3fi1j2xhp9lgy750c9d9x67b8xql5q-r-Rlabkey-3.4.1
+rewriting symlink /nix/store/7f3fi1j2xhp9lgy750c9d9x67b8xql5q-r-Rlabkey-3.4.1/nix-support/propagated-user-env-packages to be relative to /nix/store/7f3fi1j2xhp9lgy750c9d9x67b8xql5q-r-Rlabkey-3.4.1
+building '/nix/store/1sr6p4zcj9wffilqksj585b23d7m1157-r-DataSpaceR-0.7.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/rzc6faqqayd4lianmdj16h1mcgr0axf9-DataSpaceR_0.7.6.tar.gz
+source root is DataSpaceR
+setting SOURCE_DATE_EPOCH to timestamp 1656080405 of file DataSpaceR/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘DataSpaceR’ ...
+** package ‘DataSpaceR’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (DataSpaceR)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-DataSpaceR-0.7.6.drv-0/ in /nix/store/b8bjifs8lb7lvcymyvkk7rx35aa5dlfg-r-DataSpaceR-0.7.6...
+patching script interpreter paths in /nix/store/b8bjifs8lb7lvcymyvkk7rx35aa5dlfg-r-DataSpaceR-0.7.6
+rewriting symlink /nix/store/b8bjifs8lb7lvcymyvkk7rx35aa5dlfg-r-DataSpaceR-0.7.6/nix-support/propagated-user-env-packages to be relative to /nix/store/b8bjifs8lb7lvcymyvkk7rx35aa5dlfg-r-DataSpaceR-0.7.6

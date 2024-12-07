@@ -1,0 +1,75 @@
+this derivation will be built:
+  /nix/store/0i5z15ld5sx6kqyqfpab95p4gvl2858r-r-MultNonParam-1.3.9.drv
+this path will be fetched (0.05 MiB download, 0.05 MiB unpacked):
+  /nix/store/grrm8yy8m90a8ywx3h8a8j13v2x906ys-MultNonParam_1.3.9.tar.gz
+copying path '/nix/store/grrm8yy8m90a8ywx3h8a8j13v2x906ys-MultNonParam_1.3.9.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/0i5z15ld5sx6kqyqfpab95p4gvl2858r-r-MultNonParam-1.3.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/grrm8yy8m90a8ywx3h8a8j13v2x906ys-MultNonParam_1.3.9.tar.gz
+source root is MultNonParam
+setting SOURCE_DATE_EPOCH to timestamp 1693370402 of file MultNonParam/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘MultNonParam’ ...
+** package ‘MultNonParam’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C compiler: ‘clang version 16.0.6’
+using Fortran compiler: ‘GNU Fortran (GCC) 13.3.0’
+using SDK: ‘’
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  aovp.f90 -o aovp.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  dwildings.f90 -o dwildings.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG   -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1    -fPIC  -g -O2  -c init.c -o init.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  initperm.f90 -o initperm.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  nextp.f90 -o nextp.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  probest.f90 -o probest.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  rankem.f90 -o rankem.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  signtestperm.f90 -o signtestperm.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tskmsurv.f90 -o tskmsurv.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  tsksurvpv.f90 -o tsksurvpv.o
+/nix/store/93i6w80axzmddh7kl97br2axr8al13vx-gfortran-wrapper-13.3.0/bin/gfortran  -fPIC  -g -O2  -c  ufcn.f90 -o ufcn.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/cc -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -L/nix/store/88xkgzh5g9xppsg3hdxxxh9q43rnxk6k-libcxx-16.0.6/lib -o MultNonParam.so aovp.o dwildings.o init.o initperm.o nextp.o probest.o rankem.o signtestperm.o tskmsurv.o tsksurvpv.o ufcn.o -L/nix/store/plkk3bwn0g0v67pfc4f8j0sixxwdn01f-lapack-3/lib -llapack -L/nix/store/p8mgb558fybdfiqvcc64jaxzgh3c2yms-blas-3/lib -lblas -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/h84vsys3h7wkvnwhx3fz6ynrlpla2mpv-gfortran-13.3.0-lib/lib -L/nix/store/3awww7sqz8gygkr9hw5s7wd57iwz1qg3-cctools-binutils-darwin-wrapper-1010.6/bin -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib/gcc/aarch64-apple-darwin/13.3.0 -L/nix/store/kwlx6bz5n81gqa9kyx6207rzp0yq0pj4-gfortran-13.3.0/lib -lemutls_w -lheapt_w -lintl -lgfortran -lquadmath -L/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: could not create compact unwind for _cntperms_: does not use standard frame
+ld: warning: could not create compact unwind for _nextb_: does not use standard frame
+ld: warning: could not create compact unwind for _aov_: does not use standard frame
+ld: warning: could not create compact unwind for _aov2_: does not use standard frame
+ld: warning: could not create compact unwind for _aovp_: does not use standard frame
+ld: warning: could not create compact unwind for _betatestf_: does not use standard frame
+ld: warning: ld: warning: could not create compact unwind for _tskmsurv_: does not use standard frame
+could not create compact unwind for _wilding_: does not use standard frame
+ld: warning: could not create compact unwind for _finish_: does not use standard frame
+ld: warning: could not create compact unwind for _probestf_: does not use standard frame
+ld: warning: could not create compact unwind for _signtestperm_: does not use standard frame
+ld: warning: could not create compact unwind for _tskmsurvpv_: does not use standard frame
+ld: warning: could not create compact unwind for _initperm_: does not use standard frame
+ld: warning: could not create compact unwind for _initmod_: does not use standard frame
+ld: warning: could not create compact unwind for _uu_: does not use standard frame
+ld: warning: could not create compact unwind for _dconcordant_: does not use standard frame
+ld: warning: could not create compact unwind for _pconcordant_: does not use standard frame
+ld: warning: could not create compact unwind for _qconcordant_: does not use standard frame
+ld: warning: could not create compact unwind for ___emutls_get_address: does not use standard frame
+ld: warning: could not create compact unwind for _allocate_tramp_ctrl: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_created: does not use standard frame
+ld: warning: could not create compact unwind for ___gcc_nested_func_ptr_deleted: does not use standard frame
+installing to /nix/store/1qial4ar3jfv11fb6ika7qnndvcvifgk-r-MultNonParam-1.3.9/library/00LOCK-MultNonParam/00new/MultNonParam/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (MultNonParam)
+Running phase: fixupPhase
+checking for references to /private/tmp/nix-build-r-MultNonParam-1.3.9.drv-0/ in /nix/store/1qial4ar3jfv11fb6ika7qnndvcvifgk-r-MultNonParam-1.3.9...
+patching script interpreter paths in /nix/store/1qial4ar3jfv11fb6ika7qnndvcvifgk-r-MultNonParam-1.3.9
+rewriting symlink /nix/store/1qial4ar3jfv11fb6ika7qnndvcvifgk-r-MultNonParam-1.3.9/nix-support/propagated-user-env-packages to be relative to /nix/store/1qial4ar3jfv11fb6ika7qnndvcvifgk-r-MultNonParam-1.3.9

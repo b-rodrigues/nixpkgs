@@ -1,0 +1,47 @@
+this derivation will be built:
+  /nix/store/v1hh8kq1yhi6qpzx3dkgc85za7a6l7lr-r-qrLMM-2.3.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/szr3v1zb5bnwrksg2y3ma0y078bdzjzm-qrLMM_2.3.tar.gz
+copying path '/nix/store/szr3v1zb5bnwrksg2y3ma0y078bdzjzm-qrLMM_2.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/v1hh8kq1yhi6qpzx3dkgc85za7a6l7lr-r-qrLMM-2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/szr3v1zb5bnwrksg2y3ma0y078bdzjzm-qrLMM_2.3.tar.gz
+source root is qrLMM
+setting SOURCE_DATE_EPOCH to timestamp 1720810802 of file qrLMM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘qrLMM’ ...
+** package ‘qrLMM’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+sh: line 1: 17344 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-qrLMM-2.3.drv-0/RtmpIaJ6ub/file43bb37326160'
+ERROR: lazy loading failed for package ‘qrLMM’
+* removing ‘/nix/store/bm08pbaa7mi1y87a39z75ja0fbg5f1vs-r-qrLMM-2.3/library/qrLMM’
+error: builder for '/nix/store/v1hh8kq1yhi6qpzx3dkgc85za7a6l7lr-r-qrLMM-2.3.drv' failed with exit code 1;
+       last 19 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/szr3v1zb5bnwrksg2y3ma0y078bdzjzm-qrLMM_2.3.tar.gz
+       > source root is qrLMM
+       > setting SOURCE_DATE_EPOCH to timestamp 1720810802 of file qrLMM/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘qrLMM’ ...
+       > ** package ‘qrLMM’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ** R
+       > ** data
+       > ** byte-compile and prepare package for lazy loading
+       > sh: line 1: 17344 Trace/BPT trap: 5       R_TESTS= '/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/R' --no-save --no-restore --no-echo 2>&1 < '/private/tmp/nix-build-r-qrLMM-2.3.drv-0/RtmpIaJ6ub/file43bb37326160'
+       > ERROR: lazy loading failed for package ‘qrLMM’
+       > * removing ‘/nix/store/bm08pbaa7mi1y87a39z75ja0fbg5f1vs-r-qrLMM-2.3/library/qrLMM’
+       For full logs, run 'nix log /nix/store/v1hh8kq1yhi6qpzx3dkgc85za7a6l7lr-r-qrLMM-2.3.drv'.

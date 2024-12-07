@@ -1,0 +1,91 @@
+these 2 derivations will be built:
+  /nix/store/za579gibzd7n3qypvxddm12v7768zazp-lnmixsurv_3.1.6.tar.gz.drv
+  /nix/store/mgl9vcy0bm22jxmcvjg395mfnhmvld2i-r-lnmixsurv-3.1.6.drv
+building '/nix/store/za579gibzd7n3qypvxddm12v7768zazp-lnmixsurv_3.1.6.tar.gz.drv'...
+
+trying https://cran.r-project.org/src/contrib/lnmixsurv_3.1.6.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1544k  100 1544k    0     0  4696k      0 --:--:-- --:--:-- --:--:-- 4708k
+building '/nix/store/mgl9vcy0bm22jxmcvjg395mfnhmvld2i-r-lnmixsurv-3.1.6.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5xxzn7xkxazwml8d9wns2frdcrknj974-lnmixsurv_3.1.6.tar.gz
+source root is lnmixsurv
+setting SOURCE_DATE_EPOCH to timestamp 1725376808 of file lnmixsurv/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘lnmixsurv’ ...
+** package ‘lnmixsurv’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+** libs
+using C++ compiler: ‘clang version 16.0.6’
+using C++17
+using SDK: ‘’
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   `/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"` -DARMA_64BIT_WORD=1 -I../inst/include/ -fPIC  -g -O2   -c RcppExports.cpp -o RcppExports.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   `/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"` -DARMA_64BIT_WORD=1 -I../inst/include/ -fPIC  -g -O2   -c lognormal_mixture_gibbs.cpp -o lognormal_mixture_gibbs.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   `/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"` -DARMA_64BIT_WORD=1 -I../inst/include/ -fPIC  -g -O2   -c predict.cpp -o predict.o
+/nix/store/v39c0h6xv6hvki2k1bsyp5n090q8y2bp-clang-wrapper-16.0.6/bin/c++ -std=gnu++17 -I"/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/include" -DNDEBUG  -I'/nix/store/da7yi2xf3argx9hlnn3f0k95b8y1yx2l-r-Rcpp-1.0.13-1/library/Rcpp/include' -I'/nix/store/4w8j39mxla47i5piv5f0z7cwxnb50wds-r-RcppArmadillo-14.2.0-1/library/RcppArmadillo/include' -I'/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include' -I'/nix/store/hcy2j5h598wrllhahyda4wgs43s3fybd-r-RcppParallel-5.1.9/library/RcppParallel/include' -isystem /nix/store/0mmz5i705116bfykc7i1r9jxqwyghj2a-libcxx-16.0.6-dev/include/c++/v1   `/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"` -DARMA_64BIT_WORD=1 -I../inst/include/ -fPIC  -g -O2   -c simulate_data.cpp -o simulate_data.o
+Message d'avis :
+No 'gsl-config' config script found, limiting extensibility. 
+Message d'avis :
+No 'gsl-config' config script found, limiting extensibility. 
+Message d'avis :
+No 'gsl-config' config script found, limiting extensibility. 
+Message d'avis :
+No 'gsl-config' config script found, limiting extensibility. 
+In file included from In file included from RcppExports.cppsimulate_data.cpp::54:
+:
+In file included from In file included from /nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSL.h/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSL.h::2525:
+:
+/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSLForward.h:25:10:In file included from  lognormal_mixture_gibbs.cpp/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSLForward.h::425fatal error: :
+:In file included from 10/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSL.h:'gsl/gsl_vector.h' file not found: 25
+:
+/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSLForward.h:25:#include <gsl/gsl_vector.h> 
+         ^~~~~~~~~~~~~~~~~~
+fatal error: 'gsl/gsl_vector.h' file not found
+10#include <gsl/gsl_vector.h> 
+         ^~~~~~~~~~~~~~~~~~
+: fatal error: 'gsl/gsl_vector.h' file not found
+#include <gsl/gsl_vector.h> 
+         ^~~~~~~~~~~~~~~~~~
+1 error generated.
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: simulate_data.o] Error 1
+make: *** Attente des tâches non terminées....
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: RcppExports.o] Error 1
+1 error generated.
+make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: lognormal_mixture_gibbs.o] Error 1
+ERROR: compilation failed for package ‘lnmixsurv’
+* removing ‘/nix/store/hz9gyxfdcwxawk1i2cya40x1x885czdq-r-lnmixsurv-3.1.6/library/lnmixsurv’
+error: builder for '/nix/store/mgl9vcy0bm22jxmcvjg395mfnhmvld2i-r-lnmixsurv-3.1.6.drv' failed with exit code 1;
+       last 25 log lines:
+       > No 'gsl-config' config script found, limiting extensibility.
+       > In file included from In file included from RcppExports.cppsimulate_data.cpp::54:
+       > :
+       > In file included from In file included from /nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSL.h/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSL.h::2525:
+       > :
+       > /nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSLForward.h:25:10:In file included from  lognormal_mixture_gibbs.cpp/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSLForward.h::425fatal error: :
+       > :In file included from 10/nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSL.h:'gsl/gsl_vector.h' file not found: 25
+       > :
+       > /nix/store/nixcryx2yp7nw5m2qgx9i4mih578si2p-r-RcppGSL-0.3.13/library/RcppGSL/include/RcppGSLForward.h:25:#include <gsl/gsl_vector.h>
+       >          ^~~~~~~~~~~~~~~~~~
+       > fatal error: 'gsl/gsl_vector.h' file not found
+       > 10#include <gsl/gsl_vector.h>
+       >          ^~~~~~~~~~~~~~~~~~
+       > : fatal error: 'gsl/gsl_vector.h' file not found
+       > #include <gsl/gsl_vector.h>
+       >          ^~~~~~~~~~~~~~~~~~
+       > 1 error generated.
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: simulate_data.o] Error 1
+       > make: *** Attente des tâches non terminées....
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: RcppExports.o] Error 1
+       > 1 error generated.
+       > make: *** [/nix/store/lir8rmsk7dxbj7v1spqmv69z4mafg16l-R-4.4.2/lib/R/etc/Makeconf:202: lognormal_mixture_gibbs.o] Error 1
+       > ERROR: compilation failed for package ‘lnmixsurv’
+       > * removing ‘/nix/store/hz9gyxfdcwxawk1i2cya40x1x885czdq-r-lnmixsurv-3.1.6/library/lnmixsurv’
+       For full logs, run 'nix log /nix/store/mgl9vcy0bm22jxmcvjg395mfnhmvld2i-r-lnmixsurv-3.1.6.drv'.

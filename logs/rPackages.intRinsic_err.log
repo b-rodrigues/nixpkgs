@@ -1,0 +1,63 @@
+these 3 derivations will be built:
+  /nix/store/24ql8lsralnhq1a8xwb71bzdvk31j6qw-intRinsic_1.1.0.tar.gz.drv
+  /nix/store/hg0sxr8h0v5pazc17hprcnywd7icgry0-r-salso-0.3.42.drv
+  /nix/store/ngcl8nmawkpazrchc2abp178y6gmxirc-r-intRinsic-1.1.0.drv
+building '/nix/store/24ql8lsralnhq1a8xwb71bzdvk31j6qw-intRinsic_1.1.0.tar.gz.drv'...
+building '/nix/store/hg0sxr8h0v5pazc17hprcnywd7icgry0-r-salso-0.3.42.drv'...
+
+trying https://cran.r-project.org/src/contrib/intRinsic_1.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+Running phase: unpackPhase
+unpacking source archive /nix/store/zz0k1481lhi8fdd7axy7dcr0706l2f87-salso_0.3.42.tar.gz
+source root is salso
+setting SOURCE_DATE_EPOCH to timestamp 1726488006 of file salso/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+100  331k  100  331k    0     0  1689k      0 --:--:-- --:--:-- --:--:-- 1690k
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+* installing *source* package ‘salso’ ...
+** package ‘salso’ correctement décompressé et sommes MD5 vérifiées
+** using staged installation
+---
+Trying to find a suitable Cargo using tools::R_user_dir('cargo', 'cache').
+Trying to find a suitable Cargo using the conventional location.
+Trying to find a suitable Cargo using the PATH environment variable.
+Trying to use Cargo at: /nix/store/arsxsvbjmappgjrxviayspqnjm1nhrma-cargo-1.82.0/bin/cargo
+sh: : command not found
+Erreur dans system2(...) : erreur lors de l'exécution d'une commande
+Appels : run ... run_engine -> check_candidate -> system3 -> system2
+Exécution arrêtée
+ERROR: configuration failed for package ‘salso’
+* removing ‘/nix/store/rh8892mzqi5d1pds3pvs6h3zs3wip36i-r-salso-0.3.42/library/salso’
+error: builder for '/nix/store/hg0sxr8h0v5pazc17hprcnywd7icgry0-r-salso-0.3.42.drv' failed with exit code 1;
+       last 24 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/zz0k1481lhi8fdd7axy7dcr0706l2f87-salso_0.3.42.tar.gz
+       > source root is salso
+       > setting SOURCE_DATE_EPOCH to timestamp 1726488006 of file salso/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > * installing *source* package ‘salso’ ...
+       > ** package ‘salso’ correctement décompressé et sommes MD5 vérifiées
+       > ** using staged installation
+       > ---
+       > Trying to find a suitable Cargo using tools::R_user_dir('cargo', 'cache').
+       > Trying to find a suitable Cargo using the conventional location.
+       > Trying to find a suitable Cargo using the PATH environment variable.
+       > Trying to use Cargo at: /nix/store/arsxsvbjmappgjrxviayspqnjm1nhrma-cargo-1.82.0/bin/cargo
+       > sh: : command not found
+       > Erreur dans system2(...) : erreur lors de l'exécution d'une commande
+       > Appels : run ... run_engine -> check_candidate -> system3 -> system2
+       > Exécution arrêtée
+       > ERROR: configuration failed for package ‘salso’
+       > * removing ‘/nix/store/rh8892mzqi5d1pds3pvs6h3zs3wip36i-r-salso-0.3.42/library/salso’
+       For full logs, run 'nix log /nix/store/hg0sxr8h0v5pazc17hprcnywd7icgry0-r-salso-0.3.42.drv'.
+error: 1 dependencies of derivation '/nix/store/ngcl8nmawkpazrchc2abp178y6gmxirc-r-intRinsic-1.1.0.drv' failed to build

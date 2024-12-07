@@ -1,0 +1,33 @@
+this derivation will be built:
+  /nix/store/m8iaivz0a1facvr3ym92ixxv7yk5yxl3-r-xLLiM-2.3.drv
+this path will be fetched (0.09 MiB download, 0.09 MiB unpacked):
+  /nix/store/p859ifjd9s7n9vdfdfw9wakw0m75h05r-xLLiM_2.3.tar.gz
+copying path '/nix/store/p859ifjd9s7n9vdfdfw9wakw0m75h05r-xLLiM_2.3.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/m8iaivz0a1facvr3ym92ixxv7yk5yxl3-r-xLLiM-2.3.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/p859ifjd9s7n9vdfdfw9wakw0m75h05r-xLLiM_2.3.tar.gz
+source root is xLLiM
+setting SOURCE_DATE_EPOCH to timestamp 1698401402 of file xLLiM/MD5
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+Running phase: checkPhase
+Running phase: installPhase
+ERROR: dependency ‘mixOmics’ is not available for package ‘xLLiM’
+* removing ‘/nix/store/nl3105w1r6cpypjk754c2lwrzq1xzd27-r-xLLiM-2.3/library/xLLiM’
+error: builder for '/nix/store/m8iaivz0a1facvr3ym92ixxv7yk5yxl3-r-xLLiM-2.3.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/p859ifjd9s7n9vdfdfw9wakw0m75h05r-xLLiM_2.3.tar.gz
+       > source root is xLLiM
+       > setting SOURCE_DATE_EPOCH to timestamp 1698401402 of file xLLiM/MD5
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > Running phase: buildPhase
+       > Running phase: checkPhase
+       > Running phase: installPhase
+       > ERROR: dependency ‘mixOmics’ is not available for package ‘xLLiM’
+       > * removing ‘/nix/store/nl3105w1r6cpypjk754c2lwrzq1xzd27-r-xLLiM-2.3/library/xLLiM’
+       For full logs, run 'nix log /nix/store/m8iaivz0a1facvr3ym92ixxv7yk5yxl3-r-xLLiM-2.3.drv'.

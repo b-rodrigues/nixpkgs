@@ -567,6 +567,7 @@ let
     monoreg = [ pkgs.gsl ];
     mvst = [ pkgs.gsl ];
     mixture = [ pkgs.gsl ];
+    MPCR = with pkgs; [ blas.dev cmake ];
     jSDM = [ pkgs.gsl ];
     immunoClust = [ pkgs.gsl ];
     hSDM = [ pkgs.gsl ];
@@ -1094,6 +1095,16 @@ let
           ${attrs.postInstall or ""}
           cp ${icuSrc}/${icuName}.dat $out/library/stringi/libs
         '';
+    });
+
+    MPCR = let
+        blaspp = pkgs.fetchgit {
+          url = "https://github.com/icl-utk-edu/blaspp/";
+          tag = "v2023.06.00";
+          sha256 = "sha256-Td8PBnct+gZIuBelyQrsiJkXra5teekykOjlcjxOuOo=";
+        };
+     in old.MPCR.overrideAttrs (attrs: {
+          nativeBuildInputs = attrs.nativeBuildInputs ++ [ pkgs.pkg-config blaspp ];
     });
 
     xml2 = old.xml2.overrideAttrs (attrs: {

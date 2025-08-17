@@ -29,14 +29,14 @@
 
 buildPythonPackage rec {
   pname = "pyfixest";
-  version = "0.30.1";
+  version = "0.30.2";
   format = "pyproject";
 
   src = fetchFromGitHub {
     owner = "py-econometrics";
     repo = "pyfixest";
     rev = "v${version}";
-    hash = "sha256-FYoNeWSbYs+4M/fk2yx26mUAdfJeNY+3N4ibgKoh588=";
+    hash = "sha256-xu/CfJ36tPB0GiSFBQcViiOqpm7UiplG6Dc7HPxh420=";
   };
 
   cargoDeps = rustPlatform.fetchCargoVendor {

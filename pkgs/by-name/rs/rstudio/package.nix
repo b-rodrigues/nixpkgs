@@ -17,15 +17,15 @@
   git,
   jdk,
   makeWrapper,
-  nodejs,
+  nodejs_22,
   npmHooks,
   xcbuild,
   yarn,
   yarnConfigHook,
   zip,
 
-  boost187,
-  electron_38,
+  boost190,
+  electron_39,
   fontconfig,
   gnumake,
   hunspellDicts,
@@ -44,7 +44,8 @@
 }:
 
 let
-  electron = electron_38;
+  electron = electron_39;
+  nodejs = nodejs_22;
 
   mathJaxSrc = fetchzip {
     url = "https://s3.amazonaws.com/rstudio-buildtools/mathjax-27.zip";
@@ -62,8 +63,8 @@ let
     owner = "quarto-dev";
     repo = "quarto";
     # Note: rev should ideally be the last commit of the release/rstudio-[codename] branch
-    rev = "591b3520eafbb4da7b26b9f31aac6948801f19d8";
-    hash = "sha256-scdm66Ekfjp5wdNDXcVZA5ZhNgFvuf/kIBF56HrE8uM=";
+    rev = "13872ef6dad95590f836a8de12af0afc835f5337";
+    hash = "sha256-Zkp4GSAmunwe5GEAI7v6mOHFUfZpO0cZyNOTPenKF34=";
   };
 
   hunspellDictionaries = lib.filter lib.isDerivation (lib.unique (lib.attrValues hunspellDicts));
@@ -85,13 +86,13 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "rstudio";
-  version = "2026.01.1+403";
+  version = "2026.03.9+999";
 
   src = fetchFromGitHub {
     owner = "rstudio";
     repo = "rstudio";
-    tag = "v${finalAttrs.version}";
-    hash = "sha256-s+t48LLvxdit6US6MB4DvpEZtUY6SSK5Qha1k4VW0Qk=";
+    rev = "053d09d78c986f54789e7fa4cd14ca8a4485acbd";
+    hash = "sha256-AeHun9EntHbXbo5bVpm+C0PpvW46IKiZ9uSvAmHSTuw=";
   };
 
   # sources fetched into _deps via cmake's FetchContent
@@ -123,7 +124,7 @@ stdenv.mkDerivation (finalAttrs: {
     dontBuild = true;
     dontFixup = true;
 
-    outputHash = "sha256-t2kWnviFMw7TdxaJpiGDXe0M5HSIGD7o5hqWiPKUdOc=";
+    outputHash = "sha256-XzSDU4GVY6OrIFG4qCWUF94nV6fcz9zyFSlSvttVrYw=";
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
   };
@@ -150,7 +151,7 @@ stdenv.mkDerivation (finalAttrs: {
   ];
 
   buildInputs = [
-    boost187
+    boost190
     libuuid
     openssl
     R
@@ -197,6 +198,8 @@ stdenv.mkDerivation (finalAttrs: {
     RSTUDIO_VERSION_PATCH = lib.versions.patch finalAttrs.version;
     RSTUDIO_VERSION_SUFFIX = "+" + toString (lib.tail (lib.splitString "+" finalAttrs.version));
   };
+
+  npm_config_build_from_source = "true";
 
   patches = [
     # Hack RStudio to only use the input R and provided libclang.
@@ -249,7 +252,7 @@ stdenv.mkDerivation (finalAttrs: {
     name = "rstudio-${finalAttrs.version}-npm-deps";
     inherit (finalAttrs) src;
     postPatch = "cd ${finalAttrs.npmRoot}";
-    hash = "sha256-7gXLCFhan/TCTlc2okMWuWzfRYXmuwcqhmGKAqJOEM0=";
+    hash = "sha256-IVn3fCHeZ4/w3QV1f5oeCT/pf42GR2GuZ281olJ/dPg=";
   };
 
   preConfigure = ''
@@ -285,8 +288,8 @@ stdenv.mkDerivation (finalAttrs: {
 
     # node used by cmake and node used for distribution
     # version in cmake/globals.cmake
-    RSTUDIO_NODE_VERSION="22.13.1"
-    RSTUDIO_INSTALLED_NODE_VERSION="22.21.1"
+    RSTUDIO_NODE_VERSION="22.22.2"
+    RSTUDIO_INSTALLED_NODE_VERSION="22.22.2"
 
     mkdir -p dependencies/common/node
     ln -s ${nodejs} dependencies/common/node/$RSTUDIO_NODE_VERSION
@@ -310,12 +313,25 @@ stdenv.mkDerivation (finalAttrs: {
     pushd electron-dist
     zip -0Xqr ../electron.zip .
     popd
-
     rm -r electron-dist
+
+    # Rename zip to what @electron/packager's electronZipDir expects
+    mkdir -p electron-zips
+    ELECTRON_PLATFORM=${if stdenv.hostPlatform.isDarwin then "darwin" else "linux"}
+    ELECTRON_ARCH=${if stdenv.hostPlatform.isAarch64 then "arm64" else "x64"}
+    cp electron.zip "electron-zips/electron-v${electron.version}-$ELECTRON_PLATFORM-$ELECTRON_ARCH.zip"
 
     # force @electron/packager to use our electron instead of downloading it
     substituteInPlace node_modules/@electron/packager/dist/packager.js \
       --replace-fail "await this.getElectronZipPath(downloadOpts)" "'$(pwd)/electron.zip'"
+
+    # Tell @electron/rebuild to skip all network calls and download attempts
+    substituteInPlace forge.config.js \
+      --replace-fail \
+        'module.exports = config;' \
+        'config.packagerConfig.electronZipDir = require("path").join(__dirname, "electron-zips");
+         config.rebuildConfig = { onlyModules: [] };
+         module.exports = config;'
 
     # now that we patched everything, we still have to run the scripts we ignored with --ignore-scripts
     npm rebuild

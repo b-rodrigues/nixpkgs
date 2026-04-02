@@ -19,10 +19,11 @@ diff --git a/src/node/desktop/package.json b/src/node/desktop/package.json
 index df92166..47ca4b4 100644
 --- a/src/node/desktop/package.json
 +++ b/src/node/desktop/package.json
-@@ -10,7 +10,7 @@
+@@ -14,8 +14,8 @@
    "scripts": {
      "clean": "ts-node scripts/clean.ts",
      "lint": "eslint ./src ./test",
+     "typecheck": "tsc --noEmit",
 -    "package": "npm ci && electron-forge package",
 +    "package": "electron-forge package",
      "start": "electron-forge start -- --no-sandbox",

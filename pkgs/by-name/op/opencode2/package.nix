@@ -150,7 +150,8 @@ stdenvNoCC.mkDerivation (finalAttrs: {
         )
       } ${lib.optionalString stdenvNoCC.hostPlatform.isLinux ''
         --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [ wayland ]} \
-      ''}--set OPENCODE_DISABLE_AUTOUPDATE true
+      ''}--set OPENCODE_DISABLE_AUTOUPDATE true \
+      --set OPENCODE_DB opencode2.db
 
     runHook postInstall
   '';
